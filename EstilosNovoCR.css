@@ -15,7 +15,7 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	text-align: right;
 	border-bottom: 1px dotted #9E9E9E;
 	border-left: 1px dotted #9E9E9E;
 }
