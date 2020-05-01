@@ -3,13 +3,14 @@
 blockquote {
 	font-weight: 100;
 	font-size: 2rem;
-	max-width: 300px;
+	max-width: 34%;
 	line-height: 1.4;
 	position: relative;
-	margin: 0;
+	margin-left: 10ps;
+	float: right;
 	padding: .5rem;
 	font-family: 'Special Elite', cursive;
-	background: #fffdf5;
+	background: transparent;
 	color: #3f3f5a;
 	display: flex;
 	flex-direction: column;
