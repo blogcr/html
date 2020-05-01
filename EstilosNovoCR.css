@@ -8,14 +8,14 @@ blockquote {
 	position: relative;
 	margin-left: 10px;
 	float: right;
-	padding: .5rem;
+	padding: 10px;
 	font-family: 'Special Elite', cursive;
 	background: transparent;
 	color: #3f3f5a;
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 }
 
 blockquote:before,
@@ -23,8 +23,8 @@ blockquote:after {
 	position: relative;
 	color: #f1efe6;
 	font-size: 8rem;
-	width: 4rem;
-	height: 4rem;
+	/* width: 4rem;
+	height: 4rem; */
 }
 
 blockquote:before {
