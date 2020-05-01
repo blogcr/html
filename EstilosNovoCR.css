@@ -12,7 +12,7 @@ blockquote {
 	font-family: 'Special Elite', cursive;
 	background: transparent;
 	color: #3f3f5a;
-	align: right;
+	content-align: right;
 	border-bottom: 1px dotted #9E9E9E;
 	border-left: 1px dotted #9E9E9E;
 }
