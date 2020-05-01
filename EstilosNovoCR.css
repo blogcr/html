@@ -5,19 +5,13 @@ blockquote {
 	font-size: 2rem;
 	max-width: 34%;
 	line-height: 1.4;
-	position: relative;
 	margin: 0 0 3px 10px;
 	padding: 0 0 10px 10px;
 	float: right;
 	font-family: 'Special Elite', cursive;
 	background: transparent;
 	color: #3f3f5a;
-	text-justify: right;
+	text-align: right;
 	border-bottom: 1px dotted #9E9E9E;
 	border-left: 1px dotted #9E9E9E;
-}
-
-cite {
-	line-height: 3;
-	text-align: left;
 }
