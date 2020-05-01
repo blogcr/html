@@ -20,7 +20,6 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-	position: absolute;
 	color: #f1efe6;
 	font-size: 8rem;
 	/* width: 4rem;
@@ -29,14 +28,10 @@ blockquote:after {
 
 blockquote:before {
 	content: '“';
-	left: 0;
-	top: 0;
 }
 
 blockquote:after {
 	content: '”';
-	right: 100%;
-	bottom: 100%;
 }
 
 cite {
