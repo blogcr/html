@@ -6,9 +6,8 @@ blockquote {
 	max-width: 34%;
 	line-height: 1.4;
 	position: relative;
-	margin-left: 10px;
+	margin: 0 0 3px 10px;
 	float: right;
-	padding: 10px;
 	font-family: 'Special Elite', cursive;
 	background: transparent;
 	color: #3f3f5a;
