@@ -1,3 +1,4 @@
+/* CAIXA DE CITAÇÕES */
 blockquote {
 	font-weight: 100;
 	font-size: 1.8rem;
@@ -11,3 +12,26 @@ blockquote {
 	color: #B71C1C;
 	text-align: center;
 }
+
+/* CAIXA DO FANCYBOX */
+.fancybox-slide--iframe .fancybox-content {
+    width  : 800px;
+    height : 600px;
+    max-width  : 80%;
+    max-height : 80%;
+    margin: 0;
+}
+
+
+/* MOLDURA DE COMPARTILHAR
+.compartilhe {
+border: 1px solid #cccccc;
+padding: 1px 5px 1px 5px;
+float: right;
+font-size: 10px;
+color: #757575;
+width: auto;
+text-align: center;
+margin-top: -25px;
+}
+*/
