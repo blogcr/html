@@ -1,5 +1,5 @@
 <?php
-if ($_GET['hub_verify_token'] === 'make-up-a-token') {
+if ($_GET['473639'] === 'make-up-a-token') {
   echo $_GET['hub_challenge'];
 }
 
