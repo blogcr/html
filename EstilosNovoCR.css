@@ -1,7 +1,7 @@
 /* CAIXA DE CITAÇÕES */
 blockquote {
 	font-weight: 100;
-	font-size: 2.0rem;
+	font-size: 2.0rem !important;
 	max-width: 34%;
 	line-height: 1.4;
 	margin: 0 0 3px 10px;
