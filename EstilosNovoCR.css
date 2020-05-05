@@ -44,16 +44,16 @@ margin-top: -25px;
 PAINEL DO COMENTARISTA E DATA
 .comment .comment-header { background: none repeat scroll 0 0 #ffffff; font-size: 13px; font-weight: normal !important} Painel do comentarista e da data
 .comment .comment-header a { color: #aaa !important; text-decoration: none; font-weight: normal !important} Cor do elementos clicáveis
-*/
+
 SUBPAINEL SÓ DO COMENTARISTA
 .comment-header cite { background: none repeat scroll 0 0 #f5f5f5; border: 0px solid white; padding: 2px 17px; position: relative; z-index: 99; margin-left: 0px;} Cor do subpainel de quem não é autor
 cite.blog-author { background: none repeat scroll 0 0 #f5f5f5 !important} Cor do subpainel do autor
 cite.blog-author a:hover{ color: #cc0000 !important} Elementos clicáveis do autor
-/*
+*/
 BLOCO DE COMENTÁRIOS
 .comment .comment-block { margin-left: 50px !important; } Bloco de comentários
 .comment .comment-content { background: none repeat scroll 0 0 #fafafa; border-bottom: 0px solid #E6E6E6; font-size: 13px; margin: 0 0 30px; padding: 5px 15px 5px 15px; } Texto do comentário
-
+/*
 SINALIZAÇÃO
 .icon.blog-author { display: none !important; background: url("") no-repeat scroll 0 0; margin-left: 90px; width: 60px !important; height: 60px !important; position: absolute; right: 5px; bottom: 5px; top: 10px; } Sinalização de comentário do autor
 .comments .comments-content .icon.blog-author{position:absolute;top:-6px;right:-12px;background-image:url(http://cdn2.iconfinder.com/data/icons/crystalproject/16x16/apps/keditbookmarks.png) !important;width:36px;height:36px;margin:0}
