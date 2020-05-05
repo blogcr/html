@@ -36,10 +36,12 @@ margin-top: -25px;
 }
 */
 
+.comment .comment-block { margin-left: 50px !important; }
+.comment .comment-content { background: none repeat scroll 0 0 #fafafa; border-bottom: 0px solid #E6E6E6; font-size: 13px; margin: 0 0 30px; padding: 5px 15px 5px 15px; }
 
-.comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;}
-.comment .avatar-image-container img { border: medium none !important; height: 40px !important; width: 40px !important; max-height: 40px !important; max-width: 40px !important; }
-
+SINALIZAÇÃO
+.icon.blog-author { display: none !important; background: url("") no-repeat scroll 0 0; margin-left: 90px; width: 60px !important; height: 60px !important; position: absolute; right: 5px; bottom: 5px; top: 10px; }
+.comments .comments-content .icon.blog-author{position:absolute;top:-6px;right:-12px;background-image:url(http://cdn2.iconfinder.com/data/icons/crystalproject/16x16/apps/keditbookmarks.png) !important;width:36px;height:36px;margin:0}
 
 /* AVATAR
 .comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;} Borda externa do avatar
