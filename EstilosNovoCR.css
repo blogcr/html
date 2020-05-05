@@ -260,6 +260,6 @@ blockquote {
 }
 
 /* CUSTOMIZAÇÃO DO DISQUS */
-#main-nav  {
+#main-nav, nav.nav-primary  {
 	display: none;
 }
