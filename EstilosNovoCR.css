@@ -36,15 +36,15 @@ margin-top: -25px;
 }
 */
 
-/* AVATAR */
+/* AVATAR
 .comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;} Borda externa do avatar
 .comment .avatar-image-container img { border: medium none !important; height: 40px !important; width: 40px !important; max-height: 40px !important; max-width: 40px !important; } Tamanho interno do avatar
 
-/*
+*/
 PAINEL DO COMENTARISTA E DATA
 .comment .comment-header { background: none repeat scroll 0 0 #ffffff; font-size: 13px; font-weight: normal !important} Painel do comentarista e da data
 .comment .comment-header a { color: #aaa !important; text-decoration: none; font-weight: normal !important} Cor do elementos clicáveis
-
+/*
 SUBPAINEL SÓ DO COMENTARISTA
 .comment-header cite { background: none repeat scroll 0 0 #f5f5f5; border: 0px solid white; padding: 2px 17px; position: relative; z-index: 99; margin-left: 0px;} Cor do subpainel de quem não é autor
 cite.blog-author { background: none repeat scroll 0 0 #f5f5f5 !important} Cor do subpainel do autor
