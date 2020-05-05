@@ -260,6 +260,15 @@ blockquote {
 }
 
 /* CUSTOMIZAÇÃO DO DISQUS */
-#tos__container, #main-nav, #nav.nav.nav-primary, .nav-tab.nav-tab--primary.tab-general  {
-	display: none !important;
+disqus_thread {
+  position: relative;
+}
+#disqus_thread:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 80%;
+  position: relative;
+  bottom: -72px;
+  background: white; 
 }
