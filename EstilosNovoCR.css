@@ -258,17 +258,3 @@ blockquote {
 	clear: both;
 	margin-bottom:30px;
 }
-
-/* CUSTOMIZAÇÃO DO DISQUS */
-disqus_thread {
-  position: relative;
-}
-#disqus_thread:before {
-  content: "";
-  display: block;
-  height: 20px;
-  width: 80%;
-  position: relative;
-  bottom: -72px;
-  background: white; 
-}
