@@ -36,41 +36,41 @@ margin-top: -25px;
 }
 */
 
-/* AVATAR */
-.comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;} /* Borda externa do avatar */
-.comment .avatar-image-container img { border: medium none !important; height: 40px !important; width: 40px !important; max-height: 40px !important; max-width: 40px !important; } /* Tamanho interno do avatar */
+/* AVATAR
+.comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;} Borda externa do avatar
+.comment .avatar-image-container img { border: medium none !important; height: 40px !important; width: 40px !important; max-height: 40px !important; max-width: 40px !important; } Tamanho interno do avatar
 
-/* PAINEL DO COMENTARISTA E DATA */
-.comment .comment-header { background: none repeat scroll 0 0 #ffffff; font-size: 13px; font-weight: normal !important} /* Painel do comentarista e da data */
-.comment .comment-header a { color: #aaa !important; text-decoration: none; font-weight: normal !important} /* Cor do elementos clicáveis */
+PAINEL DO COMENTARISTA E DATA
+.comment .comment-header { background: none repeat scroll 0 0 #ffffff; font-size: 13px; font-weight: normal !important} Painel do comentarista e da data
+.comment .comment-header a { color: #aaa !important; text-decoration: none; font-weight: normal !important} Cor do elementos clicáveis
 
-/* SUBPAINEL SÓ DO COMENTARISTA */
-.comment-header cite { background: none repeat scroll 0 0 #f5f5f5; border: 0px solid white; padding: 2px 17px; position: relative; z-index: 99; margin-left: 0px;} /* Cor do subpainel de quem não é autor */
-cite.blog-author { background: none repeat scroll 0 0 #f5f5f5 !important} /* Cor do subpainel do autor */
-cite.blog-author a:hover{ color: #cc0000 !important} /* Elementos clicáveis do autor */
+SUBPAINEL SÓ DO COMENTARISTA
+.comment-header cite { background: none repeat scroll 0 0 #f5f5f5; border: 0px solid white; padding: 2px 17px; position: relative; z-index: 99; margin-left: 0px;} Cor do subpainel de quem não é autor
+cite.blog-author { background: none repeat scroll 0 0 #f5f5f5 !important} Cor do subpainel do autor
+cite.blog-author a:hover{ color: #cc0000 !important} Elementos clicáveis do autor
 
-/* BLOCO DE COMENTÁRIOS */
-.comment .comment-block { margin-left: 50px !important; } /* Bloco de comentários */
-.comment .comment-content { background: none repeat scroll 0 0 #fafafa; border-bottom: 0px solid #E6E6E6; font-size: 13px; margin: 0 0 30px; padding: 5px 15px 5px 15px; } /* Texto do comentário */
+BLOCO DE COMENTÁRIOS
+.comment .comment-block { margin-left: 50px !important; } Bloco de comentários
+.comment .comment-content { background: none repeat scroll 0 0 #fafafa; border-bottom: 0px solid #E6E6E6; font-size: 13px; margin: 0 0 30px; padding: 5px 15px 5px 15px; } Texto do comentário
 
-/* SINALIZAÇÃO */
-.icon.blog-author { display: none !important; background: url("") no-repeat scroll 0 0; margin-left: 90px; width: 60px !important; height: 60px !important; position: absolute; right: 5px; bottom: 5px; top: 10px; } /* Sinalização de comentário do autor */
+SINALIZAÇÃO
+.icon.blog-author { display: none !important; background: url("") no-repeat scroll 0 0; margin-left: 90px; width: 60px !important; height: 60px !important; position: absolute; right: 5px; bottom: 5px; top: 10px; } Sinalização de comentário do autor
 .comments .comments-content .icon.blog-author{position:absolute;top:-6px;right:-12px;background-image:url(http://cdn2.iconfinder.com/data/icons/crystalproject/16x16/apps/keditbookmarks.png) !important;width:36px;height:36px;margin:0}
-/* Posição da sinalização do autor */
+Posição da sinalização do autor
 
-/* RESPONDER E EXCLUIR */
-.comment .comment-actions a { background: none repeat scroll 0 0 #fafafa !important; color: #666666 !important; display: inline-block !important; line-height: 1 !important; padding: 3px 6px !important; text-decoration: none !important; font-size:14px; float:right } /* Moldura da palavra responder */
-.comment .comment-actions a:hover { background: #f5f5f5 !important; text-decoration: none !important; } /* Moldura Mouse da palavra Responder */
-.comments { font-family: arial, serif !important; font-size: 1em; color: black; } /* Palavra Respostas */
-.comments .continue a { display: none !important; font-weight: bold !important; padding: .5em !important; color:#E34600; font-size:16px; } /* Segunda palavra Responder */
-.tem-control.blog-admin {display: none;} /* Botão excluir */
+RESPONDER E EXCLUIR
+.comment .comment-actions a { background: none repeat scroll 0 0 #fafafa !important; color: #666666 !important; display: inline-block !important; line-height: 1 !important; padding: 3px 6px !important; text-decoration: none !important; font-size:14px; float:right } Moldura da palavra responder
+.comment .comment-actions a:hover { background: #f5f5f5 !important; text-decoration: none !important; } /* Moldura Mouse da palavra Responder
+.comments { font-family: arial, serif !important; font-size: 1em; color: black; } Palavra Respostas
+.comments .continue a { display: none !important; font-weight: bold !important; padding: .5em !important; color:#E34600; font-size:16px; } Segunda palavra Responder
+.tem-control.blog-admin {display: none;} Botão excluir
 
-/* SEM DEFINIÇÃO */
-.comments .continue { border-top: 2px solid transparent !important; display:none } /* ? */
-.comment .comment-actions a { background: none repeat scroll 0 0 #fff; color: #333; display: none; line-height: 1; margin: 0 0px; padding: 3px 6px !important; text-decoration: none; } /* ? */
-.comments .continue a:hover {color:#cc0000;text-decoration:none;display:none} /* ? */
+SEM DEFINIÇÃO
+.comments .continue { border-top: 2px solid transparent !important; display:none }
+.comment .comment-actions a { background: none repeat scroll 0 0 #fff; color: #333; display: none; line-height: 1; margin: 0 0px; padding: 3px 6px !important; text-decoration: none; }
+.comments .continue a:hover {color:#cc0000;text-decoration:none;display:none}
 
-/* MANIPULAÇÃO DA DATA E DA HORA */
+MANIPULAÇÃO DA DATA E DA HORA
 .comments .comments-content .datetime {
 cursor: pointer;
 float: right;
@@ -79,6 +79,7 @@ padding-right: 0px;
 font-size:11px;
 text-color:#000000 !important;
 }
+*/
 
 /* CAIXA DE TEXTO CINZA */
 .boxcinza {
