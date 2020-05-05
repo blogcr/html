@@ -261,5 +261,5 @@ blockquote {
 
 /* CUSTOMIZAÇÃO DO DISQUS */
 #main-nav, nav.nav-primary  {
-	display: none;
+	display: none !important;
 }
