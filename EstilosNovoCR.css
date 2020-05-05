@@ -260,6 +260,6 @@ blockquote {
 }
 
 /* CUSTOMIZAÇÃO DO DISQUS */
-#tos__container, #main-nav, .nav.nav-primary, .nav-tab.nav-tab--primary.tab-general  {
+#tos__container, #main-nav, #nav.nav.nav-primary, .nav-tab.nav-tab--primary.tab-general  {
 	display: none !important;
 }
