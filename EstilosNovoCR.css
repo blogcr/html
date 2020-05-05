@@ -36,3 +36,216 @@ margin-top: -25px;
 }
 */
 
+/* AVATAR */
+.comment .avatar-image-container { border: 0px solid #B6B6B6; max-height: 50px !important; margin-top: 0px; width: 40px !important; position: relative; z-index: 50; margin-left:0px !important ; display:block;} /* Borda externa do avatar */
+.comment .avatar-image-container img { border: medium none !important; height: 40px !important; width: 40px !important; max-height: 40px !important; max-width: 40px !important; } /* Tamanho interno do avatar */
+
+/* PAINEL DO COMENTARISTA E DATA */
+.comment .comment-header { background: none repeat scroll 0 0 #ffffff; font-size: 13px; font-weight: normal !important} /* Painel do comentarista e da data */
+.comment .comment-header a { color: #aaa !important; text-decoration: none; font-weight: normal !important} /* Cor do elementos clicáveis */
+
+/* SUBPAINEL SÓ DO COMENTARISTA */
+.comment-header cite { background: none repeat scroll 0 0 #f5f5f5; border: 0px solid white; padding: 2px 17px; position: relative; z-index: 99; margin-left: 0px;} /* Cor do subpainel de quem não é autor */
+cite.blog-author { background: none repeat scroll 0 0 #f5f5f5 !important} /* Cor do subpainel do autor */
+cite.blog-author a:hover{ color: #cc0000 !important} /* Elementos clicáveis do autor */
+
+/* BLOCO DE COMENTÁRIOS */
+.comment .comment-block { margin-left: 50px !important; } /* Bloco de comentários */
+.comment .comment-content { background: none repeat scroll 0 0 #fafafa; border-bottom: 0px solid #E6E6E6; font-size: 13px; margin: 0 0 30px; padding: 5px 15px 5px 15px; } /* Texto do comentário */
+
+/* SINALIZAÇÃO */
+.icon.blog-author { display: none !important; background: url("") no-repeat scroll 0 0; margin-left: 90px; width: 60px !important; height: 60px !important; position: absolute; right: 5px; bottom: 5px; top: 10px; } /* Sinalização de comentário do autor */
+.comments .comments-content .icon.blog-author{position:absolute;top:-6px;right:-12px;background-image:url(http://cdn2.iconfinder.com/data/icons/crystalproject/16x16/apps/keditbookmarks.png) !important;width:36px;height:36px;margin:0}
+/* Posição da sinalização do autor */
+
+/* RESPONDER E EXCLUIR */
+.comment .comment-actions a { background: none repeat scroll 0 0 #fafafa !important; color: #666666 !important; display: inline-block !important; line-height: 1 !important; padding: 3px 6px !important; text-decoration: none !important; font-size:14px; float:right } /* Moldura da palavra responder */
+.comment .comment-actions a:hover { background: #f5f5f5 !important; text-decoration: none !important; } /* Moldura Mouse da palavra Responder */
+.comments { font-family: arial, serif !important; font-size: 1em; color: black; } /* Palavra Respostas */
+.comments .continue a { display: none !important; font-weight: bold !important; padding: .5em !important; color:#E34600; font-size:16px; } /* Segunda palavra Responder */
+.tem-control.blog-admin {display: none;} /* Botão excluir */
+
+/* SEM DEFINIÇÃO */
+.comments .continue { border-top: 2px solid transparent !important; display:none } /* ? */
+.comment .comment-actions a { background: none repeat scroll 0 0 #fff; color: #333; display: none; line-height: 1; margin: 0 0px; padding: 3px 6px !important; text-decoration: none; } /* ? */
+.comments .continue a:hover {color:#cc0000;text-decoration:none;display:none} /* ? */
+
+/* MANIPULAÇÃO DA DATA E DA HORA */
+.comments .comments-content .datetime {
+cursor: pointer;
+float: right;
+padding-top: 6px;
+padding-right: 0px;
+font-size:11px;
+text-color:#000000 !important;
+}
+
+/* CAIXA DE TEXTO CINZA */
+.boxcinza {
+	font-size:80%;
+	background:#f5f5f5;
+	padding: 5px 10px;
+	}
+	
+/* TEXTO CINZA DIFERENCIADO */	
+.txtcinza {
+	color:#666666;
+	text-decoration:none
+	}
+	
+/* TEXTO CINZA PEQUENO */	
+.txtcinzapeq {
+	color:#cccccc;
+	text-decoration:none;
+	font-size:80%;
+	}
+	
+/* TEXTOS DE CRÉDITOS DE FOTOS */
+.fotos {
+	width:100%;
+	font-size:10px;
+	text-align:right;
+	color:#cccccc;
+	padding-right:10px;
+	margin: -5px 0 5px 0;
+	}
+	
+/* TEXTO COM BORDA INFERIOR CINZA */
+.brdcinza {
+	border-bottom:1px solid #cccccc;
+	}
+	
+/* TITULOS COM BORDA INFERIOR CINZA */
+.titulo {
+	color: #cccccc; 
+	font-size: 26px;
+	font-weight: bold;
+	border-bottom: 1px solid #cccccc;
+	vertical-align:bottom;
+	}
+	
+/* TEXTOS COM FONTE PEQUENA ABAIXO DO TÍTULO */
+.texto {
+	font-size:90%;
+	margin-top:8px;
+	}
+	
+/* BIOGRAFIAS E EXPLICAÇÕES */
+.bio {
+	font-size: 80%; 
+	margin-top: 20px;
+	}
+	
+/* CAIXA DE TEXTO CINZA NO RODAPÉ */
+.boxrodape {
+	border-bottom: 1px solid #cccccc;
+	background:#fafafa;
+	height:20px;
+	font-weight:bold;
+	font-size:12px;
+	padding-top:4px;
+	text-align:center;
+	vertical-align:bottom;
+	}
+
+/* TABELA DE TÍTULOS ACIMA DAS IMAGENS */
+.tabtitulo {
+	font-size: 34px; 
+	font-weight: bold; 
+	vertical-align: middle;
+	border-top: 1px solid #cccccc; 
+	border-bottom: 1px solid #cccccc;
+	}
+.tdnumero {
+	border-right: 1px solid #cccccc; 
+	color: #cccccc; 
+	text-align: center; 
+	width: 50px;
+	}
+.tdtitulo {
+	padding-left: 20px;
+	}
+.tdtitulosimples {
+	padding-right: 20px;
+	border-right: 1px solid #cccccc;
+	}
+.tdtexto {
+	font-size: 14px;
+	padding-left: 20px;
+	vertical-align: middle;
+	}
+	
+/* TABELA DE 3 COLUNAS SIMPLES */	
+.tab3col {
+	width: 100%;
+	background:#fafafa;
+	text-align: center;
+	}
+
+.td3col {
+	padding: 10px 0 30px 0; 
+	width: 33%;
+	}
+
+.tdmeio {
+	padding: 10px 0 30px 0; 
+	width: 34%;
+	}
+	
+/* CAIXA DO ADSENSE */
+.ads {
+	width:100%;
+	background:transparent;
+	text-align:center !important;
+	}
+
+/* CONFIGURAÇÃO DO LINKWITHIN */	
+.linkwithin_inner  {
+   	margin: 0px auto !important;
+   	border-top: 1px solid #cccccc !important;
+	}
+
+/* BACKGROUND DO YOUTUBE */
+.yt {
+	background:url(https://www.dropbox.com/s/7nhirkn92sbuhrk/YT-DUPLO.png?dl=1) left top no-repeat;
+	width: 90px;
+	border-style:none;
+    height: 16px;
+    }
+.yt:hover {
+	background:url(https://www.dropbox.com/s/7nhirkn92sbuhrk/YT-DUPLO.png?dl=1) left -16px no-repeat
+	}
+	
+/* BACKGROUND FONE DE OUVIDO */
+.ph {
+	background:url(https://www.dropbox.com/s/x5xw29hjbrzr9zf/Earphones.jpg?dl=1) left top no-repeat;
+	width: 57px;
+	heigth: 16px;
+	border-style:none;
+    }
+    
+.ph:hover {
+	background:url(https://www.dropbox.com/s/x5xw29hjbrzr9zf/Earphones.jpg?dl=1) left -16px no-repeat;
+    }
+
+/*QUADRO VEJA TAMBÉM */	
+.vt {
+  	font-size:12px;
+  	color:#000000;
+  	padding:0px 8px 0 10px;  
+  	margin:0px 0 -10px 10px;
+  	position:relative;
+  	background:#ffffff;
+  	width:85px;
+	}
+.qvt {
+  	border:1px solid #cccccc;
+  	padding:10px 10px 10px 53px;
+  	font-size:15px;
+	}
+
+/* SEPARADOR VERTICAL */
+.sep {
+	clear: both;
+	margin-bottom:30px;
+	}
