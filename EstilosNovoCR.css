@@ -69,8 +69,8 @@ blockquote {
 	text-align: center;
 }
 
-blockquote :: before {
-	content: open-quote;
+blockquote::before {
+	content: "open-quote";
 	font-size: 30px;
 	position: relative;
 	top: 0px;
