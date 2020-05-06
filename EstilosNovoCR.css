@@ -69,15 +69,6 @@ blockquote {
 	text-align: center;
 }
 
-blockquote::before {
-	content: "§";
-	font-size: 30px;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	color: #000000;
-}		
-
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
     	width  : 800px;
