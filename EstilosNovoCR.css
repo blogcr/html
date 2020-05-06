@@ -263,11 +263,11 @@ blockquote {
 {
 color:#ffffff;
 display: inline-block !important;
-background:#3BB7D9;
+background:#292832;
 padding:10px;
 }
 .comments .comment .comment-actions a {
-background:#3BB7D9;
+background:#292832;
 border-radius: 5px;
 color: #ffffff;
 font:12px georgia;
@@ -285,8 +285,8 @@ padding: 10px;
 border-top:none !important;
 }
 .continue a {
-background:#3BB7D9;
-border: 1px solid #3BB7D9;
+background:#292832;
+border: 1px solid #444;
 border-radius:5px;
 color: #ffffff;
 display: inline-block !important;
@@ -295,7 +295,6 @@ padding:5px;
 text-decoration: none !important;
 font:12px georgia ,arial;
 }
-
 .comment-header a {
 color: #222222 !important;
 }
