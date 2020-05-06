@@ -260,9 +260,3 @@ blockquote {
 	clear: both;
 	margin-bottom:30px;
 }
-
-.avatar-image-container img {
-    content: url(http://1.bp.blogspot.com/_7wsQzULWIwo/SxL-DRXzmWI/AAAAAAAACY0/d1g3ymxGLEQ/s400/avatar.gif) !important;
-    width: 36px important;
-    height: 36px important;
-}
