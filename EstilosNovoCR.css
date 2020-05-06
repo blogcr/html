@@ -72,7 +72,7 @@ blockquote {
 blockquote::before {
 	content: "§";
 	font-size: 30px;
-	position: relative;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	color: #000000;
