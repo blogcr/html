@@ -260,3 +260,59 @@ blockquote {
 	clear: both;
 	margin-bottom:30px;
 }
+
+.comments h4
+{
+color:#ffffff;
+display: inline-block !important;
+background:#292832;
+padding:10px;
+}
+.comments .comment .comment-actions a {
+background:#292832;
+border-radius: 5px;
+color: #ffffff;
+font:12px georgia;
+margin-right: 8px;
+padding:5px;
+text-decoration: none !important;
+}
+.comments .comment-block {
+background:#f8f8f8;
+border: 1px solid #f0f0f0;
+padding: 10px;
+}
+.continue
+{
+border-top:none !important;
+}
+.continue a {
+background:#292832;
+border: 1px solid #444;
+border-radius:5px;
+color: #ffffff;
+display: inline-block !important;
+margin-top: 8px;
+padding:5px;
+text-decoration: none !important;
+font:12px georgia ,arial;
+}
+.comment-header a {
+color: #222222 !important;
+}
+#comments .avatar-image-container img {
+border:2px solid #f0f0f0;
+border-radius: 50px 50px 50px 50px;
+height: 58px;
+max-width: 58px;
+}
+.comments .avatar-image-container {
+border: 2px solid #FFFFFF;
+border-radius: 34px 34px 34px 34px;
+box-shadow: 1px 1px 3px #dcdcdc;
+float: left;
+margin-left: -20px;
+max-height: 61px !important;
+overflow: hidden;
+width: 61px !important;
+}
