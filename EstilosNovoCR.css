@@ -75,7 +75,7 @@ blockquote::before {
   padding: 0 4px 0 4px;
   font-size:20px;
   position: absolute !important;
-  top: -20% !important;
+  top: -10% !important;
   left: 10% !important;
 }
 
@@ -87,8 +87,8 @@ blockquote::after {
   padding: 0 4px 0 4px;
   font-size:20px;
   position: absolute !important;
-  bottom: 10px !important;
-  right: -20px !important;
+  bottom: 10% !important;
+  right: -10% !important;
 } 
 
 /* CAIXA DO FANCYBOX */
