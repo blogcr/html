@@ -75,8 +75,8 @@ blockquote::before {
   padding: 0 4px 0 4px;
   font-size:20px;
   position: absolute !important;
-  top: -10% !important;
-  left: 5% !important;
+  top: 10px !important;
+  left: -10px !important;
   display:block;
 }
 /*
