@@ -66,7 +66,7 @@ blockquote {
 	color: #FFFFFF;
 	text-align: center;	
 }
-/*
+
 blockquote::before {
   content:"\f10d";
   color: #B71C1C;
@@ -77,8 +77,9 @@ blockquote::before {
   position: absolute !important;
   top: -10% !important;
   left: -10% !important;
+  display:block;
 }
-
+/*
 blockquote::after {
 	display:none;
   content:"\f10e";
