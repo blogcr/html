@@ -85,8 +85,8 @@ blockquote::before {
 
 blockquote::after {
   	content:"\f10e";
-  	bottom: 10px !important;
-  	right: -10px !important;
+  	bottom: -10px !important;
+  	right: 10px !important;
 } 
 
 /* CAIXA DO FANCYBOX */
