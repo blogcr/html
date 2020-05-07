@@ -78,8 +78,9 @@ blockquote::before {
   top: -10% !important;
   left: -10% !important;
 }
-/*
+
 blockquote::after {
+	display:none;
   content:"\f10e";
   color: #B71C1C;
   background: white;
@@ -90,7 +91,7 @@ blockquote::after {
   bottom: 10% !important;
   right: -2% !important;
 } 
-*/
+
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
     	width  : 800px;
