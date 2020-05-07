@@ -76,9 +76,9 @@ blockquote::before {
   font-size:20px;
   position: absolute !important;
   top: -10% !important;
-  left: 10% !important;
+  left: -10% !important;
 }
-
+/*
 blockquote::after {
   content:"\f10e";
   color: #B71C1C;
@@ -90,7 +90,7 @@ blockquote::after {
   bottom: 10% !important;
   right: -2% !important;
 } 
-
+*/
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
     	width  : 800px;
