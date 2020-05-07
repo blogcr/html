@@ -56,18 +56,40 @@ legend {
 
 /* CAIXA DE CITAÇÕES */
 blockquote {
-	font-weight: 100;
-	font-size: 2.0rem !important;
+	font: 100 2.0rem / 1.4 'Oswald', cursive !important;
 	max-width: 34%;
-	line-height: 1.4;
-	margin: 0 0 1px 10px;
-	padding: 10px 10px;
+	margin: 0 0 1px 5px;
+	padding: 15px 10px;
 	float: right;
-	font-family: 'Oswald', cursive;
-	background: #B71C1C;
+	position: relative;
+  	background: #B71C1C;
 	color: #FFFFFF;
-	text-align: center;
+	text-align: center;	
 }
+
+blockquote::before {
+  content:"\f10d";
+  color: #B71C1C;
+  background: white;
+  font-family:'FontAwesome';
+  padding: 0 4px 0 4px;
+  font-size:20px;
+  position: absolute;
+  top: -10;
+  left: 10;
+}
+
+blockquote::after {
+  content:"\f10e";
+  color: #B71C1C;
+  background: white;
+  font-family:'FontAwesome';
+  padding: 0 4px 0 4px;
+  font-size:20px;
+  position: absolute;
+  bottom: 10;
+  right: -10;
+} 
 
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
