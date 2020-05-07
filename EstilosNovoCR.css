@@ -68,19 +68,6 @@ blockquote {
 }
 
 blockquote::before, blockquote::after {
-  	content:"\f10d";
-  	color: #B71C1C;
-  	background: white;
-  	font-family:'FontAwesome';
-  	padding: 0 4px 0 4px;
-  	font-size:20px;
-  	position: absolute !important;
-  	top: -10px !important;
-  	left: 10px !important;
-  	display:block;
-}
-
-blockquote::before, blockquote::after {
   	color: #B71C1C;
   	background: white;
   	font-family:'FontAwesome';
