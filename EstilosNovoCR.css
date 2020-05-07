@@ -67,7 +67,7 @@ blockquote {
 	text-align: center;	
 }
 
-blockquote::before {
+blockquote::before, blockquote::after {
   	content:"\f10d";
   	color: #B71C1C;
   	background: white;
@@ -79,20 +79,29 @@ blockquote::before {
   	left: 10px !important;
   	display:block;
 }
-/*
+
+blockquote::before, blockquote::after {
+  	color: #B71C1C;
+  	background: white;
+  	font-family:'FontAwesome';
+  	padding: 0 4px 0 4px;
+  	font-size:20px;
+  	position: absolute !important;
+  	display:block;
+}
+
+blockquote::before {
+  	content:"\f10d";
+   	top: -10px !important;
+  	left: 10px !important;
+}
+
 blockquote::after {
-	display:none;
-  content:"\f10e";
-  color: #B71C1C;
-  background: white;
-  font-family:'FontAwesome';
-  padding: 0 4px 0 4px;
-  font-size:20px;
-  position: absolute !important;
-  bottom: 10% !important;
-  right: -2% !important;
+  	content:"\f10e";
+  	bottom: 10px !important;
+  	right: -10px !important;
 } 
-*/
+
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
     	width  : 800px;
