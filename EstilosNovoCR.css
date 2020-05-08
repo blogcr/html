@@ -79,13 +79,13 @@ blockquote::before, blockquote::after {
 
 blockquote::before {
   	content:"\f10d";
-   	top: -15px !important;
+   	top: -20px !important;
   	left: 10px !important;
 }
 
 blockquote::after {
   	content:"\f10e";
-  	bottom: -15px !important;
+  	bottom: -20px !important;
   	right: 10px !important;
 } 
 
