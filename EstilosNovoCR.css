@@ -72,7 +72,7 @@ blockquote::before, blockquote::after {
   	background: white;
   	font-family:'FontAwesome';
   	padding: 0 4px 0 4px;
-  	font-size:15vw;
+  	font-size:20px;
   	position: absolute !important;
   	display:block;
 }
