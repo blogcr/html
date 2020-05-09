@@ -1,3 +1,62 @@
+/* POSTS RELACIONADOS */
+#related-posts {
+	witdh: 100% !important;
+	margin-bottom: 10px 0 20px 0;
+}
+
+#related-posts ul {
+	background: transparent;
+    	font-weight: bold;
+	display: table;
+	margin: 0 auto;
+}
+
+#related-posts li {
+	background: #333134;
+	float: left;
+	font-size: 12px;
+    	font-weight: bold;
+    	margin: 0px 5px 0 5px;
+    	width: 160px;
+	height: 180px;
+}
+
+#related-posts a {
+	text-decoration: none !important;
+}
+
+.pthumb {
+    	background-color: #333134;
+    	border: 0px solid #333134;
+    	border-radius: 0px;
+    	max-height: 109px;
+    	margin: 0 0 10px 0;
+    	overflow: hidden;
+    	width: 160px;
+}
+
+.pthumb img {
+    	object-fit: cover;
+}
+
+#related-posts img:hover {
+    	opacity: 0.8;
+}
+
+#related-posts ul li:nth-child(4n+4) {
+    	margin-right: 0;
+}
+
+.pthumbtext {
+   	margin: 10px 10px 10px 10px !important;
+}
+
+.pthumbtext a {
+   	text-decoration: none !important;
+   	color: #ffffff !important;
+}
+
+
 /* FIXA O QUADRO DE ENTREVISTAS
 
 #Image1 {
@@ -8,6 +67,7 @@
 	max-width:100% !important;
 }
  */
+
 
 /* ILUSTRAÇÕES DENTRO DAS POSTAGENS */
 .dir {
@@ -40,6 +100,7 @@ figcaption {
   	font-weight: bold;
 }
 
+
 /* CAIXAS DO RODAPÉ DAS POSTAGENS */
 fieldset {
   	display: block;
@@ -64,6 +125,7 @@ legend {
 	width: auto;
 	background: #ffffff;
 }
+
 
 /* CAIXA DE CITAÇÕES */
 blockquote {
@@ -100,6 +162,7 @@ blockquote::after {
   	right: 10px !important;
 } 
 
+
 /* CAIXA DO FANCYBOX */
 .fancybox-slide--iframe .fancybox-content {
     	width  : 800px;
@@ -108,6 +171,7 @@ blockquote::after {
     	max-height : 80%;
     	margin: 0;
 }
+
 
 /* MOLDURA DE COMPARTILHAR
 .compartilhe {
@@ -122,6 +186,9 @@ blockquote::after {
 }
 */
 
+
+
+/* TEMPLATE ANTIGO */
 /* CAIXA DE TEXTO CINZA */
 .boxcinza {
 	font-size:80%;
