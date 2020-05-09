@@ -1,24 +1,24 @@
 /* POSTS RELACIONADOS */
 #related-posts {
 	witdh: 100% !important;
-	margin-bottom: 10px 0 20px 0;
+	margin-bottom: 10px 0 20px 0 !important;
 }
 
 #related-posts ul {
-	background: transparent;
-    	font-weight: bold;
-	display: table;
-	margin: 0 auto;
+	background: transparent !important;
+    	font-weight: bold !important;
+	display: table !important;
+	margin: 0 auto !important;
 }
 
 #related-posts li {
-	background: #333134;
-	float: left;
-	font-size: 12px;
-    	font-weight: bold;
-    	margin: 0px 5px 0 5px;
-    	width: 160px;
-	height: 180px;
+	background: #333134 !important;
+	float: left !important;
+	font-size: 12px !important;
+    	font-weight: bold !important;
+    	margin: 0px 5px 0 5px !important;
+    	width: 160px !important;
+	height: 180px !important;
 }
 
 #related-posts a {
@@ -26,25 +26,25 @@
 }
 
 .pthumb {
-    	background-color: #333134;
-    	border: 0px solid #333134;
-    	border-radius: 0px;
-    	max-height: 109px;
-    	margin: 0 0 10px 0;
-    	overflow: hidden;
-    	width: 160px;
+    	background-color: #333134 !important;
+    	border: 0px solid #333134 !important;
+    	border-radius: 0px !important;
+    	max-height: 109px !important;
+    	margin: 0 0 10px 0 !important;
+    	overflow: hidden !important;
+    	width: 160px !important;
 }
 
 .pthumb img {
-    	object-fit: cover;
+    	object-fit: cover !important;
 }
 
 #related-posts img:hover {
-    	opacity: 0.8;
+    	opacity: 0.8 !important;
 }
 
 #related-posts ul li:nth-child(4n+4) {
-    	margin-right: 0;
+    	margin-right: 0 !important;
 }
 
 .pthumbtext {
