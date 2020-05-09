@@ -5,6 +5,7 @@
   	position: sticky !important;
   	top: 0 !important;
 	z-index: 100 !important;
+	max-width:100% !important;
 }
 
 /* ILUSTRAÇÕES DENTRO DAS POSTAGENS */
