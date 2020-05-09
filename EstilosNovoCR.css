@@ -1,3 +1,11 @@
+/* FIXA O QUADRO DE ENTREVISTAS */
+
+#Image1 {
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0;
+}
+
 /* ILUSTRAÇÕES DENTRO DAS POSTAGENS */
 .dir {
 	display: inline-block !important;
