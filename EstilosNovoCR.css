@@ -6,7 +6,7 @@
 
 .pergunta {
   	padding-left: 10px;
-	text-transform: italic;
+	font-style: italic;
 }
 
 .entrevista {
