@@ -4,7 +4,7 @@
   	position: -webkit-sticky !important;
   	position: sticky !important;
   	top: 0 !important;
-	z-index: 0 !important;
+	z-index: 1 !important;
 }
 
 /* ILUSTRAÇÕES DENTRO DAS POSTAGENS */
