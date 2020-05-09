@@ -55,7 +55,7 @@ fieldset {
   	transparency: 0 !important;
 }
 
-.entrevista {
+fieldset .entrevista {
   	margin: 10px 0 10px 10px !important;
   	border: 1px solid #EEEEEE !important;
 	border-bottom: 0px solid transparent !important;
