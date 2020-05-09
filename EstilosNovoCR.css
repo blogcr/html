@@ -55,6 +55,17 @@ fieldset {
   	transparency: 0 !important;
 }
 
+fieldset .entrevista {
+  	display: block;
+  	margin: 10px 0 10px 10px !important;
+  	padding: 20px 20px;
+  	border: 1px solid #EEEEEE !important;
+	border-bottom: 0px solid transparent !important;
+	border-right: 0px solid transparent !important;
+	border-radius: 5px !important;
+  	background: #FFF9C4;
+}
+
 legend {
 	font-size:14 px;
  	border: 0px solid #424242;
