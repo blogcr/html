@@ -1,3 +1,8 @@
+p10 {
+  	margin: 2px 10px 2px 10px;
+	background: #FFF9C4;
+}
+
 /* FIXA O QUADRO DE ENTREVISTAS
 
 #Image1 {
@@ -53,15 +58,6 @@ fieldset {
   	background: transparent;
   	opacity: 1 !important;
   	transparency: 0 !important;
-}
-
-fieldset .entrevista {
-  	margin: 10px 0 10px 10px !important;
-  	border: 1px solid #EEEEEE !important;
-	border-bottom: 0px solid transparent !important;
-	border-right: 0px solid transparent !important;
-	border-radius: 5px !important;
-  	background: #FFF9C4;
 }
 
 legend {
