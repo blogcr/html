@@ -4,6 +4,11 @@
 	right: 30px;
 }
 
+.pergunta {
+  	padding-left: 10px;
+	text-transform: italic;
+}
+
 .entrevista {
 	margin: 10px 0px 15px 0px;
   	padding: 10px 20px 10px 20px;
