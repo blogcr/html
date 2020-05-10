@@ -159,18 +159,17 @@ blockquote::after {
 	max-width: 150px;
 	float: left;
 	margin: auto 20px auto auto;
-	position: absolute;
 	}
 
 .poster {
-	position: absolute;
+	position: relative;
 	max-height: 120px !important;
 	float: right;
 	top: -10px;
 	}
 
 .bio {
-	position: absolute;
+	color: #616161;
 	font-size: 80%; 
 	}
 
@@ -214,7 +213,7 @@ blockquote::after {
 	
 /* TITULOS COM BORDA INFERIOR CINZA */
 .titulo {
-	color: #cccccc; 
+	color: #616161; 
 	font-size: 26px;
 	font-weight: bold;
 	border-bottom: 1px solid #cccccc;
