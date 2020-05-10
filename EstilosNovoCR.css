@@ -149,8 +149,7 @@ blockquote::after {
 */
 
 .quadro {
-	position: relative;
-	display: block;
+	display: inline-block;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -159,15 +158,14 @@ blockquote::after {
 
 .fotopeq {
 	position: absolute;
-	max-width: 150px;
+	max-width: 20%;
 	float: left;
 	margin: auto 20px auto auto;
-	align: top;
 	}
 
 .filmposter {
 	position: absolute;
-	max-height: 120px !important;
+	max-width: 20%;
 	float: right;
 	}
 
