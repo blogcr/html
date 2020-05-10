@@ -164,7 +164,6 @@ blockquote::after {
 	}
 
 .filmposter {
-	position: absolute;
 	float: right !important;
 	margin: 0 auto auto 20px !important;
 	max-height: 120px !important;
@@ -228,6 +227,7 @@ blockquote::after {
 .texto {
 	font-size:90%;
 	margin-top:10px;
+	line-height: 90%;
 	}
 	
 /* BIOGRAFIAS E EXPLICAÇÕES */
