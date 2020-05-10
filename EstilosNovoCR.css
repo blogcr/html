@@ -149,8 +149,10 @@ blockquote::after {
 */
 
 .quadro {
-	max-height: 200px;
 	background-color: #FAFAFA;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 20px;
 	}
 
 .fotopeq {
@@ -168,9 +170,10 @@ blockquote::after {
 	}
 
 .bio {
-	position: relative;
+	position: absolute;
 	font-size: 80%; 
 	bottom: 0px;
+	right: 0px;
 	}
 
 
