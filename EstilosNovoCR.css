@@ -150,6 +150,7 @@ blockquote::after {
 
 .quadro {
 	position: relative;
+	display: block;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -168,7 +169,6 @@ blockquote::after {
 	position: absolute;
 	max-height: 120px !important;
 	float: right;
-	align: top;
 	}
 
 .bio {
