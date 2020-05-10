@@ -156,9 +156,9 @@ blockquote::after {
 	}
 
 .fotopeq {
-	max-width: 200px;
+	max-width: 150px;
 	float: left;
-	margin: 5px 20px 5px 0;
+	margin: auto 20px auto auto;
 	align: top;
 	}
 
@@ -166,11 +166,12 @@ blockquote::after {
 	position: relative;
 	max-height: 100px !important;
 	float: right;
-	margin: 5px 0px 5px 20px;
+	margin: auto auto auto 20px;
 	}
 
 .bio {
 	position: absolute;
+	float: right;
 	font-size: 80%; 
 	bottom: 0px;
 	right: 0px;
