@@ -226,8 +226,8 @@ blockquote::after {
 	
 /* TEXTOS COM FONTE PEQUENA ABAIXO DO TÍTULO */
 .texto {
-	font-size:80%;
-	margin-top:8px;
+	font-size:90%;
+	margin-top:10px;
 	}
 	
 /* BIOGRAFIAS E EXPLICAÇÕES */
