@@ -104,7 +104,7 @@ blockquote {
 
 blockquote::before, blockquote::after {
   	color: #B71C1C;
-  	background: transparent;
+  	background: #FFFFFF;
   	font-family:'FontAwesome';
   	padding: 0 4px 0 4px;
   	font-size:20px;
