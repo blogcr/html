@@ -152,7 +152,7 @@ blockquote::after {
 	display: block;
 	background-color: #FAFAFA;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	height: 160px;
 	}
 
@@ -165,8 +165,9 @@ blockquote::after {
 
 .filmposter {
 	float: right !important;
-	margin: -10px auto auto 20px !important;
+	margin: 0 auto auto 20px !important;
 	max-height: 120px !important;
+	top: -10px;
 	}
 
 .bio {
@@ -226,6 +227,7 @@ blockquote::after {
 .texto {
 	font-size:80%;
 	margin-top:8px;
+	line-height: 80%;
 	}
 	
 /* BIOGRAFIAS E EXPLICAÇÕES */
