@@ -148,9 +148,16 @@ blockquote::after {
 }
 */
 
+.fotopeq {
+	max-width: 200px;
+	float: left;
+	margin: 5px 20px 5px 0;
+	align: top;
+	}
 
 
-/* TEMPLATE ANTIGO */
+
+/* --------------------------------------------------------TEMPLATE ANTIGO */
 /* CAIXA DE TEXTO CINZA */
 .boxcinza {
 	font-size:80%;
