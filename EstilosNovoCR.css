@@ -156,12 +156,14 @@ blockquote::after {
 	}
 
 .poster {
-	max-height: 100px;
+	position: relative;
+	max-height: 100px !important;
 	float: right;
 	margin: 5px 0px 5px 20px;
 	}
 
 .bio {
+	position: relative;
 	font-size: 80%; 
 	bottom: 0px;
 	}
