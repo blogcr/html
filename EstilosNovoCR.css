@@ -164,9 +164,11 @@ blockquote::after {
 	}
 
 .filmposter {
-	position: absolute;
-	max-width: 20%;
-	float: right;
+	display: inline-block !important;
+	float: right !important;
+	margin: 0 0 1px 20px !important;
+	width: 20% !important;
+	height: auto !important;
 	}
 
 .bio {
