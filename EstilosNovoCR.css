@@ -164,8 +164,8 @@ blockquote::after {
 	}
 
 .textopeq, textoita {
-	font-size: 1.2rem !important;;
-	line-height: 1.2rem !important;
+	font-size: 12px !important;;
+	line-height: 14px !important;
 	}
 
 .textoita {
