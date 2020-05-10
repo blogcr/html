@@ -149,7 +149,7 @@ blockquote::after {
 */
 
 .quadro {
-	display: inline-block;
+	display: inline;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 20px;
