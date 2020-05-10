@@ -149,7 +149,7 @@ blockquote::after {
 */
 
 .quadro {
-	display: inline;
+	display: block;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -157,7 +157,7 @@ blockquote::after {
 	}
 
 .fotopeq {
-	position: absolute;
+	align: top;
 	max-width: 20%;
 	float: left;
 	margin: auto 20px auto auto;
