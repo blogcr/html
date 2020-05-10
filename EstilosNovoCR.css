@@ -165,7 +165,7 @@ blockquote::after {
 
 .filmposter {
 	float: right !important;
-	margin-top: -30px !important;
+	margin: auto auto auto 20px !important;
 	max-height: 120px !important;
 	}
 
