@@ -153,19 +153,22 @@ blockquote::after {
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 20px;
-	height: 170px;
+	height: 160px;
 	}
 
 .fotopeq {
+	position: absolute;
 	max-width: 150px;
 	float: left;
 	margin: auto 20px auto auto;
+	align: top;
 	}
 
-.poster {
+.filmposter {
 	position: absolute;
 	max-height: 120px !important;
 	float: right;
+	align: top;
 	}
 
 .bio {
