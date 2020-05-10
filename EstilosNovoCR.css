@@ -148,6 +148,11 @@ blockquote::after {
 }
 */
 
+.quadro {
+	max-height: 200px;
+	background-color: #FAFAFA;
+	}
+
 .fotopeq {
 	max-width: 200px;
 	float: left;
