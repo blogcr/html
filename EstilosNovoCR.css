@@ -165,7 +165,7 @@ blockquote::after {
 
 .filmposter {
 	float: right !important;
-	margin: auto auto auto 20px !important;
+	margin: -10px auto auto 20px !important;
 	max-height: 120px !important;
 	}
 
@@ -224,7 +224,7 @@ blockquote::after {
 	
 /* TEXTOS COM FONTE PEQUENA ABAIXO DO TÍTULO */
 .texto {
-	font-size:90%;
+	font-size:80%;
 	margin-top:8px;
 	}
 	
