@@ -164,14 +164,13 @@ blockquote::after {
 	}
 
 .textopeq, .textoita {
-	font-size: 14px !important;;
+	font-size: 14px !important;
 	line-height: 18px !important;
 	}
 
 .textoita {
 	font-style: italic;
 	color: #616161;
-	padding-top: 10px;
 	}
 
 .filmposter {
