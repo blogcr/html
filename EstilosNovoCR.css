@@ -172,6 +172,7 @@ blockquote::after {
 .bio {
 	color: #616161;
 	font-size: 80%; 
+	margin-top:20px;
 	}
 
 
