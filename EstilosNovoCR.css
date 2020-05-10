@@ -160,7 +160,8 @@ blockquote::after {
 	max-width: 150px;
 	float: left;
 	margin: auto 20px auto auto;
-	align: top;
+	top: -10px;
+	position: absolute;
 	}
 
 .poster {
