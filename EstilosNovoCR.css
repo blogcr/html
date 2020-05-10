@@ -172,6 +172,7 @@ blockquote::after {
 .textoita {
 	font-style: italic;
 	color: #616161;
+	text-align: right;
 	}
 
 .filmposter {
@@ -182,7 +183,7 @@ blockquote::after {
 	}
 
 .bio {
-	color: #616161;
+	color: #B71C1C;
 	font-size: 80%; 
 	margin-top:20px;
 	}
