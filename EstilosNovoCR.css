@@ -163,6 +163,15 @@ blockquote::after {
 	margin: auto 20px auto auto;
 	}
 
+.textopeq, textoita {
+	font-size: 1.2rem !important;;
+	line-height: 1.2rem !important;
+	}
+
+.textoita {
+	font-style: italic;
+	}
+
 .filmposter {
 	float: right !important;
 	margin: 0 auto auto 20px !important;
