@@ -36,6 +36,7 @@
 	margin: 0 0 1px 20px !important;
 	width: 35% !important;
 	height: auto !important;
+	z-index:100;
 }
 
 .esq {
@@ -44,6 +45,7 @@
 	margin: 0 20px 1px 0 !important;
 	width: 35% !important;
 	height: auto !important;
+	z-index:100;
 }
 
 figcaption {
@@ -72,6 +74,7 @@ fieldset {
   	background: transparent;
   	opacity: 1 !important;
   	transparency: 0 !important;
+	z-index:100;
 }
 
 legend {
