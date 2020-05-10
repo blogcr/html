@@ -183,8 +183,9 @@ blockquote::after {
 	}
 
 .bio { 
-	color: #B71C1C; 
 	margin-top:10px;
+	font-size: 90%;
+	font-weight: bold;
 	}
 
 
