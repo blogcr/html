@@ -27,6 +27,10 @@
 	height: 20px !important;
 }
 
+.pds-box.pds-answer, .pds-box {
+	border-bottom: 0px !important;
+}
+
 /* POSTAGENS DE ENTREVISTAS */
 .p30 {
 	padding: 0 30px 0 30px !important;
