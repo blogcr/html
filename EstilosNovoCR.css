@@ -157,8 +157,11 @@ blockquote::after {
 	}
 
 .fotopeq {
+	
+	width: 100%;
+  	max-width: 100px;
+  	height: auto;
 	align: top;
-	width: 20%;
 	float: left;
 	margin: auto 20px auto auto;
 	}
