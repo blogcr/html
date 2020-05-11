@@ -12,6 +12,16 @@
 	border: 0px !important;
 }
 
+.css-vote-button pds-vote-button, .css-vote-button {
+	width: 30% !important;
+	float: left !important;
+}
+
+.css-links pds-links, .css-links {
+	width: 70% !important;
+	float: right !important;
+}
+
 /* POSTAGENS DE ENTREVISTAS */
 .p30 {
 	padding: 0 30px 0 30px !important;
