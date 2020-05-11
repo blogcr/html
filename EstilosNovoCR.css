@@ -227,7 +227,7 @@ blockquote::after {
 	
 /* TITULOS COM BORDA INFERIOR CINZA */
 .titulo {
-	color: #616161; 
+	color: #B71C1C; 
 	font-size: 26px;
 	font-weight: bold;
 	border-bottom: 1px solid #cccccc;
