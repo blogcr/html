@@ -148,17 +148,16 @@ blockquote::after {
 }
 */
 
-.quadro {
+#quadro {
 	display: block;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 40px;
-	height: 200px;
 	}
 
 .fotopeq {
-	width: 100%;
-  	height: auto;
+	max-height:180px;
+	width:auto;
 	align: top;
 	float: left;
 	margin: auto 20px auto auto;
