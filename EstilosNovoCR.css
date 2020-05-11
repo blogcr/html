@@ -232,6 +232,7 @@ blockquote::after {
 	color: #B71C1C; 
 	font-size:2em;
 	font-weight:bold;
+	line-height: 2em;
 	border-bottom: 1px solid #cccccc;
 	vertical-align:bottom;
 	}
