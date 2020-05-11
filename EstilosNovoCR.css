@@ -27,7 +27,7 @@
 	height: 20px !important;
 }
 
-.css-answer.pds-answer, .css-answer {
+.css-answer.pds-answer, .css-answer, .pds-box.pds-answer, pds-box, .pds-answer  {
 	border-bottom: 0px !important;
 }
 
