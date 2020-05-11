@@ -30,7 +30,7 @@
 
 /* ILUSTRAÇÕES DENTRO DAS POSTAGENS */
 .dir {
-	display: inline-block !important;
+	display: in-block !important;
 	float: right !important;
 	margin: 0 0 1px 20px !important;
 	width: 35% !important;
@@ -230,8 +230,8 @@ blockquote::after {
 /* TITULOS COM BORDA INFERIOR CINZA */
 .titulo {
 	color: #B71C1C; 
-	font-size:7vw;
-	font-weight: bold;
+	font-size:2em;
+	font-weight:bold;
 	border-bottom: 1px solid #cccccc;
 	vertical-align:bottom;
 	}
