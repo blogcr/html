@@ -153,6 +153,7 @@ blockquote::after {
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 40px;
+	width:100%;
 	}
 
 .fotopeq {
