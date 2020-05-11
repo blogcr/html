@@ -1,7 +1,10 @@
+/* MODIFICA LAYOUT DO POLLDADDY */
+
 .css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
 	padding: 0px 0px !important;
 }
 
+/* POSTAGENS DE ENTREVISTAS */
 .p30 {
 	padding: 0 30px 0 30px !important;
 	font-style: italic !important;
@@ -163,6 +166,7 @@ blockquote::after {
 .fotopeq {
 	height:auto;
 	width:20%;
+	max-width:20%;
 	align: top;
 	float: left;
 	margin: auto 20px auto auto;
