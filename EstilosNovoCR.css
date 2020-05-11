@@ -12,6 +12,11 @@
 	border: 0px !important;
 }
 
+.css-votebutton-outer.pds-votebutton-outer, .css-votebutton-outer {
+	width: 100% !important;
+	display: inline-block !important;
+}
+
 .css-vote-button.pds-vote-button, .css-vote-button {
 	width: 15% !important;
 	float: left !important;
@@ -23,7 +28,6 @@
 }
 
 .css-vote.pds-vote, .css-vote {
-	display: inline-block !important;
 	height: 20px !important;
 }
 
