@@ -230,9 +230,9 @@ blockquote::after {
 /* TITULOS COM BORDA INFERIOR CINZA */
 .titulo {
 	color: #B71C1C; 
-	font-size:5vw !important;
+	font-size:2vw !important;
 	font-weight:bold;
-	line-height: 5vw !important;
+	line-height: 2vw !important;
 	border-bottom: 1px solid #cccccc;
 	vertical-align:bottom;
 	}
