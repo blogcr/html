@@ -13,12 +13,12 @@
 }
 
 .css-vote-button.pds-vote-button, .css-vote-button {
-	width: 20% !important;
+	width: 15% !important;
 	float: left !important;
 }
 
 .css-links.pds-links, .css-links {
-	width: 30% !important;
+	width: 70% !important;
 	float: right !important;
 }
 
