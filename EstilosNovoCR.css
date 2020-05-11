@@ -148,8 +148,8 @@ blockquote::after {
 }
 */
 
-#quadro {
-	display: block;
+.quadro {
+	display: inline-block;
 	background-color: #FAFAFA;
 	padding: 10px;
 	margin-bottom: 40px;
