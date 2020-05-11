@@ -176,10 +176,11 @@ blockquote::after {
 	}
 
 .filmposter {
+	width:15%;
+	height:auto;
+	align: top;
 	float: right !important;
 	margin: 0 auto auto 20px !important;
-	max-height: 120px !important;
-	top: -10px;
 	}
 
 .bio { 
