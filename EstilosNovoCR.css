@@ -12,14 +12,19 @@
 	border: 0px !important;
 }
 
-.css-vote-button pds-vote-button, .css-vote-button {
+.css-vote-button.pds-vote-button, .css-vote-button {
 	width: 30% !important;
 	float: left !important;
 }
 
-.css-links pds-links, .css-links {
+.css-links.pds-links, .css-links {
 	width: 70% !important;
 	float: right !important;
+}
+
+.css-vote.pds-vote, .css-vote {
+	display: inline !important;
+	height: 20px !important;
 }
 
 /* POSTAGENS DE ENTREVISTAS */
