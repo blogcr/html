@@ -4,7 +4,7 @@
 	padding: 0px 0px !important;
 }
 
-#pds-sharing {
+#pds-sharing, .pds-pd-link {
 	display: none !important;
 }
 
