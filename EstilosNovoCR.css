@@ -1,4 +1,4 @@
-.dialog.input.anonUrlField, .dialog.input anonUrlField, .dialog input anonUrlField {
+input#anonUrlField.dialogField {
 	display: none !important;
 }
 
