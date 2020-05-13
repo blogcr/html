@@ -8,11 +8,11 @@
 	display: none !important;
 }
 
-.CSS_Poll.PDS_Poll {
+.CSS_Poll.PDS_Poll, pds-box {
 	width: 100% !important;
 }
 
-.css-box.pds-box, css-box, .pds-box {
+.css-box.pds-box, css-box, .pds-box, pds-box-outer {
 	border: 0px !important;
 }
 
