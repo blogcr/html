@@ -1,3 +1,7 @@
+anonUrlField, .anonUrlField {
+	display: none !important;
+}
+
 /* MODIFICA LAYOUT DO POLLDADDY */
 
 .css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
