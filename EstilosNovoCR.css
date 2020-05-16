@@ -31,7 +31,7 @@ blockquote::after {
 } 
 
 figure {
-	display: inline-block !important;
+	display: block !important;
 	max-width: 35% !important;
 	height: auto !important;
 	z-index:100;
