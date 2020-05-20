@@ -7,7 +7,7 @@ blockquote {
   	background: #B71C1C;
 	color: #FFFFFF;
 	text-align: center;
-	margin: inherit !important;
+	margin: 0px;
 }
 
 blockquote::before, blockquote::after {
