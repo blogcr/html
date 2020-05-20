@@ -6,7 +6,8 @@ blockquote {
 	position: relative !important;
   	background: #B71C1C;
 	color: #FFFFFF;
-	text-align: center;	
+	text-align: center;
+	margin: 0px !important;
 }
 
 blockquote::before, blockquote::after {
