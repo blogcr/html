@@ -40,12 +40,12 @@ figure {
 
 .dir {
 	float: right !important;
-	margin-left 20px !important;
+	margin-left: 20px !important;
 }
 
 .esq {
 	float: left !important;
-	margin-right:20px !important;
+	margin-right: 20px !important;
 }
 
 figcaption {
