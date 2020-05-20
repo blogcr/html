@@ -38,16 +38,19 @@ figure {
 	height: auto !important;
 	z-index:100;
 	margin: 0px;
+	padding: 0px;
 }
 
 .dir {
 	float: right !important;
 	margin-left: 20px !important;
+	margin-right: 0px !important;
 }
 
 .esq {
 	float: left !important;
 	margin-right: 20px !important;
+	margin-left: 0px !important;
 }
 
 figcaption {
