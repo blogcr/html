@@ -313,7 +313,7 @@ blockquote::after {
 	font-weight:bold;
 	line-height: 24px !important;
 	border-bottom: 1px solid #cccccc;
-	vertical-align:bottom;
+	vertical-align:middle;
 	}
 	
 /* TEXTOS COM FONTE PEQUENA ABAIXO DO TÍTULO */
