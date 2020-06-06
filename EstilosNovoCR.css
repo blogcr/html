@@ -53,6 +53,10 @@ figure {
 	margin-left: 0px !important;
 }
 
+.meio {
+	max-width: 50% !important;
+}
+
 figcaption {
   	text-align: center;
   	float: left;
