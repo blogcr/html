@@ -232,7 +232,7 @@ blockquote::after {
 
 .quadro {
 	display: inline-block;
-	background-color: #BDBDBD;
+	background-color: #E0E0E0;
 	padding: 10px;
 	margin-bottom: 40px;
 	width:100%;
@@ -279,7 +279,7 @@ blockquote::after {
 /* CAIXA DE TEXTO CINZA */
 .boxcinza {
 	font-size:80%;
-	background:#BDBDBD;
+	background:#E0E0E0;
 	padding: 5px 10px;
 }
 	
