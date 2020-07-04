@@ -26,11 +26,13 @@ blockquote::before {
   	left: 10px !important;
 }
 
+/*
 blockquote::after {
   	content:"\f10e";
   	bottom: -20px !important;
   	right: 10px !important;
 } 
+*/
 
 figure {
 	display: block !important;
