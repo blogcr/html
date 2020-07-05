@@ -8,6 +8,7 @@ blockquote, .ast {
 	color: #FFFFFF;
 	text-align: center;
 	margin: 0px;
+	z-index:1 !important;
 }
 
 blockquote::before, blockquote::after, ast::before {
