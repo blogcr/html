@@ -27,7 +27,8 @@ blockquote::before {
 }
 
 .ast::before {
-  	content:"\2217";
+  	content:"\0359";
+	font-size:2em;
    	top: -20px !important;
   	left: 10px !important;
 }
