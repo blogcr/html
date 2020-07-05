@@ -29,7 +29,7 @@ blockquote::before {
 
 .ast::before {
   	content:"\f069";
-	font-size:20px !important;
+	font-size:17px !important;
   	left: 10px !important;
 }
 
