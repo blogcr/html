@@ -30,10 +30,8 @@ blockquote::before {
 .ast::before {
   	content:"\f069";
 	font-size:20px !important;
-	font-weight: bold !important;
    	top: -30px !important;
   	left: 10px !important;
-	z-index:10 !important;
 }
 
 /*
