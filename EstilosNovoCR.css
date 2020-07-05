@@ -1,4 +1,4 @@
-blockquote, blockquote ast {
+blockquote, .ast {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
 	max-width: 35%;
 	float: right;
@@ -26,7 +26,7 @@ blockquote::before {
   	left: 10px !important;
 }
 
-blockquote ast::before {
+.ast::before {
   	content:"\2217";
    	top: -20px !important;
   	left: 10px !important;
