@@ -28,6 +28,7 @@ blockquote::before {
 
 .ast::before {
   	content:"\002A";
+	font-size:30px !important;
    	top: -20px !important;
   	left: 10px !important;
 }
