@@ -10,7 +10,7 @@ blockquote, .ast {
 	margin: 0px;
 }
 
-blockquote::before, blockquote::after {
+blockquote::before, blockquote::after, ast::before {
   	color: #B71C1C;
   	background: #FFFFFF;
   	font-family:'FontAwesome';
@@ -28,7 +28,6 @@ blockquote::before {
 
 .ast::before {
   	content:"\002A";
-	font-size:1em !important;
    	top: -20px !important;
   	left: 10px !important;
 }
