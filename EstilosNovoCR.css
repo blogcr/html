@@ -26,6 +26,12 @@ blockquote::before {
   	left: 10px !important;
 }
 
+blockquote .ast::before {
+  	content:"\2217";
+   	top: -20px !important;
+  	left: 10px !important;
+}
+
 /*
 blockquote::after {
   	content:"\f10e";
