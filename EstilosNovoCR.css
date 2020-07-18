@@ -169,15 +169,16 @@ fieldset {
 }
 
 legend {
-	font-size:18 px;
- 	border: 0px solid #424242;
-	text-transform: uppercase;
-	color: #424242;
-	padding: 3px 10px 3px 10px;
-    	border-radius: 2px;
-	font-weight: bold;
-	width: auto;
-	background: #ffffff;
+	font-size:1.5rem !important;
+ 	border: 0px solid #424242 !important;
+	text-transform: uppercase !important;
+	color: #42424 !important2;
+	padding: 3px 10px 3px 10px !important;
+    	border-radius: 2px !important;
+	font-weight: bold !important;
+	width: auto !important;
+	background: #ffffff !important;
+	display:block !important;
 }
 
 
