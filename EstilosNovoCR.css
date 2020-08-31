@@ -2,10 +2,15 @@
 	margin: 0 5% !important;
 	font-style:italic !important;
 	font-size:0.95em !important;
+	/*
   	border-width: 2px;
   	border-style: solid;
   	border-top-image: 
     	linear-gradient(to right, red, rgba(0, 0, 0, 0)) 1 100%;
+	*/
+	 border: 10px solid;
+  border-image-source: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66));
+  border-image-slice: 1;
 }
 
 blockquote, .ast {
