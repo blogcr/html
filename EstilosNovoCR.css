@@ -4,7 +4,8 @@
 	font-size:0.95em !important;
 }
 #citacao hr {
-	width: 50% !important;
+	width: 30% !important;
+	margin: 10px auto;
 }
 
 blockquote, .ast {
