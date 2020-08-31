@@ -1,20 +1,21 @@
 .citacao  {
 	margin: 0 5% !important;
 	font-style:italic !important;
-	font-size:0.9em !important;
+	font-size:0.95em !important;
+	
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+	
+	
+	
 }
-
-.citacao::before  {
-	border: 1px solid #B71C1C !important;
-	width:50% !important;
-}
-
-.citacao::after  {
-	border: 1px solid #B71C1C !important;
-	float:right !important;
-	width:50% !important;
-}
-
 
 blockquote, .ast {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
