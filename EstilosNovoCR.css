@@ -2,10 +2,12 @@
 	margin: 0 5% !important;
 	font-style:italic !important;
 	font-size:0.95em !important;
+	clear: both;
 }
 #citacao hr {
 	width: 30% !important;
 	margin: 10px auto;
+	clear: both;
 }
 
 blockquote, .ast {
