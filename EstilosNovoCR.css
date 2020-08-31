@@ -2,8 +2,9 @@
 	margin: 0 5% !important;
 	font-style:italic !important;
 	font-size:0.95em !important;
-  	border-top: 2px solid;
-  	border-image: linear-gradient(to right,#B71C1C, transparent);
+}
+.citacao hr {
+	width: 50% !important;
 }
 
 blockquote, .ast {
