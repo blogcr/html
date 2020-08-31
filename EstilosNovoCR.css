@@ -8,9 +8,9 @@
   	border-top-image: 
     	linear-gradient(to right, red, rgba(0, 0, 0, 0)) 1 100%;
 	*/
-	 border: 2px solid #B71C1C;
-  	border-image-source: linear-gradient(45deg, rgb(0,0,0), rgb(0,0,0));
-  	border-image-slice: 1;
+	border-top: 2px solid;
+  	border-top-image-source: linear-gradient(45deg, rgb(183,28,28), rgb(255,255,255));
+  	border-top-image-slice: 1;
 }
 
 blockquote, .ast {
