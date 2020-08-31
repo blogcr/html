@@ -1,9 +1,9 @@
-.citacao  {
+#citacao  {
 	margin: 0 5% !important;
 	font-style:italic !important;
 	font-size:0.95em !important;
 }
-.citacao hr {
+#citacao hr {
 	width: 50% !important;
 }
 
