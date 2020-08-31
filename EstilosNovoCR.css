@@ -6,6 +6,7 @@
 
 #citacao hr {
 	width: 30% !important;
+	clear: both  !important;
 }
 
 blockquote, .ast {
