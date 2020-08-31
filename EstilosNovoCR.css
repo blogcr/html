@@ -3,7 +3,7 @@
 	font-style:italic !important;
 	font-size:0.95em !important;
   	border-top: 2px solid;
-  	border-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  	border-image: linear-gradient(to right,#B71C1C, transparent);
 }
 
 blockquote, .ast {
