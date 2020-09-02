@@ -283,7 +283,7 @@ blockquote::after {
 	max-width:20%;
 	align: top;
 	float: left;
-	margin: auto 20px auto auto;
+	margin: 10px 20px 5px 0;
 	}
 
 .textopeq, .textoita {
