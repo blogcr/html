@@ -5,7 +5,8 @@
 }
 .cel {
 	width:48%;
-	text-align:center	
+	text-align:center;
+	font-size:inherit;
 }
 
 .vid	{
