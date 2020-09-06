@@ -1,18 +1,18 @@
 #2cel {
 	width:100%;
-	display:table;
-	font-size:85%;	
-}
-#2cel .cel {
-	width:48%;
+	font-size:85%;
+	text-align:center;
 }
 
 #2cel .esq {
+	width:48%;
 	float:left;
 }
 
 #2cel .dir {
+	width:48%;
 	float:right;
+	
 }
 
 .vid	{
