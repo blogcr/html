@@ -1,3 +1,21 @@
+#2videos {
+	width:100%;
+	display:table;
+	font-size:85%	
+}
+#2videos .videos {
+	width:48%;
+	text-align:center	
+}
+
+#2videos .esq {
+	float:left;	
+}
+
+#2videos .dir {
+	float:right;	
+}
+
 .vid	{
 	height: 0; 
 	margin: 0 auto; 
