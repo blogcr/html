@@ -1,15 +1,15 @@
-.2cel {
+#2cel {
 	width:100%;
 	font-size:85%;
 	text-align:center;
 }
 
-.2cel-esq {
+#2cel .es {
 	width:48%;
 	float:left;
 }
 
-.2cel-dir {
+#2cel .di {
 	width:48%;
 	float:right;
 	
