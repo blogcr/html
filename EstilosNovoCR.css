@@ -1,12 +1,18 @@
-.2cel {
+#2cel {
 	width:100%;
 	display:table;
 	font-size:85%;	
 }
-.cel {
+#2cel .cel {
 	width:48%;
-	text-align:center;
-	font-size:inherit;
+}
+
+#2cel .esq {
+	float:left;
+}
+
+#2cel .dir {
+	float:right;
 }
 
 .vid	{
