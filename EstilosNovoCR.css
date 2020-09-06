@@ -4,12 +4,12 @@
 	text-align:center;
 }
 
-#2cel .esq {
+#2cel esq {
 	width:48%;
 	float:left;
 }
 
-#2cel .dir {
+#2cel dir {
 	width:48%;
 	float:right;
 	
