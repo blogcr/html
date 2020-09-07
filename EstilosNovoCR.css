@@ -1,18 +1,7 @@
-.vid	{
-	height: 0; 
-	margin: 0 auto; 
-	overflow: hidden; 
-	padding-bottom: 56.25%; 
-	position: relative; 
-	width: 90%;
-}
-
-.video	{
-	height: 100%; 
-	left: 0; 
-	position: absolute; 
-	top: 0; 
-	width: 100%;
+.video {
+	float:right;
+	width:50%;
+	max-height:200px;
 }
 
 #citacao  {
