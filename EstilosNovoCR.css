@@ -1,7 +1,9 @@
 #foto2 {
-	display: inline-block; 
-	font-size: 85%; 
-	width: 100%;
+	display: flex; 
+	width: 90%;
+}
+
+#foto2::after {
 	clear:both;
 }
 
