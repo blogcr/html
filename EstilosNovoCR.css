@@ -1,3 +1,13 @@
+.foto2 {
+	display: table; 
+	font-size: 85%; 
+	width: 100%;
+}
+
+.foto2int {
+	width: 48%;
+}
+
 .video {
 	float:right;
 	width:50%;
