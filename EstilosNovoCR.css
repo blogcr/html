@@ -123,9 +123,11 @@ figcaption {
 	background:#B71C1C; 
 	padding:auto; 
 	width:100%;
-	bottom:0;
+	bottom:-10px;
+	height:20px;
+	max-height:20px;
 	text-align:center;
-	font-size:0.8rem"
+	font-size:0.7em;
 }
 
 /* MODIFICA LAYOUT DO POLLDADDY */
