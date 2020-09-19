@@ -118,7 +118,7 @@ figcaption {
  */
 
 figcaption {
-  	position:absolute;
+  	position:relative;
 	color:#fff;
 	background:#B71C1C; 
 	padding:auto; 
