@@ -101,9 +101,10 @@ figure {
 	margin-top: 10px !important;
 }
 
+ /*
 figcaption {
   	text-align: center;
-  	float: left;
+ 	float: left;
   	position: relative;
   	bottom: 25px;
   	left: 10px;
@@ -113,6 +114,18 @@ figcaption {
   	color: white;
   	font-size: 13px !important;
   	font-weight: bold;
+}
+ */
+
+figcaption {
+  	position:absolute;
+	color:#fff;
+	background:#B71C1C; 
+	padding:auto; 
+	width:100%;
+	bottom:0;
+	text-align:center;
+	font-size:0.8rem"
 }
 
 /* MODIFICA LAYOUT DO POLLDADDY */
