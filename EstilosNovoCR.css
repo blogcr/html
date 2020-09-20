@@ -130,10 +130,11 @@ figcaption {
 	background:#B71C1C; 
 	padding:auto; 
 	width:100%;
-	bottom:25px;
+	bottom:35px;
 	height:25px;
 	text-align:center;
 	font-size:0.7em;
+	font-weight: bold;
 }
 
 .credifoto {
