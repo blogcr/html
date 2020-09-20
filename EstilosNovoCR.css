@@ -120,13 +120,13 @@ figcaption {
 }
 
 .credifoto {
-	content: "\f10d"
-	background:#000 !important; 
+	content: "\f10d";
+	background: #000 !important; 
 	opacity:0.5 !important; 
 }
 
 .crediarte {
-	content: "\f20d"
+	content: "\f20d";
 	background:#000 !important; 
 	opacity:0.5 !important; 
 }
