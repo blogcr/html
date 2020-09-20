@@ -136,6 +136,18 @@ figcaption {
 	font-size:0.7em;
 }
 
+.credifoto {
+	content: 
+	background:#000 !important; 
+	opacity:0.5 !important; 
+}
+
+
+.crediarte {
+	background:#000 !important; 
+	opacity:0.5 !important; 
+}
+
 /* MODIFICA LAYOUT DO POLLDADDY */
 
 .css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
