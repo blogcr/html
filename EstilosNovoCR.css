@@ -88,6 +88,7 @@ figcaption {
 }
 
 figcaption .top {
+	bottom: reset !important;
 	top:35px !important;
 }
 
