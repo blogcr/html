@@ -87,6 +87,10 @@ figcaption {
 	font-weight: bold;
 }
 
+figcaption .top {
+	top:35px !important;
+}
+
 .credifoto {
 	background: #000 !important; 
 	opacity:0.5 !important; 
