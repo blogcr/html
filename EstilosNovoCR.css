@@ -94,6 +94,7 @@ figcaption {
 }
 
 .credito::before {
+	font-family: FontAwesome;
 	ccontent:"\f069";
 	padding: 0 10px;
 }
