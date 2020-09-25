@@ -87,16 +87,13 @@ figcaption {
 	font-weight: bold;
 }
 
-figcaption .foto {
+.credito {
 	background: rgba(0, 0, 0, 0.5)  !important;
-	padding:auto !important;
-	bottom:35px !important;
-	height:25px !important;
-	text-align:center !important;
+	text-align:left !important;
 	font-size:0.75em !important;
 }
 
-figcaption .foto::before {
+.credito::before {
 	content: "\f087";
 	padding: 0 10px;
 }
