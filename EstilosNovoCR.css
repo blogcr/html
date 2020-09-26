@@ -85,13 +85,13 @@ figcaption {
 	text-align:center;
 	font-size:0.7em;
 	font-weight: bold;
-	margin-bottom:-5px !important;
+	margin-bottom:-10px !important;
 }
 
 .credito {
 	background: rgba(0, 0, 0, 0.4)  !important;
 	text-align:left !important;
-	padding-left: 15px  !important;
+	left: 15px  !important;
 	font-size:0.75em !important;
 	font-weight: normal !important;
 }
