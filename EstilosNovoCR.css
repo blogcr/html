@@ -94,6 +94,7 @@ figcaption {
 	padding-left: 15px  !important;
 	font-size:0.75em !important;
 	font-weight: normal !important;
+	width: inherit;
 }
 
 /* FOTO 2 COLUNAS */
