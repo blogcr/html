@@ -69,6 +69,11 @@ figure {
 	margin-left: 0px !important;
 }
 
+.centro {
+	max-width: 90% !important;
+	margin: 0 auto !important;
+}
+
 .meio {
 	max-width: 45% !important;
 	margin-top: 10px !important;
@@ -79,7 +84,7 @@ figcaption {
 	color:#fff;
 	background:#B71C1C; 
 	padding:auto; 
-	width:inherit !important;
+	width:inherit;
 	bottom:35px;
 	height:25px;
 	text-align:center;
@@ -89,7 +94,6 @@ figcaption {
 }
 
 .credito {
-	position:relative;
 	background: rgba(0, 0, 0, 0.4)  !important;
 	text-align:left !important;
 	padding-left: 15px  !important;
