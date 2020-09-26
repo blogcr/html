@@ -79,7 +79,7 @@ figcaption {
 	color:#fff;
 	background:#B71C1C; 
 	padding:auto; 
-	width:100%;
+	width:inherit !important;
 	bottom:35px;
 	height:25px;
 	text-align:center;
@@ -89,12 +89,12 @@ figcaption {
 }
 
 .credito {
+	position:relative;
 	background: rgba(0, 0, 0, 0.4)  !important;
 	text-align:left !important;
 	padding-left: 15px  !important;
 	font-size:0.75em !important;
 	font-weight: normal !important;
-	width: inherit;
 }
 
 /* FOTO 2 COLUNAS */
