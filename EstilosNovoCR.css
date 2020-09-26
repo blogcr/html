@@ -91,25 +91,9 @@ figcaption {
 .credito {
 	background: rgba(0, 0, 0, 0.4)  !important;
 	text-align:left !important;
-	left: 15px  !important;
+	padding-left: 15px  !important;
 	font-size:0.75em !important;
 	font-weight: normal !important;
-}
-
-.credito::before {
-	font-family: 'FontAwesome';
-	ccontent:"\f069";
-	padding: 0 10px;
-}
-
-.credifoto {
-	background: #000 !important; 
-	opacity:0.5 !important; 
-}
-
-.crediarte {
-	background:#000 !important; 
-	opacity:0.5 !important; 
 }
 
 /* FOTO 2 COLUNAS */
