@@ -335,4 +335,27 @@ blockquote::after {
 	font-size: 14px;
 	}
 
-* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+	}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
