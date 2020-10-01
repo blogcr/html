@@ -335,7 +335,9 @@ blockquote::after {
 	font-size: 14px;
 	}
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
@@ -355,7 +357,49 @@ p,
 pre,
 blockquote,
 figure,
-hr {
+hr 
+ul[class],
+ol[class],
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
   padding: 0;
+}
+
+embed,
+iframe,
+img,
+object,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+[hidden] {
+  	display: none !important;
+	opacity: 0;
+  	visibility: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
