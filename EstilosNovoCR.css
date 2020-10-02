@@ -342,6 +342,7 @@ blockquote::after {
 	-webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
 	}
+/*
 
 body,
 h1,
@@ -403,3 +404,4 @@ select {
     scroll-behavior: auto !important;
   }
 }
+*/
