@@ -335,6 +335,16 @@ blockquote::after {
 	font-size: 14px;
 	}
 
+.fa fa-camera {
+	padding: 0 5px !important;
+	}
+
+*
+	{
+	box-sizing: border-box;
+	}
+
+/*
 *,
 *::before,
 *::after {
@@ -342,7 +352,6 @@ blockquote::after {
 	-webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
 	}
-/*
 
 body,
 h1,
