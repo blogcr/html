@@ -73,7 +73,7 @@ blockquote::before {
 	opacity:0.5;
 	-webkit-transform: scaley(-1); 
 	transform: scaley(-1);
-	align-content: center;
+	text-align:center;
 }		
 
 /* FIGURE */
