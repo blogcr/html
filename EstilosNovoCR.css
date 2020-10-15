@@ -58,6 +58,7 @@ blockquote::before {
 	font-size: 80%; 
 	width: 50%;
 	clear:both !important;
+	overflow: auto;
 }
 
 .divisor  {
