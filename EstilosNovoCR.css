@@ -52,6 +52,7 @@ blockquote::before {
 }
 
 #nota, .nota {
+	display:block;
 	color: #757575; 
 	float: right; 
 	font-size: 80%; 
