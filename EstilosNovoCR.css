@@ -56,7 +56,7 @@ blockquote::before {
 	float: right; 
 	font-size: 80%; 
 	width: 50%;
-	clear: both;
+	overflow:auto;
   	display: table;
 }
 
