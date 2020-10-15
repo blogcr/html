@@ -47,6 +47,10 @@ blockquote::before {
 	clear: both  !important;
 }
 
+.poesia {
+	white-space: pre-line;
+}
+
 #nota, .nota {
 	color: #757575; 
 	float: right; 
