@@ -57,14 +57,14 @@ blockquote::before {
 	font-size: 80%; 
 	width: 50%;
 	clear: both !important;
-  	display: inline-block;
+  	display:block;
 }
 
 .divisor  {
 	content: url(https://1.bp.blogspot.com/-YU59sJ4UnM8/XzB-wN9cZWI/AAAAAAACZsY/RouazuJI0ecl_WZezmGsMHpL9HjpsXRYgCLcBGAsYHQ/s1600/Divisor.png);
 	width:70%;
 	opacity:0.5;
-	align-content: center;
+	padding: 0 auto;
 }	
 
 .divisor-inv {
