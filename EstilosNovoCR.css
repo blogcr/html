@@ -47,6 +47,19 @@ blockquote::before {
 	clear: both  !important;
 }
 
+#nota, .nota {
+	color: #757575; 
+	float: right; 
+	font-size: 80%; 
+	width: 70%;
+	clear:both;
+}
+
+.divisor  {
+	content: url(https://1.bp.blogspot.com/-YU59sJ4UnM8/XzB-wN9cZWI/AAAAAAACZsY/RouazuJI0ecl_WZezmGsMHpL9HjpsXRYgCLcBGAsYHQ/s1600/Divisor.png);
+	width:100%;
+}		 
+
 /* FIGURE */
 figure {
 	display: block !important;
