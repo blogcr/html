@@ -67,6 +67,13 @@ blockquote::before {
 	margin:3px auto;
 }
 
+.divisor2  {
+	content: url(https://1.bp.blogspot.com/-afErCAn07Iw/X40Tq2kRdTI/AAAAAAACfUY/1o-p1b9JdvY4fs5xp2adDuwrzq6NVsEMwCLcBGAsYHQ/s0/divisor.png);
+	width:50%;
+	opacity:0.5;
+	margin:3px auto;
+}
+
 .inv {
 	-webkit-transform: scaley(-1); 
 	transform: scaley(-1);	
