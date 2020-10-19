@@ -47,6 +47,11 @@ blockquote::before {
 	clear: both  !important;
 }
 
+.borda {
+	padding-left:10px; 
+	border-left:1px solid #B71C1C;
+}
+		
 .poesia {
 	white-space: pre-line;
 }
