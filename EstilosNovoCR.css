@@ -269,7 +269,7 @@ legend {
 	display:block !important;
 }
 
-ref {
+.ref {
 	font: 100 0.8em / 1.4 'Oswald', cursive !important;
 	max-width: 35%;
 	float: right;
