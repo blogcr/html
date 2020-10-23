@@ -284,7 +284,7 @@ legend {
 
 .ref2 {
 	font-size:0.9em !important;
-	border: 0px;
+	border: 0px !important;
 	color: #B71C1C !important;
 }
 
