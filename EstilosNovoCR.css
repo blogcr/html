@@ -270,19 +270,16 @@ legend {
 }
 
 .ref {
-	font: 100 0.8em / 1.4 'Oswald', cursive !important;
-	max-width: 35%;
-	float: right;
-	padding: 15px 10px;
+	font-size:0.8em !important;
+	max-width: 35% !important;
+	float: right !important;
+	padding: 15px 10px !important;
 	position: relative !important;
-	color: #757575;
-	text-align: left;
+	color: #757575 !important;
+	text-align: left! important;
 	margin: 0 0 5px 15px  !important;
-  	border-top: 1px solid #B71C1C !important;
-	border-left: 1px solid #B71C1C !important;
-	border-bottom: 1px solid #B71C1C !important;
-	border-right: 0 solid transparent !important;
-	border-radius: 5px !important;
+  	border: 1px solid #B71C1C !important;
+	border-radius: 2px !important;
 }
 
 .ref2 {
