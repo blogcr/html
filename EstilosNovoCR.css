@@ -258,7 +258,7 @@ fieldset {
 
 legend {
 	font-size:1.5rem !important;
- 	border: 0px solid #424242 !important;
+ 	border: 1px solid #B71C1C !important;
 	text-transform: uppercase !important;
 	color: #333134 !important;
 	padding: 3px 10px 3px 10px !important;
@@ -270,14 +270,15 @@ legend {
 }
 
 fieldset .ref {
+	font-size:0.5rem !important;
   	padding: 15px;
-  	border: 1px solid #B71C1C !important;
+  	border: 0px solid #B71C1C !important;
 	border-right: 0px solid transparent !important;
 	border-radius: 5px !important;
 }
 
 legend .ref {
-	font-size:1rem !important;
+	font-size:0.5rem !important;
  	border: 0px solid #B71C1C !important;
 	color: #B71C1C !important;
 }
