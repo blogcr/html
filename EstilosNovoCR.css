@@ -271,7 +271,7 @@ legend {
 
 .ref {
 	font-size:0.8em !important;
-	max-width: 35% !important;
+	max-width: 40% !important;
 	float: right !important;
 	padding: 15px 10px !important;
 	position: relative !important;
@@ -284,6 +284,7 @@ legend {
 
 .ref2 {
 	font-size:0.9em !important;
+	border: 0px;
 	color: #B71C1C !important;
 }
 
