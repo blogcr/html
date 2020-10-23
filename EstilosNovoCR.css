@@ -270,11 +270,13 @@ legend {
 }
 
 ref {
-	font-size:0.5em !important;
-	color: #757575  !important;
-  	padding: 15px !important;
-	width: 40%;
-	float:right;
+	font: 100 0.8em / 1.4 'Oswald', cursive !important;
+	max-width: 35%;
+	float: right;
+	padding: 15px 10px;
+	position: relative !important;
+	color: #757575;
+	text-align: left;
 	margin: 0 0 5px 15px  !important;
   	border-top: 1px solid #B71C1C !important;
 	border-left: 1px solid #B71C1C !important;
