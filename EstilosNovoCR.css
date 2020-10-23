@@ -269,9 +269,13 @@ legend {
 	display:block !important;
 }
 
-ref1 {
+ref {
 	font-size:0.5em !important;
+	color: #757575  !important;
   	padding: 15px !important;
+	width: 40%;
+	float:right;
+	margin: 0 0 5px 15px  !important;
   	border-top: 1px solid #B71C1C !important;
 	border-left: 1px solid #B71C1C !important;
 	border-bottom: 1px solid #B71C1C !important;
