@@ -269,11 +269,16 @@ legend {
 	display:block !important;
 }
 
+sup {
+	color: #B71C1C !important;
+	font-size:0.5em !important;	
+}	
+
 .ref {
 	font-size:0.8em !important;
 	max-width: 40% !important;
 	float: right !important;
-	padding: 15px 10px !important;
+	padding: 5px 15px !important;
 	position: relative !important;
 	color: #757575 !important;
 	text-align: left! important;
