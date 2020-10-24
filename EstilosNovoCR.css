@@ -138,6 +138,17 @@ figcaption {
 	font-weight: normal !important;
 }
 
+.credir {
+	float: right !important;
+	margin-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.fa-camera, fa-paint-brush {
+	margin: 0 10px !important;
+}
+
+
 /* FOTO 2 COLUNAS */
 #foto2 {
 	display: flex; 
