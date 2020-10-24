@@ -271,7 +271,8 @@ legend {
 
 sup {
 	color: #B71C1C !important;
-	font-size:0.5em !important;	
+	font-size:0.7em !important;
+	font-weight:bold;
 }	
 
 .ref {
