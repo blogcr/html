@@ -381,6 +381,10 @@ blockquote::after {
 	margin: 10px 20px 5px 0;
 	}
 
+.frase {
+	overflow:hidden;
+}
+
 .textopeq, .textoita {
 	font-size: 14px !important;
 	line-height: 18px !important;
