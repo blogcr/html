@@ -63,6 +63,7 @@ blockquote::before {
 	width: 50%;
 	clear: both !important;
   	display:block;
+	margin-right:5%;
 }
 
 .divisor  {
