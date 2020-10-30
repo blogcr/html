@@ -156,6 +156,7 @@ figcaption {
 	width: 90%;
 	margin: 0 auto;
 	text-align:center;
+	flex-wrap: wrap;
 }
 
 #foto2::after {
@@ -164,6 +165,12 @@ figcaption {
 
 #foto2 .foto2int {
 	width: 48%;
+}
+
+#
+
+#foto2 .foto2flex {
+	margin: 0 auto;
 }
 
 /* VIDEO LATERAL DIREITO */
