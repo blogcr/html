@@ -1,5 +1,4 @@
-.boxbio {
-	height:100px;
+#boxbio, .boxbio {
 	width:100%;
 	border-top: 1px solid #B71C1C;
 	background:#ccc;
