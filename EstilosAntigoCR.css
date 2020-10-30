@@ -1,6 +1,6 @@
 #boxbio, .boxbio {
 	width:48%;
-	border-top: 1px solid #B71C1C;
+	border: 1px solid #ccc;
 	background:#E0E0E0;
 	float:left;
 	clear:both;
@@ -8,7 +8,7 @@
 
 .fotobio {
 	height:150px;
-	margin:-10px 10px 5px 10px;
+	margin:0px 10px 0 0;
 	padding:0 !important;
 	float:left;
 }
