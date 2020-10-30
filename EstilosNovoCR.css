@@ -167,10 +167,8 @@ figcaption {
 	width: 48%;
 }
 
-#
-
 #foto2 .foto2flex {
-	margin: 0 auto;
+	margin: 0 auto !important;
 }
 
 /* VIDEO LATERAL DIREITO */
