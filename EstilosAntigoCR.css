@@ -1,7 +1,7 @@
 #boxbio, .boxbio {
 	width:100%;
-	border-top: 1px solid #B71C1C;
-	background:#fff;
+	border-top: 0px solid #B71C1C;
+	background:##333134;
 	clear:both;
 	padding:0 !important;
 }
@@ -19,6 +19,7 @@
 .textobio {
 	font-size:0.8em;
 	padding:15px !important;
+	color:#ffffff;
 }
 
 
