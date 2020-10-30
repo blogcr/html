@@ -1,19 +1,18 @@
 #boxbio, .boxbio {
-	width:80%;
-	border: 1px solid #ccc;
+	width:100%;
+	border-top: 1px solid #B71C1C;
 	background:#fff;
-	float:left;
 	clear:both;
 	padding:0 !important;
 }
 
 .fotobio {
-    	width:100px;
+    	width:10%;
   	height:auto;
   	display:block;
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
-	margin:0 !important;
+	margin-right:15px !important;
 	float:left;
 }
 
