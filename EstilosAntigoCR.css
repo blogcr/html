@@ -7,7 +7,11 @@
 }
 
 .fotobio {
-	height:150px;
+	position:absolute;
+  	width:100px;
+  	height:auto;
+  	display:block;
+  	clip:rect(3,97,120,3);
 	margin:0px 10px 0 0;
 	padding:0 !important;
 	float:left;
