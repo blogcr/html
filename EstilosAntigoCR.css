@@ -7,9 +7,10 @@
 }
 
 .fotobio {
-    width:100px;
+    	width:100px;
   	height:auto;
   	display:block;
+	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
 	margin:0px 10px 0 0;
 	padding:0 !important;
