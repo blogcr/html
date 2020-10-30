@@ -11,7 +11,7 @@
   	display:block;
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
-	margin-right:15px !important;
+	margin-right:-10px 15px 0 10px !important;
 	float:left;
 }
 
