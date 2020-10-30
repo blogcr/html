@@ -2,24 +2,24 @@
 	width:100%;
 	border: 0px solid #B71C1C;
 	clear:both;
-	background:#B71C1C;
+	background:#333134;
 }
 
 .fotobio {
-    	width:10%;
-	height:auto;
-	display:flex;
+	max-height:150px;
+	position:relative;
 	/*
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
 	*/
-	margin-right:-10px 15px 0 10px !important;
+	margin:-10px 15px 0 10px !important;
 	float:left;
 }
 
 .textobio {
 	font-size:1em;
 	padding:15px !important;
+	color:#ffffff;
 }
 
 
