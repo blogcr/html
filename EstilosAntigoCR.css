@@ -1,9 +1,10 @@
 #boxbio, .boxbio {
-	width:48%;
+	width:80%;
 	border: 1px solid #ccc;
-	background:#E0E0E0;
+	background:#fff;
 	float:left;
 	clear:both;
+	padding:0 !important;
 }
 
 .fotobio {
@@ -12,13 +13,13 @@
   	display:block;
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
-	margin:0px 10px 0 0;
-	padding:0 !important;
+	margin:0 !important;
 	float:left;
 }
 
 .textobio {
 	font-size:0.8em;
+	padding:2% !important;
 }
 
 
