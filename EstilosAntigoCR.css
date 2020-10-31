@@ -25,12 +25,11 @@
 .textobizu {
 	font-size:5em;
 	font-weight:bold;
-	display:table-cell;
-	padding:auto auto !important;
+	padding:10px auto !important;
 	background: #B71C1C;
 	color:#ffffff;
-	width:100%;
-	border:10px solid #B71C1C;
+	width:100% !important;
+	clear:both;
 }
 
 /* --------------------------------------------------------TEMPLATE ANTIGO */
