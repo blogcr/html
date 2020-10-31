@@ -53,7 +53,7 @@ blockquote::before {
 }
 		
 .poesia {
-	white-space: pre-line;
+	white-space: pre-wrap;
 }
 
 #nota, .nota {
