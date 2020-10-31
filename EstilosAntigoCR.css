@@ -23,8 +23,11 @@
 }
 
 .textobizu {
-	font-size:1em;
-	padding:15px !important;
+	font-size:5em;
+	font-weight:bold;
+	display:table-cell;
+	padding:auto auto !important;
+	background: #B71C1C;
 	color:#ffffff;
 }
 
