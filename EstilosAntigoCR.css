@@ -24,8 +24,9 @@
 
 #textobizu {
 	font-size:5em;
+	line-height:2em;
 	font-weight:bold;
-	padding:10px auto !important;
+	text-align:center;
 	background: #B71C1C;
 	color:#ffffff;
 	width:100% !important;
