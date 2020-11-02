@@ -6,9 +6,9 @@
 }
 
 .fotobio {
-	max-height:150px;
-	width:auto;
 	position:relative;
+	width:15%;
+	height:auto;
 	/*
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
