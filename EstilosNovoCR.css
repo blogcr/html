@@ -226,6 +226,18 @@ figcaption {
 	padding-top: 100%;
 }
 
+.quadrado1 {
+    position: relative;
+}
+
+#quadrado2 {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
 /* MODIFICA LAYOUT DO POLLDADDY */
 
 .css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
