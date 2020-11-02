@@ -220,7 +220,7 @@ figcaption {
 	margin: 0 0 5px 15px;
 }
 
-.disco::before {
+.disco:before {
 	content: "";
 	display: block;
 	padding-top: 100%;
