@@ -1,3 +1,33 @@
+.ornamental {
+	width: 100%;
+	position: relative;
+	margin-right: 10px; 
+	 
+}
+
+.arabesco {
+	width: 20%;
+	position: absolute;
+	float: right;  
+	right: 0; 
+	opacity: 0.1;
+}
+
+.cima {
+	content:url(https://1.bp.blogspot.com/-3YkgHtOznvY/XxI9reKwh-I/AAAAAAACYE0/kFDP1v9Ad2YKS0pTSocUoF9eshcVztsmACLcBGAsYHQ/s1600/top.jpg);
+}
+
+.central {
+	content:url(https://4.bp.blogspot.com/-kvZo2w13rK8/XxIy2SB5LcI/AAAAAAACYEo/_kcv7e72tfsJ8z1ZoI9sjUZJ1bAvdjrMgCLcBGAsYHQ/s1600/juca%2B2.jpg);
+	top: 50%; 
+	margin-top: -50%;
+}
+
+.baixo {
+	content:url(https://2.bp.blogspot.com/-87k5qy3_VhA/XxI9rLJrAAI/AAAAAAACYEw/s3aJtiDtweIpOhspKvqyYDPd8wU_xQfeQCLcBGAsYHQ/s1600/bottom.jpg);
+	bottom: 0; 	
+}
+
 /* BLOCKQUOTE */
 blockquote, .ast {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
