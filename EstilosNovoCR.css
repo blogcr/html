@@ -216,9 +216,14 @@ figcaption {
 /* VIDEO LATERAL DIREITO SOMENTE SOM */
 .disco {
 	float: right;
-	width: 40%;
-	max-height: 250px;
+	width: 50%;
 	margin: 0 0 5px 15px;
+}
+
+.disco::before {
+	content: "";
+	display: block;
+	padding-top: 100%;
 }
 
 /* MODIFICA LAYOUT DO POLLDADDY */
