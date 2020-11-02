@@ -108,7 +108,8 @@ blockquote::before {
 
 .central {
 	content:url(https://4.bp.blogspot.com/-kvZo2w13rK8/XxIy2SB5LcI/AAAAAAACYEo/_kcv7e72tfsJ8z1ZoI9sjUZJ1bAvdjrMgCLcBGAsYHQ/s1600/juca%2B2.jpg);
-	margin:auto 0 !important;
+	top: 50%; 
+	margin-top: -70%;
 }
 
 .baixo {
