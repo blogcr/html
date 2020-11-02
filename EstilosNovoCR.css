@@ -216,8 +216,8 @@ figcaption {
 /* VIDEO LATERAL DIREITO SOMENTE SOM */
 .disco {
 	float: right;
-	width: 50%;
-	margin: 0 0 5px 15px;
+	width: 40%;
+	margin: 10px 0 5px 15px;
 }
 
 .disco:before {
