@@ -8,13 +8,14 @@
 
 /* PRIMEIRA LETRA */
 .letra:first-letter {
+	color: #333134;
 	font-weight:bold; 
-	font-size:5em; 
+	font-size:6em; 
 	float:left; 
 	padding:0; 
 	margin: 0 10px 0 0; 
 	background-color:none; 
-	line-height:0.9em;
+	line-height:1em;
 }
 
 /* BLOCKQUOTE */
