@@ -6,6 +6,18 @@
 }	
 
 
+/* PRIMEIRA LETRA */
+.post-body .letra:first-letter {
+	font-weight:bold; 
+	font-size:6em; 
+	float:left; 
+	padding:0; 
+	margin: 10px 10px 0 0; 
+	position: relative;
+	background-color:none; 
+	line-height:0.9;
+}
+
 /* BLOCKQUOTE */
 blockquote, .ast {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
