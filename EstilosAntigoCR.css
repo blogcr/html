@@ -1,7 +1,7 @@
 #boxbio, .boxbio {
-	width:100%;
+	width:68%;
+	float:left;
 	border: 0px solid #B71C1C;
-	clear:both;
 	background:#333134;
 }
 
@@ -24,6 +24,16 @@
 	padding:15px !important;
 	color:#ffffff;
 }
+
+.compartilhe {
+	width:28%;
+	float:right;
+	border: 1px solid #B71C1C;
+	background:#ccc;
+	padding:10px;
+}
+
+
 
 #textobizu {
 	font-size:4rem;
