@@ -36,6 +36,8 @@
 .compartilhe:before {
 	content:'COMPARTILHE';
 	border-bottom: 1px solid #B71C1C;
+	margin: 0 auto;
+	text-align:center;
 }
 
 
