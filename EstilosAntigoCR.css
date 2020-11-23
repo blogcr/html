@@ -1,17 +1,16 @@
-#ana .fotobio {
-	content: url(https://bit.ly/3oKPAFb);
-}
-
-#ana .textobio {
-	content: 'professora da ufpb';
-}
-
-
 #boxbio, .boxbio, #ana {
 	width:68%;
 	float:left;
 	border: 0px solid #B71C1C;
 	background:#333134;
+}
+
+#ana .fotobio {
+	content: url(https://bit.ly/3oKPAFb);
+}
+
+#ana .textobio {
+	content: "professora da ufpb";
 }
 
 .fotobio {
