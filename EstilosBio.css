@@ -13,7 +13,7 @@
 	max-width:20%;
 	align: top;
 	float: left !important;
-	margin:-10px 15px 0 10px !important;
+	margin:-10px 15px 0 -10px !important;
 	/*
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
