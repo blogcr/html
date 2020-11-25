@@ -26,8 +26,8 @@
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
-#ana .bio:before {content: "Ana Adelaide P. Tavares ";font-weight:bold;display:block;clear:both;}
-#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora ";display:block;clear:both;}
+#ana .bio:before {content: "Ana Adelaide P. Tavares ";font-weight:bold;display:block;clear:right;}
+#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora ";display:block;}
 
 
 .compartilhe {
