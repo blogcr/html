@@ -39,6 +39,10 @@
 #ana .bio:before {content: "Ana Adelaide P. Tavares";}
 #ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora";}
 
+#celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
+#celio .bio:before {content: "Célio Furtado";}
+#celio .bio:after {content: "Artista plástico e cronista.";}
+
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
 #nunes .bio:after {content: "Poeta, escritor e membro do IHGP";}
