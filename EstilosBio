@@ -29,7 +29,7 @@
 	content: url(https://bit.ly/3oKPAFb);
 }
 
-#ana .biol:before {
+#ana .bio:before {
 	content: "professora da ufpb";
 	color:#fff;
 }
