@@ -2,18 +2,20 @@
 	width:100%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 }
 
 .fotobio {
   	position:relative;
 	top:-10px;
 	left:-10px;
-	marginright:15px;
+	margin-right:15px;
 	width:15%;
 	height:auto;
 	max-width:15%;
 	align: top;
+	display:inline-block;
+	float:left;
 	/*
 	float: left !important;
 	
