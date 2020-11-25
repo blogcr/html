@@ -1,5 +1,5 @@
 #boxbio, .boxbio, #ana {
-	width:68%;
+	width:100%;
 	float:left;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
@@ -31,13 +31,15 @@
 	font-weight:bold;
 	width:100%;
 	display:block;
-	
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
-#ana .bio:before {content: "Ana Adelaide P. Tavares ";}
-#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora ";}
+#ana .bio:before {content: "Ana Adelaide P. Tavares";}
+#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora";}
 
+#nunes .fotobio {content: url(https://bit.ly/3oKPAFb);}
+#nunes .bio:before {content: "José Nunes";}
+#nunes .bio:after {content: "Poeta, escritor e membro do IHGP";}
 
 .compartilhe {
 	width:28%;
