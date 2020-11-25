@@ -19,15 +19,21 @@
 	*/
 }
 
-.textobio, .bio {
+.textobio, .bio, nome {
 	font-size:1em;
 	padding:0px !important;
 	color:#000;
 }
 
+.nome {
+	font-weight:bold;
+	display:inline-block;
+	clear:right;
+}
+
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
-#ana .bio:before {content: "Ana Adelaide P. Tavares ";font-weight:bold;display:inline-block;clear:right;}
-#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora ";}
+#ana .nome {content: "Ana Adelaide P. Tavares ";}
+#ana .bio {content: "Doutora em teoria da literatura, professora e escritora ";}
 
 
 .compartilhe {
