@@ -3,8 +3,7 @@
 	float:left;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
-	padding: 0 20px;
-	clear:both;
+	padding: 0 20px 0 20px;
 }
 
 .fotobio {
@@ -36,7 +35,6 @@
 	font-weight:bold;
 	width:100%;
 	display:block;
-	text-align:right;
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
