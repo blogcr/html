@@ -1,3 +1,10 @@
+#boxbio, .boxbio, #ana {
+	width:68%;
+	float:left;
+	border: 0px solid #B71C1C;
+	background:#333134;
+}
+
 .fotobio {
   position:relative;
 	width:15%;
@@ -16,13 +23,6 @@
 	font-size:1em;
 	padding:15px !important;
 	color:#ffffff;
-}
-
-#boxbio, .boxbio, #ana {
-	width:68%;
-	float:left;
-	border: 0px solid #B71C1C;
-	background:#333134;
 }
 
 #ana .fotobio {
