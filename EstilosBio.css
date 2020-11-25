@@ -26,7 +26,7 @@
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
-#ana .bio:before {content: "Ana Adelaide P. Tavares ";font-weight:bold;}
+#ana .bio:after {content: "Ana Adelaide P. Tavares ";font-weight:bold;}
 
 
 .compartilhe {
