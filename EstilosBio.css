@@ -26,7 +26,10 @@
 }
 
 .bio:before {
-	border-bottom:1px solid #B71C1C;
+	border-bottom:2px solid #B71C1C;
+	font-weight:bold;
+	width:100%;
+	clear:right;
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
