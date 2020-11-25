@@ -2,14 +2,14 @@
 	width:68%;
 	float:left;
 	border: 0px solid #B71C1C;
-	background:#333134;
+	background:#F5F5F5;
 }
 
 .fotobio {
-  position:relative;
-	width:15%;
+  	position:relative;
+	width:20%;
 	height:auto;
-	max-width:15%;
+	max-width:20%;
 	align: top;
 	float: left !important;
 	margin:-10px 15px 0 10px !important;
@@ -22,7 +22,7 @@
 .textobio {
 	font-size:1em;
 	padding:15px !important;
-	color:#ffffff;
+	color:#000;
 }
 
 #ana .fotobio {
@@ -30,7 +30,7 @@
 }
 
 #ana .bio:before {
-	content: "professora da ufpb";
+	content: "Doutora em teoria da literatura, professora e escritora ";
 	color:#fff;
 }
 
