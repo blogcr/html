@@ -14,11 +14,9 @@
 	height:auto;
 	max-width:15%;
 	align: top;
-	display:inline-block;
-	float:left;
-	/*
+	display:block;
 	float: left !important;
-	
+	/*
 	margin:-10px 15px 0 10px !important;
 	-webkit-clip-path: inset(3px 3px 3px 3px);
   	clip-path: inset(3px 3px 3px 3px);
