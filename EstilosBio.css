@@ -25,15 +25,13 @@
 	color:#000;
 }
 
-.nome {
-	font-weight:bold;
-	display:inline-block;
-	clear:right;
+.bio:before {
+	border-bottom:1px solid #B71C1C;
 }
 
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
-#ana .nome {content: "Ana Adelaide P. Tavares ";}
-#ana .bio {content: "Doutora em teoria da literatura, professora e escritora ";}
+#ana .bio:before {content: "Ana Adelaide P. Tavares ";}
+#ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora ";}
 
 
 .compartilhe {
