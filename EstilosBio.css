@@ -5,6 +5,14 @@
 	padding: 0 20px;
 }
 
+.boxbio:before  {
+	content: url(https://1.bp.blogspot.com/-afErCAn07Iw/X40Tq2kRdTI/AAAAAAACfUY/1o-p1b9JdvY4fs5xp2adDuwrzq6NVsEMwCLcBGAsYHQ/s0/divisor.png);
+	width:70%;
+	opacity:0.5;
+	margin:10px auto;
+	clear:both;
+}
+	
 .fotobio {
   	position:relative;
 	top:-10px;
