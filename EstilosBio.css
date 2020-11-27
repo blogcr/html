@@ -43,7 +43,7 @@
 /* ANA PAULA C. RAMALHO */
 #anapaula .fotobio {content: url(https://1.bp.blogspot.com/-GucaZ7zvy60/X77nDGMgrqI/AAAAAAACjNQ/Bd9vGlP43UwFAbdlKIyQ3vBPhLzouwxAwCLcBGAsYHQ/s0/Ana-Paula-Ramalho.jpg);}
 #anapaula .bio:before {content: "Ana Paula Ramalho";}
-#anapaula .bio:after {content: "Psicanalista e escritora ";}
+#anapaula .bio:after {content: "Psicanalista e escritora.";}
 
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
@@ -73,7 +73,13 @@
 /* MILTON MARQUES JR */
 #milton .fotobio {content: url(https://1.bp.blogspot.com/-IH9kL7efF7M/X77nD2hHBdI/AAAAAAACjNY/E_ODW7-2l8Eij_W7E3bMVClzSSPyvu0_wCLcBGAsYHQ/s0/Milton-Marques.jpg);}
 #milton .bio:before {content: "Milton Marques Junior";}
-#milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL)";}
+#milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL).";}
+
+/* SAULO MENDONÇA */
+#saulo .fotobio {content: url(https://1.bp.blogspot.com/-b2gEO0KXjcI/X8CG0ueyuPI/AAAAAAACjSI/i9668Ou7ntUBoK1-Z_gVIzqzOyGZ238dwCLcBGAsYHQ/s0/Saulo-Mendonc%25CC%25A7a.jpg
+);}
+#saulo .bio:before {content: "Saulo Mendonça";}
+#saulo .bio:after {content: "escritor, poeta e haikaista.";}
 
 .compartilhe {
 	width:28%;
