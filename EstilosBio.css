@@ -60,6 +60,11 @@
 #emerson .bio:before {content: "E. Barros de Aguiar";}
 #emerson .bio:after {content: "Escritor neoarmorial, teólogo e jusfilósofo progressista.";}
 
+/* FLÁVIO RAMALHO */
+#flavio .fotobio {content: url(https://1.bp.blogspot.com/-FZsc22OzJ-0/X8GRXqDXWUI/AAAAAAACjT8/iwOfhuQn6bYohI6QukEogFOgiRofcEaMgCLcBGAsYHQ/s0/Fla%25CC%2581vio-Ramalho.jpg);}
+#flavio .bio:before {content: "Flávio Ramalho de Brito";}
+#flavio .bio:after {content: "Engenheiro e articulista.";}
+
 /* GERMANO ROMERO */
 #germano .fotobio {content: url(https://1.bp.blogspot.com/-jDzcnZeLhlI/X7-1hV59-_I/AAAAAAACjN0/2UCnLMaP84E1_ERlzHUw3hn1aOIhopVQQCLcBGAsYHQ/s0/Germano-Romero.jpg);}
 #germano .bio:before {content: "Germano Romero";}
