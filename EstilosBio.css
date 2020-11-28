@@ -72,6 +72,11 @@
 #germano .bio:before {content: "Germano Romero";}
 #germano .bio:after {content: "Arquiteto e bacharel em música.";}
 
+/* GONZAGA RODRIGUES */
+#gonzaga .fotobio {content: url(https://1.bp.blogspot.com/-76lHpE_fX7U/X8J3w5OGUbI/AAAAAAACjVk/RsXPVvXnSfMdQ_FSoCXF0CB1SyEP9atLwCLcBGAsYHQ/s0/Gonzaga-Rodrigues%2Bnova.jpg);}
+#gonzaga .bio:before {content: "Gonzaga Rodrigues";}
+#gonzaga .bio:after {content: "Escritor e membro da Academia Paraibana de Letras (APL).";}
+
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
