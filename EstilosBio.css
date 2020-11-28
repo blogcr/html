@@ -31,7 +31,7 @@
 .bio:before {
 	border-bottom:2px solid #B71C1C;
 	font-weight:bold;
-	width:100%;
+	width: 100%;
 	display:block;
 }
 
