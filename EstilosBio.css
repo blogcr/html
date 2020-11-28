@@ -10,6 +10,8 @@
 	width:100%;
 	opacity:0.5;
 	margin:10px auto;
+	position:relative;
+	top:-20px;
 }
 
 .fotobio {
