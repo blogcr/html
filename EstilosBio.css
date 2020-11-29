@@ -93,6 +93,11 @@
 #saulo .bio:before {content: "Saulo Mendonça";}
 #saulo .bio:after {content: "Escritor, poeta e haikaista.";}
 
+/* VÓLIA AMARAL */
+#volia .fotobio {content: url(https://1.bp.blogspot.com/-e7WKxhHQyj8/X8Lj24cbP8I/AAAAAAACjWg/NgIiOL0Xcg0CfE0zXqTgjaPMVQpA3MMogCLcBGAsYHQ/s0/Volia-Loureiro.jpg);}
+#volia .bio:before {content: "Vólia L. do Amaral";}
+#volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
+
 .compartilhe {
 	width:28%;
 	float:right;
