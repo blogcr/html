@@ -124,9 +124,12 @@
 	width:18%;
 	float:right;
 	border: 0px solid #B71C1C;
+	text-align:center;
 	background:#f5f5f5;
 	padding:0px;
 	display:block;
+	padding: 0 10px;
+	margin-top:50px;
 }
 
 /*
