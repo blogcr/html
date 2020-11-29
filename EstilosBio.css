@@ -1,5 +1,5 @@
 .boxbio {
-	width:80%;
+	width:100%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
 	padding: 0 20px;
@@ -130,6 +130,16 @@
 	display:block;
 	padding: 0 10px;
 	margin-top:50px;
+}
+
+.testebio {
+	width:80%;
+	border: 0px solid #B71C1C;
+	background:#F5F5F5;
+	padding: 0 20px;
+	margin-top:50px;
+	float:left;
+	display:block;
 }
 
 /*
