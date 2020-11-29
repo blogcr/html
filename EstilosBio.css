@@ -5,6 +5,7 @@
 	padding: 0 20px;
 	margin-top:50px;
 	float:left;
+	display:block;
 }
 	
 .fotobio {
@@ -120,11 +121,12 @@
 #volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
 
 .compartilhe {
-	width:10%;
+	width:18%;
 	float:right;
 	border: 0px solid #B71C1C;
 	background:#f5f5f5;
 	padding:0px;
+	display:block;
 }
 
 /*
