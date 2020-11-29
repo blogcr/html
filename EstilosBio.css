@@ -77,21 +77,41 @@
 #gonzaga .bio:before {content: "Gonzaga Rodrigues";}
 #gonzaga .bio:after {content: "Escritor e membro da Academia Paraibana de Letras (APL).";}
 
+/* JOSÉ LEITE GUERRA */
+#leite .fotobio {content: url(https://1.bp.blogspot.com/-24f78NCQ2SI/X8Mg6PzM19I/AAAAAAACjYA/JaY6fYRc7x4bMYzs8wJKMEYyxAVrIcu_wCLcBGAsYHQ/s0/Jose-Leite-Guerra.jpg);}
+#leite .bio:before {content: "José Leite Guerra";}
+#leite .bio:after {content: "Bacharel em direito, poeta e cronista.";}
+
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
 #nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP).";}
+
+/* MARTA ANTUNES */
+#marta .fotobio {content: url(https://1.bp.blogspot.com/-a3ACCnK_F-8/X8Mg6C_oKKI/AAAAAAACjYE/ZWEx3ApJI9w12fQtmQjH2GiPQ_15RGyewCLcBGAsYHQ/s0/Maria-Antunes.jpg);}
+#marta .bio:before {content: "Marta Antunes";}
+#marta .bio:after {content: "Escritora e vice-presidente da Federação Espírita Brasileira.";}
 
 /* MILTON MARQUES JR */
 #milton .fotobio {content: url(https://1.bp.blogspot.com/-IH9kL7efF7M/X77nD2hHBdI/AAAAAAACjNY/E_ODW7-2l8Eij_W7E3bMVClzSSPyvu0_wCLcBGAsYHQ/s0/Milton-Marques.jpg);}
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL).";}
 
+/* RUI LEITÃO */
+#rui .fotobio {content: url(https://1.bp.blogspot.com/-x6oCNMCDKy4/X8Mg6IM518I/AAAAAAACjYI/fMpxCybDrAMvhrSmIiS3WSQXnziRRNw5gCLcBGAsYHQ/s0/Rui-Leitao.jpg);}
+#rui .bio:before {content: "Rui Leitão";}
+#rui .bio:after {content: "Jornalista e escritor.";}
+
 /* SAULO MENDONÇA */
 #saulo .fotobio {content: url(https://1.bp.blogspot.com/-b2gEO0KXjcI/X8CG0ueyuPI/AAAAAAACjSI/i9668Ou7ntUBoK1-Z_gVIzqzOyGZ238dwCLcBGAsYHQ/s0/Saulo-Mendonc%25CC%25A7a.jpg
 );}
 #saulo .bio:before {content: "Saulo Mendonça";}
 #saulo .bio:after {content: "Escritor, poeta e haikaista.";}
+
+/* SONIA ZAGHETTO */
+#sonia .fotobio {content: url(https://1.bp.blogspot.com/-I4RHmA2X70c/X8Mg650zRJI/AAAAAAACjYM/QgPcpL0W-b8U5zckKRROiLwfodvVHJEAwCLcBGAsYHQ/s0/Sonia-Zaghetto.jpg);}
+#sonia .bio:before {content: "Sonia Zaghetto";}
+#sonia .bio:after {content: "Jornalista e escritora.";}
 
 /* VÓLIA AMARAL */
 #volia .fotobio {content: url(https://1.bp.blogspot.com/-e7WKxhHQyj8/X8Lj24cbP8I/AAAAAAACjWg/NgIiOL0Xcg0CfE0zXqTgjaPMVQpA3MMogCLcBGAsYHQ/s0/Volia-Loureiro.jpg);}
