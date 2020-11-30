@@ -69,6 +69,13 @@
 #flavio .bio:before {content: "Flávio Ramalho de Brito";}
 #flavio .bio:after {content: "Engenheiro e articulista.";}
 
+/* FRANCISCO GIL MESSIAS */
+#gil .fotobio {content: url(https://1.bp.blogspot.com/-TsSkJmcrgf8/X8RzCpK0CUI/AAAAAAACjec/tJlA5ir8CXcyYm0HJ3hG1-bIUfr9gvrUQCLcBGAsYHQ/s0/Francisco-Messias.jpg);}
+#gil .bio:before {content: "Francisco Gil Messias";}
+#gil .bio:after {content: "Cronista e ex-procurador-geral da Universidade Federal da Paraíba (UFPB).";}
+
+ttps://1.bp.blogspot.com/-TsSkJmcrgf8/X8RzCpK0CUI/AAAAAAACjec/tJlA5ir8CXcyYm0HJ3hG1-bIUfr9gvrUQCLcBGAsYHQ/s0/Francisco-Messias.jpg
+
 /* GERMANO ROMERO */
 #germano .fotobio {content: url(https://1.bp.blogspot.com/-jDzcnZeLhlI/X7-1hV59-_I/AAAAAAACjN0/2UCnLMaP84E1_ERlzHUw3hn1aOIhopVQQCLcBGAsYHQ/s0/Germano-Romero.jpg);}
 #germano .bio:before {content: "Germano Romero";}
