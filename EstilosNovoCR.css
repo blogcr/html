@@ -203,7 +203,6 @@ figcaption {
 	font-size:0.7em;
 	padding: 0 10px;
 	background: rgba(0, 0, 0, 0.4)  !important;
-	overflow: hidden;
 	font-weight: normal;
 }
 
