@@ -73,6 +73,11 @@ blockquote::before {
 	padding-left:10px; 
 	border-left:1px solid #B71C1C;
 }
+
+.borda2 {
+	padding-left:15px; 
+	border-left:4px solid #B71C1C;
+}
 		
 .poesia {
 	white-space: pre-wrap;
