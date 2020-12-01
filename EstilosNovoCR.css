@@ -211,13 +211,11 @@ figcaption {
 }
 
 .credir {
-	position: absolute;
-	bottom: -25px !important;
+	position: relative;
+	bottom: 0 !important;
 	right: 0;
-	color:#000 !important;
-	width:inherit;
-	height: 25px;
-	line-height: 25px;
+	color:#fff !important;
+
 	font-style:italic
 }
 
