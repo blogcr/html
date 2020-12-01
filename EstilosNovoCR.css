@@ -179,6 +179,7 @@ figure {
 	max-width: 45% !important;
 }
 
+/*
 figcaption {
   	position:relative;
 	color:#fff;
@@ -190,20 +191,28 @@ figcaption {
 	text-align:center;
 	font-size:0.7em;
 	font-weight: bold;
-	margin-bottom:-30px !important;
+	
+}
+*/
+
+figcaption {
+  	position:relative;
+	color:#fff;
+	width:inherit;
+	bottom:35px;
+	height:25px;
+	line-height:25px;
+	font-size:0.7em;
+	padding: 0 10px;
+	background: rgba(0, 0, 0, 0.4)  !important;
 }
 
 .credito {
-	background: rgba(0, 0, 0, 0.4)  !important;
 	text-align:left !important;
-	padding-left: 15px  !important;
-	font-weight: normal !important;
 }
 
 .credir {
 	float: right !important;
-	margin-left: 15px !important;
-	padding-right: 15px !important;
 }
 
 .fa-camera, .fa-paint-brush {
