@@ -204,7 +204,6 @@ figcaption {
 	padding: 0 10px;
 	background: rgba(0, 0, 0, 0.4)  !important;
 	font-weight: normal;
-	overflow:hidden;
 }
 
 .credito {
@@ -220,7 +219,7 @@ figcaption {
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 320px) {
+@media only screen and (max-width: 1024px) {
 	.credir {
 		bottom: -25px !important;
 		color: #757575 !important;
