@@ -204,19 +204,19 @@ figcaption {
 	padding: 0 10px;
 	background: rgba(0, 0, 0, 0.4)  !important;
 	overflow: hidden;
+	font-weight: normal;
 }
 
 .credito {
-	text-align:left !important;
+	text-align:left;
 }
 
 .credir {
-	text-align: right !important;
 	position: absolute;
 	bottom: -25px !important;
 	right: 0;
 	color:#000 !important;
-	width: auto;
+	width:inherit;
 	height: 25px;
 	line-height: 25px;
 	font-style:italic
