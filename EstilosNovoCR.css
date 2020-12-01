@@ -215,6 +215,14 @@ figcaption {
 	float: right !important;
 }
 
+
+@media only screen and (max-width: 790px) {
+	.credir {
+		float: left !important;
+		color:#000 !important;
+	}
+}
+
 .fa-camera, .fa-paint-brush {
 	margin: 0 10px !important;
 }
