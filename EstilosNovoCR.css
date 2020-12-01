@@ -211,12 +211,11 @@ figcaption {
 }
 
 .credir {
-	position: relative;
-	bottom: 0 !important;
+	position: absolute;
+	bottom: -25px !important;
 	right: 0;
-	color:#fff !important;
-
-	font-style:italic
+	color: #777 !important;
+	font-style: italic;
 }
 
 .fa-camera, .fa-paint-brush {
