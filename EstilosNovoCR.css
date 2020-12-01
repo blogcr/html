@@ -144,8 +144,6 @@ blockquote::before {
 	bottom: 0; 	
 }
 
-
-
 /* FIGURE */
 figure {
 	display: block !important;
@@ -197,7 +195,7 @@ figcaption {
 
 figcaption {
   	position:relative;
-	color:#fff;
+	color:#ffffff;
 	width:inherit;
 	bottom:35px;
 	height:25px;
@@ -217,7 +215,6 @@ figcaption {
 	position: absolute;
 	bottom: -25px !important;
 	right: 0;
-	color: #9E9E9E !important;
 	width: 100%;
 	height: 25px;
 	line-height: 25px;
