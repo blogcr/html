@@ -74,8 +74,6 @@
 #gil .bio:before {content: "Francisco Gil Messias";}
 #gil .bio:after {content: "Cronista e ex-procurador-geral da Universidade Federal da Paraíba (UFPB).";}
 
-ttps://1.bp.blogspot.com/-TsSkJmcrgf8/X8RzCpK0CUI/AAAAAAACjec/tJlA5ir8CXcyYm0HJ3hG1-bIUfr9gvrUQCLcBGAsYHQ/s0/Francisco-Messias.jpg
-
 /* GERMANO ROMERO */
 #germano .fotobio {content: url(https://1.bp.blogspot.com/-jDzcnZeLhlI/X7-1hV59-_I/AAAAAAACjN0/2UCnLMaP84E1_ERlzHUw3hn1aOIhopVQQCLcBGAsYHQ/s0/Germano-Romero.jpg);}
 #germano .bio:before {content: "Germano Romero";}
@@ -116,6 +114,12 @@ ttps://1.bp.blogspot.com/-TsSkJmcrgf8/X8RzCpK0CUI/AAAAAAACjec/tJlA5ir8CXcyYm0HJ3
 );}
 #saulo .bio:before {content: "Saulo Mendonça";}
 #saulo .bio:after {content: "Escritor, poeta e haikaista.";}
+
+/* SERGIO ROLIM */
+#rolim .fotobio {content: url(https://1.bp.blogspot.com/-dQFISy4QOPM/X8WPaXqbRDI/AAAAAAACjgs/f7zoh_OIFqgciZMNPBfQ6z29cZBNcoupACLcBGAsYHQ/s0/Se%25CC%2581rgio-Rolim.jpg
+);}
+#rolim .bio:before {content: "Sérgio Rolim Mendonça";}
+#rolim .bio:after {content: "Engenheiro Sanitarista e Ambiental.";}
 
 /* SONIA ZAGHETTO */
 #sonia .fotobio {content: url(https://1.bp.blogspot.com/-I4RHmA2X70c/X8Mg650zRJI/AAAAAAACjYM/QgPcpL0W-b8U5zckKRROiLwfodvVHJEAwCLcBGAsYHQ/s0/Sonia-Zaghetto.jpg);}
