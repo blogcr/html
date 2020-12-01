@@ -215,13 +215,15 @@ figcaption {
 	position: absolute;
 	bottom: -25px !important;
 	right: 0;
-	width: 100%;
+	color:#000 !important;
+	width: auto;
 	height: 25px;
 	line-height: 25px;
+	font-style:italic
 }
 
 .fa-camera, .fa-paint-brush {
-	margin: 0 10px !important;
+	margin: 0 5px !important;
 }
 
 
