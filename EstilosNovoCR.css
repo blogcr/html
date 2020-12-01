@@ -213,12 +213,17 @@ figcaption {
 
 .credir {
 	float: right !important;
+	position:relative;
+	color:#000 !important;
+	width:inherit;
+	bottom:0px !important;
+	height:25px;
+	line-height:25px;
 }
 
 
 @media only screen and (max-width: 790px) {
 	.credir {
-		float: left !important;
 		color:#000 !important;
 	}
 }
