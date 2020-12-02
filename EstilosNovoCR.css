@@ -212,6 +212,14 @@ figcaption {
 }
 
 .credir {
+	float:right !important;
+	color: #BDBDBD !important;
+	font-style: italic;
+}
+
+
+/*
+.credir {
 	position: absolute;
 	bottom: 0px !important;
 	right: 10px;
@@ -226,6 +234,7 @@ figcaption {
 		color: #757575 !important;
 	}
 }
+*/
 
 .fa-camera, .fa-paint-brush {
 	margin: 0 5px !important;
