@@ -89,6 +89,11 @@
 #gonzaga .bio:before {content: "Gonzaga Rodrigues";}
 #gonzaga .bio:after {content: "Escritor e membro da Academia Paraibana de Letras (APL).";}
 
+/* JORGE ELIAS NETO */
+#jorge .fotobio {content: url(https://1.bp.blogspot.com/-pW05NS3DTG0/X8g5VszXXnI/AAAAAAACjlo/ZzC3MnuX1IA79RwC8-JtyrzyC65IWBSjwCLcBGAsYHQ/s0/Jorge-Elias.jpg);}
+#jorge .bio:before {content: "Jorge Elias Neto";}
+#jorge .bio:after {content: "Poeta, escritor, médico e membro da Academia Espirito-santense de Letras (AEL)";}
+
 /* JOSÉ LEITE GUERRA */
 #leite .fotobio {content: url(https://1.bp.blogspot.com/-24f78NCQ2SI/X8Mg6PzM19I/AAAAAAACjYA/JaY6fYRc7x4bMYzs8wJKMEYyxAVrIcu_wCLcBGAsYHQ/s0/Jose-Leite-Guerra.jpg);}
 #leite .bio:before {content: "José Leite Guerra";}
