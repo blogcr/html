@@ -120,7 +120,7 @@ blockquote::before {
 	margin-right: 10px; 
 }
 
-#ornamento .gradiente {
+.gradiente {
 	border-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
 	border-style: solid; 
 	border-width: 0px 0px 2px;
