@@ -141,6 +141,11 @@
 #sonia .bio:before {content: "Sonia Zaghetto";}
 #sonia .bio:after {content: "Jornalista e escritora.";}
 
+/* VERONICA FARIAS */
+#veronica .fotobio {content: url(https://1.bp.blogspot.com/-fhJAleZ3d-0/X8mP-UIm3AI/AAAAAAACjpw/7qumADcrleQRw9KSmfdMxi9CXcCyowLOQCLcBGAsYHQ/s0/Vero%25CC%2582nica-Farias.jpg);}
+#veronica .bio:before {content: "Verônica Farias";}
+#veronica .bio:after {content: "Graduada em ciências econômicas.";}
+
 /* VÓLIA AMARAL */
 #volia .fotobio {content: url(https://1.bp.blogspot.com/-e7WKxhHQyj8/X8Lj24cbP8I/AAAAAAACjWg/NgIiOL0Xcg0CfE0zXqTgjaPMVQpA3MMogCLcBGAsYHQ/s0/Volia-Loureiro.jpg);}
 #volia .bio:before {content: "Vólia L. do Amaral";}
