@@ -104,6 +104,12 @@
 #leite .bio:before {content: "José Leite Guerra";}
 #leite .bio:after {content: "Bacharel em direito, poeta e cronista.";}
 
+/* JOSÉ MÁRIO ESPÍNOLA */
+#mario .fotobio {content: url(https://1.bp.blogspot.com/-fXfS0TsPwzY/X8rAxw_GXxI/AAAAAAACjsM/y1e8cp9xFg0H8hWUkru07OWc9O_KZy7SgCLcBGAsYHQ/s0/Jose-Mario-Espinola.jpg
+);}
+#mario .bio:before {content: "José Mário Espínola";}
+#mario .bio:after {content: "Médico e escritor.";}
+
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
