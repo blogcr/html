@@ -136,6 +136,12 @@
 #saulo .bio:before {content: "Saulo Mendonça";}
 #saulo .bio:after {content: "Escritor, poeta e haikaista.";}
 
+/* SÉRGIO DE CASTRO PINTO */
+#sergio .fotobio {content: url(https://1.bp.blogspot.com/-pcdNQx96x_8/X8rLMCpMkQI/AAAAAAACjsY/vpMlDscym4QUWEova0N1clKvXGMFLRqCACLcBGAsYHQ/s0/Sergio-Castro.jpg
+);}
+#sergio .bio:before {content: "Sérgio de Castro Pinto";}
+#sergio .bio:after {content: "Doutor em literatura, professor, poeta e membro da Academia Paraibana de Letras (APL).";}
+
 /* SERGIO ROLIM */
 #rolim .fotobio {content: url(https://1.bp.blogspot.com/-dQFISy4QOPM/X8WPaXqbRDI/AAAAAAACjgs/f7zoh_OIFqgciZMNPBfQ6z29cZBNcoupACLcBGAsYHQ/s0/Se%25CC%2581rgio-Rolim.jpg
 );}
