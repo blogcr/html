@@ -164,7 +164,7 @@
 #volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
 
 .compartilhe {
-	width:60px;
+	width:150px;
 	float:right;
 	border: 0px solid #B71C1C;
 	text-align:center;
@@ -172,7 +172,7 @@
 	background:#f5f5f5;
 	*/
 	display:block;
-	padding: 0 10px;
+	padding: 0 5px;
 	margin-top:50px;
 }
 
