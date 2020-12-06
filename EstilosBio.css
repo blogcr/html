@@ -176,19 +176,19 @@
 	/*
 	background:#f5f5f5;
 	*/
-	display:inline;
 	padding: 0 5px;
 	margin-top:50px;
+	display:inline-block;
 }
 
 .testebio {
-	width:80%;
+	width:70%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
 	padding: 0 20px;
 	margin-top:50px;
 	float:left;
-	display:block;
+	display:inline-block;
 }
 
 /*
