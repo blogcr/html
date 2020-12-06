@@ -5,7 +5,7 @@
 	padding: 0 20px;
 	margin-top:50px;
 	float:left;
-	display:inline-block;
+	display:inline;
 }
 	
 .fotobio {
@@ -176,7 +176,7 @@
 	/*
 	background:#f5f5f5;
 	*/
-	display:inline-block;
+	display:inline;
 	padding: 0 5px;
 	margin-top:50px;
 }
