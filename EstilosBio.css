@@ -1,5 +1,5 @@
 .boxbio {
-	width:100%;
+	width:70%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
 	padding: 0 20px;
@@ -164,7 +164,7 @@
 #volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
 
 .compartilhe {
-	width:150px;
+	width:28%;
 	float:right;
 	border: 0px solid #B71C1C;
 	text-align:center;
@@ -186,11 +186,10 @@
 	display:block;
 }
 
-/*
+
 .compartilhe:before {
 	content:'GOSTOU? COMPARTILHE';
 	border-bottom: 1px solid #B71C1C;
 	margin: 0 auto;
 	text-align:center;
 }
-*/
