@@ -172,11 +172,12 @@
 	width:20%;
 	float:right;
 	text-align:center;
+	font-weight:bold;
 	padding: 5px 5px;
 	margin-top:50px;
 	display:inline-block;
   	font-size:0.7em;
-	line-height:0.7em;
+	line-height:0.9em;
   	background:#F5F5F5;
 }
 
