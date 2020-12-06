@@ -168,7 +168,7 @@
 #volia .bio:before {content: "Vólia L. do Amaral";}
 #volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
 
-.compartilhe {
+#compartilhe {
 	width:20%;
 	float:right;
 	text-align:center;
@@ -182,12 +182,12 @@
   	background:#F5F5F5;
 }
 
-.compartilhe hr {
+#compartilhe hr {
   	width:50% !important;
   	color: #B71C1C;
 }
 
-.compartilhe:before {
+#compartilhe:before {
   	content:"GOSTOU? \A COMPARTILHE";
   	white-space: pre-line;
 }
