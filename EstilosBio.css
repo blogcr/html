@@ -177,20 +177,20 @@
 	margin-top:50px;
 	display:inline-block;
   	font-size:0.8em;
-	line-height:1em;
+	line-height:1.2em;
   	background:#F5F5F5;
 }
 
 #compartilhe hr {
   	width:50% !important;
   	color: #B71C1C;
-	margin: 0 auto 5px !important;
+	margin: 0 auto 10px !important;
 }
 
 #compartilhe:before {
   	content:"GOSTOU? \A COMPARTILHE";
   	white-space: pre-line;
-	margin-bottom:5px;
+	margin-bottom:10px;
 }
 
 .testebio {
