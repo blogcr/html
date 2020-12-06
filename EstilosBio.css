@@ -39,6 +39,11 @@
 	display:block;
 }
 
+/* LBERTO LACET */
+#alberto .fotobio {content: url(https://1.bp.blogspot.com/-rrQJ3I0huaM/X8zYnD7nq2I/AAAAAAACjws/7BQ0R2rErkoYKYPYQQ1iD4fuIDccR3a2QCLcBGAsYHQ/s0/Alberto-Lacet.jpg);}
+#alberto .bio:before {content: "Alberto Lacet";}
+#alberto .bio:after {content: "Dartista plástico e escritor.";}
+
 /* ANA ADELAIDE PEIXOTO */
 #ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
 #ana .bio:before {content: "Ana Adelaide P. Tavares";}
