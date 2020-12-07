@@ -27,7 +27,7 @@
 }
 
 .textobio, .bio {
-	line-height:1.2em !important;
+	line-height:1.2 !important;
 	padding:0px !important;
 	color:#000;
 }
