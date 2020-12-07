@@ -28,7 +28,7 @@
 
 .textobio, .bio {
 	font-size:calc(0.5em + 1vw);
-	line-height:0.9 !important;
+	line-height:0.5 !important;
 	padding:0px !important;
 	color:#000;
 }
