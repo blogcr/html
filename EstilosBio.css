@@ -27,7 +27,7 @@
 }
 
 .textobio, .bio {
-	line-height:1 !important;
+	line-height:0.8 !important;
 	padding:0px !important;
 	color:#000;
 }
@@ -37,7 +37,8 @@
 	font-weight:bold;
 	width: 100%;
 	display:block;
-	padding-bottom:5px !important;
+	padding:5px 0 5px !important;
+	margin-bottom:5px;
 }
 
 .bio:after {
@@ -64,7 +65,10 @@
 }
 
 #compartilhe:before {
+	/*
   	content:"GOSTOU? \A COMPARTILHE";
+	*/
+	content:"COMPARTILHE";
   	white-space: pre-line;
 	margin-bottom:10px;
 }
