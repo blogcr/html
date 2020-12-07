@@ -52,7 +52,7 @@
 	padding: 5px 5px;
 	margin-top:50px;
 	display:inline-block;
-  	font-size:calc(0.5em + 1vw);
+  	font-size:calc(0.5em + 0.5vw);
 	line-height:1 !important;
   	background:#F5F5F5;
 }
@@ -64,7 +64,7 @@
 }
 
 #compartilhe:before {
-  	content:"Gostou? \A COMPARTILHE";
+  	content:"GOSTOU? \A COMPARTILHE";
   	white-space: pre-line;
 	margin-bottom:10px;
 }
