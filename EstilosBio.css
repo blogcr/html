@@ -6,7 +6,7 @@
 	margin-top:50px;
 	float:left;
 	display:inline-block;
-	line-height:1 !important;
+	line-height:1.2 !important;
 }
 	
 .fotobio {
@@ -39,12 +39,12 @@
 	display:block;
 	padding:5px 0 5px !important;
 	margin-bottom:5px;
-	line-height:1 !important;
+	line-height:1.2 !important;
 }
 
 .bio:after {
 	overflow:hidden !important;
-	line-height:1 !important;
+	line-height:1.2 !important;
 }
 
 #compartilhe {
