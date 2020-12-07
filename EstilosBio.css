@@ -1,5 +1,5 @@
 .boxbio {
-	width:70%;
+	width:68%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
 	padding: 0 20px;
@@ -37,6 +37,31 @@
 	font-weight:bold;
 	width: 100%;
 	display:block;
+}
+
+#compartilhe {
+	width:28%;
+	float:right;
+	text-align:center;
+	font-weight:bold;
+	padding: 5px 5px;
+	margin-top:50px;
+	display:inline-block;
+  	font-size:calc(0.5em + 1vw);
+	line-height:1.2em;
+  	background:#F5F5F5;
+}
+
+#compartilhe hr {
+  	width:50% !important;
+  	color: #B71C1C;
+	margin: 0 auto 10px !important;
+}
+
+#compartilhe:before {
+  	content:"GOSTOU? \A COMPARTILHE";
+  	white-space: pre-line;
+	margin-bottom:10px;
 }
 
 /* LBERTO LACET */
@@ -168,30 +193,6 @@
 #volia .bio:before {content: "Vólia L. do Amaral";}
 #volia .bio:after {content: "Engenheira civil, poetisa e escritora.";}
 
-#compartilhe {
-	width:30%;
-	float:right;
-	text-align:center;
-	font-weight:bold;
-	padding: 5px 5px;
-	margin-top:50px;
-	display:inline-block;
-  	font-size:calc(0.5em + 1vw);
-	line-height:1.2em;
-  	background:#F5F5F5;
-}
-
-#compartilhe hr {
-  	width:50% !important;
-  	color: #B71C1C;
-	margin: 0 auto 10px !important;
-}
-
-#compartilhe:before {
-  	content:"GOSTOU? \A COMPARTILHE";
-  	white-space: pre-line;
-	margin-bottom:10px;
-}
 
 .testebio {
 	width:70%;
