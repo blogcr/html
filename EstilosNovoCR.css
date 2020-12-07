@@ -529,10 +529,12 @@ blockquote::after {
 	margin: 0 auto auto 20px !important;
 	}
 
+/*
 .bio { 
 	margin-top:10px;
 	font-size: 14px;
 	}
+*/
 
 .fa fa-camera {
 	padding: 0 5px !important;
