@@ -30,7 +30,6 @@
 	line-height:1 !important;
 	padding:0px !important;
 	color:#000;
-	overflow:hidden !important;
 }
 
 .bio:before {
@@ -39,6 +38,10 @@
 	width: 100%;
 	display:block;
 	padding-bottom:5px !important;
+}
+
+.bio:after {
+	overflow:hidden !important;
 }
 
 #compartilhe {
