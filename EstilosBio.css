@@ -1,5 +1,5 @@
 .boxbio {
-	width:68%;
+	width:70%;
 	border: 0px solid #B71C1C;
 	background:#F5F5F5;
 	padding: 0 20px;
@@ -27,7 +27,7 @@
 }
 
 .textobio, .bio {
-	font-size:1em;
+	font-size:calc(0.5em + 1vw);
 	padding:0px !important;
 	color:#000;
 }
