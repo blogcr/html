@@ -10,7 +10,6 @@
 	margin: 0 0 3px 0;
 }	
 
-
 /* PRIMEIRA LETRA */
 .letra:first-letter {
 	font-family: 'Kaushan Script', cursive !important;
@@ -349,6 +348,12 @@ figcaption {
 
 .desloca {
 	padding-left: 30px;
+}
+
+.centraliza {
+	margin: 0 auto;
+	text-align:center;
+	display:block
 }
 
 
