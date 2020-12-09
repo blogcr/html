@@ -635,9 +635,10 @@ select {
 	opacity:0.8;
 }
 
-.relacionado {
+.relacionado, .relacionado a {
 	font-family: 'Kaushan Script', cursive;
 	font-size:calc(3em + 0.5vw);
 	color:#ffffff;
 	margin:-30px 0 10px 0;
+	text-decoration:none;
 }
