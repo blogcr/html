@@ -633,12 +633,15 @@ select {
 	font-size:calc(1em + 0.5vw);
 	color:#ffffff;
 	opacity:0.8;
+	display:block;
+	margin:0 0 10px 0;
 }
 
 .relacionado, .relacionado a {
 	font-family: 'Kaushan Script', cursive;
 	font-size:calc(1em + 0.5vw);
 	color:#ffffff;
-	margin:-20px 0 10px 0;
+	margin:0 0 10px 0;
 	text-decoration:none;
+	display:block;
 }
