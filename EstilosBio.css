@@ -161,6 +161,11 @@
 #nunes .bio:before {content: "José Nunes";}
 #nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP).";}
 
+/* LINALDO GUEDES */
+#linaldo .fotobio {content: url(https://1.bp.blogspot.com/-tNmnVmOHgis/X9FdKwHMgeI/AAAAAAACj-k/-Bp_NNTe1oEmOxnek3ChSGxNGQ2lAA12QCLcBGAsYHQ/s0/Linaldo-Guedes.jpg);}
+#linaldo .bio:before {content: "Linaldo Guedes";}
+#linaldo .bio:after {content: "Mestre em ciências da religião, editor, jornalista e poeta.";}
+
 /* MARTA ANTUNES */
 #marta .fotobio {content: url(https://1.bp.blogspot.com/-a3ACCnK_F-8/X8Mg6C_oKKI/AAAAAAACjYE/ZWEx3ApJI9w12fQtmQjH2GiPQ_15RGyewCLcBGAsYHQ/s0/Maria-Antunes.jpg);}
 #marta .bio:before {content: "Marta Antunes";}
