@@ -86,7 +86,7 @@
 #alberto .bio:after {content: "Dartista plástico e escritor.";}
 
 /* ANA ADELAIDE PEIXOTO */
-#ana .fotobio {content: url(https://bit.ly/3oKPAFb);}
+#ana .fotobio {content: url(https://1.bp.blogspot.com/-dTmmfNPTrFw/X9jZLb7welI/AAAAAAACmPk/500GIvjCQGkpb9Uh2mJ-Nb8IKQPS3IsJgCLcBGAsYHQ/s0/Ana-Adelaide.jpg);}
 #ana .bio:before {content: "Ana Adelaide P. Tavares";}
 #ana .bio:after {content: "Doutora em teoria da literatura, professora e escritora.";}
 
@@ -180,6 +180,11 @@
 #milton .fotobio {content: url(https://1.bp.blogspot.com/-IH9kL7efF7M/X77nD2hHBdI/AAAAAAACjNY/E_ODW7-2l8Eij_W7E3bMVClzSSPyvu0_wCLcBGAsYHQ/s0/Milton-Marques.jpg);}
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL).";}
+
+/* ANTONIO MORAIS */
+#morais .fotobio {content: url(https://1.bp.blogspot.com/-oa3vCY0WSGM/X9jZLRlegMI/AAAAAAACmPg/MxjKvl9LA_Edo986x-cn1nnmDME_y12sQCLcBGAsYHQ/s0/Anto%25CC%2582nio-Morais.jpg);}
+#morais .bio:before {content: "Antonio Morais de Carvalho";}
+#morais .bio:after {content: "Professor e poeta.";}
 
 /* RUI LEITÃO */
 #rui .fotobio {content: url(https://1.bp.blogspot.com/-x6oCNMCDKy4/X8Mg6IM518I/AAAAAAACjYI/fMpxCybDrAMvhrSmIiS3WSQXnziRRNw5gCLcBGAsYHQ/s0/Rui-Leitao.jpg);}
