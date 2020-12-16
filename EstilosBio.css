@@ -214,6 +214,11 @@
 #sonia .bio:before {content: "Sonia Zaghetto";}
 #sonia .bio:after {content: "Jornalista e escritora.";}
 
+/* THAMARA DUARTE */
+#thamara .fotobio {content: url(https://1.bp.blogspot.com/-eSS83FuqlH4/X9lhxKexSPI/AAAAAAACmfQ/kXaqPsehRsUDxTosu8Be9uekEAt7O9jAQCLcBGAsYHQ/s0/Thamara-Duarte.jpg);}
+#thamara .bio:before {content: "Thamara Duarte";}
+#thamara .bio:after {content: "Mestre em direitos humanos, ambientalista, e jornalista.";}
+
 /* VERONICA FARIAS */
 #veronica .fotobio {content: url(https://1.bp.blogspot.com/-fhJAleZ3d-0/X8mP-UIm3AI/AAAAAAACjpw/7qumADcrleQRw9KSmfdMxi9CXcCyowLOQCLcBGAsYHQ/s0/Vero%25CC%2582nica-Farias.jpg);}
 #veronica .bio:before {content: "Verônica Farias";}
