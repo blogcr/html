@@ -80,10 +80,15 @@
 #alcr .bio:before {content: "ALCR TV";}
 #alcr .bio:after {content: "Segmento audiovisual do Ambiente de Leitura Carlos Romero";}
 
+/* ADRIANO DE LEON */
+#adriano .fotobio {content: url(https://1.bp.blogspot.com/-EaCPXUmt9DE/X9rZ6pa_uVI/AAAAAAACmog/WTkUKqT4XeUUkEyCI0J9oJDKTYyJkTaPACLcBGAsYHQ/s0/Adriano-Leon.jpg);}
+#adriano .bio:before {content: "Adriano de León";}
+#adriano .bio:after {content: "Doutor em ciências sociais, professor e escritor.";}
+
 /* ALBERTO LACET */
 #alberto .fotobio {content: url(https://1.bp.blogspot.com/-rrQJ3I0huaM/X8zYnD7nq2I/AAAAAAACjws/7BQ0R2rErkoYKYPYQQ1iD4fuIDccR3a2QCLcBGAsYHQ/s0/Alberto-Lacet.jpg);}
 #alberto .bio:before {content: "Alberto Lacet";}
-#alberto .bio:after {content: "Dartista plástico e escritor.";}
+#alberto .bio:after {content: "Artista plástico e escritor.";}
 
 /* ANA ADELAIDE PEIXOTO */
 #ana .fotobio {content: url(https://1.bp.blogspot.com/-dTmmfNPTrFw/X9jZLb7welI/AAAAAAACmPk/500GIvjCQGkpb9Uh2mJ-Nb8IKQPS3IsJgCLcBGAsYHQ/s0/Ana-Adelaide.jpg);}
