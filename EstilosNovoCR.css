@@ -24,6 +24,19 @@
 	border-bottom:0px solid #B71C1C;
 }
 
+.letra2:first-letter {
+	color: #333134 !important;
+	opacity:0.7;
+	font-weight:bold; 
+	font-size:5em; 
+	float:left; 
+	padding:0; 
+	margin: 10px 28px 0 0 !important; 
+	background-color:none; 
+	line-height:0.7em;
+	border-bottom:0px solid #B71C1C;
+}
+
 /* BLOCKQUOTE */
 blockquote, .ast {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
