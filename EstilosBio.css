@@ -97,6 +97,11 @@
 #anapaula .bio:before {content: "Ana Paula Ramalho";}
 #anapaula .bio:after {content: "Psicanalista e escritora.";}
 
+/* ANTONIO MORAIS */
+#morais .fotobio {content: url(https://1.bp.blogspot.com/-oa3vCY0WSGM/X9jZLRlegMI/AAAAAAACmPg/MxjKvl9LA_Edo986x-cn1nnmDME_y12sQCLcBGAsYHQ/s0/Anto%25CC%2582nio-Morais.jpg);}
+#morais .bio:before {content: "Antonio Morais de Carvalho";}
+#morais .bio:after {content: "Professor e poeta.";}
+
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
 #celio .bio:before {content: "Célio Furtado";}
@@ -183,10 +188,10 @@
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL).";}
 
-/* ANTONIO MORAIS */
-#morais .fotobio {content: url(https://1.bp.blogspot.com/-oa3vCY0WSGM/X9jZLRlegMI/AAAAAAACmPg/MxjKvl9LA_Edo986x-cn1nnmDME_y12sQCLcBGAsYHQ/s0/Anto%25CC%2582nio-Morais.jpg);}
-#morais .bio:before {content: "Antonio Morais de Carvalho";}
-#morais .bio:after {content: "Professor e poeta.";}
+/* REJANE VIEIRA */
+#rejane .fotobio {content: url(https://1.bp.blogspot.com/-nC51mYsnBg0/X99sZWzE27I/AAAAAAACmvE/6NJbbPk3MpQH9SnWRK1WEglKEvTWcs7lgCLcBGAsYHQ/s0/Rejane-Vieira.jpg);}
+#rejane .bio:before {content: "Rejane Vieira";}
+#rejane .bio:after {content: "Graduada em Comunicação e mestra em Saúde Pública .";}
 
 /* RUI LEITÃO */
 #rui .fotobio {content: url(https://1.bp.blogspot.com/-x6oCNMCDKy4/X8Mg6IM518I/AAAAAAACjYI/fMpxCybDrAMvhrSmIiS3WSQXnziRRNw5gCLcBGAsYHQ/s0/Rui-Leitao.jpg);}
