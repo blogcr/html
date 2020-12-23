@@ -171,8 +171,8 @@ figure {
 	display: block !important;
 	max-width: 35% !important;
 	height: auto !important;
-    	position:relative;
-    	box-sizing: border-box;
+    	position:relative !important;
+    	box-sizing: border-box !important;
 }
 
 .dir {
@@ -217,19 +217,18 @@ figcaption {
 */
 
 figcaption {
-  	position:absolute;
-	color:#ffffff;
-	width:100%;
-	bottom:0;
-	height:30px;
-	line-height:30px;
-	font-size:0.7em;
-	padding: 0 10px;
+  	position:absolute !important;
+	color:#ffffff !important;
+	width:100% !important;
+	bottom:0 !important;
+	height:30px !important;
+	line-height:30px !important;
+	font-size:0.7em !important;
+	padding: 0 10px !important;
 	background: rgba(0, 0, 0, 0.4)  !important;
-	font-weight: normal;
-	overflow:hidden;
-	position:relative;
-    	box-sizing: border-box;
+	font-weight: normal !important;
+	overflow:hidden !important;
+    	box-sizing: border-box !important;
 }
 
 .credito {
