@@ -194,7 +194,7 @@ figure {
 
 .centro {
 	max-width: 90% !important;
-	margin: 0 auto !important;
+	margin: 0 auto 10px !important;
 }
 
 .meio {
