@@ -173,6 +173,7 @@ figure {
 	height: auto !important;
     	position:relative !important;
     	box-sizing: border-box !important;
+	overflow: hidden;
 }
 
 .dir {
@@ -220,9 +221,9 @@ figcaption {
   	position:absolute !important;
 	color:#ffffff !important;
 	width:100% !important;
-	bottom:0 !important;
-	height:30px !important;
-	line-height:30px !important;
+	bottom:10px !important;
+    	height:25px !important;
+	ine-height:25px !important;
 	font-size:0.7em !important;
 	padding: 0 10px !important;
 	background: rgba(0, 0, 0, 0.4)  !important;
