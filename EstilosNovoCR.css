@@ -220,7 +220,7 @@ figcaption {
   	position:relative;
 	color:#ffffff;
 	width:inherit;
-	bottom:0;
+	bottom:7px;
 	height:30px;
 	line-height:30px;
 	font-size:0.7em;
