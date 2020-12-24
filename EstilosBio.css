@@ -178,6 +178,11 @@
 #linaldo .bio:before {content: "Linaldo Guedes";}
 #linaldo .bio:after {content: "Mestre em ciências da religião, editor, jornalista e poeta.";}
 
+/* MARCO LIMA */
+#marco .fotobio {content: url(https://1.bp.blogspot.com/-D9fdy8K79xA/X-SrTru6yuI/AAAAAAACm4s/oWDemWBATRArc9TaN8ZUFYu-maaXJitTgCLcBGAsYHQ/s0/Marco-Lima.jpg);}
+#marco .bio:before {content: "Marco Grangeiro Lima";}
+#marco .bio:after {content: "Educador, mestre em serviço social e presidente da Federação Espírita Paraibana (FEP).";}
+
 /* MARTA ANTUNES */
 #marta .fotobio {content: url(https://1.bp.blogspot.com/-a3ACCnK_F-8/X8Mg6C_oKKI/AAAAAAACjYE/ZWEx3ApJI9w12fQtmQjH2GiPQ_15RGyewCLcBGAsYHQ/s0/Maria-Antunes.jpg);}
 #marta .bio:before {content: "Marta Antunes";}
