@@ -55,7 +55,7 @@
 	padding: 5px 5px;
 	margin-top:50px;
 	display:inline-block;
-  	font-size:calc(0.5em + 0.5vw);
+  	font-size:calc(0.4em + 0.5vw);
 	line-height:1 !important;
   	background:#F5F5F5;
 }
@@ -63,7 +63,7 @@
 #compartilhe hr {
   	width:50% !important;
   	color: #B71C1C;
-	margin: 0 auto 10px !important;
+	margin: 5px auto 10px !important;
 }
 
 #compartilhe:before {
