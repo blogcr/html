@@ -1,32 +1,3 @@
-/* ESTRUTURA GERAL */
-body {
-    background: #f0f0f0;
-    color: #000000;
-    font-family: "Roboto", sans-serif;
-    word-wrap: break-word;
-    background-color: #333134;
-    }
-
-body#layout .slider,
-body#layout .header_right,
-.status-msg-wrap,
-body#layout .socials,
-#navbar,.date-header,
-.feed-links,
-.post-location {
-    display: none !important;
-    }
-
-body#layout #leftContent {
-    width: 50%;
-    float: left;
-    }
-
-body#layout #sidebar-wrapper {
-    float: right;
-    width: 50%;
-    }
-
 a {
     color: #1565C0;
     }
