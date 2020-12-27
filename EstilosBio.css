@@ -229,7 +229,13 @@
 /* THAMARA DUARTE */
 #thamara .fotobio {content: url(https://1.bp.blogspot.com/-eSS83FuqlH4/X9lhxKexSPI/AAAAAAACmfQ/kXaqPsehRsUDxTosu8Be9uekEAt7O9jAQCLcBGAsYHQ/s0/Thamara-Duarte.jpg);}
 #thamara .bio:before {content: "Thamara Duarte";}
-#thamara .bio:after {content: "Mestre em direitos humanos, ambientalista, e jornalista.";}
+#thamara .bio:after {content: "Mestre em Direitos Humanos, ambientalista, e jornalista.";}
+
+/* THOMAS BRUNO */
+#thomas .fotobio {content: url(https://1.bp.blogspot.com/-oJrRnxTB6Cc/X-fO9yT5S-I/AAAAAAACnBQ/jV9rcnf6AIgM3M7SGBoa_Z-GlFVVKorvwCLcBGAsYHQ/s0/Thomas-Bruno.jpg);}
+#thomas .bio:before {content: "Thomas Bruno Oliveira";}
+#thomas .bio:after {content: "Mestre em História e jornalista.";}
+
 
 /* VERONICA FARIAS */
 #veronica .fotobio {content: url(https://1.bp.blogspot.com/-fhJAleZ3d-0/X8mP-UIm3AI/AAAAAAACjpw/7qumADcrleQRw9KSmfdMxi9CXcCyowLOQCLcBGAsYHQ/s0/Vero%25CC%2582nica-Farias.jpg);}
