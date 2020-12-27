@@ -102,6 +102,11 @@
 #morais .bio:before {content: "Antonio Morais de Carvalho";}
 #morais .bio:after {content: "Professor e poeta.";}
 
+/* CARLOS ROLIM */
+#carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
+#carlos .bio:before {content: "Engenheiro e professor.";}
+#carlos .bio:after {content: "Professor e poeta.";}
+
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
 #celio .bio:before {content: "Célio Furtado";}
