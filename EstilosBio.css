@@ -104,8 +104,8 @@
 
 /* CARLOS ROLIM */
 #carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
-#carlos .bio:before {content: "Engenheiro e professor.";}
-#carlos .bio:after {content: "Professor e poeta.";}
+#carlos .bio:before {content: "Carlos Rolim";}
+#carlos .bio:after {content: "Engenheiro e professor.";}
 
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
