@@ -203,6 +203,11 @@
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL).";}
 
+/* ROSA AGUIAR */
+#rosa .fotobio {content: url(https://1.bp.blogspot.com/-INmliSESqMU/X-0jPIz-DDI/AAAAAAACnMU/TdKY6QmE8fg9fnXxIPAf2zdxdNiQIHCFwCLcBGAsYHQ/s0/Rosa-Aguiar.jpg);}
+#rosa .bio:before {content: "Rosa Aguiar";}
+#rosa .bio:after {content: "Mestre em comunicação e jornalista.";}
+
 /* REJANE VIEIRA */
 #rejane .fotobio {content: url(https://1.bp.blogspot.com/-nC51mYsnBg0/X99sZWzE27I/AAAAAAACmvE/6NJbbPk3MpQH9SnWRK1WEglKEvTWcs7lgCLcBGAsYHQ/s0/Rejane-Vieira.jpg);}
 #rejane .bio:before {content: "Rejane Vieira";}
