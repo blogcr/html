@@ -218,6 +218,11 @@
 #rui .bio:before {content: "Rui Leitão";}
 #rui .bio:after {content: "Jornalista e escritor.";}
 
+/* SAM CAVALCANTI */
+#sam .fotobio {content: url(https://1.bp.blogspot.com/-FqwXexndbOQ/X-6_E2FvowI/AAAAAAACpCE/rR2iB3urpjcYcibOb6pq2AvEjfNpOY6fQCLcBGAsYHQ/s0/Sam-Cavalcanti.jpg);}
+#sam .bio:before {content: "Sam Cavalcanti";}
+#sam .bio:after {content: "Mestre em música, compositor, crítico e escritor.";}
+
 /* SAULO MENDONÇA */
 #saulo .fotobio {content: url(https://1.bp.blogspot.com/-b2gEO0KXjcI/X8CG0ueyuPI/AAAAAAACjSI/i9668Ou7ntUBoK1-Z_gVIzqzOyGZ238dwCLcBGAsYHQ/s0/Saulo-Mendonc%25CC%25A7a.jpg
 );}
@@ -250,7 +255,6 @@
 #thomas .fotobio {content: url(https://1.bp.blogspot.com/-oJrRnxTB6Cc/X-fO9yT5S-I/AAAAAAACnBQ/jV9rcnf6AIgM3M7SGBoa_Z-GlFVVKorvwCLcBGAsYHQ/s0/Thomas-Bruno.jpg);}
 #thomas .bio:before {content: "Thomas Bruno Oliveira";}
 #thomas .bio:after {content: "Mestre em História e jornalista.";}
-
 
 /* VERONICA FARIAS */
 #veronica .fotobio {content: url(https://1.bp.blogspot.com/-fhJAleZ3d-0/X8mP-UIm3AI/AAAAAAACjpw/7qumADcrleQRw9KSmfdMxi9CXcCyowLOQCLcBGAsYHQ/s0/Vero%25CC%2582nica-Farias.jpg);}
