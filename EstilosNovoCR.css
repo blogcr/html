@@ -285,6 +285,13 @@ figcaption {
 
 #foto2 .foto2flex {
 	margin: 0 auto !important;
+	position:relative;
+}
+
+.foto3 {
+	margin: 0 auto !important;
+	position:relative;
+	display:block;
 }
 
 /* VIDEO LATERAL DIREITO */
