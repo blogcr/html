@@ -372,12 +372,15 @@ figcaption {
 	padding-left: 30px;
 }
 
+.desloca2 {
+	padding-left: 60px;
+}
+
 .centraliza {
 	margin: 0 auto;
 	text-align:center;
 	display:block
 }
-
 
 .pergunta {
   	padding-left: 20px;
