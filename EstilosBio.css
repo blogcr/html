@@ -176,7 +176,12 @@
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
-#nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP).";}
+#nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP)";}
+
+/* KRISHNAMURTI GOES */
+#krishna .fotobio {content: url(https://1.bp.blogspot.com/-Kyl6ChifsFA/X_kGNbof8XI/AAAAAAACpmQ/qGnCJqH8-YIkEo1voxQm5Y9K2jH9pRhMQCLcBGAsYHQ/s0/Krisnamurti-Goes.jpg);}
+#krishna .bio:before {content: "Krishnamurti Góes dos Anjos";}
+#krishna .bio:after {content: "Escritor, pesquisador e crítico literário";}
 
 /* LINALDO GUEDES */
 #linaldo .fotobio {content: url(https://1.bp.blogspot.com/-tNmnVmOHgis/X9FdKwHMgeI/AAAAAAACj-k/-Bp_NNTe1oEmOxnek3ChSGxNGQ2lAA12QCLcBGAsYHQ/s0/Linaldo-Guedes.jpg);}
