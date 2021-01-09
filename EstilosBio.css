@@ -6,8 +6,7 @@
 	margin-top:50px;
 	float:left;
 	display:inline-block;
-	line-height:1.2 !important;
-	font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+	line-height:1.2 !important; 
 }
 	
 .fotobio {
@@ -56,8 +55,7 @@
 	padding: 5px 5px;
 	margin-top:50px;
 	display:inline-block;
-	font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  	/* font-size:calc(0.4em + 0.5vw); */
+  	font-size:calc(0.4em + 0.5vw);
 	line-height:1 !important;
   	background:#F5F5F5;
 }
