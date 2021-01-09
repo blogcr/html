@@ -8,7 +8,7 @@
 	display:inline-block;
 	line-height:1.2 !important; 
 }
-	
+
 .fotobio {
   	position:relative;
 	top:-10px;
@@ -70,6 +70,27 @@
   	content:"GOSTOU? \A COMPARTILHE";
   	white-space: pre-line;
 	margin-bottom:10px;
+}
+
+@media screen and (min-width: 600px) {
+	.boxbio {
+		width:100%;
+		display:block;
+		}
+	
+	#compartilhe {
+		width:100%;
+		font-weight:bold;
+		padding: 5px 5px;
+		margin-top:20px;
+		display:block;
+  		font-size:inherit;
+		line-height:1inherit;
+		}
+
+	#compartilhe:before {
+  		content:"GOSTOU? COMPARTILHE";
+		}
 }
 
 /* ALCR */
