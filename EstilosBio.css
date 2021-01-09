@@ -223,6 +223,11 @@
 #marta .bio:before {content: "Marta Antunes";}
 #marta .bio:after {content: "Escritora e vice-presidente da Federação Espírita Brasileira";}
 
+/* MILFA VALÉRIO */
+#milfa .fotobio {content: url(https://1.bp.blogspot.com/-qjZ1OXxq_As/X_oaJBvU1oI/AAAAAAACpoM/_Ty7xqimcU4Ecx3yywNi91I_WnO7YaLaACLcBGAsYHQ/s0/Milfa-Vale%25CC%2581rio.jpg);}
+#milfa .bio:before {content: "Milfa Araújo Valério";}
+#milfa .bio:after {content: "Professora e poetisa";}
+
 /* MILTON MARQUES JR */
 #milton .fotobio {content: url(https://1.bp.blogspot.com/-IH9kL7efF7M/X77nD2hHBdI/AAAAAAACjNY/E_ODW7-2l8Eij_W7E3bMVClzSSPyvu0_wCLcBGAsYHQ/s0/Milton-Marques.jpg);}
 #milton .bio:before {content: "Milton Marques Junior";}
