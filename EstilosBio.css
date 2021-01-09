@@ -55,7 +55,6 @@
 	padding: 5px 5px;
 	margin-top:50px;
 	display:inline-block;
-  	font-size:calc(0.4em + 0.5vw);
 	line-height:1 !important;
   	background:#F5F5F5;
 }
@@ -86,6 +85,7 @@
 		display:block;
   		font-size:inherit;
 		line-height:1inherit;
+		font-size:calc(0.4em + 0.5vw);
 		}
 
 	#compartilhe:before {
