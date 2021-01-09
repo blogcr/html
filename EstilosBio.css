@@ -72,7 +72,7 @@
 	margin-bottom:10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 	.boxbio {
 		width:100%;
 		display:block;
