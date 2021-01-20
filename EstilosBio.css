@@ -172,6 +172,11 @@
 #gonzaga .bio:before {content: "Gonzaga Rodrigues";}
 #gonzaga .bio:after {content: "Escritor e membro da Academia Paraibana de Letras (APL)";}
 
+/* HILTON VALERIANO */
+#hilton .fotobio {content: url(https://1.bp.blogspot.com/-ebJzXXJLoWg/YAe8WkmIH-I/AAAAAAACqRY/fnlGQLkRLEwNanxMW20k2ZZETYbjg013ACLcBGAsYHQ/s0/Hilron%2BValeriano.jpg);}
+#hilton .bio:before {content: "Hilton Valeriano";}
+#hilton .bio:after {content: "Professor de filosofia, história e artes";}
+
 /* IRENALDO QUINTANS */
 #irenaldo .fotobio {content: url(https://1.bp.blogspot.com/-DT1Wqk1EpBU/X8l5TiLozgI/AAAAAAACjo0/OP6uChZu2loacmDpp4WeKvi9Pg0Eg5p5wCLcBGAsYHQ/s0/Irenaldo-Quintans.png);}
 #irenaldo .bio:before {content: "Irenaldo Quintans";}
