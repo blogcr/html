@@ -333,6 +333,14 @@ figcaption {
   display:block;
 }
 
+.cap-pro {
+  content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF0R_Vd4Em9cLlskR2-7OgYKQCZKOACLcBGAsYHQ/s0/CAP%2BPROX.png);
+  width:70%;
+  float:left;
+  clear:both;
+  display:block;
+}
+
 /* VIDEO LATERAL DIREITO */
 .video {
 	float:right;
