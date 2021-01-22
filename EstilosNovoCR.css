@@ -431,7 +431,7 @@ figcaption {
         line-height:1em ;
         width:100% ;
         position: absolute;
-        bottom: 10%;
+        top: 25%;
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
