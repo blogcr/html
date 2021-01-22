@@ -324,6 +324,15 @@ figcaption {
 	display:block;
 }
 
+.cap-ant {
+  content:url(https://1.bp.blogspot.com/-6Dp8sAIxKGo/YApSrf1Ge9I/AAAAAAACqXw/EzsNn5ga86MeuVkx0cxQokoq3jRm0ZdygCLcBGAsYHQ/s0/CAP%2BANT.png);
+  margin:-1em 0 1em;
+  width:70%;
+  float:right;
+  clear:both;
+  display:block;
+}
+
 /* VIDEO LATERAL DIREITO */
 .video {
 	float:right;
