@@ -272,7 +272,6 @@ figcaption {
 	font-style: italic;
 }
 
-
 /*
 .credir {
 	position: absolute;
@@ -388,6 +387,24 @@ figcaption {
     height: 200px;
     position:relative;
 }
+
+#PopularPosts2 li.contador {
+   counter-increment: item;
+   position:relative;
+ }
+#PopularPosts2 li.contador:before {
+   content: counter(item);
+   color: white;
+   font-size:3em;
+   font-weight:bold;
+   line-height:1em;
+   position:absolute;
+   bottom:-0.5em;
+   right:0.1em;
+   display:block;
+   border:0px solid #000;
+   opacity:0.7;
+ }
 
 #PopularPosts2 img {
     padding: 0px;
