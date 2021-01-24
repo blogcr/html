@@ -12,8 +12,10 @@
 
 /* PRIMEIRA LETRA */
 .letra:first-letter {
+	/*
 	font-family: 'Kaushan Script', cursive !important;
-	color: #333134 !important;
+	*/
+	color: #616161 !important;
 	font-weight:bold; 
 	font-size:6em; 
 	float:left; 
