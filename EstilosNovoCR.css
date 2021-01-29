@@ -466,7 +466,7 @@ figcaption {
 
 /* --------------------------ALINHAMENTO DO FACEBOOK---------------------------------- */
 
-table, tbody, tr, td {
+.hcent {
 	text-align:right !important;
 }
 
