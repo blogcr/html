@@ -466,7 +466,7 @@ figcaption {
 
 /* --------------------------ALINHAMENTO DO FACEBOOK---------------------------------- */
 
-#facebook .uiGrid .hCent {
+#facebook table td .uiGrid .hCent {
 	text-align:right !important;
 }
 
