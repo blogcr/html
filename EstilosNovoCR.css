@@ -464,6 +464,12 @@ figcaption {
         -webkit-box-orient: vertical;
 }
 
+/* --------------------------ALINHAMENTO DO FACEBOOK---------------------------------- */
+
+.uiGrid .hCent {
+	text-align:right !important;
+}
+
 /* ------------------------------------------------------------ */
 
 /* MODIFICA LAYOUT DO POLLDADDY */
