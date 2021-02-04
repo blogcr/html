@@ -464,14 +464,6 @@ figcaption {
         -webkit-box-orient: vertical;
 }
 
-/* --------------------------SIDEBAR---------------------------------- */
-
-@media only screen and (max-width: 600px) {
-	.perfilcarlos {
-		display:none;
-	}
-}
-
 
 /* ------------------------------------------------------------- */
 
