@@ -553,26 +553,25 @@ fieldset {
   	display: block;
   	margin: 30px 0 40px 0 !important;
   	padding: 20px 20px;
-  	border: 1px solid #EEEEEE !important;
 	border-bottom: 0px solid transparent !important;
 	border-radius: 5px !important;
-  	background: transparent;
+  	background: #EEEEEE;
   	opacity: 1 !important;
   	transparency: 0 !important;
 	z-index:100;
 }
 
 legend {
-	font-size:1.5rem !important;
- 	border: 1px solid #B71C1C !important;
+	font-size:1.2rem !important;
+ 	border: 0px solid #B71C1C !important;
 	text-transform: uppercase !important;
 	color: #333134 !important;
 	padding: 3px 10px 3px 10px !important;
-    	border-radius: 2px !important;
 	font-weight: bold !important;
 	width: auto !important;
 	background: #ffffff !important;
 	display:block !important;
+	margin: 0 auto  !important;
 }
 
 sup {
