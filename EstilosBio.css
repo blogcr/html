@@ -113,6 +113,12 @@
 #alcione .bio:before {content: "Alcione Albertim";}
 #alcione .bio:after {content: "Professora de literatura e línguas clássicas";}
 
+/* ALDO LOPES */
+#aldo .fotobio {content: url(https://1.bp.blogspot.com/-uSTCKfScwCs/YB92_3xZikI/AAAAAAACrFs/1owACtKMguAOD7OY31_W9Sk1ZMduLsNwgCLcBGAsYHQ/s0/Aldo%2BLopes.jpeg
+);}
+#aldo .bio:before {content: "Aldo Lopes";}
+#aldo .bio:after {content: "Escritor e jornalista";}
+
 /* ANA ADELAIDE PEIXOTO */
 #ana .fotobio {content: url(https://1.bp.blogspot.com/-dTmmfNPTrFw/X9jZLb7welI/AAAAAAACmPk/500GIvjCQGkpb9Uh2mJ-Nb8IKQPS3IsJgCLcBGAsYHQ/s0/Ana-Adelaide.jpg);}
 #ana .bio:before {content: "Ana Adelaide P. Tavares";}
