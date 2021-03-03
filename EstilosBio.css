@@ -67,7 +67,7 @@
 }
 
 #compartilhe:before {
-  	content:"GOSTOU? \A COMPARTILHE";
+  	content:"COMPARTILHE";
   	white-space: pre-line;
 	margin-bottom:10px;
 }
