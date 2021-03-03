@@ -296,6 +296,16 @@ figcaption {
 	margin: 0 5px !important;
 }
 
+.pontofinal {
+	float:right;
+	width:40px;
+	margin-top:-20px;
+	content:url(https://1.bp.blogspot.com/-L4yogph2b8o/YD8OL2bTGNI/AAAAAAACr6s/Mlg2qCrYEqw7SU0PwmJpBly8_mt7Nrk_QCLcBGAsYHQ/s0/favicon%2Bcarlosromero.png);
+	border-radius:50%;
+}
+
+
+
 
 /* FOTO 2 COLUNAS */
 #foto2 {
