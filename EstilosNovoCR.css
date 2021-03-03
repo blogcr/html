@@ -151,6 +151,10 @@ blockquote::before {
 	border-width: 0px 0px 2px;
 }
 
+.margem {
+	margin-top:15px;
+}
+
 .moldura {
 	width: 60%;
 	position: absolute;
