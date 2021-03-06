@@ -280,6 +280,11 @@
 #sam .bio:before {content: "Sam Cavalcanti";}
 #sam .bio:after {content: "Mestre em música, compositor, crítico e escritor";}
 
+/* SANDRA TROMBETTA */
+#sandra .fotobio {content: url(https://1.bp.blogspot.com/-o5NWsKi5oC0/YEL5v7FwWuI/AAAAAAACsCA/VkjKfu6bLoY7rV98vuiDtDbn2Jjrja1MgCLcBGAsYHQ/s0/Sandra-Quintans-PB.jpg);}
+#sandra .bio:before {content: "Sandra Trombetta";}
+#sandra .bio:after {content: "Psicanalista e integrante da Sociedade Psicanalítica do Recife ";}
+
 /* SAULO MENDONÇA */
 #saulo .fotobio {content: url(https://1.bp.blogspot.com/-b2gEO0KXjcI/X8CG0ueyuPI/AAAAAAACjSI/i9668Ou7ntUBoK1-Z_gVIzqzOyGZ238dwCLcBGAsYHQ/s0/Saulo-Mendonc%25CC%25A7a.jpg
 );}
