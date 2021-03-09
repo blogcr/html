@@ -237,6 +237,11 @@ figure {
 	max-width: 45% !important;
 }
 
+.haikai {
+	max-width: 80% !important;
+	text-align:center;
+}
+
 /*
 figcaption {
   	position:absolute;
