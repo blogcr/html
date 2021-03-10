@@ -101,7 +101,8 @@ blockquote::before {
 .borda3 {
 	padding-left:15px; 
 	border-left:linear-gradient(to bottom, #B71C1C, rgb(255, 255, 255)) 1 100%;
-	
+}
+
 .poesia {
 	white-space: pre-wrap;
 }
