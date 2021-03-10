@@ -151,6 +151,12 @@ blockquote::before {
 	border-width: 0px 0px 2px;
 }
 
+.gradiente2 {
+	border-image: linear-gradient(45deg, rgb(183, 28, 28),  rgb(255, 255, 255)) 1 / 1 / 0 stretch; 
+	border-style: solid; 
+	border-width: 0px 0px 2px;
+}
+
 .margem {
 	margin-top:15px;
 }
