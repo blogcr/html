@@ -117,7 +117,7 @@ blockquote::before {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 	}
 	blockquote  {
-		font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+		font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
 	}
 }
 
