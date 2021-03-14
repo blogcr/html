@@ -41,7 +41,7 @@
 
 /* BLOCKQUOTE */
 blockquote, .ast {
-	font: 500 24px / 1.4 Roboto, sans-serif !important;
+	font: 400 26px / 1.4 Roboto, sans-serif !important;
 	max-width: 35%;
 	float: right;
 	padding: 15px 10px;
