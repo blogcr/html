@@ -113,7 +113,7 @@ blockquote::before {
 }
 
 @media only screen and (max-width: 1024px) {
-	.poesia {
+	.poesia, legend {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 	}
 	blockquote  {
@@ -125,10 +125,10 @@ blockquote::before {
 	color: #757575; 
 	float: right; 
 	font-size: 80%; 
-	width: 50%;
+	width:auto;
+	max-width: 50%;
 	clear: both !important;
   	display:block;
-	margin-right:5%;
 }
 
 .divisor  {
