@@ -284,8 +284,8 @@ figcaption {
 	width:100% !important;
 	bottom:10px !important;
     	height:25px !important;
-	ine-height:25px !important;
-	font-size:0.7em !important;
+	line-height:25px !important;
+	font-size:0.6em !important;
 	padding: 0 10px !important;
 	background: rgba(0, 0, 0, 0.4)  !important;
 	font-weight: normal !important;
@@ -301,6 +301,7 @@ figcaption {
 	float:right !important;
 	color: ##EEEEEE !important;
 	font-style: italic;
+	font-size:0.5em !important;
 }
 
 /*
