@@ -119,6 +119,10 @@ blockquote::before {
 	blockquote  {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
 	}
+	.credir {
+		color: #757575 !important;
+    		padding-right:0;
+	}
 }
 
 #nota, .nota {
