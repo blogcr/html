@@ -120,6 +120,8 @@ blockquote::before {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
 	}
 	.credir {
+		position: absolute;
+		bottom: 0px !important;
 		color: #757575 !important;
     		padding-right:0;
 	}
