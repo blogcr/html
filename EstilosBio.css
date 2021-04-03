@@ -154,6 +154,11 @@
 #chico .bio:before {content: "Chico Viana";}
 #chico .bio:after {content: "Doutor em teoria literária, professor e escritor";}
 
+/* CLÁUDIO PAIVA */
+#claudio .fotobio {content: url(https://1.bp.blogspot.com/-6HnFNTEWBo8/YGioyi2rpjI/AAAAAAACxoE/Dr6fadzjwUoYgUb1GKG78VoECoyICquEwCLcBGAsYHQ/s0/Claudio-Paiva.jpg);}
+#claudio .bio:before {content: "Cláudio Paiva";}
+#claudio .bio:after {content: "Professor, Doutor em Comunicação e escritor";}
+
 /* CLOVIS ROBERTO */
 #clovis .fotobio {content: url(https://1.bp.blogspot.com/-iFeejTgcJtA/X8W5AbIVilI/AAAAAAACjho/nNZsLQeu9RMQn3pXgWryt9mJXEyydGzhQCLcBGAsYHQ/s0/Clovis%2BRoberto.jpg);}
 #clovis .bio:before {content: "Clóvis Roberto";}
