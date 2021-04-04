@@ -258,12 +258,19 @@
 /* LINALDO GUEDES */
 #linaldo .fotobio {content: url(https://1.bp.blogspot.com/-tNmnVmOHgis/X9FdKwHMgeI/AAAAAAACj-k/-Bp_NNTe1oEmOxnek3ChSGxNGQ2lAA12QCLcBGAsYHQ/s0/Linaldo-Guedes.jpg);}
 #linaldo .bio:before {content: "Linaldo Guedes";}
-#linaldo .bio:after {content: "Mestre em ciências da religião, editor, jornalista e poeta";}
+#linaldo .bio:after {content: "Mestre em Ciências da Religião, editor, jornalista e poeta";}
 
 /* LUIZ AUGUSTO PAIVA */
 #luiz .fotobio {content: url(https://1.bp.blogspot.com/-XS0WcEcLcCw/X-vRV-k5UTI/AAAAAAACnJs/sVYIsulmlaMAbXPSOH4nL4EITRajorZdQCLcBGAsYHQ/s0/Luiz-Augusto-Paiva.jpg);}
 #luiz .bio:before {content: "Luiz Augusto Paiva";}
 #luiz .bio:after {content: "Professor e escritor";}
+
+/* MARCIA LUCENA */
+#marcia .fotobio {content: url(https://1.bp.blogspot.com/-XS0WcEcLcCw/X-vRV-k5UTI/AAAAAAACnJs/sVYIsulmlaMAbXPSOH4nL4EITRajorZdQCLcBGAsYHQ/s0/Luiz-Augusto-Paiva.jpg);}
+#marcia .bio:before {content: "Márcia Lucena";}
+#marcia .bio:after {content: "Professora e mestre em Serviço Social";}
+
+https://1.bp.blogspot.com/-NaBC9-0GIrw/YGlBt-cdFbI/AAAAAAACxvs/8fIMHrSQP8M2fzLNOct7ejMjfkx7E-ocACLcBGAsYHQ/s0/Marcia-Lucena.jpg
 
 /* MARCO LIMA */
 #marco .fotobio {content: url(https://1.bp.blogspot.com/-D9fdy8K79xA/X-SrTru6yuI/AAAAAAACm4s/oWDemWBATRArc9TaN8ZUFYu-maaXJitTgCLcBGAsYHQ/s0/Marco-Lima.jpg);}
