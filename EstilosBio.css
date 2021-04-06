@@ -250,6 +250,11 @@
 #nunes .bio:before {content: "José Nunes";}
 #nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP)";}
 
+/* JUCA PONTES */
+#juca .fotobio {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
+#juca .bio:before {content: "Juca Pontes";}
+#juca .bio:after {content: "Poeta, editor e jornalista";}
+
 /* KRISHNAMURTI GOES */
 #krishna .fotobio {content: url(https://1.bp.blogspot.com/-Kyl6ChifsFA/X_kGNbof8XI/AAAAAAACpmQ/qGnCJqH8-YIkEo1voxQm5Y9K2jH9pRhMQCLcBGAsYHQ/s0/Krisnamurti-Goes.jpg);}
 #krishna .bio:before {content: "Krishnamurti Góes dos Anjos";}
