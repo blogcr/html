@@ -343,6 +343,11 @@
 #sonia .bio:before {content: "Sonia Zaghetto";}
 #sonia .bio:after {content: "Jornalista e escritora";}
 
+/* STELO QUEIROGA */
+#stelo .fotobio {content: url(https://1.bp.blogspot.com/-clp5JET491M/YG8rVxr4QAI/AAAAAAACx5Q/W_bJ5MiPDboP9ydsnX9yNvHEA-OKM6OXQCLcBGAsYHQ/s0/Stelo-Queiroga.jpg);}
+#stelo .bio:before {content: "Stelo Queiroga";}
+#stelo .bio:after {content: "Engenheiro e poeta";}
+
 /* THAMARA DUARTE */
 #thamara .fotobio {content: url(https://1.bp.blogspot.com/-eSS83FuqlH4/X9lhxKexSPI/AAAAAAACmfQ/kXaqPsehRsUDxTosu8Be9uekEAt7O9jAQCLcBGAsYHQ/s0/Thamara-Duarte.jpg);}
 #thamara .bio:before {content: "Thamara Duarte";}
