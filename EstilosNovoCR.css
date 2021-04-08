@@ -267,6 +267,11 @@ figure {
 	clear:both !important
 }
 
+.miniconto {
+	max-width: 90% !important;
+	clear:both !important
+}
+
 /*
 figcaption {
   	position:absolute;
