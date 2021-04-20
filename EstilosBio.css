@@ -286,6 +286,11 @@
 #marco .bio:before {content: "Marco Grangeiro Lima";}
 #marco .bio:after {content: "Educador, mestre em serviço social e presidente da Federação Espírita Paraibana (FEP)";}
 
+/* MARLUCE CASTOR */
+#marluce .fotobio {content: url(https://1.bp.blogspot.com/-6LR15vFEYB8/YH9VVY40bqI/AAAAAAACy18/0BZIW1FRNJ0QSHu6N2a2qsQWTCy7hfjmwCLcBGAsYHQ/s0/Marluce%2BCastor.jpg);}
+#marluce .bio:before {content: "Marluce Castor";}
+#marluce .bio:after {content: "Psiquiatra e psicanalista";}
+
 /* MARTA ANTUNES */
 #marta .fotobio {content: url(https://1.bp.blogspot.com/-a3ACCnK_F-8/X8Mg6C_oKKI/AAAAAAACjYE/ZWEx3ApJI9w12fQtmQjH2GiPQ_15RGyewCLcBGAsYHQ/s0/Maria-Antunes.jpg);}
 #marta .bio:before {content: "Marta Antunes";}
