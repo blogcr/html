@@ -185,6 +185,11 @@
 #emerson .bio:before {content: "E. Barros de Aguiar";}
 #emerson .bio:after {content: "Escritor neoarmorial, teólogo e jusfilósofo progressista";}
 
+/* FÁTIMA FARIAS */
+#fatima .fotobio {content: url(https://1.bp.blogspot.com/-NsqD5COYF4A/YIQo2KRXfyI/AAAAAAACzBQ/hmP40D2vO_wr4zfmnTmoBXrjsMN3wMCugCLcBGAsYHQ/s0/Fatima%2BFarias.jpeg);}
+#fatima .bio:before {content: "Fátima Farias";}
+#fatima .bio:after {content: "Jornalista, escritora e artista plástica";}
+
 /* FLÁVIO RAMALHO */
 #flavio .fotobio {content: url(https://1.bp.blogspot.com/-FZsc22OzJ-0/X8GRXqDXWUI/AAAAAAACjT8/iwOfhuQn6bYohI6QukEogFOgiRofcEaMgCLcBGAsYHQ/s0/Fla%25CC%2581vio-Ramalho.jpg);}
 #flavio .bio:before {content: "Flávio Ramalho de Brito";}
