@@ -180,6 +180,11 @@
 #denise .bio:before {content: "Denise Lino";}
 #denise .bio:after {content: "Pós-doutora em educação e professora";}
 
+/* ELY VARELA */
+#ely .fotobio {content: url(https://1.bp.blogspot.com/-bewZYAZCNiQ/YI8x0lfECYI/AAAAAAACzsE/pny8ahOUs1gBMg2i_cAL_WyRWJXQDFcVACLcBGAsYHQ/s0/Ely%2BVarela.jpg);}
+#ely .bio:before {content: "Ely Varela";}
+#ely .bio:after {content: "Jornalista e poeta";}
+
 /* EMERSON BARROS */
 #emerson .fotobio {content: url(https://1.bp.blogspot.com/-zYkmgDU0rq0/X77nDLKUHTI/AAAAAAACjNM/49i5bAjYhAQKx2RB6nuqGuLWRl449eApACLcBGAsYHQ/s0/Emerson-Barros.jpg);}
 #emerson .bio:before {content: "E. Barros de Aguiar";}
