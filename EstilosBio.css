@@ -240,6 +240,11 @@
 #irenaldo .bio:before {content: "Irenaldo Quintans";}
 #irenaldo .bio:after {content: "Economista e escritor";}
 
+/* JOÃO BATISTA BRITO */
+#joao .fotobio {content: url(https://1.bp.blogspot.com/-yXzYlFMZqK4/YJ4JTmJ_3SI/AAAAAAAC1nw/HiVVZVM0EfkSmDtKqkOsVP-_kzKVSVeBgCLcBGAsYHQ/s0/Joa%25CC%2583o-Batista-Brito.jpg);}
+#joao .bio:before {content: "João Batista de Brito";}
+#joao .bio:after {content: "Professor, escritor e doutor em literatura brasileira";}
+
 /* JOSÉ AUGUSTO CARVALHO */
 #augusto .fotobio {content: url(https://1.bp.blogspot.com/-QsFX-Ru50rE/YCMonC-TesI/AAAAAAACrRo/vLhmlcG6aNws8pjWc_sOAQ0ZQ_z_g3K6wCLcBGAsYHQ/s0/Augusto-Carvalho.jpg);}
 #augusto .bio:before {content: "José Augusto Carvalho";}
