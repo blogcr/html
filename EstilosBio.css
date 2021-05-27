@@ -321,15 +321,20 @@
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Doutor em letras, professor, escritor e membro da Academia Paraibana de Letras (APL)";}
 
-/* ROSA AGUIAR */
-#rosa .fotobio {content: url(https://1.bp.blogspot.com/-INmliSESqMU/X-0jPIz-DDI/AAAAAAACnMU/TdKY6QmE8fg9fnXxIPAf2zdxdNiQIHCFwCLcBGAsYHQ/s0/Rosa-Aguiar.jpg);}
-#rosa .bio:before {content: "Rosa Aguiar";}
-#rosa .bio:after {content: "Mestre em comunicação e jornalista";}
-
 /* REJANE VIEIRA */
 #rejane .fotobio {content: url(https://1.bp.blogspot.com/-nC51mYsnBg0/X99sZWzE27I/AAAAAAACmvE/6NJbbPk3MpQH9SnWRK1WEglKEvTWcs7lgCLcBGAsYHQ/s0/Rejane-Vieira.jpg);}
 #rejane .bio:before {content: "Rejane Vieira";}
 #rejane .bio:after {content: "Graduada em Comunicação e mestra em Saúde Pública";}
+
+/* RICK SHANDLER */
+#rick .fotobio {content: url(https://1.bp.blogspot.com/-bq_UIf-zJHA/YK8dCcctf_I/AAAAAAAC2Jk/LZt1DsD3XDwIoGKtHWPJ7O3r4yv7fuS9wCLcBGAsYHQ/s0/Rick-Shandler.jpg);}
+#rick .bio:before {content: "Rick Shandler";}
+#rick .bio:after {content: "Biomédico e professor";}
+
+/* ROSA AGUIAR */
+#rosa .fotobio {content: url(https://1.bp.blogspot.com/-INmliSESqMU/X-0jPIz-DDI/AAAAAAACnMU/TdKY6QmE8fg9fnXxIPAf2zdxdNiQIHCFwCLcBGAsYHQ/s0/Rosa-Aguiar.jpg);}
+#rosa .bio:before {content: "Rosa Aguiar";}
+#rosa .bio:after {content: "Mestre em comunicação e jornalista";}
 
 /* RUI LEITÃO */
 #rui .fotobio {content: url(https://1.bp.blogspot.com/-x6oCNMCDKy4/X8Mg6IM518I/AAAAAAACjYI/fMpxCybDrAMvhrSmIiS3WSQXnziRRNw5gCLcBGAsYHQ/s0/Rui-Leitao.jpg);}
