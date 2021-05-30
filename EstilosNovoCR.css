@@ -126,6 +126,13 @@ blockquote::before {
 	border-width: 1px;
 }
 
+.borda4 {
+	padding-right:15px; 
+  	border-image: linear-gradient(to bottom, #B71C1C,  rgb(255, 255, 255)) 6 / 0 1 0 0 / 3 stretch; 
+	border-style: solid; 
+	border-width: 1px;
+}
+
 .poesia {
 	white-space: pre-wrap;
 }
