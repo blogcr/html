@@ -44,6 +44,19 @@
 	border-bottom:0px solid #B71C1C;
 }
 
+.letra3 {
+	color: #616161 !important;
+	opacity:0.5;
+	font-weight:bold; 
+	font-size:4em; 
+	float:left; 
+	padding:0; 
+	margin: 10px 15px 0 0 !important; 
+	background-color:none; 
+	line-height:0.5em;
+	border-bottom:0px solid #B71C1C;
+}
+
 /* BLOCKQUOTE */
 blockquote, .ast {
 	font-size: 24px;
