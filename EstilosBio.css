@@ -180,6 +180,11 @@
 #denise .bio:before {content: "Denise Lino";}
 #denise .bio:after {content: "Pós-doutora em educação e professora";}
 
+/* EDUARDO KUGLER */
+#eduardo .fotobio {content: url(https://1.bp.blogspot.com/-8JOpLTFgksM/YLg-3yalDnI/AAAAAAAC2Wg/EaJdU8JyPb4l_ZJjp_nb__FhbyXijBJrgCLcBGAsYHQ/s0/Eduardo-Kugler.jpg);}
+#eduardo .bio:before {content: "Eduardo Kugler";}
+#eduardo .bio:after {content: "Artista plástico e escritor";}
+
 /* ELY VARELA */
 #ely .fotobio {content: url(https://1.bp.blogspot.com/-bewZYAZCNiQ/YI8x0lfECYI/AAAAAAACzsE/pny8ahOUs1gBMg2i_cAL_WyRWJXQDFcVACLcBGAsYHQ/s0/Ely%2BVarela.jpg);}
 #ely .bio:before {content: "Ely Varela";}
