@@ -185,7 +185,7 @@
 #eduardo .bio:before {content: "Eduardo Kugler";}
 #eduardo .bio:after {content: "Artista plástico e escritor";}
 
-/ ELVIO VARGAS */
+/* ELVIO VARGAS */
 #elvio .fotobio {content: url(https://1.bp.blogspot.com/-5Zye75qv7GY/YMl_HUMhelI/AAAAAAAC3Bs/r5BCTZY7anYvsTD645SdBcwONge0RD3CACLcBGAsYHQ/s0/Elvio-Vargas.jpg);}
 #elvio .bio:before {content: "Élvio Vargas";}
 #elvio .bio:after {content: "Poeta, escritor e membro da Academia Rio-grandense de Letras";}
