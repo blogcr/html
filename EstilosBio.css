@@ -311,11 +311,10 @@
 #marco .bio:before {content: "Marco Grangeiro Lima";}
 #marco .bio:after {content: "Educador, mestre em serviço social e presidente da Federação Espírita Paraibana (FEP)";}
 
-
 /* MARÍLIA ARNAUD */
 #marilia .fotobio {content: url(https://1.bp.blogspot.com/-PM2SRrYhe-A/YMmNlcqhUOI/AAAAAAAC3Cg/E_bip9w5l6cK3qO5ytOFVlKuzonWHKbwgCLcBGAsYHQ/s0/Marilia-Arnaud.jpg);}
 #marilia .bio:before {content: "Marília Arnaud";}
-#marilia .bio:after {content: "Escritora;}
+#marilia .bio:after {content: "Escritora";}
 
 /* MARLUCE CASTOR */
 #marluce .fotobio {content: url(https://1.bp.blogspot.com/-6LR15vFEYB8/YH9VVY40bqI/AAAAAAACy18/0BZIW1FRNJ0QSHu6N2a2qsQWTCy7hfjmwCLcBGAsYHQ/s0/Marluce%2BCastor.jpg);}
