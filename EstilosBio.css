@@ -185,6 +185,11 @@
 #eduardo .bio:before {content: "Eduardo Kugler";}
 #eduardo .bio:after {content: "Artista plástico e escritor";}
 
+/ ELVIO VARGAS */
+#elvio .fotobio {content: url(https://1.bp.blogspot.com/-5Zye75qv7GY/YMl_HUMhelI/AAAAAAAC3Bs/r5BCTZY7anYvsTD645SdBcwONge0RD3CACLcBGAsYHQ/s0/Elvio-Vargas.jpg);}
+#elvio .bio:before {content: "Élvio Vargas";}
+#elvio .bio:after {content: "Poeta, escritor e membro da Academia Rio-grandense de Letras";}
+
 /* ELY VARELA */
 #ely .fotobio {content: url(https://1.bp.blogspot.com/-bewZYAZCNiQ/YI8x0lfECYI/AAAAAAACzsE/pny8ahOUs1gBMg2i_cAL_WyRWJXQDFcVACLcBGAsYHQ/s0/Ely%2BVarela.jpg);}
 #ely .bio:before {content: "Ely Varela";}
