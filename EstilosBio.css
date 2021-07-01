@@ -150,6 +150,11 @@
 #carlos .bio:before {content: "Carlos Rolim";}
 #carlos .bio:after {content: "Engenheiro e professor";}
 
+/* CARLOS ROMERO FILHO */
+#tuca .fotobio {content: url(https://1.bp.blogspot.com/-5qSM4ANbRic/YN0VFK6qB1I/AAAAAAAC3t4/JvGIuXego1UzllBzFGCjG5kECFeVuwC9QCLcBGAsYHQ/s0/Tuca.jpg);}
+#tuca .bio:before {content: "Carlos Romero Filho";}
+#tuca .bio:after {content: "Professor; pós-doutor em cosmologia e gravitação";}
+
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
 #celio .bio:before {content: "Célio Furtado";}
