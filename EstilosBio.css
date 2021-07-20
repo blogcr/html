@@ -135,7 +135,13 @@
 #anapaula .bio:before {content: "Ana Paula Ramalho";}
 #anapaula .bio:after {content: "Psicanalista e escritora";}
 
-/* ÂNNGELA BEZERRA DE CASTRO */
+/* ANDRE CANANEIA */
+#anapaula .fotobio {content: url(https://1.bp.blogspot.com/-j3wB4JNekwc/YPbPOdXqivI/AAAAAAAC4is/jLk-pfq7oi890HqvgfURgIfp8nKZjC0AQCLcBGAsYHQ/s0/Andre-Cananeia.jpg);}
+#anapaula .bio:before {content: "André Cananeia";}
+#anapaula .bio:after {content: "Jornalista e cronista";}
+
+
+/* ÂNGELA BEZERRA DE CASTRO */
 #angela .fotobio {content: url(https://1.bp.blogspot.com/-lZkutAiKBaU/YGM_E5nHjKI/AAAAAAACvoM/vy01uGN5nFQDn1-3faOwTj13fLMK8TfkACLcBGAsYHQ/s0/Angela%2BBezerra.jpg);}
 #angela .bio:before {content: "Ângela Berra de Castro";}
 #angela .bio:after {content: "Professora, escritora, crítica literária e presidente da Academia Paraibana de Letras";}
