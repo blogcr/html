@@ -136,9 +136,9 @@
 #anapaula .bio:after {content: "Psicanalista e escritora";}
 
 /* ANDRE CANANEIA */
-#anapaula .fotobio {content: url(https://1.bp.blogspot.com/-j3wB4JNekwc/YPbPOdXqivI/AAAAAAAC4is/jLk-pfq7oi890HqvgfURgIfp8nKZjC0AQCLcBGAsYHQ/s0/Andre-Cananeia.jpg);}
-#anapaula .bio:before {content: "André Cananeia";}
-#anapaula .bio:after {content: "Jornalista e cronista";}
+#andre .fotobio {content: url(https://1.bp.blogspot.com/-j3wB4JNekwc/YPbPOdXqivI/AAAAAAAC4is/jLk-pfq7oi890HqvgfURgIfp8nKZjC0AQCLcBGAsYHQ/s0/Andre-Cananeia.jpg);}
+#andre .bio:before {content: "André Cananeia";}
+#andre .bio:after {content: "Jornalista e cronista";}
 
 
 /* ÂNGELA BEZERRA DE CASTRO */
