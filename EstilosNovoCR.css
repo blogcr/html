@@ -885,3 +885,18 @@ select {
 	text-decoration:none;
 	display:block;
 }
+
+
+@font-face {
+	font-family: 'letraquadrada';
+	src: url('https://www.dropbox.com/s/6704g9r6tz74slt/dddrndsq.eot?dl=1'),
+	url('https://www.dropbox.com/s/e7fhwgzgme7vhr3/dddrndsq.woff?dl=1') format('woff'), 
+	url('https://www.dropbox.com/s/v4ajc8tqercq7lt/dddrndsq.ttf?dl=1') format('truetype'), 
+	url('https://www.dropbox.com/s/srg3j5jdt1jv581/dddrndsq.svg?dl=1') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+  .letraquadrada
+  {
+    	font-family: 'letraquadrada';
+  }
