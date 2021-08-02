@@ -888,8 +888,8 @@ select {
 
 @font-face {
     font-family: 'letraquadrada';
-    src: url('../fontes/letraquadrada/dddrndsq-webfont.woff2') format('woff2'),
-         url('../fontes/letraquadrada/dddrndsq-webfont.woff') format('woff');
+    src: url('../font/letraquadrada/dddrndsq-webfont.woff2') format('woff2'),
+         url('../font/letraquadrada/dddrndsq-webfont.woff') format('woff');
 }
 
 .letraquadrada {
