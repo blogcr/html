@@ -887,13 +887,17 @@ select {
 }
 
 @font-face {
-    font-family: 'letraquadrada';
-    src: url('../font/letraquadrada/dddrndsq-webfont.woff2') format('woff2'),
-         url('../font/letraquadrada/dddrndsq-webfont.woff') format('woff');
+	font-family: 'dddrndsq';
+	src: url('../font/letraquadrada/dddrndsq.eot');
+	url('../font/letraquadrada/dddrndsq.woff') format('woff'), 
+	url('../font/letraquadrada/dddrndsq.ttf') format('truetype'), 
+	url('../font/letraquadrada/dddrndsq.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .letraquadrada {
-	font-family: 'letraquadrada'; 
+	font-family: 'dddrndsq'; 
 	font-weight: normal;
 	font-style: normal;
 }
