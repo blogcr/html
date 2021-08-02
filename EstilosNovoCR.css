@@ -889,9 +889,9 @@ select {
 @font-face {
 	font-family: 'dddrndsq';
 	src: url('../font/letraquadrada/dddrndsq.eot');
-	url('../font/letraquadrada/dddrndsq.woff') format('woff'), 
-	url('../font/letraquadrada/dddrndsq.ttf') format('truetype'), 
-	url('../font/letraquadrada/dddrndsq.svg') format('svg');
+	url('../font/letraquadrada dddrndsq.woff') format('woff'), 
+	url('../font/letraquadrada dddrndsq.ttf') format('truetype'), 
+	url('../font/letraquadrada dddrndsq.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
