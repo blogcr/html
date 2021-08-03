@@ -885,19 +885,3 @@ select {
 	text-decoration:none;
 	display:block;
 }
-
-@font-face {
-	font-family: 'dddrndsq';
-	src: url('../blob/master/font/letraquadrada/dddrndsq.eot');
-	url('../blob/master/font/letraquadrada/dddrndsq.woff') format('woff'), 
-	url('../blob/master/font/letraquadrada/dddrndsq.ttf') format('truetype'), 
-	url('../blob/master/font/letraquadrada/dddrndsq.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.letraquadrada {
-	font-family: 'dddrndsq'; 
-	font-weight: normal;
-	font-style: normal;
-}
