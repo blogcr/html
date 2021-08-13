@@ -221,6 +221,11 @@
 #fatima .bio:before {content: "Fátima Farias";}
 #fatima .bio:after {content: "Jornalista, escritora e artista plástica";}
 
+/* FELIPE AQUINO */
+#felipe .fotobio {content: url(https://1.bp.blogspot.com/-2R-4hajs9FM/YRb-wh6XVGI/AAAAAAAC5nA/eWUXqvLaJEEUsKcx_pbWyGKpm0i9VJaJACLcBGAsYHQ/s0/Felipe%2BAquino.jpg);}
+#felipe .bio:before {content: "Felipe Avellar de Aquino";}
+#felipe .bio:after {content: "Doutor em música e professor";}
+
 /* FLÁVIO RAMALHO */
 #flavio .fotobio {content: url(https://1.bp.blogspot.com/-FZsc22OzJ-0/X8GRXqDXWUI/AAAAAAACjT8/iwOfhuQn6bYohI6QukEogFOgiRofcEaMgCLcBGAsYHQ/s0/Fla%25CC%2581vio-Ramalho.jpg);}
 #flavio .bio:before {content: "Flávio Ramalho de Brito";}
