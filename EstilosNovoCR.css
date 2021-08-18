@@ -328,10 +328,10 @@ figcaption {
 }
 
 .credito2 {
-	font-size:0.6em;
+	font-size:0.6em !important;
 	color:#616161 !important;
-	text-align:right;
-	margin-top:-7px;
+	text-align:right !important;
+	margin-top:-7px !important;
 	overflow:hidden !important;
 }
 
