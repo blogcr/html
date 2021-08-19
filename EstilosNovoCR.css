@@ -327,6 +327,10 @@ figcaption {
 	text-align:left;
 }
 
+.transparente {
+	background:transparent !important;
+}
+
 .credito2 {
 	font-size:0.6em !important;
 	color:#616161 !important;
