@@ -286,6 +286,11 @@
 #joao .bio:before {content: "João Batista de Brito";}
 #joao .bio:after {content: "Professor, escritor e doutor em literatura brasileira";}
 
+/* JOAQUIM INÁCIO BRITO */
+#joaquim .fotobio {content: url(https://1.bp.blogspot.com/-dVdVlImWj18/YSkfcBo1h7I/AAAAAAAC6dg/6ONS9HctFRMOsGsVdhMrYUbEhBX8E8aiQCLcBGAsYHQ/s0/joaquim%2Binacio%2Bbrito.jpg);}
+#joaquim .bio:before {content: "Joaquim Inácio Brito";}
+#joaquim .bio:after {content: "Escritor";}
+
 /* JOSÉ AUGUSTO CARVALHO */
 #augusto .fotobio {content: url(https://1.bp.blogspot.com/-QsFX-Ru50rE/YCMonC-TesI/AAAAAAACrRo/vLhmlcG6aNws8pjWc_sOAQ0ZQ_z_g3K6wCLcBGAsYHQ/s0/Augusto-Carvalho.jpg);}
 #augusto .bio:before {content: "José Augusto Carvalho";}
