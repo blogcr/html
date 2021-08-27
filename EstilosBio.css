@@ -191,6 +191,11 @@
 #cristina .bio:before {content: "Cristina Porcaro";}
 #cristina .bio:after {content: "Bacharela em artes plásticas, psico-pedagoga e escritora";}
 
+/* CRISTINA SIQUEIRA */
+#siqueira .fotobio {content: url(https://1.bp.blogspot.com/-wbndY2Tx0-E/YSgw-XUmfEI/AAAAAAAC6a0/lPdNUIHfcigFCqLfDqr4yCvwIliO33VDACLcBGAsYHQ/s0/Cristina-Siqueira.jpg);}
+#siqueira .bio:before {content: "Cristina Siqueira";}
+#siqueira .bio:after {content: "Jornalista, escritora e artista plástica";}
+
 /* DENISE LINO */
 #denise .fotobio {content: url(https://1.bp.blogspot.com/-gChzVFxEsn8/YE5do4z-_5I/AAAAAAACsTw/Y0xIVuCwayA-URcRw0r4jLrVR1_wl_QWwCLcBGAsYHQ/s0/Denise%2BLino.jpg);}
 #denise .bio:before {content: "Denise Lino";}
