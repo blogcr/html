@@ -332,6 +332,11 @@
 #krishna .bio:before {content: "Krishnamurti Góes dos Anjos";}
 #krishna .bio:after {content: "Escritor, pesquisador e crítico literário";}
 
+/* LEO BARBOSA */
+#leo .fotobio {content: url(https://1.bp.blogspot.com/-dJa8aPyifP0/YTTquT7b0wI/AAAAAAAC69E/scczswNja1AAFPcxgJ_XkOpFuvbN9UJOACLcBGAsYHQ/s0/Leo-Barbosa.jpg);}
+#leo .bio:before {content: "Leo Barbosa";}
+#leo .bio:after {content: "Professor, escritor e poeta";}
+
 /* LINALDO GUEDES */
 #linaldo .fotobio {content: url(https://1.bp.blogspot.com/-tNmnVmOHgis/X9FdKwHMgeI/AAAAAAACj-k/-Bp_NNTe1oEmOxnek3ChSGxNGQ2lAA12QCLcBGAsYHQ/s0/Linaldo-Guedes.jpg);}
 #linaldo .bio:before {content: "Linaldo Guedes";}
