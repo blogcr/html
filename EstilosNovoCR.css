@@ -910,7 +910,6 @@ select {
 
 .contatos li a  {
     color: #000000 !important;
-    text-transform: uppercase !important;
     text-decoration: none !important;
     padding: 2px 4px 2px 4px !important;
 }
