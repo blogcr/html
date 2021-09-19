@@ -900,7 +900,7 @@ select {
 
 .contatos li {
     float: left !important;
-    font: 11px/20px Arial,sans-serif;
+    font: 14px/20px Arial,sans-serif;
     list-style: none outside none !important;
     margin: 2px 5px 2px 0 !important;
     padding: 2px 4px 2px 4px !important;
