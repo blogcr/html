@@ -897,3 +897,26 @@ select {
 	text-decoration:none;
 	display:block;
 }
+
+.contatos li {
+    float: left !important;
+    font: 11px/20px Arial,sans-serif;
+    list-style: none outside none !important;
+    margin: 2px 5px 2px 0 !important;
+    padding: 2px 4px 2px 4px !important;
+    background: #FAFAFA !important;
+    width: bold !important;
+}
+
+.contatos li a  {
+    color: #000000 !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    padding: 2px 4px 2px 4px !important;
+}
+
+.contatos li a:hover {
+    color: #ffffff !important;
+    background: #B71C1C !important;
+    padding: 2px 4px 2px 4px !important;
+}
