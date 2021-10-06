@@ -62,7 +62,7 @@ blockquote, .ast {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 1.4;
-	font-family: Roboto, sans-serif !important;
+	font-family: 'Helvetica', Arial, sans-serif !important;
 	max-width: 35%;
 	float: right;
 	padding: 15px 10px;
@@ -518,7 +518,7 @@ figcaption {
     position:absolute;
     left:15px;
     color:#FFFFFF !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-weight:bold;
     text-align:left !important;
     top:57%;
@@ -534,7 +534,7 @@ figcaption {
         line-height:1em ;
         width:100% ;
      	color:#FFFFFF !important;
-    	font-family: 'Roboto', sans-serif;
+    	font-family: 'Helvetica', Arial, sans-serif;
     	font-weight:bold;
     	text-align:left !important;
         position: absolute;
