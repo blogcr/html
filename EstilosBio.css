@@ -396,6 +396,11 @@
 #paulo .bio:before {content: "Paulo Rabelo";}
 #paulo .bio:after {content: "Professor e meste em Direitos Humanos";}
 
+/* PPETRÔNIO SOUTO */
+#petronio .fotobio {content: url(https://1.bp.blogspot.com/-2ywstL6nHqQ/YXLg8QfzAeI/AAAAAAAC83c/LFegivPa9NUvwcdK4X8AuTZhSQW9VUEqACLcBGAsYHQ/s0/Petronio%2BSouto.jpg);}
+#petronio .bio:before {content: "Petrônio Souto";}
+#petronio .bio:after {content: "Jornalista e poeta";}
+
 /* REJANE VIEIRA */
 #rejane .fotobio {content: url(https://1.bp.blogspot.com/-nC51mYsnBg0/X99sZWzE27I/AAAAAAACmvE/6NJbbPk3MpQH9SnWRK1WEglKEvTWcs7lgCLcBGAsYHQ/s0/Rejane-Vieira.jpg);}
 #rejane .bio:before {content: "Rejane Vieira";}
