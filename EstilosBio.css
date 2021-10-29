@@ -416,6 +416,11 @@
 #rosa .bio:before {content: "Rosa Aguiar";}
 #rosa .bio:after {content: "Mestre em comunicação e jornalista";}
 
+/* ROSA LUIZARI */
+#acassia .fotobio {content: url(https://1.bp.blogspot.com/-upFZFIECeW4/YXt2LV-BrJI/AAAAAAAC9G4/80cOZTlz-RwwSGzQgT6IgpT6RNDJ1Q-twCLcBGAsYHQ/s0/Rosa-Luizari.jpg);}
+#acassia .bio:before {content: "Rosa Acassia Luizari";}
+#acassia .bio:after {content: "Pedagoga, escritora, membro da Associação Internacional de Escitores e Artistas";}
+
 /* RUI LEITÃO */
 #rui .fotobio {content: url(https://1.bp.blogspot.com/-x6oCNMCDKy4/X8Mg6IM518I/AAAAAAACjYI/fMpxCybDrAMvhrSmIiS3WSQXnziRRNw5gCLcBGAsYHQ/s0/Rui-Leitao.jpg);}
 #rui .bio:before {content: "Rui Leitão";}
