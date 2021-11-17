@@ -155,6 +155,11 @@
 #morais .bio:before {content: "Antonio Morais de Carvalho";}
 #morais .bio:after {content: "Professor e poeta";}
 
+/* ARAEL COSTA */
+#arael .fotobio {content: url(https://1.bp.blogspot.com/-J1HKxmRfuRA/YZRzikaF5aI/AAAAAAAC9xc/vLn54ZyNdwEW5MTFyGeZX3K3UhtyhM78QCLcBGAsYHQ/s0/Arael-Costa.jpg;}
+#arael .bio:before {content: "Arael Costa";}
+#arael .bio:after {content: "Jornalista e professor";}
+
 /* CARLOS ROLIM */
 #carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
 #carlos .bio:before {content: "Carlos Rolim";}
