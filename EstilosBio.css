@@ -103,6 +103,12 @@
 #adriano .bio:before {content: "Adriano de León";}
 #adriano .bio:after {content: "Doutor em ciências sociais, professor e escritor";}
 
+/* ALAURINDA ROMERO */
+#alaurinda .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEiHTps8SVsWrAjIWg2xdLHdX2DEhsmO3RlRT5O2byBwKwumnQKwGjfFwarJeYJhyUpNqaGTYioNqM9lHkCc1HlJG0ivR6dhyPYPgAfzQZSVBUH_qAnFAvO21fqSlC1PCJmGmwffAp6HGKvMHfEgAhZ_HsYCdqR46ukrv6CQcS94WUFj0so6UYpLsBiv
+);}
+#alaurinda .bio:before {content: "Alaurinda Romero";}
+#alaurinda .bio:after {content: "Violinista";}
+
 /* ALBERTO LACET */
 #alberto .fotobio {content: url(https://1.bp.blogspot.com/-rrQJ3I0huaM/X8zYnD7nq2I/AAAAAAACjws/7BQ0R2rErkoYKYPYQQ1iD4fuIDccR3a2QCLcBGAsYHQ/s0/Alberto-Lacet.jpg);}
 #alberto .bio:before {content: "Alberto Lacet";}
@@ -284,6 +290,11 @@
 #italo .fotobio {content: url(https://1.bp.blogspot.com/-PiksBzTEG8k/YNNp_nDQQpI/AAAAAAAC3ew/e-F1Ovmw4WUwC6k4mHyRU1--gURP_uIpgCLcBGAsYHQ/s0/Italo-Campos.jpg);}
 #italo .bio:before {content: "Ítalo Campos";}
 #italo .bio:after {content: "Psicanalista e poeta; membro da Academia Espirito-santense de Letras — AEL — e do Instituto Histórico e Geográfico do Espirito Santo — IHGES.";}
+
+/* IVALDO GOMES */
+#ivaldo .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEiXRc5OElncg7NTWkbajT_QTUdem-de2CXU7BVpsiGdVTFFTStHdeOZLDkNJ3gKjt9Bd0Y-fWKQ3_bO427BNG0o_TodirMG2T7GHRyStcnAjM7amozHsIaH_wsXEWcay5LbF1FfxNZGIngY9oWR0RVlBeJgit4cOomwHcnM0RZCaygUEvA3hU58SuK6);}
+#ivaldo .bio:before {content: "Ívaldo Gomes";}
+#ivaldo .bio:after {content: "Professor e terapeuta";}
 
 /* JOÃO BATISTA BRITO */
 #joao .fotobio {content: url(https://1.bp.blogspot.com/-yXzYlFMZqK4/YJ4JTmJ_3SI/AAAAAAAC1nw/HiVVZVM0EfkSmDtKqkOsVP-_kzKVSVeBgCLcBGAsYHQ/s0/Joa%25CC%2583o-Batista-Brito.jpg);}
