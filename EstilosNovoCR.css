@@ -610,9 +610,8 @@ figcaption {
 	font-weight: 900 !important;
 }
 
-linha {
-	content:"_____";
-	color:#B71C1C;
+.centraliza > hr {
+	margin:0 auto !important;
 }
 
 .desloca2 {
