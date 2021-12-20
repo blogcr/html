@@ -610,6 +610,10 @@ figcaption {
 	font-weight: 900 !important;
 }
 
+hr > hr2 {
+	float:center;
+}
+
 .desloca2 {
 	padding-left: 60px;
 }
