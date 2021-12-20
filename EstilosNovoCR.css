@@ -610,8 +610,9 @@ figcaption {
 	font-weight: 900 !important;
 }
 
-hr hr2 {
-	float:right!important;
+linha {
+	content;"_____";
+	color:#B71C1C;
 }
 
 .desloca2 {
