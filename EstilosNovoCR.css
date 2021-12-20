@@ -606,6 +606,10 @@ figcaption {
 	font-style: italic !important;
 }
 
+.negrito {
+	font-weight: 900 !important;
+}
+
 .desloca2 {
 	padding-left: 60px;
 }
