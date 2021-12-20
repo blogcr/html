@@ -610,8 +610,8 @@ figcaption {
 	font-weight: 900 !important;
 }
 
-hr2 {
-	border-top:1px solid #B71C1C;
+hr2>hr {
+	float:right!important;
 }
 
 .desloca2 {
