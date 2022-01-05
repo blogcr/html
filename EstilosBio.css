@@ -166,6 +166,11 @@
 #arael .bio:before {content: "Arael Costa";}
 #arael .bio:after {content: "Jornalista e professor";}
 
+/* BRUNO GAUDENCIO */
+#bruno .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEiWPgsL6BJDt-A_QF2cClZnfF95G9YlOui0emid8yw6tCyUjQotZnTif-pr_UwW-sDkERqY5TX4N7hTcmayvMlpgQ9fY9UteBYC0I-CPRdDbumtsyczxNxWCajxb-5Rea6uOkZTGWk8OKSOmWrDh_MjNanyBDtldQMKssFRv81yvtCTJEH7xwWZFNx-);}
+#bruno .bio:before {content: "Bruno Gaudêncio";}
+#bruno .bio:after {content: "Professor, escritor e historiador";}
+
 /* CARLOS ROLIM */
 #carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
 #carlos .bio:before {content: "Carlos Rolim";}
