@@ -301,6 +301,11 @@
 #ivaldo .bio:before {content: "Ívaldo Gomes";}
 #ivaldo .bio:after {content: "Professor, terapeuta e ambientalista";}
 
+/* JAILSON FERREIRA */
+#jailson .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEiT5d2uEiD8W_WN6HuuZUiGTE-FGso4d_nptAc_Ws1hnqTSzSvU4jZWhbJTsu1pCvJqs2zi-xn24fo3ECZr1_M_nkDS1Pq3D5s5SQIbNzLJHVUENETGtApBFuByFN2Tw0rAbE9K2A08RHTfN2cTaJvmwMqMi-k3kXytT0w7rLSrZFRu5qUeTQ-6hp2I;}
+#jailson .bio:before {content: "Jailson Ferreira";}
+#jailson .bio:after {content: "Fisioterapeuta, professor e escritor";}
+
 /* JOÃO BATISTA BRITO */
 #joao .fotobio {content: url(https://1.bp.blogspot.com/-yXzYlFMZqK4/YJ4JTmJ_3SI/AAAAAAAC1nw/HiVVZVM0EfkSmDtKqkOsVP-_kzKVSVeBgCLcBGAsYHQ/s0/Joa%25CC%2583o-Batista-Brito.jpg);}
 #joao .bio:before {content: "João Batista de Brito";}
