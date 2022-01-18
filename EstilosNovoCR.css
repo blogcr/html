@@ -429,10 +429,10 @@ figcaption {
 	position:relative;
 }
 
-.foto3 {
+.foto3, .separator {
 	margin: 0 auto !important;
-	position:relative;
-	display:block;
+	position:relative !important;
+	display:block !important;
 }
 
 .cap-ant {
