@@ -368,6 +368,15 @@ figcaption {
 	overflow:hidden !important;
 }
 
+.credito3 {
+	font-size:0.6em !important;
+	color:#616161 !important;
+	text-align:left !important;
+	margin-top:-7px !important;
+	padding: 5px 8px !important;
+	background:#FFF8E1 !important;
+}
+
 .credir {
 	float:right !important;
 	color: ##EEEEEE !important;
