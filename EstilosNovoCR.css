@@ -731,6 +731,14 @@ sup {
 	color: #B71C1C !important;
 }
 
+
+.ref3 {
+	font-size:0.9em !important;
+	border: 0px !important;
+	margin: reset  !important;
+
+}
+
 /* CAIXA DE CITAÇÕES
 blockquote {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
