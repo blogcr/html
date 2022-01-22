@@ -735,7 +735,7 @@ sup {
 .ref3 {
 	font-size:0.9em !important;
 	border: 0px !important;
-	margin: reset  !important;
+	margin: unset  !important;
 
 }
 
