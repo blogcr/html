@@ -998,11 +998,11 @@ select {
 	font-family: 'Kaushan Script', cursive !important;
 	font-size:1.2rem !important;
 	border-radius: 4px !important;
-	text-transform: uppercase !important;
 	color: #333134 !important;
 	padding: 3px 10px !important;
 	font-weight: bold !important;
 	width: auto !important;
-	background:transparent !important;
+	background:inherit !important;
 	display:block !important;
+	margin:unset;
 }
