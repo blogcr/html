@@ -1012,8 +1012,6 @@ select {
 }
 
 .dirr {
-	margin: unset !important;
-	float:right !important;
-	clear:both !important;
+	margin: 0 0 10px 0 !important;
 }
 }
