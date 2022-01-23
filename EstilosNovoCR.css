@@ -979,3 +979,30 @@ select {
     background: #B71C1C !important;
     padding: 2px 4px 2px 4px !important;
 }
+
+
+/* ALMANAQUE */
+
+fieldset .alm {
+  	display: block;
+  	margin: 20px 0 !important;
+  	padding: 20px;
+	border: 0px solid transparent !important;
+	border-radius: 0px !important;
+  	background: #F5F5F5;
+  	transparency: 0 !important;
+	z-index:100;
+}
+
+legend .alm-esq{
+	font-family: 'Kaushan Script', cursive !important;
+	font-size:1.2rem !important;
+	border-radius: 4px !important;
+	text-transform: uppercase !important;
+	color: #333134 !important;
+	padding: 3px 10px !important;
+	font-weight: bold !important;
+	width: auto !important;
+	background:transparent !important;
+	display:block !important;
+}
