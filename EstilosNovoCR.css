@@ -199,6 +199,14 @@ blockquote::before {
 	margin:3px auto;
 }
 
+.divisor4  {
+	width:30%;
+	opacity:0.5;
+	border:1px solid #ccc;
+	margin:15px auto;
+}
+
+
 .inv {
 	-webkit-transform: scaley(-1); 
 	transform: scaley(-1);	
