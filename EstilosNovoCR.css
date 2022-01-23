@@ -997,6 +997,7 @@ select {
 .alm-leg {
 	font-family: 'Kaushan Script', cursive !important;
 	font-size:1.2rem !important;
+	text-trannsform: normal !important;
 	border-radius: 4px !important;
 	color: #333134 !important;
 	padding: 3px 10px !important;
@@ -1004,5 +1005,5 @@ select {
 	width: auto !important;
 	background:inherit !important;
 	display:block !important;
-	margin:unset;
+	left:5% !important;
 }
