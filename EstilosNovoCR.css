@@ -1012,6 +1012,6 @@ select {
 }
 
 .dirr {
-	float:right !important;
+	margin-right: 0px !important;
 }
 }
