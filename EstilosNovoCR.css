@@ -983,7 +983,7 @@ select {
 
 /* ALMANAQUE */
 
-.alm {
+fieldset .alm {
   	display: block;
   	margin: 20px 0 !important;
   	padding: 20px;
@@ -994,7 +994,7 @@ select {
 	z-index:100;
 }
 
-.alm-leg {
+legend .alm-leg {
 	font-family: 'Kaushan Script', cursive !important;
 	font-size:1.2rem !important;
 	border-radius: 4px !important;
