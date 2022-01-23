@@ -995,11 +995,12 @@ select {
 }
 
 .alm-leg {
+	position:relative;
 	font-family: 'Kaushan Script', cursive !important;
 	font-size:2em !important;
 	text-transform: none !important;
 	border-radius: 4px !important;
-	color: #333134 !important;
+	color: #B71C1C !important;
 	padding: 3px 10px !important;
 	font-weight: bold !important;
 	width: auto !important;
