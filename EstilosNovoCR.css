@@ -1005,6 +1005,15 @@ select {
 	width: auto !important;
 	background:inherit !important;
 	display:block !important;
+}
+
+.esqq {
 	margin: unset !important;
-	right:5% !important;
+}
+
+.dirr {
+	margin: unset !important;
+	float:right !important;
+	clear:both !important;
+}
 }
