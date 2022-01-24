@@ -93,10 +93,17 @@
 		}
 }
 
-/* ALCR */
+/* ALCR TV */
 #alcr .fotobio {content: url(https://1.bp.blogspot.com/-g1uLXGaKHN4/X87Vhcs_7wI/AAAAAAACj6A/cTTij8JzkFwvlDjbjVzbnZkzQQJ6Yy9MwCLcBGAsYHQ/s0/TV%2BALCR.jpg);}
 #alcr .bio:before {content: "ALCR TV";}
 #alcr .bio:after {content: "Segmento audiovisual do Ambiente de Leitura Carlos Romero";}
+
+/* ALCR REVISTA */
+#revista .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEhEQqthL1So7AiCmu4PlXuUm3qUsdtorBkdDN-VmhDRAnQRMJYxY2YCMp0Q1LI_nVZsw37BEfgtOvKQY6_HUK5kJtsx2qLUaYnQUZsKANFyP3g4O7r7nrmo4iAmnW7LPe4__ijU55i8Mv7FyRO21MWHklN3bF6O60kR50TDR1AEyQ_EGspETTMRGJG6sw
+);}
+#revista .bio:before {content: "ALCR Revista";}
+#revista .bio:after {content: "Segmento informativo do Ambiente de Leitura Carlos Romero";}
+
 
 /* ADRIANO DE LEON */
 #adriano .fotobio {content: url(https://1.bp.blogspot.com/-EaCPXUmt9DE/X9rZ6pa_uVI/AAAAAAACmog/WTkUKqT4XeUUkEyCI0J9oJDKTYyJkTaPACLcBGAsYHQ/s0/Adriano-Leon.jpg);}
