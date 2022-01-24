@@ -991,9 +991,10 @@ select {
 
 /* ALMANAQUE */
 
-.alm {
+.revista {
   	display: block;
-  	margin: 20px 0 !important;
+	font-size:90% !important;
+  	margin: 40px 0 !important;
   	padding: 20px;
 	border: 0px solid transparent !important;
 	border-radius: 0px !important;
@@ -1002,7 +1003,7 @@ select {
 	z-index:100;
 }
 
-.alm-leg {
+.revista-leg {
 	font-family: 'Oswald' !important;
 	font-size:1.5em !important;
 	text-transform: none !important;
