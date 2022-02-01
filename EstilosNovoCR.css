@@ -409,7 +409,8 @@ figcaption {
 }
 */
 
-.fa-camera, .fa-paint-brush, .fa-home, .fa-youtube {
+.fa-camera, .fa-paint-brush, .fa-home, .fa-youtube,
+.fa-pencil, .fa-envelope, .fa-facebook-official, . fa-instagram {
 	margin: 0 5px !important;
 }
 
