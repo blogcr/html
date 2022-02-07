@@ -44,6 +44,16 @@
 	border-bottom:0px solid #B71C1C;
 }
 
+.letrag {
+	font-weight:bold; 
+	font-size:4em; 
+	float:left; 
+	padding:0; 
+	margin: 10px 15px 0 0 !important; 
+	background-color:none; 
+	line-height:0.5em;
+}
+
 .letra3 {
 	color: #616161 !important;
 	opacity:0.5;
