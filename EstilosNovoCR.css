@@ -44,7 +44,7 @@
 	border-bottom:0px solid #B71C1C;
 }
 
-.letrag {
+.letrag:first-letter {
 	font-weight:bold; 
 	font-size:4em; 
 	float:left; 
@@ -52,6 +52,7 @@
 	margin: 10px 15px 0 0 !important; 
 	background-color:none; 
 	line-height:0.5em;
+	border-bottom:0px solid #B71C1C;
 }
 
 .letra3 {
