@@ -394,6 +394,12 @@
 #marcia .bio:before {content: "Márcia Lucena";}
 #marcia .bio:after {content: "Professora e mestre em Serviço Social";}
 
+/* MARCILIO FRANCA */
+#marcilio .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEhliBn6A4cFsABHGLK1iEpcdGwqWagq2jtahy_sZWDPPANjjjPP5txJWZpbsGIF5w_mb2k6-8sf36ZIkxRiSzsVVzUq_S_psjpNgNugC835x8pp640RuvijrwoYDlZ-a3S2NYliNannlmxgn1YUthCkvkt_bLTdUaAD1bo4BmaoqW99FmM7AjcYqJit
+);}
+#marcilio .bio:before {content: "Márcílio Franca";}
+#marcilio .bio:after {content: "Advogado e professor";}
+
 /* MARCO LIMA */
 #marco .fotobio {content: url(https://1.bp.blogspot.com/-D9fdy8K79xA/X-SrTru6yuI/AAAAAAACm4s/oWDemWBATRArc9TaN8ZUFYu-maaXJitTgCLcBGAsYHQ/s0/Marco-Lima.jpg);}
 #marco .bio:before {content: "Marco Grangeiro Lima";}
