@@ -415,6 +415,11 @@
 #marilia .bio:before {content: "Marília Arnaud";}
 #marilia .bio:after {content: "Escritora";}
 
+/* MARINEUMA DE OLIVEIRA */
+#marineuma .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEgoEWM8mLSl04p-s31-oLw_aUgwXWcAy4l4d87NXmSEbvVhoXmSGucAihpoH35A8XSzdcg2h6Kd1774r0gmzk6Syw7zIC-4qClCTsyzY7DrqsBoAE_wFqF6wT0kpFTW3vlmwTAACRRnGVdk5P2jCMpNVHlf2NqmnOiMGMfVesZU2V4kFP0TFc38Lqkz1Q);}
+#marineuma .bio:before {content: "Marineuma de Oliveira";}
+#marineuma .bio:after {content: "Professora, doutora em Linguística e poetisa";}
+
 /* MARLUCE CASTOR */
 #marluce .fotobio {content: url(https://1.bp.blogspot.com/-cVg4VS_JHSU/YN_wqqM1PgI/AAAAAAAC3zA/n0mlxLkcvl8j9pKU_xIxMqettj4H2x9WACLcBGAsYHQ/s0/Marluce%2Bnovo.jpg);}
 #marluce .bio:before {content: "Marluce Castor";}
