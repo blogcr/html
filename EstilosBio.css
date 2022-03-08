@@ -183,6 +183,11 @@
 #carlos .bio:before {content: "Carlos Rolim";}
 #carlos .bio:after {content: "Engenheiro e professor";}
 
+/* CARLOS ROLIM */
+#romero .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEg-bv2caQ1QeWGVrKZB077FFnQHjzAeuTKaXOUrV-fE6OQef7RWFiyTbtom70VoGu2ufAnETinhA3omZI6dwxq04IQRk5PiIL5vExn9GJpQwD9b25bg5zs9PMiP_0AbGSfNcDGRfYXCQdt15oG1ifq2UWApKd046i3bjt6pxpxeOdl6Ar3KK2R3mKGp);}
+#romero .bio:before {content: "Carlos Romero";}
+#romero .bio:after {content: "Cronista e patrono do ALCR (in memorian)";}
+
 /* CARLOS ROMERO FILHO */
 #tuca .fotobio {content: url(https://1.bp.blogspot.com/-5qSM4ANbRic/YN0VFK6qB1I/AAAAAAAC3t4/JvGIuXego1UzllBzFGCjG5kECFeVuwC9QCLcBGAsYHQ/s0/Tuca.jpg);}
 #tuca .bio:before {content: "Carlos Romero Filho";}
