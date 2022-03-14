@@ -166,6 +166,10 @@ blockquote::before {
 	border-width: 1px;
 }
 
+.bordas { 
+	border:1px solid #ccc !important;
+}
+
 .poesia {
 	white-space: pre-wrap;
 }
@@ -318,6 +322,10 @@ figure {
 .esq {
 	float: left !important;
 	margin: 10px 20px 5px 0 !important;
+}
+
+.esquerda {
+	text-align: left !important;
 }
 
 .centro {
