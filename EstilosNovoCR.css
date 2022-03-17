@@ -780,12 +780,6 @@ blockquote::after {
 	margin-top: 8px;
 	}
 
-.textoita {
-	font-style: italic;
-	color: #616161;
-	text-align: right;
-	}
-
 .filmposter {
 	width:15%;
 	height:auto;
@@ -1021,3 +1015,9 @@ select {
     background: #B71C1C !important;
     padding: 2px 4px 2px 4px !important;
 }
+
+.textoita {
+	font-style: italic;
+	color: #616161;
+	text-align: right;
+	}
