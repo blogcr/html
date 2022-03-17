@@ -883,54 +883,9 @@ select {
 */
 
 
-#relacionados {
-	width:100%; 
-	background: #333134;
-	text-align:center;
-	padding:10px 0 10px 0;
-}
-
-.leiamais {
-	font-size:calc(1em + 0.5vw);
-	color:#ffffff;
-	opacity:0.8;
-	display:block;
-	margin:0 0 10px 0;
-}
-
-.relacionado, .relacionado a {
-	font-family: 'Kaushan Script', cursive;
-	font-size:calc(1.5em + 0.5vw);
-	color:#ffffff;
-	margin:0 0 10px 0;
-	text-decoration:none;
-	display:block;
-}
-
-.contatos li {
-    float: left !important;
-    font: 14px/20px Arial,sans-serif;
-    list-style: none outside none !important;
-    margin: 2px 5px 2px 0 !important;
-    padding: 2px 4px 2px 4px !important;
-    background: #FAFAFA !important;
-    width: bold !important;
-}
-
-.contatos li a  {
-    color: #000000 !important;
-    text-decoration: none !important;
-    padding: 2px 4px 2px 4px !important;
-}
-
-.contatos li a:hover {
-    color: #ffffff !important;
-    background: #B71C1C !important;
-    padding: 2px 4px 2px 4px !important;
-}
 
 
-/* ALMANAQUE */
+/* REVISTA */
 
 .revista {
   	display: block;
@@ -1016,4 +971,53 @@ select {
 	float: right;  
 	right: 0; 
 	opacity: 0.1;
+}
+
+/* POSTS RELACIONADOS */
+
+
+#relacionados {
+	width:100%; 
+	background: #333134;
+	text-align:center;
+	padding:10px 0 10px 0;
+}
+
+.leiamais {
+	font-size:calc(1em + 0.5vw);
+	color:#ffffff;
+	opacity:0.8;
+	display:block;
+	margin:0 0 10px 0;
+}
+
+.relacionado, .relacionado a {
+	font-family: 'Kaushan Script', cursive;
+	font-size:calc(1.5em + 0.5vw);
+	color:#ffffff;
+	margin:0 0 10px 0;
+	text-decoration:none;
+	display:block;
+}
+
+.contatos li {
+    float: left !important;
+    font: 14px/20px Arial,sans-serif;
+    list-style: none outside none !important;
+    margin: 2px 5px 2px 0 !important;
+    padding: 2px 4px 2px 4px !important;
+    background: #FAFAFA !important;
+    width: bold !important;
+}
+
+.contatos li a  {
+    color: #000000 !important;
+    text-decoration: none !important;
+    padding: 2px 4px 2px 4px !important;
+}
+
+.contatos li a:hover {
+    color: #ffffff !important;
+    background: #B71C1C !important;
+    padding: 2px 4px 2px 4px !important;
 }
