@@ -344,6 +344,16 @@ figcaption {
 	margin: 0 5px !important;
 }
 
+.fa-youtube-play {
+	color: #B71C1C;
+	padding: 0;
+}
+
+.fa-play-circle {
+	color: #BDBDBD;
+	padding: 0;
+}
+
 /* PONTO FINAL */
 .pontofinal {
 	float:right;
@@ -964,15 +974,8 @@ select {
 	margin-bottom: 5px !important;
 }	
 
-.fa-youtube-play {
-	color: #B71C1C;
-	padding: 0;
-}
 
-.fa-play-circle {
-	color: #BDBDBD;
-	padding: 0;
-}
+
 
 
 /* DIVISOR */
