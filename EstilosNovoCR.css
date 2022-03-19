@@ -123,10 +123,12 @@ blockquote::before {
 	font-size:0.95em !important;
 }
 
-.citacao > hr {
+#citacao hr {
 	width: 30% !important;
 	clear: both  !important;
 }
+
+
 
 .citacao2 {
 	margin: 0 5% !important;
@@ -179,6 +181,14 @@ blockquote::before {
 
 .bordas { 
 	border:1px solid #ccc !important;
+}
+
+.pads { 
+	padding:20px !important;
+}
+
+.backs { 
+	background:#FFF8E1; !important;
 }
 
 .gradiente {
