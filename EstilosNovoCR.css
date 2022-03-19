@@ -123,7 +123,7 @@ blockquote::before {
 	font-size:0.95em !important;
 }
 
-#citacao hr {
+.citacao hr {
 	width: 30% !important;
 	clear: both  !important;
 }
