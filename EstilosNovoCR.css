@@ -205,7 +205,7 @@ blockquote::before {
 
 /* DIVISOR */
 
-.divisor3  {
+.divisor, .divisor3  {
 	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
 	width:30%;
 	opacity:0.5;
@@ -938,12 +938,6 @@ select {
 
 /* DIVISOR */
 
-.divisor  {
-	content: url(https://1.bp.blogspot.com/-YU59sJ4UnM8/XzB-wN9cZWI/AAAAAAACZsY/RouazuJI0ecl_WZezmGsMHpL9HjpsXRYgCLcBGAsYHQ/s1600/Divisor.png);
-	width:70%;
-	opacity:0.5;
-	margin:3px auto;
-}
 
 .divisor2  {
 	content: url(https://1.bp.blogspot.com/-afErCAn07Iw/X40Tq2kRdTI/AAAAAAACfUY/1o-p1b9JdvY4fs5xp2adDuwrzq6NVsEMwCLcBGAsYHQ/s0/divisor.png);
