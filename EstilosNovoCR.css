@@ -229,20 +229,20 @@ blockquote::before {
 
 .superior, .cima {
 	content:url(https://1.bp.blogspot.com/--sGhlKtVdt0/X_ndkJP9TqI/AAAAAAACpno/745-P43jnAspuoU4-fRIPOHryqgk_U5RgCLcBGAsYHQ/s0/cant-alta.png);
-	width:40%;
+	width:30%;
 }
 
 .media, .central {
 	content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZslOU3JXAccKe0EkdOCJJlJZtsXpAWwCLcBGAsYHQ/s0/cant-centro.png);
 	top: 50%;
 	transform: translateY(-50%);
-	width:20%;
+	width:30%;
 }
 
 .inferior, .baixo {
 	content:url(https://1.bp.blogspot.com/-SnALcnPDM2k/X_ndkHPYBtI/AAAAAAACpns/bJPYauJk5C42qM34rpBHfCGciK4e1BJPQCLcBGAsYHQ/s0/cant-baixa.png);
 	bottom: 0;
-	width:40%;
+	width:30%;
 }
 
 
