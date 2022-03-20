@@ -327,6 +327,17 @@ figcaption {
 	background:transparent !important;
 }
 
+.leg {
+	font-size:0.6em !important;
+	color:#616161 !important;
+	margin-top:-7px !important;
+	overflow:hidden !important;
+}
+
+.direita {
+	text-align:right !important;
+}
+
 .credito2 {
 	font-size:0.6em !important;
 	color:#616161 !important;
