@@ -1,5 +1,4 @@
-
-
+/* -------------------- RESPONSIVO ----------------------- */
 @media only screen and (max-width: 1024px) {
 	.poesia, legend {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -9,8 +8,58 @@
 	}
 }
 
+/* -------------------- FORMATAÇÃO ----------------------- */
+.direita {
+	text-align:right !important;
+}
+.pads { 
+	padding:20px !important;
+}
 
-/* PRIMEIRA LETRA */
+.backs { 
+	background:#FFF8E1; !important;
+}
+
+.margem {
+	margin-top:15px;
+}
+
+.inv {
+	-webkit-transform: scaley(-1); 
+	transform: scaley(-1);	
+}
+
+.transparente {
+	background:transparent !important;
+}
+
+.desloca {
+	padding-left: 30px;
+}
+
+.italico {
+	font-style: italic !important;
+}
+
+.negrito {
+	font-weight: 900 !important;
+}
+
+.centraliza > hr {
+	margin:0 auto !important;
+}
+
+.desloca2 {
+	padding-left: 60px;
+}
+
+.centraliza {
+	margin: 0 auto;
+	text-align:center;
+	display:block
+}
+
+/* -------------------- PRIMEIRAS LETRAS ----------------------- */
 .letra:first-letter {
 	/*
 	font-family: 'Kaushan Script', cursive !important;
@@ -76,7 +125,7 @@
 	display:inline-block;
 }
 
-/* BLOCKQUOTE */
+/* -------------------- BLOCKQUOTE ----------------------- */
 blockquote {
 	font-size: 20px;
 	font-family: 'Helvetica', Arial, sans-serif !important;
@@ -116,7 +165,7 @@ blockquote::before {
   	left: 10px !important;
 }
 
-/* CITACAO */
+/* -------------------- CITAÇÃO ----------------------- */
 #citacao, .citacao  {
 	margin: 0 5% !important;
 	font-style:italic !important;
@@ -127,8 +176,6 @@ blockquote::before {
 	width: 30% !important;
 	clear: both  !important;
 }
-
-
 
 .citacao2 {
 	margin: 0 5% !important;
@@ -142,8 +189,18 @@ blockquote::before {
 	white-space: pre-wrap;
 }
 
+.haikai {
+	max-width: 90% !important;
+	text-align:center;
+	clear:both !important
+}
 
+.miniconto {
+	max-width: 60% !important;
+	clear:both !important
+}
 
+/* -------------------- NOTAS ----------------------- */
 #nota, .nota {
 	color: #757575; 
 	float: right; 
@@ -154,7 +211,7 @@ blockquote::before {
   	display:block;
 }
 
-/* BORDAS */
+/* -------------------- BORDAS ----------------------- */
 .borda {
 	padding-left:10px; 
 	border-left:1px solid #B71C1C;
@@ -183,14 +240,7 @@ blockquote::before {
 	border:1px solid #ccc !important;
 }
 
-.pads { 
-	padding:20px !important;
-}
-
-.backs { 
-	background:#FFF8E1; !important;
-}
-
+/* -------------------- GRADIENTES ----------------------- */
 .gradiente {
 	border-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
 	border-style: solid; 
@@ -203,8 +253,87 @@ blockquote::before {
 	border-width: 0px 0px 2px;
 }
 
-/* DIVISOR */
+/* -------------------- IMAGENS ----------------------- */
+figure {
+	display: block !important;
+	max-width: 35% !important;
+	height: auto !important;
+    	position:relative !important;
+    	box-sizing: border-box !important;
+	overflow: hidden;
+}
 
+.dir {
+	float: right !important;
+	margin: 10px 0 5px 20px !important;
+}
+
+.esq {
+	float: left !important;
+	margin: 10px 20px 5px 0 !important;
+}
+
+.centro {
+	max-width: 90% !important;
+	margin: 0 auto 15px !important;
+}
+
+.meio {
+	max-width: 45% !important;
+}
+
+
+/* -------------------- CREDITOS ----------------------- */
+figcaption {
+  	position:absolute !important;
+	color:#ffffff !important;
+	width:100% !important;
+	bottom:10px !important;
+    	height:25px !important;
+	line-height:25px !important;
+	font-size:0.6em !important;
+	padding: 0 10px !important;
+	background: rgba(0, 0, 0, 0.4)  !important;
+	font-weight: normal !important;
+	overflow:hidden !important;
+    	box-sizing: border-box !important;
+}
+
+.credito {
+	text-align:left;
+}
+
+.credir {
+	float:right !important;
+	color: ##EEEEEE !important;
+	font-style: italic;
+}
+
+.cred {
+	font-size:0.6em !important;
+	color:#616161 !important;
+	margin-top:-7px !important;
+	overflow:hidden !important;
+}
+
+.credito2 {
+	font-size:0.6em !important;
+	color:#616161 !important;
+	text-align:right !important;
+	margin-top:-7px !important;
+	overflow:hidden !important;
+}
+
+.credito3 {
+	font-size:0.6em !important;
+	color:#616161 !important;
+	text-align:left !important;
+	margin-top:-7px !important;
+	padding: 5px 8px !important;
+	background:#FFF8E1 !important;
+}
+
+/* -------------------- DIVISOR ----------------------- */
 .divisor, .divisor3  {
 	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
 	width:30%;
@@ -212,8 +341,7 @@ blockquote::before {
 	margin:3px auto;
 }
 
-/* ORNAMENTOS */
-
+/* -------------------- ORNAMENTOS ----------------------- */
 #ornamento {
 	width: 100%;
 	position: relative;
@@ -245,117 +373,7 @@ blockquote::before {
 	width:30%;
 }
 
-
-/* IMAGEM */
-figure {
-	display: block !important;
-	max-width: 35% !important;
-	height: auto !important;
-    	position:relative !important;
-    	box-sizing: border-box !important;
-	overflow: hidden;
-}
-
-.dir {
-	float: right !important;
-	margin: 10px 0 5px 20px !important;
-}
-
-.esq {
-	float: left !important;
-	margin: 10px 20px 5px 0 !important;
-}
-
-.centro {
-	max-width: 90% !important;
-	margin: 0 auto 15px !important;
-}
-
-.meio {
-	max-width: 45% !important;
-}
-
-.haikai {
-	max-width: 90% !important;
-	text-align:center;
-	clear:both !important
-}
-
-.miniconto {
-	max-width: 60% !important;
-	clear:both !important
-}
-
-.margem {
-	margin-top:15px;
-}
-
-.inv {
-	-webkit-transform: scaley(-1); 
-	transform: scaley(-1);	
-}
-
-
-/* CREDITOS */
-
-figcaption {
-  	position:absolute !important;
-	color:#ffffff !important;
-	width:100% !important;
-	bottom:10px !important;
-    	height:25px !important;
-	line-height:25px !important;
-	font-size:0.6em !important;
-	padding: 0 10px !important;
-	background: rgba(0, 0, 0, 0.4)  !important;
-	font-weight: normal !important;
-	overflow:hidden !important;
-    	box-sizing: border-box !important;
-}
-
-.credito {
-	text-align:left;
-}
-
-.credir {
-	float:right !important;
-	color: ##EEEEEE !important;
-	font-style: italic;
-}
-
-.transparente {
-	background:transparent !important;
-}
-
-.cred {
-	font-size:0.6em !important;
-	color:#616161 !important;
-	margin-top:-7px !important;
-	overflow:hidden !important;
-}
-
-.direita {
-	text-align:right !important;
-}
-
-.credito2 {
-	font-size:0.6em !important;
-	color:#616161 !important;
-	text-align:right !important;
-	margin-top:-7px !important;
-	overflow:hidden !important;
-}
-
-.credito3 {
-	font-size:0.6em !important;
-	color:#616161 !important;
-	text-align:left !important;
-	margin-top:-7px !important;
-	padding: 5px 8px !important;
-	background:#FFF8E1 !important;
-}
-
-/* FONT AWESOME */
+/* -------------------- FONT AWESOME ----------------------- */
 
 .fa-camera, .fa-paint-brush, .fa-home, .fa-youtube,
 .fa-pencil, .fa-envelope, .fa-facebook-official, .fa-instagram {
@@ -372,7 +390,7 @@ figcaption {
 	padding: 0;
 }
 
-/* PONTO FINAL */
+/* -------------------- PONTO FINAL ----------------------- */
 .pontofinal {
 	float:right;
 	width:40px;
@@ -381,7 +399,7 @@ figcaption {
 	border-radius:50%;
 }
 
-/* COLUNAS */
+/* -------------------- COLUNAS ----------------------- */
 #foto2 {
 	display: flex; 
 	width: 90%;
@@ -394,23 +412,13 @@ figcaption {
 	clear:both;
 }
 
-#foto2 .foto2int {
-	width: 48%;
-}
-
-#foto2 .foto2flex {
-	margin: 0 auto !important;
-	position:relative;
-}
-
 .foto3, .separator {
 	margin: 0 auto !important;
 	position:relative !important;
 	display:block !important;
 }
 
-/* CAPÍTULOS */
-
+/* -------------------- CAPÍTULOS ----------------------- */
 .cap-ant {
   content:url(https://1.bp.blogspot.com/-6Dp8sAIxKGo/YApSrf1Ge9I/AAAAAAACqXw/EzsNn5ga86MeuVkx0cxQokoq3jRm0ZdygCLcBGAsYHQ/s0/CAP%2BANT.png);
   margin:-1em 0 1em;
@@ -428,25 +436,7 @@ figcaption {
   display:block;
 }
 
-/* VIDEO LATERAL DIREITO */
-.video {
-	float:right;
-	width:50%;
-	max-height:200px;
-	margin: 10px 0 5px 15px;
-}
-
-/* VIDEO LATERAL DIREITO SOMENTE SOM */
-.disco {
-	width: 100%;
-}
-
-.disco:before {
-	content: "";
-	display: block;
-	padding-top: 100%;
-}
-
+/* -------------------- VÍDEOS ----------------------- */
 .quadrado1 {
     position: relative;
 }
@@ -458,7 +448,6 @@ figcaption {
     bottom: 0;
     right: 0;
 }
-
 
 /* -------------------- POSTAGENS POPULARES ----------------------- */
 
@@ -512,7 +501,6 @@ figcaption {
     background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
 }
 
-
 #PopularPosts2 .autor {
     background:#B71C1C;
     text-transform:uppercase;
@@ -550,77 +538,7 @@ figcaption {
         -webkit-box-orient: vertical;
 }
 
-
-/* ------------------------------------------------------------- */
-
-/* MODIFICA LAYOUT DO POLLDADDY */
-
-.css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
-	padding: 0px 0px !important;
-}
-
-#pds-sharing, .pds-pd-link {
-	display: none !important;
-}
-
-.css-box.pds-box, css-box {
-	border: 0px !important;
-}
-
-.css-votebutton-outer.pds-votebutton-outer, .css-votebutton-outer {
-	width: 100% !important;
-	display: inline-block !important;
-}
-
-.css-vote-button.pds-vote-button, .css-vote-button {
-	width: 10% !important;
-	float: left !important;
-}
-
-.css-links.pds-links, .css-links {
-	width: 70% !important;
-	float: right !important;
-}
-
-.css-vote.pds-vote, .css-vote {
-	height: 20px !important;
-}
-
-.css-answer.pds-answer, .css-answer, .pds-box.pds-answer, pds-box, .pds-answer  {
-	border-bottom: 0px !important;
-}
-
-/* POSTAGENS DE ENTREVISTAS */
-.p30 {
-	padding: 0 30px 0 30px !important;
-	font-style: italic !important;
-}
-
-.desloca {
-	padding-left: 30px;
-}
-
-.italico {
-	font-style: italic !important;
-}
-
-.negrito {
-	font-weight: 900 !important;
-}
-
-.centraliza > hr {
-	margin:0 auto !important;
-}
-
-.desloca2 {
-	padding-left: 60px;
-}
-
-.centraliza {
-	margin: 0 auto;
-	text-align:center;
-	display:block
-}
+/* -------------------- ENTREVISTAS ----------------------- */
 
 .pergunta {
   	padding-left: 20px;
@@ -814,9 +732,7 @@ blockquote::after {
 	}
 */
 
-.fa fa-camera {
-	padding: 0 5px !important;
-	}
+
 
 *
 	{
@@ -1033,3 +949,73 @@ select {
 	color: #616161;
 	text-align: right;
 	}
+
+#foto2 .foto2int {
+	width: 48%;
+}
+
+#foto2 .foto2flex {
+	margin: 0 auto !important;
+	position:relative;
+}
+
+.video {
+	float:right;
+	width:50%;
+	max-height:200px;
+	margin: 10px 0 5px 15px;
+}
+
+/* VIDEO LATERAL DIREITO SOMENTE SOM */
+.disco {
+	width: 100%;
+}
+
+.disco:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+
+/* MODIFICA LAYOUT DO POLLDADDY */
+
+.css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
+	padding: 0px 0px !important;
+}
+
+#pds-sharing, .pds-pd-link {
+	display: none !important;
+}
+
+.css-box.pds-box, css-box {
+	border: 0px !important;
+}
+
+.css-votebutton-outer.pds-votebutton-outer, .css-votebutton-outer {
+	width: 100% !important;
+	display: inline-block !important;
+}
+
+.css-vote-button.pds-vote-button, .css-vote-button {
+	width: 10% !important;
+	float: left !important;
+}
+
+.css-links.pds-links, .css-links {
+	width: 70% !important;
+	float: right !important;
+}
+
+.css-vote.pds-vote, .css-vote {
+	height: 20px !important;
+}
+
+.css-answer.pds-answer, .css-answer, .pds-box.pds-answer, pds-box, .pds-answer  {
+	border-bottom: 0px !important;
+}
+
+.p30 {
+	padding: 0 30px 0 30px !important;
+	font-style: italic !important;
+}
