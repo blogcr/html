@@ -437,6 +437,17 @@ figcaption {
 }
 
 /* -------------------- VÍDEOS ----------------------- */
+
+.disco {
+	width: 100%;
+}
+
+.disco:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
 .quadrado1 {
     position: relative;
 }
@@ -966,16 +977,7 @@ select {
 	margin: 10px 0 5px 15px;
 }
 
-/* VIDEO LATERAL DIREITO SOMENTE SOM */
-.disco {
-	width: 100%;
-}
 
-.disco:before {
-	content: "";
-	display: block;
-	padding-top: 100%;
-}
 
 
 /* MODIFICA LAYOUT DO POLLDADDY */
