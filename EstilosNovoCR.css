@@ -716,11 +716,6 @@ blockquote::after {
 	overflow:hidden;
 }
 
-.frase2 {
-	overflow:hidden;
-	padding: 0 !important:
-}
-
 .textopeq, .textoita {
 	font-size: 14px !important;
 	line-height: 18px !important;
@@ -1020,4 +1015,9 @@ select {
 .p30 {
 	padding: 0 30px 0 30px !important;
 	font-style: italic !important;
+}
+
+.frase2 {
+	overflow:hidden;
+	padding: 0 !important:
 }
