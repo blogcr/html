@@ -607,7 +607,7 @@ sup {
 	margin-left:3px;
 }	
 
-.ref {
+.field1, .ref {
 	font-size:0.7em !important;
 	line-height:1.5;
 	max-width: 40% !important;
@@ -621,14 +621,13 @@ sup {
 	border-radius: 2px !important;
 }
 
-.ref2 {
+.leg1, .ref2 {
 	font-size:0.9em !important;
 	border: 0px !important;
 	color: #B71C1C !important;
 }
 
-
-.ref3 {
+.leg2, .ref3 {
 	font-size:0.9em !important;
 	border: 0px !important;
 	margin: unset  !important;
@@ -694,14 +693,6 @@ blockquote::after {
 	margin-top: -25px;
 }
 */
-
-.quadro {
-	display: inline-block;
-	background-color: #E0E0E0;
-	padding: 10px;
-	margin-bottom: 40px;
-	width:100%;
-	}
 
 .fotopeq {
 	height:auto;
@@ -1021,3 +1012,11 @@ select {
 	overflow:hidden;
 	padding: 0 !important:
 }
+
+.quadro {
+	display: inline-block;
+	background-color: #E0E0E0;
+	padding: 10px;
+	margin-bottom: 40px;
+	width:100%;
+	}
