@@ -24,6 +24,10 @@
 	margin-top:15px;
 }
 
+.margens {
+	margin-bottom:15px;
+}
+
 .inv {
 	-webkit-transform: scaley(-1); 
 	transform: scaley(-1);	
