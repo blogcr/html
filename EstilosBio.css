@@ -543,6 +543,11 @@
 #thomas .bio:before {content: "Thomas Bruno Oliveira";}
 #thomas .bio:after {content: "Mestre em História e jornalista";}
 
+/* VANIA CASTRO */
+#vania .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi35iSutooc2AiTItGZc-InCy5NfhYbQMnyOtTIO_qOD-dFuzldsMimp7JlkLn0oaWtuDxrstoZI-UyWdGbeaVIdx7Z4MDK8zUTMAky7bz-h7Gh4L2PJ4CGgFvB2SXfHWm95bHfiXYST7T5yPDmfig984JoWZAfuUKGXG1vQBoOjTRKY_Qcez0LVHcjJA/s1600/Va%CC%82nia.jpg);}
+#vania .bio:before {content: "Vânia de Farias Castro";}
+#vania .bio:after {content: "Advogada e poetisa";}
+
 /* VERONICA FARIAS */
 #veronica .fotobio {content: url(https://1.bp.blogspot.com/-fhJAleZ3d-0/X8mP-UIm3AI/AAAAAAACjpw/7qumADcrleQRw9KSmfdMxi9CXcCyowLOQCLcBGAsYHQ/s0/Vero%25CC%2582nica-Farias.jpg);}
 #veronica .bio:before {content: "Verônica Farias";}
