@@ -490,6 +490,11 @@
 #sam .bio:before {content: "Sam Cavalcanti";}
 #sam .bio:after {content: "Mestre em música, compositor, crítico e escritor";}
 
+/* SANDRA RAQUEW */
+#raquew .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlVXxkqvO0RF0-f-ejvyVEXd4SF1DV-9jGmq50x_8cT8cY4hOGYYhfPfGV0nwnKSIsH1Ion2gd2e6fKBwf_6Nwoz67ex3oYblESnsM-LK_Y-1XKXvso7r2MRiPZq9M-zld_eK74RShmbrgIt97ZYfwJjp3lN5n5KVV_2MJW6fYbDgBXBXhLAtOvhGb/s1600/Sandra-Raquew.jpeg);}
+#raquew .bio:before {content: "Sandra Raquew";}
+#raquew .bio:after {content: "Jornalista, professora e doutora em Sociologia";}
+
 /* SANDRA TROMBETTA */
 #sandra .fotobio {content: url(https://1.bp.blogspot.com/-o5NWsKi5oC0/YEL5v7FwWuI/AAAAAAACsCA/VkjKfu6bLoY7rV98vuiDtDbn2Jjrja1MgCLcBGAsYHQ/s0/Sandra-Quintans-PB.jpg);}
 #sandra .bio:before {content: "Sandra Trombetta";}
