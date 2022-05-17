@@ -233,6 +233,11 @@
 #eduardo .bio:before {content: "Eduardo Kugler";}
 #eduardo .bio:after {content: "Artista plástico e escritor";}
 
+/* ELTON SOUZA */
+#elton .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4_wMqyzq8fjI9jn5ewDqX2i6KeTt28gs3tq64clopcTrUFNyNgrKd5sO43LDITByxVjAZY6UR35P5wTXL2OyTMl-w_TgCFDcJe4a_h9Uw1mL6gRzTEM9W4ziAB-nrN80kd4pwj6njTDejaM7ezDv6x46aWQVRbczFM2VUwo2QZxDD9nXkPIzBdlJ_/s1600/Elton-Souza.jpeg);}
+#elton .bio:before {content: "Elton Souza";}
+#elton .bio:after {content: "Professor, escritor e doutor em filosofia";}
+
 /* ELVIO VARGAS */
 #elvio .fotobio {content: url(https://1.bp.blogspot.com/-5Zye75qv7GY/YMl_HUMhelI/AAAAAAAC3Bs/r5BCTZY7anYvsTD645SdBcwONge0RD3CACLcBGAsYHQ/s0/Elvio-Vargas.jpg);}
 #elvio .bio:before {content: "Élvio Vargas";}
