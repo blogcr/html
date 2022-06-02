@@ -28,6 +28,16 @@
 	*/
 }
 
+.minifoto {
+	max-width:10% !important;
+	margin-top:15px !important;
+	float:right !important;
+	margin:-25px 5px -100px 0 !important;
+	z-index:100;
+	height:auto;
+	align: top;
+}
+
 .textobio, .bio {
 	padding:0px !important;
 	color:#000;
@@ -365,7 +375,7 @@
 #nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP)";}
 
 /* JUCA PONTES */
-#juca .fotobio {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
+#juca .fotobio, .minifoto {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
 #juca .bio:before {content: "Juca Pontes";}
 #juca .bio:after {content: "Poeta, editor e jornalista";}
 
