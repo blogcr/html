@@ -29,6 +29,7 @@
 }
 
 .minifoto {
+	width:15% !important;
 	max-width:15% !important;
 	float: right !important;
 	margin: -25px 5px -100px 0 !important;
