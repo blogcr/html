@@ -30,6 +30,8 @@
 
 .minifoto {
 	position:relative;
+	top:-10px;
+	left:-10px;
 	max-width:10% !important;
 	margin-top:15px !important;
 	float:right !important;
