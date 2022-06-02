@@ -33,9 +33,9 @@
 	margin-top:15px !important;
 	float:right !important;
 	margin:-25px 5px -100px 0 !important;
-	z-index:100;
-	height:auto;
-	align: top;
+	z-index:100 !important;
+	height:auto !important;
+	align: top !important;
 }
 
 .textobio, .bio {
