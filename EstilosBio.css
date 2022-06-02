@@ -380,7 +380,7 @@
 #nunes .bio:after {content: "Poeta, escritor e membro do Instituto Histórico e Geográfico da Paraíba (IHGP)";}
 
 /* JUCA PONTES */
-#juca .fotobio, .minifoto {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
+#juca .fotobio {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
 #juca .bio:before {content: "Juca Pontes";}
 #juca .bio:after {content: "Poeta, editor e jornalista";}
 
