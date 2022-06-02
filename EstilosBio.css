@@ -28,6 +28,13 @@
 	*/
 }
 
+.minifoto {
+	max-width:15% !important;
+	float: right !important;
+	margin: -25px 5px -100px 0 !important;
+	z-index:100 !important;
+}
+
 .textobio, .bio {
 	padding:0px !important;
 	color:#000;
