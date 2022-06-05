@@ -342,6 +342,23 @@ figcaption {
 	background:#FFF8E1 !important;
 }
 
+.credito4 {
+    font-size:calc(0.5rem + 0.5vw);
+    background:rgba(0, 0, 0, 0.2);
+    color:#ccc;
+    content:"";
+    padding: 0 5px;
+    width:auto;
+    float:left;
+    max-width:100%;
+    overflow: hidden;
+    clear:both;
+    position:relative;
+    bottom:2.7em;
+    left:0.3em;
+    font-weight:normal !important;
+  }
+
 /* -------------------- DIVISOR ----------------------- */
 .divisor, .divisor3  {
 	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
