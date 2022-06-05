@@ -342,7 +342,7 @@ figcaption {
 	background:#FFF8E1 !important;
 }
 
-.credito4 {
+.credito4, #credito4 {
     font-size:calc(0.5rem + 0.5vw);
     background:rgba(0, 0, 0, 0.2);
     color:#ccc;
