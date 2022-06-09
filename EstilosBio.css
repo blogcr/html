@@ -207,6 +207,11 @@
 #celio .bio:before {content: "Célio Furtado";}
 #celio .bio:after {content: "Artista plástico / cronista";}
 
+/* CESAR VENEZIANI */
+#cesar .fotobio {content: url(ttps://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgji8ZWf6xllTUdCaqAEB6bz0JA_wT5OBmYuXHo9JwkfEICdqG1rEmv2aLRUaGr3QQqYHZhF4vdbxgw8Cwjy1j7mqGrFIExWVIXY-VGmfTyeewc8ShPfqoq_14RgV4x5Q_sJDx9Qn3Cx1JiLxx4UvaKiGmihgoEJ-Cb-s9ulyI-W_q9OV3hxn_XqJ6j/s1600/Cesar-Veneziani.jpg);}
+#cesar .bio:before {content: "Cesar Veneziani";}
+#cesar .bio:after {content: "Escritor";}
+
 /* CHICO VIANA */
 #chico .fotobio {content: url(https://1.bp.blogspot.com/-3U48rFjlPm8/X77nDX4ZLNI/AAAAAAACjNU/Fl339k6KB_EPvOROQRHD1k4cAguXcE30QCLcBGAsYHQ/s0/Chico-Viana.jpg);}
 #chico .bio:before {content: "Chico Viana";}
@@ -402,6 +407,11 @@
 #linaldo .fotobio {content: url(https://1.bp.blogspot.com/-tNmnVmOHgis/X9FdKwHMgeI/AAAAAAACj-k/-Bp_NNTe1oEmOxnek3ChSGxNGQ2lAA12QCLcBGAsYHQ/s0/Linaldo-Guedes.jpg);}
 #linaldo .bio:before {content: "Linaldo Guedes";}
 #linaldo .bio:after {content: "Jornalista / poeta";}
+
+/* LUDMILA SAHAROVSKY */
+#ludmila .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcCwtnvmkVvfIIYTmtcQo4xAm85K7llsorzPPuf96NCDTf1ysfi3tiwwJJP5dc0iAa8TLbeJPfm0HFedrgDDIqTk_f-ZA60fItWlvFbX1WmN_li7yCeyI7lFT3rAP37_sHE9GHMuMyvKTQwRwIWu8qj5slltyqQfeGaivjWCcL6CwYoiLTFUL9uwyH/s1600/Ludmila-Saharovsky.jpg);}
+#ludmila .bio:before {content: "Ludmila Saharovsky";}
+#ludmila .bio:after {content: "Tradutora / escritora";}
 
 /* LUIZ AUGUSTO PAIVA */
 #luiz .fotobio {content: url(https://1.bp.blogspot.com/-XS0WcEcLcCw/X-vRV-k5UTI/AAAAAAACnJs/sVYIsulmlaMAbXPSOH4nL4EITRajorZdQCLcBGAsYHQ/s0/Luiz-Augusto-Paiva.jpg);}
