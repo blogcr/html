@@ -113,7 +113,6 @@
 #revista .bio:before {content: "Revista ALCR";}
 #revista .bio:after {content: "Segmento informativo do Ambiente de Leitura Carlos Romero";}
 
-
 /* ADRIANO DE LEON */
 #adriano .fotobio {content: url(https://1.bp.blogspot.com/-EaCPXUmt9DE/X9rZ6pa_uVI/AAAAAAACmog/WTkUKqT4XeUUkEyCI0J9oJDKTYyJkTaPACLcBGAsYHQ/s0/Adriano-Leon.jpg);}
 #adriano .bio:before {content: "Adriano de León";}
@@ -192,7 +191,7 @@
 #carlos .bio:before {content: "Carlos Rolim";}
 #carlos .bio:after {content: "Engenheiro / professor";}
 
-/* CARLOS ROLIM */
+/* CARLOS ROMERO */
 #romero .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEg-bv2caQ1QeWGVrKZB077FFnQHjzAeuTKaXOUrV-fE6OQef7RWFiyTbtom70VoGu2ufAnETinhA3omZI6dwxq04IQRk5PiIL5vExn9GJpQwD9b25bg5zs9PMiP_0AbGSfNcDGRfYXCQdt15oG1ifq2UWApKd046i3bjt6pxpxeOdl6Ar3KK2R3mKGp);}
 #romero .bio:before {content: "Carlos Romero";}
 #romero .bio:after {content: "Cronista / patrono do ALCR (in memorian)";}
