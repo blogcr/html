@@ -478,10 +478,15 @@
 #paulo .bio:before {content: "Paulo Rabelo";}
 #paulo .bio:after {content: "Professor";}
 
-/* PPETRÔNIO SOUTO */
+/* PETRÔNIO SOUTO */
 #petronio .fotobio {content: url(https://1.bp.blogspot.com/-bDd15kWRY60/YXdVJuodYaI/AAAAAAAC9B8/Gc_Afamz3G4VL4kG2wgEG2aYk3K_ZFvQwCLcBGAsYHQ/s0/Petronio-Souto-2-PB.jpg);}
 #petronio .bio:before {content: "Petrônio Souto";}
 #petronio .bio:after {content: "Jornalista / poeta";}
+
+/* REGINA CÉLIA GONÇALVES */
+#regina .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5HXBoLuROnA6qgZWWAe12aGMl_NU6uiWb29IeA82Y-RcIJwx5EMVC8LKywcO8fMxs8_iSvSX9Tyh2E_4LenJYSziV92nSZSwdWQkCdECknq8Ia_bhwd7UTWfQ4K-udFXMtPb5lgYB0Hmhmb4JXUgb6PiGqXReBVJbvGB8ckxZ2iqEshXnFPPtKpR0/s1600/Regina-Ce%CC%81lia.jpeg);}
+#regina .bio:before {content: "Regina Célia Gonçalves";}
+#regina .bio:after {content: "Historiadora";}
 
 /* REJANE VIEIRA */
 #rejane .fotobio {content: url(https://1.bp.blogspot.com/-nC51mYsnBg0/X99sZWzE27I/AAAAAAACmvE/6NJbbPk3MpQH9SnWRK1WEglKEvTWcs7lgCLcBGAsYHQ/s0/Rejane-Vieira.jpg);}
