@@ -38,7 +38,8 @@
 }
 
 .minifoto2 {
-         max-width:23.3% !important;
+	position:relative;
+        max-width:23.3% !important;
 	float: right !important;
 	margin: 6.1% 0.15%  !important;	
 }
