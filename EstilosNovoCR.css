@@ -129,6 +129,14 @@
 	display:inline-block;
 }
 
+.aspas {
+	content:"\f10d";
+	font-size:3em;
+	opacity:0.5;
+	margin-left:-5%;
+	margin-top:-5%
+}
+
 /* -------------------- BLOCKQUOTE ----------------------- */
 blockquote {
 	font-size: 20px;
