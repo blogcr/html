@@ -135,7 +135,9 @@
 	font-size:3em;
 	opacity:0.5;
 	margin-left:-5%;
-	margin-top:-5%
+	margin-top:-5%;
+	font-style: normal !important;
+	display:inline !important;
 }
 
 /* -------------------- BLOCKQUOTE ----------------------- */
