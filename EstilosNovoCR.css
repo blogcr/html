@@ -129,6 +129,21 @@
 	display:inline-block;
 }
 
+.aspas {
+	font-family:'FontAwesome';
+	content:"\f10d";
+	font-size:3em;
+	line-height:auto !important;
+	margin-right:5px !important;
+	padding:0 !important;
+	opacity:0.5;
+	position:relative;
+	left:-5%;
+	top:-5%;
+	font-style: normal !important;
+	display:inline !important;
+}
+
 /* -------------------- BLOCKQUOTE ----------------------- */
 blockquote {
 	font-size: 20px;
@@ -187,21 +202,6 @@ blockquote::before {
 	font-size:0.95em !important;
 	padding:20px;
 	background:#FFF8E1;
-}
-
-.citacao2 > .aspas {
-	font-family:'FontAwesome';
-	content:"\f10d";
-	font-size:3em;
-	line-height:auto !important;
-	margin-right:5px !important;
-	padding:0 !important;
-	opacity:0.5;
-	position:relative;
-	left:-5%;
-	top:-5%;
-	font-style: normal !important;
-	display:inline !important;
 }
 
 .poesia {
