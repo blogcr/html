@@ -189,6 +189,21 @@ blockquote::before {
 	background:#FFF8E1;
 }
 
+.citacao2 > .aspas {
+	font-family:'FontAwesome';
+	content:"\f10d";
+	font-size:3em;
+	line-height:1em !important;
+	margin-right:5px !important;
+	padding:0 !important;
+	opacity:0.5;
+	position:relative;
+	left:-5%;
+	top:-5%;
+	font-style: normal !important;
+	display:inline !important;
+}
+
 .poesia {
 	white-space: pre-wrap;
 }
