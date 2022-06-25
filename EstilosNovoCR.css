@@ -206,7 +206,7 @@ blockquote::before {
 	opacity:0.6;
 	border-top:1px solid #B71C1C;
 	padding-top:2px;
-	width:60%;
+	width:50%;
 	margin:2px auto 0;
 	text-align:center !important;
 }
