@@ -201,6 +201,15 @@ blockquote::before {
 	background:#FFF8E1;
 }
 
+.paginas {
+	font-size:70%;
+	opacity:0.6;
+	text-align:center;
+	border-top:1px solid #B71C1C;
+	padding-top:3px;
+	width:40%;
+}
+
 .poesia {
 	white-space: pre-wrap;
 }
