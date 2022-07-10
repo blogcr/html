@@ -55,7 +55,8 @@
 .autoria {
     background:#B71C1C;
     text-transform:uppercase;
-    padding: 0px 4px !important;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
     margin-bottom:5px;
     font-size: 1em !important;
     max-height:1.8em !important;
