@@ -8,6 +8,8 @@
 	display:inline-block;
 	line-height:1.2 !important; 
 	text-align: left !important;
+	font-size:15px;
+
 }
 
 .fotobio {
@@ -47,11 +49,11 @@
 }
 
 .minifoto3 {
-    max-width:23.3% !important;
-    float: right !important;
-    margin: 6.1% 0.15%  !important;
-    border:0px solid #000000 !important;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    	max-width:23.3% !important;
+    	float: right !important;
+    	margin: 6.1% 0.15%  !important;
+    	border:0px solid #000000 !important;
+    	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 /*
@@ -101,13 +103,13 @@
 	letter-spacing: 0.04em;
     	color: #ffffff !important;
     	background-color: #B71C1C;
-	font-size:15px;
     	font-weight: bold;
-    	margin-bottom: 0px;
+    	margin-bottom: 5px;
     	margin-right: 0px;
-    	padding: 3px;
+    	padding: 0 3px;
 	display:table;
-	white-space: nowrap
+	white-space: nowrap;
+	overflow:hidden;
 }
 
 /*
