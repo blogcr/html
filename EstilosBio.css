@@ -83,7 +83,7 @@
 }
 
 
-/*
+
 .bio:before {
 	border-bottom:2px solid #B71C1C;
 	font-weight:bold;
@@ -93,8 +93,9 @@
 	margin-bottom:5px;
 	line-height:1.2 !important;
 }
-*/
 
+
+/*
 .bio:before {
 	background:#B71C1C;
     	text-transform:uppercase;
@@ -113,6 +114,7 @@
     	-webkit-line-clamp: 1;
     	-webkit-box-orient: vertical;
 }
+*/
 
 .bio:after {
 	overflow:hidden !important;
