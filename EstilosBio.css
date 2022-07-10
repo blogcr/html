@@ -44,6 +44,34 @@
 	margin: 6.1% 0.15%  !important;	
 }
 
+.minifoto3 {
+    max-width:23.3% !important;
+    float: right !important;
+    margin: 6.1% 0.15%  !important;
+    border:0px solid #000000 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.autoria {
+    background:#B71C1C;
+    text-transform:uppercase;
+    padding: 0px 4px !important;
+    margin-bottom:5px;
+    font-size: 1em !important;
+    max-height:1.8em !important;
+    position:absolute;
+    left:15px;
+    color:#FFFFFF !important;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-weight:bold;
+    text-align:left !important;
+    top:57%;
+    overflow:hidden !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
 .textobio, .bio {
 	padding:0px !important;
 	color:#000;
