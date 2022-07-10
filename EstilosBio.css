@@ -99,7 +99,6 @@
     	padding-right: 4px !important;
     	padding-left: 4px !important;
     	margin-bottom:5px;
-    	font-size: 1em !important;
     	max-height:1.8em !important;
     	position:absolute;
     	color:#FFFFFF !important;
@@ -107,6 +106,7 @@
     	font-weight:bold;
     	text-align:left !important;
     	overflow:hidden !important;
+	display:block;
     	display: -webkit-box;
     	-webkit-line-clamp: 1;
     	-webkit-box-orient: vertical;
