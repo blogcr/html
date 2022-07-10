@@ -83,7 +83,7 @@
 }
 
 
-
+/*
 .bio:before {
 	border-bottom:2px solid #B71C1C;
 	font-weight:bold;
@@ -93,7 +93,22 @@
 	margin-bottom:5px;
 	line-height:1.2 !important;
 }
+*/
 
+.bio:before {
+	text-transform: uppercase;
+    	border:#B71C1C 5px solid;
+	letter-spacing: 0.04em;
+    	color: #ffffff !important;
+    	background-color: #B71C1C;
+	font-size:15px;
+    	font-weight: bold;
+    	margin-bottom: 0px;
+    	margin-right: 0px;
+    	padding: 3px;
+	display:table;
+	white-space: nowrap
+}
 
 /*
 .bio:before {
