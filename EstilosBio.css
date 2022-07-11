@@ -573,6 +573,11 @@
 #petronio .bio:before {content: "Petrônio Souto";}
 #petronio .bio:after {content: "Jornalista / poeta";}
 
+/* RAUL TARTAROTTI  */
+#raul .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkk2wQNSrzcRyDH_tzNulJQGsrLIsRFDrnFgxsZNk1k1gBnu6xcT4uzLfsN0grKrVTAmjCwwqnz43ri7sjROzTp1jTbOB4lfRXaqMFIsYOMiTTfV5Rsgx5SddoPygD_IX7EPUug7YoukLZ7Thea2Tao-n2H-6FVcYNGEucQxl3GPgBQTV0KiVIxBJq/s1600/Raul-Tartarotti.jpg);}
+#raul .bio:before {content: "Raul Tartarotti";}
+#raul .bio:after {content: "Engenheiro biomédico / cronista";}
+
 /* REGINA CÉLIA GONÇALVES */
 #regina .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5HXBoLuROnA6qgZWWAe12aGMl_NU6uiWb29IeA82Y-RcIJwx5EMVC8LKywcO8fMxs8_iSvSX9Tyh2E_4LenJYSziV92nSZSwdWQkCdECknq8Ia_bhwd7UTWfQ4K-udFXMtPb5lgYB0Hmhmb4JXUgb6PiGqXReBVJbvGB8ckxZ2iqEshXnFPPtKpR0/s1600/Regina-Ce%CC%81lia.jpeg);}
 #regina .bio:before {content: "Regina Célia Gonçalves";}
