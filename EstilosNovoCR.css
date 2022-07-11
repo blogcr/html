@@ -381,6 +381,21 @@ figcaption {
     font-weight:normal !important;
   }
 
+.numeracao {
+   counter-increment: item;
+   content: counter(item);
+   color: white;
+   font-size:3.5em;
+   font-weight:bold;
+   line-height:1em;
+   position:absolute;
+   top:0.1em;
+   left:0.1em;
+   display:block;
+   border:0px solid #000;
+   opacity:0.4;
+ }
+
 /* -------------------- DIVISOR ----------------------- */
 .divisor, .divisor3  {
 	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
