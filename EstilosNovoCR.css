@@ -382,10 +382,8 @@ figcaption {
   }
 
 .numeracao {
-   counter-increment: item;
-   content: counter(item);
    color: white;
-   font-size:3.5em;
+   font-size:2em;
    font-weight:bold;
    line-height:1em;
    position:absolute;
