@@ -85,7 +85,8 @@
     	padding: 0 3px;
 	display:table;
 	white-space: nowrap;
-	overflow:hidden;
+	/* overflow:hidden; */
+	
 }
 
 /*
