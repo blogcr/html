@@ -57,24 +57,25 @@
 }
 
 .autoria {
-    background:#B71C1C;
-    text-transform:uppercase;
-    padding-right: 4px !important;
-    padding-left: 4px !important;
-    margin-bottom:5px;
-    font-size: 1em !important;
-    max-height:1.8em !important;
-    position:absolute;
-    left:15px;
-    color:#FFFFFF !important;
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-weight:bold;
-    text-align:left !important;
-    top:56% !important;
-    overflow:hidden !important;
-    display: -webkit-box! important;
-    -webkit-line-clamp: 1 !important;
-    -webkit-box-orient: vertical !important;
+    	background:#B71C1C;
+    	text-transform:uppercase;
+    	padding-right: 4px !important;
+   	padding-left: 4px !important;
+   	margin-bottom:5px;
+    	font-size: 1em !important;
+   	max-height:1.8em !important;
+    	position:absolute;
+    	left:15px;
+    	color:#FFFFFF !important;
+    	font-family: 'Helvetica', Arial, sans-serif;
+    	font-weight:bold;
+    	text-align:left !important;
+    	top:56% !important;
+	display:table;
+    	overflow:hidden !important;
+    	display: -webkit-box! important;
+    	-webkit-line-clamp: 1 !important;
+    	-webkit-box-orient: vertical !important;
 }
 
 .textobio, .bio {
