@@ -70,11 +70,11 @@
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight:bold;
     text-align:left !important;
-    top:56%;
+    top:56% !important;
     overflow:hidden !important;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+    display: -webkit-box! important;
+    -webkit-line-clamp: 1 !important;
+    -webkit-box-orient: vertical !important;
 }
 
 .textobio, .bio {
