@@ -56,35 +56,10 @@
     	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
-.autoria {
-    	background:#B71C1C;
-    	text-transform:uppercase;
-    	padding-right: 4px !important;
-   	padding-left: 4px !important;
-   	margin-bottom:5px;
-    	font-size: 1em !important;
-   	max-height:1.8em !important;
-    	position:absolute;
-    	left:15px;
-    	color:#FFFFFF !important;
-    	font-family: 'Helvetica', Arial, sans-serif;
-    	font-weight:bold;
-    	text-align:left !important;
-    	top:56% !important;
-	display:table;
-    	overflow:hidden !important;
-	/*
-    	display: -webkit-box! important;
-	*/
-    	-webkit-line-clamp: 1 !important;
-    	-webkit-box-orient: vertical !important;
-}
-
 .textobio, .bio {
 	padding:0px !important;
 	color:#000;
 }
-
 
 /*
 .bio:before {
@@ -137,6 +112,32 @@
 .bio:after {
 	overflow:hidden !important;
 	line-height:1.2 !important;
+}
+
+
+
+.autoria {
+	/*
+    	background:#B71C1C;
+    	text-transform:uppercase;
+	color:#FFFFFF !important;
+    	font-family: 'Helvetica', Arial, sans-serif;
+    	font-weight:bold;
+    	text-align:left !important;
+	display: -webkit-box! important;
+    	-webkit-line-clamp: 1 !important;
+    	-webkit-box-orient: vertical !important;
+	font-size: 1em !important;
+	*/
+    	padding-right: 4px !important;
+   	padding-left: 4px !important;
+   	margin-bottom:5px;
+       	max-height:1.8em !important;
+    	position:absolute;
+    	left:15px;
+    	top:56% !important;
+	display:table;
+    	overflow:hidden !important;
 }
 
 #compartilhe {
