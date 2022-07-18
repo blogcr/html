@@ -81,10 +81,10 @@
     	margin-right: 0px;
     	padding: 0 3px;
 	display:table;
-	white-space: nowrap;
 	line-height:1.2 !important; 
-	font-size:calc(14px + 6 * ((100vw - 320px) / 680));
-	/* overflow:hidden; */
+	font-size:calc(16px + 6 * ((100vw - 320px) / 680));
+	/* overflow:hidden; 
+	white-space: nowrap; */
 	
 }
 
