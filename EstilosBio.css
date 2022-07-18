@@ -7,9 +7,6 @@
 	float:left;
 	display:inline-block;
 	text-align: left !important;
-	/* line-height:1.2 !important; 
-	font-size:15px; */
-
 }
 
 .fotobio {
@@ -85,6 +82,8 @@
     	padding: 0 3px;
 	display:table;
 	white-space: nowrap;
+	line-height:1.2 !important; 
+	font-size:calc(14px + 6 * ((100vw - 320px) / 680));
 	/* overflow:hidden; */
 	
 }
