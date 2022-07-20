@@ -182,6 +182,7 @@ blockquote::before {
   	background: #eee;
 	color: #555;
 	margin: 15px 0 5px 20px !important;
+	position:relative;
 }
 
 .pensador {
