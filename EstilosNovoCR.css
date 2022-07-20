@@ -180,12 +180,12 @@ blockquote::before {
 	line-height: 1.4;
 	padding: 20px;
   	background: #eee;
-	color: #555;
+	color: #757575;
 	margin: 15px 0 5px 20px !important;
 }
 
 .pensador {
-	border-top:1px solid #B71C1C;
+	border-top:1px solid #B71C1C !important;
   	font-weight:bold !important;
 	margin-top:5px;
 	padding-top:5px !important;
