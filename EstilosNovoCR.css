@@ -188,7 +188,7 @@ blockquote::before {
 	width:50%;
 	position:absolute;
 	right:0;
-	border:1px solid #B71C1C;
+	border-top:1px solid #B71C1C !important;
   	font-weight:bold !important;
 	margin-top:5px;
 	padding-top:5px !important;
