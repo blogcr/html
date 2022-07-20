@@ -184,6 +184,11 @@ blockquote::before {
 	margin: 15px 0 5px 20px !important;
 }
 
+.pensamento hr {
+	float:right !important;
+	clear:both !important;
+}
+
 .pensador {
   	font-weight:bold !important;
 	border-top:1px solid #B71C1C !important;
@@ -191,7 +196,6 @@ blockquote::before {
 	margin-top:5px;
 	padding-top:5px !important;
 	text-align:right !important;
-	width:80% !important;
 }
 
 .ast::before {
