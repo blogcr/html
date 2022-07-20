@@ -179,8 +179,8 @@ blockquote::before {
 	font-family: 'Roboto', Arial, sans-serif !important;
 	line-height: 1.4;
 	padding: 20px;
-  	background: #eee;
-	color: #F5F5F5;
+  	background: #F5F5F5;
+	color: #757575;
 }
 
 .pensador {
