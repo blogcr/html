@@ -189,7 +189,6 @@ blockquote::before {
 	margin-top:5px;
 	padding-top:5px !important;
 	text-align:right !important;
-	display:block !important;
 }
 
 .ast::before {
