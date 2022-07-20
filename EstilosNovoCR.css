@@ -174,16 +174,17 @@ blockquote::before {
   	left: 10px !important;
 }
 
-blockquote>.pensamento {
+.pensamento {
   	font-weight:normal !important;
 	margin-top:15px;
 }
 
-blockquote>.pensador {
+.pensador {
   	font-weight:bold !important;
 	border-top:1px solid #B71C1C;
 	font-weight:bold;
-	margin-top:5px;
+	margin-top:5px auto 0;
+	padding-top:5px;
 	width:80%;
 }
 
