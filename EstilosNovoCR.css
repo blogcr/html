@@ -185,7 +185,7 @@ blockquote::before {
 }
 
 .pensamento hr {
-	float:right !important;
+	text-align:right !important;
 	clear:both !important;
 }
 
