@@ -175,17 +175,22 @@ blockquote::before {
 }
 
 .pensamento {
-  	font-weight:normal !important;
-	margin-top:15px;
+	font-size: 20px;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	line-height: 1.4;
+	padding: 15px 10px;
+  	background: #eee;
+	color: #555;
+	margin: 15px 0 5px 20px !important;
 }
 
 .pensador {
   	font-weight:bold !important;
 	border-top:1px solid #B71C1C !important;
 	font-weight:bold !important;
-	margin:5px auto 0 !important;
-	padding-top:5px !important;
-	width:auto !important;
+	margin-top:5px;
+	padding:5px auto !important;
+	width:80% !important;
 }
 
 .ast::before {
