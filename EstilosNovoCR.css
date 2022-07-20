@@ -184,12 +184,11 @@ blockquote::before {
 	margin: 15px 0 5px 20px !important;
 }
 
-.pensamento hr {
-	text-align:right !important;
-	clear:both !important;
-}
-
 .pensador {
+	width:50%;
+	position:absolute;
+	right:0;
+	border:1px solid #B71C1C;
   	font-weight:bold !important;
 	margin-top:5px;
 	padding-top:5px !important;
