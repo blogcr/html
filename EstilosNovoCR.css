@@ -185,7 +185,7 @@ blockquote::before {
 }
 
 .pensador {
-	width:50%;
+	border-top:1px solid #B71C1C;
   	font-weight:bold !important;
 	margin-top:5px;
 	padding-top:5px !important;
