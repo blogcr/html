@@ -577,6 +577,11 @@
 #petronio .bio:before {content: "Petrônio Souto";}
 #petronio .bio:after {content: "Jornalista / poeta";}
 
+/* RANIERY ABRANTES */
+#raniery .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgq4L_zkCNaCTYOvx7VjEtp6Wn8GsmC8PMZS9r4LTZIMKp-7B3Zq_b94EXJ2Z-6wyF1YVRuLwcHG5TYM4b04isGHYq_6yQxP3Pj5nAYvoTwVIvIh7iGPWwMj8bcnZ7CoxLjRb0tK8W0zYeDuMIgic2IJThwUXr1N18dGh6zL-D1EplUyplaE-IsK3VXyg/s1600/Raniery-Abrantes.jpg);}
+#raniery .bio:before {content: "Raniery Abrantes";}
+#raniery .bio:after {content: "Professor / poeta";}
+
 /* RAUL TARTAROTTI  */
 #raul .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYb40NLiu3zRTiwdWIq2mywldqtmrBSSj71JLk3Wh9zvqygcJ8Cb0sEuQ_HntwR-XxIyF4Vrwe91zJPi1HHrTZ5hecimC_FwgA-ZsqS4eEvUSTvolltlFqf04UNltFS6rdQ0rlQBOKHDcnHHdg_fVmA9HOYssCeOCMXjKHfvJryw0woEd72tigiNi/s1600/Raul-Tartarotti.jpg);}
 #raul .bio:before {content: "Raul Tartarotti";}
