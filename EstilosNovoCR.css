@@ -1095,6 +1095,13 @@ select {
   	bottom:30px;
 }
 
+.text-container .text3 a {
+  	color:#FFF9C4;
+	text-decoration: none;
+}
+
+}
+
 .text-container .text3::before {
   	content:"contato:";
   	display:block;
