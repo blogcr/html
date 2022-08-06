@@ -1072,7 +1072,7 @@ select {
   	background:#424242;
   	font-weight:bold;
   	font-size: 14px;
-	line-height:1em;
+	line-height:1.2em;
   	padding: 8px 7px;
   	text-align: left;
 }
@@ -1101,9 +1101,7 @@ select {
 	text-decoration: none;
 }
 
-}
-
-.text-container .text3::before {
+.text-container .text3 a::before {
   	content:"contato:";
   	display:block;
   	margin-bottom:5px;
