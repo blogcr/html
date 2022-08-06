@@ -1096,15 +1096,15 @@ select {
   	bottom:30px;
 }
 
-.text-container .text3 a {
-  	color:#fff;
-	text-decoration: none;
-}
-
-.text-container .text3 a::before, .text-container .text3::before {
+.text-container .text3::before {
   	content:"contato:";
   	display:block;
   	margin-bottom:5px;
+}
+
+.text-container .text3 a {
+  	color:#fff;
+	text-decoration: none;
 }
 
 .dot {
