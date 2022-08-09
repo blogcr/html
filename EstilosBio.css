@@ -255,6 +255,11 @@
 #angela .bio:before {content: "Ângela Bezerra de Castro";}
 #angela .bio:after {content: "Professora / escritora";}
 
+/* ÂNGELO PESSOA */
+#angelo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXZc7oSalUt84SADQr-BKWPRoUqW-WGNt2x_lPTFeTOgL1mA1plFDT8hTtc4JmUkCfMX7BvTyLo5f010jTUwS2ARLATY1v1YLxKBlD-UZU23sChm8qwbMkv_ojHf0Yeg6cyYPcxa5x9FHLzaTC9Q0DKMKjuoSR30hOBmpUsOFnS3vcLPJIU4YHDX9H/s1600/Angelo-Pessoa.jpg);}
+#angelo .bio:before {content: "Ângelo Emílio Pessoa";}
+#angelo .bio:after {content: "Historiador / escritor";}
+
 /* ANTONIO MORAIS */
 #morais .fotobio {content: url(https://1.bp.blogspot.com/-oa3vCY0WSGM/X9jZLRlegMI/AAAAAAACmPg/MxjKvl9LA_Edo986x-cn1nnmDME_y12sQCLcBGAsYHQ/s0/Anto%25CC%2582nio-Morais.jpg);}
 #morais .bio:before {content: "Antonio Morais de Carvalho";}
