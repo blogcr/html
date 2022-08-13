@@ -237,13 +237,13 @@ blockquote::before {
 	width:80%;
 	padding:20px;
 	font-size:0.95em !important;
-	margin: 0 5% 100px 5%;
-	display:block;
+	margin-bottom:150px;
+	display:block !important;
 	clear:both !important;
 }
 
 #poesia2 li:last-child {
-	margin:0 5% 30px 5%;
+	margin-bottom:30px !omportant;
 }
 
 
