@@ -237,7 +237,7 @@ blockquote::before {
 	width:80%;
 	padding:20px;
 	font-size:0.95em !important;
-	margin-bottom:150px;
+	margin-bottom:100px !important;
 	display:block !important;
 	clear:both !important;
 }
