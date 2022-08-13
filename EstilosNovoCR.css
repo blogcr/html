@@ -234,11 +234,14 @@ blockquote::before {
 
 .poesia2 {
 	white-space: pre-wrap;
-	max-width:80%;
+	width:80%;
 	padding:20px;
 	font-size:0.95em !important;
 	margin: 0 5% 30px 5%;
 }
+
+@media only screen and (max-width: 300px) {
+  .poesia2 {width:100%;}}
 
 .haikai {
 	max-width: 90% !important;
