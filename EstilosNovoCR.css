@@ -232,6 +232,14 @@ blockquote::before {
 	white-space: pre-wrap;
 }
 
+.poesia2 {
+	white-space: pre-wrap;
+	max-width:80%;
+	padding:20px;
+	font-size:0.95em !important;
+	margin: 0 5% 30px 5%;
+}
+
 .haikai {
 	max-width: 90% !important;
 	text-align:center;
