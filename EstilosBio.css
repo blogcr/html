@@ -55,6 +55,13 @@
     	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
+.minifoto4 {
+     position: absolute;
+     width: 23% !important;
+     top: 5px !important;
+     left: 75% !important;
+}
+
 .textobio, .bio {
 	padding:0px !important;
 	color:#000;
@@ -139,6 +146,17 @@
     	left:15px;
     	top:56% !important;
 	display:table;
+    	overflow:hidden !important;
+}
+
+.autoria2 {
+        font-size:0.8em !important;
+    	padding-right: 4px !important;
+   	padding-left: 4px !important;
+        max-height:2em !important;
+    	position:absolute;
+    	left:15px !important;
+    	top:5px !important;
     	overflow:hidden !important;
 }
 
