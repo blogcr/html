@@ -1118,7 +1118,6 @@ select {
   	position: relative;
   	margin: auto;
   	background:#000;
-	text-transform:uppercase;
 }
 
 .slideshow-container img {
