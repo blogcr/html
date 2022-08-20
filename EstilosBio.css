@@ -179,7 +179,7 @@
 }
 
 #compartilhe:before {
-  	content:"APLAUSO";
+  	content:"APLAUSOS";
   	white-space: pre-line;
 	margin-bottom:10px;
 	font-size:1.2rem !important;
@@ -200,7 +200,7 @@
 		}
 
 	#compartilhe:before {
-  		content:"APLAUSO";
+  		content:"APLAUSOS";
 		}
 }
 
