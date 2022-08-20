@@ -179,10 +179,10 @@
 }
 
 #compartilhe:before {
-  	content:"COMPARTILHE";
+  	content:"APLAUDIR";
   	white-space: pre-line;
 	margin-bottom:5px;
-	font-size:1.2rem !important;
+	font-size:1em !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -200,7 +200,7 @@
 		}
 
 	#compartilhe:before {
-  		content:"COMPARTILHE";
+  		content:"APLAUDIR";
 		}
 }
 
