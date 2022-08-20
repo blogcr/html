@@ -179,9 +179,9 @@
 }
 
 #compartilhe:before {
-  	content:"APLAUSOS";
+  	content:"COMPARTILHE";
   	white-space: pre-line;
-	margin-bottom:10px;
+	margin-bottom:5px;
 	font-size:1.2rem !important;
 }
 
@@ -200,7 +200,7 @@
 		}
 
 	#compartilhe:before {
-  		content:"APLAUSOS";
+  		content:"COMPARTILHE";
 		}
 }
 
