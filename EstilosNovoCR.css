@@ -825,20 +825,6 @@ blockquote::after {
     	margin: 0;
 }
 
-
-/* MOLDURA DE COMPARTILHAR
-.compartilhe {
-	border: 1px solid #cccccc;
-	padding: 1px 5px 1px 5px;
-	float: right;
-	font-size: 10px;
-	color: #757575;
-	width: auto;
-	text-align: center;
-	margin-top: -25px;
-}
-*/
-
 .fotopeq {
 	height:auto;
 	width:20%;
