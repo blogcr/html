@@ -177,14 +177,12 @@
 	margin: 5px auto 10px !important;
 }
 
-/*
 #compartilhe:before {
-  	content:"";
+  	content:"COMPARTILHE";
   	white-space: pre-line;
 	margin-bottom:5px;
 	font-size:1em !important;
 }
-*/
 
 @media screen and (max-width: 600px) {
 	.boxbio {
@@ -199,11 +197,11 @@
 		margin-top:20px;
 		display:block;
 		}
-/*
+	
 	#compartilhe:before {
-  		content:"";
+    		content:"COMPARTILHE";
 		}
-*/
+
 }
 
 /* ALCR TV */
