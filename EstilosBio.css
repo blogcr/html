@@ -464,6 +464,11 @@
 #augusto .bio:before {content: "José Augusto Carvalho";}
 #augusto .bio:after {content: "Professor / escritor";}
 
+/* JOSÉ AUGUSTO MAROPP*/
+#augusto .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh591BYRSnzI5gNwhamqTx-BqGgjTfgMrGgB1w3hVBHP7cKvf29A2t8FJKUwsydTVbOAnaNg2-fJEFE1WS--Tb9ebb9abwZgVp20o8EMYoGU5mHi-qgT1NrxeqdRgiUq2OnK23tfqUmoucyD_sSOuOuoSuGkDYnm9eTS4mAMlcWwz9bt0yiJyoN8kIX/s1600/Jose%CC%81%20Augusto%20Maroppo.jpg);}
+#augusto .bio:before {content: "José Augusto Maroppo";}
+#augusto .bio:after {content: "Professor / músico";}
+
 /* JORGE ELIAS NETO */
 #jorge .fotobio {content: url(https://1.bp.blogspot.com/-pW05NS3DTG0/X8g5VszXXnI/AAAAAAACjlo/ZzC3MnuX1IA79RwC8-JtyrzyC65IWBSjwCLcBGAsYHQ/s0/Jorge-Elias.jpg);}
 #jorge .bio:before {content: "Jorge Elias Neto";}
