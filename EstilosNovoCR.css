@@ -246,7 +246,7 @@ blockquote::before {
 	margin-bottom:30px !omportant;
 }
 
-.dialogo br {
+.dialogo > br {
 	margin-bottom:15px !omportant;
 }
 
