@@ -246,6 +246,10 @@ blockquote::before {
 	margin-bottom:30px !omportant;
 }
 
+.dialogo p {
+	margin-bottom:15px !omportant;
+}
+
 
 @media only screen and (max-width: 300px) {
   .poesia2 li {width:100%;}}
