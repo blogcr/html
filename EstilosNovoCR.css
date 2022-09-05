@@ -49,9 +49,6 @@
 	font-weight: 900 !important;
 }
 
-.centraliza > hr {
-	margin:0 auto !important;
-}
 
 .desloca2 {
 	padding-left: 60px;
@@ -61,6 +58,10 @@
 	margin: 0 auto;
 	text-align:center;
 	display:block
+}
+
+.centraliza hr {
+	margin:0 auto !important;
 }
 
 /* -------------------- PRIMEIRAS LETRAS ----------------------- */
