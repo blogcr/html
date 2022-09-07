@@ -60,6 +60,15 @@
 	display:block
 }
 
+.centraliza2 {
+	margin: 0 auto;
+	text-align:center;
+	width:auto;
+	border-bottom:1px solid #B71C1C;
+	display:block
+}
+
+
 .centraliza hr {
 	margin:0 auto !important;
 }
