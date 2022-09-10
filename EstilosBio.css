@@ -694,6 +694,12 @@
 #rolim .bio:before {content: "Sérgio Rolim Mendonça";}
 #rolim .bio:after {content: "Engenheiro / cronista";}
 
+/* SILVIO OSIAS */
+#silvio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpya9gGGF2GOQ44oC9X3Is-1j7JKjSH1HGqABSOHTLb9042EIiEmXvaMF_OZNMh3tC5pWJlmfUAWCTd6EfwkS6PVEruDUg7RZbJlLsuNNL0ZX4dAE1PJ7V3b4Czc7kXRgkkSpw3VI5LbPqv0KPvGaldZ25LOlNgLZSDE_IaqDiVELLeX1rhTb0-Vm5/s1600/SIlvio-Osias.jpg
+);}
+#silvio .bio:before {content: "Sílvio Osias";}
+#silvio .bio:after {content: "Jornalista / escritor";}
+
 /* SONIA ZAGHETTO */
 #sonia .fotobio {content: url(https://1.bp.blogspot.com/-NDx8INX_s9o/YTLiFt5ynHI/AAAAAAAC6z4/PeZaUK_T0fYttNLWx9Z8Vj4KxzReobjiwCLcBGAsYHQ/s0/Sonia-Zaghetto%2B2.jpg);}
 #sonia .bio:before {content: "Sonia Zaghetto";}
