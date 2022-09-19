@@ -294,6 +294,11 @@
 #bruno .bio:before {content: "Bruno Gaudêncio";}
 #bruno .bio:after {content: "Professor / escritor";}
 
+/* CARLOS CORDEIRO */
+#cordeiro .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh306NGUbZ5EvoUKZPd3kJFQKWrNK8fCuKBVOk43Vh_B2JjY9hKT8HegLD09KUhf63d6UWQJVFgTXhFONeRl3C9DrHPMY8kurTQOQMpjCSUC3WP5c7LO_6AD10BIfMvBUkLgNV4QY-Tdms_J8NU0rxxiFdycpDiif94MZbqNk_pQmfm_8j9EquO1E_b7g/s1600/Carlos-Cordeiro.jpg);}
+#cordeiro .bio:before {content: "Carlos Cordeiro de Mello";}
+#cordeiro .bio:after {content: "Tradutor / escritor";}
+
 /* CARLOS ROLIM */
 #carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
 #carlos .bio:before {content: "Carlos Rolim";}
