@@ -713,14 +713,14 @@ figcaption {
 .pergunta {
   	padding-left: 20px;
 	font-style: italic;
-	font-weight: 900;
+	font-weight: 500;
 	font-color: #757575 !important;
 }
 
 .entrevista {
 	margin: 10px 0px 15px 0px;
   	padding: 10px 20px 10px 20px;
-	background-color: #FFFDE7;
+	background-color: #FFF9C4;
 }
 
 /* FIXA O QUADRO DE ENTREVISTAS
