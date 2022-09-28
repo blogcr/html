@@ -601,6 +601,11 @@
 #milton .bio:before {content: "Milton Marques Junior";}
 #milton .bio:after {content: "Professor / escritor";}
 
+/* MODESTO SIEBRA COELHO */
+#modesto .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-mBKte6oCYn_LAYjiNeYlcbYYsZrXMdg0mLfu8a62PWkmVinLYmZfUUwTfCBVyMqy2PIdquon8B3Uz8znEIQP8H1Xvw-W9pMvWyd7usPfuVZDLAuL59Jnr9jwp3wMeXuvGdcAEFD6MdwKJ8Lqis8osx-2YLQr9Dmqwli34hk2BTXrs9Ij34VtIHC-/s1600/Modesto-Siebra.jpg);}
+#modesto .bio:before {content: "Modesto Siebra Coelho";}
+#modesto .bio:after {content: "Professor / historiador";}
+
 /* NELSON BARROS */
 #nelson .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx8EvB5mMQx-QF5flGmBibUqC3wOJGFx-c4Fe4UtT_2SIX5EtuZrdndksuLt3lD_6ChGT-uRux0Uxbt-cv1kI9GHX69cE9vTaYNoByhECvL4Kp3mwK7w6Kb9KPQ6Zv1cn7WAtS0UYQqH92yGnNRfNerlhfkD5yAOx9pGqfWsITqTghQ5j2vB-EhhnT/s1600/Nelson%20Barros.jpg);}
 #nelson .bio:before {content: "Nelson Barros";}
