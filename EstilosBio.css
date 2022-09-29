@@ -419,6 +419,11 @@
 #frutuoso .bio:before {content: "Frutuoso Chaves";}
 #frutuoso .bio:after {content: "Jornalista / cronista";}
 
+/* GERALDO CAMPETTI */
+#geraldo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwOaiO0T4d7AZimsW4nGMpWSJySBXpSHiNYd23i6gP2zZrHioFfIMP_TOfsJpxtlw-p3L_IzUdohvhgAeIe0z4heT8xk05kZes-ubI8-Bo8uVXHickHQPsQ1EJFeRvIGpdomSSld5DCosLgLPOTboVqDzuwDj7qutif1zleEXrrrur5OMT83Cm_RC6iw/s1600/Geraldo-Campetti.jpg);}
+#geraldo .bio:before {content: "Geraldo Campetti";}
+#geraldo .bio:after {content: "Professor / escritor";}
+
 /* GERMANO ROMERO */
 #germano .fotobio {content: url(https://1.bp.blogspot.com/-jDzcnZeLhlI/X7-1hV59-_I/AAAAAAACjN0/2UCnLMaP84E1_ERlzHUw3hn1aOIhopVQQCLcBGAsYHQ/s0/Germano-Romero.jpg);}
 #germano .bio:before {content: "Germano Romero";}
