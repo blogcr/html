@@ -354,6 +354,11 @@
 #denise .bio:before {content: "Denise Lino";}
 #denise .bio:after {content: "Professora";}
 
+/* ECILA MENDONÇA */
+#ecila .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcLkAfeIKjnzxPWore550tRB-hCUJNXg6RrmP7_A4qkOZe1knCPy3fkIIbWeC51RE42GoJOWzo_lbEq5ZFMoKE4CjwdMCJomZnLeoIc513cBDbXy1PLiRrib55Rs2J8TAcT0DpyybFXd4nbGwpadgo6ie9ng1iS2eR2jrhQjZ5_c_-EIXAScK0q4yK/s1600/Ecila-Mendon%C3%A7a.jpg);}
+#ecila .bio:before {content: "Ecila Mendonça Maia";}
+#ecila .bio:after {content: "Educadora";}
+
 /* EDUARDO BONATES */
 #bonates .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjQi56JJs3Gk7pGtMXU5ifi9Ep2jZtACw0hblwwrH8TRRxBzCDVQ78qtnlU5E9ba4OnBbBocv-0mEFq9DgTWdz3mhnoCUTBud4DNxLOMZPIKW4ld6k0aQks4ROncifH_WWEP0lGpd9D6_ADArUz0QRz3-zLaQ8EIsL37hGysZK_vSgG8a-mWdXh_-I/s1600/Eduardo-Bonates.jpg);}
 #bonates .bio:before {content: "Eduardo Bonates";}
