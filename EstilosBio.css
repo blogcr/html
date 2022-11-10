@@ -720,6 +720,12 @@
 #silvio .bio:before {content: "Sílvio Osias";}
 #silvio .bio:after {content: "Jornalista / escritor";}
 
+/* SHIRLEYDE SANTOS*/
+#shirleyde .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdfV4PnN3_4Wa5j5Ita_62evBRmI06muCLZbg7ZTqxUwbapQGUgMuTjzyrOH41475KUzHkrnwCa4e855CtGBsgdi0-_1ppaCtq0alk3yW-vBRpHJ9N-mQDeTTriKtRgKWUqigIU-RPU2Vpkvm2A7mhzqD_9eMmRamidsWVMb-yIn1G0xxUSgE3LGlQ/s1600/Shisleyde-Santos.jpg
+);}
+#shirleyde .bio:before {content: "Sílvio Osias";}
+#shirleyde .bio:after {content: "Professora";}
+
 /* SONIA ZAGHETTO */
 #sonia .fotobio {content: url(https://1.bp.blogspot.com/-NDx8INX_s9o/YTLiFt5ynHI/AAAAAAAC6z4/PeZaUK_T0fYttNLWx9Z8Vj4KxzReobjiwCLcBGAsYHQ/s0/Sonia-Zaghetto%2B2.jpg);}
 #sonia .bio:before {content: "Sonia Zaghetto";}
