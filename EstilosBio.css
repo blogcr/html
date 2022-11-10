@@ -249,6 +249,11 @@
 #lugao .bio:before {content: "Aldo Lugão";}
 #lugao .bio:after {content: "Médico / escritor";}
 
+/* ALEXSANDRA TAVARES */
+#alexsandra .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjceAVkzh2eKthh3ItgCfNgpq_WVFneoJ-ChS_MMRZPYn6aqjWcVb_g7d-lwb2PJ9k-6buav3jnJIfoshcZmDVpL78mKlsBLt3PZYIhz_TW2oGn-11mWsa8Em9l6CJHDsqX-w9T-at-GMRhQQq7bpTBItTpvRoHYnelKM5i_99HFAOzxS7ZGwGEr6oi/s1600/Alexsandra-Tavares.jpeg);}
+#alexsandra .bio:before {content: "Alexsandra Tavares";}
+#alexsandra .bio:after {content: "Jornalista";}
+
 /* ALEXANDRE ROMARIZ */
 #alexandre .fotobio {content: url(https://1.bp.blogspot.com/-cKbPxU50SJY/YQN-bvcOvuI/AAAAAAAC47A/HZveBQzDQZcDZwUt50UZIueTDAsEnmSbACLcBGAsYHQ/s0/Alexandre-Romariz.jpg);}
 #alexandre .bio:before {content: "Alexandre Romariz";}
