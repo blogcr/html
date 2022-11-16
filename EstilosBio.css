@@ -374,6 +374,11 @@
 #eduardo .bio:before {content: "Eduardo Kugler";}
 #eduardo .bio:after {content: "Artista plástico / escritor";}
 
+/* EDY JUSTINO */
+#edy .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGXsAZ8tEaImsipv6pgbnhaS-NTAFb1pscsGufY2KHWMapgHb92bZ96dLfJAZ-rvkOGdRxfhvhAoM9koD-xR9fEeB9vW9je91TznThn5pu_w2xpZh8BSw3AeWxvQscFAHUssSbnrjwPYRMgBtkHnh-cpU0oVAc42ENDbjXIC6GIQ50OuUlYCb1I-7e/s1600/Autor.jpg);}
+#edy .bio:before {content: "Edy Justino";}
+#edy .bio:after {content: "Professora / escritora";}
+
 /* ELTON SOUZA */
 #elton .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifx4cF3xrZr5hfhOsYxLk6aKSFZILWLKHv07EIDKjKcmQAUtKJg5a4IS19QBRRlDeuzmeAAS9AgO5yvVB5Alcd_cgQxjefYckOOw3sW4OakCzCgHyd0nxO0HVOf0ZvL0HmsSI8OVXzWSWaNBAOuzX-8hCwFc4Gk7hWcWnB-CTETVYN0tQiFa412BKY/s1600/Elton-Souza-2.jpg);}
 #elton .bio:before {content: "Elton Luiz de Souza";}
