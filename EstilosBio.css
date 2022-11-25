@@ -284,6 +284,11 @@
 #angelo .bio:before {content: "Ângelo Emílio Pessoa";}
 #angelo .bio:after {content: "Historiador / escritor";}
 
+/* ANNECY VENANCIO */
+#annecy .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP8dbMqhoztVBMG2qSYwnEneG9oDt8mloZZlMY1Y-myOnKCEj1-E2EOtiG72GMnvqTtkCeQLWaB0_jVZwsNhkuQVo3AirEtRAAy6QZjKgLE2mIy1wkPN8bp_h2-ZVvB9e06mlH4kK3kgEA0VpbK7kh8ojg3xnnh7RvIwVGNzTk__m3dLAz4gWdG3Uj/s1600/Annecy-Vena%CC%82ncio.jpeg);}
+#annecy .bio:before {content: "Annecy Venâncio";}
+#annecy .bio:after {content: "Professora / poetisa";}
+
 /* ANTONIO MORAIS */
 #morais .fotobio {content: url(https://1.bp.blogspot.com/-oa3vCY0WSGM/X9jZLRlegMI/AAAAAAACmPg/MxjKvl9LA_Edo986x-cn1nnmDME_y12sQCLcBGAsYHQ/s0/Anto%25CC%2582nio-Morais.jpg);}
 #morais .bio:before {content: "Antonio Morais de Carvalho";}
