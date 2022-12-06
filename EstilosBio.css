@@ -439,6 +439,11 @@
 #frutuoso .bio:before {content: "Frutuoso Chaves";}
 #frutuoso .bio:after {content: "Jornalista / cronista";}
 
+/* GERALDO BERNARDO */
+#bernardo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixfiw37o_GM987XLPIiCd6STAEUYQxjQdF-q4lyepEOdrxvAnyom3AjbI-GIbnuDRtuIUtYkNLulkL8AVllZCUYTUNt_xloTY-IHNW5MJ3RKh5yQU9zoDgktKQEfDawM7TwTFYt_TGByz4hvxsKehZQZv6gD6J6LDc_uuvO8PXePKvuEMdkEROFPHK/s1600/Geraldo-Bernardo.jpeg);}
+#bernardo .bio:before {content: "Geraldo Barnardo";}
+#bernardo .bio:after {content: "Poeta";}
+
 /* GERALDO CAMPETTI */
 #geraldo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwOaiO0T4d7AZimsW4nGMpWSJySBXpSHiNYd23i6gP2zZrHioFfIMP_TOfsJpxtlw-p3L_IzUdohvhgAeIe0z4heT8xk05kZes-ubI8-Bo8uVXHickHQPsQ1EJFeRvIGpdomSSld5DCosLgLPOTboVqDzuwDj7qutif1zleEXrrrur5OMT83Cm_RC6iw/s1600/Geraldo-Campetti.jpg);}
 #geraldo .bio:before {content: "Geraldo Campetti";}
