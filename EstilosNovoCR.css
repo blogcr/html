@@ -73,6 +73,12 @@
 	margin:0 auto !important;
 }
 
+/* -------------------- FONTES ----------------------- */
+
+.spelite {
+	font-family: 'Special Elite', cursive !important
+}
+
 /* -------------------- PRIMEIRAS LETRAS ----------------------- */
 .letra:first-letter {
 	/*
