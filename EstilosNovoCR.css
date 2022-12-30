@@ -82,6 +82,7 @@
 .citalivro {
 	font-family: 'Roboto Slab', serif !important;
 	width:90% !important;
+	margin:0 auto !important;
 	border:1px solid #ccc !important;
 	padding:20px !important;
 	font-style: none !important;
