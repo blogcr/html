@@ -79,6 +79,10 @@
 	font-family: 'Special Elite', cursive !important
 }
 
+.citalivro {
+	font-family: 'Roboto Slab', serif !important
+}
+
 /* -------------------- PRIMEIRAS LETRAS ----------------------- */
 .letra:first-letter {
 	/*
