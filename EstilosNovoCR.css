@@ -79,6 +79,10 @@
 	font-family: 'Special Elite', cursive !important
 }
 
+.roman {
+	font-family: 'Roboto Slab', serif !important;
+}
+
 .citalivro {
 	font-family: 'Roboto Slab', serif !important;
 	width:90% !important;
