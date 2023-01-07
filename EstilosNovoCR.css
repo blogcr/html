@@ -83,13 +83,19 @@
 	font-family: 'Roboto Slab', serif !important;
 }
 
-.citalivro {
+#citalivro {
 	font-family: 'Roboto Slab', serif !important;
+    	font-size:95% !important;
+    	color:#616161 !important;
 	width:90% !important;
 	margin:0 auto !important;
 	border:1px solid #ccc !important;
 	padding:20px !important;
 	font-style: none !important;
+}
+
+#citalivro > br {
+    margin-bottom:20px !important
 }
 
 /* -------------------- PRIMEIRAS LETRAS ----------------------- */
