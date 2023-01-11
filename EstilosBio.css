@@ -414,6 +414,11 @@
 #felipe .bio:before {content: "Felipe Avellar de Aquino";}
 #felipe .bio:after {content: "Professor / músico";}
 
+/* FERNANDO LIANZA */
+#fernando .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgQPVrkkgr0L8iPne0_Wkc9zvl0GI0bLbIhCJTujHRr_8ZM8dndR1aLdZBI0pd3aj4M_b0_5BprVFPydQz4fZ57EsKtms0vn8Th6vL_2-G6q_m-6bQUVGhXvh-Jd1UFp9BJuBOJuUBsBmlTYACA0neA92RAyf7e0qIyBWosF7NkohDDJTV_GeHOdDhoA/s1600/Fernando%20Lianza%20Dias.jpg);}
+#fernando .bio:before {content: "Fernando Lianza Dias";}
+#fernando .bio:after {content: "Médico / escritor";}
+
 /* FLÁVIO RAMALHO */
 #flavio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxIEuwERJc9muzV-zZa6XGGHzSha3LNwvDREL72fqW9qRyJ3X3C6tKhUeyfpEIWTSTTs-OJxmxhBnzD3pMnTdgZ2I0WlbN99d764eDSgc4kLfBpTOE4d5RAQZHVNkmN7RyTjrkv78mdTMFGgPGPc124YNkcLGFHzPCeHyC3owPTBFz-zKKBqlqIbCd/s1600/Fla%CC%81vio-Ramalho-2.jpeg);}
 #flavio .bio:before {content: "Flávio Ramalho de Brito";}
