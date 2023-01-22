@@ -464,6 +464,11 @@
 #gonzaga .bio:before {content: "Gonzaga Rodrigues";}
 #gonzaga .bio:after {content: "Escritor";}
 
+/* HELDER MOURA */
+#helder .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBWcjTpQ_4a9s7MWlz2Ph1D_ha3hpSA6jN04sedeaXps6Tgbxb1wuRIo2DN3XCk5-zioSvnu4nqIFu8owHYymwZ2u2qgFpKAkDN_0SG6uoxlGxnGRx2NyjnO9DvkSnBRz8lYTHK60jJKl5U3Wh0ol4xZImhlnAG_VxRW27V-G6KRXO2_y6YQPnccpG/s1600/Helder-Moura.jpg);}
+#helder .bio:before {content: "Helder Moura";}
+#helder .bio:after {content: "Professor e escritor";}
+
 /* HILTON VALERIANO */
 #hilton .fotobio {content: url(https://1.bp.blogspot.com/-ebJzXXJLoWg/YAe8WkmIH-I/AAAAAAACqRY/fnlGQLkRLEwNanxMW20k2ZZETYbjg013ACLcBGAsYHQ/s0/Hilron%2BValeriano.jpg);}
 #hilton .bio:before {content: "Hilton Valeriano";}
