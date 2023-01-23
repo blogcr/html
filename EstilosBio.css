@@ -590,6 +590,11 @@
 #madalena .bio:before {content: "Madalena Zaccara";}
 #madalena .bio:after {content: "Professora / arquiteta";}
 
+/* MARCELO URQUIZA */
+#marcelo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_8k8vKzQJUDDFkIWQDJE3pW_RF6WREYTgnOREn2CpVvvtr5VSEJsTLoImKjG8O7N_5-twm8vkvqKaoMfoqnxZ8aS4pCmBunsuLStgoReE3wsu76O2du6decEZeiunCbh8nD3lLf-IFmBvf9OfYy8_x2kCdSaj8_x_YYh4J1Ue_Aj25cbUCCOIf5fR/s1600/Marcelo-Urquiza.jpg);}
+#marcelo .bio:before {content: "Marcelo Urquiza";}
+#marcelo .bio:after {content: "Professor / enxadrista";}
+
 /* MARCIA LUCENA */
 #marcia .fotobio {content: url(https://1.bp.blogspot.com/-NaBC9-0GIrw/YGlBt-cdFbI/AAAAAAACxvs/8fIMHrSQP8M2fzLNOct7ejMjfkx7E-ocACLcBGAsYHQ/s0/Marcia-Lucena.jpg);}
 #marcia .bio:before {content: "Márcia Lucena";}
