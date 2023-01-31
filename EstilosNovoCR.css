@@ -277,11 +277,11 @@ blockquote::before {
 }
 
 #poesia2 li:last-child {
-	margin-bottom:30px !omportant;
+	margin-bottom:30px !important;
 }
 
 #dialogo > br {
-	margin-bottom:20px !omportant;
+	margin-bottom:20px !important;
 }
 
 
