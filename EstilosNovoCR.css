@@ -385,6 +385,21 @@ figure {
 	max-width: 40% !important;
 }
 
+.rodadir {
+	-webkit-transform:rotate(5deg);
+  	-moz-transform: rotate(5deg);
+  	-ms-transform: rotate(5deg);
+  	-o-transform: rotate(5deg);
+  	transform: rotate(5deg);
+}
+
+.rodaesq {
+	-webkit-transform:rotate(-5deg);
+  	-moz-transform: rotate(-5deg);
+  	-ms-transform: rotate(-5deg);
+  	-o-transform: rotate(-5deg);
+  	transform: rotate(-5deg);
+}
 
 /* -------------------- CREDITOS ----------------------- */
 figcaption {
