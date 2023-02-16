@@ -299,6 +299,11 @@
 #arael .bio:before {content: "Arael Costa";}
 #arael .bio:after {content: "Jornalista / advogado";}
 
+/* AURELIO AQUINO */
+#aurelio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih6DKcF31CMJRlaqYxzelVG0DRQOBdgk5yYigz1elDa4Kwv6FQj1oBuUHSQa1Xopke12iZq6ZZ6p0omR3FlXZvcYMpOLtH22qsRh2E8THdxjfEULG5IyCRCNeE6jTnK9QekxYZX4OAG7WNxTN5QqsaFbiOp1tRILVU3FkoIjRwEq4TQaWDyjIbWe9o/s1600/Aure%CC%81lio-Aquino.jpg);}
+#aurelio .bio:before {content: "Aurélio Aquino";}
+#aurelio .bio:after {content: "Poeta";}
+
 /* BRUNO GAUDENCIO */
 #bruno .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEibXL2SGJTVaGzNw0srIr5K8dA5R1AmobIDi2KGMqZ4ig_2HDvioWy0AR4p5MxZKxY46U0w18zy4lNmZ9KgGzC8GiNkkFJW7AK-8GEa6sp6gWUeGDFBuI0DKLmf-AnbnxsPbTuKZ1bTrZn_St0JJg7dcfp1wDOw4oxz6TUHEcv8UiW0vhdT_hJvn0hn);}
 #bruno .bio:before {content: "Bruno Gaudêncio";}
