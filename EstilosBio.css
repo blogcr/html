@@ -344,6 +344,11 @@
 #chico .bio:before {content: "Chico Viana";}
 #chico .bio:after {content: "Professor / escritor";}
 
+/* CIDA LOBO */
+#cida .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7Q2dIhZsjLopdfEsP8eJcH5KmMhHwmM1g30zKrhXwoXXMrKL0xcJkE4lBH0gK4Bm5hiRDaeirARxQQFTKSiw8YcT4AX0OBjBUiEZp-8i8obb3FrOwVm2ZwgNuhFDTLyQ5HFBkuILUjX5FQs8uySfcP0CXvhJa8diC5l8i53YD4i8TzSUrKZ98s44/s1600/Cida-Lobo.jpg);}
+#cida .bio:before {content: "Cida Lobo";}
+#cida .bio:after {content: "Escritora";}
+
 /* CLÁUDIO PAIVA */
 #claudio .fotobio {content: url(https://1.bp.blogspot.com/-6HnFNTEWBo8/YGioyi2rpjI/AAAAAAACxoE/Dr6fadzjwUoYgUb1GKG78VoECoyICquEwCLcBGAsYHQ/s0/Claudio-Paiva.jpg);}
 #claudio .bio:before {content: "Cláudio Paiva";}
