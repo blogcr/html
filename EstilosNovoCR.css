@@ -693,7 +693,7 @@ figcaption {
     	text-align:left !important;
         position: absolute;
         top: 70%;
-        overflow: hidden;
+        overflow:hidden !important;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -743,7 +743,7 @@ figcaption {
        display: -webkit-box;
        -webkit-line-clamp: 3;
        -webkit-box-orient: vertical;
-	overflow: auto;
+	overflow:hidden !important;
 }
 
 
