@@ -304,6 +304,11 @@
 #aurelio .bio:before {content: "Aurélio Aquino";}
 #aurelio .bio:after {content: "Poeta";}
 
+/* AURELIO CASSIANO */
+#cassiano .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMVecVHytp0KXdtAy8dv2eG6-__Yjc3leYtXwudpxNVcs4S98O62_iQSGNng1TIQla16LF9XDP5f7mlkztA3db9S6uJ2TUP4bLvB60QPj9sprbxZySgTCw4pDoagh7f_m9dAjIo5m7DDg7_IWmITD4Jjwrn3CoR_T8SwlWt1jlhRHhdqpOecnHvAmq/s1600/Aure%CC%81lio-Cassiano%201.jpg);}
+#cassiano .bio:before {content: "Aurélio Cassiano";}
+#cassiano .bio:after {content: "Poeta";}
+
 /* BRUNO GAUDENCIO */
 #bruno .fotobio {content: url(https://blogger.googleusercontent.com/img/a/AVvXsEibXL2SGJTVaGzNw0srIr5K8dA5R1AmobIDi2KGMqZ4ig_2HDvioWy0AR4p5MxZKxY46U0w18zy4lNmZ9KgGzC8GiNkkFJW7AK-8GEa6sp6gWUeGDFBuI0DKLmf-AnbnxsPbTuKZ1bTrZn_St0JJg7dcfp1wDOw4oxz6TUHEcv8UiW0vhdT_hJvn0hn);}
 #bruno .bio:before {content: "Bruno Gaudêncio";}
