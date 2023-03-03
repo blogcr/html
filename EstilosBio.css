@@ -399,6 +399,11 @@
 #edy .bio:before {content: "Edy Justino";}
 #edy .bio:after {content: "Professora / escritora";}
 
+/* ELIZABETH MARINHEIRO */
+#elizabeth .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLBoxCOBpT0GgGkEf6LJiz2ca3T32mK6QWotlibmrSzAf2dN_HkVDCFSusnVY_KX6xatpplTIyTHs37n3ukjjOBmr4EDkskxvDBu8uIFcvajQq_XbWtRL2bvu7m4uGN0auubNy9zTOc22Qh9bV7-6NOLuCO7TrhyR8P4Ji2Fi7SYKTDV_X-MfjNyn_/s1600/Elizabeth-Marinheiro%202.jpg);}
+#elizabeth .bio:before {content: "Elizabeth Marinheiro";}
+#elizabeth .bio:after {content: "Professora / escritora";}
+
 /* ELTON SOUZA */
 #elton .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifx4cF3xrZr5hfhOsYxLk6aKSFZILWLKHv07EIDKjKcmQAUtKJg5a4IS19QBRRlDeuzmeAAS9AgO5yvVB5Alcd_cgQxjefYckOOw3sW4OakCzCgHyd0nxO0HVOf0ZvL0HmsSI8OVXzWSWaNBAOuzX-8hCwFc4Gk7hWcWnB-CTETVYN0tQiFa412BKY/s1600/Elton-Souza-2.jpg);}
 #elton .bio:before {content: "Elton Luiz de Souza";}
