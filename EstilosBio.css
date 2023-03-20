@@ -489,6 +489,12 @@
 #helder .bio:before {content: "Helder Moura";}
 #helder .bio:after {content: "Professor e escritor";}
 
+/* HELI TENORIO */
+#heli .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCkTLK907zTupSyrWiXJX2_q-lUW2913tqkbhjKfNjROcj1Zm20ffyO2JAfrH_xGCoOiBelOtHHMfkAg0ReV5FrCh7ZRlMvg8d6ISycfRiSgVa-8S7lwJdz0Jhf_cwWGE_UGBDA77PeViTNJHZRf7VMDdWe2mGd5bULlK2jbw8VBfSk-E7ClLKGIcW/s1600/Heli-Ten%C3%B3rio.jpg
+);}
+#heli .bio:before {content: "Heli Tenório";}
+#heli .bio:after {content: "Professor e escritor";}
+
 /* HILTON VALERIANO */
 #hilton .fotobio {content: url(https://1.bp.blogspot.com/-ebJzXXJLoWg/YAe8WkmIH-I/AAAAAAACqRY/fnlGQLkRLEwNanxMW20k2ZZETYbjg013ACLcBGAsYHQ/s0/Hilron%2BValeriano.jpg);}
 #hilton .bio:before {content: "Hilton Valeriano";}
@@ -792,7 +798,7 @@
 #shirleyde .bio:after {content: "Professora";}
 
 /* SONIA ZAGHETTO */
-#sonia .fotobio {content: url(https://1.bp.blogspot.com/-NDx8INX_s9o/YTLiFt5ynHI/AAAAAAAC6z4/PeZaUK_T0fYttNLWx9Z8Vj4KxzReobjiwCLcBGAsYHQ/s0/Sonia-Zaghetto%2B2.jpg);}
+#sonia .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzmOYkE2ntr5wnAbdiT20n7-bR3RbIpWh1u33XK0tsj12EduloOpuUBjEMPMmnKmsW0TPPJ8Nb2jRSqEpJ-CJ4KaM1h-oz4vSECaxqJeNUVn7Zl03tMMRG2jD4_1uz7zossCPDN3uVLHWceNTQAnyqkdCb0mg10otrRnQ11htwdJJYz_lRZXIH6sYO/s1600/Sonia-Zagheto-2.jpg);}
 #sonia .bio:before {content: "Sonia Zaghetto";}
 #sonia .bio:after {content: "Jornalista / escritora";}
 
