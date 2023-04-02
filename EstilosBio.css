@@ -545,6 +545,11 @@
 #maropo .bio:before {content: "José Augusto Maropo";}
 #maropo .bio:after {content: "Professor / músico";}
 
+/* JOSÉ AUGUSTO ROMERO */
+#augustoromero .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDhC_bmlp06yT77yAAKyvJgVwOz_elA1GH5rUVveMY0WislT24sgGP2pUJU0QD8yRWp6Nd93S3WzK-qu4Bc6rb3X1Ka2tWd4vnjTQlFh4sKkwTLUMmxFsMuuvLsBs2lmLEqCplRlkEd-ZA3fBDbWd5H9bZr21wcPJm8dzvFBcvzS5ce42yj_hP1-eR/s1600/Jose%CC%81%20Augusto%20Romero%202.jpg);}
+#augustoromero .bio:before {content: "José Augusto Romero";}
+#augustoromero .bio:after {content: "Educador / cronista";}
+
 /* JORGE ELIAS NETO */
 #jorge .fotobio {content: url(https://1.bp.blogspot.com/-pW05NS3DTG0/X8g5VszXXnI/AAAAAAACjlo/ZzC3MnuX1IA79RwC8-JtyrzyC65IWBSjwCLcBGAsYHQ/s0/Jorge-Elias.jpg);}
 #jorge .bio:before {content: "Jorge Elias Neto";}
