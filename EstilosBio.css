@@ -601,6 +601,11 @@
 #lau .bio:before {content: "Lau Siqueira";}
 #lau .bio:after {content: "Poeta";}
 
+/* LAURA BERQUO */
+#laura .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihpv3nOKZebq_8g47MBn89f3Y0Pa8anVfT0bi5OyWWonUmpJQCPg39aT2o6N27eXNpCh7IU57yoyORw8CzPzcuGTLT2C0jKEG9mJcGqdbYyVJBObX0eHvyGiGNh5-Q86jW9nftBtURPvOC_oaMLwhYy_-0WgYbavyTNf4FvyHdBqM96dyBMS2fmxYI/s1600/Laura-Berquo.jpgg);}
+#laura .bio:before {content: "Laura Berquó";}
+#laura .bio:after {content: "Professora / Pesquisadora";}
+
 /* LEO BARBOSA */
 #leo .fotobio {content: url(https://1.bp.blogspot.com/-dJa8aPyifP0/YTTquT7b0wI/AAAAAAAC69E/scczswNja1AAFPcxgJ_XkOpFuvbN9UJOACLcBGAsYHQ/s0/Leo-Barbosa.jpg);}
 #leo .bio:before {content: "Leo Barbosa";}
