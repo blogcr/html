@@ -534,6 +534,11 @@
 #joaquim .bio:before {content: "Joaquim Inácio Brito";}
 #joaquim .bio:after {content: "Escritor";}
 
+/* JONAS DUARTE */
+#jonas .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpiy_ZOC3EJA6MgEO_DFT8A1yJoBg0kxFtGEXM7enVqxmzd_OQ7t9sFdm0rPkmb4OJMNgFMg8iTA4KEYJ2vSCvKeHIIXRvmr5UOTfL8JQRrkb1DMltaTRhlfvurYXwwj01h3BohQX2MWIQwLuYbyoXYbzJvjnQXBgUkXp8nclaYmtoeSwGsbXz08tp/s1600/Jonas-Duarte%202.jpg);}
+#jonas .bio:before {content: "Jonas Duarte";}
+#jonas .bio:after {content: "Historiador / escritor";}
+
 /* JORGE ELIAS NETO */
 #jorge .fotobio {content: url(https://1.bp.blogspot.com/-pW05NS3DTG0/X8g5VszXXnI/AAAAAAACjlo/ZzC3MnuX1IA79RwC8-JtyrzyC65IWBSjwCLcBGAsYHQ/s0/Jorge-Elias.jpg);}
 #jorge .bio:before {content: "Jorge Elias Neto";}
