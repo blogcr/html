@@ -752,10 +752,12 @@ figcaption {
 	font-style: italic;
 	font-weight: 500;
 	font-color: #757575 !important;
+	
 }
 
 .entrevista {
-	margin: 10px 0px 15px 0px;
+	margin: 10px auto 15px;
+	width:90%;
   	padding: 10px 20px 10px 20px;
 	background-color: #FFFDE7;
 }
