@@ -494,6 +494,12 @@
 #heli .bio:before {content: "Heli Tenório";}
 #heli .bio:after {content: "Economista e escritor";}
 
+/* HELIO COSTA */
+#helio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAJeR4ICIJsjphHEio7I1CqzYLdztRi8FR6m7zmYWRz3-ELgDNfYAlkh_ee0127WN2s_wfpln94acLGFy9osJQivjx1lCMKULh4VhIdlwgSb3wquUG8RMjrAUgaUbEirWlchJwWDgi8gFcdZgOubz8welQWmIJB4jce7KD3xkFsipwiwseZlyEApeRUaQ/s1600/He%CC%81lio-Costa.jpg
+);}
+#helio .bio:before {content: "Helio Costa";}
+#helio .bio:after {content: "Cineasta e documentarista";}
+
 /* HILTON VALERIANO */
 #hilton .fotobio {content: url(https://1.bp.blogspot.com/-ebJzXXJLoWg/YAe8WkmIH-I/AAAAAAACqRY/fnlGQLkRLEwNanxMW20k2ZZETYbjg013ACLcBGAsYHQ/s0/Hilron%2BValeriano.jpg);}
 #hilton .bio:before {content: "Hilton Valeriano";}
