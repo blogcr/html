@@ -596,6 +596,11 @@
 #josina .bio:before {content: "Josina Nunes Drumond";}
 #josina .bio:after {content: "Professora / escritora";}
 
+/* JOSINALDO MALAQUIAS */
+#josinaldo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDrCtrAEho9N3_lT2Q4yhQjZ1iQ1_Avt9rjwXgVYzHLc13frZK7IqY1RRO2m1NjPsv-9zoG6w4lKjR9KUFYB00b1CSa1RoCGyw7beKnK-OXUefo3Inqk1prCLPSlAKOxyLw7KtOB9LIGZpePtUjUuOa1uIaj1LxVIXdcNVFxYJFOAERB_GS-wMiPYFwn8/s1600/Josinaldo-Malaquias.jpg);}
+#josinaldo .bio:before {content: "Josinaldo Malaquias";}
+#josinaldo .bio:after {content: "Professor / escritor";}
+
 /* JUCA PONTES */
 #juca .fotobio {content: url(https://1.bp.blogspot.com/-Akc5QuhWJnM/YGycirbKY7I/AAAAAAACx1E/zT4sImwxkwIOss6h5wZi9WivhhEoD9QpwCLcBGAsYHQ/s0/Juca-Pontes.jpg);}
 #juca .bio:before {content: "Juca Pontes";}
