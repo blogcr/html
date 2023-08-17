@@ -727,6 +727,11 @@
 #nelson .bio:before {content: "Nelson Barros";}
 #nelson .bio:after {content: "Psicólogo / escritor";}
 
+/* NEVITA FRANCA */
+#nevita .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCGHYYCIs5Bk7J5fP98KSjRyQ6rNdQbpoaYvikJkugsMobFoBxrdaqJjchSZFdFbCrqMlAgYPYFDXtoRUAV-d1KCrd5tF0eU1STWMAFkpa5ratX4Fd1CHlkg5OZD6XVaILHO5AjpkL1MbBz83no-MyoIu2AXpt83OXEWQ-EMCKIXDGWvHk0S8LhRo_xRmS/s1600/Nevtita-Franca.jpg);}
+#nevita .bio:before {content: "Nevita Franca";}
+#nevita .bio:after {content: "Professora / escritora";}
+
 /* PAULO RABELO */
 #paulo .fotobio {content: url(https://1.bp.blogspot.com/-Q4qFw_fR9KE/YWOMl7UQNyI/AAAAAAAC8To/iEI2Q4gGX3oqZD-LFwaoke9Ii3zLX7--gCLcBGAsYHQ/s0/Paulo%2BRabelo.jpg);}
 #paulo .bio:before {content: "Paulo Rabelo";}
