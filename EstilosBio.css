@@ -732,6 +732,11 @@
 #nevita .bio:before {content: "Nevita Franca";}
 #nevita .bio:after {content: "Professora / escritora";}
 
+/* OSCAR GAMA FILHO */
+#oscar .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU6UFnq84J-vr1CiThSLhFAAobUFmpD6Cl9U91m-rYoSaq4w7MVgRWPI2Z5tZg_c-MVuwC9QxdjAbA4yJACmIkhmNuec0XsXVil1i4G811DVzdYaOA8EXmBtMkZZsPGtD5ZV5NzoiH56JRGxKoOGrnrcuU00wgl_jx7xXd_oZPhmciHRNir0kgxvdqJn0/s1600/Oscar%20Gama%20Filho.jpg);}
+#oscar .bio:before {content: "Oscar Gama Filho";}
+#oscar .bio:after {content: "Poeta / crítico literário";}
+
 /* PAULO RABELO */
 #paulo .fotobio {content: url(https://1.bp.blogspot.com/-Q4qFw_fR9KE/YWOMl7UQNyI/AAAAAAAC8To/iEI2Q4gGX3oqZD-LFwaoke9Ii3zLX7--gCLcBGAsYHQ/s0/Paulo%2BRabelo.jpg);}
 #paulo .bio:before {content: "Paulo Rabelo";}
