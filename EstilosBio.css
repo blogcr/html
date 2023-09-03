@@ -697,6 +697,11 @@
 #marta .bio:before {content: "Marta Antunes";}
 #marta .bio:after {content: "Escritora";}
 
+/* MERLÂNIO MAIA */
+#merlanio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzI8VbZOA4AjrskbO4gBorOf9ZRuyWuqxCgLjj4nYTsp4wz21CbfhxwF53SYHWAmOVZfIjzDWsXDjNXHTWaAzfrXP7kET7dHW8E5XsxFx7absQtUOEvxT15DZKpOV6mcQkLmLIJj7fh1WaQW2s2Lv8U6szbUAEszAlv_Ls5txWM2caRq53t5zSVloAlkE/s1600/Merla%CC%82nio%20Maia.jpg);}
+#merlanio .bio:before {content: "Merlânio Maia";}
+#merlanio .bio:after {content: "Poeta";}
+
 /* MILFA VALÉRIO */
 #milfa .fotobio {content: url(https://1.bp.blogspot.com/-qjZ1OXxq_As/X_oaJBvU1oI/AAAAAAACpoM/_Ty7xqimcU4Ecx3yywNi91I_WnO7YaLaACLcBGAsYHQ/s0/Milfa-Vale%25CC%2581rio.jpg);}
 #milfa .bio:before {content: "Milfa Araújo Valério";}
