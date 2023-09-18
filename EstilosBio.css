@@ -702,6 +702,11 @@
 #marta .bio:before {content: "Marta Antunes";}
 #marta .bio:after {content: "Escritora";}
 
+/* MERCEDES CAVALCANTI */
+#mercedes .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbjJ0dKfvRGZmaft0PUCFnZy6-DkY4PAixpivY5dQsgjoo0ZnKv64Pvcecbn_hXwzH_z0b1TSnNDGf4HYKI4Xf4xD3q1HyDjDhpT96y2SyNoNE8w7z1jLaZwZvL5IkpUnyW8XtHAYZ97WpAsF1zuRGdHsLNdxQGpGk95RZhOZDp8X9lo8SFcOKGKMldeM/s1600/Mercedes%20Cavalcanti.jpg);}
+#mercedes .bio:before {content: "Mercedes Cavalcanti";}
+#mercedes .bio:after {content: "Professora / escritora";}
+
 /* MERLÂNIO MAIA */
 #merlanio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzI8VbZOA4AjrskbO4gBorOf9ZRuyWuqxCgLjj4nYTsp4wz21CbfhxwF53SYHWAmOVZfIjzDWsXDjNXHTWaAzfrXP7kET7dHW8E5XsxFx7absQtUOEvxT15DZKpOV6mcQkLmLIJj7fh1WaQW2s2Lv8U6szbUAEszAlv_Ls5txWM2caRq53t5zSVloAlkE/s1600/Merla%CC%82nio%20Maia.jpg);}
 #merlanio .bio:before {content: "Merlânio Maia";}
