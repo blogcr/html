@@ -428,6 +428,11 @@
 #emerson .bio:before {content: "E. Barros de Aguiar";}
 #emerson .bio:after {content: "Teólogo / escritor";}
 
+/* FÁTIMA CHIANCA */
+#chianca .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhRLFn9EImnS61gVDYUeYoLjTdxbEKuQDvZezjXKiYbVLzsxp7vlRP7pyFWIFq1a0UzJ3LM9JuY91wc0lQUeeLrV1uE2Odt3PKmkITohWs0-zxP-TlnjNMeZeSHruPqxazNLgap4yZjq7WdFSQxL-fVLZFZtzyhVJPoGE1RyLJ1dZw5lVAEf1XTV0PRVY/s1600/Fa%CC%81tima%20Chianca.jpg);}
+#chianca .bio:before {content: "Fátima Chianca";}
+#chianca .bio:after {content: "Arquiteta / museóloga";}
+
 /* FÁTIMA FARIAS */
 #fatima .fotobio {content: url(https://1.bp.blogspot.com/-NsqD5COYF4A/YIQo2KRXfyI/AAAAAAACzBQ/hmP40D2vO_wr4zfmnTmoBXrjsMN3wMCugCLcBGAsYHQ/s0/Fatima%2BFarias.jpeg);}
 #fatima .bio:before {content: "Fátima Farias";}
