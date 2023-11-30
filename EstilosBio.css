@@ -409,6 +409,11 @@
 #edy .bio:before {content: "Edy Justino";}
 #edy .bio:after {content: "Professora / escritora";}
 
+/* EITEL SANTIAGO */
+#eitel .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiznLwnWbVAKKSJWf7chG-V8i5H3tQv-B3k8xhb8nLz4CpoaIH7bOcLSYZEaouqVcnBXHQ47uWnaYYc-qQxwVAyWH0IGqWU6X6sZLPAnHMlg0S4iCfe3bnfqiFBJFud-2yzZpyiofrsIOrf9wiUmDh2EBExgUi4Cg7-urpH2moTnUpnsKR_9_NV5_fXPLE/s1600/Eitel-Santiago.jpg);}
+#eitel .bio:before {content: "Eitel Santiago";}
+#eitel .bio:after {content: "Professor / escritor";}
+
 /* ELIZABETH MARINHEIRO */
 #elizabeth .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLBoxCOBpT0GgGkEf6LJiz2ca3T32mK6QWotlibmrSzAf2dN_HkVDCFSusnVY_KX6xatpplTIyTHs37n3ukjjOBmr4EDkskxvDBu8uIFcvajQq_XbWtRL2bvu7m4uGN0auubNy9zTOc22Qh9bV7-6NOLuCO7TrhyR8P4Ji2Fi7SYKTDV_X-MfjNyn_/s1600/Elizabeth-Marinheiro%202.jpg);}
 #elizabeth .bio:before {content: "Elizabeth Marinheiro";}
