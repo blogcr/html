@@ -601,16 +601,16 @@
 #leite .bio:before {content: "José Leite Guerra";}
 #leite .bio:after {content: "Poeta / cronista";}
 
-/* JOSÉ M. ESPÍNOLA */
+/* JOSÉ MARIO ESPÍNOLA */
 #mario .fotobio {content: url(https://1.bp.blogspot.com/-fXfS0TsPwzY/X8rAxw_GXxI/AAAAAAACjsM/y1e8cp9xFg0H8hWUkru07OWc9O_KZy7SgCLcBGAsYHQ/s0/Jose-Mario-Espinola.jpg
 );}
 #mario .bio:before {content: "José Mário Espínola";}
 #mario .bio:after {content: "Médico / escritor";}
 
-/* JOSÉ NEUMANE */
-#neumane .fotobio {content: url();}
-#neumane .bio:before {content: "José Nêumane";}
-#neumane .bio:after {content: "Escritor / jornalista";}
+/* JOSÉ NEUMANNE */
+#neumanne .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2QrW2Bgv-94Z_AUdd4dgGTzZXQcboGZx_F4_Qn0ykmmtxEjY5SmuLw1VM_Uh2BsQrspXeEqrrv7h0oUT7aGDE3xGqhZtCjOqKe1ylE0GutLd1_KAQsxYrqhIJzmABtPctLourseEHd2arlrw-ZBHQ5U0JpJqyLFcfatomQA5P-ZzNjbMcrAtnsAu6RhY/s1600/Jose%CC%81%20Ne%CC%82umanne.jpg);}
+#neumanne .bio:before {content: "José Nêumanne";}
+#neumanne .bio:after {content: "Escritor / jornalista";}
 
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
