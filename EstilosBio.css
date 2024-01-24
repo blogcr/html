@@ -607,6 +607,11 @@
 #mario .bio:before {content: "José Mário Espínola";}
 #mario .bio:after {content: "Médico / escritor";}
 
+/* JOSÉ NEUMANE */
+#neumane .fotobio {content: url();}
+#neumane .bio:before {content: "José Nêumane";}
+#neumane .bio:after {content: "Escritor / jornalista";}
+
 /* JOSÉ NUNES */
 #nunes .fotobio {content: url(https://1.bp.blogspot.com/-fVUVGzaasiQ/X77adh9A35I/AAAAAAACjM0/GGtfioCh1HoE9YCcMgcBlys8N0W4_cjSACLcBGAsYHQ/s0/Jose-Nunes.jpg);}
 #nunes .bio:before {content: "José Nunes";}
