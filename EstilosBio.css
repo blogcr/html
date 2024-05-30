@@ -329,6 +329,11 @@
 #cordeiro .bio:before {content: "Carlos Cordeiro de Mello";}
 #cordeiro .bio:after {content: "Tradutor / escritor";}
 
+/* CARLOS HENRIQUE LEITE */
+#henrique .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9zcdhtrmMXCEvvZjm5LOF2dPwRlLvPMID4MmrARBgVSYRqhSNnZOJEI55Kns5xDNUPleAPLCY4ETBlpZL9Gn4E6dRKculD6kGw5yLq9mW7JqEam6_ZNjQkoiP3XxfJVIy4E8Ahg3QG2ocCZJGAU4ddCCTSTK_qcpTAseR4yyAO7B152-wJJ_V7byW4MM/s1600/Carlos%20Henrique%20Leite.jpg);}
+#henrique .bio:before {content: "Carlos Henrique Leite";}
+#henrique .bio:after {content: "Odontólogo / escritor";}
+
 /* CARLOS ROLIM */
 #carlos .fotobio {content: url(https://1.bp.blogspot.com/-XsALSrxac7k/X-jfeRJUhAI/AAAAAAACnEs/6tTT_OQvQZoOxkef945_z0UNG80fanchQCLcBGAsYHQ/s288/Carlos-Rolim.jpg);}
 #carlos .bio:before {content: "Carlos Rolim";}
