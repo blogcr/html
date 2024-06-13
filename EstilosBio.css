@@ -729,6 +729,12 @@
 #marcos .bio:before {content: "Marcos Pires";}
 #marcos .bio:after {content: "Advogado / cronista";}
 
+/* MARIA DE LOURDES BATISTA */
+#lourdes .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwnc2vgHCXBW2YRj5N2OiSFORcAHy3URAtGzgONPaUhyHLbp_RvTjLGbWUQb_slbU0WxJk3P6gcby6Vu-H7Hhz090UhkX3zx7i95uXILvelBG7fJW1Ct6SUKiXj4t_a89Z8UYVohQvOUJrJGMa-qrp3QSbih4mn2OMOvydU2FaMzpQaIIA81KLII2gja4/s1600/Maria%20de%20Lourdes%20Batista%202.jpg
+);}
+#lourdes .bio:before {content: "Maria de Lourdes Batista";}
+#lourdes .bio:after {content: "Professora / escritora";}
+
 /* MARÍLIA ARNAUD */
 #marilia .fotobio {content: url(https://1.bp.blogspot.com/-PM2SRrYhe-A/YMmNlcqhUOI/AAAAAAAC3Cg/E_bip9w5l6cK3qO5ytOFVlKuzonWHKbwgCLcBGAsYHQ/s0/Marilia-Arnaud.jpg);}
 #marilia .bio:before {content: "Marília Arnaud";}
