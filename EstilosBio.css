@@ -469,6 +469,12 @@
 #felipe .bio:before {content: "Felipe Avellar de Aquino";}
 #felipe .bio:after {content: "Professor / músico";}
 
+/* FELIZARDO JANSEN */
+#felizardo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfNmIvTlXMsvOrBbBz0elMTRBKb_v8gmCN0pyDZjbL2ZZXGkEAJsydKcXmI0uAK03Sx_claj0IKisC79Jm2H0BYysR02CONUmPHxHWPk-NQr3DKfxaauMJVs6An-Ynm4l3O_4vkmexvE9LlUUtpZX3olkyAepj_kLoHh8_FyQ6j1AQou3v2RaOxhSe-8s/s1600/Felizardo%20Jansen.jpg
+);}
+#felizardo .bio:before {content: "Felizardo Jansen";}
+#felizardo .bio:after {content: "Advogado / escritor";}
+
 /* FERNANDO LIANZA */
 #fernando .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJd121lc4Z8D-xWVN_6bZPgsjIW4kXi7AijWmuPDn1RSx0QGJ5TQDrS9uCYnYIWwjkYeLbOxjoaSkpI1J0LjFOV-RDHTYFCGg2NMKNbkadIYt-BMfVUQ7y3iE_dhBKTilMVfNM-97UM5IprxUTseU8ehCDj8e-OKEHOcKeMsVwrXZNa8ufXLmjUxEh/s1600/Fernando-Lianza-Dias.jpg);}
 #fernando .bio:before {content: "Fernando Lianza Dias";}
