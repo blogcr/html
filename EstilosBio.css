@@ -811,10 +811,16 @@
 #oscar .bio:before {content: "Oscar Gama Filho";}
 #oscar .bio:after {content: "Poeta / crítico literário";}
 
+/* PAULO HENRIQUE */
+#paulo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEFVcrEosS0t4JG6rVhvMv1C3lxQFY0vJByR0DPM_548W5RVva0Iw0wOYXnJ4badQVys7JhuGjs7_WyShFw40VUdMjROtFtw1jDhTSoHHDf972eb0KofST60DA45GfkuBacrV21r0LRQZfSVA_VK3dJnlbQEyRm5StbfD0PgSZmCCmfTLTHUzr_s9Gfms/s1600/Paulo-Henrique.jpg
+);}
+#paulo .bio:before {content: "Paulo Henrique";}
+#paulo .bio:after {content: "Escritor";}
+
 /* PAULO RABELO */
-#paulo .fotobio {content: url(https://1.bp.blogspot.com/-Q4qFw_fR9KE/YWOMl7UQNyI/AAAAAAAC8To/iEI2Q4gGX3oqZD-LFwaoke9Ii3zLX7--gCLcBGAsYHQ/s0/Paulo%2BRabelo.jpg);}
-#paulo .bio:before {content: "Paulo Rabelo";}
-#paulo .bio:after {content: "Professor";}
+#rabelo .fotobio {content: url(https://1.bp.blogspot.com/-Q4qFw_fR9KE/YWOMl7UQNyI/AAAAAAAC8To/iEI2Q4gGX3oqZD-LFwaoke9Ii3zLX7--gCLcBGAsYHQ/s0/Paulo%2BRabelo.jpg);}
+#rabelo .bio:before {content: "Paulo Rabelo";}
+#rabelo .bio:after {content: "Professor";}
 
 /* PETRÔNIO SOUTO */
 #petronio .fotobio {content: url(https://1.bp.blogspot.com/-bDd15kWRY60/YXdVJuodYaI/AAAAAAAC9B8/Gc_Afamz3G4VL4kG2wgEG2aYk3K_ZFvQwCLcBGAsYHQ/s0/Petronio-Souto-2-PB.jpg);}
