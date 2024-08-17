@@ -90,6 +90,7 @@
     	margin-right: 0px;
     	padding: 0 3px;
 	display:table;
+	top:-10px;
 	/* overflow:hidden; 
 	white-space: nowrap; */
 	
@@ -119,8 +120,9 @@
 .bio:after {
 	overflow:hidden !important;
 	line-height:1.2 !important;
-	font-size:1.2em !important;
+	font-size:1em !important;
 	margin-top:10px !important;
+	color:#78716C;
 }
 
 
