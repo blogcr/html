@@ -86,11 +86,11 @@
     	color: #ffffff !important;
     	background-color: #B71C1C;
     	font-weight: bold;
+	margin-top:-10px;
     	margin-bottom: 5px;
     	margin-right: 0px;
     	padding: 0 3px;
 	display:table;
-	top:-10px;
 	/* overflow:hidden; 
 	white-space: nowrap; */
 	
