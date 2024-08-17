@@ -118,8 +118,8 @@
 
 .bio:after {
 	overflow:hidden !important;
-	line-height:1.2 !important;
-	font-size:1.2em !important;
+	line-height:1 !important;
+	font-size:1em !important;
 	margin-top:10px !important;
 }
 
