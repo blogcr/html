@@ -164,6 +164,18 @@
     	overflow:hidden !important;
 }
 
+.autoria3 {
+        padding-right: 4px !important;
+   	padding-left: 4px !important;
+   	margin-bottom:5px;
+       	max-height:1.8em !important;
+    	position:absolute;
+    	left:15px;
+    	top:56% !important;
+	display:table;
+    	overflow:hidden !important;
+}
+
 #compartilhe {
 	width:28%;
 	float:right;
