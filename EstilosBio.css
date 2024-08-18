@@ -168,11 +168,10 @@
         padding-right: 4px !important;
    	padding-left: 4px !important;
    	margin-bottom:5px;
-       	max-height:1.8em !important;
+       	max-height:2em !important;
     	position:absolute;
     	left:15px;
     	top:56% !important;
-	display:table;
     	overflow:hidden !important;
 }
 
