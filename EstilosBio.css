@@ -1,5 +1,7 @@
-<meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8" />
-<meta charset="utf-8">
+/* <meta HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8" />
+<meta charset="utf-8"> */
+
+@charset 'utf-8';
 
 .boxbio {
 	width:70%;
