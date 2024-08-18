@@ -125,6 +125,7 @@
 	overflow:hidden !important;
 	line-height:1.2 !important;
 	font-size:1.1em !important;
+	white-space: pre !important;
 }
 
 
@@ -306,7 +307,7 @@
 #antonio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgawL8TLzMJGxttkcXQ5a22zyFDRV1svrdRKRr_d0D8jAb47NW7QARGqGXxk_K6UCG-w0MUOri0GgXiYwX8Od6x5jD5eiLMNR1vViCCP3efc1XZnLO1WC56-s6o70jqsp6HVCpqFVJlNTxTFi3gJuJvtIbYeMp1IPO-e2_93hI3-xfKed0-NJk4D-x9fmg/s1600/Antonio-Rodrigues.jpg
 );}
 #antonio .bio:before {content: "António Rodrigues";}
-#antonio .bio:after {content: "Ensaísta\2C  orientalista e apresentador do programa UM CERTO ORIENTE\2C  transmitido na internet aos domingos\2C  das 21h às 22h \28 Portugal\29  e das 17h às 18h \28 Brasil\29 \2E  \25AA  WEB\3A  https\3A\2F\2F play\2E radios\2E com\2E br\2F 34188  \25AA  INSTAGRAM\3A  \40 um\5F certo\5F oriente";}
+#antonio .bio:after {content: "Ensaísta\2C  orientalista e apresentador do programa UM CERTO ORIENTE\2C  transmitido na internet aos domingos\2C  das 21h às 22h \28 Portugal\29  e das 17h às 18h \28 Brasil\29 \2E  \25AA  WEB\3A  https\3A\2F\2F play\2E radios\2E com\2E br\2F 34188  \A  INSTAGRAM\3A  \40 um\5F certo\5F oriente";}
 
 /* ARAEL COSTA */
 #arael .fotobio {content: url(https://1.bp.blogspot.com/-J1HKxmRfuRA/YZRzikaF5aI/AAAAAAAC9xc/vLn54ZyNdwEW5MTFyGeZX3K3UhtyhM78QCLcBGAsYHQ/s0/Arael-Costa.jpg);}
