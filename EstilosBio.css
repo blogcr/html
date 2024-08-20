@@ -123,8 +123,9 @@
 
 .bio:after {
 	overflow:hidden !important;
-	line-height:1.2 !important;
+	line-height:1.4 !important;
 	font-size:1.1em !important;
+	white-space: pre-line;
 }
 
 
@@ -382,8 +383,8 @@
 /* CHICO VIANA */
 #chico .fotobio {content: url(https://1.bp.blogspot.com/-3U48rFjlPm8/X77nDX4ZLNI/AAAAAAACjNU/Fl339k6KB_EPvOROQRHD1k4cAguXcE30QCLcBGAsYHQ/s0/Chico-Viana.jpg);}
 #chico .bio:before {content: "Chico Viana";}
-#chico .bio:after {content: "Professor aposentado da UPPB e Doutor em Letras pela UFRJ com tese sobre o poeta Augusto dos Anjos\2E  Foi durante dois anos pesquisador\2D bolsista do CNPq\2E  Publicou \2C  entre outros títulos\2C
-\22 O evangelho da podridão\3B  culpa e melancolia em Augusto dos Anjos\22 \2C  ensaios acadêmicos e seis livros de crônicas\2E  Leciona português e redação no curso \28 virtual\29  que leva o seu nome\2E  Instagram\3A  \40 cursochicovianaw";}
+#chico .bio:after {content: "Professor aposentado da UPPB e Doutor em Letras pela UFRJ com tese sobre o poeta Augusto dos Anjos\2E  Foi durante dois anos pesquisador\2D bolsista do CNPq\2E  Publicou\2C  entre outros títulos\2C  
+\22 O evangelho da podridão\3B  culpa e melancolia em Augusto dos Anjos\22 \2C  ensaios acadêmicos e seis livros de crônicas\2E  Leciona português e redação no curso \28 virtual\29  que leva o seu nome\2E  \A Instagram\3A  \40 cursochicovianaw";}
 
 /* CIDA LOBO */
 #cida .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7Q2dIhZsjLopdfEsP8eJcH5KmMhHwmM1g30zKrhXwoXXMrKL0xcJkE4lBH0gK4Bm5hiRDaeirARxQQFTKSiw8YcT4AX0OBjBUiEZp-8i8obb3FrOwVm2ZwgNuhFDTLyQ5HFBkuILUjX5FQs8uySfcP0CXvhJa8diC5l8i53YD4i8TzSUrKZ98s44/s1600/Cida-Lobo.jpg);}
