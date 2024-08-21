@@ -124,7 +124,6 @@
 .bio:after {
 	overflow:hidden !important;
 	line-height:1.4 !important;
-	font-size:1.1em !important;
 	white-space: pre-line;
 	text-align: justify !important;
   	text-justify: inter-word !important;
