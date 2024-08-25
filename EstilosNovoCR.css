@@ -467,6 +467,11 @@ figcaption {
     font-weight:normal !important;
   }
 
+span.arte::after {
+  display: block;color: gray;font-size:20px;
+  content: attr(cite);
+}
+
 .numeracao {
    color: white;
    font-size:2em;
