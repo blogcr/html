@@ -465,12 +465,18 @@ figcaption {
     bottom:2.7em;
     left:0.3em;
     font-weight:normal !important;
-  }
+}
 
-.arte::after {
-	color: gray;
-	font-size:20px;
-  	content: attr(cite);
+.arte {
+	text-align:right;
+	line-height:0.8 !important;
+      	margin-top:-30px;
+      	margin-bottom:35px
+}
+.arte::before {
+ 	content: attr(artista);
+      	color: gray;
+      	font-size:12px;
 }
 
 .numeracao {
