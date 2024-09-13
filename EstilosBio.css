@@ -990,6 +990,12 @@
 #thomas .bio:before {content: "Thomas Bruno Oliveira";}
 #thomas .bio:after {content: "Jornalista / cronista";}
 
+/* VALÉRIA VANDA */
+#vanda .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipGtDPQhIlXSmgk4SztNSppIFstU31t9UU7m7-nBEHaXc_3UMbrhsdzigSWlelkYTwbj8kWX3yr5zhlTsXIBHxWVhJUDG1hmv1ElxqovdG9ZHdcad6mHeDWOOS9A4-qSd5tZuvtAQbOPffz2uJopJXbar8Xg2bLibZZIf6xNVlyjQpWja8iP1NEPB2ygo/s1600/Vale%CC%81ria%20Vanda%203.jpg
+);}
+#vanda .bio:before {content: "Valéria Vanda Xavier Nunes";}
+#vanda .bio:after {content: "Jornalista / cronista";}
+
 /* VANIA CASTRO */
 #vania .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi35iSutooc2AiTItGZc-InCy5NfhYbQMnyOtTIO_qOD-dFuzldsMimp7JlkLn0oaWtuDxrstoZI-UyWdGbeaVIdx7Z4MDK8zUTMAky7bz-h7Gh4L2PJ4CGgFvB2SXfHWm95bHfiXYST7T5yPDmfig984JoWZAfuUKGXG1vQBoOjTRKY_Qcez0LVHcjJA/s1600/Va%CC%82nia.jpg);}
 #vania .bio:before {content: "Vânia de Farias Castro";}
