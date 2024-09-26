@@ -868,6 +868,27 @@ sup {
 
 }
 
+/* TABELAS */
+
+table.tabela {
+	width:90%;
+	margin:0 auto 35px;
+	font-size:85%;
+}
+
+td.celula1 {
+	padding:5px 8px;
+	width:30% !important;
+	background:#EFEBE9;
+	text-align:center
+}
+
+td.celula2 {
+	padding:5px 8px;
+	width:70% !important;
+	background:#F9F4F0
+}
+
 /* CAIXA DE CITAÇÕES
 blockquote {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
