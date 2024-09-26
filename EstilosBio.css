@@ -731,6 +731,12 @@
 #madalena .bio:before {content: "Madalena Zaccara";}
 #madalena .bio:after {content: "Professora / arquiteta";}
 
+/* MARCELO HENRIQUE */
+#marceloh .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjezPJ0UQhIl5b_SfTWLAJi39xiFMdtgChHtJ6mNpMX0MOgYe8v_bjudkNCRSPAqkDQacSvq8sl56Ep4oiTyLxmavduqY-IjFxtIMppSxzc2TLLaOl2Inx73Typ2PoljfBwlKPhyphenhyphenxGMDDQXFRlNAlABJTgxrnCLs3iZfCkG-EMgyFrPDaYZ6J0Z8rDZsnk/s1600/Marcelo%20Henrique%201.jpg
+);}
+#marceloh .bio:before {content: "Marcelo Henrique";}
+#marceloh .bio:after {content: "Jornalista\2C  escritor\2C  advogado e professor\2C  membro da Oficial Academia Tijuquense de Letras \28 OATL\29 \2C  da cidade de Tijucas\2C  Santa Catarina\2E \A \2E3B \A E-MAIL \25AA  professormarcelohenriquemh\40 gmail\2E com";}
+
 /* MARCELO URQUIZA */
 #marcelo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_8k8vKzQJUDDFkIWQDJE3pW_RF6WREYTgnOREn2CpVvvtr5VSEJsTLoImKjG8O7N_5-twm8vkvqKaoMfoqnxZ8aS4pCmBunsuLStgoReE3wsu76O2du6decEZeiunCbh8nD3lLf-IFmBvf9OfYy8_x2kCdSaj8_x_YYh4J1Ue_Aj25cbUCCOIf5fR/s1600/Marcelo-Urquiza.jpg);}
 #marcelo .bio:before {content: "Marcelo Urquiza";}
