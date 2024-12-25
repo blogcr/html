@@ -77,6 +77,13 @@
 	background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%);
 }
 
+.minifoto5 {
+     position: absolute;
+     width: 23% !important;
+     top: 5px !important;
+     left: 5px !important;
+}
+
 /*
 .bio:before {
 	border-bottom:2px solid #B71C1C;
