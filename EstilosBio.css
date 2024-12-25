@@ -195,7 +195,7 @@
    	padding-left: 4px !important;
         max-height:2em !important;
     	position:absolute;
-    	right:15px !important;
+    	left:75% !important;
     	top:5px !important;
     	overflow:hidden !important;
 }
