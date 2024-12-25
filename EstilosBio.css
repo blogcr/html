@@ -189,6 +189,17 @@
     	overflow:hidden !important;
 }
 
+.autoria4 {
+        padding-right: 4px !important;
+   	padding-left: 4px !important;
+   	margin-bottom:5px;
+       	max-height:2em !important;
+  	float:right;
+  	margin-right:5px;
+  	margin-top:5px;
+    	overflow:hidden !important;
+}
+
 #compartilhe {
 	width:28%;
 	float:right;
