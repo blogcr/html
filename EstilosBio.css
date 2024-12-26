@@ -81,7 +81,7 @@
 
 .leiasempre {
 	background: rgb(158,158,158);
-	background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(240,240,240,1) 50%, rgba(240,240,240,1) 100%);
+	background: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(240,240,240,1) 90%, rgba(240,240,240,1) 100%);
 }
 
 /*
