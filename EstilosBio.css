@@ -71,7 +71,7 @@
      position: absolute;
      width: 23% !important;
      top: 5px !important;
-     left: 10% !important;
+     left: 5px !important;
 }
 
 .textobio, .bio {
@@ -190,12 +190,12 @@
 }
 
 .autoria4 {
-        font-size:0.8em !important;
+	font-size:0.8em !important;
     	padding-right: 4px !important;
    	padding-left: 4px !important;
         max-height:2em !important;
     	position:absolute;
-    	left:75% !important;
+    	left:75px !important;
     	top:5px !important;
     	overflow:hidden !important;
 }
