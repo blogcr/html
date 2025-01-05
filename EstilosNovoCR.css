@@ -683,6 +683,7 @@ figcaption {
     padding: 0px;
     width:320px;
     overflow:hidden;
+    max-height:150px;
     object-fit: cover;
 }
 
