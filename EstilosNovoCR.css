@@ -656,6 +656,7 @@ figcaption {
     padding:0 !important;
     margin: 0 auto 35px auto !important;
     width:320px;
+    height:150px;
     position:relative;
 }
 
