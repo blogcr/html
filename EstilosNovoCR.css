@@ -655,7 +655,7 @@ figcaption {
 #PopularPosts2 li {
     padding:0 !important;
     margin: 0 auto 35px auto !important;
-    max-height:150px;
+    width:320px;
     position:relative;
 }
 
@@ -680,7 +680,7 @@ figcaption {
 
 #PopularPosts2 img {
     padding: 0px;
-    height:150px;
+    width:320px;
     overflow:hidden;
     object-fit: cover;
 }
