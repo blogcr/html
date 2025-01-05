@@ -339,13 +339,13 @@ blockquote::before {
 
 /* -------------------- GRADIENTES ----------------------- */
 .gradiente {
-	border-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
+	border-image: linear-gradient(45deg, rgb(240, 240, 240), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
 	border-style: solid; 
 	border-width: 0px 0px 2px;
 }
 
 .gradiente2 {
-	border-image: linear-gradient(45deg, rgb(183, 28, 28),  rgb(255, 255, 255)) 1 / 1 / 0 stretch; 
+	border-image: linear-gradient(45deg, rgb(183, 28, 28),  rgb(240, 240, 240)) 1 / 1 / 0 stretch; 
 	border-style: solid; 
 	border-width: 0px 0px 2px;
 }
