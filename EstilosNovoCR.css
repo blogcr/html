@@ -647,9 +647,9 @@ figcaption {
 
 #PopularPosts2 ul {
     background-color: transparent !important;
-    text-align:center !important;
     display: flex;
     flex-wrap: wrap;
+}
 }
 
 #PopularPosts2 li {
