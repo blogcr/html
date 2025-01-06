@@ -656,7 +656,7 @@ figcaption {
     padding:0 !important;
     margin: 0 auto 35px auto !important;
     width:320px;
-    height:150px;
+    height:100px;
     position:relative;
 }
 
@@ -683,7 +683,7 @@ figcaption {
     padding: 0px;
     width:320px;
     overflow:hidden;
-    max-height:150px;
+    max-height:100px;
     object-fit: cover;
 }
 
