@@ -194,7 +194,7 @@ blockquote {
 
 blockquote::before, blockquote::after, ast::before {
   	color: #B71C1C;
-  	background: #FFFFFF;
+  	background: transparent;
   	font-family:'FontAwesome'; 
   	padding: 0 4px 0 4px;
   	font-size:20px;
