@@ -725,8 +725,9 @@ figcaption {
     	font-family: 'Helvetica', Arial, sans-serif;
     	font-weight:bold;
     	text-align:left !important;
-        position: absolute;
-        top: 50%;
+       	position:absolute;
+       	top:35px;
+       	left:10px;
         overflow:hidden !important;
         display: -webkit-box;
         -webkit-line-clamp: 2;
