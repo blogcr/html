@@ -653,10 +653,11 @@ figcaption {
 }
 
 #PopularPosts2 li {
-    padding:0 !important;
-    margin: 0 auto 35px auto !important;
-    width:320px;
-    height:100px;
+    width: 320px !important;
+    height: 100px !important;
+    background-color: #FFFFFF !important;
+    padding: 0 !important;
+    margin: 0 auto 15px !important;
     position:relative;
 }
 
