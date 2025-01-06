@@ -647,17 +647,16 @@ figcaption {
 
 #PopularPosts2 ul {
     background-color: transparent !important;
+    text-align:center !important;
     display: flex;
     flex-wrap: wrap;
 }
-}
 
 #PopularPosts2 li {
-    width: 320px !important;
-    height: 100px !important;
-    background-color: #FFFFFF !important;
-    padding: 0 !important;
-    margin: 0 auto 15px !important;
+    padding:0 !important;
+    margin: 0 auto 35px auto !important;
+    width:320px;
+    height:150px;
     position:relative;
 }
 
@@ -681,21 +680,20 @@ figcaption {
  }
 
 #PopularPosts2 img {
-    width: 320px !important;
-    height: 100px !important;
     padding: 0px;
+    width:320px;
     overflow:hidden;
-    object-fit:cover;
-    object-position: 100% 0;
+    max-height:150px;
+    object-fit: cover;
 }
 
 #PopularPosts2 .overlay {
-    width: 100%;
-    height:100%;
     position: absolute;
     left: 0;
     top: 0;
-    background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
 }
 
 #PopularPosts2 .autor {
@@ -719,17 +717,20 @@ figcaption {
 }
 
 #PopularPosts2 .titulo2 {
-       width:70%;
-       padding: 0 10px !important;
-       font: bold 20px/20px helvetica, sans-serif !important;
-       color:#fff;
-       position:absolute;
-       top:35px;
-       left:10px;
-       display: -webkit-box;
-       -webkit-line-clamp: 3;
-       -webkit-box-orient: vertical;
-	overflow:hidden !important;
+        padding: 0 15px;
+        font-size: 1.8em;
+        line-height:1em ;
+        width:100% ;
+     	color:#FFFFFF !important;
+    	font-family: 'Helvetica', Arial, sans-serif;
+    	font-weight:bold;
+    	text-align:left !important;
+        position: absolute;
+        top: 70%;
+        overflow:hidden !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
 }
 
 #PopularPosts3 ul {
