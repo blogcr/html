@@ -685,6 +685,7 @@ figcaption {
     overflow:hidden;
     max-height:150px;
     object-fit: cover;
+    object-position: 100% 0;
 }
 
 #PopularPosts2 .overlay {
@@ -754,7 +755,7 @@ figcaption {
     padding: 0px;
     overflow:hidden;
     object-fit:cover;
-    /* object-position: 100% 0; */
+    object-position: 100% 0;
 }
 
 #PopularPosts3 .overlay2 {
