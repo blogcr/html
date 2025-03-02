@@ -787,11 +787,13 @@ figcaption {
 }
 
 .index1 {
-	z-index:1 !important
+	z-index:1 !important;
 }
 
 .max320 {
-	max-width:320px !important
+	max-width:320px !important;
+	display: flex;
+    	flex-wrap: wrap;
 }
 
 /* -------------------- ENTREVISTAS ----------------------- */
