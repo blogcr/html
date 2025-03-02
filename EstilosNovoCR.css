@@ -749,6 +749,11 @@ figcaption {
     position:relative;
 }
 
+#PopularPosts3 li.capa {
+    background:transparent !important;
+    margin-bottom:-50px !important
+}
+
 #PopularPosts3 img {
     width: 320px !important;
     height: 100px !important;
