@@ -749,11 +749,6 @@ figcaption {
     position:relative;
 }
 
-#PopularPosts3 li.capa {
-    background:transparent !important;
-    margin-bottom:-50px !important
-}
-
 #PopularPosts3 img {
     width: 320px !important;
     height: 100px !important;
@@ -784,6 +779,11 @@ figcaption {
        -webkit-line-clamp: 3;
        -webkit-box-orient: vertical;
 	overflow:hidden !important;
+}
+
+#PopularPosts3 li.capa {
+    	background:transparent !important;
+    	margin-bottom:-50px !important
 }
 
 .index1 {
