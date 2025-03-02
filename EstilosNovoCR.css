@@ -794,6 +794,7 @@ figcaption {
 	max-width:320px !important;
 	display: flex;
     	flex-wrap: wrap;
+	margin:0 auto;
 }
 
 /* -------------------- ENTREVISTAS ----------------------- */
