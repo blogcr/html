@@ -790,6 +790,9 @@ figcaption {
 	z-index:1 !important
 }
 
+.max320 {
+	max-width:320px !important
+}
 
 /* -------------------- ENTREVISTAS ----------------------- */
 
