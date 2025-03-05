@@ -799,8 +799,6 @@ figcaption {
 
 .randomiza {
         display: none; /* Todos os elementos ficam ocultos por padrão */
-        font-size: 20px;
-        padding: 10px;
 }
 
 .randomiza.ativo {
