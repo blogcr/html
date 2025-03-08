@@ -1,6 +1,6 @@
 /* -------------------- RESPONSIVO ----------------------- */
 @media only screen and (max-width: 1024px) {
-	legend {
+	.poesia, legend {
 		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
 	}
 	blockquote  {
