@@ -261,7 +261,7 @@ blockquote::before {
 
 .poesia {
 	white-space: pre-wrap;
-	min-font-size:20% !important;
+	min-font-size:50% !important;
 }
 
 #poesia2 li {
