@@ -919,13 +919,13 @@ td.celula1 {
 td.celula2 {
 	padding:5px 8px;
 	width:70% !important;
-	background:#EFEEE9;
+	background:#e1dad7;
 }
 
 td.celula3 {
 	padding:5px 8px;
 	width:90% !important;
-	background:#EFEEE9;
+	background:#e1dad7;
 }
 
 .listagem {
@@ -937,7 +937,7 @@ td.celula3 {
 }
 
 .cor {
-	background:#EFEEE9 !important;
+	background:#e1dad7 !important;
 }
 
 
