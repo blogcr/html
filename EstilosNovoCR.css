@@ -901,6 +901,13 @@ table.tabela {
 	font-size:85%;
 }
 
+td.numero {
+	padding:5px 8px;
+	width:10% !important;
+	background:#EFEBE9;
+	text-align:center
+}
+
 td.celula1 {
 	padding:5px 8px;
 	width:30% !important;
@@ -911,7 +918,13 @@ td.celula1 {
 td.celula2 {
 	padding:5px 8px;
 	width:70% !important;
-	background:#F9F4F0
+	background:#f9ede7
+}
+
+td.celula3 {
+	padding:5px 8px;
+	width:90% !important;
+	background:#f9ede7
 }
 
 /* CAIXA DE CITAÇÕES
