@@ -903,33 +903,33 @@ table.tabela {
 }
 
 td.numero {
-	padding:5px 8px;
+	padding:5px 10px;
 	width:15% !important;
 	background:#EFEBE9;
 	text-align:center
 }
 
 td.celula1 {
-	padding:5px 8px;
+	padding:5px 10px;
 	width:30% !important;
 	background:#EFEBE9;
 	text-align:center
 }
 
 td.celula2 {
-	padding:5px 8px;
+	padding:5px 10px;
 	width:70% !important;
 	background:#e1dad7;
 }
 
 td.celula3 {
-	padding:5px 8px;
+	padding:5px 10px;
 	width:85% !important;
 	background:#e1dad7;
 }
 
 .listagem {
-	padding:5px 8px;
+	padding:5px 10px;
 	width:90%;
 	margin:0 auto 5px;
 	background:#EFEBE9;
