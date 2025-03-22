@@ -927,6 +927,19 @@ td.celula3 {
 	background:#EFEEE9;
 }
 
+.listagem {
+	padding:5px 8px;
+	width:90%;
+	margin:0 auto 5px;
+	background:#EFEBE9;
+	text-align:center
+}
+
+.cor {
+	background:#EFEEE9 !important;
+}
+
+
 /* CAIXA DE CITAÇÕES
 blockquote {
 	font: 100 20px / 1.4 'Oswald', cursive !important;
