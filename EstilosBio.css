@@ -396,6 +396,11 @@
 #tuca .bio:before {content: "Carlos Romero Filho";}
 #tuca .bio:after {content: "Professor";}
 
+/* CARLOS ROMERO NETO */
+#tuquinha .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8MBUBLtHNmCPinfD-2BLBzDqVdB8beJCiGAioq63QQAtPwpTl1BAapF_kQwbQ4a4S5alRMmFrKf_E8H6iEIg41R43yfFya6zloCKpotv078JRa3oxWjj754ZS_72nngf1lOIAB5dL_j8SXIcGodYr9df0smZTwtsBasdp0n4hiIiwQS7wqLZi5_Lk95SP/s1600/Tuquinha.webp);}
+#tuquinha .bio:before {content: "Carlos Romero Neto";}
+#tuquinha .bio:after {content: "Doutorando em Matemática";}
+
 /* CELIO FURTADO */
 #celio .fotobio {content: url(https://1.bp.blogspot.com/-JUSVLPTW2pM/X77gfzuGvMI/AAAAAAACjNA/8aW0QsucFWo6mD5AJkDi_OuEI0sItF2BQCLcBGAsYHQ/s0/Celio-Furtado.jpg);}
 #celio .bio:before {content: "Célio Furtado";}
