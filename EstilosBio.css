@@ -45,6 +45,12 @@
 	*/
 }
 
+@media only screen and (max-width: 430px) {
+	.minifoto {
+	max-width:20% !important;
+	}
+}
+
 .minifoto2 {
 	position:relative;
         max-width:23.3% !important;
