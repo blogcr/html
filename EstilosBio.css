@@ -615,6 +615,11 @@
 #hilton .bio:before {content: "Hilton Valeriano";}
 #hilton .bio:after {content: "Professor";}
 
+/* HUMBERTO ESPINOLA */
+#humberto .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6WMp64cY9kZFgEOGVgmH6Ut_4rqliGbTxwPhe0ZjpWEt-eVa0H73teGr7-IT4Bkmv3hLJuDuRM7S0wwfxVmWVUQ8D4XtvFuFGaBKW-ZVPkr14gIyKGJWh5KHWQz0px0lvCQxKOzQNlcVh53gVDzc-752WqkRZyIvqhQgHNeAp1qVP2skRZb5GvOB3AG_I/s1600/Humberto%20Espi%CC%81nola.jpg);}
+#humberto .bio:before {content: "Humberto Espínola";}
+#humberto .bio:after {content: "Natural de João Pessoa (PB), bacharel em Direito. Ex-Procurador da República";}
+
 /* ILZA NOGUEIRA */
 #ilza .fotobio {content: url(https://1.bp.blogspot.com/-Q1L07z1Mx7M/YGfJc8YloTI/AAAAAAACxT8/vYjkgRv35NY1eInnjwP1c2MbEp14O-ldQCLcBGAsYHQ/s0/Ilza-Nogueira-2.jpg);}
 #ilza .bio:before {content: "Ilza Nogueira";}
