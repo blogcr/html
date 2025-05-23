@@ -279,6 +279,10 @@ blockquote::before {
 	margin-bottom:30px !important;
 }
 
+.poesia3 {
+	font-size: clamp(14px, 2vw, 20px);
+}
+
 #dialogo > br {
 	margin-bottom:20px !important;
 }
