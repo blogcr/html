@@ -280,7 +280,7 @@ blockquote::before {
 }
 
 .poesia3 {
-	font-size: clamp(14px, 2vw, 20px);
+	font-size: clamp(14px, 2vw, 20px) !important;
 }
 
 #dialogo > br {
