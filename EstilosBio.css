@@ -1041,6 +1041,12 @@
 #thamara .bio:before {content: "Thamara Duarte";}
 #thamara .bio:after {content: "Ambientalista / jornalista";}
 
+/* THELIO FARIAS */
+#thelio .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy9Wb1LT8UlRXCMYP65x6bqk7RHI71EasYf2M7-nporzhgwKWXb1hXJbvO1B0yUU2m3vxKGStobPdyYYilcthTsnTGCPL9Na8mNDEV2dEQH9Uy-hQVZjIJwMlvraDykzbcR9jIugIr0lMfK2chqhxLg8kSoSzNHJCXGPO9bXcxG75QQo3n9JBX5OfZVEo/s1600/The%CC%81lio%20Farias.jpg
+);}
+#thelio .bio:before {content: "Thélio Farias";}
+#thelio .bio:after {content: "Advogado";}
+
 /* THIAGO MACEDO */
 #thiago .fotobio {content: url(https://1.bp.blogspot.com/-_zxcCZzkFmk/YKWdJ3jvLwI/AAAAAAAC15Q/zZcOTOnuD_s9-TyK6-lehoDNbauZlQeiwCLcBGAsYHQ/s0/Thiago-Macedo.jpg);}
 #thiago .bio:before {content: "Thiago Andrade Macedo";}
