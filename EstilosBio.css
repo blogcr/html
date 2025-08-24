@@ -238,6 +238,17 @@
 	font-weight:bold;
 }
 
+/* APPLAUSE POSIÇÃO DO CONTADOR */
+#compartilhe applause-button .count-container {
+	font-family: helvetica !important;
+	left:50 !important;
+	top:50 !important;
+}
+
+#compartilhe applause-button .count-container .count {
+	font-size:30% !important;
+}
+
 @media screen and (max-width: 600px) {
 	.boxbio {
 		width:100%;
