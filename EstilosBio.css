@@ -231,7 +231,7 @@
 }
 
 #compartilhe:before {
-  	content:"APLAUSOS";
+  	content:"CURTIR";
   	white-space: pre-line;
 	margin-bottom:5px;
 	font-size:0.7em !important;
@@ -264,7 +264,7 @@
 		}
 	
 	#compartilhe:before {
-    		content:"APLAUSOS";
+    		content:"CURTIR";
 		}
 
 }
