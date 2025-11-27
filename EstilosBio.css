@@ -939,6 +939,11 @@
 #raniery .bio:before {content: "Raniery Abrantes";}
 #raniery .bio:after {content: "Professor / poeta";}
 
+/* RAISSA ROMERO */
+#raissa .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ-adkrFczDYnkBD8sbuljBU3KAcdkv9pvxCB8VoKXN8o1bwTlRKyl6cyqLRq_R2FBAgH6U-8FIf3G4f91iHuFfoVkRqgjl73s0_EYEwCe-fjJUHefFLJ9Tq5gzlv7ADP_whidaaT6WtJyvHVfZBlbZyyhIi6OZPIBhADmbpu8J08NnTIPDgKcNoXO6TuF/s1600/Rai%CC%81ssa%20Romero.jpg);}
+#raissa .bio:before {content: "Raíssa Romero";}
+#raissa .bio:after {content: "Bióloga graduada pela Universidade Federal da Paraíba.";}
+
 /* RAUL TARTAROTTI  */
 #raul .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYb40NLiu3zRTiwdWIq2mywldqtmrBSSj71JLk3Wh9zvqygcJ8Cb0sEuQ_HntwR-XxIyF4Vrwe91zJPi1HHrTZ5hecimC_FwgA-ZsqS4eEvUSTvolltlFqf04UNltFS6rdQ0rlQBOKHDcnHHdg_fVmA9HOYssCeOCMXjKHfvJryw0woEd72tigiNi/s1600/Raul-Tartarotti.jpg);}
 #raul .bio:before {content: "Raul Tartarotti";}
