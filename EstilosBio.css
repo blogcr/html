@@ -995,6 +995,11 @@
 #rui .bio:before {content: "Rui Leitão";}
 #rui .bio:after {content: "Jornalista / escritor";}
 
+/* SABRINA MELO */
+#sabrina .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAykQXa5Whh_NGPKIwVDVLrYQGcdhOXUTKhevWC2qTgdOysUFsT-k0HgykWpkZ0wOds205OtbeUqTbPX7BnDCd9dmFBtbt3FjM4dLWSYWOROR4bov1t7TxPPZvebbcnBbWukowFolX1r2sbKPrcMgfVlL8ort8U348UyAfINNaPZj7zz6tGjhkLsv3Lhk/s1600/Sabrina-Mello.webp);}
+#sabrina .bio:before {content: "Sabrina Fernandes Melo";}
+#sabrina .bio:after {content: "Professora no Departamento de Artes Visuais da Universidade Federal da Paraíba. Doutora em História pela Universidade Federal de Santa Catarina";}
+
 /* SAM CAVALCANTI */
 #sam .fotobio {content: url(https://1.bp.blogspot.com/-FqwXexndbOQ/X-6_E2FvowI/AAAAAAACpCE/rR2iB3urpjcYcibOb6pq2AvEjfNpOY6fQCLcBGAsYHQ/s0/Sam-Cavalcanti.jpg);}
 #sam .bio:before {content: "Sam Cavalcanti";}
