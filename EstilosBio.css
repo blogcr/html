@@ -1010,6 +1010,12 @@
 #samuel .bio:before {content: "Samuel Amaral";}
 #samuel .bio:after {content: "Mestre em Jornalismo. Atua como Revisor de Textos Braille na Universidade Federal da Paraiba, Campus I (João Pessoa). Membro do Gecimp (Grupo de Estudos em Cultura, Informação, Memória e Patrimônio). Dedica-se às narrativas biográficas e histórias de vida, incluindo biografias. É autor do livro \22 Biu Ramos: o timoneiro da Arca de Sonhos\22 (Editora A União, 2023). \A INSTRAGRAM \25AA  \40 samuel.amaral_";}
 
+/* SAMUEL MORAES */
+#moraes .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC6PaXNk6epX8DpL4gtVC6_mTKMQc8uje00rpY18hpCu_bonXKYsjjqP5QGh_Wg4PqP39dXk8ozFqauTsl1asZO3lsk01wjr9rj05r_3XAaMvLVYKB5a5sXd1qgCLIzF86zbcDX-ACoJK_0g7cxVkRb9zjc1DaGykga8abvQrKgPVOexf8bMj4TdS_oEk/s1600/Samuel%20Moraes.jpg
+);}
+#moraes .bio:before {content: "Samuel Moraes";}
+#moraes .bio:after {content: "Técnico Metalurgista e Engenheiro Industrial com especializações pela UEMA e UFMA. Nasceu em João Pessoa e reside em São Luís, Maranhão. Atua no ramo metalúrgico e leciona disciplinas em cursos de especialização de Engenharia de Segurança na Universidade Estadual do Maranhão. É autor do romance /22 Os Quintos dos Morais/22 pela Arribaçã Editora. \A INSTRAGRAM \25AA  \40 de_morais76";}
+
 /* SANDRA RAQUEW */
 #raquew .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlVXxkqvO0RF0-f-ejvyVEXd4SF1DV-9jGmq50x_8cT8cY4hOGYYhfPfGV0nwnKSIsH1Ion2gd2e6fKBwf_6Nwoz67ex3oYblESnsM-LK_Y-1XKXvso7r2MRiPZq9M-zld_eK74RShmbrgIt97ZYfwJjp3lN5n5KVV_2MJW6fYbDgBXBXhLAtOvhGb/s1600/Sandra-Raquew.jpeg);}
 #raquew .bio:before {content: "Sandra Raquew";}
