@@ -1021,6 +1021,11 @@
 #raquew .bio:before {content: "Sandra Raquew";}
 #raquew .bio:after {content: "Jornalista / professora";}
 
+/* RENATO CESAR CARNEIRO */
+#renato .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI7aq8nD4nVTSj34ygzDHDD-cjQMz3z2KyYV_KlQEeghiT1yXLO95F_PiOL0WmZ5WLLaRuQeqZNUX4nFBe7Matut2B75snUN1WhkgnIiZvdcO8KyAC8xGcBQMBIScNDj1W9532gOMqiXXFeABJSUYjPQMWbJjFfApSZ8ozd67W6SeSjCnRA-ClH5ojWWk/s1600/Renato%20Ce%CC%81sar%20Carneiro.jpg);}
+#renato .bio:before {content: "Renato César Carneiro";}
+#renato .bio:after {content: "Natural de Patos, Paraíba. Escritor, professor, mestre em Direito e Desenvolvimento, doutor em Ciências Jurídicas e Sociais, membro da Academia Paraibana de Letras Jurídicas, da Academia Paraibana de Letras, do Instituto Histórico e Geográfico Paraibano e do Instituto Histórico e Geográfico de Patos.";}
+
 /* SANDRA TROMBETTA */
 #sandra .fotobio {content: url(https://1.bp.blogspot.com/-o5NWsKi5oC0/YEL5v7FwWuI/AAAAAAACsCA/VkjKfu6bLoY7rV98vuiDtDbn2Jjrja1MgCLcBGAsYHQ/s0/Sandra-Quintans-PB.jpg);}
 #sandra .bio:before {content: "Sandra Trombetta";}
