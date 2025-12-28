@@ -777,16 +777,17 @@ figcaption {
 }
 
 #PopularPosts3 .titulo3  {
-       width:70%;
-       padding: 0 10px !important;
-       font: bold 20px/20px helvetica, sans-serif !important;
-       color:#fff;
-       position:absolute;
-       top:35px;
-       left:10px;
-       display: -webkit-box;
-       -webkit-line-clamp: 3;
-       -webkit-box-orient: vertical;
+    width:70%;
+	text-align:left !important;
+    padding: 0 10px !important;
+    font: bold 20px/20px helvetica, sans-serif !important;
+    color:#fff;
+    position:absolute;
+    top:35px;
+    left:10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 	overflow:hidden !important;
 }
 
