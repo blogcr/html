@@ -265,7 +265,6 @@ figure img {
         	margin: 0;
 }
 
-
 /* ---------- CRÉDITOS ---------- */
 figcaption {
       	position:absolute !important;
@@ -357,8 +356,30 @@ color:var(--cor-cinza-claro);
    	display:block;
    	border:0px solid var(--cor-texto);
    	opacity:0.6;
- }
+}
 
+/* ---------- VÍDEOS ---------- */
+
+.vid {
+      	position: relative;
+      	padding-bottom: calc(var(--ratio, 0.5625) * 100%);
+      	height: 0;
+      	width: 100%;
+}
+
+.vid iframe {
+      	position: absolute;
+      	top: 0;
+      	left: 0;
+      	width: 100%;
+      	height: 100%;
+}
+
+.index1 {
+    	z-index:1 !important;
+}
+
+        
 /* ---------- BOXES ---------- */
 #citacao, .citacao  {
     	margin: 0 5% !important;
