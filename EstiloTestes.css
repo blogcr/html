@@ -128,7 +128,8 @@ font-size: clamp(16px, 4vw, 22px) !important;
     	background:transparent !important;
 }
 
-/* ---------- IMAGENS ---------- */
+/* ---------- IMAGENS ---------- DESATIVAR PARA TESTE
+
 figure {
     	display: block !important;
     	max-width: 35% !important;
@@ -152,6 +153,51 @@ figure {
     	max-width: 90% !important;
     	margin: 0 auto 25px !important;
 }
+
+-------*/ FIM DE DESATIVAR PARA TESTES
+
+/* Configuração Base Inteligente */
+figure {
+    display: table; /* Fallback antigo */
+    width: fit-content; /* Moderno: O figure abraça o tamanho exato da imagem */
+    width: -moz-fit-content; /* Firefox */
+    max-width: 100%; /* Nunca estoura a tela do celular */
+    margin-bottom: 1.5em; /* Espaço padrão abaixo */
+}
+
+/* TESTE DE FIGURE MODERNO */
+figure img {
+    display: block;
+    width: 100%; /* Preenche o figure */
+    height: auto; /* MANTÉM A PROPORÇÃO ORIGINAL (Vertical ou Horizontal) */
+    max-width: 100%;
+}
+
+/* --- SEUS ALINHAMENTOS (Modernizados) --- */
+
+/* Esquerda com Texto Abraçando (Se tiver poligono) */
+.esq {
+    float: left;
+    margin: 0 20px 10px 0 !important;
+    /* Se você usar clip-path na imagem, o texto vai acompanhar a forma! */
+    shape-outside: attr(style); 
+}
+
+/* Direita */
+.dir {
+    float: right;
+    margin: 0 0 10px 20px !important;
+}
+
+/* Centro */
+.centro {
+    display: block; /* Ou flex */
+    margin: 0 auto 25px auto !important;
+    float: none !important;
+}
+
+
+/* FIM DE TESTE DE FIGURE MODERNO */
 
 .meio {
     	max-width: 45% !important;
