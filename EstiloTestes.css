@@ -1,54 +1,44 @@
 @charset "UTF-8";
 
-/* ---------- TEXTO RESPONSIVO ---------- */
-
-@media only screen and (max-width: 1024px) {
-.poesia, legend, blockquote { 
-/* Mínimo 16px, Ideal 4% da tela, Máximo 22px */ 
-font-size: clamp(16px, 4vw, 22px) !important; 
-} 
+/* ---------- FONTES ---------- */
+.spelite, .datilog {
+        	font-family: var(--fonte-typewriter) !important;
 }
 
-/* ---------- FORMATAÇÃO GERAL ---------- */
-
-.direita {
-    	text-align:right !important;
+.roman {
+        	font-family: var(--fonte-serifa) !important;
 }
 
-.pads { 
-    	padding:5px !important;
+/* ---------- DIVISOR ---------- */
+.divisor, .divisor3  {
+    	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
+    	width:30%;
+    	opacity:0.5;
+    	margin:3px auto 20px;
 }
 
-.backs { 
-    	background:var(--cor-papel) !important;
-}
+/* ---------- CAPITULAR ---------- */
 
-.margem {
-    	margin-top:15px;
-}
-
-.margens {
-    	margin-bottom:20px;
-}
-
-.inv {
-    	-webkit-transform: scaley(-1); 
-   	 transform: scaley(-1);    
-}
-
-.transparente {
-    	background:transparent !important;
-}
-
-.desloca {
-    	padding-left: 30px;
-}
-
-.desloca2 {
-    	padding-left: 60px;
-}
 
 /* ---------- TEXTO ---------- */
+.poesia {
+    	white-space: pre-wrap;
+    	min-font-size:50% !important;
+}
+
+#dialogo > br {
+    	margin-bottom:20px !important;
+}
+
+.paginas {
+    	font-size:70%;
+    	opacity:0.6;
+    	border-top:1px solid var(--cor-principal);
+    	padding-top:2px;
+    	width:50%;
+    	margin:5px auto 0;
+    	text-align:center !important;
+}
 
 .italico {
     	font-style: italic !important;
@@ -64,262 +54,20 @@ font-size: clamp(16px, 4vw, 22px) !important;
     	display:block
 }
 
-.centraliza2 {
-    	margin: 0 auto;
-   	text-align:center;
-    	width:auto;
-    	border-bottom:1px solid var(--cor-principal);
-   	display:block
-}
-
 .centraliza hr {
     	margin:0 auto !important;
 }
 
-/* -------------------- FONTES ----------------------- */
-
-.spelite, .datilog {
-        font-family: var(--fonte-typewriter) !important;
+.frase {
+    	overflow:hidden;
 }
 
-.roman {
-        	font-family: var(--fonte-serifa) !important;
-    	font-size:95% !important;
+.textopeq, .textoita {
+    	font-size: 14px !important;
+    	line-height: 18px !important;
+    	margin-top: 8px;
 }
 
-.romano {
-        	font-family: var(--fonte-serifa) !important;
-}
-
-#citalivro {
-        	font-family: var(--fonte-serifa) !important;
-        	font-size:95% !important;
-        	color: var(--cor-hover) !important; /* Usando cor-hover (cinza escuro) */
-    	width:90% !important;
-    	margin:0 auto !important;
-    	padding:20px !important;
-    	font-style: none !important;
-}
-
-#citalivro > br {
-    	margin-bottom:20px !important
-}
-
-/* -------------------- CAPITULAR ----------------------- */
-
-.letra:first-letter {
-    	color: var(--cor-texto-suave) !important;
-    	font-weight:bold; 
-   	 font-size:6em; 
-   	 float:left; 
-    	padding:0; 
-    	margin: 0 15px 0 0 !important; 
-   	 background-color:transparent; 
-    	line-height:0.8em;
-    	border-bottom:0px solid var(--cor-principal);
-}
-
-.letra2:first-letter {
-    	color: var(--cor-texto-suave) !important;
-    	opacity:0.5;
-   	 font-weight:bold; 
-    	font-size:4em; 
-    	float:left; 
-    	padding:0; 
-    	margin: -5px 15px 0 0 !important; 
-    	background-color:transparent;
-}
-
-.letrag:first-letter {
-    	opacity:0.5;
-    	font-weight:bold; 
-    	font-size:4em; 
-    	float:left; 
-    	padding:0; 
-    	margin: -5px 15px 0 0 !important; 
-    	background-color:transparent; 
-    	line-height:0.5em;
-    	border-bottom:0px solid var(--cor-principal);
-}
-
-.letra3 {
-    	color: var(--cor-texto-suave) !important;
-    	opacity:0.5;
-    	font-weight:bold; 
-    	font-size:4em; 
-    	float:left; 
-    	padding:0; 
-    	margin: 14px 15px 0 0 !important; 
-    	background-color:transparent; 
-    	line-height:0.5em;
-    	border-bottom:0px solid var(--cor-principal);
-}
-
-.letra4 {
-    	color: var(--cor-texto-suave) !important;
-    	opacity:0.5;
-    	font-weight:bold; 
-    	font-size:3em; 
-    	float:left; 
-    	padding:0; 
-    	margin: 25px 15px 0 0 !important; 
-    	background-color:transparent; 
-    	line-height:0.5em;
-    	border-bottom:0px solid var(--cor-principal);
-   	display:inline-block;
-}
-
-.aspas {
-    	font-family:'FontAwesome';
-    	content:"\f10d";
-    	font-size:3em;
-    	line-height:auto !important;
-    	margin-right:5px !important;
-    	padding:0 !important;
-    	opacity:0.5;
-    	font-style: normal !important;
-    	display:inline !important;
-}
-
-/* -------------------- BLOCKQUOTE ----------------------- */
-
-blockquote {
-    	font-size: 20px;
-     	font-family: var(--fonte-padrao) !important;
-    	font-weight: 600;
-    	line-height: 1.4;
-   	max-width: 35%;
-    	float: right;
-    	padding: 15px 10px;
-    	position: relative !important;
-      	background: var(--cor-cinza-claro);
-    	color: var(--cor-texto-suave);
-    	text-align: center;
-    	margin: 10px 0 5px 20px !important;
-    	z-index:1 !important;
-}
-
-blockquote::before, blockquote::after, ast::before {
-      	color: var(--cor-principal);
-      	background: transparent;
-      	font-family:'FontAwesome'; 
-      	padding: 0 4px 0 4px;
-      	font-size:20px;
-      	position: absolute !important;
-      	display:block;
-}
-
-blockquote::before {
-      	content:"\f10d";
-       	top: -20px !important;
-      	left: 10px !important;
-}
-
-.pensamento {
-    	font-size: 20px;
-       	font-family: var(--fonte-padrao) !important;
-    	line-height: 1.4;
-    	padding: 20px;
-      	background: var(--cor-fundo-detalhe);
-    	color: var(--cor-texto-suave);
-}
-
-.pensador {
-    	border-top:1px solid var(--cor-principal) !important;
-      	font-weight:bold !important;
-    	margin-top:5px;
-    	padding-top:5px !important;
-    	text-align:right !important;
-}
-
-.ast::before {
-      	content:"\f069";
-    	top: -15px !important;
-    	font-size:17px !important;
-      	left: 10px !important;
-}
-
-/* -------------------- CITAÇÃO ----------------------- */
-#citacao, .citacao  {
-    	margin: 0 5% !important;
-}
-
-#citacao hr {
-    	width: 30% !important;
-    	clear: both  !important;
-}
-
-.citacao2 {
-    	margin: 0 5% !important;
-    	padding:20px;
-    	background: var(--cor-cinza-claro);
-}
-
-.paginas {
-    	font-size:70%;
-    	opacity:0.6;
-    	border-top:1px solid var(--cor-principal);
-    	padding-top:2px;
-    	width:50%;
-    	margin:5px auto 0;
-    	text-align:center !important;
-}
-
-.poesia {
-    	white-space: pre-wrap;
-    	min-font-size:50% !important;
-}
-
-#poesia2 li {
-    	white-space: pre-wrap;
-   	 width:80%;
-    	padding:20px;
-    	font-size:0.95em !important;
-    	margin-bottom:100px !important;
-    	display:block !important;
-    	clear:both !important;
-}
-
-#poesia2 li:last-child {
-    	margin-bottom:30px !important;
-}
-
-.poesia3 {
-    	white-space: pre-wrap;
-    	font-size: clamp(14px, 2vw, 20px) !important;
-}
-
-#dialogo > br {
-    	margin-bottom:20px !important;
-}
-
-@media only screen and (max-width: 300px) {
-poesia2 li {
-width:100%;
-}
-}
-
-.haikai {
-    	max-width: 90% !important;
-    	text-align:center;
-    	clear:both !important;
-}
-
-.miniconto {
-    	max-width: 60% !important;
-    	clear:both !important
-}
-
-/* -------------------- NOTAS ----------------------- */
-#nota, .nota {
-    	color: var(--cor-texto-suave); 
-    	float: right; 
-    	font-size: 80%; 
-    	width:auto;
-    	max-width: 50%;
-    	clear: both !important;
-      	display:block;
-}
 
 /* -------------------- BORDAS ----------------------- */
 .borda {
@@ -350,20 +98,37 @@ width:100%;
     	border:1px solid var(--cor-borda) !important;
 }
 
-/* -------------------- GRADIENTES ----------------------- */
-.gradiente {
-        border-image: linear-gradient(45deg, rgb(240, 240, 240), var(--cor-principal)) 1 / 1 / 0 stretch; 
-    	border-style: solid; 
-    	border-width: 0px 0px 2px;
+/* ---------- TEXTO RESPONSIVO ---------- */
+@media only screen and (max-width: 1024px) {
+.poesia, legend, blockquote { 
+/* Mínimo 16px, Ideal 4% da tela, Máximo 22px */ 
+font-size: clamp(16px, 4vw, 22px) !important; 
+} 
 }
 
-.gradiente2 {
-        border-image: linear-gradient(45deg, var(--cor-principal),  rgb(240, 240, 240)) 1 / 1 / 0 stretch; 
-    	border-style: solid; 
-    	border-width: 0px 0px 2px;
+/* ---------- CONFIGURAÇÃO DE DIVS ---------- */
+.pads { 
+    	padding:5px !important;
 }
 
-/* -------------------- IMAGENS ----------------------- */
+.margem {
+    	margin-top:15px;
+}
+
+.margens {
+    	margin-bottom:20px;
+}
+
+/* ---------- BACKGROUNDS ---------- */
+.backs { 
+    	background:var(--cor-papel) !important;
+}
+
+.transparente {
+    	background:transparent !important;
+}
+
+/* ---------- IMAGENS ---------- */
 figure {
     	display: block !important;
     	max-width: 35% !important;
@@ -404,6 +169,15 @@ figure {
       	transform: rotate(5deg);
 }
 
+.fotopeq {
+    	height:auto;
+    	width:20%;
+    	max-width:20%;
+    	align: top;
+    	float: left;
+    	margin: 10px 20px 5px 0;
+    }
+
 .rodaesq {
     	-webkit-transform:rotate(-5deg);
       	-moz-transform: rotate(-5deg);
@@ -412,7 +186,41 @@ figure {
       	transform: rotate(-5deg);
 }
 
-/* -------------------- CREDITOS ----------------------- */
+.inv {
+    	-webkit-transform: scaley(-1); 
+   	 transform: scaley(-1);    
+}
+
+/* ---------- IMAGENS EM COLUNAS ---------- */
+#foto2 {
+    	display: flex; 
+    	width: 90%;
+    	margin: 0 auto;
+    	text-align:center;
+    	flex-wrap: wrap;
+}
+
+#foto2::after {
+    	clear:both;
+}
+
+.foto3, .separator {
+    	margin: 0 auto !important;
+    	position:relative !important;
+    	display:block !important;
+}
+
+/* ---------- POPUP DO FANCYBOX ---------- */
+.fancybox-slide--iframe .fancybox-content {
+        	width  : 800px;
+        	height : 600px;
+        	max-width  : 80%;
+        	max-height : 80%;
+        	margin: 0;
+}
+
+
+/* ---------- CRÉDITOS ---------- */
 figcaption {
       	position:absolute !important;
         	color: var(--cor-branco) !important;
@@ -439,7 +247,7 @@ color:var(--cor-cinza-claro);
 
 .cred {
     	font-size:0.6em !important;
-        color: var(--cor-texto-suave) !important;
+        	color: var(--cor-texto-suave) !important;
     	margin-top:-7px !important;
     	overflow:hidden !important;
     	line-height:1.3em !important;
@@ -447,7 +255,7 @@ color:var(--cor-cinza-claro);
 
 .credito2, .cred2 {
     	font-size:0.6em !important;
-        color: var(--cor-cinza-claro) !important;
+        	color: var(--cor-cinza-claro) !important;
     	text-align:right !important;
     	margin-top:-7px !important;
     	overflow:hidden !important;
@@ -455,11 +263,11 @@ color:var(--cor-cinza-claro);
 
 .credito3 {
     	font-size:0.6em !important;
-        color: var(--cor-texto-suave) !important;
+        	color: var(--cor-texto-suave) !important;
     	text-align:left !important;
     	margin-top:-7px !important;
     	padding: 5px 8px !important;
-        background: var(--cor-cinza-claro) !important;
+        	background: var(--cor-cinza-claro) !important;
 }
 
 .credito4, #credito4 {
@@ -493,7 +301,7 @@ color:var(--cor-cinza-claro);
 }
 
 .numeracao {
-    color: var(--cor-branco);
+    	color: var(--cor-branco);
    	font-size:2em;
    	font-weight:bold;
    	line-height:1em;
@@ -505,15 +313,100 @@ color:var(--cor-cinza-claro);
    	opacity:0.6;
  }
 
-/* -------------------- DIVISOR ----------------------- */
-.divisor, .divisor3  {
-    	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
-    	width:30%;
-    	opacity:0.5;
-    	margin:3px auto 20px;
+/* ---------- BOXES ---------- */
+#citacao, .citacao  {
+    	margin: 0 5% !important;
 }
 
-/* -------------------- ORNAMENTOS ----------------------- */
+#citacao hr {
+    	width: 30% !important;
+    	clear: both  !important;
+}
+
+.citacao2 {
+    	margin: 0 5% !important;
+    	padding:20px;
+    	background: var(--cor-cinza-claro);
+}
+
+#citalivro {
+        	font-family: var(--fonte-serifa) !important;
+        	font-size:95% !important;
+        	color: var(--cor-hover) !important; /* Usando cor-hover (cinza escuro) */
+    	width:90% !important;
+    	margin:0 auto !important;
+    	padding:20px !important;
+    	font-style: none !important;
+}
+
+#citalivro > br {
+    	margin-bottom:20px !important
+}
+
+/* ---------- NOTAS ---------- */
+#nota, .nota {
+    	color: var(--cor-texto-suave); 
+    	float: right; 
+    	font-size: 80%; 
+    	width:auto;
+    	max-width: 50%;
+    	clear: both !important;
+      	display:block;
+}
+
+/* ---------- BLOCKQUOTE ---------- */
+blockquote {
+    	font-size: 20px;
+     	font-family: var(--fonte-padrao) !important;
+    	font-weight: 600;
+    	line-height: 1.4;
+   	max-width: 35%;
+    	float: right;
+    	padding: 15px 10px;
+    	position: relative !important;
+      	background: var(--cor-cinza-claro);
+    	color: var(--cor-texto-suave);
+    	text-align: center;
+    	margin: 10px 0 5px 20px !important;
+    	z-index:1 !important;
+}
+
+blockquote::before, blockquote::after, ast::before {
+      	color: var(--cor-principal);
+      	background: transparent;
+      	font-family:'FontAwesome'; 
+      	padding: 0 4px 0 4px;
+      	font-size:20px;
+      	position: absolute !important;
+      	display:block;
+}
+
+blockquote::before {
+      	content:"\f10d";
+       	top: -20px !important;
+      	left: 10px !important;
+}
+
+.ast::before {
+      	content:"\f069";
+    	top: -15px !important;
+    	font-size:17px !important;
+      	left: 10px !important;
+}
+
+.aspas {
+    	font-family:'FontAwesome';
+    	content:"\f10d";
+    	font-size:3em;
+    	line-height:auto !important;
+    	margin-right:5px !important;
+    	padding:0 !important;
+    	opacity:0.5;
+    	font-style: normal !important;
+    	display:inline !important;
+}
+
+/* ---------- ORNAMENTOS ---------- */
 #ornamento {
     	width: 100%;
     	position: relative;
@@ -544,56 +437,11 @@ content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZsl
     	width:30%;
 }
 
-/* -------------------- FONT AWESOME ----------------------- */
-
-.fa-camera, .fa-paint-brush, .fa-home, .fa-youtube,
-.fa-pencil, .fa-envelope, .fa-facebook-official, .fa-instagram {
-    	margin: 0 5px !important;
-}
-
-.fa-youtube-play {
-    	color: var(--cor-principal);
-    	padding: 0;
-}
-
-.fa-play-circle {
-    	color: var(--cor-cinza-claro);
-    	padding: 0;
-}
-
-/* -------------------- PONTO FINAL ----------------------- */
-.pontofinal {
-    	float:right;
-    	width:40px;
-    	margin-top:-20px;
-    	margin-bottom:-20px; content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
-    border-radius:50%;
-}
-
-/* -------------------- COLUNAS ----------------------- */
-#foto2 {
-    	display: flex; 
-    	width: 90%;
-    	margin: 0 auto;
-    	text-align:center;
-    	flex-wrap: wrap;
-}
-
-#foto2::after {
-    	clear:both;
-}
-
-.foto3, .separator {
-    	margin: 0 auto !important;
-    	position:relative !important;
-    	display:block !important;
-}
-
-/* -------------------- CAPÍTULOS ----------------------- */
+/* ---------- CAPÍTULOS ---------- */
 .cap-ant {
 content:url(https://1.bp.blogspot.com/-6Dp8sAIxKGo/YApSrf1Ge9I/AAAAAAACqXw/EzsNn5ga86MeuVkx0cxQokoq3jRm0ZdygCLcBGAsYHQ/s0/CAP%2BANT.png);
   	margin:-1em 0 1em;
- 	 width:70%;
+ 	width:70%;
   	float:right;
   	clear:both;
   	display:block;
@@ -607,55 +455,16 @@ content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF
   	display:block;
 }
 
-/* -------------------- VÍDEOS ----------------------- */
-
-.disco {
-    	width: 100%;
-}
-
-.disco:before {
-    	content: "";
-    	display: block;
-    	padding-top: 100%;
-}
-
-.quadrado1 {
-    	position: relative;
-}
-
-#quadrado2 {
-    	position:  absolute;
-    	top: 0;
-   	 left: 0;
-    	bottom: 0;
-    	right: 0;
-}
-
-.video {
+/* ---------- PONTO FINAL  ---------- */
+.pontofinal {
     	float:right;
-   	width:50%;
-    	max-height:200px;
-    	margin: 10px 0 5px 15px;
+    	width:40px;
+    	margin-top:-20px;
+    	margin-bottom:-20px; content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
+    border-radius:50%;
 }
 
-.vid {
-      	position: relative;
-      	padding-bottom: calc(var(--ratio, 0.5625) * 100%);
-      	height: 0;
-      	width: 100%;
-}
-
-.vid iframe {
-      	position: absolute;
-      	top: 0;
-      	left: 0;
-      	width: 100%;
-      	height: 100%;
-}
-
-
-/* ---------- POSTAGENS POPULARES ----------- */
-
+/* ---------- BARRA LATERAL ----------- */
 #PopularPosts2 ul {
     	background-color: transparent !important;
     	text-align:center !important;
@@ -678,7 +487,7 @@ content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF
 
 #PopularPosts2 li.contador:before {
    	content: counter(item);
-    color: var(--cor-branco);
+    	color: var(--cor-branco);
    	font-size:3.5em;
   	font-weight:bold;
   	line-height:1em;
@@ -798,10 +607,6 @@ content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF
         	margin-bottom:-50px !important
 }
 
-.index1 {
-    z-index:1 !important;
-}
-
 .max320 {
     	max-width:320px !important;
     	display: flex;
@@ -817,34 +622,7 @@ content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF
         	display: block; /* Apenas o elemento ativo é exibido */
 }
 
-/* -------------------- ENTREVISTAS ----------------------- */
-
-.pergunta {
-      	padding-left: 20px;
-    	font-style: italic;
-    	font-weight: 500;
-    	color: var(--cor-texto-suave) !important;  
-}
-
-.entrevista {
-    	margin: 10px auto 15px;
-    	width:90%;
-      	padding: 10px 20px 10px 20px;
-    	background-color: var(--cor-papel);
-}
-
-/* FIXA O QUADRO DE ENTREVISTAS
-
-#Image1 {
-      	position: -webkit-sticky !important;
-      	position: sticky !important;
-      	top: 0 !important;
-    	z-index: 100 !important;
-    	max-width:100% !important;
-}
- */
-
-/* CAIXAS DO RODAPÉ DAS POSTAGENS */
+/* ---------- CAIXAS DO RODAPÉ DAS POSTAGENS ---------- */
 fieldset {
       	display: block;
       	margin: 30px 0 40px 0 !important;
@@ -868,13 +646,6 @@ legend {
     	display:block !important;
     	margin: 0 auto  !important;
 }
-
-sup {
-    	color: var(--cor-principal) !important;
-   	font-size:0.7em !important;
-    	font-weight:bold;
-    	margin-left:3px;
-}    
 
 .field1, .ref {
     	font-size:0.7em !important;
@@ -903,8 +674,7 @@ sup {
     	color:var(--cor-escuro) !important;
 }
 
-/* TABELAS */
-
+/* ---------- TABELAS ---------- */
 table.tabela {
     	width:90%;
     	margin:0 auto 35px;
@@ -945,243 +715,16 @@ td.celula3 {
     	text-align:center
 }
 
-.cor {
-    	background:var(--cor-tabela-escuro);
-}
 
-
-/* CAIXA DE CITAÇÕES
-blockquote {
-    	font: 100 20px / 1.4 'Oswald', cursive !important;
-    	max-width: 34%;
-    	margin: 0 0 1px 5px;
-    	padding: 15px 10px;
-    	float: right;
-    	position: relative !important;
-      	background: var(--cor-principal);
-    	color: var(--cor-branco);
-    	text-align: center;    
-}
-
-blockquote::before, blockquote::after {
-      	color: var(--cor-principal);
-      	background: var(--cor-branco);
-      	font-family:'FontAwesome';
-      	padding: 0 4px 0 4px;
-      	font-size:20px;
-      	position: absolute !important;
-      	display:block;
-}
-
-blockquote::before {
-      	content:"\f10d";
-       	top: -20px !important;
-      	left: 10px !important;
-}
-
-blockquote::after {
-      	content:"\f10e";
-      	bottom: -20px !important;
-      	right: 10px !important;
-} 
-
-*/
-/* CAIXA DO FANCYBOX */
-.fancybox-slide--iframe .fancybox-content {
-        	width  : 800px;
-        	height : 600px;
-        	max-width  : 80%;
-        	max-height : 80%;
-        	margin: 0;
-}
-
-.fotopeq {
-    	height:auto;
-    	width:20%;
-    	max-width:20%;
-    	align: top;
-    	float: left;
-    	margin: 10px 20px 5px 0;
-    }
-
-.frase {
-    	overflow:hidden;
-}
-
-.textopeq, .textoita {
-    	font-size: 14px !important;
-    	line-height: 18px !important;
-    	margin-top: 8px;
-}
-
-.filmposter {
-    	width:15%;
-    	height:auto;
-    	max-width:15%;
-    	align: top;
-    	float: right !important;
-    	margin: 0 auto auto 20px !important;
-    }
-
-/*
-.bio { 
-    	margin-top:10px;
-    	font-size: 14px;
- }
-*/
-
-* {
-    	box-sizing: border-box;
-}
-
-/*
-*, *::before, *::after {
-    	box-sizing: border-box;
-    	-webkit-box-sizing: border-box;
-      	-moz-box-sizing: border-box;
- }
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-p,
-pre,
-blockquote,
-figure,
-hr 
-ul[class],
-ol[class],
-figcaption,
-blockquote,
-dl,
-dd {
-  	margin: 0;
-  	padding: 0;
-}
-
-embed,
-iframe,
-img,
-object,
-video {
-  	display: block;
-  	max-width: 100%;
-}
-
-[hidden] {
-      display: none !important;
-    	opacity: 0;
-      	visibility: hidden;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    	animation-duration: 0.01ms !important;
-    	animation-iteration-count: 1 !important;
-    	transition-duration: 0.01ms !important;
-    	scroll-behavior: auto !important;
- 	}
-}
-*/
-
-/* REVISTA */
-
-.revista {
-      	display: block;
-    	font-size:90% !important;
-      	margin: 60px 0 !important;
-      	padding: 20px;
-    	border: 0px solid transparent !important;
-    	border-radius: 0px !important;
-background:var(--cor-fundo-detalhe);
-     	/* opacity: 0.5 !important; */
-    	z-index:100;
-}
-
-.revista-leg {
-    	font-family: 'Oswald' !important;
-    	font-size:1.5em !important;
-    	text-transform: none !important;
-    	border-radius: 4px !important;
-    	color: var(--cor-principal) !important;
-    	padding: 3px 15px !important;
-    	font-weight: bold !important;
-    	width: auto !important;
-    	background:inherit !important;
-    	display:block !important;
-    	z-index:100;
-}
-
-.esqq {
-    	margin: unset !important;
-}
-
-.dirr {
-    	margin-right: 0px !important;
-}
-}
-
-/* AUDIO */
+/* ---------- AUDIO ---------- */
 
 .fraudio-container {
     	margin-top: 0 !important;
     	margin-bottom: 5px !important;
 }    
 
-/* DIVISOR */
 
-.divisor2  {
-content: url(https://1.bp.blogspot.com/-afErCAn07Iw/X40Tq2kRdTI/AAAAAAACfUY/1o-p1b9JdvY4fs5xp2adDuwrzq6NVsEMwCLcBGAsYHQ/s0/divisor.png);
-    	width:70%;
-    	opacity:0.5;
-    	margin:3px auto;
-}
-
-.divisor3  {
-    	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
-    width:30%;
-    	opacity:0.5;
-    	margin:3px auto;
-}
-
-.divisor4  {
-    	width:30%;
-    	opacity:0.5;
-    	border:1px solid var(--cor-cinza-claro);
-    	margin:30px auto;
-}
-
-/* ORNAMENTO */
-
-.arabesco {
-    	width: 20%;
-    	position: absolute;
-    	float: right;  
-    	right: 0; 
-    	opacity: 0.1;
-}
-
-/* POSTS RELACIONADOS */
-
+/* ---------- POSTS RELACIONADOS ---------- */
 #relacionados {
     	width:100%; 
 color:var(--cor-texto);
@@ -1198,7 +741,6 @@ color:var(--cor-texto);
 }
 
 .relacionado, .relacionado a {
-    	font-family: 'Kaushan Script', cursive;
     	font-size:calc(1.5em + 0.5vw);
     	color:var(--cor-branco);
     	margin:0 0 10px 0;
@@ -1206,193 +748,45 @@ color:var(--cor-texto);
     	display:block;
 }
 
-.contatos li {
-    	float: left !important;
-    	font: 14px/20px Arial,sans-serif;
-    	list-style: none outside none !important;
-    	margin: 2px 5px 2px 0 !important;
-    	padding: 2px 4px 2px 4px !important;
-    	background: var(--cor-cinza-claro) !important;
-    	width: bold !important;
+/* ---------- DIVERSOS ---------- */
+
+sup {
+    	color: var(--cor-principal) !important;
+   	font-size:0.7em !important;
+    	font-weight:bold;
+    	margin-left:3px;
+}  
+
+/* =========================================
+   RESET & NORMALIZAÇÃO (MODERNO)
+   ========================================= */
+
+/* 1. Garante que larguras e paddings não quebrem o layout */
+*, *::before, *::after {
+box-sizing: border-box;
 }
 
-.contatos li a  {
-    	color: var(--cor-escuro) !important;
-    	text-decoration: none !important;
-    	padding: 2px 4px 2px 4px !important;
+/* 2. Garante que imagens e vídeos nunca estourem a tela no celular */
+img, video, iframe, embed, object {
+    	max-width: 100%;
+    	height: auto; /* Mantém a proporção correta */
+    	display: block;
 }
 
-.contatos li a:hover {
-    	color: var(--cor-branco) !important;
-    	background: var(--cor-principal) !important;
-    	padding: 2px 4px 2px 4px !important;
+/* 3. Faz botões e formulários usarem a fonte do blog */
+input, button, textarea, select {
+    	font: inherit;
 }
 
-.textoita {
-    	font-style: italic;
-    	color: var(--cor-texto-suave);
-    	text-align: right;
-    }
-
-#foto2 .foto2int {
-    	width: 48%;
+/* 4. Remove a margem padrão do corpo para aproveitar a tela toda */
+body {
+    	margin: 0;
+    	padding: 0;
 }
 
-#foto2 .foto2flex {
-    	margin: 0 auto !important;
-    	position:relative;
-}
-
-
-/* -------------------- LIVROS E EVENTOS ----------------------- */
-
-.slideshow-container {
-      	width: 320px;
-     	height:320px;
-      	position: relative;
-      	margin: auto;
-      	background:var(--cor-escuro);
-}
-
-.slideshow-container img {
-      	float:left;
-      	max-height:320px;
-}
-
-.text-container {
-      	width: 50%;
-      	position:absolute;
-      	top:20px;
-      	right:0;
-      	height:320px;
-}
-
-.text-container .text {
-      	color: var(--cor-branco);
-      	background:var(--cor-hover);
-      	font-weight:bold;
-      	font-size: 14px;
-    	line-height:16px;
-      	padding: 8px 7px;
-      	text-align: left;
-}
-
-.text-container .text2 {
-      	color: var(--cor-branco);
-      	background:var(--cor-principal);
-      	font-size: 13px;
-      	padding: 8px 7px;
-      	text-align: left;
-}
-
-.text-container .text3 {
-      	color:var(--cor-branco);
-     	background:var(--cor-hover);
-      	font-size: 12px;
-     	padding: 8px 7px;
-      	text-align: left;
-      	position:absolute;
-      	width:100%;
-      	bottom:30px;
-}
-
-.text-container .text3::before {
-      	content:"contato:";
-      	display:block;
-      	margin-bottom:5px;
-}
-
-.text-container .text3 a {
-      	color:var(--cor-branco);
-    	text-decoration: none;
-}
-
-.dot {
-      	height: 10px;
-      	width: 10px;
-      	margin: 0 2px;
-      	background-color: var(--cor-cinza-claro);
-      	border-radius: 50%;
-      	display: inline-block;
-      	transition: background-color 0.6s ease;
-}
-
-.active {
-      	background-color: var(--cor-texto-suave);
-}
-
-.fade {
-      	animation-name: fade;
-      	animation-duration: 30s;
-}
-
-@keyframes fade {
-     	from { opacity: 0; }
-     	20% { opacity: 1; }
-     	50% { opacity: 1; }
-     	80% { opacity: 1; }
-     	to { opacity: 0; }
-}
-
-/* On smaller screens, decrease text size 
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-} */
-
-
-/* MODIFICA LAYOUT DO POLLDADDY */
-
-.css-answer-group, .css-answer-group.pds-answer-group, .pds-box, .pds-answer-group {
-    	padding: 0px 0px !important;
-}
-
-#pds-sharing, .pds-pd-link {
+/* Oculta elementos que devem ser escondidos (Acessibilidade) */
+[hidden] {
     	display: none !important;
-}
-
-.css-box.pds-box, css-box {
-    	border: 0px !important;
-}
-
-.css-votebutton-outer.pds-votebutton-outer, .css-votebutton-outer {
-    	width: 100% !important;
-    	display: inline-block !important;
-}
-
-.css-vote-button.pds-vote-button, .css-vote-button {
-    	width: 10% !important;
-    	float: left !important;
-}
-
-.css-links.pds-links, .css-links {
-    	width: 70% !important;
-    	float: right !important;
-}
-
-.css-vote.pds-vote, .css-vote {
-    	height: 20px !important;
-}
-
-.css-answer.pds-answer, .css-answer, .pds-box.pds-answer, pds-box, .pds-answer  {
-    	border-bottom: 0px !important;
-}
-
-.p30 {
-    	padding: 0 30px 0 30px !important;
-    	font-style: italic !important;
-}
-
-.frase2 {
-    	overflow:hidden;
-    	padding: 0 !important;
-}
-
-.quadro {
-    	display: inline-block;
-    	background-color: var(--cor-cinza-claro);
-    	padding: 10px;
-    	margin-bottom: 40px;
-    	width:100%;
 }
 
 /* =========================================
@@ -1401,35 +795,35 @@ color:var(--cor-texto);
 
 /* 1. Rolagem Suave para links internos */
 html {
-    scroll-behavior: smooth;
+    	scroll-behavior: smooth;
 }
 
 /* 2. Personaliza a cor da seleção de texto (Vermelho e Branco) */
 ::selection {
-    background: var(--cor-principal);
-    color: var(--cor-branco);
+    	background: var(--cor-principal);
+    	color: var(--cor-branco);
 }
 ::-moz-selection {
-    background: var(--cor-principal);
-    color: var(--cor-branco);
+    	background: var(--cor-principal);
+    	color: var(--cor-branco);
 }
 
 /* 3. Barra de Rolagem Personalizada (Webkit) */
 ::-webkit-scrollbar {
-    width: 12px;               /* Largura da barra vertical */
-    height: 12px;              /* Altura da barra horizontal */
+    	width: 12px;               /* Largura da barra vertical */
+    	height: 12px;              /* Altura da barra horizontal */
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
+    	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--cor-principal); /* A barra em si */
-    border-radius: 6px;       /* Bordas arredondadas */
-    border: 3px solid var(--cor-cinza-claro); /* Espaço entre a barra e o fundo */
-}
+::-webkit-scrollbar-thumb { 
+        background-color: var(--cor-principal);  /* Cor Vermelha */ 
+        border-radius: 10px; /* Bem redondo */ /* O TRUQUE DO RESPIRO: */ 
+        border: 3px solid transparent; /* A borda é invisível... */ 
+        background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cor-hover); /* Cor ao passar o mouse */
+    	background-color: var(--cor-hover); /* Cor ao passar o mouse */
 }
