@@ -1,49 +1,189 @@
 @charset "UTF-8";
 
-/* ---------- FONTES ---------- */
+/* ---------- ROOT ---------- */
+:root {
+            color-scheme: light;
+            
+            /* --- CORES GERAIS --- */
+            --cor-principal: #B71C1C;       /* Vermelho (Destaques) */
+            --cor-link: #1565C0;            /* Azul (Links Novos) */
+            --cor-hover: #424242;           /* Hover */
+            --cor-link-visitado: #7B1FA2;   /* Roxo (Links Visitados) */
+            --cor-branco: #ffffff;          /* Branco Puro */
+            
+            /* --- CORES DO TEXTO --- */
+            --cor-titulo: #212121;          /* Preto Suave (Títulos) */
+            --cor-texto: #333333;           /* Cinza Escuro (Texto Padrão) */
+            --cor-texto-suave: #757575;     /* Cinza Médio (Datas, legendas) */
+    
+            /* --- CORES DE FUNDOS --- */
+            --cor-fundo: #f0f0f0;           /* Fundo da Página */
+            --cor-fundo-detalhe: #fafafa;   /* Fundo de detalhes */
+            
+            /* --- CORES DE ELEMENTOS --- */
+            --cor-escuro: #222222;          /* Preto (Menus, Rodapé) */
+            --cor-cinza-claro: #E0E0E0;     /* Cinza Claro */
+            --cor-borda: #e0e0e0;           /* Borda padrão */
+            --cor-papel:#FFF8E1;            /* Bordas do backs */
+
+            /* --- CORES DE TABELAS --- */
+            --cor-tabela-claro: #EFEBE9;    /* Tons quentes (Bege claro) */
+            --cor-tabela-escuro: #e1dad7;   /* Tons quentes (Bege escuro) */
+
+            /* --- FONTES & TÉCNICA --- */
+            --fonte-padrao: 'Roboto', sans-serif;
+            --fonte-titulo: 'Oswald', sans-serif;
+            --fonte-serifa: 'Roboto Slab', serif;
+            --fonte-typewriter: 'Courier Prime', monospace;
+            --fonte-capitular: 'Playfair Display', serif; 
+    
+            /* --- HIFENIZAÇÃO & LEITURA --- */
+            --hifenizacao: 6 3 3;
+            --hifenizacao-mobile: 5 2 2;
+    
+            /* --- CONTROLE DE TÍTULOS (CLAMP) --- */
+            --titulo-tamanho: clamp(32px, 5vw, 42px);
+            --titulo-altura: 1.2;
+            --titulo-espacamento: 0.5px;
+            --titulo-transform: none;
+
+            /* --- PADRONIZAÇÃO DE TAMANHOS E FORMAS --- */
+            /* --- ESPAÇAMENTO RÍTMICO --- */
+            /* Use isso em margins e paddings ao invés de números aleatórios */
+            --espaco-xs: 4px;   /* Mínimo */
+            --espaco-s: 8px;    /* Pequeno */
+            --espaco-m: 16px;   /* Médio (Padrão) */
+            --espaco-l: 24px;   /* Grande */
+            --espaco-xl: 32px;  /* Extra Grande (Separação de posts) */
+
+            /* --- GEOMETRIA & TEXTURA --- */
+            --raio-pequeno: 4px;   /* Botões pequenos/Tags */
+            --raio-medio: 8px;     /* Cards de postagem */
+            --raio-grande: 16px;   /* Containers maiores */
+
+            /* --- SOMBRAS (PROFUNDIDADE) --- */
+            --sombra-suave: 0 2px 4px rgba(0,0,0, 0.05);      /* Estado normal */
+            --sombra-flutuante: 0 8px 16px rgba(0,0,0, 0.1);  /* Ao passar o mouse */
+    
+            /* --- TRANSIÇÃO --- */
+            --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+
+/* ---------- RESET & NORMALIZAÇÃO (MODERNO) ---------- */
+
+/* 1. Garante que larguras e paddings não quebrem o layout */
+*, *::before, *::after {
+            box-sizing: border-box;
+            }
+
+/* 2. Garante que imagens e vídeos nunca estourem a tela no celular */
+img, video, iframe, embed, object {
+        	max-width: 100%;
+        	height: auto; /* Mantém a proporção correta */
+        	display: block;
+            }
+
+/* 3. Faz botões e formulários usarem a fonte do blog */
+input, button, textarea, select {
+        	font: inherit;
+            }
+
+/* 4. Remove a margem padrão do corpo para aproveitar a tela toda */
+body {
+        	margin: 0;
+        	padding: 0;
+            }
+
+/* Oculta elementos que devem ser escondidos (Acessibilidade) */
+[hidden] {
+        	display: none !important;
+            }
+
+
+/* ---------- MODERNIZAÇÃO DA INTERFACE ---------- */
+
+/* 1. Rolagem Suave para links internos */
+html {
+        	scroll-behavior: smooth;
+            }
+
+/* 2. Personaliza a cor da seleção de texto (Vermelho e Branco) */
+::selection {
+        	background: var(--cor-principal);
+        	color: var(--cor-branco);
+            }
+
+::-moz-selection {
+        	background: var(--cor-principal);
+        	color: var(--cor-branco);
+            }
+
+/* 3. Barra de Rolagem Personalizada (Webkit) */
+::-webkit-scrollbar {
+            width: 12px;               /* Largura da barra vertical */
+            height: 12px;              /* Altura da barra horizontal */
+            }
+
+::-webkit-scrollbar-track {
+        	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
+            }
+
+::-webkit-scrollbar-thumb { 
+            background-color: var(--cor-principal);  /* Cor Vermelha */ 
+            border-radius: 10px; /* Bem redondo */ /* O TRUQUE DO RESPIRO: */ 
+       	border: 3px solid transparent; /* A borda é invisível... */ 
+       	background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ 
+            }
+
+::-webkit-scrollbar-thumb:hover {
+            background-color: var(--cor-hover); /* Cor ao passar o mouse */
+            }
+
+
+/* ---------- TEXTOS DE DESTAQUES ---------- */
 .spelite, .datilog {
             font-family: var(--fonte-typewriter) !important;
-}
+            }
 
 .roman {
             font-family: var(--fonte-serifa) !important;
-}
+            }
 
 /* ---------- EPÍGRAFE ----------- */
-
 .epigrafe {
-    /* Container da Citação */
-    display: block;
-    width: 60%;
-    margin-left: auto; /* Joga para direita */
-    margin-right: 0;
-    margin-bottom: 3rem;
+            /* Container da Citação */
+            display: block;
+            width: 60%;
+            margin-left: auto; /* Joga para direita */
+            margin-right: 0;
+            margin-bottom: 3rem;
     
-    /* Visual da Barra Vermelha */
-    background: transparent !important;
-    border: none !important;
-    border-right: 4px solid var(--cor-principal) !important; 
-    padding-right: 20px;
+            /* Visual da Barra Vermelha */
+            background: transparent !important;
+            border: none !important;
+            border-right: 4px solid var(--cor-principal) !important; 
+            padding-right: 20px;
     
-    /* Tipografia do Texto da Citação */
-    text-align: right;
-    font-family: var(--fonte-serifa);
-    font-style: italic;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--cor-texto-suave);
-}
+            /* Tipografia do Texto da Citação */
+            text-align: right;
+            font-family: var(--fonte-serifa);
+            font-style: italic;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--cor-texto-suave);
+            }
 
 .epigrafe cite {
     	display: block;      /* Força a ir para a linha de baixo automaticamente */
-   	 margin-top: 10px;    /* Dá o espaço necessário */
-   	 /* Estilo "Técnico" da linha toda (Autor + Obra) */
+   	margin-top: 10px;    /* Dá o espaço necessário */
+            /* Estilo "Técnico" da linha toda (Autor + Obra) */
     	font-family: sans-serif;
     	font-size: 0.8rem;
     	color: var(--cor-texto-suave);         /* Cinza claro */
     	font-style: normal;  /* Remove o itálico herdado */
     	font-weight: 400;
-}
+            }
 
 .epigrafe cite b, 
 .epigrafe cite strong {
@@ -51,15 +191,15 @@
     	text-transform: uppercase; /* Vira CAIXA ALTA sozinho */
     	letter-spacing: 1px;
     	font-weight: 700;
-}
+            }
 
-/* Mobile */
+/* --- EPÍGRAFE CELULAR --- */
 @media (max-width: 820px) {
 .epigrafe { 
-width: 100%; 
-padding-right: 15px; 
-border-right-width: 3px !important; 
-}
+            width: 100%; 
+            padding-right: 15px; 
+            border-right-width: 3px !important; 
+            }
 }
 
 
@@ -69,7 +209,7 @@ border-right-width: 3px !important;
         	width:30%;
         	opacity:0.5;
         	margin:3px auto 20px;
-}
+            }
 
 hr {
     	width: 50px !important;
@@ -82,7 +222,7 @@ hr {
 .capitular {
     	display: block;
     	position: relative;
-}
+            }
 
 .capitular::first-letter {
     	/* Se o navegador aceitar, ele faz o cálculo perfeito sozinho: */
@@ -100,32 +240,33 @@ hr {
     	margin-right: 12px;  /* Distância lateral */
     	margin-bottom: -5px; /* Puxa o texto de baixo para perto */
     	color: var(--cor-titulo); 
-}
+            }
 
 
-/* ---------- TEXTO ---------- */
+/* ---------- TEXTOS EM DESTAQUE ---------- */
 .poesia {
-/* 1. O MOTOR (Mantém a quebra de linha original) */
-white-space: pre-wrap;    
-/* 2. LIMPEZA (Garante que herde suas fontes ROMAN/CITACAO) */
-font-family: inherit;
-font-weight: inherit;
-font-style: inherit;
-color: inherit;
-display: block;    
-/* 3. A MÁGICA (O tamanho elástico) */
-/* Sintaxe: clamp(MÍNIMO, IDEAL, MÁXIMO) */    
-/* Mínimo: 0.85rem (aprox 13.6px) -> O "certo ponto" limite */
-/* Ideal:  4vw (calculado pela largura da tela) */
-/* Máximo: 1em (100% do tamanho do texto normal do pai) */
-font-size: clamp(0.85rem, 4vw, 1em);
-/* Ajuste fino da entrelinha para acompanhar a redução */
-line-height: 1.4;
-}
+            /* 1. O MOTOR (Mantém a quebra de linha original) */
+            white-space: pre-wrap;    
+            /* 2. LIMPEZA (Garante que herde suas fontes ROMAN/CITACAO) */
+            font-family: inherit;
+            font-weight: inherit;
+            font-style: inherit;
+            color: inherit;
+            display: block;    
+            /* 3. A MÁGICA (O tamanho elástico) */
+            /* Sintaxe: clamp(MÍNIMO, IDEAL, MÁXIMO) */    
+            /* Mínimo: 0.85rem (aprox 13.6px) -> O "certo ponto" limite */
+            /* Ideal:  4vw (calculado pela largura da tela) */
+            /* Máximo: 1em (100% do tamanho do texto normal do pai) */
+            font-size: clamp(0.85rem, 4vw, 1em);
+            /* Ajuste fino da entrelinha para acompanhar a redução */
+            line-height: 1.4;
+            }
+
 
 #dialogo > br {
         	margin-bottom:20px !important;
-}
+            }
 
 .paginas {
         	font-size:70%;
@@ -135,48 +276,48 @@ line-height: 1.4;
         	width:50%;
         	margin:5px auto 0;
         	text-align:center !important;
-}
+            }
 
 .italico {
-       	 font-style: italic !important;
-}
+            font-style: italic !important;
+            }
 
 .negrito {
        	font-weight: 900 !important;
-}
+            }
 
 .centraliza {
         	margin: 0 auto;
         	text-align:center;
         	display:block;
-}
+            }
 
 .centraliza hr {
-       	 margin:0 auto !important;
-}
+            margin:0 auto !important;
+            }
 
 .frase {
         	overflow:hidden;
-}
+            }
 
 .textopeq, .textoita {
         	font-size: 14px !important;
         	line-height: 18px !important;
        	margin-top: 8px;
-}
+            }
 
 sup {
         	color: var(--cor-principal) !important;
        	font-size:0.7em !important;
         	font-weight:bold;
         	margin-left:3px;
-}  
+            }  
 
 
 /* ---------- BLOCKQUOTE ---------- */
 
 blockquote {
-/* 1. POSICIONAMENTO (Direita, 45%) */
+            /* 1. POSICIONAMENTO (Direita, 45%) */
     	float: right !important;
     	width: 45% !important;
    	 /* Margens: afasta o texto principal da esquerda */
@@ -200,15 +341,7 @@ blockquote {
     	color: var(--cor-titulo); /* Um cinza quase preto para mais contraste */
     	position: relative !important;
     	box-sizing: border-box !important;
-}
-
-/* Remove ícones antigos */
-blockquote::before, 
-blockquote::after,
-.ast::before {
-    	content: none !important;
-    	display: none !important;
-}
+            }
 
 /* Autor */
 blockquote cite {
@@ -1048,79 +1181,6 @@ color:var(--cor-texto);
 }
 
 
-/* =========================================
-   RESET & NORMALIZAÇÃO (MODERNO)
-   ========================================= */
-
-/* 1. Garante que larguras e paddings não quebrem o layout */
-*, *::before, *::after {
-box-sizing: border-box;
-}
-
-/* 2. Garante que imagens e vídeos nunca estourem a tela no celular */
-img, video, iframe, embed, object {
-        	max-width: 100%;
-        	height: auto; /* Mantém a proporção correta */
-        	display: block;
-}
-
-/* 3. Faz botões e formulários usarem a fonte do blog */
-input, button, textarea, select {
-        	font: inherit;
-}
-
-/* 4. Remove a margem padrão do corpo para aproveitar a tela toda */
-body {
-        	margin: 0;
-        	padding: 0;
-}
-
-/* Oculta elementos que devem ser escondidos (Acessibilidade) */
-[hidden] {
-        	display: none !important;
-}
-
-
-/* ---------- MODERNIZAÇÃO DA INTERFACE ---------- */
-
-/* 1. Rolagem Suave para links internos */
-html {
-        	scroll-behavior: smooth;
-}
-
-/* 2. Personaliza a cor da seleção de texto (Vermelho e Branco) */
-::selection {
-        	background: var(--cor-principal);
-        	color: var(--cor-branco);
-}
-
-::-moz-selection {
-        	background: var(--cor-principal);
-        	color: var(--cor-branco);
-}
-
-/* 3. Barra de Rolagem Personalizada (Webkit) */
-::-webkit-scrollbar {
-        width: 12px;               /* Largura da barra vertical */
-        height: 12px;              /* Altura da barra horizontal */
-}
-
-::-webkit-scrollbar-track {
-        	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
-}
-
-::-webkit-scrollbar-thumb { 
-        background-color: var(--cor-principal);  /* Cor Vermelha */ 
-        border-radius: 10px; /* Bem redondo */ /* O TRUQUE DO RESPIRO: */ 
-       	border: 3px solid transparent; /* A borda é invisível... */ 
-       	background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ }
-
-::-webkit-scrollbar-thumb:hover {
-        background-color: var(--cor-hover); /* Cor ao passar o mouse */
-}
-
-
-
 
 
 /* AQUI COMEÇAM OS ANTIGOS (PARCIAL) */
@@ -1458,13 +1518,6 @@ select {
  	}
 }
 ---------- */
-
-
-
-
-
-
-
 
 /* REVISTA */
 
@@ -2109,5 +2162,14 @@ content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF
         margin: unset  !important;
         color:var(--cor-escuro) !important;
 }
+
+/* BLOCKQOUOTE Remove ícones antigos */
+blockquote::before, 
+blockquote::after,
+.ast::before {
+    	content: none !important;
+    	display: none !important;
+}
+
 
 
