@@ -1,828 +1,1054 @@
-@charset "UTF-8";
+
+
+
 
 /* ---------- FONTES ---------- */
 .spelite, .datilog {
-        	font-family: var(--fonte-typewriter) !important;
+            font-family: var(--fonte-typewriter) !important;
 }
 
 .roman {
-        	font-family: var(--fonte-serifa) !important;
+            font-family: var(--fonte-serifa) !important;
 }
 
-/* ---------- DIVISOR ---------- */
-.divisor, .divisor3  {
-    	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
-    	width:30%;
-    	opacity:0.5;
-    	margin:3px auto 20px;
+/* ---------- EPÍGRAFE ----------- */
+
+.epigrafe {
+    /* Container da Citação */
+    display: block;
+    width: 60%;
+    margin-left: auto; /* Joga para direita */
+    margin-right: 0;
+    margin-bottom: 3rem;
+    
+    /* Visual da Barra Vermelha */
+    background: transparent !important;
+    border: none !important;
+    border-right: 4px solid var(--cor-principal) !important; 
+    padding-right: 20px;
+    
+    /* Tipografia do Texto da Citação */
+    text-align: right;
+    font-family: var(--fonte-serifa);
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--cor-texto-suave);
 }
+
+.epigrafe cite {
+    	display: block;      /* Força a ir para a linha de baixo automaticamente */
+   	 margin-top: 10px;    /* Dá o espaço necessário */
+   	 /* Estilo "Técnico" da linha toda (Autor + Obra) */
+    	font-family: sans-serif;
+    	font-size: 0.8rem;
+    	color: var(--cor-texto-suave);         /* Cinza claro */
+    	font-style: normal;  /* Remove o itálico herdado */
+    	font-weight: 400;
+}
+
+.epigrafe cite b, 
+.epigrafe cite strong {
+    	color: var(--cor-texto-suave);      /* Um pouco mais escuro */
+    	text-transform: uppercase; /* Vira CAIXA ALTA sozinho */
+    	letter-spacing: 1px;
+    	font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 820px) {
+.epigrafe { 
+width: 100%; 
+padding-right: 15px; 
+border-right-width: 3px !important; 
+}
+}
+
+
+/* ---------- DIVISORES ---------- */
+.divisor, .divisor3  {
+        	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
+        	width:30%;
+        	opacity:0.5;
+        	margin:3px auto 20px;
+}
+
+hr {
+    	width: 50px !important;
+    	margin: 5px 0 5px 0 !important;
+    	border-top: 1px solid var(--cor-principal) !important;
+    	}
+
 
 /* ---------- CAPITULAR ---------- */
+.capitular {
+    	display: block;
+    	position: relative;
+}
+
+.capitular::first-letter {
+    	/* Se o navegador aceitar, ele faz o cálculo perfeito sozinho: */
+    	-webkit-initial-letter: 3;
+    	initial-letter: 3;
+    	/* Para garantir em todos os navegadores) */
+    	float: left;    
+    	font-family: var(--fonte-capitular);
+    	font-weight: 700;
+    	font-size: 7.2rem;   /* Aumentado de 5.6 para 7.2 */
+   	/* Line-height baixo impede que a caixa da letra fique gigante e empurre o texto */
+    	line-height: 0.55;   
+    	/* Margin-top positivo empurra a letra para baixo (para alinhar o topo) */
+    	margin-top: 12px;
+    	margin-right: 12px;  /* Distância lateral */
+    	margin-bottom: -5px; /* Puxa o texto de baixo para perto */
+    	color: var(--cor-titulo); 
+}
 
 
 /* ---------- TEXTO ---------- */
 .poesia {
-    	white-space: pre-wrap;
-    	min-font-size:50% !important;
+/* 1. O MOTOR (Mantém a quebra de linha original) */
+white-space: pre-wrap;    
+/* 2. LIMPEZA (Garante que herde suas fontes ROMAN/CITACAO) */
+font-family: inherit;
+font-weight: inherit;
+font-style: inherit;
+color: inherit;
+display: block;    
+/* 3. A MÁGICA (O tamanho elástico) */
+/* Sintaxe: clamp(MÍNIMO, IDEAL, MÁXIMO) */    
+/* Mínimo: 0.85rem (aprox 13.6px) -> O "certo ponto" limite */
+/* Ideal:  4vw (calculado pela largura da tela) */
+/* Máximo: 1em (100% do tamanho do texto normal do pai) */
+font-size: clamp(0.85rem, 4vw, 1em);
+/* Ajuste fino da entrelinha para acompanhar a redução */
+line-height: 1.4;
 }
 
 #dialogo > br {
-    	margin-bottom:20px !important;
+        	margin-bottom:20px !important;
 }
 
 .paginas {
-    	font-size:70%;
-    	opacity:0.6;
-    	border-top:1px solid var(--cor-principal);
-    	padding-top:2px;
-    	width:50%;
-    	margin:5px auto 0;
-    	text-align:center !important;
+        	font-size:70%;
+        	opacity:0.6;
+        	border-top:1px solid var(--cor-principal);
+        	padding-top:2px;
+        	width:50%;
+        	margin:5px auto 0;
+        	text-align:center !important;
 }
 
 .italico {
-    	font-style: italic !important;
+       	 font-style: italic !important;
 }
 
 .negrito {
-    	font-weight: 900 !important;
+       	font-weight: 900 !important;
 }
 
 .centraliza {
-    	margin: 0 auto;
-    	text-align:center;
-    	display:block
+        	margin: 0 auto;
+        	text-align:center;
+        	display:block;
 }
 
 .centraliza hr {
-    	margin:0 auto !important;
+       	 margin:0 auto !important;
 }
 
 .frase {
-    	overflow:hidden;
+        	overflow:hidden;
 }
 
 .textopeq, .textoita {
-    	font-size: 14px !important;
-    	line-height: 18px !important;
-    	margin-top: 8px;
+        	font-size: 14px !important;
+        	line-height: 18px !important;
+       	margin-top: 8px;
+}
+
+sup {
+        	color: var(--cor-principal) !important;
+       	font-size:0.7em !important;
+        	font-weight:bold;
+        	margin-left:3px;
+}  
+
+
+/* ---------- BLOCKQUOTE ---------- */
+
+blockquote {
+/* 1. POSICIONAMENTO (Direita, 45%) */
+    	float: right !important;
+    	width: 45% !important;
+   	 /* Margens: afasta o texto principal da esquerda */
+    	margin: 5px 0 20px 30px !important;
+    	/* 2. LIMPEZA */
+    	background: transparent !important;
+    	border: none !important;
+    	padding: 0 !important;
+   	 /* 3. IDENTIDADE VISUAL */
+    	/* Aumentei a borda para 5px para acompanhar o texto maior */
+    	border-left: 5px solid var(--cor-principal) !important;
+    	padding-left: 20px !important; 
+    	/* 4. TIPOGRAFIA (A Grande Mudança) */
+    	text-align: left !important;
+    	font-family: var(--fonte-serifa) !important;
+    	/* AUMENTO DE TAMANHO */
+    	font-size: 1.7rem !important; /* Grande e visível */
+    	line-height: 1.25 !important; /* Linhas mais unidas (estilo manchete) */
+    	font-style: italic !important;
+    	font-weight: 400 !important;
+    	color: var(--cor-titulo); /* Um cinza quase preto para mais contraste */
+    	position: relative !important;
+    	box-sizing: border-box !important;
+}
+
+/* Remove ícones antigos */
+blockquote::before, 
+blockquote::after,
+.ast::before {
+    	content: none !important;
+    	display: none !important;
+}
+
+/* Autor */
+blockquote cite {
+    	display: block;
+    	margin-top: 15px;
+    	font-family: sans-serif;
+    	font-size: 0.8rem;
+    	font-weight: 700;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    	color: #999;
+    	font-style: normal;
+    	line-height: 1.4 !important;
+}
+
+/* MOBILE (Segurança) */
+@media (max-width: 650px) {
+blockquote {
+        	float: none !important;
+        	width: 100% !important;
+        	margin: 2rem 0 !important;
+        	padding-left: 20px !important;
+        	/* No celular, reduzimos um pouco para não ficar gigante demais */
+        	font-size: 1.4rem !important; 
+    	}
 }
 
 
-/* -------------------- BORDAS ----------------------- */
+/* ---------- NOTAS LATERAIS ---------- */
+
+.nota-lateral {
+    	float: right;
+    	width: 45%;    
+    	margin: 8px 0 20px 25px; 
+     	background: transparent;
+    	padding-top: 10px; /* Espaço entre a linha e o texto */
+     	border-top: 1px solid var(--cor-principal); 
+     	font-family: var(--fonte-serifa);
+    	font-size: 0.8rem;
+    	line-height: 1.4;
+    	color: #666;             /* Cinza médio para não cansar a vista */
+    	text-align: left;
+    	/* Garante que a caixa não quebre */
+    	box-sizing: border-box;
+    	clear: right; /* Evita encavalar com outras imagens à direita */
+}
+
+/* Destaque para o Asterisco ou Número no início */
+.nota-lateral strong {
+    	color: var(--cor-principal); /* O asterisco fica vermelho */
+    	font-weight: 700;
+    	margin-right: 4px;
+}
+
+/* --- MOBILE (Ajuste de Segurança) --- */
+@media (max-width: 650px) {
+.nota-lateral {
+        	float: none;
+        	width: 100%;
+        	margin: 2rem 0;
+        	border-top: 1px solid var(--cor-borda); /* No mobile, linha cinza suave */
+       	border-left: 3px solid #B71C1C; /* Troca para lateral no mobile para dar estrutura */
+        	padding-left: 15px; /* Recuo */
+    	}
+}
+
+
+/* ---------- BORDAS ---------- */
+
 .borda {
-    	padding-left:10px; 
-    	border-left:1px solid var(--cor-principal);
-}
-
-.borda2 {
-    	padding-left:15px; 
-    	border-left:4px solid var(--cor-principal);
-}
-
-.borda3 {
-    	padding-left:15px; 
-      	border-image: linear-gradient(to bottom, var(--cor-principal),  rgb(240, 240, 240)) 6 / 0 0 0 1 / 3 stretch; 
-    	border-style: solid; 
-    	border-width: 1px;
-}
-
-.borda4 {
-    	padding-right:15px; 
-      	border-image: linear-gradient(to bottom, var(--cor-principal),  rgb(255, 255, 255)) 6 / 0 1 0 0 / 3 stretch; 
-    	border-style: solid; 
-    	border-width: 1px;
+        	padding-left:10px; 
+        	border-left:1px solid var(--cor-principal);
 }
 
 .bordas { 
-    	border:1px solid var(--cor-borda) !important;
+        	border:1px solid var(--cor-principal) !important;
 }
 
-/* ---------- TEXTO RESPONSIVO ---------- */
-@media only screen and (max-width: 1024px) {
-.poesia, legend, blockquote { 
-/* Mínimo 16px, Ideal 4% da tela, Máximo 22px */ 
-font-size: clamp(16px, 4vw, 22px) !important; 
-} 
-}
 
-/* ---------- CONFIGURAÇÃO DE DIVS ---------- */
-.pads { 
-    	padding:5px !important;
-}
-
-.margem {
-    	margin-top:15px;
-}
-
-.margens {
-    	margin-bottom:20px;
-}
-
-/* ---------- BACKGROUNDS ---------- */
-.backs { 
-    	background:var(--cor-papel) !important;
-}
-
-.transparente {
-    	background:transparent !important;
-}
-
-/* ---------- IMAGENS ---------- DESATIVAR PARA TESTE
+/* ---------- IMAGENS ---------- */
 
 figure {
-    	display: block !important;
-    	max-width: 35% !important;
-    	height: auto !important;
-        	position:relative !important;
-        	box-sizing: border-box !important;
-    	overflow: hidden;
+    	width: fit-content;
+    	width: -moz-fit-content;
+    	max-width: 100%;
+    	margin-bottom: 1.5rem;
 }
 
-.dir {
-    	float: right !important;
-    	margin: 10px 0 5px 20px !important;
-}
-
-.esq {
-    	float: left !important;
-    	margin: 10px 20px 5px 0 !important;
-}
-
-.centro {
-    	max-width: 90% !important;
-    	margin: 0 auto 25px !important;
-}
-
--------*/ FIM DE DESATIVAR PARA TESTES
-
-/* Configuração Base Inteligente */
-figure {
-    display: table; /* Fallback antigo */
-    width: fit-content; /* Moderno: O figure abraça o tamanho exato da imagem */
-    width: -moz-fit-content; /* Firefox */
-    max-width: 100%; /* Nunca estoura a tela do celular */
-    margin-bottom: 1.5em; /* Espaço padrão abaixo */
-}
-
-/* TESTE DE FIGURE MODERNO */
 figure img {
-    display: block;
-    width: 100%; /* Preenche o figure */
-    height: auto; /* MANTÉM A PROPORÇÃO ORIGINAL (Vertical ou Horizontal) */
-    max-width: 100%;
+    	display: block;
+    	width: 100%;
+    	height: auto;
+    	max-width: 100%;
 }
 
-/* --- SEUS ALINHAMENTOS (Modernizados) --- */
-
-/* Esquerda com Texto Abraçando (Se tiver poligono) */
 .esq {
-    float: left;
-    margin: 0 20px 10px 0 !important;
-    /* Se você usar clip-path na imagem, o texto vai acompanhar a forma! */
-    shape-outside: attr(style); 
+    	float: left;
+    	/* Margem otimizada: Topo | Dir | Baixo | Esq */
+   	 margin: 0.6rem 1.2rem 0.6rem 0;
+   	 /* SEGURANÇA: Impede que a imagem esmague o texto no celular */
+    	max-width: 45%; 
+   	 /* ESSENCIAL PARA POLÍGONOS: */
+    	/* Cria o "respiro" entre o seu polígono e o texto */
+    	shape-margin: 1.2rem;
 }
 
-/* Direita */
 .dir {
-    float: right;
-    margin: 0 0 10px 20px !important;
+    	float: right;
+    	/* Margem otimizada: Topo | Dir | Baixo | Esq */
+    	margin: 0.6rem 0 0.6rem 1.2rem;
+    	/* SEGURANÇA */
+    	max-width: 45%;
+    	/* ESSENCIAL PARA POLÍGONOS */
+    	shape-margin: 1.2rem;
 }
 
-/* Centro */
 .centro {
-    display: block; /* Ou flex */
-    margin: 0 auto 25px auto !important;
-    float: none !important;
+    	display: block;
+    	float: none !important;
+    	height: auto;
+    	/* AQUI: Mudei para REM para manter o padrão moderno das laterais */
+    	/* 1.5rem geralmente equivale aos mesmos 24px do 1.5em padrão */
+    	margin: 0 auto 1.5rem auto !important; 
+   	 /* Desktop */
+    	width: 90%; 
 }
 
-
-/* FIM DE TESTE DE FIGURE MODERNO */
-
-.meio {
-    	max-width: 45% !important;
-}
-
-.meio2 {
-    	max-width: 40% !important;
-}
-
-.rodadir {
-    	-webkit-transform:rotate(5deg);
-      	-moz-transform: rotate(5deg);
-      	-ms-transform: rotate(5deg);
-      	-o-transform: rotate(5deg);
-      	transform: rotate(5deg);
+/* Celular/Tablet (Padrão 820px) */
+@media (max-width: 820px) {
+.centro {
+        	width: 100%;
+    	}
 }
 
 .fotopeq {
-    	height:auto;
-    	width:20%;
-    	max-width:20%;
-    	align: top;
-    	float: left;
-    	margin: 10px 20px 5px 0;
-    }
-
-.rodaesq {
-    	-webkit-transform:rotate(-5deg);
-      	-moz-transform: rotate(-5deg);
-      	-ms-transform: rotate(-5deg);
-      	-o-transform: rotate(-5deg);
-      	transform: rotate(-5deg);
-}
-
-.inv {
-    	-webkit-transform: scaley(-1); 
-   	 transform: scaley(-1);    
-}
-
-/* ---------- IMAGENS EM COLUNAS ---------- */
-#foto2 {
-    	display: flex; 
-    	width: 90%;
-    	margin: 0 auto;
-    	text-align:center;
-    	flex-wrap: wrap;
-}
-
-#foto2::after {
-    	clear:both;
-}
-
-.foto3, .separator {
-    	margin: 0 auto !important;
-    	position:relative !important;
-    	display:block !important;
-}
+        	height:auto;
+        	width:20%;
+        	max-width:20%;
+        	align: top;
+        	float: left;
+        	margin: 10px 20px 5px 0;
+    	}
 
 /* ---------- POPUP DO FANCYBOX ---------- */
 .fancybox-slide--iframe .fancybox-content {
-        	width  : 800px;
-        	height : 600px;
-        	max-width  : 80%;
-        	max-height : 80%;
-        	margin: 0;
+            width  : 800px;
+            height : 600px;
+            max-width  : 80%;
+            max-height : 80%;
+            margin: 0;
 }
 
-/* ---------- CRÉDITOS ---------- */
-figcaption {
-      	position:absolute !important;
-        	color: var(--cor-branco) !important;
-    	width:100% !important;
-    	bottom:10px !important;
-        	height:25px !important;
-    	line-height:25px !important;
-    	font-size:0.6em !important;
-    	padding: 0 10px !important;
-    	background: rgba(0, 0, 0, 0.4)  !important;
-    	font-weight: normal !important;
-    	overflow:hidden !important;
-        	box-sizing: border-box !important;
+/*---------- FIGURE e CRÉDITOS MODERNOS ---------- */
+
+figure.moderno {
+  	display: grid;
+  	/* Define linhas automáticas: 
+     	Linha 1: Foto + Badge 
+     	Linha 2: Bio 
+     	Linha 3: Autor/Crédito (opcional) */
+  	grid-template-rows: auto auto auto; 
+  	width: fit-content;
+  	width: -moz-fit-content;
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	position: relative;
 }
 
-.credito {
-    	text-align:left;
+/* --- 2. A FOTO (Forçada na Linha 1) --- */
+figure.moderno img {
+  	grid-row: 1;    /* Ocupa a primeira linha */
+  	grid-column: 1; /* Ocupa a primeira coluna */
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	max-width: 100%;
 }
 
-.credir {
-    	float:right !important;
-color:var(--cor-cinza-claro);
+/* --- 3. O BADGE (Forçado na Linha 1 - SOBREPOSTO) --- */
+figure.moderno figcaption {
+  	grid-row: 1;    /* IMPORTANTE: Mesma linha da foto */
+  	grid-column: 1; /* IMPORTANTE: Mesma coluna da foto */ 
+  	/* Posicionamento: Cola no chão da foto */
+  	align-self: end;
+  	/* O RESPIRO CHARMOSO (5px acima da base) */
+  	margin-bottom: 5px; 
+  	width: fit-content;
+  	min-width: 60px;
+  	/* Estética Sóbria */
+  	background: rgba(0, 0, 0, 0.65); 
+  	color: var(--cor-branco);
+  	border-radius: 0;
+  	backdrop-filter: blur(2px);
+  	/* Tipografia */
+  	padding: 5px 10px;
+  	font-family: var(--fonte-padrao);
+  	font-size: clamp(9px, 2vw, 11px);
+  	font-weight: 700;
+  	line-height: 1;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  
+  	z-index: 10; /* Garante que fique EM CIMA da foto */
+  	transition: background 0.3s ease;
 }
 
-.cred {
-    	font-size:0.6em !important;
-        	color: var(--cor-texto-suave) !important;
-    	margin-top:-7px !important;
-    	overflow:hidden !important;
-    	line-height:1.3em !important;
+figure.moderno:hover figcaption {
+    	background: rgba(0, 0, 0, 0.9);
 }
 
-.credito2, .cred2 {
-    	font-size:0.6em !important;
-        	color: var(--cor-cinza-claro) !important;
-    	text-align:right !important;
-    	margin-top:-7px !important;
-    	overflow:hidden !important;
+figure.moderno .info {
+  	grid-row: 2; /* Vai para a linha de baixo */
+  	grid-column: 1;
+  	display: block;
+  	margin-top: 8px;
+  	border-left: 3px solid var(--cor-principal);
+  	padding-left: 10px; 
+  	font-size: 0.9rem;
+  	color: var(--cor-texto-suave);
+  	text-align: left;
+  	line-height: 1.45;
 }
 
-.credito3 {
-    	font-size:0.6em !important;
-        	color: var(--cor-texto-suave) !important;
-    	text-align:left !important;
-    	margin-top:-7px !important;
-    	padding: 5px 8px !important;
-        	background: var(--cor-cinza-claro) !important;
+figure.moderno .autoria {
+  	grid-row: 3; /* Terceira linha, abaixo da bio */
+  	grid-column: 1;
+  	display: block;
+  	margin-top: 4px; /* Espacinho sutil */
+  	/* Estilo Minimalista */
+  	font-size: 0.7rem;       /* Bem pequeno */
+  	color: #999;             /* Cinza claro para não chamar atenção */
+  	text-align: right;       /* Alinhado à direita (padrão de crédito) */
+  	font-style: italic;
 }
 
-.credito4, #credito4 {
-    	font-size:calc(0.5rem + 0.5vw);
-    	background:rgba(0, 0, 0, 0.2);
-    	color:var(--cor-cinza-claro);
-    	content:"";
-    	padding: 0 5px;
-    	width:auto;
-    	float:left;
-    	max-width:100%;
+/* ---------- MOSAICO DE IMAGENS ---------- */
+
+.mosaico {
+    	display: grid;
+    	gap: 10px;
+    	width: 100%;
+    	margin-bottom: 2rem;
+    	box-sizing: border-box;
+}
+
+/* --- O BLOCO DA FOTO (Figure) --- */
+.mosaico-item {
+    	position: relative;
+   	margin: 0 !important;
+    	padding: 0 !important;
+    	width: 100%;
+    	height: 100%;
     	overflow: hidden;
-    	clear:both;
-    	position:relative;
-    	bottom:2.7em;
-    	left:0.3em;
-    	font-weight:normal !important;
+    	border: none;
+    	background: none;
+}
+
+/* --- A IMAGEM (Preenchimento Total) --- */
+.mosaico-item img, 
+.mosaico-item a img,
+.mosaico-item .separator img {
+    	width: 100%;
+    	height: 100% !important;
+    	object-fit: cover;
+    	display: block;
+    	border-radius: 2px;
+}
+
+/* --- A LEGENDA (Dark Badge) --- */
+.mosaico-item figcaption {
+    	position: absolute;
+    	bottom: 5px;
+    	left: 0;
+    	background-color: rgba(0, 0, 0, 0.7);
+    	color: var(--cor-branco);
+    	display: inline-block;
+    	padding: 4px 10px;
+    	font-family: sans-serif;
+    	font-size: 0.75rem;
+    	font-weight: 500;
+    	pointer-events: none;
+    	z-index: 10;
+}
+
+/* ---------- MODO VERTICAL (2 colunas x 2 linhas) ----------  */
+.mosaico.vertical {
+    	grid-template-columns: 1fr 1fr;
+    	grid-template-rows: repeat(2, 1fr);
+    	aspect-ratio: 4 / 3;
+}
+
+/* Cenario A: Grande na ESQUERDA (Padrao) */
+.mosaico.vertical > :first-child {
+    	grid-column: 1;
+    	grid-row: span 2;
+    	height: 100%;
+}
+
+/* Cenario B: Grande na DIREITA (Invertido) */
+.mosaico.vertical.direita > :first-child {
+    	grid-column: auto; grid-row: auto; height: 100%; /* Reseta o padrao */
+}
+
+.mosaico.vertical.direita > :last-child {
+    	grid-column: 2;        /* Vai pra direita */
+    	grid-row: 1 / span 2;  /* Força inicio no topo */
+    	height: 100%;
+}
+
+/* ---------- MODO VERTICAL  (2 colunas (flexivel para 3)) ---------- */
+.mosaico.horizontal {
+    	grid-template-columns: 1fr 1fr; 
+    	grid-template-rows: auto auto;
+    	aspect-ratio: auto;
+}
+
+/* Variaçao: 3 colunas (Se tiver classe .tripla) */
+.mosaico.horizontal.tripla {
+    	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Cenario A: Panoramica em BAIXO (Padrao) */
+.mosaico.horizontal > :last-child {
+    	grid-column: 1 / -1; /* Ocupa tudo */
+    	height: 100%;
+}
+
+/* Cenario B: Panoramica em CIMA (Invertida) */
+.mosaico.horizontal.invertida > :first-child {
+    	grid-column: 1 / -1; /* Ocupa tudo */
+    	height: 100%;
+}
+.mosaico.horizontal.invertida > :last-child {
+    	grid-column: auto; /* Reseta */
+}
+
+/* ----------- MOBILE (Responsividade Total) -----------  */
+@media (max-width: 650px) {
+.mosaico.vertical, .mosaico.vertical.direita,
+.mosaico.horizontal, .mosaico.horizontal.tripla {
+        	display: flex;
+        	flex-direction: column;
+        	aspect-ratio: auto;
+        	gap: 15px;
+    	}
+
+.mosaico-item img {
+        	height: auto !important;
+        	aspect-ratio: 3/2;
+    	}
+}
+
+/* ---------- FIGURAS e ALINHAMENTOS ---------- */
+
+/* DIREITA */
+figure.moderno.dir {
+  	float: right;
+ 	margin: 0.5rem 0 0.5rem 1rem;
+  	shape-margin: 1.2rem;
+  	max-width: 50%;
+}
+
+figure.moderno.dir figcaption { 
+  	justify-self: end; 
+  	text-align: right;
+  	margin-right: 0; 
+}
+
+/* ESQUERDA */
+figure.moderno.esq {
+  	float: left;
+  	margin: 0.5rem 1rem 0.5rem 0;
+  	shape-margin: 1.2rem;
+  	max-width: 50%;
+}
+
+figure.moderno.esq figcaption { 
+  	justify-self: start; 
+  	text-align: left;
+  	margin-left: 0;
+}
+
+/* CENTRO */
+figure.moderno.centro {
+  	float: none;
+  	display: grid; 
+  	margin: 0 auto 1.5rem auto;
+  	width: auto;
+  	max-width: 100%;
+}
+
+/* Badge à ESQUERDA no centro */
+figure.moderno.centro figcaption { 
+  	justify-self: start; 
+  	text-align: left;
+}
+
+/* Mobile */
+@media (max-width: 380px) {
+ figure.moderno.dir,
+ figure.moderno.esq {
+     	max-width: 60%; 
+  	}
+}
+
+/* =======================================================
+   LEGENDA EM CAIXA (Estilo Nota Técnica)
+   Uso: Para destaques dentro de figures
+   ======================================================= */
+
+.cred3 {
+ 	/* 1. Estrutura e Fundo */
+    	display: block;          /* Garante que comporte o texto */
+    	background-color: var(--cor-fundo-detalhe); /* Cinza muito suave (limpo) */
+    	border-left: 3px solid var(--cor-principal); /* A Assinatura Vermelha */
+    	/* 2. Espaçamento (Sem margens negativas perigosas) */
+    	padding: 8px 12px;       /* Respiro interno confortável */
+   	margin-top: 0;           /* Zera margens para colar na foto */
+   	width: auto;             /* Adapta-se à largura do container */
+    	/* 3. Tipografia Harmonizada */
+    	font-family: sans-serif; /* A mesma das outras legendas */
+    	font-size: 0.75rem !important; /* Pequeno, mas legível (aprox 12px) */
+    	line-height: 1.4;        /* Altura de linha confortável */
+    	color: var(--cor-texto-suave) !important;  /* Cinza escuro (leitura fácil) */
+    	text-align: left !important;
+    	/* 4. Acabamento */
+    	box-sizing: border-box;  /* Garante que o padding não estoure a largura */
+}
+
+/* Ajuste fino: Se a imagem tiver borda ou padding, isso garante a união */
+figure .cred3 {
+    	width: 100%; /* Ocupa a largura total da figure */
 }
 
 .arte {
-    	text-align:right;
-    	line-height:0.8 !important;
-         	margin-top:-31px;
-          	margin-bottom:35px
+        	text-align:right;
+        	line-height:0.8 !important;
+            margin-top:-31px;
+            margin-bottom:35px;
 }
 
 .arte::before {
-     	content: attr(artista);
-          	color: var(--cor-texto-suave);
-          	font-size:12px;
+         	content: attr(artista);
+            color: var(--cor-texto-suave);
+            font-size:12px;
 }
 
-.numeracao {
-    	color: var(--cor-branco);
-   	font-size:2em;
-   	font-weight:bold;
-   	line-height:1em;
-   	position:absolute;
-   	top:0.1em;
-   	left:0.1em;
-   	display:block;
-   	border:0px solid var(--cor-texto);
-   	opacity:0.6;
-}
 
 /* ---------- VÍDEOS ---------- */
 
-.vid {
-      	position: relative;
-      	padding-bottom: calc(var(--ratio, 0.5625) * 100%);
-      	height: 0;
-      	width: 100%;
+/* O Container do Vídeo */
+.video-box {
+    	display: block;
+    	width: 100%;
+    	/* Padrão Widescreen (16:9) sem gambiarras de padding */
+    	aspect-ratio: 16 / 9; 
+    	margin-bottom: 0.5rem; /* Espacinho para a legenda (8px) */
+    	position: relative;    /* Apenas para segurança */
 }
 
+/* O Player */
 .vid iframe {
-      	position: absolute;
-      	top: 0;
-      	left: 0;
-      	width: 100%;
-      	height: 100%;
+    	width: 100%;
+    	height: 100%;
+    	display: block;
+   	 border: none;
+    	border-radius: 2px;
 }
 
-.index1 {
-    	z-index:1 !important;
+/* --- VARIAÇÕES DE FORMATO --- */
+/* Basta adicionar a classe junto: class="vid quadrado" */
+.vid.quadrado { aspect-ratio: 1 / 1; }
+.vid.vertical { aspect-ratio: 9 / 16; }
+
+/* --- A LEGENDA --- */
+.info2 {
+    	display: block;
+    	font-family: sans-serif;
+    	font-size: 0.75rem;     /* Pequeno (~12px) */
+    	line-height: 1.3;
+    	color: var(--cor-texto-suave);            /* Cinza Editorial */
+    	border-top: 1px solid var(--cor-borda); /* Linha fina e discreta em cima */
+    	padding-top: 0.4rem;    /* Respiro da linha */
+    	margin-bottom: 1rem;    /* Espaço para o texto seguinte */
+    	text-align: left;
 }
 
+/* Destaque opcional para o título */
+.info2 strong {
+   	 color: var(--cor-principal); /* Sua Assinatura Vermelha */
+    	text-transform: uppercase;
+    	font-size: 0.7rem;
+    	margin-right: 0.4rem;
+}
         
 /* ---------- BOXES ---------- */
 #citacao, .citacao  {
-    	margin: 0 5% !important;
-}
-
-#citacao hr {
-    	width: 30% !important;
-    	clear: both  !important;
+        margin: 0 5% !important;
 }
 
 .citacao2 {
-    	margin: 0 5% !important;
-    	padding:20px;
-    	background: var(--cor-cinza-claro);
+        margin: 0 5% !important;
+        padding:20px;
+        background: var(--cor-cinza-claro);
 }
 
-#citalivro {
-        	font-family: var(--fonte-serifa) !important;
-        	font-size:95% !important;
-        	color: var(--cor-hover) !important; /* Usando cor-hover (cinza escuro) */
-    	width:90% !important;
-    	margin:0 auto !important;
-    	padding:20px !important;
-    	font-style: none !important;
-}
-
-#citalivro > br {
-    	margin-bottom:20px !important
-}
-
-/* ---------- NOTAS ---------- */
-#nota, .nota {
-    	color: var(--cor-texto-suave); 
-    	float: right; 
-    	font-size: 80%; 
-    	width:auto;
-    	max-width: 50%;
-    	clear: both !important;
-      	display:block;
-}
-
-/* ---------- BLOCKQUOTE ---------- */
-blockquote {
-    	font-size: 20px;
-     	font-family: var(--fonte-padrao) !important;
-    	font-weight: 600;
-    	line-height: 1.4;
-   	max-width: 35%;
-    	float: right;
-    	padding: 15px 10px;
-    	position: relative !important;
-      	background: var(--cor-cinza-claro);
-    	color: var(--cor-texto-suave);
-    	text-align: center;
-    	margin: 10px 0 5px 20px !important;
-    	z-index:1 !important;
-}
-
-blockquote::before, blockquote::after, ast::before {
-      	color: var(--cor-principal);
-      	background: transparent;
-      	font-family:'FontAwesome'; 
-      	padding: 0 4px 0 4px;
-      	font-size:20px;
-      	position: absolute !important;
-      	display:block;
-}
-
-blockquote::before {
-      	content:"\f10d";
-       	top: -20px !important;
-      	left: 10px !important;
-}
-
-.ast::before {
-      	content:"\f069";
-    	top: -15px !important;
-    	font-size:17px !important;
-      	left: 10px !important;
-}
-
-.aspas {
-    	font-family:'FontAwesome';
-    	content:"\f10d";
-    	font-size:3em;
-    	line-height:auto !important;
-    	margin-right:5px !important;
-    	padding:0 !important;
-    	opacity:0.5;
-    	font-style: normal !important;
-    	display:inline !important;
-}
 
 /* ---------- ORNAMENTOS ---------- */
 #ornamento {
-    	width: 100%;
-    	position: relative;
-    	margin-right: 10px; 
+        	width: 100%;
+        	position: relative;
+        	margin-right: 10px; 
 }
 
 .moldura {
-    	position: absolute;
-    	float: right;  
-    	right: 0; 
-    	opacity: 0.1;
+        	position: absolute;
+        	float: right;  
+        	right: 0; 
+        	opacity: 0.1;
 }
 
 .superior, .cima {
 content:url(https://1.bp.blogspot.com/--sGhlKtVdt0/X_ndkJP9TqI/AAAAAAACpno/745-P43jnAspuoU4-fRIPOHryqgk_U5RgCLcBGAsYHQ/s0/cant-alta.png);
-    	width:30%;
+        	width:30%;
 }
 
 .media, .central {
 content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZslOU3JXAccKe0EkdOCJJlJZtsXpAWwCLcBGAsYHQ/s0/cant-centro.png);
-   	 top: 50%;
-    	transform: translateY(-50%);
-    	width:30%;
+        	top: 50%;
+        	transform: translateY(-50%);
+        	width:30%;
 }
 
 .inferior, .baixo {   content:url(https://1.bp.blogspot.com/-SnALcnPDM2k/X_ndkHPYBtI/AAAAAAACpns/bJPYauJk5C42qM34rpBHfCGciK4e1BJPQCLcBGAsYHQ/s0/cant-baixa.png);
-    	bottom: 0;
-    	width:30%;
+        	bottom: 0;
+        	width:30%;
 }
 
-/* ---------- CAPÍTULOS ---------- */
-.cap-ant {
-content:url(https://1.bp.blogspot.com/-6Dp8sAIxKGo/YApSrf1Ge9I/AAAAAAACqXw/EzsNn5ga86MeuVkx0cxQokoq3jRm0ZdygCLcBGAsYHQ/s0/CAP%2BANT.png);
-  	margin:-1em 0 1em;
- 	width:70%;
-  	float:right;
-  	clear:both;
-  	display:block;
-}
-
-.cap-pro {
-content:url(https://1.bp.blogspot.com/-ntwTP2eGkPc/YArkxjCH8KI/AAAAAAACqYE/b--JF0R_Vd4Em9cLlskR2-7OgYKQCZKOACLcBGAsYHQ/s0/CAP%2BPROX.png);
-  	width:70%;
-  	float:right;
-  	clear:both;
-  	display:block;
-}
 
 /* ---------- PONTO FINAL  ---------- */
 .pontofinal {
-    	float:right;
-    	width:40px;
-    	margin-top:-20px;
-    	margin-bottom:-20px; content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
+        float:right;
+        width:40px;
+        margin-top:-20px;
+        margin-bottom:-20px; content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
     border-radius:50%;
 }
 
+
+/* ---------- NOTAS FINAIS ----------- */
+
+.pos-escrito {
+    	margin-top: 4rem;      /* Distância grande do fim do texto */
+    	padding-top: 1.5rem;   /* Respiro interno */
+    	color: var(--cor-texto-suave);       /* Cinza médio) */
+    	font-size: 0.9rem;     /* Um pouco menor (aprox 14px) */
+    	line-height: 1.6;
+}
+
+.pos-escrito ul, 
+.pos-escrito ol {
+    	margin-left: 1.5rem; /* Recuo da margem esquerda */
+    	padding-left: 1rem;  /* Espaço entre o marcador e o texto */
+    	color: var(--cor-texto-suave);         /* Cor do texto do item */
+}
+
+.pos-escrito li {
+    	/* 1. Formato Geométrico */
+    	list-style-type: square;
+    	margin-bottom: 2px;  /* Quase colado, apenas um respiro mínimo */
+    	line-height: 1.4;    /* Altura de linha mais econômica */
+}
+
+.pos-escrito li::marker {
+    	color: var(--cor-texto-suave);  
+    	font-size: 0.9em;  /* Tamanho discreto */
+}
+
+
 /* ---------- BARRA LATERAL ----------- */
 #PopularPosts2 ul {
-    	background-color: transparent !important;
-    	text-align:center !important;
-    	display: flex;
-    	flex-wrap: wrap;
+        	background-color: transparent !important;
+       	 text-align:center !important;
+       	 display: flex;
+        	flex-wrap: wrap;
 }
 
 #PopularPosts2 li {
-    	padding:0 !important;
-    	margin: 0 auto 35px auto !important;
-    	width:320px;
-    	height:150px;
-    	position:relative;
+       	 padding:0 !important;
+        	margin: 0 auto 35px auto !important;
+        	width:320px;
+        	height:150px;
+        	position:relative;
 }
 
 #PopularPosts2 li.contador {
-   	counter-increment: item;
-   	position:relative;
- }
+       	counter-increment: item;
+       	position:relative;
+}
 
 #PopularPosts2 li.contador:before {
-   	content: counter(item);
-    	color: var(--cor-branco);
-   	font-size:3.5em;
-  	font-weight:bold;
-  	line-height:1em;
-   	position:absolute;
-  	top:0.1em;
-  	left:0.1em;
-  	display:block;
-  	border:0px solid var(--cor-borda);
-   	opacity:0.4;
- }
+       	content: counter(item);
+        	color: var(--cor-branco);
+       	font-size:3.5em;
+      	font-weight:bold;
+      	line-height:1em;
+      	 position:absolute;
+      	top:0.1em;
+      	left:0.1em;
+      	display:block;
+      	border:0px solid var(--cor-borda);
+       	opacity:0.4;
+ 	}
 
 #PopularPosts2 img {
-    	padding: 0px;
-    	width:320px;
-    	overflow:hidden;
-    	max-height:150px;
-    	object-fit: cover;
-    	object-position: 100% 0;
+        	padding: 0px;
+        	width:320px;
+        	overflow:hidden;
+        	max-height:150px;
+        	object-fit: cover;
+        	object-position: 100% 0;
 }
 
 #PopularPosts2 .overlay {
-    	position: absolute;
-    	left: 0;
-    	top: 0;
-    	width: 100%;
-    	height: 100%;
-    	background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
+        	position: absolute;
+        	left: 0;
+        	top: 0;
+        	width: 100%;
+        	height: 100%;
+        	background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
 }
 
 #PopularPosts2 .autor {
-    	background:var(--cor-principal);
-    	text-transform:uppercase;
-    	padding: 4px 8px !important;
-    	margin-bottom:5px;
-    	font-size: 1em !important;
-    	line-height:1em !important;
-   	 position:absolute;
-    	left:15px;
-    	color:var(--cor-branco) !important;
-        	font-family: var(--fonte-padrao) !important;
-    	font-weight:bold;
-   	 text-align:left !important;
-    	top:57%;
-    	overflow:hidden !important;
-    	display: -webkit-box;
-    	-webkit-line-clamp: 1;
-    	-webkit-box-orient: vertical;
-}
-
-#PopularPosts2 .titulo2 {
-        	padding: 0 15px;
-        	font-size: 1.8em;
-        	line-height:1em ;
-        	width:100% ;
-         	color:var(--cor-branco) !important;
-        	font-family: var(--fonte-padrao) !important;
-        	font-weight:bold;
+        	background:var(--cor-principal);
+        	text-transform:uppercase;
+        	padding: 4px 8px !important;
+        	margin-bottom:5px;
+        	font-size: 1em !important;
+        	line-height:1em !important;
+        	position:absolute;
+       	 left:15px;
+        	color:var(--cor-branco) !important;
+            font-family: var(--fonte-padrao) !important;
+       	 font-weight:bold;
         	text-align:left !important;
-        	position: absolute;
-        	top: 70%;
+        	top:57%;
         	overflow:hidden !important;
         	display: -webkit-box;
-        	-webkit-line-clamp: 2;
+        	-webkit-line-clamp: 1;
         	-webkit-box-orient: vertical;
 }
 
+#PopularPosts2 .titulo2 {
+            padding: 0 15px;
+            font-size: 1.8em;
+            line-height:1em ;
+            width:100% ;
+             color:var(--cor-branco) !important;
+            font-family: var(--fonte-padrao) !important;
+            font-weight:bold;
+            text-align:left !important;
+            position: absolute;
+            top: 70%;
+            overflow:hidden !important;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+}
+
 #PopularPosts3 ul {
-    	background-color: transparent !important;
-    	display: flex;
-    	flex-wrap: wrap;
+        	background-color: transparent !important;
+        	display: flex;
+        	flex-wrap: wrap;
 }
 
 #PopularPosts3 li {
-    	width: 320px !important;
-    	height: 100px !important;
-    	background-color: var(--cor-branco) !important;
-    	padding: 0 !important;
-    	margin: 0 auto 15px !important;
-    	position:relative;
+        	width: 320px !important;
+        	height: 100px !important;
+        	background-color: var(--cor-branco) !important;
+        	padding: 0 !important;
+        	margin: 0 auto 15px !important;
+        	position:relative;
 }
 
 #PopularPosts3 img {
-    	width: 320px !important;
-    	height: 100px !important;
-    	padding: 0px;
-   	 overflow:hidden;
-    	object-fit:cover;
-    	object-position: 100% 0;
+        	width: 320px !important;
+        	height: 100px !important;
+        	padding: 0px;
+        	overflow:hidden;
+        	object-fit:cover;
+        	object-position: 100% 0;
 }
 
 #PopularPosts3 .overlay2 {
-    	width: 100%;
-    	height:100%;
-    	position: absolute;
-    	left: 0;
-    	top: 0;
-    	background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
+        	width: 100%;
+        	height:100%;
+        	position: absolute;
+        	left: 0;
+        	top: 0;
+        	background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
 }
 
 #PopularPosts3 .titulo3  {
-    	width:70%;
-    	text-align:left !important;
-    	padding: 0 10px !important;
-    	font: bold 20px/20px var(--fonte-padrao) !important;
-    	color:var(--cor-branco);
-    	position:absolute;
-    	top:35px;
-    	left:10px;
-    	display: -webkit-box;
-    	-webkit-line-clamp: 3;
-    	-webkit-box-orient: vertical;
-    	overflow:hidden !important;
+        	width:70%;
+        	text-align:left !important;
+        	padding: 0 10px !important;
+        	font: bold 20px/20px var(--fonte-padrao) !important;
+       	 color:var(--cor-branco);
+        	position:absolute;
+        	top:35px;
+        	left:10px;
+        	display: -webkit-box;
+        	-webkit-line-clamp: 3;
+        	-webkit-box-orient: vertical;
+       	 overflow:hidden !important;
 }
 
 #PopularPosts3 li.capa {
-        	background:transparent !important;
-        	margin-bottom:-50px !important
+            background:transparent !important;
+            margin-bottom:-50px !important;
 }
 
 .max320 {
-    	max-width:320px !important;
-    	display: flex;
-        	flex-wrap: wrap;
-    	margin:0 auto;
+        	max-width:320px !important;
+        	display: flex;
+            flex-wrap: wrap;
+        	margin:0 auto;
 }
 
 .randomiza {
-        	display: none; /* Todos os elementos ficam ocultos por padrão */
+            display: none; /* Todos os elementos ficam ocultos por padrão */
 }
 
 .randomiza.ativo {
-        	display: block; /* Apenas o elemento ativo é exibido */
+            display: block; /* Apenas o elemento ativo é exibido */
 }
 
 /* ---------- CAIXAS DO RODAPÉ DAS POSTAGENS ---------- */
 fieldset {
-      	display: block;
-      	margin: 30px 0 40px 0 !important;
-      	padding: 20px 20px;
-    	border: 0px solid transparent !important;
-    	border-radius: 4px !important;
-      	background: var(--cor-fundo-detalhe);
-      	/* opacity: 0.5 !important; */
-    	z-index:100;
+          	display: block;
+          	margin: 30px 0 40px 0 !important;
+          	padding: 20px 20px;
+        	border: 0px solid transparent !important;
+        	border-radius: 4px !important;
+          	background: var(--cor-fundo-detalhe);
+          	/* opacity: 0.5 !important; */
+        	z-index:100;
 }
 
 legend {
-    	font-size:1.2rem !important;
-    	border-radius: 4px !important;
-    	text-transform: uppercase !important;
-    	color: var(--cor-texto) !important;
-   	 padding: 3px 10px !important;
-    	font-weight: bold !important;
-    	width: auto !important;
-    	background: var(--cor-fundo) !important;
-    	display:block !important;
-    	margin: 0 auto  !important;
+        	font-size:1.2rem !important;
+        	border-radius: 4px !important;
+        	text-transform: uppercase !important;
+        	color: var(--cor-texto) !important;
+        	padding: 3px 10px !important;
+        	font-weight: bold !important;
+        	width: auto !important;
+        	background: var(--cor-fundo) !important;
+        	display:block !important;
+        	margin: 0 auto  !important;
 }
 
-.field1, .ref {
-    	font-size:0.7em !important;
-    	line-height:1.5;
-   	 max-width: 40% !important;
-    	float: right !important;
-   	 padding: 5px 20px !important;
-    	position: relative !important;
-    	color: var(--cor-texto-suave) !important;
-    	text-align: left! important;
-    	margin: 0 0 5px 15px  !important;
-      	border: 1px solid var(--cor-principal) !important;
-    	border-radius: 2px !important;
-}
-
-.leg1, .ref2 {
-    	font-size:0.9em !important;
-    	border: 0px !important;
-    	color: var(--cor-principal) !important;
-}
-
-.leg2, .ref3 {
-    	font-size:0.9em !important;
-    	border: 0px !important;
-    	margin: unset  !important;
-    	color:var(--cor-escuro) !important;
-}
 
 /* ---------- TABELAS ---------- */
 table.tabela {
-    	width:90%;
-    	margin:0 auto 35px;
-    	font-size:85%;
+        	width:90%;
+        	margin:0 auto 35px;
+        	font-size:85%;
 }
 
 td.numero {
-    	padding:5px 10px;
-    	width:15% !important;
-    	background:var(--cor-tabela-claro);
-    	text-align:center
+        	padding:5px 10px;
+        	width:15% !important;
+        	background:var(--cor-tabela-claro);
+        	text-align:center
 }
 
 td.celula1 {
-    	padding:5px 10px;
-    	width:30% !important;
-    	background:var(--cor-tabela-claro);
-    	text-align:center
+        	padding:5px 10px;
+        	width:30% !important;
+        	background:var(--cor-tabela-claro);
+        	text-align:center
 }
 
 td.celula2 {
-    	padding:5px 10px;
-   	 width:70% !important;
-    	background:var(--cor-tabela-escuro);
+        	padding:5px 10px;
+        	width:70% !important;
+        	background:var(--cor-tabela-escuro);
 }
 
 td.celula3 {
-    	padding:5px 10px;
-    	width:85% !important;
-    	background:var(--cor-tabela-escuro);
+        	padding:5px 10px;
+        	width:85% !important;
+        	background:var(--cor-tabela-escuro);
 }
 
 .listagem {
-    	padding:5px 10px;
-    	width:90%;
-    	margin:0 auto 5px;
-    	background:var(--cor-tabela-claro);
-    	text-align:center
+        	padding:5px 10px;
+        	width:90%;
+        	margin:0 auto 5px;
+        	background:var(--cor-tabela-claro);
+        	text-align:center
 }
 
 
 /* ---------- AUDIO ---------- */
 
 .fraudio-container {
-    	margin-top: 0 !important;
-    	margin-bottom: 5px !important;
+        	margin-top: 0 !important;
+        	margin-bottom: 5px !important;
 }    
 
 
 /* ---------- POSTS RELACIONADOS ---------- */
 #relacionados {
-    	width:100%; 
+        	width:100%; 
 color:var(--cor-texto);
-    	text-align:center;
-    	padding:10px 0 10px 0;
+        	text-align:center;
+        	padding:10px 0 10px 0;
 }
 
 .leiamais {
-    	font-size:calc(1em + 0.5vw);
-    	color:var(--cor-branco);
-    	opacity:0.8;
-    	display:block;
-    	margin:0 0 10px 0;
+        	font-size:calc(1em + 0.5vw);
+        	color:var(--cor-branco);
+        	opacity:0.8;
+        	display:block;
+        	margin:0 0 10px 0;
 }
 
 .relacionado, .relacionado a {
-    	font-size:calc(1.5em + 0.5vw);
-    	color:var(--cor-branco);
-    	margin:0 0 10px 0;
-    	text-decoration:none;
-    	display:block;
+        	font-size:calc(1.5em + 0.5vw);
+        	color:var(--cor-branco);
+        	margin:0 0 10px 0;
+        	text-decoration:none;
+        	display:block;
 }
 
-/* ---------- DIVERSOS ---------- */
-
-sup {
-    	color: var(--cor-principal) !important;
-   	font-size:0.7em !important;
-    	font-weight:bold;
-    	margin-left:3px;
-}  
 
 /* =========================================
    RESET & NORMALIZAÇÃO (MODERNO)
@@ -835,62 +1061,62 @@ box-sizing: border-box;
 
 /* 2. Garante que imagens e vídeos nunca estourem a tela no celular */
 img, video, iframe, embed, object {
-    	max-width: 100%;
-    	height: auto; /* Mantém a proporção correta */
-    	display: block;
+        	max-width: 100%;
+        	height: auto; /* Mantém a proporção correta */
+        	display: block;
 }
 
 /* 3. Faz botões e formulários usarem a fonte do blog */
 input, button, textarea, select {
-    	font: inherit;
+        	font: inherit;
 }
 
 /* 4. Remove a margem padrão do corpo para aproveitar a tela toda */
 body {
-    	margin: 0;
-    	padding: 0;
+        	margin: 0;
+        	padding: 0;
 }
 
 /* Oculta elementos que devem ser escondidos (Acessibilidade) */
 [hidden] {
-    	display: none !important;
+        	display: none !important;
 }
 
-/* =========================================
-   EXTRAS DE MODERNIZAÇÃO & UX
-   ========================================= */
+
+/* ---------- MODERNIZAÇÃO DA INTERFACE ---------- */
 
 /* 1. Rolagem Suave para links internos */
 html {
-    	scroll-behavior: smooth;
+        	scroll-behavior: smooth;
 }
 
 /* 2. Personaliza a cor da seleção de texto (Vermelho e Branco) */
 ::selection {
-    	background: var(--cor-principal);
-    	color: var(--cor-branco);
+        	background: var(--cor-principal);
+        	color: var(--cor-branco);
 }
+
 ::-moz-selection {
-    	background: var(--cor-principal);
-    	color: var(--cor-branco);
+        	background: var(--cor-principal);
+        	color: var(--cor-branco);
 }
 
 /* 3. Barra de Rolagem Personalizada (Webkit) */
 ::-webkit-scrollbar {
-    	width: 12px;               /* Largura da barra vertical */
-    	height: 12px;              /* Altura da barra horizontal */
+        width: 12px;               /* Largura da barra vertical */
+        height: 12px;              /* Altura da barra horizontal */
 }
 
 ::-webkit-scrollbar-track {
-    	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
+        	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
 }
 
 ::-webkit-scrollbar-thumb { 
         background-color: var(--cor-principal);  /* Cor Vermelha */ 
         border-radius: 10px; /* Bem redondo */ /* O TRUQUE DO RESPIRO: */ 
-        border: 3px solid transparent; /* A borda é invisível... */ 
-        background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ }
+       	border: 3px solid transparent; /* A borda é invisível... */ 
+       	background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ }
 
 ::-webkit-scrollbar-thumb:hover {
-    	background-color: var(--cor-hover); /* Cor ao passar o mouse */
+        background-color: var(--cor-hover); /* Cor ao passar o mouse */
 }
