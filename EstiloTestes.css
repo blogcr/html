@@ -1,5 +1,32 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Oswald:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;family=Roboto+Slab:wght@100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap);
+  
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+body {
+  width:50%;
+  margin:10px auto !important;
+  padding:20px !important;
+  border:1px solid #ccc;
+  font-size:20px !important;
+  font-family: Roboto !important;
+  line-height: 1.5;
+  letter-spacing:0.001em;
+  font-size: 1.4em;
+  line-height:1.6;
+  font-weight: 400 !important;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  -moz-hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphenate-limit-chars: 6 3 3;
+}
+
 /* ---------- ROOT ---------- */
 :root {
             color-scheme: light;
@@ -494,63 +521,65 @@ figure img {
             margin: 0;
 }
 
-/*---------- FIGURE e CRÉDITOS MODERNOS ---------- */
+/* =======================================================
+   FIGURE MODERNO (Sistema Overlay Simples)
+   ======================================================= */
 
+/* 1. O Container (O Tabuleiro) */
 figure.moderno {
-  	display: grid;
-  	/* Define linhas automáticas: 
-     	Linha 1: Foto + Badge 
-     	Linha 2: Bio 
-     	Linha 3: Autor/Crédito (opcional) */
-  	grid-template-rows: auto auto auto; 
-  	width: fit-content;
-  	width: -moz-fit-content;
-  	margin: 0;
-  	padding: 0;
-  	box-sizing: border-box;
-  	position: relative;
+    position: relative; /* Essencial: Define o limite para a legenda não fugir */
+    display: block;     /* Ou inline-block dependendo do seu layout */
+    margin: 0 auto 1.5rem auto; /* Centralizado por padrão */
+    width: fit-content; /* Abraça o tamanho da imagem */
+    max-width: 100%;
 }
 
-/* --- 2. A FOTO (Forçada na Linha 1) --- */
-figure.moderno img {
-  	grid-row: 1;    /* Ocupa a primeira linha */
-  	grid-column: 1; /* Ocupa a primeira coluna */
-  	display: block;
-  	width: 100%;
-  	height: auto;
-  	max-width: 100%;
+/* 2. A Imagem (e o Link do Blogger) */
+figure.moderno img,
+figure.moderno a img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* --- 3. O BADGE (Forçado na Linha 1 - SOBREPOSTO) --- */
-figure.moderno figcaption {
-  	grid-row: 1;    /* IMPORTANTE: Mesma linha da foto */
-  	grid-column: 1; /* IMPORTANTE: Mesma coluna da foto */ 
-  	/* Posicionamento: Cola no chão da foto */
-  	align-self: end;
-  	/* O RESPIRO CHARMOSO (5px acima da base) */
-  	margin-bottom: 5px; 
-  	width: fit-content;
-  	min-width: 60px;
-  	/* Estética Sóbria */
-  	background: rgba(0, 0, 0, 0.65); 
-  	color: var(--cor-branco);
-  	border-radius: 0;
-  	backdrop-filter: blur(2px);
-  	/* Tipografia */
-  	padding: 5px 10px;
-  	font-family: var(--fonte-padrao);
-  	font-size: clamp(9px, 2vw, 11px);
-  	font-weight: 700;
-  	line-height: 1;
-  	text-transform: uppercase;
-  	letter-spacing: 1px;
-  
-  	z-index: 10; /* Garante que fique EM CIMA da foto */
-  	transition: background 0.3s ease;
+/* 3. A NOVA LEGENDA (Flutuante) */
+/* Só funciona se você colocar class="legenda-overlay" no HTML */
+.legenda-overlay {
+    /* POSICIONAMENTO (A Mágica) */
+    position: absolute; /* Sai do fluxo e flutua */
+    bottom: 0;          /* Cola no chão */
+    left: 0;            /* Cola na esquerda */
+    z-index: 10;        /* Fica por cima da imagem */
+    
+    /* RESET (Ignora estilos antigos do blog) */
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    right: auto; top: auto;
+    
+    /* ESTILO VISUAL (Seu Design Dark Badge) */
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    color: var(--cor-branco) !important;
+    padding: 5px 10px !important;
+    margin-bottom: 5px !important; /* O respiro */
+    
+    /* TIPOGRAFIA */
+    font-family: var(--fonte-padrao) !important;
+    font-size: clamp(9px, 2vw, 11px) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left !important;
+    width: auto !important;
+}
+
+/* Efeito Hover (Opcional) */
+figure.moderno:hover .legenda-overlay {
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 figure.moderno:hover figcaption {
-    	background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9) !important;
 }
 
 figure.moderno .info {
@@ -777,14 +806,12 @@ figure .cred3 {
     	width: 100%; /* Ocupa a largura total da figure */
 }
 
-.arte {
-        	text-align:right;
-        	line-height:0.8 !important;
-            margin-top:-31px;
-            margin-bottom:35px;
+.arte2 {          
+margin-top:-28px;
+          margin-bottom:35px;
 }
 
-.arte::before {
+.arte2::before {
          	content: attr(artista);
             color: var(--cor-texto-suave);
             font-size:12px;
@@ -2170,6 +2197,3 @@ blockquote::after,
     	content: none !important;
     	display: none !important;
 }
-
-
-
