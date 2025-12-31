@@ -986,7 +986,7 @@ margin-top:-28px;
 
 .destaque.roman {
     font-family: var(--fonte-serifa) !important;
-    font-size: 1.15em !important; /* Compensa o tamanho visual menor da serifa */
+    font-size: 1.05em !important; /* Compensa o tamanho visual menor da serifa */
 }
 
 /* ---------- ORNAMENTOS ---------- */
