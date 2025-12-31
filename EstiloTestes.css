@@ -235,20 +235,23 @@ hr {
 
 /* O ROBÔ: Pega a primeira letra automaticamente */
 .capitular::first-letter {
-    float: left;                /* Faz o texto abraçar a letra */
+    float: left;
     font-family: var(--fonte-capitular);
     font-weight: 700;
-    font-size: 6.5rem;          
-    line-height: 0.65;          /* Altura compacta para alinhar */
     
-    /* Espaçamento */
-    margin-top: 10px;           
-    margin-right: 12px;         
+    /* AUMENTO DE POTÊNCIA: De 6.5rem para 8.5rem */
+    font-size: 8.5rem;          
+    
+    /* Caixa mais compacta para a letra não empurrar o texto de baixo */
+    line-height: 0.6;           
+    
+    /* Espaçamento - Sintonia Fina */
+    margin-top: 0px;   /* Reduzi para subir um pouco, já que a letra cresceu */         
+    margin-right: 15px; /* Um pouco mais de ar na lateral */        
     margin-bottom: -5px;        
     
     color: var(--cor-titulo);
     
-    /* Reseta qualquer estilo de versalete que venha do span */
     font-variant: normal !important; 
     text-transform: uppercase;
 }
