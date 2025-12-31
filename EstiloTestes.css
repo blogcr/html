@@ -736,7 +736,7 @@ figure.mosaico-item {
    Uso: Apenas div e img (ou div, a e img)
    ======================================================= */
 
-.mosaico.linha {
+.mosaico.puro {
     /* 1. O Motor Automático */
     display: grid;
     grid-auto-flow: column;       /* Cria colunas automaticamente */
