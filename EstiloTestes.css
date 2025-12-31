@@ -72,6 +72,12 @@
             --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             }
 
+/* --- ANIMAÇÃO DE CARREGAMENTO --- */
+@keyframes aparecerSuave {
+    0% { opacity: 0; }   /* Invisível */
+    100% { opacity: 1; } /* Visível */
+}
+
 
 /* ---------- RESET & NORMALIZAÇÃO (MODERNO) ---------- */
 
@@ -637,27 +643,6 @@ figure.mosaico-item {
     object-fit: cover;           /* Garante que corte para caber */
     display: block;
     border-radius: 2px;
-}
-
-/* --- A LEGENDA (Dark Badge) --- */
-.mosaico-item figcaption {
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: var(--cor-branco);
-    display: inline-block;
-    padding: 4px 10px;
-    font-family: sans-serif;
-    font-size: 0.75rem;
-    font-weight: 500;
-    pointer-events: none;
-    z-index: 10;
-    
-    /* Segurança extra para a legenda não quebrar */
-    width: auto !important;
-    margin: 0 !important;
-    border: none !important;
 }
 
 /* ---------- MODO VERTICAL (2 colunas x 2 linhas) ---------- */
