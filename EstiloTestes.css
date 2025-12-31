@@ -1,31 +1,4 @@
-@charset "UTF-8";
 
-@import url(https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&amp;family=Oswald:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;family=Roboto+Slab:wght@100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap);
-  
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
-
-body {
-  width:50%;
-  margin:10px auto !important;
-  padding:20px !important;
-  border:1px solid #ccc;
-  font-size:20px !important;
-  font-family: Roboto !important;
-  line-height: 1.5;
-  letter-spacing:0.001em;
-  font-size: 1.4em;
-  line-height:1.6;
-  font-weight: 400 !important;
-  text-align: justify;
-  text-justify: inter-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-  -moz-hyphens: auto;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphenate-limit-chars: 6 3 3;
-}
 
 /* ---------- ROOT ---------- */
 :root {
@@ -543,8 +516,8 @@ figure.moderno a img {
 }
 
 /* 3. A NOVA LEGENDA (Flutuante) */
-/* Só funciona se você colocar class="legenda-overlay" no HTML */
-.legenda-overlay {
+/* Só funciona se você colocar class="legenda-foto" no HTML */
+.legenda-foto {
     /* POSICIONAMENTO (A Mágica) */
     position: absolute; /* Sai do fluxo e flutua */
     bottom: 0;          /* Cola no chão */
@@ -574,11 +547,11 @@ figure.moderno a img {
 }
 
 /* Efeito Hover (Opcional) */
-figure.moderno:hover .legenda-overlay {
+figure.moderno:hover .legenda-foto {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-figure.moderno:hover figcaption {
+figure.moderno:hover .legenda-foto {
     background: rgba(0, 0, 0, 0.9) !important;
 }
 
@@ -607,121 +580,143 @@ figure.moderno .autoria {
   	font-style: italic;
 }
 
-/* ---------- MOSAICO DE IMAGENS ---------- */
+/* =======================================================
+   MOSAICO DE IMAGENS (Versão Blindada & Completa)
+   ======================================================= */
 
 .mosaico {
-    	display: grid;
-    	gap: 10px;
-    	width: 100%;
-    	margin-bottom: 2rem;
-    	box-sizing: border-box;
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
 }
 
 /* --- O BLOCO DA FOTO (Figure) --- */
-.mosaico-item {
-    	position: relative;
-   	margin: 0 !important;
-    	padding: 0 !important;
-    	width: 100%;
-    	height: 100%;
-    	overflow: hidden;
-    	border: none;
-    	background: none;
+/* AQUI ESTÁ A CORREÇÃO: Usamos 'figure.mosaico-item' e '!important' */
+/* Isso impede que o estilo antigo de 'figure' (35%) esmague o mosaico */
+figure.mosaico-item {
+    position: relative;
+    
+    /* A Vacina contra o CSS antigo: */
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+    float: none !important;
+    display: block !important;
+    
+    overflow: hidden;
 }
 
 /* --- A IMAGEM (Preenchimento Total) --- */
 .mosaico-item img, 
 .mosaico-item a img,
 .mosaico-item .separator img {
-    	width: 100%;
-    	height: 100% !important;
-    	object-fit: cover;
-    	display: block;
-    	border-radius: 2px;
+    width: 100% !important;      /* Força total */
+    height: 100% !important;     /* Força total */
+    max-width: 100% !important;
+    object-fit: cover;           /* Garante que corte para caber */
+    display: block;
+    border-radius: 2px;
 }
 
 /* --- A LEGENDA (Dark Badge) --- */
 .mosaico-item figcaption {
-    	position: absolute;
-    	bottom: 5px;
-    	left: 0;
-    	background-color: rgba(0, 0, 0, 0.7);
-    	color: var(--cor-branco);
-    	display: inline-block;
-    	padding: 4px 10px;
-    	font-family: sans-serif;
-    	font-size: 0.75rem;
-    	font-weight: 500;
-    	pointer-events: none;
-    	z-index: 10;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--cor-branco);
+    display: inline-block;
+    padding: 4px 10px;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    pointer-events: none;
+    z-index: 10;
+    
+    /* Segurança extra para a legenda não quebrar */
+    width: auto !important;
+    margin: 0 !important;
+    border: none !important;
 }
 
-/* ---------- MODO VERTICAL (2 colunas x 2 linhas) ----------  */
+/* ---------- MODO VERTICAL (2 colunas x 2 linhas) ---------- */
 .mosaico.vertical {
-    	grid-template-columns: 1fr 1fr;
-    	grid-template-rows: repeat(2, 1fr);
-    	aspect-ratio: 4 / 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 4 / 3;
 }
 
 /* Cenario A: Grande na ESQUERDA (Padrao) */
 .mosaico.vertical > :first-child {
-    	grid-column: 1;
-    	grid-row: span 2;
-    	height: 100%;
+    grid-column: 1;
+    grid-row: span 2;
+    height: 100%;
 }
 
 /* Cenario B: Grande na DIREITA (Invertido) */
 .mosaico.vertical.direita > :first-child {
-    	grid-column: auto; grid-row: auto; height: 100%; /* Reseta o padrao */
+    grid-column: auto; grid-row: auto; height: 100%; /* Reseta o padrao */
 }
 
 .mosaico.vertical.direita > :last-child {
-    	grid-column: 2;        /* Vai pra direita */
-    	grid-row: 1 / span 2;  /* Força inicio no topo */
-    	height: 100%;
+    grid-column: 2;        /* Vai pra direita */
+    grid-row: 1 / span 2;  /* Força inicio no topo */
+    height: 100%;
 }
 
 /* ---------- MODO VERTICAL  (2 colunas (flexivel para 3)) ---------- */
 .mosaico.horizontal {
-    	grid-template-columns: 1fr 1fr; 
-    	grid-template-rows: auto auto;
-    	aspect-ratio: auto;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    aspect-ratio: auto;
 }
 
 /* Variaçao: 3 colunas (Se tiver classe .tripla) */
 .mosaico.horizontal.tripla {
-    	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Cenario A: Panoramica em BAIXO (Padrao) */
 .mosaico.horizontal > :last-child {
-    	grid-column: 1 / -1; /* Ocupa tudo */
-    	height: 100%;
+    grid-column: 1 / -1; /* Ocupa tudo */
+    height: 100%;
 }
 
 /* Cenario B: Panoramica em CIMA (Invertida) */
 .mosaico.horizontal.invertida > :first-child {
-    	grid-column: 1 / -1; /* Ocupa tudo */
-    	height: 100%;
+    grid-column: 1 / -1; /* Ocupa tudo */
+    height: 100%;
 }
 .mosaico.horizontal.invertida > :last-child {
-    	grid-column: auto; /* Reseta */
+    grid-column: auto; /* Reseta */
 }
 
-/* ----------- MOBILE (Responsividade Total) -----------  */
+/* ----------- MOBILE (Responsividade Total) ----------- */
 @media (max-width: 650px) {
-.mosaico.vertical, .mosaico.vertical.direita,
-.mosaico.horizontal, .mosaico.horizontal.tripla {
-        	display: flex;
-        	flex-direction: column;
-        	aspect-ratio: auto;
-        	gap: 15px;
-    	}
+    .mosaico.vertical, .mosaico.vertical.direita,
+    .mosaico.horizontal, .mosaico.horizontal.tripla {
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: auto;
+        gap: 15px;
+    }
 
-.mosaico-item img {
-        	height: auto !important;
-        	aspect-ratio: 3/2;
-    	}
+    .mosaico-item img {
+        height: auto !important;
+        aspect-ratio: 3/2;
+    }
+    
+    /* Garante que o item ocupe a largura toda no celular */
+    figure.mosaico-item {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 /* ---------- FIGURAS e ALINHAMENTOS ---------- */
@@ -820,49 +815,66 @@ margin-top:-28px;
 
 /* ---------- VÍDEOS ---------- */
 
-/* O Container do Vídeo */
+/* =======================================================
+   VÍDEO BOX (Versão Definitiva & Limpa)
+   ======================================================= */
+
 .video-box {
-    	display: block;
-    	width: 100%;
-    	/* Padrão Widescreen (16:9) sem gambiarras de padding */
-    	aspect-ratio: 16 / 9; 
-    	margin-bottom: 0.5rem; /* Espacinho para a legenda (8px) */
-    	position: relative;    /* Apenas para segurança */
+    display: block;
+    width: 100%;
+    position: relative;
+    
+    /* 1. Formato Padrão */
+    aspect-ratio: 16 / 9;
+    
+    /* 2. Limpeza Técnica (Mata espaços fantasmas) */
+    line-height: 0 !important;
+    font-size: 0 !important;
+    margin-bottom: 0 !important; /* Cola no elemento de baixo */
 }
 
 /* O Player */
-.vid iframe {
-    	width: 100%;
-    	height: 100%;
-    	display: block;
-   	 border: none;
-    	border-radius: 2px;
+.video-box iframe {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
-/* --- VARIAÇÕES DE FORMATO --- */
-/* Basta adicionar a classe junto: class="vid quadrado" */
-.vid.quadrado { aspect-ratio: 1 / 1; }
-.vid.vertical { aspect-ratio: 9 / 16; }
+/* Variações */
+.video-box.quadrado { aspect-ratio: 1 / 1; }
+.video-box.vertical { aspect-ratio: 9 / 16; }
 
-/* --- A LEGENDA --- */
+
+/* =======================================================
+   LEGENDA DO VÍDEO (.info2)
+   ======================================================= */
+
+/* --- A LEGENDA DO VÍDEO (Clean - Sem Borda) --- */
 .info2 {
-    	display: block;
-    	font-family: sans-serif;
-    	font-size: 0.75rem;     /* Pequeno (~12px) */
-    	line-height: 1.3;
-    	color: var(--cor-texto-suave);            /* Cinza Editorial */
-    	border-top: 1px solid var(--cor-borda); /* Linha fina e discreta em cima */
-    	padding-top: 0.4rem;    /* Respiro da linha */
-    	margin-bottom: 1rem;    /* Espaço para o texto seguinte */
-    	text-align: left;
+    display: block;
+    width: 100%;
+    text-align: left !important;
+    
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    color: var(--cor-texto-suave);
+    
+    /* Sem borda superior */
+    border: none;
+    
+    /* Apenas espaçamento */
+    padding-top: 0.5rem;    /* Um respiro suave entre o vídeo e o texto */
+    margin-top: 0 !important;
+    margin-bottom: 1rem;
 }
 
-/* Destaque opcional para o título */
 .info2 strong {
-   	 color: var(--cor-principal); /* Sua Assinatura Vermelha */
-    	text-transform: uppercase;
-    	font-size: 0.7rem;
-    	margin-right: 0.4rem;
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-right: 0.4rem;
 }
         
 /* ---------- BOXES ---------- */
