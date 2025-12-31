@@ -537,12 +537,13 @@ figure.moderno a img {
 }
 
 /* 3. A NOVA LEGENDA (Flutuante - Vacinada contra bugs de carregamento) */
+/* 3. A NOVA LEGENDA (Sem animação - Visibilidade Garantida) */
 .legenda-foto {
     /* POSICIONAMENTO */
     position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
+    bottom: 5px;  /* Seu estilo flutuante */
+    left: 5px;    /* Seu estilo flutuante */
+    z-index: 100; /* Aumentei para garantir que fique por cima do link */
     
     /* RESET */
     margin: 0 !important;
@@ -554,7 +555,7 @@ figure.moderno a img {
     background-color: rgba(0, 0, 0, 0.65) !important;
     color: var(--cor-branco) !important;
     padding: 5px 10px !important;
-    margin-bottom: 5px !important;
+    margin-bottom: 0 !important; /* Zero pois já usamos bottom: 5px */
     
     /* TIPOGRAFIA */
     font-family: var(--fonte-padrao) !important;
@@ -565,12 +566,14 @@ figure.moderno a img {
     text-align: left !important;
     width: auto !important;
 
-    /* --- A VACINA CONTRA O PISCAR (Correção F5) --- */
-    white-space: nowrap; /* 1. Impede que o texto fique vertical/espremido */
-    opacity: 0;          /* 2. Começa invisível */
-    animation: aparecerSuave 0.5s ease-out 0.5s forwards; /* 3. Espera 0.5s e aparece */
+    /* A SEGURANÇA CONTRA BAGUNÇA */
+    white-space: nowrap; /* Impede que o texto fique vertical */
 }
 
+/* Efeito Hover (Mantido) */
+figure.moderno:hover .legenda-foto {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
 /* Opcional: Efeito Hover */
 figure.moderno:hover .legenda-foto {
     background-color: rgba(0, 0, 0, 0.9) !important;
