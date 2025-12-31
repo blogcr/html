@@ -786,7 +786,7 @@ figure.mosaico-item {
 
 /* --- MOBILE (Empilha tudo) --- */
 @media (max-width: 650px) {
-    .mosaico.linha {
+    .mosaico.simples {
         display: flex;
         flex-direction: column;
         gap: 15px;
