@@ -25,6 +25,9 @@
             --cor-cinza-claro: #E0E0E0;     /* Cinza Claro */
             --cor-borda: #e0e0e0;           /* Borda padrão */
             --cor-papel:#FFF8E1;            /* Bordas do backs */
+  
+ /* ADICIONE ESTA LINHA: */
+    --cor-fundo-citacao: #EFEBE9; /* O bege quente que você gosta */
 
             /* --- CORES DE TABELAS --- */
             --cor-tabela-claro: #EFEBE9;    /* Tons quentes (Bege claro) */
@@ -217,52 +220,47 @@ hr {
     	border-top: 1px solid var(--cor-principal) !important;
     	}
 
+/* =======================================================
+   CAPITULAR AUTOMÁTICA (Método Clássico ::first-letter)
+   Uso: <div class="capitular"><span class="versalete">Texto inicial</span> resto do texto...</div>
+   ======================================================= */
 
-/* ---------- CAPITULAR ---------- */
 .capitular {
-    	display: block;
-    	position: relative;
-            }
+    /* Garante que o container seja um bloco para o texto fluir */
+    display: block; 
+    position: relative;
+    /* Se quiser limpar floats anteriores */
+    clear: both; 
+}
 
+/* O ROBÔ: Pega a primeira letra automaticamente */
 .capitular::first-letter {
-    	/* Se o navegador aceitar, ele faz o cálculo perfeito sozinho: */
-    	-webkit-initial-letter: 3;
-    	initial-letter: 3;
-    	/* Para garantir em todos os navegadores) */
-    	float: left;    
-    	font-family: var(--fonte-capitular);
-    	font-weight: 700;
-    	font-size: 7.2rem;   /* Aumentado de 5.6 para 7.2 */
-   	/* Line-height baixo impede que a caixa da letra fique gigante e empurre o texto */
-    	line-height: 0.55;   
-    	/* Margin-top positivo empurra a letra para baixo (para alinhar o topo) */
-    	margin-top: 12px;
-    	margin-right: 12px;  /* Distância lateral */
-    	margin-bottom: -5px; /* Puxa o texto de baixo para perto */
-    	color: var(--cor-titulo); 
-            }
+    float: left;                /* Faz o texto abraçar a letra */
+    font-family: var(--fonte-capitular);
+    font-weight: 700;
+    font-size: 6.5rem;          
+    line-height: 0.65;          /* Altura compacta para alinhar */
+    
+    /* Espaçamento */
+    margin-top: 10px;           
+    margin-right: 12px;         
+    margin-bottom: -5px;        
+    
+    color: var(--cor-titulo);
+    
+    /* Reseta qualquer estilo de versalete que venha do span */
+    font-variant: normal !important; 
+    text-transform: uppercase;
+}
 
+/* VERSALETE (Opcional: Use apenas se quiser destacar a frase) */
+.versalete {
+    font-variant: small-caps;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 
 /* ---------- TEXTOS EM DESTAQUE ---------- */
-.poesia {
-            /* 1. O MOTOR (Mantém a quebra de linha original) */
-            white-space: pre-wrap;    
-            /* 2. LIMPEZA (Garante que herde suas fontes ROMAN/CITACAO) */
-            font-family: inherit;
-            font-weight: inherit;
-            font-style: inherit;
-            color: inherit;
-            display: block;    
-            /* 3. A MÁGICA (O tamanho elástico) */
-            /* Sintaxe: clamp(MÍNIMO, IDEAL, MÁXIMO) */    
-            /* Mínimo: 0.85rem (aprox 13.6px) -> O "certo ponto" limite */
-            /* Ideal:  4vw (calculado pela largura da tela) */
-            /* Máximo: 1em (100% do tamanho do texto normal do pai) */
-            font-size: clamp(0.85rem, 4vw, 1em);
-            /* Ajuste fino da entrelinha para acompanhar a redução */
-            line-height: 1.4;
-            }
-
 
 #dialogo > br {
         	margin-bottom:20px !important;
@@ -316,57 +314,71 @@ sup {
 
 /* ---------- BLOCKQUOTE ---------- */
 
-blockquote {
-            /* 1. POSICIONAMENTO (Direita, 45%) */
-    	float: right !important;
-    	width: 45% !important;
-   	 /* Margens: afasta o texto principal da esquerda */
-    	margin: 5px 0 20px 30px !important;
-    	/* 2. LIMPEZA */
-    	background: transparent !important;
-    	border: none !important;
-    	padding: 0 !important;
-   	 /* 3. IDENTIDADE VISUAL */
-    	/* Aumentei a borda para 5px para acompanhar o texto maior */
-    	border-left: 5px solid var(--cor-principal) !important;
-    	padding-left: 20px !important; 
-    	/* 4. TIPOGRAFIA (A Grande Mudança) */
-    	text-align: left !important;
-    	font-family: var(--fonte-serifa) !important;
-    	/* AUMENTO DE TAMANHO */
-    	font-size: 1.7rem !important; /* Grande e visível */
-    	line-height: 1.25 !important; /* Linhas mais unidas (estilo manchete) */
-    	font-style: italic !important;
-    	font-weight: 400 !important;
-    	color: var(--cor-titulo); /* Um cinza quase preto para mais contraste */
-    	position: relative !important;
-    	box-sizing: border-box !important;
-            }
+/* ---------- BLOCKQUOTE (Versão Confortável / Sans-Serif) ---------- */
 
-/* Autor */
-blockquote cite {
-    	display: block;
-    	margin-top: 15px;
-    	font-family: sans-serif;
-    	font-size: 0.8rem;
-    	font-weight: 700;
-    	text-transform: uppercase;
-    	letter-spacing: 1px;
-    	color: #999;
-    	font-style: normal;
-    	line-height: 1.4 !important;
+blockquote {
+    /* 1. POSICIONAMENTO (Mantido) */
+    float: right !important;
+    width: 45% !important;
+    margin: 5px 0 20px 30px !important;
+    
+    /* 2. LIMPEZA (Mantido) */
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    
+    /* 3. IDENTIDADE VISUAL (Mantido) */
+    border-left: 5px solid var(--cor-principal) !important;
+    padding-left: 20px !important; 
+    
+    /* 4. TIPOGRAFIA (Ajustada para Leitura) */
+    text-align: left !important;
+    
+    /* MUDANÇA CRUCIAL: Usamos a Roboto (Padrão) que é limpa e moderna */
+    font-family: var(--fonte-padrao) !important; 
+    
+    /* Tamanho calibrado para Sans-Serif (elas parecem maiores que as serifadas) */
+    font-size: 1.5rem !important; 
+    
+    /* Mais altura de linha para não cansar a vista */
+    line-height: 1.4 !important; 
+    
+    /* Mantive itálico, pois na Roboto ele é suave. 
+       Se ainda incomodar, mude para 'normal' */
+    font-style: italic !important;
+    
+    font-weight: 400 !important;
+    color: var(--cor-titulo);
+    position: relative !important;
+    box-sizing: border-box !important;
 }
 
-/* MOBILE (Segurança) */
+/* Autor da Citação */
+blockquote cite {
+    display: block;
+    margin-top: 15px;
+    
+    /* CORREÇÃO: Usando a variável do sistema */
+    font-family: var(--fonte-padrao) !important; 
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    font-style: normal;
+    line-height: 1.4 !important;
+}
+
+/* MOBILE (Ajuste de proporção) */
 @media (max-width: 650px) {
-blockquote {
-        	float: none !important;
-        	width: 100% !important;
-        	margin: 2rem 0 !important;
-        	padding-left: 20px !important;
-        	/* No celular, reduzimos um pouco para não ficar gigante demais */
-        	font-size: 1.4rem !important; 
-    	}
+    blockquote {
+        float: none !important;
+        width: 100% !important;
+        margin: 2rem 0 !important;
+        padding-left: 20px !important;
+        /* Levemente menor no celular para não dominar a tela */
+        font-size: 1.3rem !important; 
+    }
 }
 
 
@@ -568,7 +580,7 @@ figure.moderno .info {
   	line-height: 1.45;
 }
 
-figure.moderno .atribuicao {
+figure .fotoinfo {
   	grid-row: 3; /* Terceira linha, abaixo da bio */
   	grid-column: 1;
   	display: block;
@@ -689,11 +701,11 @@ figure.mosaico-item {
 }
 
 /* Cenario B: Panoramica em CIMA (Invertida) */
-.mosaico.horizontal.invertida > :first-child {
+.mosaico.horizontal.invertido > :first-child {
     grid-column: 1 / -1; /* Ocupa tudo */
     height: 100%;
 }
-.mosaico.horizontal.invertida > :last-child {
+.mosaico.horizontal.invertido > :last-child {
     grid-column: auto; /* Reseta */
 }
 
@@ -716,6 +728,75 @@ figure.mosaico-item {
     figure.mosaico-item {
         width: 100% !important;
         max-width: 100% !important;
+    }
+}
+
+/* =======================================================
+   MOSAICO "LINHA" SUPER SIMPLIFICADO
+   Uso: Apenas div e img (ou div, a e img)
+   ======================================================= */
+
+.mosaico.linha {
+    /* 1. O Motor Automático */
+    display: grid;
+    grid-auto-flow: column;       /* Cria colunas automaticamente */
+    grid-auto-columns: 1fr;       /* Força larguras iguais para todos */
+    gap: 10px;
+    
+    /* 2. Layout Base */
+    width: 100%;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    
+    /* Limpeza de conflitos com outros mosaicos */
+    grid-template-columns: none;
+    grid-template-rows: auto;
+}
+
+/* O SEGREDO: Estiliza diretamente as IMAGENS ou LINKS que são filhos diretos */
+.mosaico.puro > img,
+.mosaico.puro > a {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    
+    /* PROPORÇÃO (Ajuste aqui: 2/3 para Livros, 1/1 para Quadrado) */
+    aspect-ratio: 2 / 3; 
+    
+    /* Garante que a imagem preencha o retângulo sem distorcer */
+    object-fit: cover;
+    height: auto !important; /* Deixa o aspect-ratio controlar a altura */
+    border-radius: 2px;
+    
+    /* Remove decorações de link se houver */
+    text-decoration: none;
+    background: none;
+}
+
+/* Caso especial: Se for um LINK, a imagem dentro dele tem que obedecer */
+.mosaico.puro > a > img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* --- MOBILE (Empilha tudo) --- */
+@media (max-width: 650px) {
+    .mosaico.linha {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* No celular, removemos a proporção fixa */
+    .mosaico.puro > img,
+    .mosaico.puro > a {
+        aspect-ratio: auto;
+        height: auto !important;
     }
 }
 
@@ -882,12 +963,31 @@ margin-top:-28px;
         margin: 0 5% !important;
 }
 
-.citacao2 {
-        margin: 0 5% !important;
-        padding:20px;
-        background: var(--cor-cinza-claro);
+/* =======================================================
+   BOX DE DESTAQUE (Versão Diagramação Padrão)
+   ======================================================= */
+
+/* CONTAINER DESTAQUE (Neutro) */
+.destaque {
+    /* Estrutura */
+    margin: 0 5% 1.5rem 5% !important;
+    padding: 20px !important;
+    background-color: var(--cor-fundo-citacao) !important;
+    border-radius: 6px;
+    border: none;
+    box-sizing: border-box;
+
+    /* Tipografia Padrão (Roboto) - Tamanho Normal */
+    font-family: var(--fonte-padrao);
+    font-size: 1em !important; 
+    line-height: 1.5 !important;
+    color: var(--cor-texto);
 }
 
+.destaque.roman {
+    font-family: var(--fonte-serifa) !important;
+    font-size: 1.15em !important; /* Compensa o tamanho visual menor da serifa */
+}
 
 /* ---------- ORNAMENTOS ---------- */
 #ornamento {
@@ -934,11 +1034,20 @@ content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZsl
 /* ---------- NOTAS FINAIS ----------- */
 
 .pos-escrito {
-    	margin-top: 4rem;      /* Distância grande do fim do texto */
-    	padding-top: 1.5rem;   /* Respiro interno */
-    	color: var(--cor-texto-suave);       /* Cinza médio) */
-    	font-size: 0.9rem;     /* Um pouco menor (aprox 14px) */
-    	line-height: 1.6;
+    /* 1. SIMETRIA VERTICAL */
+    /* Aumentamos de 0.5rem para 1.5rem. 
+       Isso deve espelhar o espaço que existe acima da linha. */
+    margin-top: 1.5rem !important; 
+    
+    /* 2. PROTEÇÃO DO LOGOTIPO */
+    /* Mantém o texto longe da bolinha vermelha à direita */
+    margin-right: 60px !important; 
+    
+    /* Manter o resto */
+    padding-top: 0;
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .pos-escrito ul, 
@@ -960,6 +1069,16 @@ content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZsl
     	font-size: 0.9em;  /* Tamanho discreto */
 }
 
+/* =======================================================
+   POEMA (Versão Zen)
+   ======================================================= */
+.poema {
+    white-space: pre-wrap;       /* O motor da poesia */
+    text-align: left !important; /* Alinhamento */
+    width: auto !important;      /* Previne vazar para o lado */
+    hyphens: none !important;    /* Não quebra palavras */
+    display: block;
+}
 
 /* ---------- BARRA LATERAL ----------- */
 #PopularPosts2 ul {
@@ -1288,9 +1407,11 @@ color:var(--cor-texto);
    	display:inline-block;
 }
 
+/*
 .romano {
         	font-family: var(--fonte-serifa) !important;
 }
+*/
 
 .pensamento {
     	font-size: 20px;
@@ -1593,7 +1714,6 @@ background:var(--cor-fundo-detalhe);
 .dirr {
     	margin-right: 0px !important;
 }
-}
 
 /* DIVISOR */
 
@@ -1852,7 +1972,7 @@ font-size: clamp(16px, 4vw, 22px) !important;
 
 /* ---------- IMAGENS ANTIGAS ---------- */
 
-figure {
+figure:not(.moderno):not(.mosaico-item):not(.centro) {
         	display: block !important;
         	max-width: 35% !important;
         	height: auto !important;
@@ -1861,17 +1981,17 @@ figure {
         	overflow: hidden;
 }
 ----------- */
-.dir {
+.dir:not(.moderno) {
         	float: right !important;
         	margin: 10px 0 5px 20px !important;
 }
 
-.esq {
+.esq:not(.moderno) {
         	float: left !important;
         	margin: 10px 20px 5px 0 !important;
 }
 
-.centro {
+.centro:not(.moderno) {
         	max-width: 90% !important;
         	margin: 0 auto 25px !important;
 }
@@ -1927,8 +2047,10 @@ figure {
 /* ---------- BORDAS ---------- */
 
 .borda2 {
-        	padding-left:15px; 
-        	border-left:4px solid var(--cor-principal);
+    padding-left: 15px; 
+    border-left: 4px solid var(--cor-principal); /* Era hex */
+}
+
 }
 
 .borda3 {
@@ -2209,3 +2331,18 @@ blockquote::after,
     	content: none !important;
     	display: none !important;
 }
+/*
+.poesia {
+        
+            white-space: pre-wrap;    
+         
+            font-family: inherit;
+            font-weight: inherit;
+            font-style: inherit;
+            color: inherit;
+            display: block;    
+            
+            font-size: clamp(0.85rem, 4vw, 1em);
+               line-height: 1.4;
+            }
+*/
