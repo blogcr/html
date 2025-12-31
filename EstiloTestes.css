@@ -807,7 +807,7 @@ figure.moderno.dir {
   	float: right;
  	margin: 0.5rem 0 0.5rem 1rem;
   	shape-margin: 1.2rem;
-  	max-width: 50%;
+  	max-width: 45%;
 }
 
 figure.moderno.dir figcaption { 
@@ -821,7 +821,7 @@ figure.moderno.esq {
   	float: left;
   	margin: 0.5rem 1rem 0.5rem 0;
   	shape-margin: 1.2rem;
-  	max-width: 50%;
+  	max-width: 45%;
 }
 
 figure.moderno.esq figcaption { 
@@ -830,13 +830,13 @@ figure.moderno.esq figcaption {
   	margin-left: 0;
 }
 
-/* CENTRO */
+/* CENTRO (Ajustado para 90%) */
 figure.moderno.centro {
-  	float: none;
-  	display: grid; 
-  	margin: 0 auto 1.5rem auto;
-  	width: auto;
-  	max-width: 100%;
+    float: none;
+    display: grid; 
+    margin: 0 auto 1.5rem auto;
+    width: 90% !important; /* <--- FORÇAMOS OS 90% */
+    max-width: 100%;
 }
 
 /* Badge à ESQUERDA no centro */
