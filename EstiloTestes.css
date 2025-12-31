@@ -736,7 +736,7 @@ figure.mosaico-item {
    Uso: Apenas div e img (ou div, a e img)
    ======================================================= */
 
-.mosaico.puro {
+.mosaico.simples {
     /* 1. O Motor Automático */
     display: grid;
     grid-auto-flow: column;       /* Cria colunas automaticamente */
@@ -754,8 +754,8 @@ figure.mosaico-item {
 }
 
 /* O SEGREDO: Estiliza diretamente as IMAGENS ou LINKS que são filhos diretos */
-.mosaico.puro > img,
-.mosaico.puro > a {
+.mosaico.simples > img,
+.mosaico.simples > a {
     display: block !important;
     width: 100% !important;
     margin: 0 !important;
@@ -776,7 +776,7 @@ figure.mosaico-item {
 }
 
 /* Caso especial: Se for um LINK, a imagem dentro dele tem que obedecer */
-.mosaico.puro > a > img {
+.mosaico.simples > a > img {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
@@ -793,8 +793,8 @@ figure.mosaico-item {
     }
     
     /* No celular, removemos a proporção fixa */
-    .mosaico.puro > img,
-    .mosaico.puro > a {
+    .mosaico.simples > img,
+    .mosaico.simples > a {
         aspect-ratio: auto;
         height: auto !important;
     }
