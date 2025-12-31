@@ -851,6 +851,9 @@ figure.moderno.centro figcaption {
  figure.moderno.esq {
      	max-width: 60%; 
   	}
+.centro, figure.moderno.centro { /* Adicionamos a regra específica aqui */
+        width: 100% !important;
+    }
 }
 
 /* =======================================================
