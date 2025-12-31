@@ -72,13 +72,6 @@
             --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             }
 
-/* --- ANIMAÇÃO DE CARREGAMENTO --- */
-@keyframes aparecerSuave {
-    0% { opacity: 0; }   /* Invisível */
-    100% { opacity: 1; } /* Visível */
-}
-
-
 /* ---------- RESET & NORMALIZAÇÃO (MODERNO) ---------- */
 
 /* 1. Garante que larguras e paddings não quebrem o layout */
