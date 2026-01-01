@@ -880,8 +880,10 @@ figure .cred3 {
 }
 
 .arte2 {          
-margin-top:-28px;
+margin-top:-30px;
           margin-bottom:35px;
+	float:right;
+	clear:both;
 }
 
 .arte2::before {
