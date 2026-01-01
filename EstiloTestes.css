@@ -876,9 +876,9 @@ figure .cred3 {
 
 .arte2 {          
 margin-top:-30px;
-          margin-bottom:35px;
-	float:right;
-	clear:both;
+  margin-bottom:35px;
+  text-align:right;
+  display:block;
 }
 
 .arte2::before {
