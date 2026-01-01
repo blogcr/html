@@ -715,6 +715,20 @@ figure .fotoinfo {
     }
 }
 
+/* --- MOSAICO CENTRALIZADO (90%) --- */
+/* Aplica apenas quando a div tiver a classe 'centro' junto com 'mosaico' */
+.mosaico.centro {
+    width: 90% !important;        /* O tamanho que você quer */
+    margin-left: auto !important; /* Margem automática esquerda */
+    margin-right: auto !important;/* Margem automática direita = Centraliza */
+}
+
+/* No celular, volta para 100% para não perder espaço */
+@media (max-width: 650px) {
+    .mosaico.centro {
+        width: 100% !important;
+    }
+}
 
 /* =======================================================
    MOSAICO HORIZONTAL INTELIGENTE
@@ -1420,25 +1434,4 @@ figure.moderno img {
     /* Mantemos o estilo que já definimos antes */
     border-radius: 2px;
     box-shadow: var(--sombra-suave);
-}
-
-	/* =======================================================
-   CORREÇÃO FINAL: FORÇA BRUTA NO MOSAICO
-   Isso garante que o mosaico ignore a regra das fotos soltas
-   ======================================================= */
-
-.mosaico > *,
-.mosaico figure,
-.mosaico a,
-.mosaico .separator {
-    height: 100% !important; /* Força preencher o espaço vertical */
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.mosaico img {
-    height: 100% !important;     /* A imagem estica para acompanhar */
-    width: 100% !important;
-    object-fit: cover !important; /* O corte inteligente (cobre sem distorcer) */
-    display: block !important;
 }
