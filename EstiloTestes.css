@@ -227,7 +227,7 @@ hr {
     /* 1. Tipografia Elegante */
     font-family: var(--fonte-serifa); /* Roboto Slab */
     color: var(--cor-titulo);
-    font-size: 1.8rem;      /* Grande, mas não gigante */
+    font-size: 1.2rem;      /* Grande, mas não gigante */
     font-weight: 700;       /* Negrito */
     line-height: 1.3;
     
