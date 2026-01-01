@@ -747,7 +747,7 @@ figure.mosaico-item {
     border: none !important;
     
     /* PROPORÇÃO (Ajuste aqui: 2/3 para Livros, 1/1 para Quadrado) */
-    aspect-ratio: 2 / 3; 
+    aspect-ratio: auto; 
     
     /* Garante que a imagem preencha o retângulo sem distorcer */
     object-fit: cover;
