@@ -694,6 +694,21 @@ figure.mosaico-item {
     grid-column: auto; /* Reseta */
 }
 
+/* AJUSTE AUTOMÁTICO: Cola a informação no Mosaico */
+.mosaico + .info {
+    /* 1. A Mágica do Espaço */
+    margin-top: -1.5rem !important; /* Compensa o espaço grande do mosaico */
+    margin-bottom: 2rem !important; /* Empurra o resto do texto para baixo */
+    
+    /* 2. Garante o Visual Padrão (caso esteja fora de figure) */
+    display: block;
+    border-left: 3px solid var(--cor-principal);
+    padding-left: 10px;
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.45;
+}
+
 /* ----------- MOBILE (Responsividade Total) ----------- */
 @media (max-width: 650px) {
     .mosaico.vertical, .mosaico.vertical.direita,
