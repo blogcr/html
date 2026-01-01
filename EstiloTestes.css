@@ -220,6 +220,48 @@ hr {
     	}
 
 /* =======================================================
+   TÍTULOS DE CAPÍTULOS (Estilo Editorial Clássico)
+   ======================================================= */
+
+.capitulo {
+    /* 1. Tipografia Elegante */
+    font-family: var(--fonte-serifa); /* Roboto Slab */
+    color: var(--cor-titulo);
+    font-size: 1.8rem;      /* Grande, mas não gigante */
+    font-weight: 700;       /* Negrito */
+    line-height: 1.3;
+    
+    /* 2. Espaçamento (Respiro Importante) */
+    margin-top: 3rem;       /* Separa bem do texto anterior */
+    margin-bottom: 1.5rem;  /* Espaço para o texto que vem */
+    position: relative;
+    
+    /* 3. Opcional: Deixa tudo maiúsculo para ficar mais "Capítulo" */
+    /* text-transform: uppercase; */ 
+}
+
+/* A Assinatura Vermelha (Traço Inferior) */
+.capitulo::after {
+    content: "";
+    display: block;
+    width: 40px;            /* Largura discreta */
+    height: 3px;            /* Espessura elegante */
+    background-color: var(--cor-principal);
+    margin-top: 10px;       /* Distância do texto */
+    border-radius: 2px;     /* Aquele arredondado suave que combinamos */
+}
+
+/* VARIAÇÃO: Centralizado (Muito chique para separar atos) */
+.capitulo.centro {
+    text-align: center;
+}
+
+.capitulo.centro::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =======================================================
    CAPITULAR AUTOMÁTICA (Método Clássico ::first-letter)
    Uso: <div class="capitular"><span class="versalete">Texto inicial</span> resto do texto...</div>
    ======================================================= */
