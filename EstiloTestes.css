@@ -371,18 +371,17 @@ blockquote cite {
     line-height: 1.4 !important;
 }
 
-/* MOBILE (Ajuste de proporção) */
+/* MOBILE (Ajuste de proporção)
 @media (max-width: 650px) {
     blockquote {
         float: none !important;
         width: 100% !important;
         margin: 2rem 0 !important;
         padding-left: 20px !important;
-        /* Levemente menor no celular para não dominar a tela */
         font-size: 1.3rem !important; 
     }
 }
-
+*/
 
 /* ---------- NOTAS LATERAIS ---------- */
 
