@@ -527,6 +527,7 @@ figure.moderno a img {
     display: block;
     width: 100%;
     height: auto;
+border-radius: 2px;
 }
 
 /* 3. A NOVA LEGENDA (Flutuante - Vacinada contra bugs de carregamento) */
