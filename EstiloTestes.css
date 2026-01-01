@@ -1023,9 +1023,10 @@ content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZsl
 .pontofinal {
         float:right;
         width:40px;
-        margin-top:-15px;
-        margin-bottom:-20px; content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
-    border-radius:50%;
+		margin-top:-20px;
+		margin-bottom:-20px;
+		content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
+    	border-radius:50%;
 }
 
 
@@ -1339,7 +1340,7 @@ color:var(--cor-texto);
 
 /* ---------- RECUPERADOS ---------- */
 
-/* -------------------- GRADIENTES ----------------------- */
+/* -------------------- GRADIENTES ----------------------- 
 .gradiente {
 	border-image: linear-gradient(45deg, rgb(240, 240, 240), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
 	border-style: solid; 
@@ -1351,7 +1352,8 @@ color:var(--cor-texto);
 	border-style: solid; 
 	border-width: 0px 0px 2px;
 }
-
+*/
+	
 /* Aplica margem à direita de todos os ícones do Font Awesome */
 .fa, .fas, .far, .fab {
     margin-right: 2ch; /* 2ch equivale aproximadamente a 2 caracteres */
