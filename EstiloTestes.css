@@ -678,47 +678,30 @@ figure .fotoinfo {
     }
 }
 
-/* ---------- MODO VERTICAL  (2 colunas (flexivel para 3)) ---------- */
+
+/* =======================================================
+   MOSAICO HORIZONTAL INTELIGENTE
+   Estrutura: 2 colunas, altura automática
+   ======================================================= */
+
 .mosaico.horizontal {
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto;
-    aspect-ratio: auto;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    grid-template-rows: auto auto;  /* Altura definida pelo conteúdo */
+    aspect-ratio: auto;             /* Remove proporção fixa, deixa fluir */
 }
 
-/* Variaçao: 3 colunas (Se tiver classe .tripla) */
-.mosaico.horizontal.tripla {
-    grid-template-columns: 1fr 1fr 1fr;
+/* O 3º ITEM (A panorâmica) */
+/* Por padrão, ele fica embaixo e ocupa as duas colunas */
+.mosaico.horizontal > :nth-child(3) {
+    grid-column: 1 / -1; /* Vai da linha 1 até o final (-1) */
 }
 
-/* Cenario A: Panoramica em BAIXO (Padrao) */
-.mosaico.horizontal > :last-child {
-    grid-column: 1 / -1; /* Ocupa tudo */
-    height: 100%;
+/* --- MODO INVERTIDO (Panorâmica sobe) --- */
+.mosaico.horizontal.invertido > :nth-child(3) {
+    grid-column: 1 / -1; /* Continua ocupando tudo */
+    grid-row: 1;         /* FORÇA ir para a primeira linha */
 }
-
-/* Cenario B: Panoramica em CIMA (Invertida) */
-.mosaico.horizontal.invertido > :first-child {
-    grid-column: 1 / -1; /* Ocupa tudo */
-    height: 100%;
-}
-.mosaico.horizontal.invertido > :last-child {
-    grid-column: auto; /* Reseta */
-}
-
-/* AJUSTE AUTOMÁTICO: Cola a informação no Mosaico */
-.mosaico + .info {
-    /* 1. A Mágica do Espaço */
-    margin-top: -1.5rem !important; /* Compensa o espaço grande do mosaico */
-    margin-bottom: 2rem !important; /* Empurra o resto do texto para baixo */
-    
-    /* 2. Garante o Visual Padrão (caso esteja fora de figure) */
-    display: block;
-    border-left: 3px solid var(--cor-principal);
-    padding-left: 10px;
-    font-size: 0.9rem;
-    color: var(--cor-texto-suave);
-    line-height: 1.45;
-}
+/* Obs: Os itens 1 e 2 fluirão automaticamente para a linha de baixo */
 
 /* ----------- MOBILE (Responsividade Total) ----------- */
 @media (max-width: 650px) {
