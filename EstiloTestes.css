@@ -1435,3 +1435,22 @@ figure.moderno img {
     border-radius: 2px;
     box-shadow: var(--sombra-suave);
 }
+
+	/* --- O ENVOLTÓRIO DO MOSAICO (A solução para Legendas Externas) --- */
+figure.container-mosaico {
+    display: block;
+    margin: 0 auto 2rem auto; /* Centraliza na tela e dá espaço embaixo */
+    padding: 0;
+    border: none;
+    
+    /* A LARGURA DE 90% QUE VOCÊ QUER */
+    width: 90%; 
+    max-width: 1000px; /* Trava num tamanho máximo para não ficar gigante em monitores */
+}
+
+/* No celular, volta para 100% */
+@media (max-width: 650px) {
+    figure.container-mosaico {
+        width: 100%;
+    }
+}
