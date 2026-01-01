@@ -1350,3 +1350,8 @@ color:var(--cor-texto);
 	border-style: solid; 
 	border-width: 0px 0px 2px;
 }
+
+/* Aplica margem à direita de todos os ícones do Font Awesome */
+.fa, .fas, .far, .fab {
+    margin-right: 2ch; /* 2ch equivale aproximadamente a 2 caracteres */
+}
