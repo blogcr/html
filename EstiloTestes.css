@@ -1421,3 +1421,24 @@ figure.moderno img {
     border-radius: 2px;
     box-shadow: var(--sombra-suave);
 }
+
+	/* =======================================================
+   CORREÇÃO FINAL: FORÇA BRUTA NO MOSAICO
+   Isso garante que o mosaico ignore a regra das fotos soltas
+   ======================================================= */
+
+.mosaico > *,
+.mosaico figure,
+.mosaico a,
+.mosaico .separator {
+    height: 100% !important; /* Força preencher o espaço vertical */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mosaico img {
+    height: 100% !important;     /* A imagem estica para acompanhar */
+    width: 100% !important;
+    object-fit: cover !important; /* O corte inteligente (cobre sem distorcer) */
+    display: block !important;
+}
