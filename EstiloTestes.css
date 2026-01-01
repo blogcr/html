@@ -1396,3 +1396,28 @@ color:var(--cor-texto);
 .fa, .fas, .far, .fab {
     margin-right: 2ch; /* 2ch equivale aproximadamente a 2 caracteres */
 }
+
+	/* =======================================================
+   CORREÇÃO URGENTE: LEGENDAS SOBREPOSTAS EM FOTOS SOLTAS
+   Garante que a .legenda-foto funcione fora dos mosaicos
+   ======================================================= */
+
+/* 1. Transforma o contêiner da foto e o link em "âncoras" */
+figure.moderno,
+figure.moderno .separator, /* O Blogger adora essa div */
+figure.moderno a {
+    position: relative !important; /* O ingrediente mágico */
+    display: block !important;     /* Garante que a caixa ocupe o espaço certo */
+    height: auto !important;
+    overflow: hidden; /* Garante que o arredondamento corte a legenda se precisar */
+}
+
+/* 2. Garante que a imagem preencha a âncora corretamente */
+figure.moderno img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Mantemos o estilo que já definimos antes */
+    border-radius: 2px;
+    box-shadow: var(--sombra-suave);
+}
