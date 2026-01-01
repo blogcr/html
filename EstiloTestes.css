@@ -599,7 +599,7 @@ figure .fotoinfo {
 }
 
 /* =======================================================
-   MOSAICO DE IMAGENS (Versão Blindada & Completa)
+   MOSAICO INTELIGENTE (Versão Simplificada)
    ======================================================= */
 
 .mosaico {
@@ -610,61 +610,72 @@ figure .fotoinfo {
     box-sizing: border-box;
 }
 
-/* --- O BLOCO DA FOTO (Figure) --- */
-/* AQUI ESTÁ A CORREÇÃO: Usamos 'figure.mosaico-item' e '!important' */
-/* Isso impede que o estilo antigo de 'figure' (35%) esmague o mosaico */
-figure.mosaico-item {
+/* REGRA DE OURO: Estiliza QUALQUER filho direto (seja <a> ou <div>) */
+.mosaico > * {
     position: relative;
-    
-    /* A Vacina contra o CSS antigo: */
+    display: block !important;
     width: 100% !important;
-    max-width: 100% !important;
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
-    background: none !important;
-    float: none !important;
-    display: block !important;
-    
     overflow: hidden;
+    border-radius: 2px; /* A elegância suave */
 }
 
-/* --- A IMAGEM (Preenchimento Total) --- */
-.mosaico-item img, 
-.mosaico-item a img,
-.mosaico-item .separator img {
-    width: 100% !important;      /* Força total */
-    height: 100% !important;     /* Força total */
-    max-width: 100% !important;
-    object-fit: cover;           /* Garante que corte para caber */
+/* Garante que a imagem preencha o espaço do filho */
+.mosaico > * img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover; /* O segredo do corte perfeito */
     display: block;
     border-radius: 2px;
 }
 
-/* ---------- MODO VERTICAL (2 colunas x 2 linhas) ---------- */
+/* -------------------------------------------------------
+   LÓGICA AUTOMÁTICA DE POSICIONAMENTO
+   ------------------------------------------------------- */
+
+/* MODO VERTICAL (Padrão: Grande na ESQUERDA) */
 .mosaico.vertical {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 3; /* Formato Retangular Paisagem */
 }
 
-/* Cenario A: Grande na ESQUERDA (Padrao) */
-.mosaico.vertical > :first-child {
-    grid-column: 1;
-    grid-row: span 2;
-    height: 100%;
+/* O 1º item da lista será o grandão automaticamente */
+.mosaico.vertical > :nth-child(1) {
+    grid-column: 1;      /* Coluna da Esquerda */
+    grid-row: span 2;    /* Ocupa as 2 linhas */
 }
 
-/* Cenario B: Grande na DIREITA (Invertido) */
-.mosaico.vertical.direita > :first-child {
-    grid-column: auto; grid-row: auto; height: 100%; /* Reseta o padrao */
+/* MODO VERTICAL INVERTIDO (Grande na DIREITA) */
+/* Basta adicionar class="direita" no HTML e colocar a foto grande por último */
+
+.mosaico.vertical.direita > :nth-child(1) {
+    /* Reseta o 1º item para ser pequeno */
+    grid-column: auto; 
+    grid-row: auto;    
 }
 
 .mosaico.vertical.direita > :last-child {
-    grid-column: 2;        /* Vai pra direita */
-    grid-row: 1 / span 2;  /* Força inicio no topo */
-    height: 100%;
+    /* O ÚLTIMO item vira o grandão na direita */
+    grid-column: 2;        /* Coluna da Direita */
+    grid-row: 1 / span 2;  /* Começa no topo e desce até o fim */
+}
+
+/* --- MOBILE --- */
+@media (max-width: 650px) {
+    .mosaico.vertical, .mosaico.vertical.direita {
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: auto; /* Desliga a proporção fixa */
+    }
+    
+    .mosaico > * img {
+        height: auto !important; /* Deixa a altura natural */
+        aspect-ratio: 3/2; /* Padrão retangular para todas no celular */
+    }
 }
 
 /* ---------- MODO VERTICAL  (2 colunas (flexivel para 3)) ---------- */
