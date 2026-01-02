@@ -1419,45 +1419,58 @@ figure.moderno img {
     box-shadow: var(--sombra-suave);
 }
 
-/* --- O ENVOLTÓRIO DO MOSAICO --- */
-figure.container-mosaico {
-    display: block !important;
-    /* AQUI ESTÁ A MÁGICA DOS 90% CENTRALIZADO: */
-    width: 90% !important;
-    max-width: 1000px;
-    margin: 0 auto 2rem auto !important; 
-}
-
-/* Ajuste das legendas dentro dele */
-figure.container-mosaico .mosaico { margin-bottom: 8px !important; }
-
-/* Mobile */
-@media (max-width: 650px) {
-    figure.container-mosaico { width: 100% !important; }
-}
-
 /* =======================================================
-   REGRAS UNIFICADAS: Legendas Externas no Mosaico
-   Gerencia .info e .fotoinfo dentro de figure.container-mosaico
+   SISTEMA DE MOSAICOS 2.0 (Versão Limpa)
    ======================================================= */
 
-/* 1. Ajuste do Mosaico (Remove o espaço excessivo embaixo das fotos) */
-figure.container-mosaico .mosaico {
-    margin-bottom: 10px !important; /* Distância padrão para a legenda */
+/* 1. O CONTAINER (Define a largura e centraliza) */
+figure.container-mosaico {
+    display: block;
+    width: 90%;            /* A largura desejada */
+    max-width: 1000px;
+    margin: 0 auto 2rem auto; /* Centralizado */
+    border: none;
+    padding: 0;
 }
 
-/* 2. O "Reset" Geral (Cola ambas as legendas ao mosaico) */
+/* 2. O GRID (Espaçamento entre fotos) */
+figure.container-mosaico .mosaico {
+    margin-bottom: 10px; /* Espaço pequeno para a legenda externa colar */
+}
+
+/* 3. A CORREÇÃO DE ALTURA (Anti-Blogger) */
+/* Garante que separators e links não criem buracos no mosaico */
+.mosaico > *,
+.mosaico .separator,
+.mosaico a {
+    height: 100% !important;
+    width: 100% !important;
+    display: block !important;
+    position: relative;
+    border: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mosaico img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;      /* O corte inteligente */
+    display: block;
+    border-radius: 2px;
+}
+
+/* 4. LEGENDAS EXTERNAS (Info e Fotoinfo unificadas) */
 figure.container-mosaico .info,
 figure.container-mosaico .fotoinfo {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
     display: block;
     width: 100%;
+    margin-top: 0;         /* Cola no mosaico */
     box-sizing: border-box;
     line-height: 1.4;
 }
 
-/* 3. Visual da Classe .info (Com a Linha Vermelha) */
+/* Estilo da .info (Linha Vermelha) */
 figure.container-mosaico .info {
     border-left: 4px solid var(--cor-principal);
     padding-left: 12px;
@@ -1466,16 +1479,26 @@ figure.container-mosaico .info {
     font-size: 0.95rem;
 }
 
-/* 4. Visual da Classe .fotoinfo (Itálico e Discreto) */
+/* Estilo da .fotoinfo (Itálico Discreto) */
 figure.container-mosaico .fotoinfo {
-    text-align: right;     /* Se preferir à esquerda, mude para left */
+    text-align: right;
     font-style: italic;
     color: #777;
     font-size: 0.85rem;
 }
 
+/* 5. MOBILE (Responsividade) */
+@media (max-width: 650px) {
+    figure.container-mosaico {
+        width: 100%; /* No celular ocupa tudo */
+    }
+    /* Desliga a altura forçada no celular para permitir empilhamento */
+    .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
+        height: auto !important;
+    }
+}
 
-/* --- MOSAICO CENTRALIZADO (90%) --- */
+	/* --- MOSAICO CENTRALIZADO (90%) --- */
 /* Aplica apenas quando a div tiver a classe 'centro' junto com 'mosaico' */
 .mosaico.centro {
     width: 90% !important;        /* O tamanho que você quer */
