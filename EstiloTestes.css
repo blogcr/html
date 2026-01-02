@@ -1454,3 +1454,41 @@ figure.container-mosaico {
         width: 100%;
     }
 }
+
+/* =======================================================
+   REGRAS UNIFICADAS: Legendas Externas no Mosaico
+   Gerencia .info e .fotoinfo dentro de figure.container-mosaico
+   ======================================================= */
+
+/* 1. Ajuste do Mosaico (Remove o espaço excessivo embaixo das fotos) */
+figure.container-mosaico .mosaico {
+    margin-bottom: 10px !important; /* Distância padrão para a legenda */
+}
+
+/* 2. O "Reset" Geral (Cola ambas as legendas ao mosaico) */
+figure.container-mosaico .info,
+figure.container-mosaico .fotoinfo {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+/* 3. Visual da Classe .info (Com a Linha Vermelha) */
+figure.container-mosaico .info {
+    border-left: 4px solid var(--cor-principal);
+    padding-left: 12px;
+    text-align: left;
+    color: var(--cor-titulo);
+    font-size: 0.95rem;
+}
+
+/* 4. Visual da Classe .fotoinfo (Itálico e Discreto) */
+figure.container-mosaico .fotoinfo {
+    text-align: right;     /* Se preferir à esquerda, mude para left */
+    font-style: italic;
+    color: #777;
+    font-size: 0.85rem;
+}
