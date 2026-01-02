@@ -427,11 +427,10 @@ figure.container-mosaico .mosaico,
 }
 
 /* REGRA DE OURO DO MOSAICO (Anti-Colapso) */
-/* Força altura total em todos os elementos internos */
-.mosaico > *,
-.mosaico .separator,
-.mosaico a,
-.mosaico div {
+/* Versão Limpa: Ataca apenas os elementos de estrutura, ignorando legendas */
+.mosaico > *,          /* Pega o filho direto (seja lá qual for) */
+.mosaico .separator,   /* Pega especificamente o wrapper do Blogger */
+.mosaico a {           /* Pega o link */
     height: 100% !important;
     width: 100% !important;
     display: block !important;
