@@ -791,7 +791,7 @@ font-size: clamp(16px, 4vw, 22px) !important;
 
 /* ---------- IMAGENS ANTIGAS ---------- */
 
-figure:not(.moderno):not(.mosaico-item):not(.centro) {
+figure:not(.moderno):not(.mosaico-item):not(.centro):not(.container-mosaico) {
         	display: block !important;
         	max-width: 35% !important;
         	height: auto !important;
