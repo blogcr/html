@@ -1,408 +1,190 @@
 @charset 'utf-8';
 
-/* ---------- ROOT ---------- */
+/* =======================================================
+   1. VARIÁVEIS E RESET (A Base do Design)
+   ======================================================= */
 :root {
-            color-scheme: light;
-            
-            /* --- CORES GERAIS --- */
-            --cor-principal: #B71C1C;       /* Vermelho (Destaques) */
-            --cor-link: #1565C0;            /* Azul (Links Novos) */
-            --cor-hover: #424242;           /* Hover */
-            --cor-link-visitado: #7B1FA2;   /* Roxo (Links Visitados) */
-            --cor-branco: #ffffff;          /* Branco Puro */
-            
-            /* --- CORES DO TEXTO --- */
-            --cor-titulo: #212121;          /* Preto Suave (Títulos) */
-            --cor-texto: #333333;           /* Cinza Escuro (Texto Padrão) */
-            --cor-texto-suave: #757575;     /* Cinza Médio (Datas, legendas) */
+    color-scheme: light;
     
-            /* --- CORES DE FUNDOS --- */
-            --cor-fundo: #f0f0f0;           /* Fundo da Página */
-            --cor-fundo-detalhe: #fafafa;   /* Fundo de detalhes */
-            
-            /* --- CORES DE ELEMENTOS --- */
-            --cor-escuro: #222222;          /* Preto (Menus, Rodapé) */
-            --cor-cinza-claro: #E0E0E0;     /* Cinza Claro */
-            --cor-borda: #e0e0e0;           /* Borda padrão */
-            --cor-papel:#FFF8E1;            /* Bordas do backs */
-  
- /* ADICIONE ESTA LINHA: */
-    --cor-fundo-citacao: #EFEBE9; /* O bege quente que você gosta */
-
-            /* --- CORES DE TABELAS --- */
-            --cor-tabela-claro: #EFEBE9;    /* Tons quentes (Bege claro) */
-            --cor-tabela-escuro: #e1dad7;   /* Tons quentes (Bege escuro) */
-
-            /* --- FONTES & TÉCNICA --- */
-            --fonte-padrao: 'Roboto', sans-serif;
-            --fonte-titulo: 'Oswald', sans-serif;
-            --fonte-serifa: 'Roboto Slab', serif;
-            --fonte-typewriter: 'Courier Prime', monospace;
-            --fonte-capitular: 'Playfair Display', serif; 
+    /* --- CORES --- */
+    --cor-principal: #B71C1C;       /* Vermelho (Destaques) */
+    --cor-link: #1565C0;            /* Azul (Links Novos) */
+    --cor-hover: #424242;           /* Hover */
+    --cor-link-visitado: #7B1FA2;   /* Roxo */
+    --cor-branco: #ffffff;
     
-            /* --- HIFENIZAÇÃO & LEITURA --- */
-            --hifenizacao: 6 3 3;
-            --hifenizacao-mobile: 5 2 2;
+    --cor-titulo: #212121;          /* Preto Suave */
+    --cor-texto: #333333;           /* Texto Padrão */
+    --cor-texto-suave: #757575;     /* Legendas/Datas */
     
-            /* --- CONTROLE DE TÍTULOS (CLAMP) --- */
-            --titulo-tamanho: clamp(32px, 5vw, 42px);
-            --titulo-altura: 1.2;
-            --titulo-espacamento: 0.5px;
-            --titulo-transform: none;
-
-            /* --- PADRONIZAÇÃO DE TAMANHOS E FORMAS --- */
-            /* --- ESPAÇAMENTO RÍTMICO --- */
-            /* Use isso em margins e paddings ao invés de números aleatórios */
-            --espaco-xs: 4px;   /* Mínimo */
-            --espaco-s: 8px;    /* Pequeno */
-            --espaco-m: 16px;   /* Médio (Padrão) */
-            --espaco-l: 24px;   /* Grande */
-            --espaco-xl: 32px;  /* Extra Grande (Separação de posts) */
-
-            /* --- GEOMETRIA & TEXTURA --- */
-            --raio-pequeno: 4px;   /* Botões pequenos/Tags */
-            --raio-medio: 8px;     /* Cards de postagem */
-            --raio-grande: 16px;   /* Containers maiores */
-
-            /* --- SOMBRAS (PROFUNDIDADE) --- */
-            --sombra-suave: 0 2px 4px rgba(0,0,0, 0.05);      /* Estado normal */
-            --sombra-flutuante: 0 8px 16px rgba(0,0,0, 0.1);  /* Ao passar o mouse */
+    --cor-fundo: #f0f0f0;
+    --cor-fundo-detalhe: #fafafa;
+    --cor-fundo-citacao: #EFEBE9;   /* Bege quente */
     
-            /* --- TRANSIÇÃO --- */
-            --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            }
+    --cor-escuro: #222222;
+    --cor-cinza-claro: #E0E0E0;
+    --cor-borda: #e0e0e0;
+    --cor-papel: #FFF8E1;
 
-/* ---------- RESET & NORMALIZAÇÃO (MODERNO) ---------- */
+    --cor-tabela-claro: #EFEBE9;
+    --cor-tabela-escuro: #e1dad7;
 
-/* 1. Garante que larguras e paddings não quebrem o layout */
-*, *::before, *::after {
-            box-sizing: border-box;
-            }
-
-/* 2. Garante que imagens e vídeos nunca estourem a tela no celular */
-img, video, iframe, embed, object {
-        	max-width: 100%;
-        	height: auto; /* Mantém a proporção correta */
-        	display: block;
-            }
-
-/* 3. Faz botões e formulários usarem a fonte do blog */
-input, button, textarea, select {
-        	font: inherit;
-            }
-
-/* 4. Remove a margem padrão do corpo para aproveitar a tela toda */
-body {
-        	margin: 0;
-        	padding: 0;
-            }
-
-/* Oculta elementos que devem ser escondidos (Acessibilidade) */
-[hidden] {
-        	display: none !important;
-            }
-
-
-/* ---------- MODERNIZAÇÃO DA INTERFACE ---------- */
-
-/* 1. Rolagem Suave para links internos */
-html {
-        	scroll-behavior: smooth;
-            }
-
-/* 2. Personaliza a cor da seleção de texto (Vermelho e Branco) */
-::selection {
-        	background: var(--cor-principal);
-        	color: var(--cor-branco);
-            }
-
-::-moz-selection {
-        	background: var(--cor-principal);
-        	color: var(--cor-branco);
-            }
-
-/* 3. Barra de Rolagem Personalizada (Webkit) */
-::-webkit-scrollbar {
-            width: 12px;               /* Largura da barra vertical */
-            height: 12px;              /* Altura da barra horizontal */
-            }
-
-::-webkit-scrollbar-track {
-        	background: var(--cor-cinza-claro); /* Fundo por onde a barra corre */
-            }
-
-::-webkit-scrollbar-thumb { 
-            background-color: var(--cor-principal);  /* Cor Vermelha */ 
-            border-radius: 10px; /* Bem redondo */ /* O TRUQUE DO RESPIRO: */ 
-       	border: 3px solid transparent; /* A borda é invisível... */ 
-       	background-clip: content-box; /* ...e a cor vermelha NÃO invade a borda */ 
-            }
-
-::-webkit-scrollbar-thumb:hover {
-            background-color: var(--cor-hover); /* Cor ao passar o mouse */
-            }
-
-
-/* ---------- TEXTOS DE DESTAQUES ---------- */
-.spelite, .datilog {
-            font-family: var(--fonte-typewriter) !important;
-            }
-
-.roman {
-            font-family: var(--fonte-serifa) !important;
-            }
-
-/* ---------- EPÍGRAFE ----------- */
-.epigrafe {
-            /* Container da Citação */
-            display: block;
-            width: 60%;
-            margin-left: auto; /* Joga para direita */
-            margin-right: 0;
-            margin-bottom: 3rem;
+    /* --- FONTES --- */
+    --fonte-padrao: 'Roboto', sans-serif;
+    --fonte-titulo: 'Oswald', sans-serif;
+    --fonte-serifa: 'Roboto Slab', serif;
+    --fonte-typewriter: 'Courier Prime', monospace;
+    --fonte-capitular: 'Playfair Display', serif; 
     
-            /* Visual da Barra Vermelha */
-            background: transparent !important;
-            border: none !important;
-            border-right: 4px solid var(--cor-principal) !important; 
-            padding-right: 20px;
+    /* --- TÉCNICA --- */
+    --hifenizacao: 6 3 3;
+    --hifenizacao-mobile: 5 2 2;
+    --titulo-tamanho: clamp(32px, 5vw, 42px);
     
-            /* Tipografia do Texto da Citação */
-            text-align: right;
-            font-family: var(--fonte-serifa);
-            font-style: italic;
-            font-size: 0.95rem;
-            line-height: 1.5;
-            color: var(--cor-texto-suave);
-            }
-
-.epigrafe cite {
-    	display: block;      /* Força a ir para a linha de baixo automaticamente */
-   	margin-top: 10px;    /* Dá o espaço necessário */
-            /* Estilo "Técnico" da linha toda (Autor + Obra) */
-    	font-family: sans-serif;
-    	font-size: 0.8rem;
-    	color: var(--cor-texto-suave);         /* Cinza claro */
-    	font-style: normal;  /* Remove o itálico herdado */
-    	font-weight: 400;
-            }
-
-.epigrafe cite b, 
-.epigrafe cite strong {
-    	color: var(--cor-texto-suave);      /* Um pouco mais escuro */
-    	text-transform: uppercase; /* Vira CAIXA ALTA sozinho */
-    	letter-spacing: 1px;
-    	font-weight: 700;
-            }
-
-/* --- EPÍGRAFE CELULAR --- */
-@media (max-width: 820px) {
-.epigrafe { 
-            width: 100%; 
-            padding-right: 15px; 
-            border-right-width: 3px !important; 
-            }
+    --sombra-suave: 0 2px 4px rgba(0,0,0, 0.05);
+    --sombra-flutuante: 0 8px 16px rgba(0,0,0, 0.1);
+    --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* --- RESET & NORMALIZAÇÃO --- */
+*, *::before, *::after { box-sizing: border-box; }
 
-/* ---------- DIVISORES ---------- */
-.divisor, .divisor3  {
-        	content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
-        	width:30%;
-        	opacity:0.5;
-        	margin:3px auto 20px;
-            }
+img, video, iframe, embed, object {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
-hr {
-    	width: 50px !important;
-    	margin: 5px 0 5px 0 !important;
-    	border-top: 1px solid var(--cor-principal) !important;
-    	}
+input, button, textarea, select { font: inherit; }
+
+body { margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+
+/* --- INTERFACE --- */
+html { scroll-behavior: smooth; }
+
+::selection, ::-moz-selection {
+    background: var(--cor-principal);
+    color: var(--cor-branco);
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--cor-cinza-claro); }
+::-webkit-scrollbar-thumb { 
+    background-color: var(--cor-principal); 
+    border-radius: 10px; 
+    border: 3px solid transparent; 
+    background-clip: content-box; 
+}
+::-webkit-scrollbar-thumb:hover { background-color: var(--cor-hover); }
+
 
 /* =======================================================
-   TÍTULOS DE CAPÍTULOS (Estilo Editorial Clássico)
+   2. TIPOGRAFIA E ELEMENTOS DE TEXTO
    ======================================================= */
 
-.capitulo {
-    /* 1. Tipografia Elegante */
-    font-family: var(--fonte-serifa); /* Roboto Slab */
-    color: var(--cor-titulo);
-    font-size: 1.2rem;      /* Grande, mas não gigante */
-    font-weight: 700;       /* Negrito */
-    line-height: 1.3;
-    
-    /* 2. Espaçamento (Respiro Importante) */
-    margin-top: 3rem;       /* Separa bem do texto anterior */
-    margin-bottom: 1.5rem;  /* Espaço para o texto que vem */
-    position: relative;
-    
-    /* 3. Opcional: Deixa tudo maiúsculo para ficar mais "Capítulo" */
-    /* text-transform: uppercase; */ 
+/* Estilos de Fonte Específicos */
+.spelite, .datilog { font-family: var(--fonte-typewriter) !important; }
+.roman { font-family: var(--fonte-serifa) !important; }
+.italico { font-style: italic !important; }
+.negrito { font-weight: 900 !important; }
+
+/* Epígrafe */
+.epigrafe {
+    display: block;
+    width: 60%;
+    margin: 0 0 3rem auto;
+    background: transparent !important;
+    border: none !important;
+    border-right: 4px solid var(--cor-principal) !important; 
+    padding-right: 20px;
+    text-align: right;
+    font-family: var(--fonte-serifa);
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--cor-texto-suave);
+}
+.epigrafe cite {
+    display: block;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: var(--cor-texto-suave);
+    font-style: normal;
+    font-weight: 400;
+}
+.epigrafe cite b, .epigrafe cite strong {
+    color: var(--cor-texto-suave);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-/* A Assinatura Vermelha (Traço Inferior) */
+/* Capítulos */
+.capitulo {
+    font-family: var(--fonte-serifa);
+    color: var(--cor-titulo);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
 .capitulo::after {
     content: "";
     display: block;
-    width: 40px;            /* Largura discreta */
-    height: 3px;            /* Espessura elegante */
+    width: 40px;
+    height: 3px;
     background-color: var(--cor-principal);
-    margin-top: 10px;       /* Distância do texto */
-    border-radius: 2px;     /* Aquele arredondado suave que combinamos */
+    margin-top: 10px;
+    border-radius: 2px;
 }
+.capitulo.centro { text-align: center; }
+.capitulo.centro::after { margin: 10px auto 0 auto; }
 
-/* VARIAÇÃO: Centralizado (Muito chique para separar atos) */
-.capitulo.centro {
-    text-align: center;
-}
-
-.capitulo.centro::after {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* =======================================================
-   CAPITULAR AUTOMÁTICA (Método Clássico ::first-letter)
-   Uso: <div class="capitular"><span class="versalete">Texto inicial</span> resto do texto...</div>
-   ======================================================= */
-
-.capitular {
-    /* Garante que o container seja um bloco para o texto fluir */
-    display: block; 
-    position: relative;
-    /* Se quiser limpar floats anteriores */
-    clear: both; 
-}
-
-/* O ROBÔ: Pega a primeira letra automaticamente */
+/* Capitular (Drop Cap) */
+.capitular { display: block; position: relative; clear: both; }
 .capitular::first-letter {
     float: left;
     font-family: var(--fonte-capitular);
     font-weight: 700;
-    
-    /* AUMENTO DE POTÊNCIA: De 6.5rem para 8.5rem */
-    font-size: 8.5rem;          
-    
-    /* Caixa mais compacta para a letra não empurrar o texto de baixo */
-    line-height: 0.6;           
-    
-    /* Espaçamento - Sintonia Fina */
-    margin-top: 0px;   /* Reduzi para subir um pouco, já que a letra cresceu */         
-    margin-right: 15px; /* Um pouco mais de ar na lateral */        
-    margin-bottom: -5px;        
-    
+    font-size: 8.5rem;
+    line-height: 0.6;
+    margin: 0 15px -5px 0;
     color: var(--cor-titulo);
-    
     font-variant: normal !important; 
     text-transform: uppercase;
 }
-
-/* VERSALETE (Opcional: Use apenas se quiser destacar a frase) */
 .versalete {
     font-variant: small-caps;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
 
-/* ---------- TEXTOS EM DESTAQUE ---------- */
-
-#dialogo > br {
-        	margin-bottom:20px !important;
-            }
-
-.paginas {
-        	font-size:70%;
-        	opacity:0.6;
-        	border-top:1px solid var(--cor-principal);
-        	padding-top:2px;
-        	width:50%;
-        	margin:5px auto 0;
-        	text-align:center !important;
-            }
-
-.italico {
-            font-style: italic !important;
-            }
-
-.negrito {
-       	font-weight: 900 !important;
-            }
-
-.centraliza {
-        	margin: 0 auto;
-        	text-align:center;
-        	display:block;
-            }
-
-.centraliza hr {
-            margin:0 auto !important;
-            }
-
-.frase {
-        	overflow:hidden;
-            }
-
-.textopeq, .textoita {
-        	font-size: 14px !important;
-        	line-height: 18px !important;
-       	margin-top: 8px;
-            }
-
-sup {
-        	color: var(--cor-principal) !important;
-       	font-size:0.7em !important;
-        	font-weight:bold;
-        	margin-left:3px;
-            }  
-
-
-/* ---------- BLOCKQUOTE ---------- */
-
-/* ---------- BLOCKQUOTE (Versão Confortável / Sans-Serif) ---------- */
-
+/* Blockquote */
 blockquote {
-    /* 1. POSICIONAMENTO (Mantido) */
     float: right !important;
     width: 45% !important;
     margin: 5px 0 20px 30px !important;
-    
-    /* 2. LIMPEZA (Mantido) */
     background: transparent !important;
     border: none !important;
-    padding: 0 !important;
-    
-    /* 3. IDENTIDADE VISUAL (Mantido) */
+    padding: 0 0 0 20px !important;
     border-left: 5px solid var(--cor-principal) !important;
-    padding-left: 20px !important; 
-    
-    /* 4. TIPOGRAFIA (Ajustada para Leitura) */
     text-align: left !important;
-    
-    /* MUDANÇA CRUCIAL: Usamos a Roboto (Padrão) que é limpa e moderna */
-            font-family: var(--fonte-serifa) !important; /* Muda para SERIFA (Roboto Slab) */
-    
-    /* Tamanho calibrado para Sans-Serif (elas parecem maiores que as serifadas) */
+    font-family: var(--fonte-serifa) !important;
     font-size: 1.6rem !important; 
-    
-    /* Mais altura de linha para não cansar a vista */
     line-height: 1.3 !important; 
-    
-    /* Mantive itálico, pois na Roboto ele é suave. 
-       Se ainda incomodar, mude para 'normal' */
     font-style: italic !important;
-    
     font-weight: 500 !important;
     color: var(--cor-titulo);
     position: relative !important;
-    box-sizing: border-box !important;
 }
-
-/* Autor da Citação */
 blockquote cite {
     display: block;
     margin-top: 15px;
-    
-    /* CORREÇÃO: Usando a variável do sistema */
     font-family: var(--fonte-padrao) !important; 
     font-size: 0.8rem;
     font-weight: 700;
@@ -413,185 +195,177 @@ blockquote cite {
     line-height: 1.4 !important;
 }
 
-/* MOBILE (Ajuste de proporção) */
-@media (max-width: 650px) {
-    blockquote {
-        width: 40% !important;
-    	font-size: 1.3rem !important; 
-    }
-}
-
-/* ---------- NOTAS LATERAIS ---------- */
-
+/* Notas Laterais */
 .nota-lateral {
-    	float: right;
-    	width: 45%;    
-    	margin: 8px 0 20px 25px; 
-     	background: transparent;
-    	padding-top: 10px; /* Espaço entre a linha e o texto */
-     	border-top: 1px solid var(--cor-principal); 
-     	font-family: var(--fonte-serifa);
-    	font-size: 0.8rem;
-    	line-height: 1.4;
-    	color: #666;             /* Cinza médio para não cansar a vista */
-    	text-align: left;
-    	/* Garante que a caixa não quebre */
-    	box-sizing: border-box;
-    	clear: right; /* Evita encavalar com outras imagens à direita */
+    float: right;
+    width: 45%;    
+    margin: 8px 0 20px 25px; 
+    background: transparent;
+    padding-top: 10px;
+    border-top: 1px solid var(--cor-principal); 
+    font-family: var(--fonte-serifa);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #666;
+    text-align: left;
+    clear: right;
 }
-
-/* Destaque para o Asterisco ou Número no início */
 .nota-lateral strong {
-    	color: var(--cor-principal); /* O asterisco fica vermelho */
-    	font-weight: 700;
-    	margin-right: 4px;
+    color: var(--cor-principal);
+    font-weight: 700;
+    margin-right: 4px;
 }
 
-/* --- MOBILE (Ajuste de Segurança) --- */
-@media (max-width: 650px) {
-.nota-lateral {
-        	float: none;
-        	width: 100%;
-        	margin: 2rem 0;
-        	border-top: 1px solid var(--cor-borda); /* No mobile, linha cinza suave */
-       	border-left: 3px solid #B71C1C; /* Troca para lateral no mobile para dar estrutura */
-        	padding-left: 15px; /* Recuo */
-    	}
+/* Poema */
+.poema {
+    white-space: pre-wrap;
+    text-align: left !important;
+    width: auto !important;
+    hyphens: none !important;
+    display: block;
 }
 
-
-/* ---------- BORDAS ---------- */
-
-.borda {
-        	padding-left:10px; 
-        	border-left:1px solid var(--cor-principal);
+/* Caixas e Destaques */
+.destaque {
+    margin: 0 5% 1.5rem 5% !important;
+    padding: 20px !important;
+    background-color: var(--cor-fundo-citacao) !important;
+    border-radius: 6px;
+    border: none;
+    font-family: var(--fonte-padrao);
+    font-size: 1em !important; 
+    line-height: 1.5 !important;
+    color: var(--cor-texto);
 }
-
-.bordas { 
-        	border:1px solid var(--cor-principal) !important;
+.destaque.roman {
+    font-family: var(--fonte-serifa) !important;
+    font-size: 1.05em !important;
 }
+#citacao, .citacao { margin: 0 5% !important; }
+
+/* Outros Elementos de Texto */
+#dialogo > br { margin-bottom: 20px !important; }
+.paginas {
+    font-size: 70%;
+    opacity: 0.6;
+    border-top: 1px solid var(--cor-principal);
+    padding-top: 2px;
+    width: 50%;
+    margin: 5px auto 0;
+    text-align: center !important;
+}
+.centraliza { margin: 0 auto; text-align: center; display: block; }
+.centraliza hr { margin: 0 auto !important; }
+.frase { overflow: hidden; }
+.textopeq, .textoita {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    margin-top: 8px;
+}
+sup {
+    color: var(--cor-principal) !important;
+    font-size: 0.7em !important;
+    font-weight: bold;
+    margin-left: 3px;
+}
+hr {
+    width: 50px !important;
+    margin: 5px 0 5px 0 !important;
+    border-top: 1px solid var(--cor-principal) !important;
+}
+.divisor, .divisor3 {
+    content: url(https://1.bp.blogspot.com/-ZOoQLdJHAr0/YUlV6sNHb1I/AAAAAAAC7kg/38Dq4doCnXYwHXgJJJvjJeW5PG9ujvRqwCLcBGAsYHQ/s835/divisor.png);
+    width: 30%;
+    opacity: 0.5;
+    margin: 3px auto 20px;
+}
+.borda { padding-left: 10px; border-left: 1px solid var(--cor-principal); }
+.bordas { border: 1px solid var(--cor-principal) !important; }
+.fa, .fas, .far, .fab { margin-right: 2ch; }
 
 
-/* ---------- IMAGENS ---------- */
+/* =======================================================
+   3. IMAGENS E FIGURES (O CORAÇÃO DO LAYOUT)
+   ======================================================= */
 
 /* FIGURA GENÉRICA (O Reset Correto) */
 figure {
-    display: block;      /* Essencial para aceitar larguras */
-    width: auto;         /* Deixa ocupar o espaço natural */
-    max-width: 100%;     /* Segurança para não vazar a tela */
+    display: block;       /* Essencial para aceitar larguras */
+    width: auto;          /* Deixa ocupar o espaço natural */
+    max-width: 100%;      /* Segurança */
     margin: 0 0 1.5rem 0;
     padding: 0;
     border: none;
 }
-
 figure img {
-    	display: block;
-    	width: 100%;
-    	height: auto;
-    	max-width: 100%;
-}
-
-.esq {
-    	float: left;
-    	/* Margem otimizada: Topo | Dir | Baixo | Esq */
-   	 margin: 0.6rem 1.2rem 0.6rem 0;
-   	 /* SEGURANÇA: Impede que a imagem esmague o texto no celular */
-    	max-width: 45%; 
-   	 /* ESSENCIAL PARA POLÍGONOS: */
-    	/* Cria o "respiro" entre o seu polígono e o texto */
-    	shape-margin: 1.2rem;
-}
-
-.dir {
-    	float: right;
-    	/* Margem otimizada: Topo | Dir | Baixo | Esq */
-    	margin: 0.6rem 0 0.6rem 1.2rem;
-    	/* SEGURANÇA */
-    	max-width: 45%;
-    	/* ESSENCIAL PARA POLÍGONOS */
-    	shape-margin: 1.2rem;
-}
-
-.centro {
-    	display: block;
-    	float: none !important;
-    	height: auto;
-    	/* AQUI: Mudei para REM para manter o padrão moderno das laterais */
-    	/* 1.5rem geralmente equivale aos mesmos 24px do 1.5em padrão */
-    	margin: 0 auto 1.5rem auto !important; 
-   	 /* Desktop */
-    	width: 90%; 
-}
-
-/* Celular/Tablet (Padrão 820px) */
-@media (max-width: 820px) {
-.centro {
-        	width: 100%;
-    	}
-}
-
-.fotopeq {
-        	height:auto;
-        	width:20%;
-        	max-width:20%;
-        	align: top;
-        	float: left;
-        	margin: 10px 20px 5px 0;
-    	}
-
-/* ---------- POPUP DO FANCYBOX ---------- */
-.fancybox-slide--iframe .fancybox-content {
-            width  : 800px;
-            height : 600px;
-            max-width  : 80%;
-            max-height : 80%;
-            margin: 0;
-}
-
-/* =======================================================
-   FIGURE MODERNO (Sistema Overlay Simples)
-   ======================================================= */
-
-/* 1. O Container (O Tabuleiro) */
-figure.moderno {
-    position: relative; /* Essencial: Define o limite para a legenda não fugir */
-    display: block;     /* Ou inline-block dependendo do seu layout */
-    margin: 0 auto 1.5rem auto; /* Centralizado por padrão */
-    width: fit-content; /* Abraça o tamanho da imagem */
-    max-width: 100%;
-}
-
-/* 2. A Imagem (e o Link do Blogger) */
-figure.moderno img,
-figure.moderno a img {
     display: block;
     width: 100%;
     height: auto;
-border-radius: 2px;
 }
 
-/* 3. A NOVA LEGENDA (Flutuante - Vacinada contra bugs de carregamento) */
-/* 3. A NOVA LEGENDA (Sem animação - Visibilidade Garantida) */
+/* Alinhamentos de Figuras */
+.esq, figure.moderno.esq {
+    float: left;
+    margin: 0.6rem 1.2rem 0.6rem 0;
+    max-width: 45%;
+    shape-margin: 1.2rem;
+}
+.dir, figure.moderno.dir {
+    float: right;
+    margin: 0.6rem 0 0.6rem 1.2rem;
+    max-width: 45%;
+    shape-margin: 1.2rem;
+}
+.centro, figure.moderno.centro {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem auto !important;
+    width: 90%;
+    max-width: 100%;
+}
+.fotopeq {
+    height: auto;
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    margin: 10px 20px 5px 0;
+}
+
+/* FIGURE MODERNO (Imagens Isoladas com Legenda Sobreposta) */
+figure.moderno {
+    position: relative !important; /* Âncora para a legenda */
+    display: block !important;
+    margin: 0 auto 1.5rem auto;
+    width: fit-content;            /* Abraça a imagem */
+    max-width: 100%;
+    height: auto !important;
+    overflow: hidden;
+}
+
+/* Garante que elementos internos obedeçam */
+figure.moderno .separator,
+figure.moderno a {
+    position: relative !important;
+    display: block !important;
+    height: auto !important;
+}
+figure.moderno img {
+    border-radius: 2px;
+    box-shadow: var(--sombra-suave);
+    display: block;
+    width: 100%;
+}
+
+/* LEGENDA FLUTUANTE (Overlay) */
 .legenda-foto {
-    /* POSICIONAMENTO */
     position: absolute;
-    bottom: 5px;  /* Seu estilo flutuante */
-    left: 5px;    /* Seu estilo flutuante */
-    z-index: 100; /* Aumentei para garantir que fique por cima do link */
-    
-    /* RESET */
+    bottom: 5px;
+    left: 5px;
+    z-index: 100;
     margin: 0 !important;
-    border: none !important;
-    background: none !important;
-    right: auto; top: auto;
-    
-    /* ESTILO VISUAL */
     background-color: rgba(0, 0, 0, 0.65) !important;
     color: var(--cor-branco) !important;
     padding: 5px 10px !important;
-    margin-bottom: 0 !important; /* Zero pois já usamos bottom: 5px */
-    
-    /* TIPOGRAFIA */
     font-family: var(--fonte-padrao) !important;
     font-size: clamp(9px, 2vw, 11px) !important;
     font-weight: 700 !important;
@@ -599,65 +373,69 @@ border-radius: 2px;
     letter-spacing: 1px;
     text-align: left !important;
     width: auto !important;
-
-    /* A SEGURANÇA CONTRA BAGUNÇA */
-    white-space: nowrap; /* Impede que o texto fique vertical */
+    white-space: nowrap;
+    border-radius: 2px;
 }
-
-/* Efeito Hover (Mantido) */
-figure.moderno:hover .legenda-foto {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-}
-/* Opcional: Efeito Hover */
 figure.moderno:hover .legenda-foto {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
+/* Legendas Externas para Figure Moderno */
+figure.moderno figcaption,
 figure.moderno .info {
-  	grid-row: 2; /* Vai para a linha de baixo */
-  	grid-column: 1;
-  	display: block;
-  	margin-top: 8px;
-  	border-left: 3px solid var(--cor-principal);
-  	padding-left: 10px; 
-  	font-size: 0.9rem;
-  	color: var(--cor-texto-suave);
-  	text-align: left;
-  	line-height: 1.45;
+    display: block;
+    margin-top: 8px;
+    border-left: 3px solid var(--cor-principal);
+    padding-left: 10px; 
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+    text-align: left;
+    line-height: 1.45;
+}
+figure.moderno .fotoinfo {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.7rem;
+    color: #999;
+    text-align: right;
+    font-style: italic;
 }
 
-figure .fotoinfo {
-  	grid-row: 3; /* Terceira linha, abaixo da bio */
-  	grid-column: 1;
-  	display: block;
-  	margin-top: 4px; /* Espacinho sutil */
-  	/* Estilo Minimalista */
-  	font-size: 0.7rem;       /* Bem pequeno */
-  	color: #999;             /* Cinza claro para não chamar atenção */
-  	text-align: right;       /* Alinhado à direita (padrão de crédito) */
-  	font-style: italic;
-}
 
 /* =======================================================
-   MOSAICO INTELIGENTE (Versão Simplificada)
+   4. SISTEMA DE MOSAICOS UNIFICADO (Versão Final)
    ======================================================= */
 
+/* CONTAINER PRINCIPAL (90% Largura e Centralizado) */
+figure.container-mosaico {
+    display: block !important;
+    width: 90% !important;       /* A largura mestre */
+    max-width: 1000px;
+    margin: 0 auto 2rem auto !important;
+    padding: 0;
+    border: none;
+}
+
+/* O GRID (Espaçamento) */
+figure.container-mosaico .mosaico,
 .mosaico {
     display: grid;
     gap: 10px;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 10px !important; /* Espaço para legenda externa */
     box-sizing: border-box;
 }
 
-/* REGRA DE OURO: Estiliza QUALQUER filho direto (Links, Divs do Blogger, Imagens) */
+/* REGRA DE OURO DO MOSAICO (Anti-Colapso) */
+/* Força altura total em todos os elementos internos */
 .mosaico > *,
 .mosaico .separator,
-.mosaico a {
-    position: relative;
-    display: block !important;
+.mosaico a,
+.mosaico div {
+    height: 100% !important;
     width: 100% !important;
-    height: 100% !important; /* Força altura total para evitar buracos */
+    display: block !important;
+    position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
@@ -665,812 +443,70 @@ figure .fotoinfo {
     border-radius: 2px;
 }
 
-/* -------------------------------------------------------
-   LÓGICA AUTOMÁTICA DE POSICIONAMENTO
-   ------------------------------------------------------- */
-
-/* MODO VERTICAL (Padrão: Grande na ESQUERDA) */
-.mosaico.vertical {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    aspect-ratio: 4 / 3; /* Formato Retangular Paisagem */
-}
-
-/* O 1º item da lista será o grandão automaticamente */
-.mosaico.vertical > :nth-child(1) {
-    grid-column: 1;      /* Coluna da Esquerda */
-    grid-row: span 2;    /* Ocupa as 2 linhas */
-}
-
-/* MODO VERTICAL INVERTIDO (Grande na DIREITA) */
-/* Basta adicionar class="direita" no HTML e colocar a foto grande por último */
-
-.mosaico.vertical.direita > :nth-child(1) {
-    /* Reseta o 1º item para ser pequeno */
-    grid-column: auto; 
-    grid-row: auto;    
-}
-
-.mosaico.vertical.direita > :last-child {
-    /* O ÚLTIMO item vira o grandão na direita */
-    grid-column: 2;        /* Coluna da Direita */
-    grid-row: 1 / span 2;  /* Começa no topo e desce até o fim */
-}
-
-/* --- MOBILE --- */
-@media (max-width: 650px) {
-    .mosaico.vertical, .mosaico.vertical.direita {
-        display: flex;
-        flex-direction: column;
-        aspect-ratio: auto; /* Desliga a proporção fixa */
-    }
-    
-    .mosaico > * img {
-        height: auto !important; /* Deixa a altura natural */
-        aspect-ratio: 3/2; /* Padrão retangular para todas no celular */
-    }
-}
-
-
-
-/* =======================================================
-   MOSAICO HORIZONTAL INTELIGENTE
-   Estrutura: 2 colunas, altura automática
-   ======================================================= */
-
-.mosaico.horizontal {
-    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
-    grid-template-rows: auto auto;  /* Altura definida pelo conteúdo */
-    aspect-ratio: auto;             /* Remove proporção fixa, deixa fluir */
-}
-
-/* O 3º ITEM (A panorâmica) */
-/* Por padrão, ele fica embaixo e ocupa as duas colunas */
-.mosaico.horizontal > :nth-child(3) {
-    grid-column: 1 / -1; /* Vai da linha 1 até o final (-1) */
-}
-
-/* --- MODO INVERTIDO (Panorâmica sobe) --- */
-.mosaico.horizontal.invertido > :nth-child(3) {
-    grid-column: 1 / -1; /* Continua ocupando tudo */
-    grid-row: 1;         /* FORÇA ir para a primeira linha */
-}
-/* Obs: Os itens 1 e 2 fluirão automaticamente para a linha de baixo */
-
-/* ----------- MOBILE (Responsividade Total) ----------- */
-@media (max-width: 650px) {
-    .mosaico.vertical, .mosaico.vertical.direita,
-    .mosaico.horizontal, .mosaico.horizontal.tripla {
-        display: flex;
-        flex-direction: column;
-        aspect-ratio: auto;
-        gap: 15px;
-    }
-
-    .mosaico-item img {
-        height: auto !important;
-        aspect-ratio: 3/2;
-    }
-    
-    /* Garante que o item ocupe a largura toda no celular */
-    figure.mosaico-item {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-}
-
-/* =======================================================
-   MOSAICO "LINHA" SUPER SIMPLIFICADO
-   Uso: Apenas div e img (ou div, a e img)
-   ======================================================= */
-
-.mosaico.simples {
-    /* 1. O Motor Automático */
-    display: grid;
-    grid-auto-flow: column;       /* Cria colunas automaticamente */
-    grid-auto-columns: 1fr;       /* Força larguras iguais para todos */
-    gap: 10px;
-    
-    /* 2. Layout Base */
-    width: 100%;
-    margin-bottom: 2rem;
-    box-sizing: border-box;
-    
-    /* Limpeza de conflitos com outros mosaicos */
-    grid-template-columns: none;
-    grid-template-rows: auto;
-}
-
-/* O SEGREDO: Estiliza diretamente as IMAGENS ou LINKS que são filhos diretos */
-.mosaico.simples > img,
-.mosaico.simples > a {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    
-    /* PROPORÇÃO (Ajuste aqui: 2/3 para Livros, 1/1 para Quadrado) */
-    aspect-ratio: auto; 
-    
-    /* Garante que a imagem preencha o retângulo sem distorcer */
-    object-fit: cover;
-    height: auto !important; /* Deixa o aspect-ratio controlar a altura */
-    border-radius: 2px;
-    
-    /* Remove decorações de link se houver */
-    text-decoration: none;
-    background: none;
-}
-
-/* Caso especial: Se for um LINK, a imagem dentro dele tem que obedecer */
-.mosaico.simples > a > img {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover;
-    border-radius: 2px;
-}
-
-/* --- MOBILE (Empilha tudo) --- */
-@media (max-width: 650px) {
-    .mosaico.simples {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    /* No celular, removemos a proporção fixa */
-    .mosaico.simples > img,
-    .mosaico.simples > a {
-        aspect-ratio: auto;
-        height: auto !important;
-    }
-}
-
-/* ---------- FIGURAS e ALINHAMENTOS ---------- */
-
-/* DIREITA */
-figure.moderno.dir {
-  	float: right;
- 	margin: 0.5rem 0 0.5rem 1rem;
-  	shape-margin: 1.2rem;
-  	max-width: 45%;
-}
-
-figure.moderno.dir figcaption { 
-  	justify-self: end; 
-  	text-align: right;
-  	margin-right: 0; 
-}
-
-/* ESQUERDA */
-figure.moderno.esq {
-  	float: left;
-  	margin: 0.5rem 1rem 0.5rem 0;
-  	shape-margin: 1.2rem;
-  	max-width: 45%;
-}
-
-figure.moderno.esq figcaption { 
-  	justify-self: start; 
-  	text-align: left;
-  	margin-left: 0;
-}
-
-/* CENTRO (Ajustado para 90%) */
-figure.moderno.centro {
-    float: none;
-    display: grid; 
-    margin: 0 auto 1.5rem auto;
-    width: 90% !important; /* <--- FORÇAMOS OS 90% */
-    max-width: 100%;
-}
-
-/* Badge à ESQUERDA no centro */
-figure.moderno.centro figcaption { 
-  	justify-self: start; 
-  	text-align: left;
-}
-
-/* Mobile */
-@media (max-width: 380px) {
- figure.moderno.dir,
- figure.moderno.esq {
-     	max-width: 60%; 
-  	}
-.centro, figure.moderno.centro { /* Adicionamos a regra específica aqui */
-        width: 100% !important;
-    }
-}
-
-/* =======================================================
-   LEGENDA EM CAIXA (Estilo Nota Técnica)
-   Uso: Para destaques dentro de figures
-   ======================================================= */
-
-.cred3 {
- 	/* 1. Estrutura e Fundo */
-    	display: block;          /* Garante que comporte o texto */
-    	background-color: var(--cor-fundo-detalhe); /* Cinza muito suave (limpo) */
-    	border-left: 3px solid var(--cor-principal); /* A Assinatura Vermelha */
-    	/* 2. Espaçamento (Sem margens negativas perigosas) */
-    	padding: 8px 12px;       /* Respiro interno confortável */
-   	margin-top: 0;           /* Zera margens para colar na foto */
-   	width: auto;             /* Adapta-se à largura do container */
-    	/* 3. Tipografia Harmonizada */
-    	font-family: sans-serif; /* A mesma das outras legendas */
-    	font-size: 0.75rem !important; /* Pequeno, mas legível (aprox 12px) */
-    	line-height: 1.4;        /* Altura de linha confortável */
-    	color: var(--cor-texto-suave) !important;  /* Cinza escuro (leitura fácil) */
-    	text-align: left !important;
-    	/* 4. Acabamento */
-    	box-sizing: border-box;  /* Garante que o padding não estoure a largura */
-}
-
-/* Ajuste fino: Se a imagem tiver borda ou padding, isso garante a união */
-figure .cred3 {
-    	width: 100%; /* Ocupa a largura total da figure */
-}
-
-.arte2 {          
-margin-top:-30px;
-  margin-bottom:35px;
-  text-align:right;
-  display:block;
-}
-
-.arte2::before {
-         	content: attr(artista);
-            color: var(--cor-texto-suave);
-            font-size:12px;
-}
-
-
-/* ---------- VÍDEOS ---------- */
-
-/* =======================================================
-   VÍDEO BOX (Versão Definitiva & Limpa)
-   ======================================================= */
-
-.video-box {
-    display: block;
-    width: 100%;
-    position: relative;
-    
-    /* 1. Formato Padrão */
-    aspect-ratio: 16 / 9;
-    
-    /* 2. Limpeza Técnica (Mata espaços fantasmas) */
-    line-height: 0 !important;
-    font-size: 0 !important;
-    margin-bottom: 0 !important; /* Cola no elemento de baixo */
-}
-
-/* O Player */
-.video-box iframe {
-    display: block !important;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Variações */
-.video-box.quadrado { aspect-ratio: 1 / 1; }
-.video-box.vertical { aspect-ratio: 9 / 16; }
-
-
-/* =======================================================
-   LEGENDA DO VÍDEO (.info2)
-   ======================================================= */
-
-/* --- A LEGENDA DO VÍDEO (Clean - Sem Borda) --- */
-.info2 {
-    display: block;
-    width: 100%;
-    text-align: left !important;
-    
-    font-family: sans-serif;
-    font-size: 0.75rem;
-    line-height: 1.3;
-    color: var(--cor-texto-suave);
-    
-    /* Sem borda superior */
-    border: none;
-    
-    /* Apenas espaçamento */
-    padding-top: 0.5rem;    /* Um respiro suave entre o vídeo e o texto */
-    margin-top: 0 !important;
-    margin-bottom: 1rem;
-}
-
-.info2 strong {
-    color: var(--cor-principal);
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    margin-right: 0.4rem;
-}
-        
-/* ---------- BOXES ---------- */
-#citacao, .citacao  {
-        margin: 0 5% !important;
-}
-
-/* =======================================================
-   BOX DE DESTAQUE (Versão Diagramação Padrão)
-   ======================================================= */
-
-/* CONTAINER DESTAQUE (Neutro) */
-.destaque {
-    /* Estrutura */
-    margin: 0 5% 1.5rem 5% !important;
-    padding: 20px !important;
-    background-color: var(--cor-fundo-citacao) !important;
-    border-radius: 6px;
-    border: none;
-    box-sizing: border-box;
-
-    /* Tipografia Padrão (Roboto) - Tamanho Normal */
-    font-family: var(--fonte-padrao);
-    font-size: 1em !important; 
-    line-height: 1.5 !important;
-    color: var(--cor-texto);
-}
-
-.destaque.roman {
-    font-family: var(--fonte-serifa) !important;
-    font-size: 1.05em !important; /* Compensa o tamanho visual menor da serifa */
-}
-
-/* ---------- ORNAMENTOS ---------- */
-#ornamento {
-        	width: 100%;
-        	position: relative;
-        	margin-right: 10px; 
-}
-
-.moldura {
-        	position: absolute;
-        	float: right;  
-        	right: 0; 
-        	opacity: 0.1;
-}
-
-.superior, .cima {
-content:url(https://1.bp.blogspot.com/--sGhlKtVdt0/X_ndkJP9TqI/AAAAAAACpno/745-P43jnAspuoU4-fRIPOHryqgk_U5RgCLcBGAsYHQ/s0/cant-alta.png);
-        	width:30%;
-}
-
-.media, .central {
-content:url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZslOU3JXAccKe0EkdOCJJlJZtsXpAWwCLcBGAsYHQ/s0/cant-centro.png);
-        	top: 50%;
-        	transform: translateY(-50%);
-        	width:30%;
-}
-
-.inferior, .baixo {   content:url(https://1.bp.blogspot.com/-SnALcnPDM2k/X_ndkHPYBtI/AAAAAAACpns/bJPYauJk5C42qM34rpBHfCGciK4e1BJPQCLcBGAsYHQ/s0/cant-baixa.png);
-        	bottom: 0;
-        	width:30%;
-}
-
-
-/* ---------- PONTO FINAL  ---------- */
-.pontofinal {
-        float:right;
-        width:40px;
-		margin-top:-20px;
-		margin-bottom:-20px;
-		content:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
-    	border-radius:50%;
-}
-
-
-/* ---------- NOTAS FINAIS ----------- */
-
-.pos-escrito {
-    /* 1. SIMETRIA VERTICAL */
-    /* Aumentamos de 0.5rem para 1.5rem. 
-       Isso deve espelhar o espaço que existe acima da linha. */
-    margin-top: 1.5rem !important; 
-    
-    /* 2. PROTEÇÃO DO LOGOTIPO */
-    /* Mantém o texto longe da bolinha vermelha à direita */
-    margin-right: 60px !important; 
-    
-    /* Manter o resto */
-    padding-top: 0;
-    color: var(--cor-texto-suave);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.pos-escrito ul, 
-.pos-escrito ol {
-    	margin-left: 1.5rem; /* Recuo da margem esquerda */
-    	padding-left: 1rem;  /* Espaço entre o marcador e o texto */
-    	color: var(--cor-texto-suave);         /* Cor do texto do item */
-}
-
-.pos-escrito li {
-    	/* 1. Formato Geométrico */
-    	list-style-type: square;
-    	margin-bottom: 2px;  /* Quase colado, apenas um respiro mínimo */
-    	line-height: 1.4;    /* Altura de linha mais econômica */
-}
-
-.pos-escrito li::marker {
-    	color: var(--cor-texto-suave);  
-    	font-size: 0.9em;  /* Tamanho discreto */
-}
-
-/* =======================================================
-   POEMA (Versão Zen)
-   ======================================================= */
-.poema {
-    white-space: pre-wrap;       /* O motor da poesia */
-    text-align: left !important; /* Alinhamento */
-    width: auto !important;      /* Previne vazar para o lado */
-    hyphens: none !important;    /* Não quebra palavras */
-    display: block;
-}
-
-/* ---------- BARRA LATERAL ----------- */
-#PopularPosts2 ul {
-        	background-color: transparent !important;
-       	 text-align:center !important;
-       	 display: flex;
-        	flex-wrap: wrap;
-}
-
-#PopularPosts2 li {
-       	 padding:0 !important;
-        	margin: 0 auto 35px auto !important;
-        	width:320px;
-        	height:150px;
-        	position:relative;
-}
-
-#PopularPosts2 li.contador {
-       	counter-increment: item;
-       	position:relative;
-}
-
-#PopularPosts2 li.contador:before {
-       	content: counter(item);
-        	color: var(--cor-branco);
-       	font-size:3.5em;
-      	font-weight:bold;
-      	line-height:1em;
-      	 position:absolute;
-      	top:0.1em;
-      	left:0.1em;
-      	display:block;
-      	border:0px solid var(--cor-borda);
-       	opacity:0.4;
- 	}
-
-#PopularPosts2 img {
-        	padding: 0px;
-        	width:320px;
-        	overflow:hidden;
-        	max-height:150px;
-        	object-fit: cover;
-        	object-position: 100% 0;
-}
-
-#PopularPosts2 .overlay {
-        	position: absolute;
-        	left: 0;
-        	top: 0;
-        	width: 100%;
-        	height: 100%;
-        	background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
-}
-
-#PopularPosts2 .autor {
-        	background:var(--cor-principal);
-        	text-transform:uppercase;
-        	padding: 4px 8px !important;
-        	margin-bottom:5px;
-        	font-size: 1em !important;
-        	line-height:1em !important;
-        	position:absolute;
-       	 left:15px;
-        	color:var(--cor-branco) !important;
-            font-family: var(--fonte-padrao) !important;
-       	 font-weight:bold;
-        	text-align:left !important;
-        	top:57%;
-        	overflow:hidden !important;
-        	display: -webkit-box;
-        	-webkit-line-clamp: 1;
-        	-webkit-box-orient: vertical;
-}
-
-#PopularPosts2 .titulo2 {
-            padding: 0 15px;
-            font-size: 1.8em;
-            line-height:1em ;
-            width:100% ;
-             color:var(--cor-branco) !important;
-            font-family: var(--fonte-padrao) !important;
-            font-weight:bold;
-            text-align:left !important;
-            position: absolute;
-            top: 70%;
-            overflow:hidden !important;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-}
-
-#PopularPosts3 ul {
-        	background-color: transparent !important;
-        	display: flex;
-        	flex-wrap: wrap;
-}
-
-#PopularPosts3 li {
-        	width: 320px !important;
-        	height: 100px !important;
-        	background-color: var(--cor-branco) !important;
-        	padding: 0 !important;
-        	margin: 0 auto 15px !important;
-        	position:relative;
-}
-
-#PopularPosts3 img {
-        	width: 320px !important;
-        	height: 100px !important;
-        	padding: 0px;
-        	overflow:hidden;
-        	object-fit:cover;
-        	object-position: 100% 0;
-}
-
-#PopularPosts3 .overlay2 {
-        	width: 100%;
-        	height:100%;
-        	position: absolute;
-        	left: 0;
-        	top: 0;
-        	background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
-}
-
-#PopularPosts3 .titulo3  {
-        	width:70%;
-        	text-align:left !important;
-        	padding: 0 10px !important;
-        	font: bold 20px/20px var(--fonte-padrao) !important;
-       	 color:var(--cor-branco);
-        	position:absolute;
-        	top:35px;
-        	left:10px;
-        	display: -webkit-box;
-        	-webkit-line-clamp: 3;
-        	-webkit-box-orient: vertical;
-       	 overflow:hidden !important;
-}
-
-#PopularPosts3 li.capa {
-            background:transparent !important;
-            margin-bottom:-50px !important;
-}
-
-.max320 {
-        	max-width:320px !important;
-        	display: flex;
-            flex-wrap: wrap;
-        	margin:0 auto;
-}
-
-.randomiza {
-            display: none; /* Todos os elementos ficam ocultos por padrão */
-}
-
-.randomiza.ativo {
-            display: block; /* Apenas o elemento ativo é exibido */
-}
-
-/* ---------- CAIXAS DO RODAPÉ DAS POSTAGENS ---------- */
-fieldset {
-          	display: block;
-          	margin: 30px 0 40px 0 !important;
-          	padding: 20px 20px;
-        	border: 0px solid transparent !important;
-        	border-radius: 4px !important;
-          	background: var(--cor-fundo-detalhe);
-          	/* opacity: 0.5 !important; */
-        	z-index:100;
-}
-
-legend {
-        	font-size:1.2rem !important;
-        	border-radius: 4px !important;
-        	text-transform: uppercase !important;
-        	color: var(--cor-texto) !important;
-        	padding: 3px 10px !important;
-        	font-weight: bold !important;
-        	width: auto !important;
-        	background: var(--cor-fundo) !important;
-        	display:block !important;
-        	margin: 0 auto  !important;
-}
-
-
-/* ---------- TABELAS ---------- */
-table.tabela {
-        	width:90%;
-        	margin:0 auto 35px;
-        	font-size:85%;
-}
-
-td.numero {
-        	padding:5px 10px;
-        	width:15% !important;
-        	background:var(--cor-tabela-claro);
-        	text-align:center
-}
-
-td.celula1 {
-        	padding:5px 10px;
-        	width:30% !important;
-        	background:var(--cor-tabela-claro);
-        	text-align:center
-}
-
-td.celula2 {
-        	padding:5px 10px;
-        	width:70% !important;
-        	background:var(--cor-tabela-escuro);
-}
-
-td.celula3 {
-        	padding:5px 10px;
-        	width:85% !important;
-        	background:var(--cor-tabela-escuro);
-}
-
-.listagem {
-        	padding:5px 10px;
-        	width:90%;
-        	margin:0 auto 5px;
-        	background:var(--cor-tabela-claro);
-        	text-align:center
-}
-
-
-/* ---------- AUDIO ---------- */
-
-.fraudio-container {
-        	margin-top: 0 !important;
-        	margin-bottom: 5px !important;
-}    
-
-
-/* ---------- POSTS RELACIONADOS ---------- */
-#relacionados {
-        	width:100%; 
-color:var(--cor-texto);
-        	text-align:center;
-        	padding:10px 0 10px 0;
-}
-
-.leiamais {
-        	font-size:calc(1em + 0.5vw);
-        	color:var(--cor-branco);
-        	opacity:0.8;
-        	display:block;
-        	margin:0 0 10px 0;
-}
-
-.relacionado, .relacionado a {
-        	font-size:calc(1.5em + 0.5vw);
-        	color:var(--cor-branco);
-        	margin:0 0 10px 0;
-        	text-decoration:none;
-        	display:block;
-}
-
-
-/* ---------- RECUPERADOS ---------- */
-
-/* -------------------- GRADIENTES ----------------------- 
-.gradiente {
-	border-image: linear-gradient(45deg, rgb(240, 240, 240), rgb(183, 28, 28)) 1 / 1 / 0 stretch; 
-	border-style: solid; 
-	border-width: 0px 0px 2px;
-}
-
-.gradiente2 {
-	border-image: linear-gradient(45deg, rgb(183, 28, 28),  rgb(240, 240, 240)) 1 / 1 / 0 stretch; 
-	border-style: solid; 
-	border-width: 0px 0px 2px;
-}
-*/
-	
-/* Aplica margem à direita de todos os ícones do Font Awesome */
-.fa, .fas, .far, .fab {
-    margin-right: 2ch; /* 2ch equivale aproximadamente a 2 caracteres */
-}
-
-	/* =======================================================
-   CORREÇÃO URGENTE: LEGENDAS SOBREPOSTAS EM FOTOS SOLTAS
-   Garante que a .legenda-foto funcione fora dos mosaicos
-   ======================================================= */
-
-/* 1. Transforma o contêiner da foto e o link em "âncoras" */
-figure.moderno,
-figure.moderno .separator, /* O Blogger adora essa div */
-figure.moderno a {
-    position: relative !important; /* O ingrediente mágico */
-    display: block !important;     /* Garante que a caixa ocupe o espaço certo */
-    height: auto !important;
-    overflow: hidden; /* Garante que o arredondamento corte a legenda se precisar */
-}
-
-/* 2. Garante que a imagem preencha a âncora corretamente */
-figure.moderno img {
-    display: block;
-    width: 100%;
-    height: auto;
-    /* Mantemos o estilo que já definimos antes */
-    border-radius: 2px;
-    box-shadow: var(--sombra-suave);
-}
-
-/* =======================================================
-   SISTEMA DE MOSAICOS 2.0 (Versão Limpa)
-   ======================================================= */
-
-/* 1. O CONTAINER (Define a largura e centraliza) */
-figure.container-mosaico {
-    display: block;
-    width: 90%;            /* A largura desejada */
-    max-width: 1000px;
-    margin: 0 auto 2rem auto; /* Centralizado */
-    border: none;
-    padding: 0;
-}
-
-/* 2. O GRID (Espaçamento entre fotos) */
-figure.container-mosaico .mosaico {
-    margin-bottom: 10px; /* Espaço pequeno para a legenda externa colar */
-}
-
-/* 3. A CORREÇÃO DE ALTURA (Anti-Blogger) */
-/* Garante que separators e links não criem buracos no mosaico */
-.mosaico > *,
-.mosaico .separator,
-.mosaico a {
-    height: 100% !important;
-    width: 100% !important;
-    display: block !important;
-    position: relative;
-    border: none;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 .mosaico img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover;      /* O corte inteligente */
-    display: block;
+    object-fit: cover !important; /* Corte inteligente */
+    display: block !important;
     border-radius: 2px;
 }
 
-/* 4. LEGENDAS EXTERNAS (Info e Fotoinfo unificadas) */
+/* VARIAÇÕES DE LAYOUT DO MOSAICO */
+
+/* Vertical: Grande na Esquerda */
+.mosaico.vertical {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 4 / 3;
+}
+.mosaico.vertical > :nth-child(1) {
+    grid-column: 1; grid-row: span 2;
+}
+
+/* Vertical Invertido: Grande na Direita */
+.mosaico.vertical.direita > :nth-child(1) {
+    grid-column: auto; grid-row: auto;
+}
+.mosaico.vertical.direita > :last-child {
+    grid-column: 2; grid-row: 1 / span 2;
+}
+
+/* Horizontal: Panorâmica Embaixo */
+.mosaico.horizontal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    aspect-ratio: auto;
+}
+.mosaico.horizontal > :nth-child(3) { grid-column: 1 / -1; }
+
+/* Horizontal Invertido: Panorâmica em Cima */
+.mosaico.horizontal.invertido > :nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+/* Simples (Linha) */
+.mosaico.simples {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+}
+.mosaico.simples > a, .mosaico.simples > img {
+    aspect-ratio: auto; /* Deixa fluir */
+    height: auto !important; /* Removemos a força de 100% aqui para não esticar demais se não precisar */
+}
+
+/* LEGENDAS EXTERNAS DO MOSAICO (Info e Fotoinfo) */
 figure.container-mosaico .info,
 figure.container-mosaico .fotoinfo {
     display: block;
     width: 100%;
-    margin-top: 0;         /* Cola no mosaico */
+    margin-top: 0 !important;
     box-sizing: border-box;
     line-height: 1.4;
 }
 
-/* Estilo da .info (Linha Vermelha) */
 figure.container-mosaico .info {
     border-left: 4px solid var(--cor-principal);
     padding-left: 12px;
@@ -1479,7 +515,6 @@ figure.container-mosaico .info {
     font-size: 0.95rem;
 }
 
-/* Estilo da .fotoinfo (Itálico Discreto) */
 figure.container-mosaico .fotoinfo {
     text-align: right;
     font-style: italic;
@@ -1487,28 +522,157 @@ figure.container-mosaico .fotoinfo {
     font-size: 0.85rem;
 }
 
-/* 5. MOBILE (Responsividade) */
+
+/* =======================================================
+   5. MÍDIA E EXTRAS (Vídeos, Tabelas, Rodapé)
+   ======================================================= */
+
+/* Vídeos */
+.video-box {
+    display: block; width: 100%; position: relative;
+    aspect-ratio: 16 / 9;
+    line-height: 0 !important; font-size: 0 !important; margin-bottom: 0 !important;
+}
+.video-box iframe { display: block !important; width: 100%; height: 100%; border: none; }
+.video-box.quadrado { aspect-ratio: 1 / 1; }
+.video-box.vertical { aspect-ratio: 9 / 16; }
+
+.info2 {
+    display: block; width: 100%; text-align: left !important;
+    font-family: sans-serif; font-size: 0.75rem; line-height: 1.3; color: var(--cor-texto-suave);
+    border: none; padding-top: 0.5rem; margin-top: 0 !important; margin-bottom: 1rem;
+}
+.info2 strong {
+    color: var(--cor-principal); text-transform: uppercase; font-size: 0.7rem; margin-right: 0.4rem;
+}
+
+/* Outras Legendas (Créditos) */
+.cred3 {
+    display: block; background-color: var(--cor-fundo-detalhe);
+    border-left: 3px solid var(--cor-principal);
+    padding: 8px 12px; margin-top: 0; width: auto;
+    font-family: sans-serif; font-size: 0.75rem !important; line-height: 1.4;
+    color: var(--cor-texto-suave) !important; text-align: left !important;
+    box-sizing: border-box;
+}
+figure .cred3 { width: 100%; }
+
+.arte2 { margin-top: -30px; margin-bottom: 35px; text-align: right; display: block; }
+.arte2::before { content: attr(artista); color: var(--cor-texto-suave); font-size: 12px; }
+
+/* Ornamentos */
+#ornamento { width: 100%; position: relative; margin-right: 10px; }
+.moldura { position: absolute; float: right; right: 0; opacity: 0.1; }
+.superior, .cima { content: url(https://1.bp.blogspot.com/--sGhlKtVdt0/X_ndkJP9TqI/AAAAAAACpno/745-P43jnAspuoU4-fRIPOHryqgk_U5RgCLcBGAsYHQ/s0/cant-alta.png); width: 30%; }
+.media, .central { content: url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZslOU3JXAccKe0EkdOCJJlJZtsXpAWwCLcBGAsYHQ/s0/cant-centro.png); top: 50%; transform: translateY(-50%); width: 30%; }
+.inferior, .baixo { content: url(https://1.bp.blogspot.com/-SnALcnPDM2k/X_ndkHPYBtI/AAAAAAACpns/bJPYauJk5C42qM34rpBHfCGciK4e1BJPQCLcBGAsYHQ/s0/cant-baixa.png); bottom: 0; width: 30%; }
+.pontofinal {
+    float: right; width: 40px; margin: -20px 0; border-radius: 50%;
+    content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbJDdIPfmeWB9GGCcyrIIcfeUX9Et_Olf06isLdHfH_3yZ-5EkYJO2T83zoMjC7vD1Lb5HsSc7zfDb-uEKe4lXF1OUEPuTS_1SglqbdWx8k42ujkV0Re4XQfAPnuwzwCpAILbhs_xGYwjOKy0pcRPir2gdU7ePITKYIOsCoCvbWHA6YaqtDnKqw4e6RsTA/s1600/LogoALCR.png);
+}
+
+/* Notas Finais */
+.pos-escrito {
+    margin-top: 1.5rem !important; margin-right: 60px !important; padding-top: 0;
+    color: var(--cor-texto-suave); font-size: 0.9rem; line-height: 1.6;
+}
+.pos-escrito ul, .pos-escrito ol { margin-left: 1.5rem; padding-left: 1rem; color: var(--cor-texto-suave); }
+.pos-escrito li { list-style-type: square; margin-bottom: 2px; line-height: 1.4; }
+.pos-escrito li::marker { color: var(--cor-texto-suave); font-size: 0.9em; }
+
+/* Tabelas */
+table.tabela { width: 90%; margin: 0 auto 35px; font-size: 85%; }
+td.numero { padding: 5px 10px; width: 15% !important; background: var(--cor-tabela-claro); text-align: center; }
+td.celula1 { padding: 5px 10px; width: 30% !important; background: var(--cor-tabela-claro); text-align: center; }
+td.celula2 { padding: 5px 10px; width: 70% !important; background: var(--cor-tabela-escuro); }
+td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tabela-escuro); }
+.listagem { padding: 5px 10px; width: 90%; margin: 0 auto 5px; background: var(--cor-tabela-claro); text-align: center; }
+
+/* Posts Populares e Relacionados */
+#PopularPosts2 ul, #PopularPosts3 ul { background-color: transparent !important; display: flex; flex-wrap: wrap; }
+#PopularPosts2 li { padding: 0 !important; margin: 0 auto 35px auto !important; width: 320px; height: 150px; position: relative; }
+#PopularPosts2 li.contador { counter-increment: item; position: relative; }
+#PopularPosts2 li.contador:before {
+    content: counter(item); color: var(--cor-branco); font-size: 3.5em; font-weight: bold;
+    line-height: 1em; position: absolute; top: 0.1em; left: 0.1em; display: block; opacity: 0.4;
+}
+#PopularPosts2 img, #PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
+#PopularPosts2 img { max-height: 150px; }
+#PopularPosts3 img { height: 100px !important; width: 320px !important; }
+#PopularPosts2 .overlay {
+    position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+    background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
+}
+#PopularPosts2 .autor {
+    background: var(--cor-principal); text-transform: uppercase; padding: 4px 8px !important; margin-bottom: 5px;
+    font-size: 1em !important; line-height: 1em !important; position: absolute; left: 15px; top: 57%;
+    color: var(--cor-branco) !important; font-family: var(--fonte-padrao) !important; font-weight: bold; text-align: left !important;
+}
+#PopularPosts2 .titulo2 {
+    padding: 0 15px; font-size: 1.8em; line-height: 1em; width: 100%; position: absolute; top: 70%;
+    color: var(--cor-branco) !important; font-family: var(--fonte-padrao) !important; font-weight: bold; text-align: left !important;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden !important;
+}
+
+#PopularPosts3 li { width: 320px !important; height: 100px !important; background-color: var(--cor-branco) !important; padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
+#PopularPosts3 .overlay2 {
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0;
+    background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
+}
+#PopularPosts3 .titulo3 {
+    width: 70%; text-align: left !important; padding: 0 10px !important; font: bold 20px/20px var(--fonte-padrao) !important;
+    color: var(--cor-branco); position: absolute; top: 35px; left: 10px;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden !important;
+}
+#PopularPosts3 li.capa { background: transparent !important; margin-bottom: -50px !important; }
+.max320 { max-width: 320px !important; display: flex; flex-wrap: wrap; margin: 0 auto; }
+.randomiza { display: none; }
+.randomiza.ativo { display: block; }
+
+#relacionados { width: 100%; color: var(--cor-texto); text-align: center; padding: 10px 0 10px 0; }
+.leiamais { font-size: calc(1em + 0.5vw); color: var(--cor-branco); opacity: 0.8; display: block; margin: 0 0 10px 0; }
+.relacionado, .relacionado a { font-size: calc(1.5em + 0.5vw); color: var(--cor-branco); margin: 0 0 10px 0; text-decoration: none; display: block; }
+
+/* Rodapé Postagem */
+fieldset {
+    display: block; margin: 30px 0 40px 0 !important; padding: 20px 20px;
+    border: 0px solid transparent !important; border-radius: 4px !important;
+    background: var(--cor-fundo-detalhe); z-index: 100;
+}
+legend {
+    font-size: 1.2rem !important; border-radius: 4px !important; text-transform: uppercase !important;
+    color: var(--cor-texto) !important; padding: 3px 10px !important; font-weight: bold !important;
+    width: auto !important; background: var(--cor-fundo) !important; display: block !important; margin: 0 auto !important;
+}
+.fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
+.fancybox-slide--iframe .fancybox-content { width: 800px; height: 600px; max-width: 80%; max-height: 80%; margin: 0; }
+
+/* =======================================================
+   6. RESPONSIVIDADE GERAL (MOBILE)
+   ======================================================= */
+@media (max-width: 820px) {
+    .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
+    .centro { width: 100%; }
+}
+
 @media (max-width: 650px) {
-    figure.container-mosaico {
-        width: 100%; /* No celular ocupa tudo */
+    blockquote { width: 40% !important; font-size: 1.3rem !important; }
+    .nota-lateral { float: none; width: 100%; margin: 2rem 0; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
+    
+    /* Mosaicos no Mobile */
+    figure.container-mosaico { width: 100% !important; }
+    .mosaico.vertical, .mosaico.vertical.direita,
+    .mosaico.horizontal, .mosaico.horizontal.tripla, 
+    .mosaico.simples {
+        display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
     }
-    /* Desliga a altura forçada no celular para permitir empilhamento */
     .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
-        height: auto !important;
+        height: auto !important; aspect-ratio: 3/2; /* Padrão retangular agradável no celular */
     }
+    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
 }
 
-	/* --- MOSAICO CENTRALIZADO (90%) --- */
-/* Aplica apenas quando a div tiver a classe 'centro' junto com 'mosaico' */
-.mosaico.centro {
-    width: 90% !important;        /* O tamanho que você quer */
-    margin-left: auto !important; /* Margem automática esquerda */
-    margin-right: auto !important;/* Margem automática direita = Centraliza */
-}
-
-/* No celular, volta para 100% para não perder espaço */
-@media (max-width: 650px) {
-    .mosaico.centro {
-        width: 100% !important;
-    }
+@media (max-width: 380px) {
+    figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
+    .centro, figure.moderno.centro { width: 100% !important; }
 }
