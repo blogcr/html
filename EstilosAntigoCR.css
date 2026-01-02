@@ -1148,7 +1148,7 @@ blockquote::after,
     	content: none !important;
     	display: none !important;
 }
-/*
+
 .poesia {
         
             white-space: pre-wrap;    
@@ -1162,5 +1162,4 @@ blockquote::after,
             font-size: clamp(0.85rem, 4vw, 1em);
                line-height: 1.4;
             }
-*/
 
