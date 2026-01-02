@@ -475,10 +475,11 @@ blockquote cite {
 /* ---------- IMAGENS ---------- */
 
 figure {
-    	width: fit-content;
-    	width: -moz-fit-content;
-    	max-width: 100%;
-    	margin-bottom: 1.5rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* Removemos o width: fit-content que causava o conflito */
 }
 
 figure img {
@@ -647,25 +648,18 @@ figure .fotoinfo {
     box-sizing: border-box;
 }
 
-/* REGRA DE OURO: Estiliza QUALQUER filho direto (seja <a> ou <div>) */
-.mosaico > * {
+/* REGRA DE OURO: Estiliza QUALQUER filho direto (Links, Divs do Blogger, Imagens) */
+.mosaico > *,
+.mosaico .separator,
+.mosaico a {
     position: relative;
     display: block !important;
     width: 100% !important;
-    height: 100% !important;
+    height: 100% !important; /* Força altura total para evitar buracos */
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
     overflow: hidden;
-    border-radius: 2px; /* A elegância suave */
-}
-
-/* Garante que a imagem preencha o espaço do filho */
-.mosaico > * img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover; /* O segredo do corte perfeito */
-    display: block;
     border-radius: 2px;
 }
 
@@ -1423,24 +1417,21 @@ figure.moderno img {
     box-shadow: var(--sombra-suave);
 }
 
-
-	/* --- O ENVOLTÓRIO DO MOSAICO (A solução para Legendas Externas) --- */
+/* --- O ENVOLTÓRIO DO MOSAICO --- */
 figure.container-mosaico {
-    display: block;
-    margin: 0 auto 2rem auto; /* Centraliza na tela e dá espaço embaixo */
-    padding: 0;
-    border: none;
-    
-    /* A LARGURA DE 90% QUE VOCÊ QUER */
-    width: 90%; 
-    max-width: 1000px; /* Trava num tamanho máximo para não ficar gigante em monitores */
+    display: block !important;
+    /* AQUI ESTÁ A MÁGICA DOS 90% CENTRALIZADO: */
+    width: 90% !important;
+    max-width: 1000px;
+    margin: 0 auto 2rem auto !important; 
 }
 
-/* No celular, volta para 100% */
+/* Ajuste das legendas dentro dele */
+figure.container-mosaico .mosaico { margin-bottom: 8px !important; }
+
+/* Mobile */
 @media (max-width: 650px) {
-    figure.container-mosaico {
-        width: 100%;
-    }
+    figure.container-mosaico { width: 100% !important; }
 }
 
 /* =======================================================
