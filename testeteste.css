@@ -474,12 +474,14 @@ blockquote cite {
 
 /* ---------- IMAGENS ---------- */
 
+/* FIGURA GENÉRICA (O Reset Correto) */
 figure {
-    display: block;
-    margin: 0;
+    display: block;      /* Essencial para aceitar larguras */
+    width: auto;         /* Deixa ocupar o espaço natural */
+    max-width: 100%;     /* Segurança para não vazar a tela */
+    margin: 0 0 1.5rem 0;
     padding: 0;
-    border: 0;
-    /* Removemos o width: fit-content que causava o conflito */
+    border: none;
 }
 
 figure img {
