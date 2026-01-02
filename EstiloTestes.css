@@ -715,20 +715,7 @@ figure .fotoinfo {
     }
 }
 
-/* --- MOSAICO CENTRALIZADO (90%) --- */
-/* Aplica apenas quando a div tiver a classe 'centro' junto com 'mosaico' */
-.mosaico.centro {
-    width: 90% !important;        /* O tamanho que você quer */
-    margin-left: auto !important; /* Margem automática esquerda */
-    margin-right: auto !important;/* Margem automática direita = Centraliza */
-}
 
-/* No celular, volta para 100% para não perder espaço */
-@media (max-width: 650px) {
-    .mosaico.centro {
-        width: 100% !important;
-    }
-}
 
 /* =======================================================
    MOSAICO HORIZONTAL INTELIGENTE
