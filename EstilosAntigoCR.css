@@ -1195,8 +1195,9 @@ blockquote::after,
       	color: gray;
       	font-size:12px;
 }
-/* BORDA ANTIGA DESATIVADA */
+/* BORDA ANTIGA DESATIVADA
 .borda { padding-left: 10px; border-left: 1px solid var(--cor-principal); }
+*/
 
 /* A BORDA NOVA PARA HARMONIZAR COM O NOVO DESIGN 2026 */
 .borda {
@@ -1210,3 +1211,40 @@ blockquote::after,
 .bordas { border: 1px solid var(--cor-principal) !important; }
 .fa, .fas, .far, .fab { margin-right: 2ch; }
 
+/* CLASSE ANTIGA PARA COLOCAR LEGENDAS COM BACKGROUND DESATIVADA
+.cred3 {
+    display: block; background-color: var(--cor-fundo-detalhe);
+    border-left: 3px solid var(--cor-principal);
+    padding: 8px 12px; margin-top: 0; width: auto;
+    font-family: sans-serif; font-size: 0.75rem !important; line-height: 1.4;
+    color: var(--cor-texto-suave) !important; text-align: left !important;
+    box-sizing: border-box;
+}
+figure .cred3 { width: 100%; }
+*/
+
+/* NOVA ESTRUTURA DA CLASSE DE LEGENDAS PARA COMBINAR COM O MODELO 2026 */
+.cred3 {
+    display: block;
+    width: auto;
+    box-sizing: border-box;
+    
+    /* 2. Visual (Ajustado para o novo padrão) */
+    background-color: var(--cor-fundo-detalhe); /* Mantém o cinza suave. Se quiser o bege, use var(--cor-fundo-citacao) */
+    border-left: 4px solid var(--cor-principal); /* Aumentado para 4px (igual ao .info) */
+    
+    /* 3. Espaçamento */
+    padding: 8px 12px;
+    margin-top: 0;           /* Cola na imagem acima */
+    margin-bottom: 1.5rem;   /* Dá espaço para o texto abaixo */
+    
+    /* 4. Tipografia */
+    font-family: var(--fonte-padrao); /* Usa a fonte oficial do blog */
+    font-size: 0.75rem !important;
+    line-height: 1.4;
+    color: var(--cor-texto-suave) !important;
+    text-align: left !important;
+}
+
+/* Garante que preencha o container se estiver num figure */
+figure .cred3 { width: 100%; }
