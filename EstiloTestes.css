@@ -244,6 +244,8 @@ blockquote cite {
 
 /* Outros Elementos de Texto */
 #dialogo > br { margin-bottom: 20px !important; }
+
+/* DESATIVADO PARA MODERNIZAÇÃO
 .paginas {
     font-size: 70%;
     opacity: 0.6;
@@ -253,6 +255,31 @@ blockquote cite {
     margin: 5px auto 0;
     text-align: center !important;
 }
+*/
+
+/* =======================================================
+   RODAPÉ DE CITAÇÃO (Autor, Obra, Pág)
+   Uso: Dentro de .destaque ou blockquotes
+   ======================================================= */
+.paginas {
+    /* 1. Tipografia e Cor */
+    font-family: var(--fonte-padrao); /* Garante a fonte correta */
+    font-size: 0.75rem;               /* 12px (Padrão legível) */
+    color: var(--cor-texto-suave);    /* Melhor que opacity */
+    
+    /* 2. A Linha Divisória */
+    border-top: 1px solid var(--cor-principal);
+    width: 50%;                       /* Largura da linha */
+    
+    /* 3. Espaçamento (Convertido para REM) */
+    padding-top: 0.25rem;             /* ~4px (Dá um respiro da linha) */
+    margin: 0.5rem auto 0 auto;       /* ~8px acima, centralizado, 0 abaixo */
+    
+    /* 4. Alinhamento */
+    text-align: center !important;
+    display: block;                   /* Garante que o margin auto funcione */
+}
+
 .centraliza { margin: 0 auto; text-align: center; display: block; }
 .centraliza hr { margin: 0 auto !important; }
 .frase { overflow: hidden; }
