@@ -1248,3 +1248,21 @@ figure .cred3 { width: 100%; }
 
 /* Garante que preencha o container se estiver num figure */
 figure .cred3 { width: 100%; }
+
+/* CITACAO */
+
+#citacao, .citacao  {
+	margin: 0 5% !important;
+}
+
+#citacao hr {
+	width: 30% !important;
+	clear: both  !important;
+}
+
+.citacao2 {
+	margin: 0 5% !important;
+	/* font-size:0.95em !important; */
+	padding:20px;
+	background:#EFEBE9;
+}
