@@ -540,8 +540,33 @@ figure.container-mosaico .fotoinfo {
     color: var(--cor-principal); text-transform: uppercase; font-size: 0.7rem; margin-right: 0.4rem;
 }
 
+/* DESATIVO PARA MODERNIZAÇÃO
 .arte2 { margin-top: -30px; margin-bottom: 35px; text-align: right; display: block; }
 .arte2::before { content: attr(artista); color: var(--cor-texto-suave); font-size: 12px; }
+*/
+
+/* =======================================================
+   LEGENDA OCULTA DO SNIPPET (Técnica content: attr)
+   Uso: <div class="arte2" artista="Texto da Legenda"></div>
+   ======================================================= */
+.arte2 {
+    display: block;
+    width: 100%;
+    /* Converti as margens também para manter a consistência */
+    margin-top: -1.5rem;    /* Aprox -24px (era -25px) */
+    margin-bottom: 2rem;    /* 32px (era 35px, arredondei para padrão) */
+    text-align: right;
+    line-height: 1;
+}
+
+.arte2::before {
+    content: attr(artista);
+    
+    font-family: var(--fonte-padrao);
+    font-size: 0.75rem;     /* AQUI: 12px convertido para REM */
+    color: var(--cor-texto-suave);
+    font-style: italic;
+}
 
 /* Ornamentos */
 #ornamento { width: 100%; position: relative; margin-right: 10px; }
