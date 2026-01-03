@@ -279,10 +279,6 @@ hr {
     opacity: 0.5;
     margin: 3px auto 20px;
 }
-.borda { padding-left: 10px; border-left: 1px solid var(--cor-principal); }
-.bordas { border: 1px solid var(--cor-principal) !important; }
-.fa, .fas, .far, .fab { margin-right: 2ch; }
-
 
 /* =======================================================
    3. IMAGENS E FIGURES (O CORAÇÃO DO LAYOUT)
