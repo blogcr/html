@@ -939,17 +939,38 @@ figcaption {
 color:var(--cor-cinza-claro);
 }
 
+/* ANTIGO
 .cred {
         	font-size:0.6em !important;
             color: var(--cor-texto-suave) !important;
         	margin-top:-7px !important;
-       	overflow:hidden !important;
+       		overflow:hidden !important;
         	line-height:1.3em !important;
+}
+*/
+
+/* NOVOS CÓDIGOS PARA REGULARIZAR AS POSTAGENS ANTIGAS */
+.cred {
+    /* 1. Estrutura */
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    
+    /* 2. A CORREÇÃO DO PROBLEMA (De negativo para positivo) */
+    margin-top: 8px !important;     /* Empurra para BAIXO da foto */
+    margin-bottom: 15px !important; /* Respiro inferior */
+    
+    /* 3. Visual (Mantendo a identidade discreta antiga) */
+    font-size: 0.75rem !important;  /* Pequeno, mas legível */
+    line-height: 1.4 !important;
+    color: var(--cor-texto-suave) !important;
+    overflow: hidden !important;
+    font-family: sans-serif;        /* Garante consistência */
 }
 
 .credito2, .cred2 {
         font-size:0.6em !important;
-            color: var(--cor-cinza-claro) !important;
+        color: var(--cor-cinza-claro) !important;
         text-align:right !important;
         margin-top:-7px !important;
         overflow:hidden !important;
