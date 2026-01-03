@@ -793,9 +793,9 @@ font-size: clamp(16px, 4vw, 22px) !important;
 
 figure:not(.moderno):not(.mosaico-item):not(.centro):not(.container-mosaico) {
         	display: block !important;
-        	max-width: 35% !important;
+        	/* max-width: 35% !important; */
         	height: auto !important;
-      	position:relative !important;
+      		position:relative !important;
             box-sizing: border-box !important;
         	overflow: hidden;
 }
