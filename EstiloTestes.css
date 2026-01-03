@@ -241,7 +241,6 @@ blockquote cite {
     font-family: var(--fonte-serifa) !important;
     font-size: 1.05em !important;
 }
-#citacao, .citacao { margin: 0 5% !important; }
 
 /* Outros Elementos de Texto */
 #dialogo > br { margin-bottom: 20px !important; }
