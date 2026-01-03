@@ -702,7 +702,8 @@ legend {
         display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
     }
     .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
-        height: auto !important; aspect-ratio: 3/2; /* Padrão retangular agradável no celular */
+        height: auto !important; 
+		/* aspect-ratio: 3/2; Padrão retangular agradável no celular */
     }
     .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
 }
