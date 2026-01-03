@@ -1196,3 +1196,7 @@ blockquote::after,
       	font-size:12px;
 }
 
+.borda { padding-left: 10px; border-left: 1px solid var(--cor-principal); }
+.bordas { border: 1px solid var(--cor-principal) !important; }
+.fa, .fas, .far, .fab { margin-right: 2ch; }
+
