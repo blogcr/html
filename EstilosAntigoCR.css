@@ -1187,7 +1187,7 @@ blockquote::after,
 .arte {
 	text-align:right;
 	line-height:0.8 !important;
-      	margin-top:-31px;
+      	margin-top:-1.4rem;
       	margin-bottom:35px
 }
 .arte::before {
