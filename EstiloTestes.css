@@ -765,59 +765,45 @@ legend {
 }
 
 /* =======================================================
-   MINI-MOSAICO (Para 2 ou 4 fotos pequenas flutuantes)
-   Uso: <figure class="mini-mosaico dir"> ou "esq"
+   MINI-MOSAICO (Versão Simplificada)
    ======================================================= */
 figure.mini-mosaico {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Sempre 2 colunas iguais */
-    gap: 5px;                       /* Espaço entre as fotos */
+    grid-template-columns: 1fr 1fr; /* 2 Colunas */
+    gap: 5px;
+    width: 45%;
+    margin-bottom: 20px;
     
-    width: 45%;                     /* Largura padrão para flutuar */
-    margin-bottom: 1.5rem;          /* Espaço abaixo */
-    margin-top: 5px;
-    
-    /* Garante que obedeça suas classes globais .esq e .dir */
-    float: right; 
+    /* Padrão: Flutua à direita */
+    float: right;
+    margin-left: 20px;
 }
 
-/* Se usar a classe .esq, ele inverte */
+/* Se quiser na Esquerda */
 figure.mini-mosaico.esq {
     float: left;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-left: 0;
 }
 
-/* Reforço para a classe .dir */
-figure.mini-mosaico.dir {
-    float: right;
-    margin-left: 15px;
-    margin-right: 0;
+/* O TRUQUE: Anula a "quebra de linha" nativa do Blogger */
+figure.mini-mosaico .separator {
+    clear: none !important;       /* Permite ficar lado a lado */
+    width: auto !important;       /* Respeita o Grid */
+    margin: 0 !important;
+    position: relative !important; /* Para a legenda funcionar */
 }
 
-/* O Container individual (necessário para a legenda funcionar) */
-figure.mini-mosaico > div {
-    position: relative; 
-    overflow: hidden;
-    aspect-ratio: 1 / 1;    /* Força as caixinhas a serem quadradas (Opcional, mas fica chique) */
-}
-
-/* A Imagem dentro do Mini-Mosaico */
+/* A Imagem */
 figure.mini-mosaico img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover;      /* Corta excessos para preencher o quadrado */
+    aspect-ratio: 1 / 1;          /* Força ser quadrada perfeita */
+    object-fit: cover;            /* Corta o excesso sem esticar */
     display: block;
-    border-radius: 2px;
-    margin: 0 !important;   /* Remove margens extras de imagens */
-    padding: 0 !important;
 }
 
-/* Ajuste para Celular: Ocupa a largura total */
+/* Ajuste Mobile */
 @media (max-width: 650px) {
-    figure.mini-mosaico {
-        width: 100% !important;
-        float: none !important;
-        margin: 10px auto 20px auto !important;
-    }
+    figure.mini-mosaico { float: none; width: 100%; margin: 0 auto 20px; }
 }
