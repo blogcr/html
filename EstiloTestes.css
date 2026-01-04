@@ -840,11 +840,12 @@ legend {
     box-shadow: none !important;
 
     /* Clamp (Corta texto longo) */
-    display: -webkit-box;
+	display: block !important;       /* Anula o "clamp" de 2 linhas anterior */
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap !important;  /* O COMANDO PRINCIPAL: Proíbe quebra de linha */
+	text-overflow: ellipsis;         /* Coloca "..." se o nome for grande demais */
 }
 
 /* --- AJUSTE MOBILE --- */
