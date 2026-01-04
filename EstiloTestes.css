@@ -764,91 +764,20 @@ legend {
     box-sizing: border-box;
 }
 
-/* =======================================================
-   MINI-MOSAICO "TRITURADOR" (Versão Final Corrigida)
-   - Aceita o código nativo do Blogger.
-   - Mantém o formato original das fotos (não achata).
-   - Força a ficar em 2 colunas.
-   ======================================================= */
+<figure class="mini-mosaico dir">
 
-figure.mini-mosaico {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 Colunas lado a lado */
-    gap: 5px;                       /* Espacinho entre elas */
-    
-    width: 45%;                     /* Largura total do bloco */
-    margin-top: 5px;
-    margin-bottom: 20px;
-    
-    /* Padrão: Flutua à direita */
-    float: right;
-    margin-left: 20px;
-    margin-right: 0;
-}
+   <div class="separator" style="clear: both; text-align: center;">
+      <a href="..." style="margin-left: 1em; margin-right: 1em;">
+         <img border="0" src="..." />
+      </a>
+      <div class="legenda-foto">Noel</div>
+   </div>
 
-/* Variação Esquerda */
-figure.mini-mosaico.esq {
-    float: left;
-    margin-right: 20px;
-    margin-left: 0;
-}
+   <div class="separator" style="clear: both; text-align: center;">
+      <a href="...">
+         <img border="0" src="..." />
+      </a>
+      <div class="legenda-foto">Ismael</div>
+   </div>
 
-
-/* --- A MÁGICA: ANULANDO O BLOGGER --- */
-
-/* 1. Domina a DIV "separator" */
-/* O seletor '>' garante que pegamos apenas os filhos diretos */
-figure.mini-mosaico > .separator {
-    display: block !important;      /* Comportamento padrão */
-    clear: none !important;         /* O MAIS IMPORTANTE: impede quebra de linha */
-    float: none !important;         /* Remove flutuação nativa se houver */
-    
-    width: auto !important;         /* Deixa o Grid decidir a largura */
-    height: auto !important;        /* Altura natural */
-    
-    margin: 0 !important;           /* Remove margens do Blogger */
-    padding: 0 !important;
-    position: relative !important;  /* Para a legenda funcionar */
-}
-
-/* 2. Domina o Link <a> (se houver) */
-figure.mini-mosaico .separator a {
-    display: block !important;
-    margin: 0 !important; padding: 0 !important;
-}
-
-/* 3. A Imagem (Respeitando o formato original) */
-figure.mini-mosaico img {
-    width: 100% !important;         /* Ocupa a largura da coluna do grid */
-    height: auto !important;        /* Mantém a proporção original! (CORREÇÃO AQUI) */
-    aspect-ratio: auto !important;  /* Garante que não fique quadrado */
-    object-fit: unset !important;   /* Não corta a imagem */
-    
-    display: block !important;
-    margin: 0 !important;
-    border-radius: 2px;
-}
-
-/* 4. A Legenda (Funciona com seu HTML atual) */
-figure.mini-mosaico .legenda-foto,
-figure.mini-mosaico .foto-legenda {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    z-index: 10;
-    pointer-events: none; /* Permite clicar na foto através da legenda */
-    
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    color: #fff !important;
-    padding: 3px 8px !important;
-    font-size: 11px !important;
-    font-weight: 700 !important;
-    text-transform: uppercase;
-    border-radius: 2px;
-    text-align: left !important;
-}
-
-/* Ajuste Mobile */
-@media (max-width: 650px) {
-    figure.mini-mosaico { float: none; width: 100%; margin: 10px auto 20px; }
-}
+   </figure>
