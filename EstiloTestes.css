@@ -807,23 +807,56 @@ legend {
     border-radius: 2px;           /* Opcional: herda o estilo suave */
 }
 
-/* --- LEGENDAS SOBREPOSTAS --- */
+/* =======================================================
+   LEGENDA HARMONIZADA (Estilo Etiqueta Flutuante)
+   - Fundo sólido semitransparente.
+   - Flutua 5px das bordas.
+   - Largura automática (só o texto).
+   ======================================================= */
+
 .mini-mosaico .legenda-foto {
+    /* 1. POSICIONAMENTO (O "Pulo" de 5px) */
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 5px !important;    /* Descola do fundo */
+    left: 5px !important;      /* Descola da esquerda */
+    right: auto !important;    /* Não estica até a direita */
+    top: auto !important;
     z-index: 10;
     pointer-events: none;
     
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    /* 2. TAMANHO (Apenas o necessário) */
+    width: auto !important;    /* Ocupa só o espaço do texto */
+    max-width: 90%;            /* Evita que saia da foto se o nome for longo */
+    
+    /* 3. VISUAL (Estilo Clássico do Blog) */
+    background: rgba(0, 0, 0, 0.65) !important; /* Preto suave sólido */
+    border-radius: 2px;        /* Cantos levemente arredondados */
+    box-shadow: none !important; /* Remove sombras extras */
+    
+    /* 4. TIPOGRAFIA */
     color: #fff !important;
-    padding: 20px 5px 5px 5px !important;
+    padding: 3px 8px !important; /* Padding justo e elegante */
     
     font-size: 11px !important;
-    line-height: 1.2 !important;
-    font-family: var(--fonte-padrao, sans-serif) !important;
     font-weight: 700 !important;
     text-transform: uppercase;
     text-align: left !important;
+    line-height: 1.2 !important;
+    
+    /* 5. PROTEÇÃO ANTI-ESTOURO (Clamp) */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ajuste Fino para Mobile */
+@media (max-width: 650px) {
+    .mini-mosaico .legenda-foto {
+        font-size: 9px !important;
+        padding: 3px 6px !important; /* Etiqueta um pouco menor */
+        bottom: 3px !important;      /* Ajuste proporcional */
+        left: 3px !important;
+    }
 }
