@@ -567,7 +567,33 @@ figure.container-mosaico .fotoinfo {
     color: var(--cor-principal); text-transform: uppercase; font-size: 0.7rem; margin-right: 0.4rem;
 }
 
-/* DESATIVO PARA MODERNIZAÇÃO
+/* =======================================================
+   CORREÇÃO GLOBAL: LINKS EM LEGENDAS (Anti-Quebra)
+   Força links em legendas a serem texto corrido (inline)
+   ======================================================= */
+.legenda-foto a,
+.info a,
+.fotoinfo a,
+.info2 a,
+figcaption a {
+    display: inline !important;      /* O segredo: volta a ser linha, não bloco */
+    float: none !important;          /* Remove qualquer flutuação */
+    width: auto !important;          /* Ocupa só o espaço da palavra */
+    height: auto !important;
+    margin: 0 !important;
+    position: static !important;     /* Remove posicionamento absoluto se houver */
+    border: none !important;         /* Remove bordas indesejadas */
+}
+
+/* Opcional: Garante que o hover funcione nessas legendas */
+.info a:hover,
+.fotoinfo a:hover,
+.info2 a:hover {
+    text-decoration: underline;
+    color: var(--cor-link-visitado);
+}
+
+/* DESATIVADO PARA MODERNIZAÇÃO
 .arte2 { margin-top: -30px; margin-bottom: 35px; text-align: right; display: block; }
 .arte2::before { content: attr(artista); color: var(--cor-texto-suave); font-size: 12px; }
 */
@@ -576,6 +602,7 @@ figure.container-mosaico .fotoinfo {
    LEGENDA OCULTA DO SNIPPET (Técnica content: attr)
    Uso: <div class="arte2" artista="Texto da Legenda"></div>
    ======================================================= */
+
 .arte2 {
     display: block;
     width: 100%;
