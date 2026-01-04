@@ -765,54 +765,33 @@ legend {
 }
 
 /* =======================================================
-   MINI-MOSAICO (Solução Definitiva Grid)
+   MINI-MOSAICO (Componente Interno)
+   Uso: Dentro de <figure class="moderno dir"> ou "esq"
    ======================================================= */
-figure.mini-mosaico {
-    /* 1. ESTRUTURA GRID */
-    display: grid !important;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 10px;                      /* Espaço entre as fotos */
-    align-items: start;             /* Alinha as fotos pelo topo */
+
+.mini-mosaico {
+    /* 1. O MOTOR INTERNO */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+    gap: 10px;                      /* Harmonia com o resto do blog */
+    width: 100%;                    /* Preenche o figure pai */
     
-    /* 2. TAMANHO E POSIÇÃO DO BLOCO */
-    width: 45%;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    
-    /* Padrão: Direita */
-    float: right;
-    margin-left: 20px;
-    margin-right: 0;
-    
-    /* 3. LIMPEZA DE ESPAÇOS FANTASMAS */
+    /* 2. LIMPEZA DE FANTASMAS */
     line-height: 0 !important;
     font-size: 0 !important;
 }
 
-/* Variação Esquerda */
-figure.mini-mosaico.esq {
-    float: left;
-    margin-right: 20px;
-    margin-left: 0;
-}
+/* --- FAXINA DO BLOGGER (Essencial para alinhar) --- */
 
-/* --- OVERRIDES: ANULANDO O CÓDIGO DO BLOGGER --- */
+/* Remove quebras de linha invisíveis */
+.mini-mosaico br { display: none !important; }
 
-/* 1. REMOVE QUEBRAS DE LINHA (<br>) */
-figure.mini-mosaico br {
-    display: none !important;
-}
-
-/* 2. DOMA OS SEPARADORES (O segredo está aqui) */
-figure.mini-mosaico > .separator {
+/* Reseta o container da foto */
+.mini-mosaico .separator {
     display: block !important;
-    position: relative !important; /* Para a legenda funcionar */
-    
-    /* ANULA A QUEBRA DE LINHA DO BLOGGER */
-    clear: none !important;        
+    position: relative !important;
     float: none !important;
-    
-    /* AJUSTES DE TAMANHO */
+    clear: none !important;
     width: auto !important;
     height: auto !important;
     margin: 0 !important;
@@ -820,17 +799,16 @@ figure.mini-mosaico > .separator {
     border: none !important;
 }
 
-/* 3. IMAGEM (Respeita o formato original) */
-figure.mini-mosaico img {
+/* Garante a proporção original da imagem */
+.mini-mosaico img {
     width: 100% !important;
-    height: auto !important;      /* Mantém vertical/horizontal original */
+    height: auto !important;      /* Mantém vertical/horizontal */
     display: block !important;
-    padding: 0 !important;
+    border-radius: 2px;           /* Opcional: herda o estilo suave */
 }
 
-/* --- LEGENDA --- */
-figure.mini-mosaico .legenda-foto,
-figure.mini-mosaico .foto-legenda {
+/* --- LEGENDAS SOBREPOSTAS --- */
+.mini-mosaico .legenda-foto {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -848,13 +826,4 @@ figure.mini-mosaico .foto-legenda {
     font-weight: 700 !important;
     text-transform: uppercase;
     text-align: left !important;
-}
-
-/* Mobile */
-@media (max-width: 650px) {
-    figure.mini-mosaico {
-        float: none !important;
-        width: 100% !important;
-        margin: 10px auto 25px auto !important;
-    }
 }
