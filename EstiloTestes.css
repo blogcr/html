@@ -567,30 +567,12 @@ figure.container-mosaico .fotoinfo {
     color: var(--cor-principal); text-transform: uppercase; font-size: 0.7rem; margin-right: 0.4rem;
 }
 
-/* =======================================================
-   CORREÇÃO GLOBAL: LINKS EM LEGENDAS (Anti-Quebra)
-   Força links em legendas a serem texto corrido (inline)
-   ======================================================= */
-.legenda-foto a,
-.info a,
-.fotoinfo a,
-.info2 a,
-figcaption a {
-    display: inline !important;      /* O segredo: volta a ser linha, não bloco */
-    float: none !important;          /* Remove qualquer flutuação */
-    width: auto !important;          /* Ocupa só o espaço da palavra */
-    height: auto !important;
-    margin: 0 !important;
-    position: static !important;     /* Remove posicionamento absoluto se houver */
-    border: none !important;         /* Remove bordas indesejadas */
-}
-
-/* Opcional: Garante que o hover funcione nessas legendas */
-.info a:hover,
-.fotoinfo a:hover,
-.info2 a:hover {
-    text-decoration: underline;
-    color: var(--cor-link-visitado);
+/* "Vacina" contra quebra de linha em links nas legendas */
+figure.moderno .info a,
+figure.moderno .info2 a,
+figure.moderno .legenda-foto a,
+figure.moderno .fotoinfo a {
+    display: inline !important;
 }
 
 /* DESATIVADO PARA MODERNIZAÇÃO
