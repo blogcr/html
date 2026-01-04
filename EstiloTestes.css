@@ -748,25 +748,27 @@ legend {
 
 
 /* =======================================================
-   MINI-MOSAICO (Versão Final: Grid + Gap + Legenda 1 Linha)
+   MINI-MOSAICO (Versão Margem Forçada)
+   - Grid para horizontal.
+   - Margem física para vertical (resolve o problema de colagem).
    ======================================================= */
 
 .mini-mosaico {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 colunas */
     
-    /* ESPAÇAMENTO (GAP) REFORÇADO */
-    column-gap: 0.625rem;  /* 10px na horizontal */
-    row-gap: 0.625rem;     /* 10px na vertical (O que faltava!) */
+    /* MANTÉM SÓ O HORIZONTAL (GAP) */
+    column-gap: 0.625rem; /* 10px */
+    /* row-gap removido pois falhou */
     
     width: 100%;
     
-    /* Limpeza estrutural */
+    /* Limpeza */
     line-height: 0 !important;
     font-size: 0 !important;
 }
 
-/* --- FAXINA DO BLOGGER --- */
+/* --- FAXINA E ESPAÇAMENTO VERTICAL --- */
 .mini-mosaico br { display: none !important; }
 
 .mini-mosaico .separator {
@@ -777,31 +779,42 @@ legend {
     
     width: auto !important;
     height: auto !important;
-    margin: 0 !important;
     padding: 0 !important;
     border: none !important;
+    
+    /* AQUI ESTÁ A CORREÇÃO: MARGEM INFERIOR FORÇADA */
+    /* Topo: 0 | Dir: 0 | Baixo: 10px | Esq: 0 */
+    margin: 0 0 0.625rem 0 !important; 
+}
+
+/* Opcional: Remove a margem das duas últimas fotos (pra não sobrar espaço embaixo) */
+.mini-mosaico .separator:nth-last-child(-n+2) {
+    margin-bottom: 0 !important;
+}
+
+.mini-mosaico .separator a {
+    display: block !important;
+    margin: 0 !important;
 }
 
 .mini-mosaico img {
     width: 100% !important;
     height: auto !important;
     display: block !important;
-    border-radius: 0.125rem; /* 2px */
+    border-radius: 0.125rem;
 }
 
-/* --- LEGENDA (Estilo Etiqueta + 1 Linha Obrigatória) --- */
+/* --- LEGENDA (Mantendo a sua conquista anterior) --- */
 .mini-mosaico .legenda-foto {
     position: absolute;
-    
-    /* Posicionamento (5px) */
     bottom: 0.3125rem !important;
     left: 0.3125rem !important;
     top: auto !important;
     right: auto !important;
     z-index: 10;
-    pointer-events: none;
-    
-    /* Visual da Caixa */
+    pointer-events: none; /* Deixa clicar na foto */
+
+    /* Visual */
     width: auto !important;
     max-width: 90%;
     background: rgba(0, 0, 0, 0.65) !important;
@@ -811,23 +824,31 @@ legend {
     box-shadow: none !important;
 
     /* Tipografia */
-    font-size: 0.6875rem !important; /* 11px */
+    font-size: 0.6875rem !important;
     font-weight: 700 !important;
     text-transform: uppercase;
     text-align: left !important;
     line-height: 1.2 !important;
 
-    /* --- O SEGREDO DA LINHA ÚNICA (Correção CARTO-LA) --- */
-    white-space: nowrap !important;  /* Proíbe quebrar linha */
+    /* Linha Única */
+    white-space: nowrap !important;
     display: block !important;
-    text-overflow: ellipsis;         /* Coloca "..." se for grande demais */
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
-/* --- AJUSTE MOBILE --- */
+/* Proteção do Link na Legenda */
+.mini-mosaico .legenda-foto a {
+    display: inline !important;
+    color: inherit !important;
+    pointer-events: auto;
+    text-decoration: underline;
+}
+
+/* Mobile */
 @media (max-width: 650px) {
     .mini-mosaico .legenda-foto {
-        font-size: 0.5625rem !important; /* 9px */
+        font-size: 0.5625rem !important;
         padding: 0.1875rem 0.375rem !important;
         bottom: 0.2rem !important;
         left: 0.2rem !important;
