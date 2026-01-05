@@ -666,7 +666,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 #PopularPosts3 li .fb-like {
     position: absolute !important;
     top: 10px !important;
-    left: 5px !important;      /* Força esquerda */
+    left: 0 !important;      /* Força esquerda */
     right: auto !important;    /* Desliga a direita */
     margin-left: 0 !important;
 }
