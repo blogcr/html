@@ -942,3 +942,105 @@ legend {
 /*        float: none !important; */
     }
 }
+
+/* =======================================================
+   BANNER APP (Temporário / Moderno)
+   - Fonte: Helvetica / Sans-serif
+   - Estilo: Card Flutuante Moderno
+   ======================================================= */
+
+.banner-app {
+    /* Estrutura Flexbox para alinhar Texto e Botão */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    
+    /* Visual do Box */
+    width: 100%;
+    max-width: 100%; /* Ocupa a largura disponível */
+    box-sizing: border-box;
+    margin: 1rem auto 2rem auto; /* Espaçamento externo */
+    padding: 1.5rem 2rem;
+    
+    /* FUNDO: Gradiente Moderno (Roxo Leitura) */
+    /* Se quiser imagem, troque o background abaixo */
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%); 
+    
+    /* Arredondamento e Sombra Suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    
+    /* Tipografia Moderna */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* Texto do Banner */
+.banner-app .texto {
+    flex: 1; /* Ocupa o espaço disponível */
+    padding-right: 20px;
+    min-width: 280px; /* Evita que esmague demais */
+}
+
+.banner-app h3 {
+    margin: 0 0 5px 0 !important;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff !important; /* Força branco */
+    letter-spacing: -0.5px;
+    text-transform: none; /* Tira o caixa alta se houver */
+}
+
+.banner-app p {
+    margin: 0 !important;
+    font-size: 0.95rem;
+    font-weight: 300;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Botão de Download */
+.banner-app .botao-baixar {
+    background-color: #ffffff;
+    color: #2c3e50 !important; /* Cor do texto do botão */
+    
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px; /* Formato de pílula */
+    
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    transition: transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap; /* Não quebra o texto do botão */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+/* Efeito ao passar o mouse no botão */
+.banner-app .botao-baixar:hover {
+    transform: translateY(-2px); /* Sobe um pouquinho */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- AJUSTE MOBILE --- */
+@media (max-width: 600px) {
+    .banner-app {
+        flex-direction: column; /* Um embaixo do outro */
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .banner-app .texto {
+        padding-right: 0;
+        margin-bottom: 1.25rem;
+    }
+    
+    .banner-app .botao-baixar {
+        width: 100%; /* Botão largo no celular */
+        box-sizing: border-box;
+    }
+}
