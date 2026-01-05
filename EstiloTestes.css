@@ -245,21 +245,6 @@ blockquote cite {
 /* Outros Elementos de Texto */
 #dialogo > br { margin-bottom: 20px !important; }
 
-/* DESATIVADO PARA MODERNIZAÇÃO
-.paginas {
-    font-size: 70%;
-    opacity: 0.6;
-    border-top: 1px solid var(--cor-principal);
-    padding-top: 2px;
-    width: 50%;
-    margin: 5px auto 0;
-}
-*/
-
-/* =======================================================
-   RODAPÉ DE CITAÇÃO (Autor, Obra, Pág)
-   Uso: Dentro de .destaque ou blockquotes
-   ======================================================= */
 .paginas {
     /* 1. Tipografia e Cor */
     font-family: var(--fonte-padrao); /* Garante a fonte correta */
@@ -272,7 +257,7 @@ blockquote cite {
     
     /* 3. Espaçamento (Convertido para REM) */
     padding-top: 0.25rem;             /* ~4px (Dá um respiro da linha) */
-    margin: 0.5rem 0 0 auto;       /* ~8px acima, centralizado, 0 abaixo */
+    margin: 0.5rem 0 0 0;       /* ~8px acima, 0 abaixo */
     
     /* 4. Alinhamento
     text-align: center !important;
