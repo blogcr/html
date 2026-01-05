@@ -898,3 +898,31 @@ legend {
     border-top-right-radius: 0 !important;
     display: block !important;
 }
+
+/* =======================================================
+   CLASSE DESLOCAR
+   Uso: Adicione na figure ou video-box que está DENTRO de um destaque.
+   Função: Puxa o elemento para fora da caixa (margem negativa)
+   para alinhar com o texto principal do blog.
+   ======================================================= */
+
+/* Se estiver flutuando à DIREITA -> Desloca mais para a direita */
+.destaque .dir.deslocar {
+    /* O valor padrão é -7%. Se quiser mais agressivo, use -10% */
+    margin-right: -7% !important; 
+}
+
+/* Se estiver flutuando à ESQUERDA -> Desloca mais para a esquerda */
+.destaque .esq.deslocar {
+    margin-left: -7% !important;
+}
+
+/* --- SEGURANÇA MOBILE --- */
+/* Em telas pequenas, cancela o deslocamento para não vazar da tela */
+@media (max-width: 650px) {
+    .destaque .dir.deslocar,
+    .destaque .esq.deslocar {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
