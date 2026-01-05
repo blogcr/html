@@ -674,6 +674,15 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     float: none !important;         /* Remove qualquer flutuação para os lados */
     clear: both !important; margin: 0 auto; 
 	}
+
+/* Correção do botão de Like no Mobile */
+#PopularPosts3 .fb-like {
+	position: absolute !important;
+    right: 10px !important; /* Trava o botão no canto direito */
+    left: auto !important;  /* Garante que não tente ir para a esquerda */
+    margin-left: 0 !important; /* Previne margens automáticas de centralização */
+}
+
 .randomiza { display: none; }
 .randomiza.ativo { display: block; }
 
