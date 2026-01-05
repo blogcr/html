@@ -900,29 +900,43 @@ legend {
 }
 
 /* =======================================================
-   CLASSE DESLOCAR
-   Uso: Adicione na figure ou video-box que está DENTRO de um destaque.
-   Função: Puxa o elemento para fora da caixa (margem negativa)
-   para alinhar com o texto principal do blog.
+   CLASSE DESLOCAR (Ajuste Fino: Tamanho e Posição)
    ======================================================= */
 
-/* Se estiver flutuando à DIREITA -> Desloca mais para a direita */
-.destaque .dir.deslocar {
-    /* O valor padrão é -7%. Se quiser mais agressivo, use -10% */
-    margin-right: -7% !important; 
+/* 1. COMPENSAÇÃO DE TAMANHO */
+/* Como o destaque é menor (90%), aumentamos a largura da foto
+   de 50% para ~60% para que ela visualmente pareça ter o mesmo
+   tamanho das fotos normais do blog. */
+.destaque .deslocar {
+    max-width: 60% !important; /* Aumentado para compensar a caixa menor */
+    width: 60%;                /* Garante que ocupe o espaço */
 }
 
-/* Se estiver flutuando à ESQUERDA -> Desloca mais para a esquerda */
+/* 2. ALINHAMENTO À DIREITA (Com -10%) */
+.destaque .dir.deslocar {
+    /* Vence o padding interno + a margem externa */
+    margin-right: -10% !important; 
+    
+    /* Empurra o texto um pouco mais pra lá para não grudar na foto maior */
+    margin-left: 1.5rem !important;
+}
+
+/* 3. ALINHAMENTO À ESQUERDA (Com -10%) */
 .destaque .esq.deslocar {
-    margin-left: -7% !important;
+    margin-left: -10% !important;
+    margin-right: 1.5rem !important;
 }
 
 /* --- SEGURANÇA MOBILE --- */
-/* Em telas pequenas, cancela o deslocamento para não vazar da tela */
 @media (max-width: 650px) {
+    .destaque .deslocar {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
     .destaque .dir.deslocar,
     .destaque .esq.deslocar {
         margin-right: 0 !important;
         margin-left: 0 !important;
+        float: none !important;
     }
 }
