@@ -871,34 +871,30 @@ legend {
 }
 
 /* =======================================================
-   CONJUNTO TIPO "CARD" (Destaque + Imagem colados)
-   Uso: Adicione a classe .topo-card APENAS na div de texto.
-   A figure deve vir imediatamente abaixo no HTML.
+   CONJUNTO TIPO "CARD" (Texto + Mídia Colados)
+   Uso: Adicione .topo-card na DIV de texto.
+   Abaixo pode vir: <figure> (imagem) ou <div class="video-box">.
    ======================================================= */
 
-/* 1. A PARTE DE CIMA (O texto) */
+/* 1. O TEXTO (Parte de Cima) */
 .destaque.cartao {
-    /* Retira o arredondamento na parte inferior */
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    
-    /* Zera a margem inferior para colar na imagem */
     margin-bottom: 0 !important;
 }
 
-/* 2. A PARTE DE BAIXO (A imagem que vem logo a seguir) */
-/* O seletor "+" atinge a figure que é "irmã imediata" da div.topo-card */
-.destaque.cartao + figure {
-    /* Zera a margem superior da figure */
+/* 2. O CONTAINER DA MÍDIA (Parte de Baixo) */
+/* Atinge tanto a Figure quanto a Video-Box se vierem logo após */
+.destaque.cartao + figure,
+.destaque.cartao + .video-box {
     margin-top: 0 !important;
 }
 
-/* 3. A IMAGEM EM SI (Dentro da figure acima) */
-.destaque.cartao + figure img {
-    /* Retira o arredondamento na parte superior da imagem */
+/* 3. A MÍDIA EM SI (Tira o arredondamento superior) */
+/* Atinge a imagem dentro da figure OU o iframe dentro da video-box */
+.destaque.cartao + figure img,
+.destaque.cartao + .video-box iframe {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
-    
-    /* Garante que não haja micro-espaços entre os blocos */
     display: block !important;
 }
