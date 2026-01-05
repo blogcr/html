@@ -668,7 +668,12 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden !important;
 }
 #PopularPosts3 li.capa { background: transparent !important; margin-bottom: -50px !important; }
-.max320 { max-width: 320px !important; display: flex; flex-wrap: wrap; margin: 0 auto; }
+.max320 { 
+	max-width: 320px !important; 
+	display: block !important;      /* Garante que se comportem como blocos */
+    float: none !important;         /* Remove qualquer flutuação para os lados */
+    clear: both !important; margin: 0 auto; 
+	}
 .randomiza { display: none; }
 .randomiza.ativo { display: block; }
 
