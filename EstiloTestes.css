@@ -253,7 +253,6 @@ blockquote cite {
     padding-top: 2px;
     width: 50%;
     margin: 5px auto 0;
-    text-align: center !important;
 }
 */
 
@@ -269,15 +268,15 @@ blockquote cite {
     
     /* 2. A Linha Divisória */
     border-top: 1px solid var(--cor-principal);
-    width: 50%;                       /* Largura da linha */
+    width: auto;                       /* Largura da linha */
     
     /* 3. Espaçamento (Convertido para REM) */
     padding-top: 0.25rem;             /* ~4px (Dá um respiro da linha) */
-    margin: 0.5rem auto 0 auto;       /* ~8px acima, centralizado, 0 abaixo */
+    margin: 0.5rem 0 0 auto;       /* ~8px acima, centralizado, 0 abaixo */
     
-    /* 4. Alinhamento */
+    /* 4. Alinhamento
     text-align: center !important;
-    display: block;                   /* Garante que o margin auto funcione */
+    display: block;                   Garante que o margin auto funcione */
 }
 
 .centraliza { margin: 0 auto; text-align: center; display: block; }
