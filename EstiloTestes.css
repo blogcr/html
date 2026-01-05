@@ -908,8 +908,8 @@ legend {
    de 50% para ~60% para que ela visualmente pareça ter o mesmo
    tamanho das fotos normais do blog. */
 .destaque .deslocar {
-    max-width: 60% !important; /* Aumentado para compensar a caixa menor */
-    width: 60%;                /* Garante que ocupe o espaço */
+    max-width: 50% !important; /* Aumentado para compensar a caixa menor */
+    width: 50%;                /* Garante que ocupe o espaço */
 }
 
 /* 2. ALINHAMENTO À DIREITA (Com -10%) */
@@ -929,14 +929,16 @@ legend {
 
 /* --- SEGURANÇA MOBILE --- */
 @media (max-width: 650px) {
+	/*
     .destaque .deslocar {
         max-width: 100% !important;
         width: 100% !important;
     }
+	*/
     .destaque .dir.deslocar,
     .destaque .esq.deslocar {
         margin-right: 0 !important;
         margin-left: 0 !important;
-        float: none !important;
+/*        float: none !important; */
     }
 }
