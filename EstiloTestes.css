@@ -852,7 +852,6 @@ legend {
     /* 1. O Visual Miúdo */
     font-size: 0.75rem;          /* ~12px (Menor que o corpo do texto) */
     color: var(--cor-texto-suave, #666); /* Cinza suave para tirar o peso */
-    font-style: italic;          /* Charme para dedicatórias */
     line-height: 1.4;            
     
     /* 2. Comportamento de Bloco */
