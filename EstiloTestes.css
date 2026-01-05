@@ -986,7 +986,7 @@ legend {
 
 .banner-app h3 {
     margin: 0 0 5px 0 !important;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff !important; /* Força branco */
     letter-spacing: -0.5px;
@@ -995,8 +995,8 @@ legend {
 
 .banner-app p {
     margin: 0 !important;
-    font-size: 0.95rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
     opacity: 0.9;
     line-height: 1.4;
 }
