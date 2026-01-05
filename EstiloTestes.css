@@ -884,3 +884,36 @@ legend {
     display: block;              
     width: fit-content;          /* A caixa ocupa apenas o tamanho da frase */
 }
+
+/* =======================================================
+   CONJUNTO TIPO "CARD" (Destaque + Imagem colados)
+   Uso: Adicione a classe .topo-card APENAS na div de texto.
+   A figure deve vir imediatamente abaixo no HTML.
+   ======================================================= */
+
+/* 1. A PARTE DE CIMA (O texto) */
+.destaque.cartao {
+    /* Retira o arredondamento na parte inferior */
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    
+    /* Zera a margem inferior para colar na imagem */
+    margin-bottom: 0 !important;
+}
+
+/* 2. A PARTE DE BAIXO (A imagem que vem logo a seguir) */
+/* O seletor "+" atinge a figure que é "irmã imediata" da div.topo-card */
+.destaque.cartao + figure {
+    /* Zera a margem superior da figure */
+    margin-top: 0 !important;
+}
+
+/* 3. A IMAGEM EM SI (Dentro da figure acima) */
+.destaque.cartao + figure img {
+    /* Retira o arredondamento na parte superior da imagem */
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    
+    /* Garante que não haja micro-espaços entre os blocos */
+    display: block !important;
+}
