@@ -703,7 +703,6 @@ legend {
     width: auto !important; background: var(--cor-fundo) !important; display: block !important; margin: 0 auto !important;
 }
 .fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
-.fancybox-slide--iframe .fancybox-content { width: 800px; height: 600px; max-width: 80%; max-height: 80%; margin: 0; }
 
 /* =======================================================
    6. RESPONSIVIDADE GERAL (MOBILE)
