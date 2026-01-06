@@ -1099,3 +1099,20 @@ legend {
     padding: 0 0.625rem;
     line-height: 1;
 }
+
+/* CORREÇÃO DE LARGURA (Firefox Mobile/Desktop) */
+
+/* 1. Trava o container da figura */
+figure.moderno.esq,
+figure.moderno.dir {
+    box-sizing: border-box !important; /* Garante que bordas não somem ao tamanho */
+    max-width: 45% !important;         /* Impede que passe de 45% em hipótese alguma */
+}
+
+/* 2. A Mágica: Obriga a imagem a encolher */
+figure.moderno.esq img,
+figure.moderno.dir img {
+    width: 100% !important;      /* Ocupa 100% do espaço DISPONÍVEL (os 45%), não da imagem real */
+    max-width: 100% !important;  /* Reforço de segurança */
+    height: auto !important;     /* Mantém a proporção */
+}
