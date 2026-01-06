@@ -1068,7 +1068,7 @@ legend {
 .fio {
     /* Usando a variável de texto suave (#757575) para ter contraste sem ser preto */
     background-color: var(--cor-texto-suave); 
-    
+    opacity:0.8;
     border: 0;
     height: 1px;               /* Mantive 1px para garantir nitidez */
     width: 6.25rem;            /* aprox. 100px */
