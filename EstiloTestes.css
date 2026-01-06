@@ -1059,3 +1059,41 @@ legend {
         width: 100%;
     }
 }
+
+/* =======================================================
+   FIO DIAMANTE (Separador Editorial Minimalista)
+   Uso: <hr class="fio">
+   ======================================================= */
+
+.fio {
+    border: 0;
+    height: 1px;               /* Espessura segura */
+    background-color: var(--cor-borda); /* Seu cinza suave */
+    
+    width: 6.25rem;            /* aprox. 100px */
+    margin: 3rem auto;         /* aprox. 48px (Respiro generoso) */
+    
+    position: relative;
+    overflow: visible;
+    clear: both;               /* Garante que não suba em imagens flutuantes */
+}
+
+.fio::after {
+    content: "◆";
+    position: absolute;
+    
+    /* Centralização Absoluta */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* Estilo do Diamante */
+    color: var(--cor-borda);   /* Mesma cor da linha */
+    font-size: 0.625rem;       /* 10px (Delicado) */
+    
+    /* O Truque do Corte */
+    background-color: var(--cor-branco); /* Fundo branco para apagar a linha atrás */
+    padding: 0 0.625rem;       /* 10px de respiro nas laterais */
+    
+    line-height: 1;
+}
