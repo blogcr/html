@@ -407,6 +407,10 @@ figure.moderno .fotoinfo {
     font-style: italic;
 }
 
+figure.moderno.esq .fotoinfo {
+    text-align: left !important;
+}
+
 
 /* =======================================================
    4. SISTEMA DE MOSAICOS UNIFICADO (Versão Final)
