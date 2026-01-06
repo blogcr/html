@@ -1066,34 +1066,32 @@ legend {
    ======================================================= */
 
 .fio {
+    /* Usando a variável de texto suave (#757575) para ter contraste sem ser preto */
+    background-color: var(--cor-texto-suave); 
+    
     border: 0;
-    height: 1px;               /* Espessura segura */
-    background-color: var(--cor-borda); /* Seu cinza suave */
-    
+    height: 1px;               /* Mantive 1px para garantir nitidez */
     width: 6.25rem;            /* aprox. 100px */
-    margin: 3rem auto;         /* aprox. 48px (Respiro generoso) */
-    
+    margin: 3rem auto;         /* Espaçamento generoso */
     position: relative;
     overflow: visible;
-    clear: both;               /* Garante que não suba em imagens flutuantes */
+    clear: both;
 }
 
 .fio::after {
     content: "◆";
     position: absolute;
-    
-    /* Centralização Absoluta */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    /* Estilo do Diamante */
-    color: var(--cor-borda);   /* Mesma cor da linha */
-    font-size: 0.625rem;       /* 10px (Delicado) */
+    /* O diamante segue a mesma cor do fio */
+    color: var(--cor-texto-suave); 
     
-    /* O Truque do Corte */
-    background-color: var(--cor-branco); /* Fundo branco para apagar a linha atrás */
-    padding: 0 0.625rem;       /* 10px de respiro nas laterais */
+    /* Usa o branco do seu root para "cortar" a linha */
+    background-color: var(--cor-branco); 
     
+    font-size: 0.7rem; 
+    padding: 0 0.625rem;
     line-height: 1;
 }
