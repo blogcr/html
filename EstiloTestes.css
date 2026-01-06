@@ -962,8 +962,8 @@ legend {
     
     width: 100%;
     box-sizing: border-box;
-    margin: 1rem auto 2rem auto;
-    padding: 1.5rem 2rem;
+    margin: 1rem auto /* 2rem */ 0 auto;
+    padding: /* 1.5rem */ 0 2rem;
     
     /* Mantendo o Gradiente Azul/Verde que venceu */
     background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
@@ -1048,7 +1048,7 @@ legend {
     .banner-app {
         flex-direction: column;
         text-align: center;
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
     }
     .banner-app .conteudo-esquerda {
         flex-direction: column; /* Ícone em cima, texto em baixo no celular */
