@@ -987,7 +987,7 @@ legend {
 /* O Ícone do Celular */
 .banner-app .icone-celular {
     font-size: 2.5rem;   /* Tamanho grande para cobrir a altura */
-    margin-right: 1rem;  /* Distância do texto */
+    /* margin-right: 1rem; */  /* Distância do texto */
     opacity: 0.8;        /* Leve transparência para elegância */
     line-height: 1;      /* Evita espaços extras verticais */
 }
