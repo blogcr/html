@@ -1264,3 +1264,46 @@ figure.moderno.dir img {
     animation: zoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
+/* --- CARTÃO DE COMENTÁRIOS (FINAL) --- */
+
+/* 1. O Cartão (A Moldura) */
+.comment-form {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 1rem 0 2rem 0 !important;
+    
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra-suave);
+    overflow: hidden; 
+}
+
+/* 2. O Iframe (Sem hacks, aceitando a natureza dele) */
+#comment-editor {
+    width: 100% !important;
+    min-height: 16rem !important;
+    border: none !important;
+    background: var(--cor-branco);
+    display: block;
+}
+
+/* 3. A Barra de Aviso (Cinza Intermediário) */
+.comment-form::after {
+    content: "DICA: Na opção 'Nome/URL', o campo URL é opcional. Basta seu nome.";
+    display: block;
+    
+    /* MUDANÇA AQUI: Usando a cor suave do seu Root (#757575) */
+    background-color: var(--cor-texto-suave); 
+    color: var(--cor-branco);
+    
+    /* Borda sutilmente mais clara ou igual para harmonizar */
+    border-top: 1px solid var(--cor-texto-suave); 
+    
+    font-family: var(--fonte-padrao);
+    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+}
+
+
