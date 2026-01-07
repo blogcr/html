@@ -1115,3 +1115,150 @@ figure.moderno.dir img {
     max-width: 100% !important;  /* Reforço de segurança */
     height: auto !important;     /* Mantém a proporção */
 }
+
+/* =======================================================
+   LIGHTBOX MULTIMÍDIA (Imagens, YouTube e Sites)
+   ======================================================= */
+
+#lightbox-overlay {
+    position: fixed;
+    z-index: 999999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.92); /* Fundo bem escuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.lightbox-visivel {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Container Central */
+#lightbox-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- TIPO 1: IMAGEM --- */
+.modo-imagem .img-zoom {
+    max-width: 100%;
+    max-height: 80vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+/* --- TIPO 2: VÍDEO (YouTube) --- */
+.modo-video {
+    width: 800px;  /* Largura máxima do vídeo */
+    max-width: 90vw;
+}
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    background: #000;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+/* --- TIPO 3: IFRAME (Wikipedia/Sites) --- */
+.modo-iframe {
+    width: 800px;
+    height: 80vh; /* Ocupa 80% da altura da tela */
+    max-width: 95vw;
+    background: #fff;
+    border-radius: 4px; /* Cantos arredondados parecendo app */
+    overflow: hidden;
+}
+.iframe-site {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Botão Fechar */
+.lightbox-fechar {
+    position: absolute;
+    top: -40px; /* Fica acima do conteúdo */
+    right: 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.lightbox-fechar:hover { opacity: 1; }
+
+/* Legenda */
+#lightbox-legenda {
+    margin-top: 10px;
+    color: #ccc;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* --- ADICIONAL: Estilo para o Cartão da Wikipédia --- */
+.modo-wiki {
+    background: #fff;
+    width: 600px;
+    max-width: 90vw;
+    max-height: 80vh;
+    padding: 25px;
+    border-radius: 6px;
+    overflow-y: auto;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+.modo-wiki h2 {
+    margin-top: 0;
+    font-family: sans-serif;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.btn-wiki {
+    display: inline-block; margin-top: 15px;
+    background: #f0f0f0; color: #333; padding: 10px 15px;
+    text-decoration: none; border-radius: 4px;
+    font-family: sans-serif; font-size: 0.9rem; font-weight: bold;
+}
+
+/* --- ANIMAÇÃO DE CRESCIMENTO (ZOOM) --- */
+
+/* 1. Criamos o movimento */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8); /* Começa com 80% do tamanho */
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);   /* Termina com 100% */
+    }
+}
+
+/* 2. Aplicamos na Imagem e nos Cards */
+.modo-imagem .img-zoom, 
+.modo-wiki, 
+.modo-video,
+.modo-iframe {
+    animation: zoomIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
