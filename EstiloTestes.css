@@ -1035,6 +1035,8 @@ legend {
     transition: transform 0.2s, box-shadow 0.2s;
     white-space: nowrap;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+	margin: 10px auto 0;
+}
 }
 
 .banner-app .botao-baixar:hover {
