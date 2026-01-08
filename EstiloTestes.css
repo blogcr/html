@@ -1442,3 +1442,60 @@ figure.moderno.dir img {
     }
 }
 
+/* POLÍTICA DE PRIVACIDADE */
+.btn-privacidade {
+    width: 100%;
+    background-color: var(--cor-fundo-detalhe, #f5f5f5); /* Fundo cinza clarinho */
+    color: var(--cor-texto, #444);
+    border: 1px solid var(--cor-borda, #e0e0e0);
+    border-radius: 4px;
+    padding: 12px 15px;
+    
+    font-family: var(--fonte-padrao, sans-serif);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between; /* Separa o cadeado da setinha */
+    align-items: center;
+}
+
+/* Efeito ao passar o mouse: Fica vermelho */
+.btn-privacidade:hover {
+    background-color: var(--cor-principal, #cc0000);
+    color: #fff;
+    border-color: var(--cor-principal, #cc0000);
+}
+
+/* 2. Estilo do Conteúdo (Texto) */
+.texto-privacidade {
+    display: none; /* Começa escondido */
+    background-color: #fff;
+    border: 1px solid var(--cor-borda, #e0e0e0);
+    border-top: none; /* Cola no botão de cima */
+    padding: 15px 20px 15px 35px; /* Recuo na esquerda para os números */
+    font-family: var(--fonte-padrao, sans-serif);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--cor-texto-suave, #666);
+    border-radius: 0 0 4px 4px;
+}
+
+.texto-privacidade ol {
+    margin: 0;
+    padding: 0;
+}
+
+.texto-privacidade li {
+    margin-bottom: 8px;
+    list-style-type: decimal; /* Garante que apareçam os números 1, 2, 3 */
+}
+
+/* Pequena animação na setinha */
+.setinha { transition: transform 0.3s ease; }
+.btn-privacidade.aberto .setinha { transform: rotate(180deg); }
+
