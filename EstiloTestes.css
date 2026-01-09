@@ -652,7 +652,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
 }
 
-#PopularPosts3 li .fb-like {
+#PopularPosts3 li .fb-share-button {
     position: absolute !important;
     top: 10px !important;
     left: 0 !important;      /* Força esquerda */
@@ -663,7 +663,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 /* 2. REFORÇO ESPECÍFICO PARA CELULAR (A "Marreta") */
 /* O navegador só lê isso em telas pequenas e obedece com prioridade máxima */
 @media screen and (max-width: 768px) {
-    #PopularPosts3 li .fb-like {
+    #PopularPosts3 li .fb-share-button {
         left: 10px !important;      /* Esquerda confirmada */
         right: auto !important;    /* Direita desligada */
         margin: 0 !important;      /* Zera margens teimosas */
