@@ -658,7 +658,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     left: 20px !important;      /* Força esquerda */
     right: auto !important;    /* Desliga a direita */
     margin-left: 0 !important;
-	opacity:0.5 !important;
+	opacity:0.8 !important;
 }
 
 /* 2. REFORÇO ESPECÍFICO PARA CELULAR (A "Marreta") */
