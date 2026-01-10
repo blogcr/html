@@ -1525,7 +1525,7 @@ figure.moderno.dir img {
     font-family: inherit; /* Usa a fonte do blog */
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
     display: flex;
     justify-content: space-between; /* Texto na esq, seta na dir */
@@ -1555,7 +1555,7 @@ figure.moderno.dir img {
 }
 
 /* O Conteúdo Oculto */
-.conteudo-leitura {
+.texto-leitura {
     display: none; /* Começa escondido */
     padding: 15px 20px;
     background-color: #fcfcfc;
