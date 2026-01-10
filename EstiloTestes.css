@@ -1504,3 +1504,69 @@ figure.moderno.dir img {
 /* LISTAS ALEATÓRIAS Esconde os itens inicialmente para não piscar a lista gigante */
 .lista-aleatoria li, .lista-sorteio-5 li { display: none; }
 
+/* --- SISTEMA DE CAIXAS DE RODAPÉ (UNIVERSAL) --- */
+
+/* O container geral */
+.box-leitura {
+    margin: 30px 0 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* O Botão (que pode ser link ou botão de abrir) */
+.btn-leitura {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: none;
+    padding: 15px 5px;
+    cursor: pointer;
+    color: #444; /* Cor do texto */
+    font-family: inherit; /* Usa a fonte do blog */
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between; /* Texto na esq, seta na dir */
+    align-items: center;
+    transition: background 0.2s;
+    text-decoration: none; /* Caso seja usado como link */
+}
+
+.btn-leitura:hover {
+    background-color: #f9f9f9;
+    color: #d32f2f; /* Fica vermelho ao passar o mouse */
+}
+
+/* O ícone da esquerda (Livro, Seta, etc) */
+.btn-leitura i.icon-left {
+    margin-right: 10px;
+    color: #888;
+    width: 20px;
+    text-align: center;
+}
+
+/* A setinha da direita (para caixas que abrem) */
+.btn-leitura .setinha {
+    font-size: 12px;
+    color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+/* O Conteúdo Oculto */
+.conteudo-leitura {
+    display: none; /* Começa escondido */
+    padding: 15px 20px;
+    background-color: #fcfcfc;
+    border-left: 3px solid #d32f2f; /* Detalhe vermelho lateral */
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Classe para quando a caixa está aberta (gira a seta) */
+.box-aberta .setinha {
+    transform: rotate(180deg);
+}
+
