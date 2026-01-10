@@ -1500,3 +1500,7 @@ figure.moderno.dir img {
 .setinha { transition: transform 0.3s ease; }
 .btn-privacidade.aberto .setinha { transform: rotate(180deg); }
 
+
+/* LISTAS ALEATÓRIAS Esconde os itens inicialmente para não piscar a lista gigante */
+.lista-aleatoria li, .lista-sorteio-5 li { display: none; }
+
