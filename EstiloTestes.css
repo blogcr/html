@@ -649,6 +649,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 }
 
 #PopularPosts3 li { width: 320px !important; height: 100px !important; background-color: var(--cor-branco) !important; padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
+#PopularPosts3 li .livro {background:transparent;margin-bottom:-50px;z-index:1;}
 #PopularPosts3 .overlay2 {
     width: 100%; height: 100%; position: absolute; left: 0; top: 0;
     background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
