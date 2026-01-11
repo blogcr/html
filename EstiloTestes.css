@@ -398,6 +398,19 @@ figure.moderno .info {
     text-align: left;
     line-height: 1.45;
 }
+
+figure.moderno .info .cor {
+    display: block;
+    margin-top: 8px;
+    border-left: 3px solid var(--cor-principal);
+    padding-left: 2px 5px 2px 10px;
+	background:var(--cor-branco);
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+    text-align: left;
+    line-height: 1.45;
+}
+
 figure.moderno .fotoinfo {
     display: block;
     margin-top: 4px;
