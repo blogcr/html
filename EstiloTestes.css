@@ -671,7 +671,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden !important;
 }
 
-#PopularPosts3 li { width: 320px !important; height: 100px !important; background-color: var(--cor-branco) !important; padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
+#PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
 #PopularPosts3 li .livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
 #PopularPosts3 .overlay2 {
     width: 100%; height: 100%; position: absolute; left: 0; top: 0;
