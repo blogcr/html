@@ -216,13 +216,36 @@ blockquote cite {
     margin-right: 4px;
 }
 
-/* Poema */
+/* Poema 
 .poema {
     white-space: pre-wrap;
     text-align: left !important;
     width: auto !important;
     hyphens: none !important;
     display: block;
+}
+*/
+
+.poema {
+    /* 1. PERMITE A QUEBRA (WRAP) SE NECESSÁRIO */
+    white-space: pre-wrap; 
+    
+    /* 2. GARANTE QUE A PALAVRA QUEBRE SE FOR MAIOR QUE A TELA */
+    overflow-wrap: break-word; 
+    
+    text-align: left !important;
+    width: 100% !important;
+    hyphens: none !important;
+    display: block;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+
+    /* 3. O TAMANHO INTELIGENTE */
+    /* Mínimo: 0.85rem (aprox 13.5px) -> Se precisar diminuir mais que isso, ELE QUEBRA A LINHA. */
+    /* Ideal: 4.5vw -> Tenta ajustar ao tamanho da tela. */
+    /* Máximo: 1.125rem (aprox 18px) -> Tamanho máximo no PC. */
+    
+    font-size: clamp(0.85rem, 4.5vw, 1.125rem);
 }
 
 /* Caixas e Destaques */
