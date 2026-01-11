@@ -685,8 +685,10 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     clear: both !important; margin: 0 auto; 
 	}
 
+/* DESNECESSÁRIO COM NOVOS MECANISMOS 
 .randomiza { display: none; }
 .randomiza.ativo { display: block; }
+*/
 
 #relacionados { width: 100%; color: var(--cor-texto); text-align: center; padding: 10px 0 10px 0; }
 .leiamais { font-size: calc(1em + 0.5vw); color: var(--cor-branco); opacity: 0.8; display: block; margin: 0 0 10px 0; }
@@ -710,7 +712,7 @@ legend {
    ======================================================= */
 @media (max-width: 820px) {
     .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
-    .centro { width: 100%; }
+    /* .centro { width: 100%; } */
 }
 
 @media (max-width: 650px) {
@@ -733,7 +735,7 @@ legend {
 
 @media (max-width: 380px) {
     figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
-    .centro, figure.moderno.centro { width: 100% !important; }
+    /* .centro, figure.moderno.centro { width: 100% !important; } */
 }
 
 .bordas { 
@@ -867,7 +869,7 @@ legend {
     /* 1. O Visual Miúdo */
     font-size: 0.75rem;          /* ~12px (Menor que o corpo do texto) */
     color: var(--cor-texto-suave, #666); /* Cinza suave para tirar o peso */
-    line-height: 1;            
+    line-height: 1.2;            
     
     /* 2. Comportamento de Bloco */
     display: block;              
@@ -913,7 +915,7 @@ legend {
    tamanho das fotos normais do blog. */
 .destaque .deslocar {
     max-width: 50% !important; /* Aumentado para compensar a caixa menor */
-    width: 50%;                /* Garante que ocupe o espaço */
+    width: 50% !important;      /* Garante que ocupe o espaço */
 }
 
 /* 2. ALINHAMENTO À DIREITA (Com -10%) */
@@ -1058,11 +1060,11 @@ legend {
 .fio {
     /* Usando a variável de texto suave (#757575) para ter contraste sem ser preto */
     background-color: var(--cor-texto-suave); 
-    opacity:0.8;
+    opacity:0.7;
     border: 0;
     height: 1px;               /* Mantive 1px para garantir nitidez */
     width: 6.25rem;            /* aprox. 100px */
-    margin: 3rem auto;         /* Espaçamento generoso */
+    margin: 2.5rem auto;         /* Espaçamento generoso */
     position: relative;
     overflow: visible;
     clear: both;
