@@ -399,7 +399,7 @@ figure.moderno .info {
     line-height: 1.45;
 }
 
-figure.moderno .info .cor {
+figure.moderno .info .branco {
     display: block;
     margin-top: 8px;
     border-left: 3px solid var(--cor-principal);
