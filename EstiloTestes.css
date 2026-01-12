@@ -1582,47 +1582,61 @@ figure.moderno.dir img {
     transform: rotate(180deg);
 }
 
-/* --- BIBLIOTECA: ESTILO DA GRADE DE CAPAS (2x2) --- */
+/* --- BIBLIOTECA ESTILO MASONRY (PINTEREST) --- */
 #grid-livros-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    /* Em vez de Grid, usamos Colunas de Jornal */
+    column-count: 2; 
+    column-gap: 10px; /* Espaço entre as colunas */
+    
     width: 100%;
     max-width: 320px;
     margin: 20px auto 0 auto;
 }
 
-/* Estilo das Capas (Células) */
+/* Estilo de cada livro */
 .grid-item-livro {
     position: relative;
-    overflow: hidden;
     border-radius: 4px;
     transition: transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    /* Importante para não quebrar o livro entre colunas */
+    break-inside: avoid; 
+    page-break-inside: avoid;
+    
+    /* Empurra o próximo livro para baixo */
+    margin-bottom: 10px; 
+    
+    /* Removemos fundos e sombras da caixa */
+    background: transparent !important;
+    box-shadow: none !important;
+    display: block; /* Garante bloco */
 }
 
 .grid-item-livro:hover {
     transform: scale(1.02);
     opacity: 0.95;
+    z-index: 2; /* Garante que o zoom fique por cima */
 }
 
+/* Estilo da Imagem */
 .grid-item-livro img {
     width: 100% !important;
-    height: auto !important;
+    height: auto !important; /* Respeita a altura original */
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
     border-radius: 4px;
+    
+    /* Sombra charmosa no livro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
 }
 
-/* --- ESTILO DO AVISO DE CARREGAMENTO (NOVA CLASSE) --- */
+/* Aviso */
 .msg-carregando {
-    grid-column: span 2; /* Ocupa as duas colunas */
+    column-span: all; /* Ocupa as duas colunas */
     text-align: center;
     padding: 20px;
     color: #888;
-    font-style: italic;
-    font-size: 13px;
 }
 
 /* CSS para garantir que a classe max320 funcione bem */
