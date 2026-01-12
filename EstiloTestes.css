@@ -1637,3 +1637,23 @@ figure.moderno.dir img {
     border-radius: 6px;
     display: block;
 }
+
+/* Regra para empilhar e limitar largura do LEIA SEMPRE */
+ul.lista-sorteio-5 {
+    display: block !important;
+    text-align: center !important; /* Ajuda a centralizar o conteúdo interno */
+}
+
+ul.lista-sorteio-5 li {
+    width: 100% !important;       /* Tenta ocupar a largura disponível... */
+    max-width: 320px !important;  /* ...MAS para de crescer ao chegar em 320px */
+    float: none !important;       /* Remove o comportamento de colunas (lado a lado) */
+    display: block !important;    /* Força que fiquem um abaixo do outro */
+    margin: 0 auto 15px auto !important; /* O 'auto' nas laterais centraliza o bloco */
+}
+
+/* Garante que a imagem respeite o limite do li */
+ul.lista-sorteio-5 li img {
+    width: 100% !important;
+    height: auto !important;
+}
