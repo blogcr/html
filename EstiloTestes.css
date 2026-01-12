@@ -1588,20 +1588,24 @@ figure.moderno.dir img {
     grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
     gap: 10px; /* Espaço entre as capas */
     width: 100%;
-    margin-top: 20px;
+    
+    /* TRAVA A LARGURA E CENTRALIZA */
+    max-width: 320px; 
+    margin: 20px auto 0 auto; /* auto nas laterais centraliza o bloco */
 }
 
 /* Estilo de cada célula da grade */
 .grid-item-livro {
     position: relative;
     overflow: hidden;
-    border-radius: 4px; /* Opcional: borda arredondada */
+    border-radius: 4px;
     transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar volume */
 }
 
 .grid-item-livro:hover {
-    transform: scale(1.02); /* Leve zoom ao passar o mouse */
-    opacity: 0.9;
+    transform: scale(1.02);
+    opacity: 0.95;
 }
 
 /* Força a imagem a preencher o espaço da grade */
@@ -1611,5 +1615,5 @@ figure.moderno.dir img {
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    max-width: none !important; /* Remove limites antigos */
+    border-radius: 4px; /* Arredonda a imagem também */
 }
