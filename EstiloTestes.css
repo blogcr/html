@@ -1582,3 +1582,34 @@ figure.moderno.dir img {
     transform: rotate(180deg);
 }
 
+/* --- BIBLIOTECA: ESTILO DA GRADE DE CAPAS (2x2) --- */
+#grid-livros-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
+    gap: 10px; /* Espaço entre as capas */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo de cada célula da grade */
+.grid-item-livro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px; /* Opcional: borda arredondada */
+    transition: transform 0.2s ease;
+}
+
+.grid-item-livro:hover {
+    transform: scale(1.02); /* Leve zoom ao passar o mouse */
+    opacity: 0.9;
+}
+
+/* Força a imagem a preencher o espaço da grade */
+.grid-item-livro img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important; /* Remove limites antigos */
+}
