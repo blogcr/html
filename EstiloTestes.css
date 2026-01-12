@@ -1585,22 +1585,20 @@ figure.moderno.dir img {
 /* --- BIBLIOTECA: ESTILO DA GRADE DE CAPAS (2x2) --- */
 #grid-livros-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colunas iguais */
-    gap: 10px; /* Espaço entre as capas */
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     width: 100%;
-    
-    /* TRAVA A LARGURA E CENTRALIZA */
-    max-width: 320px; 
-    margin: 20px auto 0 auto; /* auto nas laterais centraliza o bloco */
+    max-width: 320px;
+    margin: 20px auto 0 auto;
 }
 
-/* Estilo de cada célula da grade */
+/* Estilo das Capas (Células) */
 .grid-item-livro {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
     transition: transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar volume */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .grid-item-livro:hover {
@@ -1608,12 +1606,21 @@ figure.moderno.dir img {
     opacity: 0.95;
 }
 
-/* Força a imagem a preencher o espaço da grade */
 .grid-item-livro img {
     width: 100% !important;
     height: auto !important;
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-radius: 4px; /* Arredonda a imagem também */
+    border-radius: 4px;
+}
+
+/* --- ESTILO DO AVISO DE CARREGAMENTO (NOVA CLASSE) --- */
+.msg-carregando {
+    grid-column: span 2; /* Ocupa as duas colunas */
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-style: italic;
+    font-size: 13px;
 }
