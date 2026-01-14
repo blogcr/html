@@ -1666,11 +1666,12 @@ ul.lista-sorteio-5 li {
     margin: 0 auto 15px auto !important; /* O 'auto' nas laterais centraliza o bloco */
 }
 
-/* Garante que a imagem respeite o limite do li */
+/* Garante que a imagem respeite o limite do li 
 ul.lista-sorteio-5 li img {
     width: 100% !important;
     height: auto !important;
 }
+*/
 
 /* Regra Padrão (Desktop) */
 .share-view-desktop { display: flex; gap: 6px; align-items: center; }
