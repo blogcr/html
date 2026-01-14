@@ -646,14 +646,14 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 .listagem { padding: 5px 10px; width: 90%; margin: 0 auto 5px; background: var(--cor-tabela-claro); text-align: center; }
 
 /* Posts Populares e Relacionados */
-#PopularPosts2 ul, #PopularPosts3 ul { background-color: transparent !important; display: flex; flex-wrap: wrap; }
+#PopularPosts2 ul, #PopularPosts3 ul, .PopularPosts3 ul { background-color: transparent !important; display: flex; flex-wrap: wrap; }
 #PopularPosts2 li { padding: 0 !important; margin: 0 auto 35px auto !important; width: 320px; height: 150px; position: relative; }
 #PopularPosts2 li.contador { counter-increment: item; position: relative; }
 #PopularPosts2 li.contador:before {
     content: counter(item); color: var(--cor-branco); font-size: 3.5em; font-weight: bold;
     line-height: 1em; position: absolute; top: 0.1em; left: 0.1em; display: block; opacity: 0.4;
 }
-#PopularPosts2 img, #PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
+#PopularPosts2 img, #PopularPosts3 img, .PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
 #PopularPosts2 img { max-height: 150px; }
 #PopularPosts3 img { height: 100px !important; width: 320px !important; }
 #PopularPosts2 .overlay {
@@ -671,14 +671,14 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden !important;
 }
 
-#PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
-#PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
-#PopularPosts3 .overlay2 {
+#PopularPosts3 li, .PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
+#PopularPosts3 li.livro, .PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
+#PopularPosts3 .overlay2, .PopularPosts3 .overlay2 {
     width: 100%; height: 100%; position: absolute; left: 0; top: 0;
     background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
 }
 
-#PopularPosts3 li .fb-share-button {
+#PopularPosts3 li .fb-share-button, .PopularPosts3 li .fb-share-button {
     position: absolute !important;
     top: 10px !important;
     left: 20px !important;      /* Força esquerda */
@@ -690,7 +690,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 /* 2. REFORÇO ESPECÍFICO PARA CELULAR (A "Marreta") */
 /* O navegador só lê isso em telas pequenas e obedece com prioridade máxima */
 @media screen and (max-width: 768px) {
-    #PopularPosts3 li .fb-share-button {
+    #PopularPosts3 li .fb-share-button, .PopularPosts3 li .fb-share-button {
         left: 10px !important;      /* Esquerda confirmada */
         right: auto !important;    /* Direita desligada */
         margin: 0 !important;      /* Zera margens teimosas */
@@ -698,12 +698,12 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     }
 }
 
-#PopularPosts3 .titulo3 {
+#PopularPosts3 .titulo3, .PopularPosts3 .titulo3 {
     width: 70%; text-align: left !important; padding: 0 10px !important; font: bold 20px/20px var(--fonte-padrao) !important;
     color: var(--cor-branco); position: absolute; top: 35px; left: 10px;
     display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden !important;
 }
-#PopularPosts3 li.capa { background: transparent !important; margin-bottom: -50px !important; }
+#PopularPosts3 li.capa, .PopularPosts3 li.capa { background: transparent !important; margin-bottom: -50px !important; }
 .max320 { 
 	max-width: 320px !important; 
 	display: block !important;      /* Garante que se comportem como blocos */
