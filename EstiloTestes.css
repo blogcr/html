@@ -646,17 +646,17 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 .listagem { padding: 5px 10px; width: 90%; margin: 0 auto 5px; background: var(--cor-tabela-claro); text-align: center; }
 
 /* Posts Populares e Relacionados */
-#PopularPosts2 ul, #PopularPosts3 ul, .PopularPosts3 ul { background-color: transparent !important; display: flex; flex-wrap: wrap; }
-#PopularPosts2 li { padding: 0 !important; margin: 0 auto 35px auto !important; width: 320px; height: 150px; position: relative; }
+/* #PopularPosts2 ul, #PopularPosts3 ul, */ .PopularPosts3 ul { background-color: transparent !important; display: flex; flex-wrap: wrap; }
+/* #PopularPosts2 li { padding: 0 !important; margin: 0 auto 35px auto !important; width: 320px; height: 150px; position: relative; }
 #PopularPosts2 li.contador { counter-increment: item; position: relative; }
 #PopularPosts2 li.contador:before {
     content: counter(item); color: var(--cor-branco); font-size: 3.5em; font-weight: bold;
     line-height: 1em; position: absolute; top: 0.1em; left: 0.1em; display: block; opacity: 0.4;
-}
-#PopularPosts2 img, #PopularPosts3 img, .PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
-#PopularPosts2 img { max-height: 150px; }
+} */
+/* #PopularPosts2 img, #PopularPosts3 img, */ .PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
+/* #PopularPosts2 img { max-height: 150px; } */ 
 #PopularPosts3 img, .PopularPosts3 img { height: 100px !important; width: 320px !important; }
-#PopularPosts2 .overlay {
+/* #PopularPosts2 .overlay {
     position: absolute; left: 0; top: 0; width: 100%; height: 100%;
     background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
 }
@@ -669,7 +669,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     padding: 0 15px; font-size: 1.8em; line-height: 1em; width: 100%; position: absolute; top: 70%;
     color: var(--cor-branco) !important; font-family: var(--fonte-padrao) !important; font-weight: bold; text-align: left !important;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden !important;
-}
+} */
 
 #PopularPosts3 li, .PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; }
  li.livro, .PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
