@@ -1587,8 +1587,8 @@ figure.moderno.dir img {
     /* Em vez de Grid, usamos Colunas de Jornal */
     column-count: 2; 
     column-gap: 10px; /* Espaço entre as colunas */
-    
-    width: 100%;
+    width: 100% !important;
+    height: auto !important;
     max-width: 320px;
     margin: 20px auto 0 auto;
 }
