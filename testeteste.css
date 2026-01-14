@@ -1583,14 +1583,17 @@ figure.moderno.dir img {
 }
 
 /* --- BIBLIOTECA ESTILO MASONRY (PINTEREST) --- */
-#grid-livros-container {
-    /* Em vez de Grid, usamos Colunas de Jornal */
-    column-count: 2; 
-    column-gap: 10px; /* Espaço entre as colunas */
+/* Estilo da Imagem (COM REFORÇO DE ID) */
+#grid-livros-container img {  /* Mudamos de .grid-item-livro para #ID para dar força total */
+    width: 100% !important;
+    height: auto !important;  /* AQUI ESTÁ A ORDEM PINTEREST */
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 4px;
     
-    width: 100%;
-    max-width: 320px;
-    margin: 20px auto 0 auto;
+    /* Sombra charmosa no livro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
 }
 
 /* Estilo de cada livro */
