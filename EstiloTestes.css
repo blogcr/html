@@ -1605,4 +1605,57 @@ ul.lista-sorteio-5 li img {
     #btn-enviar-nativo  { display: flex !important; } /* Aparece o ENVIAR */
 }
 
+/* ==========================================================================
+   MASTER CSS: CARTÕES, DATA E BOTÃO (Versão Final Otimizada)
+   ========================================================================== */
+
+/* --- 1. O CARTÃO (A Referência de Espaço) --- */
+.post_item {
+    /* Define que este bloco é a referência "Zero" para o botão flutuante */
+    position: relative !important;
+    
+    /* O SEGREDO: 70px de espaço vazio no fundo para o botão respirar e não tapar o texto */
+    padding-bottom: 70px !important; 
+    
+    /* Mantém o visual do cartão */
+    box-sizing: border-box !important;
+    background: var(--cor-branco);
+    overflow: hidden;
+}
+
+/* --- 2. A DATA (Fica na Esquerda) --- */
+/* O container ".post_meta" serve apenas para alinhar a data */
+.post_meta,
+.post_item .post_meta {
+    display: flex !important;
+    justify-content: flex-start !important; /* Força tudo para a ESQUERDA */
+    align-items: center !important;
+    
+    /* Zera a geometria para não atrapalhar o botão */
+    width: 100% !important;
+    padding: 0 20px 0 20px !important; /* Apenas laterais */
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    
+    /* Removemos position e padding-bottom daqui, pois pertencem ao .post_item */
+}
+
+/* Estilo do Texto da Data */
+.post_meta span, 
+.post_meta span.post-date {
+    text-align: left !important;
+    font-size: 11px !important;
+    color: var(--cor-texto-suave) !important;
+    font-weight: 400 !important;
+    background: none !important;
+    display: block !important;
+}
+
+/* Limpeza de Segurança (Remove ícones velhos) */
+.post_meta span.user, 
+.post_meta span.comment {
+    display: none !important;
+}
+
 
