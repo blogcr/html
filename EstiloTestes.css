@@ -385,8 +385,23 @@ figure.moderno img {
     width: 100%;
 }
 
+/* --- VARIAÇÃO: FIGURE MODERNO MENOR (60% do tamanho) --- */
+/* Uso no HTML: <figure class="moderno menor"> */
+
+figure.moderno.menor {
+    /* 100% - 40% = 60% */
+    max-width: 60% !important; 
+}
+
+/* Ajuste para Celular: Volta a ser grande para não ficar minúsculo */
+@media (max-width: 650px) {
+    figure.moderno.menor {
+        max-width: 100% !important;
+    }
+}
+
 /* LEGENDA FLUTUANTE (Overlay) */
-.legenda-foto {
+.legenda-foto, .foto-legenda {
     position: absolute;
     bottom: 5px;
     left: 5px;
