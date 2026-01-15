@@ -385,18 +385,22 @@ figure.moderno img {
     width: 100%;
 }
 
-/* --- VARIAÇÃO: FIGURE MODERNO MENOR (60% do tamanho) --- */
-/* Uso no HTML: <figure class="moderno menor"> */
+/* --- VARIAÇÃO: FIGURE MODERNO MENOR (Reduzida) --- */
+/* Uso no HTML: <figure class="moderno dir menor"> ou <figure class="moderno esq menor"> */
 
 figure.moderno.menor {
-    /* 100% - 40% = 60% */
-    max-width: 60% !important; 
+    /* O padrão lateral é 45%. Para reduzir 40%, definimos 25-27% */
+    max-width: 27% !important; 
 }
 
-/* Ajuste para Celular: Volta a ser grande para não ficar minúsculo */
+/* Ajuste para Celular */
 @media (max-width: 650px) {
     figure.moderno.menor {
-        max-width: 100% !important;
+        /* No celular, 27% fica minúsculo (selo). */
+        /* Deixamos 50% para que o texto ainda flua ao lado, mas ela continue pequena */
+        max-width: 50% !important; 
+        float: left !important; /* Mantém ela flutuando no canto */
+        margin-right: 15px !important;
     }
 }
 
