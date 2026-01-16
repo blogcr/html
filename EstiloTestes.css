@@ -606,7 +606,7 @@ figure.moderno .fotoinfo a {
 }
 
 /* Ornamentos */
-#ornamento { width: 100%; position: relative; margin-right: 10px; }
+#ornamento, .ornamento { width: 100%; position: relative; margin-right: 10px; }
 .moldura { position: absolute; float: right; right: 0; opacity: 0.1; z-index: 0;}
 .superior, .cima { content: url(https://1.bp.blogspot.com/--sGhlKtVdt0/X_ndkJP9TqI/AAAAAAACpno/745-P43jnAspuoU4-fRIPOHryqgk_U5RgCLcBGAsYHQ/s0/cant-alta.png); width: 30%; }
 .media, .central { content: url(https://1.bp.blogspot.com/-uSPFluKAC8M/X_n05OcBEKI/AAAAAAACpoA/YwZslOU3JXAccKe0EkdOCJJlJZtsXpAWwCLcBGAsYHQ/s0/cant-centro.png); top: 50%; transform: translateY(-50%); width: 30%; }
