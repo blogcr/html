@@ -216,25 +216,12 @@ blockquote cite {
     margin-right: 4px;
 }
 
-/* Poema 
-.poema {
-    white-space: pre-wrap;
-    text-align: left !important;
-    width: auto !important;
-    hyphens: none !important;
-    display: block;
-}
-*/
-
 .poema {
     /* 1. PERMITE A QUEBRA (WRAP) SE NECESSÁRIO */
     white-space: pre-wrap; 
-    
     /* 2. GARANTE QUE A PALAVRA QUEBRE SE FOR MAIOR QUE A TELA */
     overflow-wrap: break-word; 
-    
     text-align: left !important;
-    width: 100% !important;
     hyphens: none !important;
     display: block;
     line-height: 1.4;
