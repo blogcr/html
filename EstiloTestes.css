@@ -227,6 +227,7 @@ blockquote cite {
     font-size: 1em; 
     line-height: 1.5;
     color: var(--cor-texto);
+	z-index: 10 !important;
 }
 .destaque.roman {
     font-family: var(--fonte-serifa);
