@@ -227,7 +227,6 @@ blockquote cite {
     font-size: 1em; 
     line-height: 1.5;
     color: var(--cor-texto);
-	z-index: 10 !important;
 }
 .destaque.roman {
     font-family: var(--fonte-serifa);
@@ -1659,4 +1658,5 @@ ul.lista-sorteio-5 li img {
     display: block;    
     font-size: clamp(0.85rem, 4vw, 1em);
     line-height: 1.4;
+	z-index: 10 !important;
 }
