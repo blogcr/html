@@ -232,7 +232,7 @@ blockquote cite {
     /* Ideal: 4.5vw -> Tenta ajustar ao tamanho da tela. */
     /* Máximo: 1.125rem (aprox 18px) -> Tamanho máximo no PC. */
     
-    font-size: clamp(0.85rem, 4.5vw, 1.125rem);
+    font-size: clamp(0.85rem, 4.5vw, 1.125rem) !important;
 }
 
 /* Caixas e Destaques */
