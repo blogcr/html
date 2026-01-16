@@ -1680,8 +1680,3 @@ ul.lista-sorteio-5 li img {
         line-height: 1.3 !important;
     }
 }
-
-/* Regra de segurança para quando estiver dentro do destaque */
-.destaque .poema, .destaque.poema {
-    margin: 0 !important; /* Remove margens duplas */
-}
