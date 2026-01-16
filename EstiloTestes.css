@@ -1646,45 +1646,42 @@ ul.lista-sorteio-5 li img {
 }
 
 /* =======================================================
-   CLASSE POEMA (UNIVERSAL E INDEPENDENTE)
+   CLASSE POEMA (Lógica Simplificada)
    ======================================================= */
 
-/* 1. Regra Geral (Funciona em qualquer lugar) */
 .poema {
-    /* Comportamento de quebra de linha */
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
+    /* 1. COMPORTAMENTO (Quebras de linha) */
+    white-space: pre-wrap;       
+    overflow-wrap: break-word;   
     
-    /* Estilo Visual */
+    /* 2. VISUAL */
     text-align: left !important;
     hyphens: none !important;
     display: block;
-    line-height: 1.35 !important; /* Entrelinha confortável para versos */
-    letter-spacing: -0.01em;
+    line-height: 1.45; /* Um pouco mais de ar para leitura */
     
-    /* O TAMANHO INTELIGENTE (Clamp) */
-    /* Mínimo: 0.85rem (~13.6px) | Ideal: 4.5% da tela | Máx: 1.1rem */
-    font-size: clamp(0.85rem, 4.5vw, 1.1rem) !important;
-    
+    /* 3. TAMANHO NO DESKTOP (O Normal) */
+    /* Garante que seja idêntico ao texto padrão do site */
+    font-size: 1rem !important; 
+    letter-spacing: normal;
     margin-bottom: 1rem;
 }
 
-/* 2. REGRA DE DESEMPATE (A Solução do Problema) */
-/* Isso diz: "Se for .destaque E .poema ao mesmo tempo, use o tamanho do POEMA" */
-.destaque.poema {
-    font-size: clamp(0.85rem, 4.5vw, 1.1rem) !important;
-    /* Removemos margens extras que o destaque já dá */
-    margin: 0 !important; 
-}
-
-/* 3. REFORÇO PARA CELULARES (Mobile) */
-@media (max-width: 450px) {
-    /* Força redução drástica no celular para manter a métrica */
-    .poema, .destaque.poema {
-        font-size: 0.8rem !important; /* ~12.8px */
+/* 4. TAMANHO NO CELULAR (A Redução para salvar a métrica) */
+@media (max-width: 600px) {
+    .poema {
+        /* Reduz a fonte significativamente no celular */
+        font-size: 0.85rem !important; 
+        
+        /* Espreme levemente as letras para caber mais palavras na linha */
+        letter-spacing: -0.5px !important; 
+        
+        /* Ajusta a entrelinha para o tamanho novo */
         line-height: 1.3 !important;
-        padding-right: 5px !important; /* Ganha espaço lateral */
     }
 }
 
-
+/* Regra de segurança para quando estiver dentro do destaque */
+.destaque .poema, .destaque.poema {
+    margin: 0 !important; /* Remove margens duplas */
+}
