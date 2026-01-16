@@ -228,12 +228,11 @@ blockquote cite {
     line-height: 1.5;
     color: var(--cor-texto);
 }
-/*
+
 .destaque.roman {
     font-family: var(--fonte-serifa);
     font-size: 1.05em;
 }
-*/
 
 /* Outros Elementos de Texto */
 #dialogo > br { margin-bottom: 20px !important; }
