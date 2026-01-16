@@ -218,15 +218,36 @@ blockquote cite {
 
 /* Caixas e Destaques */
 .destaque {
+	position: relative !important;
+    z-index: 0 !important; /* Cria um novo contexto de pilha */
+    /* TRUQUE: Removemos a cor daqui para ela não tapar a imagem negativa */
+    background-color: transparent !important;
     margin: 0 5% 1.5rem 5%;
     padding: 20px;
-    background-color: var(--cor-fundo-citacao);
     border-radius: 6px;
     border: none;
     font-family: var(--fonte-padrao);
     font-size: 1em; 
     line-height: 1.5;
     color: var(--cor-texto);
+}
+
+.destaque::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;    
+    /* A cor de fundo original vem para cá */
+    background-color: var(--cor-fundo-citacao) !important; 
+    border-radius: 6px; /* Mantém o arredondamento original */
+    z-index: -2 !important; /* Fica atrás de TUDO */
+}
+
+.destaque .moldura {
+    z-index: -1 !important; /* Fica na frente do fundo bege, mas atrás do texto */
+    pointer-events: none !important; /* Garante que o clique passe por ela */
 }
 
 .destaque.roman {
