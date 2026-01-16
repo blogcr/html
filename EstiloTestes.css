@@ -359,6 +359,7 @@ figure.moderno {
     max-width: 100%;
     height: auto !important;
     overflow: hidden;
+	z-index: 1 !important; /* Coloca a foto acima do destaque (que é 0) */
 }
 
 /* Garante que elementos internos obedeçam */
