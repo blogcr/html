@@ -216,23 +216,46 @@ blockquote cite {
     margin-right: 4px;
 }
 
+/* =======================================================
+   CLASSE POEMA (UNIVERSAL E INDEPENDENTE)
+   ======================================================= */
+
+/* 1. Regra Geral (Funciona em qualquer lugar) */
 .poema {
-    /* 1. PERMITE A QUEBRA (WRAP) SE NECESSÁRIO */
-    white-space: pre-wrap; 
-    /* 2. GARANTE QUE A PALAVRA QUEBRE SE FOR MAIOR QUE A TELA */
-    overflow-wrap: break-word; 
+    /* Comportamento de quebra de linha */
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    
+    /* Estilo Visual */
     text-align: left !important;
     hyphens: none !important;
     display: block;
-    line-height: 1.4;
-    letter-spacing: -0.02em;
-
-    /* 3. O TAMANHO INTELIGENTE */
-    /* Mínimo: 0.85rem (aprox 13.5px) -> Se precisar diminuir mais que isso, ELE QUEBRA A LINHA. */
-    /* Ideal: 4.5vw -> Tenta ajustar ao tamanho da tela. */
-    /* Máximo: 1.125rem (aprox 18px) -> Tamanho máximo no PC. */
+    line-height: 1.35 !important; /* Entrelinha confortável para versos */
+    letter-spacing: -0.01em;
     
-    font-size: clamp(0.85rem, 4.5vw, 1.125rem) !important;
+    /* O TAMANHO INTELIGENTE (Clamp) */
+    /* Mínimo: 0.85rem (~13.6px) | Ideal: 4.5% da tela | Máx: 1.1rem */
+    font-size: clamp(0.85rem, 4.5vw, 1.1rem) !important;
+    
+    margin-bottom: 1rem;
+}
+
+/* 2. REGRA DE DESEMPATE (A Solução do Problema) */
+/* Isso diz: "Se for .destaque E .poema ao mesmo tempo, use o tamanho do POEMA" */
+.destaque.poema {
+    font-size: clamp(0.85rem, 4.5vw, 1.1rem) !important;
+    /* Removemos margens extras que o destaque já dá */
+    margin: 0 !important; 
+}
+
+/* 3. REFORÇO PARA CELULARES (Mobile) */
+@media (max-width: 450px) {
+    /* Força redução drástica no celular para manter a métrica */
+    .poema, .destaque.poema {
+        font-size: 0.8rem !important; /* ~12.8px */
+        line-height: 1.3 !important;
+        padding-right: 5px !important; /* Ganha espaço lateral */
+    }
 }
 
 /* Caixas e Destaques */
