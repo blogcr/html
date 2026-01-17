@@ -46,24 +46,14 @@
     --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* --- RESET & NORMALIZAÇÃO --- */
+ /* --- RESET & NORMALIZAÇÃO --- */
 *, *::before, *::after { box-sizing: border-box; }
 
-/* ATUALIZE ESTE BLOCO */
 img, video, iframe, embed, object {
     max-width: 100%;
     height: auto;
     display: block;
-    
-    /* 1. ADICIONE ESTA LINHA (Recupera o espaço nas postagens antigas) */
-    margin-bottom: 1.5rem; 
-}
-
-/* 2. ADICIONE ESTA EXCEÇÃO LOGO ABAIXO (Protege o novo modelo) */
-/* Isso impede que as imagens novas fiquem com margem dupla ou afastem a legenda */
-figure.moderno img {
-    margin-bottom: 0 !important;
-}
+} 
 
 input, button, textarea, select { font: inherit; }
 
