@@ -1707,11 +1707,10 @@ ul.lista-sorteio-5 li img {
     
     /* Estilo Visual */
     text-align: right;
-    font-family: var(--fonte-serifa);
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: var(--cor-texto-suave);
-    line-height: 1.5;
+    line-height: 1.1;
 }
 
 /* Ajuste Mobile */
