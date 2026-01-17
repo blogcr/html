@@ -1725,21 +1725,18 @@ ul.lista-sorteio-5 li img {
 }
 
 /* =======================================================
-   CORREÇÃO DE IMAGEM (Restaurando os 10px nativos)
+   CORREÇÃO DE ESPAÇAMENTO (RESTAURAÇÃO DO NATIVO)
    ======================================================= */
 
-/* 1. APLICA EM TODAS AS IMAGENS ANTIGAS (Separator ou Figure genérico) */
-.separator img, 
-figure img {
-    /* Recupera o espaço que você viu no inspetor */
+/* 1. Ativa a margem APENAS nas imagens dentro do texto do post */
+/* Isso conserta todas as postagens antigas sem estragar o logotipo do site */
+.post-body img {
     margin-bottom: 10px !important; 
-    
-    /* Garante que o display block não engula a margem */
-    display: block; 
 }
 
 /* 2. PROTEGE O MODELO NOVO (Imunidade) */
 /* No moderno, a margem é controlada pelo container, não pela imagem */
+/* Zeramos aqui para a legenda colar na foto */
 figure.moderno img,
 figure.moderno .separator img {
     margin-bottom: 0 !important;
