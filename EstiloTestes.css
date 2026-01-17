@@ -1700,8 +1700,7 @@ ul.lista-sorteio-5 li img {
 
 /* O texto é gerado pelo CSS, então o Blogger ignora no resumo */
 .dedicatoria::before {
-    content: attr(data-texto); /* Pega o texto do HTML */
-    
+    content: attr(dedica-texto); /* Pega o texto do HTML */
     display: block;
     max-width: 60%;       /* Largura de livro */
     margin-left: auto;    /* Empurra para a direita */
