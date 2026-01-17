@@ -1686,3 +1686,41 @@ ul.lista-sorteio-5 li img {
 .margem-cima {
 	margin-top:10px !important;
 }
+
+/* =======================================================
+   CLASSE DEDICATÓRIA (Via Atributo - Invisível no Snippet)
+   Uso: <div class="dedicatoria" data-texto="Seu texto aqui"></div>
+   ======================================================= */
+
+.dedicatoria {
+    display: block;
+    width: 100%;
+    margin: 0 0 3rem auto; /* Espaço abaixo */
+}
+
+/* O texto é gerado pelo CSS, então o Blogger ignora no resumo */
+.dedicatoria::before {
+    content: attr(data-texto); /* Pega o texto do HTML */
+    
+    display: block;
+    max-width: 60%;       /* Largura de livro */
+    margin-left: auto;    /* Empurra para a direita */
+    
+    /* Estilo Visual */
+    text-align: right;
+    font-family: var(--fonte-serifa);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--cor-texto-suave);
+    line-height: 1.5;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 650px) {
+    .dedicatoria::before {
+        max-width: 100%;
+        text-align: center;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+}
