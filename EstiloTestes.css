@@ -1723,3 +1723,24 @@ ul.lista-sorteio-5 li img {
         padding: 0 20px;
     }
 }
+
+/* =======================================================
+   CORREÇÃO DE IMAGEM (Restaurando os 10px nativos)
+   ======================================================= */
+
+/* 1. APLICA EM TODAS AS IMAGENS ANTIGAS (Separator ou Figure genérico) */
+.separator img, 
+figure img {
+    /* Recupera o espaço que você viu no inspetor */
+    margin-bottom: 10px !important; 
+    
+    /* Garante que o display block não engula a margem */
+    display: block; 
+}
+
+/* 2. PROTEGE O MODELO NOVO (Imunidade) */
+/* No moderno, a margem é controlada pelo container, não pela imagem */
+figure.moderno img,
+figure.moderno .separator img {
+    margin-bottom: 0 !important;
+}
