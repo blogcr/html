@@ -252,7 +252,7 @@ blockquote cite {
 }
 
 .destaque.roman {
-    font-family: var(--fonte-serifa);
+    font-family: var(--fonte-serifa) !important;
 }
 
 /* Outros Elementos de Texto */
