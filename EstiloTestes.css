@@ -576,6 +576,7 @@ figure.container-mosaico .fotoinfo {
     display: block; width: 100%; position: relative;
     aspect-ratio: 16 / 9;
     line-height: 0 !important; font-size: 0 !important; margin-bottom: 0 !important;
+	z-index: 1 !important; /* Coloca o vídeo acima do destaque (que é 0) */
 }
 .video-box iframe { display: block !important; width: 100%; height: 100%; border: none; }
 .video-box.quadrado { aspect-ratio: 1 / 1; }
