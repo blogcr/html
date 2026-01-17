@@ -1682,3 +1682,7 @@ ul.lista-sorteio-5 li img {
     font-size: clamp(0.85rem, 4vw, 1em);
     line-height: 1.4;
 }
+
+.margem-cima {
+	margin-top:1rem !important;
+}
