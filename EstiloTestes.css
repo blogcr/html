@@ -619,7 +619,7 @@ figure.moderno .fotoinfo a {
     display: block;
     width: 100%;
     /* Converti as margens também para manter a consistência */
-    margin-top: -2rem;    /* Aprox -24px (era -25px) */
+    margin-top: -20px;    /* Aprox -24px (era -25px) */
     margin-bottom: 2rem;    /* 32px (era 35px, arredondei para padrão) */
     text-align: right;
     line-height: 0.8;
