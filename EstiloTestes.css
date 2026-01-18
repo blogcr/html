@@ -616,7 +616,7 @@ figure.moderno .fotoinfo a {
    ======================================================= */
 
 .arte2 {
-    margin-top:-1.4rem;	
+    margin-top:-24px;	
 	margin-bottom: 2rem;  
     text-align: right;
     line-height: 0.8;
@@ -629,7 +629,6 @@ figure.moderno .fotoinfo a {
 
 .arte2::before {
     content: attr(artista);
-    
     font-family: var(--fonte-padrao);
     font-size: 0.75rem;     /* AQUI: 12px convertido para REM */
     color: var(--cor-texto-suave);
