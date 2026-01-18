@@ -740,6 +740,7 @@ ul.lista-sorteio-5 li a::after {
     right: auto !important;    /* Desliga a direita */
     margin-left: 0 !important;
 	opacity:0.8 !important;
+	z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
 /* 2. REFORÇO ESPECÍFICO PARA CELULAR (A "Marreta") */
