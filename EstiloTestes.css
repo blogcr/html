@@ -1736,10 +1736,11 @@ ul.lista-sorteio-5 li img {
    ======================================================= */
 
 /* 1. Ativa a margem APENAS nas imagens dentro do texto do post */
-/* Isso conserta todas as postagens antigas sem estragar o logotipo do site */
+/* Isso conserta todas as postagens antigas sem estragar o logotipo do site EM TESTE
 .post-body img {
     margin-bottom: 10px !important; 
 }
+*/
 
 /* 2. PROTEGE O MODELO NOVO (Imunidade) */
 /* No moderno, a margem é controlada pelo container, não pela imagem */
