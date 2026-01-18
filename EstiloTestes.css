@@ -673,7 +673,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 } */
 /* #PopularPosts2 img, #PopularPosts3 img, */ .PopularPosts3 img { padding: 0px; width: 320px; overflow: hidden; object-fit: cover; object-position: 100% 0; }
 /* #PopularPosts2 img { max-height: 150px; } */ 
-#PopularPosts3 img, .PopularPosts3 img { height: 100px !important; width: 320px !important; }
+/* #PopularPosts3 img, */ .PopularPosts3 img { height: 100px !important; width: 320px !important; }
 /* #PopularPosts2 .overlay {
     position: absolute; left: 0; top: 0; width: 100%; height: 100%;
     background-image: linear-gradient(to bottom, transparent 50%,rgba(0, 0, 0,0.7));
