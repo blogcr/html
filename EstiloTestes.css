@@ -695,9 +695,42 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
     overflow: hidden;    /* OBRIGATÓRIO: Faz a imagem e o degradê respeitarem a curva */
 									 }
  li.livro, .PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
- .overlay2, .PopularPosts3 .overlay2 {
+
+/* OVERLAY ANTIGO DESATIVADO
+.overlay2, .PopularPosts3 .overlay2 {
     width: 100%; height: 100%; position: absolute; left: 0; top: 0;
     background-image: linear-gradient(to left, transparent 1%,rgba(0, 0, 0,0.7));
+}
+*/
+
+/* --- OVERLAY MODERNO (Película via CSS) --- */
+/* Cria a sombra automaticamente sobre o link do post, sem precisar de div extra */
+
+.PopularPosts3 li a::after,
+ul.lista-sorteio-5 li a::after {
+    content: ""; /* Cria o elemento fantasma */
+    
+    /* Posicionamento (Cobre toda a área do card) */
+    position: absolute !important;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    
+    /* O seu degradê original */
+    background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.7));
+    
+    /* Camadas */
+    z-index: 2; /* Fica acima da imagem */
+    
+    /* Acabamento */
+    border-radius: 6px; /* Acompanha o arredondamento do card */
+    pointer-events: none; /* Garante que o clique passe através da sombra */
+}
+
+/* Garante que o texto fique ACIMA da sombra nova */
+.PopularPosts3 .titulo3 {
+    z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
  li .fb-share-button, .PopularPosts3 li .fb-share-button {
