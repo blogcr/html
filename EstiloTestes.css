@@ -616,14 +616,16 @@ figure.moderno .fotoinfo a {
    ======================================================= */
 
 .arte2 {
-    display: block;
-    width: 100%;
-    /* Converti as margens também para manter a consistência */
-    margin-top: -20px;    /* Aprox -24px (era -25px) */
-    margin-bottom: 2rem;    /* 32px (era 35px, arredondei para padrão) */
+    margin-top:-1.4rem;	
+	margin-bottom: 2rem;  
     text-align: right;
     line-height: 0.8;
 }
+/*
+	display: block;
+    width: 100%;
+    margin-top: -20px;    
+*/  
 
 .arte2::before {
     content: attr(artista);
