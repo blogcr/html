@@ -20,6 +20,7 @@
     --cor-fundo: #f0f0f0;
     --cor-fundo-detalhe: #fafafa;
     --cor-fundo-citacao: #EFEBE9;   /* Bege quente */
+	--cor-fundo-citacao-escuro: #E5DBD7;  
     
     --cor-escuro: #222222;
     --cor-cinza-claro: #E0E0E0;
@@ -240,9 +241,14 @@ blockquote cite {
     width: 100%; 
     height: 100%;    
     /* A cor de fundo original vem para cá */
-    background-color: var(--cor-fundo-citacao) !important; 
+    background-color: var(--cor-fundo-citacao); 
     border-radius: 6px; /* Mantém o arredondamento original */
     z-index: -2 !important; /* Fica atrás de TUDO */
+}
+
+/* Variação de Cor para o Destaque */
+.destaque.escuro::before {
+    background-color: var(--cor-fundo-citacao-escuro) !important;
 }
 
 .destaque .moldura {
