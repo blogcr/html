@@ -191,7 +191,7 @@
     	left:15px !important;
     	top:5px !important;
     	overflow:hidden !important;
-		z-index: 3;
+	    z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
 .autoria3 {
@@ -203,7 +203,7 @@
     	left:15px;
     	top:56% !important;
     	overflow:hidden !important;
-	z-index: 3;
+	    z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
 .autoria4 {
@@ -215,7 +215,7 @@
     	left:25% !important;
     	top:5px !important;
     	overflow:hidden !important;
-	z-index: 3;
+	    z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
 #compartilhe {
