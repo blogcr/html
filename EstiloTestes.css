@@ -95,7 +95,16 @@ html { scroll-behavior: smooth; }
 
 /* Estilos de Fonte Específicos */
 .spelite, .datilog { font-family: var(--fonte-typewriter) !important; }
-.roman { font-family: var(--fonte-serifa) !important; }
+.roman { 
+    font-family: var(--fonte-serifa) !important;
+    
+    /* Aumenta 15% apenas para quem usa essa classe */
+    /* Isso faz a Baskerville (pequena) ficar do tamanho visual da Inter (grande) */
+    font-size: 1.15em; 
+    
+    /* Opcional: Serifas geralmente ficam mais elegantes com um tico mais de entrelinha */
+    line-height: 1.7; 
+}
 .italico { font-style: italic !important; }
 .negrito { font-weight: 900 !important; }
 
