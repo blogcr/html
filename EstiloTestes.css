@@ -32,12 +32,9 @@
     --cor-tabela-claro: #EFEBE9;    /* Corrigido o erro de digitação "f" */
     --cor-tabela-escuro: #e1dad7;
 
-    /* --- FONTES & TIPOGRAFIA ---
+    /* --- FONTES & TIPOGRAFIA --- */
     --fonte-padrao: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	--- */
 
-	--fonte-padrao: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    
     /* MUDANÇA 3: O espaçamento vertical mágico */
     --altura-linha: 1.6;
 
