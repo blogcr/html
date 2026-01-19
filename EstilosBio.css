@@ -179,6 +179,7 @@
     	top:56% !important;
 	display:table;
     	overflow:hidden !important;
+	    z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
 .autoria2 {
