@@ -98,12 +98,12 @@ html { scroll-behavior: smooth; }
 .roman { 
     font-family: var(--fonte-serifa) !important;
     
-    /* Aumenta 15% apenas para quem usa essa classe */
-    /* Isso faz a Baskerville (pequena) ficar do tamanho visual da Inter (grande) */
-    font-size: 1.15em; 
+    /* AJUSTE FINO: De 1.15 para 1.08 */
+    /* Isso dá um ganho sutil de tamanho, sem estourar */
+    font-size: 1.08em; 
     
-    /* Opcional: Serifas geralmente ficam mais elegantes com um tico mais de entrelinha */
-    line-height: 1.7; 
+    /* Mantemos o respiro, pois serifas precisam de ar */
+    line-height: 1.6; 
 }
 .italico { font-style: italic !important; }
 .negrito { font-weight: 900 !important; }
