@@ -6,22 +6,28 @@
 :root {
     color-scheme: light;
     
-    /* --- CORES --- */
-    --cor-principal: #B71C1C;       /* Vermelho (Destaques) */
-    --cor-link: #1565C0;            /* Azul (Links Novos) */
+    /* --- ESTRATÉGIA DE FONTES (A Mágica) --- */
+    /* 1. Helvetica Neue (Para seu Mac) */
+    /* 2. Inter (Para Windows/Android - A substituta perfeita) */
+    --fonte-padrao: "Helvetica Neue", Helvetica, "Inter", sans-serif;
+    
+    /* --- CONFORTO VISUAL --- */
+    --cor-texto: #202122;           /* Cinza Carvão (Estilo Wikipédia) */
+    --altura-linha: 1.6;            /* Espaçamento de livro */
+    
+    /* --- CORES DO TEMA --- */
+    --cor-principal: #B71C1C;       /* Vermelho */
+    --cor-link: #1565C0;            /* Azul */
     --cor-hover: #424242;           /* Hover */
     --cor-link-visitado: #7B1FA2;   /* Roxo */
     --cor-branco: #ffffff;
     
-    --cor-titulo: #212121;          /* Preto Suave */
-    
-    /* MUDANÇA 1: Cor Wikipédia (Cinza Carvão) para menos fadiga visual */
-    --cor-texto: #202122;           
-    --cor-texto-suave: #757575;     /* Legendas/Datas */
+    --cor-titulo: #212121;          
+    --cor-texto-suave: #757575;     
     
     --cor-fundo: #f0f0f0;
     --cor-fundo-detalhe: #fafafa;
-    --cor-fundo-citacao: #EFEBE9;   /* Bege quente */
+    --cor-fundo-citacao: #EFEBE9;   
     --cor-fundo-citacao-escuro: #E5DBD7;  
     
     --cor-escuro: #222222;
@@ -29,23 +35,16 @@
     --cor-borda: #e0e0e0;
     --cor-papel: #FFF8E1;
 
-    --cor-tabela-claro: #EFEBE9;    /* Corrigido o erro de digitação "f" */
+    --cor-tabela-claro: #EFEBE9;
     --cor-tabela-escuro: #e1dad7;
 
-    /* --- FONTES & TIPOGRAFIA --- */
-    --fonte-padrao: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-    /* MUDANÇA 3: O espaçamento vertical mágico */
-    --altura-linha: 1.6;
-
+    /* --- OUTRAS FONTES --- */
     --fonte-titulo: 'Oswald', sans-serif;
     --fonte-serifa: 'Roboto Slab', serif;
     --fonte-typewriter: 'Courier Prime', monospace;
     --fonte-capitular: 'Playfair Display', serif; 
     
-    /* --- TÉCNICA (Hifenização Premium) --- */
-    /* Significa: Palavra min 6 letras | min 3 antes do hífen | min 3 depois */
-    /* Ex: "Pa-la-vra" (Ok) | "Ca-sa" (Não quebra) */
+    /* --- HIFENIZAÇÃO (Configuração Fina) --- */
     --hifenizacao: 6 3 3; 
     --hifenizacao-mobile: 5 2 2;
     
