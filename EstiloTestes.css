@@ -14,32 +14,42 @@
     --cor-branco: #ffffff;
     
     --cor-titulo: #212121;          /* Preto Suave */
-    --cor-texto: #333333;           /* Texto Padrão */
+    
+    /* MUDANÇA 1: Cor Wikipédia (Cinza Carvão) para menos fadiga visual */
+    --cor-texto: #202122;           
     --cor-texto-suave: #757575;     /* Legendas/Datas */
     
     --cor-fundo: #f0f0f0;
     --cor-fundo-detalhe: #fafafa;
     --cor-fundo-citacao: #EFEBE9;   /* Bege quente */
-	--cor-fundo-citacao-escuro: #E5DBD7;  
+    --cor-fundo-citacao-escuro: #E5DBD7;  
     
     --cor-escuro: #222222;
     --cor-cinza-claro: #E0E0E0;
     --cor-borda: #e0e0e0;
     --cor-papel: #FFF8E1;
 
-    --cor-tabela-claro: #EFEBE9;f
+    --cor-tabela-claro: #EFEBE9;    /* Corrigido o erro de digitação "f" */
     --cor-tabela-escuro: #e1dad7;
 
-    /* --- FONTES --- */
-    --fonte-padrao: 'Roboto', sans-serif;
+    /* --- FONTES & TIPOGRAFIA --- */
+    /* MUDANÇA 2: A Pilha "Estilo Wikipédia" */
+    --fonte-padrao: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+    /* MUDANÇA 3: O espaçamento vertical mágico */
+    --altura-linha: 1.6;
+
     --fonte-titulo: 'Oswald', sans-serif;
     --fonte-serifa: 'Roboto Slab', serif;
     --fonte-typewriter: 'Courier Prime', monospace;
     --fonte-capitular: 'Playfair Display', serif; 
     
-    /* --- TÉCNICA --- */
-    --hifenizacao: 6 3 3;
+    /* --- TÉCNICA (Hifenização Premium) --- */
+    /* Significa: Palavra min 6 letras | min 3 antes do hífen | min 3 depois */
+    /* Ex: "Pa-la-vra" (Ok) | "Ca-sa" (Não quebra) */
+    --hifenizacao: 6 3 3; 
     --hifenizacao-mobile: 5 2 2;
+    
     --titulo-tamanho: clamp(32px, 5vw, 42px);
     
     --sombra-suave: 0 2px 4px rgba(0,0,0, 0.05);
