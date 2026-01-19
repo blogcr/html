@@ -245,7 +245,7 @@ blockquote cite {
     border-radius: 6px;
     border: none;
     font-family: var(--fonte-padrao);
-    font-size: 1em; 
+    font-size: 0.9em; 
     line-height: 1.5;
     color: var(--cor-texto);
 }
