@@ -1822,10 +1822,16 @@ figure.moderno .separator img {
     background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
 }
 
-/* Arredonda cantos de todas as imagens dentro do corpo da postagem */
-.post-body img, .entry-content img {
-    border-radius: 8px !important; /* Ajuste o valor '8px' para mais ou menos redondo */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: uma sombrinha suave fica elegante */
+/* ARREDONDAMENTO INTELIGENTE (Só funciona dentro do Post) */
+/* A classe .item-view garante que isso SÓ aconteça na página de leitura, */
+/* ignorando a Home, os Cards e a Barra Lateral */
+
+.item-view .post-body img, 
+.item-view .entry-content img, 
+.item-view .separator img,
+.item-view .separator a img {
+    border-radius: 8px !important; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
 }
 
 /* POSTAGEM MAIS RECENTE */
