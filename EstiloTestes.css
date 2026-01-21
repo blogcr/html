@@ -1827,3 +1827,93 @@ figure.moderno .separator img {
     border-radius: 8px !important; /* Ajuste o valor '8px' para mais ou menos redondo */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: uma sombrinha suave fica elegante */
 }
+
+/* POSTAGEM MAIS RECENTE */
+
+<style type="text/css">
+
+#Ranking { position: relative; }
+
+#Ranking ul {
+    background-color: transparent !important;
+    text-align: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -50px;
+}
+
+/* 1. O PAI QUE CORTA TUDO (A Forminha de Biscoito) */
+#Ranking li {
+    padding: 0 !important;
+    margin: 0 auto 35px auto !important;
+    width: 320px;
+    height: 220px;
+    position: relative;
+    /* Arredonda o container e corta a imagem e a sombra que sobrarem */
+    border-radius: 8px !important; 
+    overflow: hidden !important; 
+}
+
+#Ranking li a {
+    text-decoration: none !important;
+    color: #fff !important;
+    display: block; width: 100%; height: 100%; /* Garante que o link ocupe tudo */
+}
+
+/* 2. A IMAGEM (Sem frescuras, o pai já arredonda ela) */
+#Ranking img {
+    padding: 0px;
+    width: 100%;
+    height: 100% !important; /* Preenche tudo */
+    object-fit: cover !important;
+    border: none; /* Remove borda velha se houver */
+    display: block;
+}
+
+/* 3. A PELÍCULA DEGRADÊ (Via CSS Puro - igual ao PopularPosts3) */
+/* Cria um elemento fantasma em cima do link */
+#Ranking li a::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    /* O seu degradê original */
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7));
+    z-index: 2; /* Fica em cima da imagem */
+    pointer-events: none; /* Deixa o clique passar */
+}
+
+/* 4. TEXTOS (Trazendo para frente da sombra) */
+#Ranking .cate, 
+#Ranking .item-title {
+    z-index: 3 !important; /* Importante: Fica em cima da sombra (z-index 2) */
+    position: absolute;
+    color: #FFFFFF !important;
+    text-align: left !important;
+}
+
+#Ranking .cate {
+    background: var(--cor-principal);
+    text-transform: uppercase;
+    padding: 4px 8px !important;
+    font-size: 1em !important;
+    font-weight: bold;
+    left: 15px;
+    top: 57%;
+}    
+
+#Ranking .item-title {
+    padding: 0 15px;
+    font-size: 1.8em;
+    line-height: 1em;
+    font-weight: bold;
+    top: 70%;
+    width: 100%;
+    /* Limites de texto */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
