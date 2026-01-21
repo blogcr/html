@@ -1821,3 +1821,9 @@ figure.moderno .separator img {
     /* Se houver duas camadas, 0.2 + a outra camada vai dar o tom certo! */
     background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
 }
+
+/* Arredonda cantos de todas as imagens dentro do corpo da postagem */
+.post-body img, .entry-content img {
+    border-radius: 8px !important; /* Ajuste o valor '8px' para mais ou menos redondo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Opcional: uma sombrinha suave fica elegante */
+}
