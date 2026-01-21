@@ -442,12 +442,25 @@ figure.moderno .info {
     display: block;
     margin-top: 8px;
     border-left: 3px solid var(--cor-principal);
-    padding: 2px 2px 2px 10px; 
+    padding: 8px 10px; 
     font-size: 0.9rem;
     color: var(--cor-texto-suave);
-    text-align: left;
-    line-height: 1.45;
-	background: var(--cor-branco);
+    line-height: 1.2;
+	background-color: var(--cor-fundo-detalhe);
+	/* 3. A "Hifenização Bacana" */
+    text-align: justify;          /* Justificado fica lindo com hifenização */
+    -webkit-hyphens: auto;        /* Para Safari/Chrome */
+    -moz-hyphens: auto;           /* Para Firefox */
+    -ms-hyphens: auto;            /* Para Edge antigo */
+    hyphens: auto;                /* Padrão moderno */
+	/* Usa a sua regra: 6 letras min p/ quebrar, 3 antes, 3 depois */
+    hyphenate-limit-chars: var(--hifenizacao);
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        hyphenate-limit-chars: var(--hifenizacao-mobile); /* Usa sua regra 5 2 2 */
+    }
 }
 
 figure.moderno .fotoinfo {
