@@ -437,35 +437,43 @@ figure.moderno:hover .legenda-foto {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Legendas Externas para Figure Moderno */
+/* Legendas Externas para Figure Moderno (DESKTOP) */
 figure.moderno figcaption,
 figure.moderno .info {
     display: block;
     margin-top: 8px;
     border-left: 3px solid var(--cor-principal);
-	border-radius: 4px;
+    border-radius: 4px;
     padding: 8px 10px; 
     font-size: 0.9rem;
     color: var(--cor-texto-suave);
     line-height: 1.2;
-	background-color: var(--cor-fundo-detalhe);
-	/* 3. A "Hifenização Bacana" */
-    text-align: justify;          /* Justificado fica lindo com hifenização */
-    -webkit-hyphens: auto;        /* Para Safari/Chrome */
-    -moz-hyphens: auto;           /* Para Firefox */
-    -ms-hyphens: auto;            /* Para Edge antigo */
-    hyphens: auto;                /* Padrão moderno */
-	/* Usa a sua regra: 6 letras min p/ quebrar, 3 antes, 3 depois */
+    background-color: var(--cor-fundo-detalhe);
+    
+    /* Padrão Desktop: Justificado + Hífen */
+    text-align: justify;          
+    -webkit-hyphens: auto;        
+    -moz-hyphens: auto;           
+    -ms-hyphens: auto;            
+    hyphens: auto;                
     hyphenate-limit-chars: var(--hifenizacao);
 }
 
+/* VERSÃO MOBILE (Ajuste Fino) */
 @media screen and (max-width: 768px) {
+    figure.moderno figcaption,
+    figure.moderno .info, 
     .info {
-        hyphenate-limit-chars: var(--hifenizacao-mobile); /* Usa sua regra 5 2 2 */
+        /* 1. Remove o justificado no celular (evita buracos no texto) */
+        text-align: left; 
+        
+        /* 2. Mantém a hifenização ajustada para telas pequenas (opcional) */
+        /* Se quiser desligar a hifenização no mobile também, mude para 'none' */
+        hyphenate-limit-chars: var(--hifenizacao-mobile); 
     }
 }
 
-figure.moderno .fotoinfo {
+figure.moderno .fotoinfo, figure.moderno .foto-info {
     display: block;
     margin-top: 4px;
     font-size: 0.7rem;
