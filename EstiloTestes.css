@@ -1822,9 +1822,7 @@ figure.moderno .separator img {
     background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
 }
 
-/* ARREDONDAMENTO INTELIGENTE (Só funciona dentro do Post) */
-/* A classe .item-view garante que isso SÓ aconteça na página de leitura, */
-/* ignorando a Home, os Cards e a Barra Lateral */
+/* ARREDONDAMENTO INTELIGENTE (Só funciona dentro do Post)
 
 .item-view .post-body img, 
 .item-view .entry-content img, 
@@ -1833,11 +1831,26 @@ figure.moderno .separator img {
     border-radius: 8px !important; 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
 }
+*/
+
+/* ARREDONDAMENTO TOTAL (Blindado para Legendas e Tabelas) */
+
+/* 1. Ataca imagens normais, links e containers de separação */
+.item-view .post-body img, 
+.item-view .entry-content img, 
+.item-view .separator img,
+.item-view .separator a img {
+    border-radius: 12px !important; /* Aumentei para 12px para ficar visível */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
+}
+
+/* 2. O SEGREDO: Ataca especificamente imagens com LEGENDA (que usam tabelas) */
+.item-view .tr-caption-container img,
+.item-view .tr-caption-container {
+    border-radius: 12px !important;
+}
 
 /* POSTAGEM MAIS RECENTE */
-
-<style type="text/css">
-
 #Ranking { position: relative; }
 
 #Ranking ul {
