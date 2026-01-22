@@ -833,7 +833,7 @@ legend {
 
 @media (max-width: 650px) {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
-    .nota-lateral { float: none; width: 100%; margin: 2rem 0; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
+    .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
     /* Mosaicos no Mobile */
     figure.container-mosaico { width: 100% !important; }
