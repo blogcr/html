@@ -53,6 +53,8 @@
     --sombra-suave: 0 2px 4px rgba(0,0,0, 0.05);
     --sombra-flutuante: 0 8px 16px rgba(0,0,0, 0.1);
     --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+	--raio-pequeno: 4px;  /* Novo padrão para detalhes internos */
 }
 
  /* --- RESET & NORMALIZAÇÃO --- */
