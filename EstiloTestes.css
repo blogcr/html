@@ -390,7 +390,7 @@ figure.moderno a {
     height: auto !important;
 }
 figure.moderno img {
-    border-radius: 2px;
+    /* border-radius: 2px; */
     box-shadow: var(--sombra-suave);
     display: block;
     width: 100%;
@@ -727,7 +727,7 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 
 #PopularPosts3 li, .PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; 
 									 /* --- ADICIONE ESTAS DUAS LINHAS: --- */
-    border-radius: 6px;  /* Arredonda os cantos (pode aumentar para 10px ou 12px se preferir) */
+    border-radius: var(--raio-pequeno);  /* Arredonda os cantos (pode aumentar para 10px ou 12px se preferir) */
     overflow: hidden;    /* OBRIGATÓRIO: Faz a imagem e o degradê respeitarem a curva */
 									 }
  li.livro, .PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
@@ -760,7 +760,7 @@ ul.lista-sorteio-5 li a::after {
     z-index: 2; /* Fica acima da imagem */
     
     /* Acabamento */
-    border-radius: 6px; /* Acompanha o arredondamento do card */
+    border-radius: var(--raio-pequeno); /* Acompanha o arredondamento do card */
     pointer-events: none; /* Garante que o clique passe através da sombra */
 }
 
@@ -815,7 +815,7 @@ ul.lista-sorteio-5 li a::after {
 /* Rodapé Postagem */
 fieldset {
     display: block; margin: 30px 0 40px 0 !important; padding: 20px 20px;
-    border: 0px solid transparent !important; border-radius: 4px !important;
+    border: 0px solid transparent !important; border-radius: var(--raio-pequeno) !important;
     background: var(--cor-fundo-detalhe); z-index: 100;
 }
 legend {
@@ -1072,7 +1072,7 @@ legend {
     /* Mantendo o Gradiente Azul/Verde que venceu */
     background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
     
-    border-radius: 8px;
+    border-radius: var(--raio-pequeno);
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     
     /* AQUI: Helvetica Pura como prioridade absoluta */
@@ -1263,7 +1263,7 @@ figure.moderno.dir img {
     max-width: 100%;
     max-height: 80vh;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    border-radius: 4px;
+    border-radius: var(--raio-pequeno);
 }
 
 /* --- TIPO 2: VÍDEO (YouTube) --- */
@@ -1289,7 +1289,7 @@ figure.moderno.dir img {
     height: 80vh; /* Ocupa 80% da altura da tela */
     max-width: 95vw;
     background: #fff;
-    border-radius: 4px; /* Cantos arredondados parecendo app */
+    border-radius: var(--raio-pequeno); /* Cantos arredondados parecendo app */
     overflow: hidden;
 }
 .iframe-site {
@@ -1326,7 +1326,7 @@ figure.moderno.dir img {
     max-width: 90vw;
     max-height: 80vh;
     padding: 25px;
-    border-radius: 6px;
+    border-radius: var(--raio-pequeno);
     overflow-y: auto;
     text-align: left;
     font-family: 'Georgia', serif;
@@ -1388,7 +1388,7 @@ figure.moderno.dir img {
     background-color: #f2f2f2;        
     color: #666666 !important;        
     border: 1px solid #e0e0e0;
-    border-radius: 4px !important;
+    border-radius: var(--raio-pequeno) !important;
     
     /* TIPOGRAFIA */
     font-family: var(--fonte-padrao);
@@ -1459,7 +1459,7 @@ figure.moderno.dir img {
     background-color: var(--cor-fundo-detalhe, #f5f5f5); /* Fundo cinza clarinho */
     color: var(--cor-texto, #444);
     border: 1px solid var(--cor-borda, #e0e0e0);
-    border-radius: 4px;
+    border-radius: var(--raio-pequeno);
     padding: 12px 15px;
     
     font-family: var(--fonte-padrao, sans-serif);
@@ -1493,7 +1493,7 @@ figure.moderno.dir img {
     font-size: 13px;
     line-height: 1.5;
     color: var(--cor-texto-suave, #666);
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 var(--raio-pequeno) var(--raio-pequeno);
 }
 
 .texto-privacidade ol {
@@ -1594,7 +1594,7 @@ figure.moderno.dir img {
 /* Estilo de cada livro */
 .grid-item-livro {
     position: relative;
-    border-radius: 4px;
+    border-radius: var(--raio-pequeno);
     transition: transform 0.2s ease;
     
     /* Importante para não quebrar o livro entre colunas */
@@ -1623,7 +1623,7 @@ figure.moderno.dir img {
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    border-radius: 4px;
+    border-radius: var(--raio-pequeno);
     
     /* Sombra charmosa no livro */
     box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
@@ -1646,7 +1646,7 @@ figure.moderno.dir img {
 .max320 img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: var(--raio-pequeno);
     display: block;
 }
 
@@ -1680,7 +1680,7 @@ ul.lista-sorteio-5 li img {
     background-color: var(--cor-principal, #cc0000); /* Vermelho */
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: var(--raio-pequeno);
     padding: 0 15px; /* Largura confortável */
     height: 28px;    /* Mesma altura dos ícones e do FB */
     font-size: 11px;
@@ -1832,34 +1832,6 @@ figure.moderno .separator img {
     background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
 }
 
-/* ARREDONDAMENTO INTELIGENTE (Só funciona dentro do Post)
-
-.item-view .post-body img, 
-.item-view .entry-content img, 
-.item-view .separator img,
-.item-view .separator a img {
-    border-radius: 8px !important; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
-}
-*/
-
-/* ARREDONDAMENTO TOTAL (Blindado para Legendas e Tabelas) */
-
-/* 1. Ataca imagens normais, links e containers de separação */
-.item-view .post-body img, 
-.item-view .entry-content img, 
-.item-view .separator img,
-.item-view .separator a img {
-    border-radius: 12px !important; /* Aumentei para 12px para ficar visível */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important; 
-}
-
-/* 2. O SEGREDO: Ataca especificamente imagens com LEGENDA (que usam tabelas) */
-.item-view .tr-caption-container img,
-.item-view .tr-caption-container {
-    border-radius: 12px !important;
-}
-
 /* POSTAGEM MAIS RECENTE */
 #Ranking { position: relative; }
 
@@ -1879,7 +1851,7 @@ figure.moderno .separator img {
     height: 220px;
     position: relative;
     /* Arredonda o container e corta a imagem e a sombra que sobrarem */
-    border-radius: 8px !important; 
+    border-radius: var(--raio-pequeno); 
     overflow: hidden !important; 
 }
 
@@ -1931,7 +1903,7 @@ figure.moderno .separator img {
     font-weight: bold;
     left: 15px;
     top: 57%;
-	border-radius:6px;
+	border-radius: var(--raio-pequeno);
 }    
 
 #Ranking .item-title {
