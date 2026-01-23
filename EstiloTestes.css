@@ -1929,6 +1929,7 @@ figure.moderno .separator img {
     font-weight: bold;
     left: 15px;
     top: 57%;
+	border-radius:6px;
 }    
 
 #Ranking .item-title {
