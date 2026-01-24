@@ -27,6 +27,7 @@
 	align: top;
 	float: left !important;
 	border:1px solid #BDBDBD;
+	border-radius: var(--raio-minimo);
 	/*
 	margin:-10px 15px 0 10px !important;
 	-webkit-clip-path: inset(3px 3px 3px 3px);
@@ -40,6 +41,7 @@
 	margin: -25px 5px -100px 0 !important;
 	z-index:100 !important;
 	border:0px solid #000000 !important;
+	border-radius: var(--raio-minimo);
 	/*
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 	*/
@@ -53,9 +55,10 @@
 
 .minifoto2 {
 	position:relative;
-        max-width:23.3% !important;
+    max-width:23.3% !important;
 	float: right !important;
 	margin: 6.1% 0.15%  !important;	
+	border-radius: var(--raio-minimo);
 }
 
 .minifoto3 {
@@ -64,6 +67,7 @@
     	margin: 6.1% 0.15%  !important;
     	border:0px solid #000000 !important;
     	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+		border-radius: var(--raio-minimo);
 }
 
 .minifoto4 {
@@ -71,6 +75,7 @@
      width: 23% !important;
      top: 5px !important;
      left: 75% !important;
+	 border-radius: var(--raio-minimo);
 }
 
 .minifoto5 {
@@ -78,6 +83,7 @@
      width: 23% !important;
      top: 5px !important;
      left: 5px !important;
+	 border-radius: var(--raio-minimo);
 }
 
 .textobio, .bio {
