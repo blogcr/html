@@ -54,8 +54,9 @@
     --sombra-flutuante: 0 8px 16px rgba(0,0,0, 0.1);
     --transicao-padrao: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
+	--raio-minimo: 2px;  /* Padrão para elementos pequenos */
 	--raio-pequeno: 4px;  /* Novo padrão para detalhes internos */
-	--raio-grande: 8px;  /* padrão para cards principais */
+	--raio-grande: 8px;  /* Padrão para cards principais */
 }
 
  /* --- RESET & NORMALIZAÇÃO --- */
