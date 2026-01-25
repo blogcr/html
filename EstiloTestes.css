@@ -398,12 +398,14 @@ figure.moderno img {
     width: 100%;
 }
 
-/* --- VARIAÇÃO: FIGURE MODERNO MENOR (Reduzida) --- */
-/* Uso no HTML: <figure class="moderno dir menor"> ou <figure class="moderno esq menor"> */
+/* --- FIGURAS MENORES (30%) --- */
+/* Esta regra só funciona se usada JUNTO com .esq ou .dir */
 
-figure.moderno.menor {
-    /* O padrão lateral é 45%. Para reduzir 40%, definimos 25-27% */
-    max-width: 27% !important; 
+figure.moderno.esq.menor, 
+figure.moderno.dir.menor,
+.esq.menor, 
+.dir.menor {
+    max-width: 30%;
 }
 
 /* Ajuste para Celular */
