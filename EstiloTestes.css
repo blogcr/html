@@ -859,24 +859,18 @@ legend {
    ======================================================= */
 
 /* MOLDURA TIPO "PASSE-PARTOUT" (Aplica direto na imagem) */
-.quadro img {
-    /* 1. A Moldura (Cor e Espessura) */
-    background-color: var(--cor-fundo-citacao); /* O Bege (#EFEBE9) */
+figure.quadro img {
+    background-color: var(--cor-fundo-citacao); /* O Bege */
     padding: 0.8rem;                            /* A grossura da moldura */
     
-    /* 2. O Acabamento Externo */
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio-pequeno);         /* Seus 4px */
     
-    /* 3. Ajustes Técnicos */
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    box-sizing: border-box;                     /* Impede que a borda quebre o layout */
-    
-    /* Opcional: Garante que a imagem ocupe o espaço interno */
+    box-sizing: border-box;
     height: auto;
-    max-width: 100%; 
+    max-width: 100%;
 }
-
 
 /* =======================================================
    MINI-MOSAICO (Versão REM - Acessível)
