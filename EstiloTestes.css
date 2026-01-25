@@ -859,7 +859,7 @@ legend {
    ======================================================= */
 
 /* MOLDURA TIPO "PASSE-PARTOUT" (Aplica direto na imagem) */
-figure.quadro img {
+figure.moderno.contraste img {
     background-color: var(--cor-fundo-citacao); /* O Bege */
     padding: 0.8rem;                            /* A grossura da moldura */
     
