@@ -408,17 +408,6 @@ figure.moderno.dir.menor,
     max-width: 30%;
 }
 
-/* Ajuste para Celular */
-@media (max-width: 650px) {
-    figure.moderno.menor {
-        /* No celular, 27% fica minúsculo (selo). */
-        /* Deixamos 50% para que o texto ainda flua ao lado, mas ela continue pequena */
-        max-width: 50% !important; 
-        float: left !important; /* Mantém ela flutuando no canto */
-        margin-right: 15px !important;
-    }
-}
-
 /* LEGENDA FLUTUANTE (Overlay) */
 .legenda-foto, .foto-legenda {
     position: absolute;
