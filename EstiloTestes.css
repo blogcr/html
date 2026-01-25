@@ -858,19 +858,20 @@ legend {
    Uso: <figure class="moderno quadro">...</figure>
    ======================================================= */
 
+/* MOLDURA DE CONTRASTE (Estilo "Passe-partout") */
 .quadro img {
-    /* 1. O Respiro (Padding) convertido para REM */
-    padding: 0.5rem;           /* Equivalente a 8px */
-    background-color: #fff;    /* O fundo branco */
+    /* 1. A "Borda Grossa" (é na verdade o Padding + Cor de Fundo) */
+    padding: 0.5rem;  /* Espessura da moldura */
+    background-color: var(--cor-fundo-citacao); /* AQUI: Muda de Branco para o Bege (#EFEBE9) */
     
-    /* 2. A Borda */
+    /* 2. A Borda Fina de Acabamento (o contorno externo) */
     border: 1px solid var(--cor-borda);
     
-    /* 3. Sombra e Arredondamento em REM */
-    box-shadow: 0 0.25rem 0.375rem rgba(0,0,0, 0.08) !important; /* ~4px 6px */
-    border-radius: 0.25rem;    /* Equivalente a 4px */
+    /* 3. Sombra e Arredondamento (Mantendo sua harmonia de 4px) */
+    box-shadow: 0 0.25rem 0.375rem rgba(0,0,0, 0.08) !important; 
+    border-radius: var(--raio-pequeno); /* Use sua variável de 4px se já tiver criado, ou deixe 0.25rem */
     
-    box-sizing: border-box;
+    box-sizing: border-box; /* Garante que o padding não estoure a largura */
 }
 
 
