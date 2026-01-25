@@ -405,7 +405,7 @@ figure.moderno.esq.menor,
 figure.moderno.dir.menor,
 .esq.menor, 
 .dir.menor {
-    max-width: 30%;
+    max-width: 30% !important;
 }
 
 /* LEGENDA FLUTUANTE (Overlay) */
@@ -1205,7 +1205,7 @@ legend {
 figure.moderno.esq,
 figure.moderno.dir {
     box-sizing: border-box !important; /* Garante que bordas não somem ao tamanho */
-    max-width: 45% !important;         /* Impede que passe de 45% em hipótese alguma */
+    max-width: 45% /* !important; */         /* Impede que passe de 45% em hipótese alguma */
 }
 
 /* 2. A Mágica: Obriga a imagem a encolher */
