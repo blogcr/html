@@ -9,7 +9,11 @@
     /* --- ESTRATÉGIA DE FONTES (A Mágica) --- */
     /* 1. Helvetica Neue (Para seu Mac) */
     /* 2. Inter (Para Windows/Android - A substituta perfeita) */
-    --fonte-padrao: "Helvetica Neue", Helvetica, "Inter", sans-serif;
+    --fonte-padrao: /* "Helvetica Neue", Helvetica, */ "Inter", Arial, sans-serif;
+    --fonte-titulo: 'Oswald', sans-serif;
+	--fonte-serifa: 'Roboto Slab', serif;
+    --fonte-typewriter: 'Courier Prime', monospace;
+    --fonte-capitular: 'Playfair Display', serif; 
     
     /* --- CONFORTO VISUAL --- */
     --cor-texto: #202122;           /* Cinza Carvão (Estilo Wikipédia) */
@@ -37,12 +41,6 @@
 
     --cor-tabela-claro: #EFEBE9;
     --cor-tabela-escuro: #e1dad7;
-
-    /* --- OUTRAS FONTES --- */
-    --fonte-titulo: 'Oswald', sans-serif;
-	--fonte-serifa: 'Roboto Slab', serif;
-    --fonte-typewriter: 'Courier Prime', monospace;
-    --fonte-capitular: 'Playfair Display', serif; 
     
     /* --- HIFENIZAÇÃO (Configuração Fina) --- */
     --hifenizacao: 6 3 3; 
