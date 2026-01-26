@@ -95,6 +95,14 @@ html { scroll-behavior: smooth; }
    2. TIPOGRAFIA E ELEMENTOS DE TEXTO
    ======================================================= */
 
+/* Espaçamento entre letras e palavras */
+.post-body, body {
+    /* Equivalente a ~ -0.3px em uma fonte de tamanho normal */
+    letter-spacing: -0.02em;   
+    /* Para o word-spacing, o px ainda é mais seguro para não juntar demais */
+    word-spacing: -1px; 
+}
+
 /* Estilos de Fonte Específicos */
 .spelite, .datilog { font-family: var(--fonte-typewriter) !important; }
 .roman { 
