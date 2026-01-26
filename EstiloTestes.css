@@ -444,6 +444,7 @@ figure.moderno .info {
     color: var(--cor-texto-suave);
     line-height: 1.2;
     background-color: var(--cor-fundo-detalhe);
+	letter-spacing: normal !important; /* Reseta para o padrão da fonte, sem apertar */
     
     /* Padrão Desktop: Justificado + Hífen */
     text-align: justify;          
