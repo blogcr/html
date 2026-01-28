@@ -966,6 +966,7 @@ color:var(--cor-cinza-claro);
     color: var(--cor-texto-suave) !important;
     overflow: hidden !important;
     font-family: sans-serif;        /* Garante consistência */
+	letter-spacing:normal !important;
 }
 
 .credito2, .cred2 {
