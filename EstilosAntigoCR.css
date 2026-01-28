@@ -1201,14 +1201,14 @@ blockquote::after,
 
 /* A BORDA NOVA PARA HARMONIZAR COM O NOVO DESIGN 2026 */
 .borda {
-    border-left: 3px solid var(--cor-principal) !important; /* Espessura igual à classe .info */
+    border-left: 3px solid #ccc !important; /* Espessura igual à classe .info */
     padding-left: 10px !important;
     border-bottom: none !important;
     border-top: none !important;
     border-right: none !important;
 }
 
-.bordas { border: 1px solid var(--cor-principal) !important; }
+.bordas { border: 1px solid #ccc !important; }
 .fa, .fas, .far, .fab { margin-right: 2ch; }
 
 /* CLASSE ANTIGA PARA COLOCAR LEGENDAS COM BACKGROUND DESATIVADA
