@@ -43,7 +43,7 @@
     --cor-tabela-escuro: #e1dad7;
     
     /* --- HIFENIZAÇÃO (Configuração Fina) --- */
-    --hifenizacao: 6 3 3; 
+    /* --hifenizacao: 6 3 3; */ 
     --hifenizacao-mobile: 5 2 2;
     
     --titulo-tamanho: clamp(32px, 5vw, 42px);
