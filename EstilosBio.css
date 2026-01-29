@@ -977,6 +977,11 @@
 #rejane .bio:before {content: "Rejane Vieira";}
 #rejane .bio:after {content: "Cronista";}
 
+/* RICARDO CARVALHO */
+#ricardo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx2D61FEjen4J4qrR0qJoVynIZCD4S_P8vj13ZwtMFB2lE8tqVVfTgPpJLqIZbf_4uY-djR1Ij8PtvmmcJko3R2Ngtm7g3ydwEVh6a3E17wa8jQuHF-Iw0HMLh5N_pZyoRDL_Je-Z8ex_207SP0KTrHtB0LEEC_-a1srDfJKvA5TYIl4QpOpJOg5V8TR8/s1600/Ricardo%20Carvalho.webp);}
+#ricardo .bio:before {content: "Ricardo Carvalho";}
+#ricardo .bio:after {content: "Engenheiro de Sistemas. Especialista em Segurança de Dados pela Microsoft. Gastrólogo pela UniCEUB. Pós-graduado em Mariologia pelo Locus Mariologicus e Fajopa. Bacharel em Administração pela UNIGRAN. MBA em Finanças pela Faculdade Focus. Empresário e Professor de Enogastronomia, natural de Goiana (GO). Autor do livro "Arboreus e a Forja de Ireti". \A \2E3B \A INSTAGRAM  \25AA  \40 chefricardodecarvalho";}
+
 /* RICK SHANDLER */
 #rick .fotobio {content: url(https://1.bp.blogspot.com/-bq_UIf-zJHA/YK8dCcctf_I/AAAAAAAC2Jk/LZt1DsD3XDwIoGKtHWPJ7O3r4yv7fuS9wCLcBGAsYHQ/s0/Rick-Shandler.jpg);}
 #rick .bio:before {content: "Rick Shandler";}
