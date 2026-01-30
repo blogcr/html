@@ -477,6 +477,7 @@ figure.moderno .fotoinfo, figure.moderno .foto-info {
     color: #999;
     text-align: right;
     font-style: italic;
+	letter-spacing: normal !important;
 }
 
 figure.moderno.esq .fotoinfo {
