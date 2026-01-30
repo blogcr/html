@@ -652,6 +652,7 @@ figure.moderno .fotoinfo a {
 	margin-bottom: 2rem;  
     text-align: left;
     line-height: 0.8;
+	letter-spacing: normal !important;
 }
 /*
 	display: block;
