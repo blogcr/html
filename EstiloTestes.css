@@ -1820,13 +1820,12 @@ figure.moderno .separator img {
     margin-bottom: 0 !important;
 }
 
-/* CORREÇÃO TEMPORÁRIA DO ESCURECIMENTO DUPLO (O Assunto é...) */
-/* Foca apenas no widget de tópicos surpresa e deixa a sombra bem fraquinha */
+/* CORREÇÃO TEMPORÁRIA DO ESCURECIMENTO DUPLO (O Assunto é...)
+Foca apenas no widget de tópicos surpresa e deixa a sombra bem fraquinha
 #display-topicos-surpresa .PopularPosts3 li a::after {
-    /* Troca o preto forte (0.7) por um quase transparente (0.2) */
-    /* Se houver duas camadas, 0.2 + a outra camada vai dar o tom certo! */
-    background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
+background-image: linear-gradient(to left, transparent 1%, rgba(0, 0, 0, 0.4)) !important;
 }
+*/
 
 /* POSTAGEM MAIS RECENTE */
 #Ranking { position: relative; }
