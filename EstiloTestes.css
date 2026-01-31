@@ -724,10 +724,9 @@ td.celula3 { padding: 5px 10px; width: 85% !important; background: var(--cor-tab
 } */
 
 #PopularPosts3 li, .PopularPosts3 li { width: 320px; height: 100px !important; background-color: var(--cor-branco); padding: 0 !important; margin: 0 auto 15px !important; position: relative; 
-									 /* --- ADICIONE ESTAS DUAS LINHAS: --- */
     border-radius: var(--raio-pequeno);  /* Arredonda os cantos (pode aumentar para 10px ou 12px se preferir) */
     overflow: hidden;    /* OBRIGATÓRIO: Faz a imagem e o degradê respeitarem a curva */
-									 }
+    }
  li.livro, .PopularPosts3 li.livro {background:transparent !important;margin-bottom:-50px !important;z-index:1 !important;}
 
 /* OVERLAY ANTIGO DESATIVADO
