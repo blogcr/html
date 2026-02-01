@@ -9,7 +9,7 @@
     /* --- ESTRATÉGIA DE FONTES (A Mágica) --- */
     /* 1. Helvetica Neue (Para seu Mac) */
     /* 2. Inter (Para Windows/Android - A substituta perfeita) */
-    --fonte-padrao: 'IBM Plex', Arial, sans-serif;
+    --fonte-padrao: 'IBM Plex Sans', Arial, sans-serif;
     --fonte-titulo: 'Oswald', sans-serif;
 	--fonte-serifa: 'Roboto Slab', serif;
     --fonte-typewriter: 'Courier Prime', monospace;
