@@ -273,7 +273,7 @@ blockquote cite {
 
 .destaque.roman {
     font-family: var(--fonte-serifa) !important;
-	font-size: 1em !important; 
+	/* font-size: 1em !important; */
 	line-height: 1.6 !important;
 	letter-spacing: normal !important; /* Reseta para o padrão da fonte, sem apertar */
 }
