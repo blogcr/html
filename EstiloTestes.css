@@ -139,16 +139,34 @@ html { scroll-behavior: smooth; }
 
 /* Capítulos */
 .capitulo {
-    font-family: var(--fonte-serifa);
+    font-family: var(--fonte-serifa); /* Tinos */
     color: var(--cor-titulo);
-	font-size: 0.95em !important; 
-    font-weight: 800;
-    line-height: 1.3;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    
+    /* CORREÇÃO DE TAMANHO */
+    /* De 0.95em (menor) para 1.4em (40% maior que o corpo) */
+    /* Se o texto for 20px, isso aqui será 28px. Perfeito para subtítulo. */
+    font-size: 1.4em !important; 
+    
+    /* CORREÇÃO DE PESO */
+    /* A Tinos oficial no Google Fonts vai até 700. 
+       Usar 800 força o navegador a "borrar" a letra (falso negrito). Use 700. */
+    font-weight: 700;
+    
+    /* AJUSTE FINO */
+    /* Títulos pedem linhas mais apertadas que texto corrido */
+    line-height: 1.2;
+    
+    /* ESPAÇAMENTO */
+    margin-top: 2.5rem;    /* Mais ar em cima para separar do bloco anterior */
+    margin-bottom: 1rem;   /* Mais perto do texto que ele introduz */
+    
     position: relative;
-	letter-spacing: normal !important; /* Reseta para o padrão da fonte, sem apertar */
+    
+    /* TOQUE DE CLASSE */
+    /* Fontes serifadas em tamanho grande ficam mais elegantes com um leve aperto */
+    letter-spacing: -0.01em !important; 
 }
+
 .capitulo::after {
     content: "";
     display: block;
