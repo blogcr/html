@@ -145,7 +145,7 @@ html { scroll-behavior: smooth; }
     /* AUMENTO ESTRATÉGICO: */
     /* De 0.95em para 1.4em. 
        Isso compensa a altura menor da Roboto Slab e cria hierarquia real. */
-    font-size: 1.4em !important; 
+    font-size: 1.05em !important; 
     
     /* PESO: */
     /* 700 é o negrito padrão, bem legível. */
