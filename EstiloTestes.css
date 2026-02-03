@@ -139,32 +139,27 @@ html { scroll-behavior: smooth; }
 
 /* Capítulos */
 .capitulo {
-    font-family: var(--fonte-serifa); /* Tinos */
+    font-family: var(--fonte-serifa);
     color: var(--cor-titulo);
     
-    /* CORREÇÃO DE TAMANHO */
-    /* De 0.95em (menor) para 1.4em (40% maior que o corpo) */
-    /* Se o texto for 20px, isso aqui será 28px. Perfeito para subtítulo. */
+    /* AUMENTO ESTRATÉGICO: */
+    /* De 0.95em para 1.4em. 
+       Isso compensa a altura menor da Roboto Slab e cria hierarquia real. */
     font-size: 1.4em !important; 
     
-    /* CORREÇÃO DE PESO */
-    /* A Tinos oficial no Google Fonts vai até 700. 
-       Usar 800 força o navegador a "borrar" a letra (falso negrito). Use 700. */
+    /* PESO: */
+    /* 700 é o negrito padrão, bem legível. */
     font-weight: 700;
     
-    /* AJUSTE FINO */
-    /* Títulos pedem linhas mais apertadas que texto corrido */
-    line-height: 1.2;
+    line-height: 1.25; /* Um pouco mais de ar entre as linhas do título */
     
-    /* ESPAÇAMENTO */
-    margin-top: 2.5rem;    /* Mais ar em cima para separar do bloco anterior */
-    margin-bottom: 1rem;   /* Mais perto do texto que ele introduz */
-    
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
     position: relative;
     
-    /* TOQUE DE CLASSE */
-    /* Fontes serifadas em tamanho grande ficam mais elegantes com um leve aperto */
-    letter-spacing: -0.01em !important; 
+    /* REFINAMENTO: */
+    /* Esse leve aperto deixa a Roboto Slab mais elegante em tamanhos grandes */
+    letter-spacing: -0.02em !important; 
 }
 
 .capitulo::after {
