@@ -314,6 +314,7 @@ blockquote cite {
     display: block;                   Garante que o margin auto funcione */
 }
 
+.centralizar { text-align: center; }
 .centraliza { margin: 0 auto; text-align: center; display: block; }
 .centraliza hr { margin: 0 auto !important; }
 .frase { overflow: hidden; }
