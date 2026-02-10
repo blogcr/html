@@ -433,9 +433,9 @@ figure.moderno.dir.menor,
     margin: 0 !important;
     background-color: rgba(0, 0, 0, 0.65) !important;
     color: var(--cor-branco) !important;
-    padding: 5px 10px !important;
+    padding: 4px 10px !important;
     font-family: var(--fonte-padrao) !important;
-    font-size: clamp(9px, 2vw, 11px) !important;
+    font-size: clamp(8px, 2vw, 11px) !important;
     font-weight: 700 !important;
     text-transform: uppercase;
     letter-spacing: 1px;
