@@ -522,7 +522,7 @@ figure.container-mosaico .mosaico,
     display: grid;
     gap: 10px;
     width: 100%;
-    margin-bottom: 10px !important; /* Espaço para legenda externa */
+    /* margin-bottom: 10px !important; Espaço para legenda externa */
     box-sizing: border-box;
 }
 
