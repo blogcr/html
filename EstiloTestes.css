@@ -450,6 +450,7 @@ figure.moderno:hover .legenda-foto {
 
 /* Legendas Externas para Figure Moderno (DESKTOP) */
 figure.moderno figcaption,
+figure.container-mosaico .info,
 figure.moderno .info {
     display: block;
     margin-top: 4px;
@@ -474,7 +475,8 @@ figure.moderno .info {
 /* VERSÃO MOBILE (Ajuste Fino) */
 @media screen and (max-width: 768px) {
     figure.moderno figcaption,
-    figure.moderno .info, 
+    figure.moderno .info,
+	figure.container-mosaico .info,
     .info {
         /* 1. Remove o justificado no celular (evita buracos no texto) */
         text-align: left; 
@@ -604,13 +606,15 @@ figure.container-mosaico .fotoinfo {
     line-height: 1.4;
 }
 
+	/* DESATIVADO PARA TESTE
 figure.container-mosaico .info {
     border-left: 4px solid var(--cor-principal);
     padding-left: 12px;
     text-align: left;
     color: var(--cor-titulo);
     font-size: 0.95rem;
-}
+
+} */
 
 figure.container-mosaico .fotoinfo {
     text-align: right;
