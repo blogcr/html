@@ -1778,6 +1778,9 @@ ul.lista-sorteio-5 li img {
     display: block;    
     font-size: clamp(0.85rem, 4vw, 1em);
     line-height: 1.4;
+    unicode-bidi: embed;
+    /* Força o navegador a tratar cada linha como um bloco separado */
+    font-variant-ligatures: none; 
 }
 
 .margem-cima {
