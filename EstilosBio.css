@@ -866,6 +866,11 @@
 #marilia .bio:before {content: "Marília Arnaud";}
 #marilia .bio:after {content: "Escritora";}
 
+/* MÁRIO HÉLIO */
+#mhelio .fotobio {content: url(https://1.bp.blogspot.com/-PM2SRrYhe-A/YMmNlcqhUOI/AAAAAAAC3Cg/E_bip9w5l6cK3qO5ytOFVlKuzonWHKbwgCLcBGAsYHQ/s0/Marilia-Arnaud.jpg);}
+#mhelio .bio:before {content: "Mário Hélio Gomes";}
+#mhelio .bio:after {content: "Doutor em Antropologia pela Universidade de Salamanca (Espanha). Mestre em História pela Universidade Federal de Pernambuco (UFPE). Jornalista, escritor e editor. Superintendente de Periódicos e Projetos Especiais da Companhia Editora de Pernambuco. Membro da Academia Pernambucana de Letras e do Pen Club do Brasil.";}
+
 /* MARINEUMA DE OLIVEIRA */
 #marineuma .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs6bNEBMVq4G77nw6hBgHu-nWUlCDT8Xcy6mEfO0xr0A2M9OsbiWqDVmOL0PVA9y6UiI6yHlbXp0Xv3L0q8cjvUe2oA__3615KfQZA_uoa4aBlcnLH0OIUQiQwjbTwBhNgDNxJVm0VqdvGtos0DPGotXxEDWosng1KPxKsORns6qekOiLWWX7gCWqy2VY/s1600/Marineuma%20Oliveira%20%282%29.jpg);}
 #marineuma .bio:before {content: "Marineuma de Oliveira";}
