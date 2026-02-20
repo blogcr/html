@@ -1033,6 +1033,13 @@
 #sabrina .bio:before {content: "Sabrina Fernandes Melo";}
 #sabrina .bio:after {content: "Professora no Departamento de Artes Visuais da Universidade Federal da Paraíba. Doutora em História pela Universidade Federal de Santa Catarina";}
 
+/* SALES GAUDENCIO */
+#sales .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1lYcZyarTJ6T2aHbHqgwUikQbOMDuzN1QMVT5V8Y6-kL_SUkDbyViFOQOK6pDTmK5SjF7a8GyZUyGf975Vk2CDfmfZmcFTzLrkeBcd39iy56Moi3_Rgt6wgOBl_cJyOy8oN2EDmr15952pXFACyyTNMuqNs5CoZb47PNy3o1LCTYGLT83wETCRadUUAFr/s1600/Sales-Gaudencio.jpg);}
+#sales .bio:before {content: "Sales Gaudêncio";}
+#sales .bio:after {content: "Doutor em História pela Universidade de São Paulo (USP) e advogado. Professor Aposentado da Universidade Federal da Paraíba (UFPB). Membro da Academia Paraibana de Letras - APL. Sócio do Instituto Histórico e Geográfico Paraibano (IHGP). Membro do Conselho Deliberativo do Centro Internacional Celso Furtado de Políticas para o Desenvolvimento.
+";}
+
+
 /* SAM CAVALCANTI */
 #sam .fotobio {content: url(https://1.bp.blogspot.com/-FqwXexndbOQ/X-6_E2FvowI/AAAAAAACpCE/rR2iB3urpjcYcibOb6pq2AvEjfNpOY6fQCLcBGAsYHQ/s0/Sam-Cavalcanti.jpg);}
 #sam .bio:before {content: "Sam Cavalcanti";}
