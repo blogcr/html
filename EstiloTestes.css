@@ -795,6 +795,10 @@ ul.lista-sorteio-5 li a::after {
 	z-index: 3 !important; /* Sobe o nível para não ficar escuro */
 }
 
+.PopularPosts3 ul li:nth-child(n+6) {
+  display: none;
+}
+
 /* 2. REFORÇO ESPECÍFICO PARA CELULAR (A "Marreta") */
 /* O navegador só lê isso em telas pequenas e obedece com prioridade máxima */
 @media screen and (max-width: 768px) {
