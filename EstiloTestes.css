@@ -857,27 +857,28 @@ legend {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
     .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* --- AJUSTE DOS MOSAICOS (SEM EMPILHAMENTO) --- */
+    /* --- CORREÇÃO CIRÚRGICA DOS MOSAICOS --- */
     figure.container-mosaico { width: 100% !important; }
 
-    /* Força o Grid a continuar ativo e mantém as duas colunas */
     .mosaico.vertical, .mosaico.vertical.direita,
-    .mosaico.horizontal, .mosaico.horizontal.tripla, 
-    .mosaico.simples {
+    .mosaico.horizontal, .mosaico.simples {
         display: grid !important; 
         grid-template-columns: 1fr 1fr !important;
-        gap: 10px;
+        /* Reduzimos o gap no celular para evitar o desalinhamento na soma das alturas */
+        gap: 6px !important; 
     }
 
-    /* Mantém a proporção visual do conjunto */
+    /* Trava a proporção para o celular não inventar alturas */
     .mosaico.vertical, .mosaico.vertical.direita {
         aspect-ratio: 4 / 3 !important;
     }
 
-    /* Garante que as imagens não fiquem com altura automática solta */
-    .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
+    /* Força as imagens e seus links a preencherem a célula sem sobrar espaço embaixo */
+    .mosaico > *, .mosaico a, .mosaico img {
         height: 100% !important;
-        object-fit: cover;
+        display: block !important;
+        object-fit: cover !important;
+        margin: 0 !important;
     }
 }
 
