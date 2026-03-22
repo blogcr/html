@@ -846,45 +846,59 @@ legend {
 .fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
 
 /* =======================================================
-   6. RESPONSIVIDADE GERAL (MOBILE)
+   6. RESPONSIVIDADE GERAL (MOBILE) - AJUSTE DE PRECISÃO
    ======================================================= */
 @media (max-width: 820px) {
     .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
-    /* .centro { width: 100%; } */
 }
 
 @media (max-width: 650px) {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
     .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* --- CORREÇÃO CIRÚRGICA DOS MOSAICOS --- */
+    /* --- MANUTENÇÃO DOS MOSAICOS (ANTI-EMPILHAMENTO E ALINHAMENTO) --- */
     figure.container-mosaico { width: 100% !important; }
 
-    .mosaico.vertical, .mosaico.vertical.direita,
-    .mosaico.horizontal, .mosaico.simples {
+    .mosaico.vertical, 
+    .mosaico.vertical.direita,
+    .mosaico.horizontal, 
+    .mosaico.simples {
         display: grid !important; 
         grid-template-columns: 1fr 1fr !important;
-        /* Reduzimos o gap no celular para evitar o desalinhamento na soma das alturas */
-        gap: 6px !important; 
+        /* Preserva o gap exato do desktop para não haver desalinhamento */
+        gap: 10px !important; 
     }
 
-    /* Trava a proporção para o celular não inventar alturas */
-    .mosaico.vertical, .mosaico.vertical.direita {
+    /* Trava a estrutura de prateleiras iguais para alinhar a base */
+    .mosaico.vertical, 
+    .mosaico.vertical.direita {
+        grid-template-rows: repeat(2, 1fr) !important;
         aspect-ratio: 4 / 3 !important;
     }
 
-    /* Força as imagens e seus links a preencherem a célula sem sobrar espaço embaixo */
-    .mosaico > *, .mosaico a, .mosaico img {
+    /* A adaptação do conteúdo à moldura celular */
+    .mosaico > *, .mosaico .separator, .mosaico a {
         height: 100% !important;
         display: block !important;
-        object-fit: cover !important;
+        position: relative !important;
         margin: 0 !important;
+    }
+
+    .mosaico img {
+        width: 100% !important;
+        height: 100% !important; /* Força o preenchimento total da moldura */
+        object-fit: cover !important; /* Adapta o conteúdo sem distorcer */
+        display: block !important;
+    }
+
+    .mosaico.simples > img, 
+    .mosaico.simples > a { 
+        aspect-ratio: auto; 
     }
 }
 
 @media (max-width: 380px) {
     figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
-    /* .centro, figure.moderno.centro { width: 100% !important; } */
 }
 
 .bordas { 
