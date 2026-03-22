@@ -846,72 +846,46 @@ legend {
 .fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
 
 /* =======================================================
-   6. RESPONSIVIDADE GERAL (MOBILE)
+   6. RESPONSIVIDADE GERAL (MOBILE) - VERSÃO BLINDADA
    ======================================================= */
 @media (max-width: 820px) {
     .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
-    /* .centro { width: 100%; } */
 }
 
 @media (max-width: 650px) {
-    blockquote { width: 40% !important; font-size: 1.3rem !important; }
-    .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
+    blockquote { width: 45% !important; font-size: 1.3rem !important; }
+    .nota-lateral { width: 45% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* Mosaicos no Mobile DESATIVADO
+    /* --- MANUTENÇÃO DOS MOSAICOS (NÃO EMPILHAR) --- */
     figure.container-mosaico { width: 100% !important; }
-    .mosaico.vertical, .mosaico.vertical.direita,
-    .mosaico.horizontal, .mosaico.horizontal.tripla, 
-    .mosaico.simples {
-        display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
-    }
-    .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
-        height: auto !important; 
-		
-    }
-    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; } */
-}
 
-/* =======================================================
-   REFORÇO DE MOSAICOS: ANTI-EMPILHAMENTO MOBILE
-   ======================================================= */
-
-@media (max-width: 650px) {
-    /* Impede que o container do mosaico quebre a estrutura */
-    figure.container-mosaico { 
-        width: 100% !important; 
-        margin: 0 auto 1.5rem auto !important;
-    }
-
-    /* FORÇA A MANUTENÇÃO DO GRID EM TODOS OS TIPOS */
+    /* FORÇAMOS O GRID: Isso impede que as fotos fiquem uma embaixo da outra */
     .mosaico.vertical, 
     .mosaico.vertical.direita,
     .mosaico.horizontal, 
     .mosaico.horizontal.tripla, 
     .mosaico.simples {
-        display: grid !important; /* Mantém o Grid, ignora o Flex */
-        gap: 8px !important;      /* Reduz levemente o espaço para telas pequenas */
+        display: grid !important; /* BLOQUEIA O FLEX/EMPILHAMENTO */
+        grid-template-columns: 1fr 1fr !important; /* MANTÉM AS COLUNAS */
+        gap: 10px !important;
+        flex-direction: row !important; /* ANULA QUALQUER TENTATIVA DE COLUNA */
     }
 
-    /* Garante que as colunas existam no Vertical e Horizontal */
+    /* Mantém a proporção do conjunto para não achatar as fotos */
     .mosaico.vertical, 
-    .mosaico.vertical.direita,
-    .mosaico.horizontal {
-        grid-template-columns: 1fr 1fr !important;
-    }
-
-    /* No Vertical, mantemos a proporção clássica do conjunto */
-    .mosaico.vertical, .mosaico.vertical.direita {
+    .mosaico.vertical.direita {
         aspect-ratio: 4 / 3 !important;
     }
 
-    /* Impede que as imagens individuais tentem virar blocos soltos */
-    .mosaico > *, .mosaico .separator, .mosaico a {
+    /* Garante que o link/imagem ocupe toda a célula do grid */
+    .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
         height: 100% !important;
         width: 100% !important;
         display: block !important;
+        object-fit: cover !important;
     }
 
-    /* Ajuste para o mosaico simples (lado a lado) não espremer demais */
+    /* Mosaico Simples (Lado a lado horizontal) */
     .mosaico.simples {
         grid-auto-flow: column !important;
         grid-auto-columns: 1fr !important;
@@ -921,7 +895,6 @@ legend {
 
 @media (max-width: 380px) {
     figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
-    /* .centro, figure.moderno.centro { width: 100% !important; } */
 }
 
 .bordas { 
