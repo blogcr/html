@@ -501,43 +501,37 @@ figure.moderno.esq .fotoinfo {
     text-align: left !important;
 }
 
-
 /* =======================================================
-   4. SISTEMA DE MOSAICOS UNIFICADO (Versão Final)
+   4. SISTEMA DE MOSAICOS UNIFICADO (Versão Corrigida)
    ======================================================= */
 
-/* CONTAINER PRINCIPAL (90% Largura e Centralizado) */
 figure.container-mosaico {
     display: block !important;
-    width: 90% !important;       /* A largura mestre */
+    width: 90% !important;
     max-width: 1000px;
     margin: 0 auto 2rem auto !important;
     padding: 0;
     border: none;
 }
 
-/* O GRID (Espaçamento) */
-figure.container-mosaico .mosaico,
 .mosaico {
     display: grid;
     gap: 10px;
     width: 100%;
-    margin-bottom: 5px !important; /* Espaço para legenda externa */
+    margin-bottom: 5px !important;
     box-sizing: border-box;
 }
 
-/* REGRA DE OURO DO MOSAICO (Anti-Colapso) */
-/* Versão Limpa: Ataca apenas os elementos de estrutura, ignorando legendas */
-.mosaico > *,          /* Pega o filho direto (seja lá qual for) */
-.mosaico .separator,   /* Pega especificamente o wrapper do Blogger */
-.mosaico a {           /* Pega o link */
+/* --- REGRA DE OURO (Ajuste das Legendas e Alinhamento) --- */
+.mosaico > *, 
+.mosaico .separator, 
+.mosaico a {
     height: 100% !important;
     width: 100% !important;
     display: block !important;
-    position: relative !important;
+    position: relative !important; /* Âncora para a legenda */
     margin: 0 !important;
     padding: 0 !important;
-    border: none !important;
     overflow: hidden;
     border-radius: 2px;
 }
@@ -545,83 +539,46 @@ figure.container-mosaico .mosaico,
 .mosaico img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Corte inteligente */
+    object-fit: cover !important; /* Corta a foto para preencher a célula */
     display: block !important;
-    border-radius: 2px;
 }
 
-/* VARIAÇÕES DE LAYOUT DO MOSAICO */
+/* --- LEGENDA TIPO ETIQUETA (Evita desalinhamento) --- */
+.mosaico .foto-legenda, 
+.mosaico .legenda-foto {
+    position: absolute !important;
+    bottom: 5px !important;
+    left: 5px !important;
+    z-index: 10;
+    margin: 0 !important;
+    width: auto !important;
+    pointer-events: none;
+}
 
-/* Vertical: Grande na Esquerda */
+/* --- VARIAÇÕES DE LAYOUT --- */
 .mosaico.vertical {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     aspect-ratio: 4 / 3;
 }
-.mosaico.vertical > :nth-child(1) {
-    grid-column: 1; grid-row: span 2;
-}
+.mosaico.vertical > :nth-child(1) { grid-column: 1; grid-row: span 2; }
 
-/* Vertical Invertido: Grande na Direita */
-.mosaico.vertical.direita > :nth-child(1) {
-    grid-column: auto; grid-row: auto;
-}
-.mosaico.vertical.direita > :last-child {
-    grid-column: 2; grid-row: 1 / span 2;
-}
-
-/* Horizontal: Panorâmica Embaixo */
-.mosaico.horizontal {
+.mosaico.vertical.direita {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    aspect-ratio: auto;
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 4 / 3;
 }
+/* No 'direita', a primeira e a segunda foto ocupam as células normais na esquerda */
+/* A última foto (Euclides) ocupa a coluna 2 inteira */
+.mosaico.vertical.direita > :last-child {
+    grid-column: 2; 
+    grid-row: 1 / span 2;
+}
+
+/* Mosaicos Simples e Horizontais permanecem iguais */
+.mosaico.horizontal { grid-template-columns: 1fr 1fr; }
 .mosaico.horizontal > :nth-child(3) { grid-column: 1 / -1; }
-
-/* Horizontal Invertido: Panorâmica em Cima */
-.mosaico.horizontal.invertido > :nth-child(3) {
-    grid-column: 1 / -1;
-    grid-row: 1;
-}
-
-/* Simples (Linha) */
-.mosaico.simples {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    grid-template-columns: none;
-    grid-template-rows: auto;
-}
-.mosaico.simples > a, .mosaico.simples > img {
-    aspect-ratio: auto; /* Deixa fluir */
-    height: auto !important; /* Removemos a força de 100% aqui para não esticar demais se não precisar */
-}
-
-/* LEGENDAS EXTERNAS DO MOSAICO (Info e Fotoinfo) */
-figure.container-mosaico .info,
-figure.container-mosaico .fotoinfo {
-    display: block;
-    width: 100%;
-    margin-top: 0 !important;
-    box-sizing: border-box;
-    line-height: 1.4;
-}
-
-	/* DESATIVADO PARA TESTE
-figure.container-mosaico .info {
-    border-left: 4px solid var(--cor-principal);
-    padding-left: 12px;
-    text-align: left;
-    color: var(--cor-titulo);
-    font-size: 0.95rem;
-
-} */
-
-figure.container-mosaico .fotoinfo {
-    text-align: right;
-    font-style: italic;
-    color: #777;
-    font-size: 0.85rem;
-}
+.mosaico.simples { grid-auto-flow: column; grid-auto-columns: 1fr; }
 
 
 /* =======================================================
