@@ -846,48 +846,34 @@ legend {
 .fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
 
 /* =======================================================
-   6. RESPONSIVIDADE GERAL (MOBILE) - FOCO EM ALINHAMENTO
+   6. RESPONSIVIDADE GERAL (MOBILE)
    ======================================================= */
 @media (max-width: 820px) {
     .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
+    /* .centro { width: 100%; } */
 }
 
 @media (max-width: 650px) {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
     .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* --- AJUSTE DE PRECISÃO NO MOSAICO --- */
+    /* Mosaicos no Mobile */
     figure.container-mosaico { width: 100% !important; }
-
-    /* Forçamos a estrutura de Grid rígida para manter o gap e as prateleiras */
-    .mosaico.vertical, .mosaico.vertical.direita {
-        display: grid !important; 
-        grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: repeat(2, 1fr) !important; /* Alturas rigorosamente iguais */
-        gap: 10px !important; /* Preserva o gap do desktop */
-        aspect-ratio: 4 / 3 !important; /* Mantém a moldura do conjunto */
+    .mosaico.vertical, .mosaico.vertical.direita,
+    .mosaico.horizontal, .mosaico.horizontal.tripla, 
+    .mosaico.simples {
+        display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
     }
-
-    /* O PONTO CHAVE: Força o conteúdo a se adaptar à moldura celular */
-    .mosaico img {
-        display: block !important;
-        width: 100% !important;
-        height: 100% !important; /* Obriga a imagem a esticar até a borda da célula */
-        object-fit: cover !important; /* O conteúdo preenche a caixa sem sobrar espaço */
-        object-position: center !important;
+    .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
+        height: auto !important; 
+		/* aspect-ratio: 3/2; Padrão retangular agradável no celular */
     }
-
-    /* Garante que os containers (links/divs) não tenham altura solta */
-    .mosaico > *, .mosaico .separator, .mosaico a {
-        height: 100% !important;
-        display: block !important;
-        margin: 0 !important;
-        position: relative !important;
-    }
+    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
 }
 
 @media (max-width: 380px) {
     figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
+    /* .centro, figure.moderno.centro { width: 100% !important; } */
 }
 
 .bordas { 
