@@ -857,18 +857,28 @@ legend {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
     .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* Mosaicos no Mobile */
+    /* --- AJUSTE DOS MOSAICOS (SEM EMPILHAMENTO) --- */
     figure.container-mosaico { width: 100% !important; }
+
+    /* Força o Grid a continuar ativo e mantém as duas colunas */
     .mosaico.vertical, .mosaico.vertical.direita,
     .mosaico.horizontal, .mosaico.horizontal.tripla, 
     .mosaico.simples {
-        display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
+        display: grid !important; 
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px;
     }
+
+    /* Mantém a proporção visual do conjunto */
+    .mosaico.vertical, .mosaico.vertical.direita {
+        aspect-ratio: 4 / 3 !important;
+    }
+
+    /* Garante que as imagens não fiquem com altura automática solta */
     .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
-        height: auto !important; 
-		/* aspect-ratio: 3/2; Padrão retangular agradável no celular */
+        height: 100% !important;
+        object-fit: cover;
     }
-    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
 }
 
 @media (max-width: 380px) {
