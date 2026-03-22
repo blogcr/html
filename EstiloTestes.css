@@ -502,7 +502,7 @@ figure.moderno.esq .fotoinfo {
 }
 
 /* =======================================================
-   4. SISTEMA DE MOSAICOS UNIFICADO (Versão Corrigida)
+   4. SISTEMA DE MOSAICOS UNIFICADO (Restauração de Alinhamento)
    ======================================================= */
 
 figure.container-mosaico {
@@ -522,14 +522,14 @@ figure.container-mosaico {
     box-sizing: border-box;
 }
 
-/* --- REGRA DE OURO (Ajuste das Legendas e Alinhamento) --- */
+/* REGRA DE OURO: Mantém a altura das células e fotos */
 .mosaico > *, 
 .mosaico .separator, 
 .mosaico a {
-    height: 100% !important;
+    height: 100% !important; /* Força a célula a preencher o espaço do Grid */
     width: 100% !important;
     display: block !important;
-    position: relative !important; /* Âncora para a legenda */
+    position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden;
@@ -538,48 +538,41 @@ figure.container-mosaico {
 
 .mosaico img {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* Corta a foto para preencher a célula */
+    height: 100% !important; /* OBRIGATÓRIO: Faz a imagem ocupar a altura da célula */
+    object-fit: cover !important; /* Ajuste inteligente para não sobrar espaço na base */
     display: block !important;
 }
 
-/* --- LEGENDA TIPO ETIQUETA (Evita desalinhamento) --- */
-.mosaico .foto-legenda, 
-.mosaico .legenda-foto {
-    position: absolute !important;
-    bottom: 5px !important;
-    left: 5px !important;
-    z-index: 10;
-    margin: 0 !important;
-    width: auto !important;
-    pointer-events: none;
-}
+/* --- VARIAÇÕES DE LAYOUT (O Ajuste das Alturas) --- */
 
-/* --- VARIAÇÕES DE LAYOUT --- */
+/* Vertical Padrão */
 .mosaico.vertical {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Divide a altura total em 2 partes iguais */
     aspect-ratio: 4 / 3;
 }
 .mosaico.vertical > :nth-child(1) { grid-column: 1; grid-row: span 2; }
 
+/* Vertical Direita (O seu caso atual) */
 .mosaico.vertical.direita {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Força as duas fotos da esquerda a dividirem a altura */
     aspect-ratio: 4 / 3;
 }
-/* No 'direita', a primeira e a segunda foto ocupam as células normais na esquerda */
-/* A última foto (Euclides) ocupa a coluna 2 inteira */
 .mosaico.vertical.direita > :last-child {
     grid-column: 2; 
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 2; /* Foto maior ocupa as duas alturas na direita */
 }
 
-/* Mosaicos Simples e Horizontais permanecem iguais */
-.mosaico.horizontal { grid-template-columns: 1fr 1fr; }
-.mosaico.horizontal > :nth-child(3) { grid-column: 1 / -1; }
-.mosaico.simples { grid-auto-flow: column; grid-auto-columns: 1fr; }
-
+/* Legendas Externas (Volta ao comportamento original) */
+figure.container-mosaico .info,
+figure.container-mosaico .fotoinfo {
+    display: block;
+    width: 100%;
+    margin-top: 5px !important;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
 
 /* =======================================================
    5. MÍDIA E EXTRAS (Vídeos, Tabelas, Rodapé)
