@@ -501,78 +501,128 @@ figure.moderno.esq .fotoinfo {
     text-align: left !important;
 }
 
+
 /* =======================================================
-   4. SISTEMA DE MOSAICOS UNIFICADO (Restauração de Alinhamento)
+   4. SISTEMA DE MOSAICOS UNIFICADO (Versão Final)
    ======================================================= */
 
+/* CONTAINER PRINCIPAL (90% Largura e Centralizado) */
 figure.container-mosaico {
     display: block !important;
-    width: 90% !important;
+    width: 90% !important;       /* A largura mestre */
     max-width: 1000px;
     margin: 0 auto 2rem auto !important;
     padding: 0;
     border: none;
 }
 
+/* O GRID (Espaçamento) */
+figure.container-mosaico .mosaico,
 .mosaico {
     display: grid;
     gap: 10px;
     width: 100%;
-    margin-bottom: 5px !important;
+    margin-bottom: 5px !important; /* Espaço para legenda externa */
     box-sizing: border-box;
 }
 
-/* REGRA DE OURO: Mantém a altura das células e fotos */
-.mosaico > *, 
-.mosaico .separator, 
-.mosaico a {
-    height: 100% !important; /* Força a célula a preencher o espaço do Grid */
+/* REGRA DE OURO DO MOSAICO (Anti-Colapso) */
+/* Versão Limpa: Ataca apenas os elementos de estrutura, ignorando legendas */
+.mosaico > *,          /* Pega o filho direto (seja lá qual for) */
+.mosaico .separator,   /* Pega especificamente o wrapper do Blogger */
+.mosaico a {           /* Pega o link */
+    height: 100% !important;
     width: 100% !important;
     display: block !important;
     position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
+    border: none !important;
     overflow: hidden;
     border-radius: 2px;
 }
 
 .mosaico img {
     width: 100% !important;
-    height: 100% !important; /* OBRIGATÓRIO: Faz a imagem ocupar a altura da célula */
-    object-fit: cover !important; /* Ajuste inteligente para não sobrar espaço na base */
+    height: 100% !important;
+    object-fit: cover !important; /* Corte inteligente */
     display: block !important;
+    border-radius: 2px;
 }
 
-/* --- VARIAÇÕES DE LAYOUT (O Ajuste das Alturas) --- */
+/* VARIAÇÕES DE LAYOUT DO MOSAICO */
 
-/* Vertical Padrão */
+/* Vertical: Grande na Esquerda */
 .mosaico.vertical {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); /* Divide a altura total em 2 partes iguais */
+    grid-template-rows: repeat(2, 1fr);
     aspect-ratio: 4 / 3;
 }
-.mosaico.vertical > :nth-child(1) { grid-column: 1; grid-row: span 2; }
+.mosaico.vertical > :nth-child(1) {
+    grid-column: 1; grid-row: span 2;
+}
 
-/* Vertical Direita (O seu caso atual) */
-.mosaico.vertical.direita {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr); /* Força as duas fotos da esquerda a dividirem a altura */
-    aspect-ratio: 4 / 3;
+/* Vertical Invertido: Grande na Direita */
+.mosaico.vertical.direita > :nth-child(1) {
+    grid-column: auto; grid-row: auto;
 }
 .mosaico.vertical.direita > :last-child {
-    grid-column: 2; 
-    grid-row: 1 / span 2; /* Foto maior ocupa as duas alturas na direita */
+    grid-column: 2; grid-row: 1 / span 2;
 }
 
-/* Legendas Externas (Volta ao comportamento original) */
+/* Horizontal: Panorâmica Embaixo */
+.mosaico.horizontal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    aspect-ratio: auto;
+}
+.mosaico.horizontal > :nth-child(3) { grid-column: 1 / -1; }
+
+/* Horizontal Invertido: Panorâmica em Cima */
+.mosaico.horizontal.invertido > :nth-child(3) {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+/* Simples (Linha) */
+.mosaico.simples {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+}
+.mosaico.simples > a, .mosaico.simples > img {
+    aspect-ratio: auto; /* Deixa fluir */
+    height: auto !important; /* Removemos a força de 100% aqui para não esticar demais se não precisar */
+}
+
+/* LEGENDAS EXTERNAS DO MOSAICO (Info e Fotoinfo) */
 figure.container-mosaico .info,
 figure.container-mosaico .fotoinfo {
     display: block;
     width: 100%;
-    margin-top: 5px !important;
+    margin-top: 0 !important;
     box-sizing: border-box;
     line-height: 1.4;
 }
+
+	/* DESATIVADO PARA TESTE
+figure.container-mosaico .info {
+    border-left: 4px solid var(--cor-principal);
+    padding-left: 12px;
+    text-align: left;
+    color: var(--cor-titulo);
+    font-size: 0.95rem;
+
+} */
+
+figure.container-mosaico .fotoinfo {
+    text-align: right;
+    font-style: italic;
+    color: #777;
+    font-size: 0.85rem;
+}
+
 
 /* =======================================================
    5. MÍDIA E EXTRAS (Vídeos, Tabelas, Rodapé)
@@ -796,55 +846,34 @@ legend {
 .fraudio-container { margin-top: 0 !important; margin-bottom: 5px !important; }
 
 /* =======================================================
-   6. RESPONSIVIDADE GERAL (MOBILE) - VERSÃO BLINDADA
+   6. RESPONSIVIDADE GERAL (MOBILE)
    ======================================================= */
 @media (max-width: 820px) {
     .epigrafe { width: 100%; padding-right: 15px; border-right-width: 3px !important; }
+    /* .centro { width: 100%; } */
 }
 
 @media (max-width: 650px) {
-    blockquote { width: 45% !important; font-size: 1.3rem !important; }
-    .nota-lateral { width: 45% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
+    blockquote { width: 40% !important; font-size: 1.3rem !important; }
+    .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* --- MANUTENÇÃO DOS MOSAICOS (NÃO EMPILHAR) --- */
+    /* Mosaicos no Mobile */
     figure.container-mosaico { width: 100% !important; }
-
-    /* FORÇAMOS O GRID: Isso impede que as fotos fiquem uma embaixo da outra */
-    .mosaico.vertical, 
-    .mosaico.vertical.direita,
-    .mosaico.horizontal, 
-    .mosaico.horizontal.tripla, 
+    .mosaico.vertical, .mosaico.vertical.direita,
+    .mosaico.horizontal, .mosaico.horizontal.tripla, 
     .mosaico.simples {
-        display: grid !important; /* BLOQUEIA O FLEX/EMPILHAMENTO */
-        grid-template-columns: 1fr 1fr !important; /* MANTÉM AS COLUNAS */
-        gap: 10px !important;
-        flex-direction: row !important; /* ANULA QUALQUER TENTATIVA DE COLUNA */
+        display: flex; flex-direction: column; aspect-ratio: auto; gap: 15px;
     }
-
-    /* Mantém a proporção do conjunto para não achatar as fotos */
-    .mosaico.vertical, 
-    .mosaico.vertical.direita {
-        aspect-ratio: 4 / 3 !important;
-    }
-
-    /* Garante que o link/imagem ocupe toda a célula do grid */
     .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
-        height: 100% !important;
-        width: 100% !important;
-        display: block !important;
-        object-fit: cover !important;
+        height: auto !important; 
+		/* aspect-ratio: 3/2; Padrão retangular agradável no celular */
     }
-
-    /* Mosaico Simples (Lado a lado horizontal) */
-    .mosaico.simples {
-        grid-auto-flow: column !important;
-        grid-auto-columns: 1fr !important;
-        grid-template-columns: none !important;
-    }
+    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
 }
 
 @media (max-width: 380px) {
     figure.moderno.dir, figure.moderno.esq { max-width: 60%; }
+    /* .centro, figure.moderno.centro { width: 100% !important; } */
 }
 
 .bordas { 
