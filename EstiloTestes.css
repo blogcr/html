@@ -857,7 +857,7 @@ legend {
     blockquote { width: 40% !important; font-size: 1.3rem !important; }
     .nota-lateral { width: 40% !important; border-top: 1px solid var(--cor-borda); border-left: 3px solid #B71C1C; padding-left: 15px; }
     
-    /* Mosaicos no Mobile */
+    /* Mosaicos no Mobile DESATIVADO
     figure.container-mosaico { width: 100% !important; }
     .mosaico.vertical, .mosaico.vertical.direita,
     .mosaico.horizontal, .mosaico.horizontal.tripla, 
@@ -866,9 +866,57 @@ legend {
     }
     .mosaico > *, .mosaico .separator, .mosaico a, .mosaico img {
         height: auto !important; 
-		/* aspect-ratio: 3/2; Padrão retangular agradável no celular */
+		
     }
-    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; }
+    .mosaico.simples > img, .mosaico.simples > a { aspect-ratio: auto; } */
+}
+
+/* =======================================================
+   REFORÇO DE MOSAICOS: ANTI-EMPILHAMENTO MOBILE
+   ======================================================= */
+
+@media (max-width: 650px) {
+    /* Impede que o container do mosaico quebre a estrutura */
+    figure.container-mosaico { 
+        width: 100% !important; 
+        margin: 0 auto 1.5rem auto !important;
+    }
+
+    /* FORÇA A MANUTENÇÃO DO GRID EM TODOS OS TIPOS */
+    .mosaico.vertical, 
+    .mosaico.vertical.direita,
+    .mosaico.horizontal, 
+    .mosaico.horizontal.tripla, 
+    .mosaico.simples {
+        display: grid !important; /* Mantém o Grid, ignora o Flex */
+        gap: 8px !important;      /* Reduz levemente o espaço para telas pequenas */
+    }
+
+    /* Garante que as colunas existam no Vertical e Horizontal */
+    .mosaico.vertical, 
+    .mosaico.vertical.direita,
+    .mosaico.horizontal {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    /* No Vertical, mantemos a proporção clássica do conjunto */
+    .mosaico.vertical, .mosaico.vertical.direita {
+        aspect-ratio: 4 / 3 !important;
+    }
+
+    /* Impede que as imagens individuais tentem virar blocos soltos */
+    .mosaico > *, .mosaico .separator, .mosaico a {
+        height: 100% !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* Ajuste para o mosaico simples (lado a lado) não espremer demais */
+    .mosaico.simples {
+        grid-auto-flow: column !important;
+        grid-auto-columns: 1fr !important;
+        grid-template-columns: none !important;
+    }
 }
 
 @media (max-width: 380px) {
