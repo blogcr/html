@@ -977,6 +977,11 @@
 #raissa .bio:before {content: "Raíssa Romero";}
 #raissa .bio:after {content: "Bióloga graduada pela Universidade Federal da Paraíba.";}
 
+/* RAU FERREIRA  */
+#rau .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCE3PBNEUQ1YOw2oN9MC3fz3_3hQHKLIiLudPe6nBqj47UOsn3nOdxeBtO0ET71jwfUYwYFmMRGR3nHcrVxex7d8CG98sRdVF_v0UFAIYvCwtfzXZW5w7BxhejsIcHziokmNr231vH0YzRgy3e7snmvjOKR3UYhRGvIQIOrUZCu7ZvBXluVFoHk8d6H3A/s1600/Rau%20Ferreira.jpg);}
+#rau .bio:before {content: "Rau Ferreira";}
+#rau .bio:after {content: "Escritor, cordelista, poeta repentista e historiador. Membro da Academia de Letras de Campina Grande. Sócio correspondente dos Institutos Históricos de Campina Grande e de Areia. Colaborador do Instituto Histórico e Geográfico da Paraíba.";}
+
 /* RAUL TARTAROTTI  */
 #raul .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYb40NLiu3zRTiwdWIq2mywldqtmrBSSj71JLk3Wh9zvqygcJ8Cb0sEuQ_HntwR-XxIyF4Vrwe91zJPi1HHrTZ5hecimC_FwgA-ZsqS4eEvUSTvolltlFqf04UNltFS6rdQ0rlQBOKHDcnHHdg_fVmA9HOYssCeOCMXjKHfvJryw0woEd72tigiNi/s1600/Raul-Tartarotti.jpg);}
 #raul .bio:before {content: "Raul Tartarotti";}
