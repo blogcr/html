@@ -466,6 +466,11 @@
 #claudio .bio:before {content: "Cláudio Paiva";}
 #claudio .bio:after {content: "Professor / escritor";}
 
+/* CLÁUDIO WAGNER */
+#wagner .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNbwbDtN3eUhEs5g826aakzVoCrc684kCSGbLST_2q2nyBw0x3LIKaiC0__1a9iUfe9rLFbD5FU26e7vGoVy0hRbYm6M-CjQhcvtRLC7zx43qiVHnceGy9-Rwdd8UH3jrlGQA0B3fDd5-EhRhNvdbRGJza8dsDnLCwWT6OLXhHHgawSBdY5Rhm9LbMrQqw/s1600/Cla%CC%81udio%20Wagner.jpg);}
+#wagner .bio:before {content: "Cláudio Wagner";}
+#wagner .bio:after {content: "Poeta e escritor, graduado em História pela UFRN e em Ciências da Religião pela UERN. Professor de Ensino Religioso e História. Autor do livro  \22 Entre a Sombra da Razão e a Razão da Sombra \22 (CJA Editoria, 2016). Também é autor dos cordéis  \22 O Ofício do Historiador(a) \22 e  \22 O Dia que Bandica Deu pra Budega \22. Colunista do jornal O Potengi.";}
+
 /* CLOVIS ROBERTO */
 #clovis .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTYLRj6v0sVPJPQRwYyQi8ah8mLBL7oQtYluHn_NRdc1KDUkwQRTjiSGIvb0uD8XBFG1QlL2u0abI768x1noloyTqtn0Ahwr8-JYjQScH5odhc5R_l4pqTYayzma9z8YUrcFFsbdGDL4Kz3bwhRtF_dJrz5tzj8YrNN8bFunoeraTdyuw5r3nd7iIW/s1600/Clovis-Roberto.jpg);}
 #clovis .bio:before {content: "Clóvis Roberto";}
