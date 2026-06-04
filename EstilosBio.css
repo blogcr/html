@@ -355,6 +355,11 @@
 #andre .bio:before {content: "André Cananéa";}
 #andre .bio:after {content: "Jornalista";}
 
+/* ANDRE HENIRQUE */
+#ahenrique .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8RG1xPPOdghrs_LiHdt6rRQrdxAZyYi1FIz3j3Nekp-zjaEQcxdonfC6Z6pvezPKMOUmIDtQWfnUZafU8qY-DPEWo2JQfEP6nJr_nipn5eIoukhy_a21qcKdvUJ0DkkGjy3yZBtr8Or18cKKRlL1ITGkCbMVTSLnwlojoVtAkz7ZbswdLCCf5nrCD4U8c/s1600/Andre%CC%81%20Henrique%20Siqueira.jpg);}
+#ahenrique .bio:before {content: "André Henrique Siqueira";}
+#ahenrique .bio:after {content: "Professor, doutor em Ciência da Informação (UNB), bacharel e mestre em Ciência da Computação (UFRN e UNB), com especialização em Arquitetura da Informação e Engenharia de Software. Editor-chefe da Revista LIFT Papers e Diretor de Comunicação na Federação Espírita Brasileira. Nascido em Natal, Rio Grande do Norte. \A \2E3B \A \INSTAGRAM ▪ @andrehsiqueira";}
+
 /* ÂNGELA BEZERRA DE CASTRO */
 #angela .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHFGC06se4-gFYIK442hTPH3-1e7VRZDzybCY21toNZaciNlzXUNP8VpuHXpWyrapi7IfP9Mv4CLWay_vJVtHI0vpyUAhBlX6zIw3w54fPZv9c2QUyxOdRi9zMsrpX-qdln2UAzI8djdFOyG2WEB67jmqjr51gS8Ixjf2FFeIvUH2pzo107MLYW54oq10/s1600/A%CC%82ngela%20Bezerra%202.jpg);}
 #angela .bio:before {content: "Ângela Bezerra de Castro";}
