@@ -496,10 +496,15 @@
 #dalva .bio:before {content: "Dalva Arnaud";}
 #dalva .bio:after {content: "Médica oncologista, formada pela Universidade de Brasília (UNB). Membro da Academia Paraibana de Medicina.";}
 
+/* DENISE SABINO */
+#denise .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT3kfti-jwPGozhJFyo-UIrHU-acHA10KE6jTXRg4GSc-EjJui0ozYg2t0n4p-gRaWbPY13JN2EDZ0VVF_nwI8HFokn_mDj24Ts6qg14v0OizzsjT_NAdhQHkjU3mL6e3iGOiuUTbJaZQAwKHMR0CeR4corAS40f7o4hYts0RlK6jc7yhIB0euIXWY-bA/s1600/Denise%20Sabino%20Villanova.jpg);}
+#denise .bio:before {content: "Denise Sabino Villanova";}
+#denise .bio:after {content: "Doutora em Literaturas Estrangeiras Modernas com foco em Literatura Hispânica pela UFRGS (Universidade Federal do Rio Grande do Sul). Mestre em Cultura Britânica e em Cultura Francesa, com ênfase em Educação, Política, Literatura e Filosofia pela Leibniz Universität Hannover, Alemanha. Escritora, palestrante e cronista semanal do jornal \22 O Dia \22 , em Teresina-PI, desde 2020, e colaboradora semanal com poesias, comentários e matérias para o jornal e TV RJNews, Portugal, desde 2022. Participou de cinco obras coletivas e publicou seu primeiro livro solo, \22 Psicopata Familiar \22 , em 2024. Colaboradora e palestrante no Instituto Cervantes em Porto Alegre, de 2020 a 2023, e em 2025 com a exposição \22 Felisverso \22 , sobre a vida e obra do escritor uruguaio Felisberto Hernández. \A \2E3B \A \E-MAIL ▪ athenagat@hotmail.com";}
+
 /* DENISE LINO */
-#denise .fotobio {content: url(https://1.bp.blogspot.com/-gChzVFxEsn8/YE5do4z-_5I/AAAAAAACsTw/Y0xIVuCwayA-URcRw0r4jLrVR1_wl_QWwCLcBGAsYHQ/s0/Denise%2BLino.jpg);}
-#denise .bio:before {content: "Denise Lino";}
-#denise .bio:after {content: "Professora";}
+#deniselino .fotobio {content: url(https://1.bp.blogspot.com/-gChzVFxEsn8/YE5do4z-_5I/AAAAAAACsTw/Y0xIVuCwayA-URcRw0r4jLrVR1_wl_QWwCLcBGAsYHQ/s0/Denise%2BLino.jpg);}
+#deniselino .bio:before {content: "Denise Lino";}
+#deniselino .bio:after {content: "Professora";}
 
 /* DOUGLAS ANTERIO */
 #douglas .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj09fDW7lD12wj5DqJwdbyWU3gYQc49UUfPzymnR9459TmCVu1-d3HvjDS_waOY_rQ-o-6myR_YBAkVjeZY8l-vqp5a1kQakqx2VXwWm7T4wRuBuVW_3IrqPadmYTmFZWw12l600YhFPqc5VdISFwLcDdM8CILgOr8NqruIHDmLuaVxWPZyQ10iZnm_hOo/s1600/Douglas-Anterio.jpg);}
