@@ -276,7 +276,12 @@ blockquote cite {
 
 /* Variação de Cor para o Destaque */
 .destaque.escuro::before {
+    background-color: transparent !important;
+}
+
+.destaque.limpo::before {
     background-color: var(--cor-fundo-citacao-escuro) !important;
+	padding: 0 !important;
 }
 
 .destaque .moldura {
