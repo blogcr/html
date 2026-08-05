@@ -279,7 +279,7 @@ blockquote cite {
     background-color: var(--cor-fundo-citacao-escuro) !important;
 }
 
-.destaque.limpo::before {
+.destaque.limpo {
 	background-color: transparent !important;
 	padding: 0 !important;
 }
