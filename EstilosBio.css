@@ -707,6 +707,11 @@
 #joao .bio:before {content: "João Batista de Brito";}
 #joao .bio:after {content: "Professor / escritor";}
 
+/* JOÃO LOBO */
+#lobo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjraSrROFEABOL0mBjn1J95KnHb3_nEriD-HECxryGF-VvxWj3-GhMTS6gEfv-6nXjYvJecXjgDEbMOP7SbWAn9hYeIX1KNQXtOEwCCAsjzNviU42c0oYMDGlJea5lujZhxcVwP9pV5lwGrGUIazYcHnycB1q4shLaM0Z4owYYcvxA23cTn2Ua8Be4vA5g/s1600/Joa%CC%83o%20Lobo.webp);}
+#lobo .bio:before {content: "João Lobo";}
+#lobo .bio:after {content: "PFotógrafo, escritor e curador de fotografia e cinema. Doutor em Belas Artes pela Universidade de Lisboa. Pesquisador, docente. Natural de Brejo do Cruz (Paraíba), com cidadania portuguesa. Seu percurso profissional, como expositor nacional e internacional, une a academia à criação artística de autor conceitual e minimalista que rompe com as regras tradicionais da fotografia. A\ ___ A\ WEB ▪ joaolobo.com A\ E-MAIL ▪ jlobomaia@gmail.com";}
+
 /* JOAQUIM INÁCIO BRITO */
 #joaquim .fotobio {content: url(https://1.bp.blogspot.com/-dVdVlImWj18/YSkfcBo1h7I/AAAAAAAC6dg/6ONS9HctFRMOsGsVdhMrYUbEhBX8E8aiQCLcBGAsYHQ/s0/joaquim%2Binacio%2Bbrito.jpg);}
 #joaquim .bio:before {content: "Joaquim Inácio Brito";}
