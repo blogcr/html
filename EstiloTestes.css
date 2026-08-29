@@ -445,7 +445,7 @@ figure.moderno.dir.menor,
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: left !important;
-    width: auto !important;
+    width: fit-content !important;
     max-width: calc(100% - 10px);
     white-space: normal;
     word-break: normal;
