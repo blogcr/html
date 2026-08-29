@@ -430,7 +430,7 @@ figure.moderno.dir.menor,
 }
 
 /* LEGENDA FLUTUANTE (Overlay) */
-.legenda-foto, .foto-legenda {
+legenda-foto, .foto-legenda {
     position: absolute;
     bottom: 5px;
     left: 5px;
@@ -445,7 +445,7 @@ figure.moderno.dir.menor,
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: left !important;
-    width: fit-content !important;
+    width: max-content !important;
     max-width: calc(100% - 10px);
     white-space: normal;
     word-break: normal;
