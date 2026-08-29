@@ -446,10 +446,13 @@ figure.moderno.dir.menor,
     letter-spacing: 1px;
     text-align: left !important;
     width: auto !important;
+    max-width: calc(100% - 10px);
     white-space: normal;
-	max-width: calc(100% - 10px);
+    word-break: normal;
+    overflow-wrap: normal;
     border-radius: 2px;
 }
+
 figure.moderno:hover .legenda-foto {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
