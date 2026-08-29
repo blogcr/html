@@ -446,7 +446,8 @@ figure.moderno.dir.menor,
     letter-spacing: 1px;
     text-align: left !important;
     width: auto !important;
-    white-space: nowrap;
+    white-space: normal;
+	max-width: calc(100% - 10px);
     border-radius: 2px;
 }
 figure.moderno:hover .legenda-foto {
