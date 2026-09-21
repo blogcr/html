@@ -319,6 +319,11 @@
 #aldo .bio:before {content: "Aldo Lopes";}
 #aldo .bio:after {content: "Jornalista / escritor";}
 
+/* ARLINDO CORRENA */
+#arlindo .fotobio {content: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM89Ubc2C_sr8B3vzg21FjqhD3PPm-llHQLvvnuPrZ1mio9DgX7RJmxdg6EK82NRgTPQRbBwSPRewAWVO-yfvs9f4nBQK2lFXKOJHydkbCUKemtmKUvcXrarlRMM717JPNP6OOks-E5Uqbg3czkt1o3-kKZIXQwW-j594FQD9Ft5mw_pz39CZ0B9vudNc/s1600/Arlindo%20Corre%CC%82a.png);}
+#arlindo .bio:before {content: "Arlindo Corrêa Neto";}
+#arlindo .bio:after {content: "Escritor, promotor de Justiça do Ministério Público da Paraíba. Professor de Direito Penal e Processual Penal. Presidiu a Associação Paraibana do Ministério Público e foi vice-presidente nacional da Associação Nacional dos Membros do Ministério Público, CONAMP.";}
+
 /* ALDO LUGÃO */
 #lugao .fotobio {content: url(https://1.bp.blogspot.com/-NE2xbYfUHKA/YHu9idYxLvI/AAAAAAACyug/lEMszgikrX430ns_d29suREahNS94CuwgCLcBGAsYHQ/s0/Aldo%2BLuga%25CC%2583o.jpeg
 );}
